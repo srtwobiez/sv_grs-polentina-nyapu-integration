@@ -1,6 +1,7 @@
 {
   
   "colon": "u003A",
+  "colon2": ":",
   "openparens": "(",
   "closeparens": ")", 
     
@@ -68,6 +69,8 @@
   "Name.GrimPirate": "Pirata Macabro",
   "Name.DartMan": "Hombre Dardo",
   "Name.MasterFisher": "Maestro Pescador",
+  "Name.Fisher": "Pescador",
+  "Name.FishingPro": "Pro de la Pesca",
   
   "Name.Shades": "Hombre Gafas",
   "Name.VioletLady": "Dama Violeta",
@@ -82,11 +85,19 @@
   "Name.Terrence": "Terrence",
   "Name.Laura": "Laura",
   "Name.Aaron": "Aaron",
+  "Name.Daena": "Daena",
+  "Name.Naufal": "Naufal",
+  "Name.Manolis": "Manolis",
   
   "Name.Juliet_joja": "Juliet",
   "Name.MovieConcessionCC_Kevin": "Kevin",      
   "Name.TopHat": "Sr. Sombrero de Copa",
-  "Name.Submariner": "Submarinista",   
+  "Name.Submariner": "Submarinista",  
+  
+  "Name.VendorFemale": "Vendedora",
+  "Name.VendorMale": "Vendedor",
+  "Name.TouristFemale": "Turista",
+  "Name.TouristMale": "Turista",  
   
   "config.DisplayName.name": "Nombre en pantalla",
   "config.DisplayName.description": "Opciones para algunos extras: 'Original' usa las etiquetas predeterminadas del juego. 'Consistente' da al personaje la misma etiqueta en todas partes. 'Nombrado' da al personaje un nombre personal fijo.",

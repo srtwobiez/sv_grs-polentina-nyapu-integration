@@ -1,0 +1,44 @@
+{
+	"blank": "{0}",
+	"star": "{0} =",
+	"any": "Beliebig {0}",
+	"vanilla": "{0} (beliebig)",
+	"asterisk": "{0} *",
+	
+	"config.Ingredient Indicator.name": "Zutatenanzeige",
+    "config.Ingredient Indicator.description": "Kennzeichnen Sie mit dieser Option flexible Zutaten im Kochmenü. Alle Zutaten in Vanilla-Rezepten werden gekennzeichnet! Abgesehen von dieser einstellung folgen neue Kategorien dem Vanilla-Format, wie z. B. Käse (beliebig) und Speiseöl (beliebig).",
+    "config.Ingredient Indicator.values.A": "Zutat",
+    "config.Ingredient Indicator.values.B": "Zutat =",
+    "config.Ingredient Indicator.values.C": "Beliebig Zutat",
+    "config.Ingredient Indicator.values.D": "Zutat (beliebig)",
+	"config.Ingredient Indicator.values.E": "Item *",
+	
+	"config.Extra Changes.name": "Zusätzliche Änderungen",
+    "config.Extra Changes.description": "Ersetze bei einigen Rezepten bestimmte Zutaten durch andere Kategorien, um für Abwechslung zu sorgen. Anstelle von Lauch für die Zubereitung von Salat kannst du beispielsweise jedes Blattgemüse verwenden. Oder verwende anstelle von Höhlenkarotten jedes beliebige Wurzelgemüse für die Zubereitung von Gemüsepfanne. Außerdem können Sashimi und Maki-Rollen nur mit echtem Fisch zubereitet werden und nicht mit Zutaten wie Schnecken, Muscheln usw. aus Krabbenreusen",
+	
+	//follow vanilla format such as for Egg (Any) and Milk (Any)
+	"Ingredient_EggAny": "Ei (beliebig)",
+	"Ingredient_MilkAny": "Milch (beliebig)",
+	"Ingredient_CheeseAny": "Käse (beliebig)",
+	"Ingredient_ChiliAny": "Chili (beliebig)",
+	"Ingredient_FlourAny": "Mehl (beliebig)",
+	"Ingredient_FishAny": "Fisch (beliebig)",
+	"Ingredient_FishNonCrabPot": "Fisch (Keine Reusen)",
+	"Ingredient_EdibleMushroomAny": "Speisepilz (beliebig)",
+	"Ingredient_LeafyGreenAny": "Blattgemüse (beliebig)",
+	"Ingredient_RootVegetableAny": "Wurzelgemüse (beliebig)",
+	"Ingredient_MayonnaiseAny": "Mayonnaise (beliebig)",
+	"Ingredient_OilAny": "Speiseöl (beliebig)",
+	"Ingredient_SugarAny": "Süßstoff (beliebig)",
+	
+	//not used in this mod but may be used in add-ons
+	"Ingredient_SoftCheeseAny": "Weichkäse (beliebig)",
+	"Ingredient_ButterAny": "Butter (beliebig)",
+	"Ingredient_VegetableAny": "Gemüse (beliebig)",
+	"Ingredient_FruitAny": "Frucht (beliebig)",
+	"Ingredient_EdibleFlowerAny": "Essbare Blume (beliebig)",
+	"Ingredient_YogurtAny": "Joghurt (beliebig)",
+	"Ingredient_GrainAny": "Getreide (beliebig)",
+	"Ingredient_BeanAny": "Bohne (beliebig)",
+	"Ingredient_HerbAny": "Kräuter (beliebig)"
+}

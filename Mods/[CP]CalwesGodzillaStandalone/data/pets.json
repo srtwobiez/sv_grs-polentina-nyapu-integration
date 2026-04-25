@@ -1,0 +1,41 @@
+{
+    "Changes": [
+		{
+			"LogName": "Calling Animal Assets",
+			"Action": "Load",
+			"Target": "assets/pets/Godzilla",
+			"FromFile": "assets/pets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Calling Shop Assets",
+			"Action": "Load",
+			"Target": "assets/shop/Godzilla",
+			"FromFile": "assets/shop/{{TargetWithoutPath}}.png"
+		},
+		{
+            "LogName": "Add Dog Godzilla",
+            "Action": "EditData",
+            "Target": "Data/Pets",
+            "TargetField": [
+                "Dog",
+                "Breeds"
+            ],
+            "Entries": {
+                "{{ModId}}.DogGirl": {
+                    "Id": "{{ModId}}.Godzilla",
+                    "Texture": "assets/pets/Godzilla",
+                    "IconTexture": "assets/shop/Godzilla",
+                    "IconSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "CanBeChosenAtStart": true,
+                    "CanBeAdoptedFromMarnie": true,
+                    "AdoptionPrice": 40000,
+                }
+            }
+        },
+	]
+}

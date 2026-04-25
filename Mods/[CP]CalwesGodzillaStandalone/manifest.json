@@ -1,0 +1,12 @@
+{
+    "Name": "[CP]Calwes Godzilla Pet Standalone",
+    "Author": "Calwes",
+    "Version": "1.0.0",
+    "Description": "Adding the king of the monsters as a pet.",
+    "UniqueID": "Calwes.ContentPatcher.GodzillaStandalone",
+    "UpdateKeys": ["Nexus:39624"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+		
+    }
+}

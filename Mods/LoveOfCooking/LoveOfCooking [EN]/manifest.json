@@ -1,0 +1,16 @@
+﻿{
+	"Name": "Love of Cooking Traducción al Español",
+	"Author": "Katttox",
+	"Version": "1.0.5",
+	"Description": "Traduccion al Español del mod Love Of Cooking cualquier error de traduccion escribir en la pagina de nexus.",
+	"UniqueID": "blueberry.LoveOfCooking.EN",
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "blueberry.LoveOfCooking.CP"
+		}
+	],
+	"UpdateKeys": [ "Nexus:29749" ]
+}

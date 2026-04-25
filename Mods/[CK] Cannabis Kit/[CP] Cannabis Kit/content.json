@@ -1,0 +1,3750 @@
+{
+	"Format": "2.0",
+	"ConfigSchema": {
+		"Dried Shit Weed": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of Shit Weed. When false, disables processing this item on the Dehydrator."
+		},
+		"Dried Blue Dream": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of Blue Dream. When false, disables processing this item on the Dehydrator."
+		},
+		"Dried Cookies and Cream": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of Cookies and Cream. When false, disables processing this item on the Dehydrator."
+		},
+		"Dried Green Dream": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of Green Dream. When false, disables processing this item on the Dehydrator."
+		},
+		"Dried Purple Haze": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of Purple Haze. When false, disables processing this item on the Dehydrator."
+		},
+		"Dried Orange Sherbert": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of Orange Sherbert. When false, disables processing this item on the Dehydrator."
+		},
+		"Dried Northern Lights": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of Northern Lights. When false, disables processing this item on the Dehydrator."
+		},
+		"Dried OG Kush": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of OG Kush. When false, disables processing this item on the Dehydrator."
+		},
+		"Dried Super Silver": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of Super Silver. When false, disables processing this item on the Dehydrator."
+		},
+		"Dried Sour Diesel": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of Sour Diesel. When false, disables processing this item on the Dehydrator."
+		},
+		"Dried Strawberry Cough": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of Strawberry Cough. When false, disables processing this item on the Dehydrator."
+		},
+		"Dried White Widow": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of White Widow. When false, disables processing this item on the Dehydrator."
+		},
+		"Hemp": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows processing of Hemp on various machines. When false, disables processing this item."
+		},
+		"Tobacco": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows dehydration of Tobacco. When false, disables processing this item on the Dehydrator."
+		},
+		"Rolling Machine": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows automatic crafting of smokables that respects ingredient quality."
+		}
+	},
+	"Changes": [
+		{
+			"LogName": "Load textures",
+			"Action": "Load",
+			"Target": "PPJA.cannabiskit/Shit_Weed, 
+					   PPJA.cannabiskit/Dried_Shit_Weed, 
+					   PPJA.cannabiskit/Cannabis_Starter_Seeds,
+					   PPJA.cannabiskit/Cannabis_Starter_Crop,
+					   PPJA.cannabiskit/Joint_Shit_Weed,
+					   PPJA.cannabiskit/Tobacco,
+					   PPJA.cannabiskit/Dried_Tobacco,
+					   PPJA.cannabiskit/Tobacco_Starter_Seeds,
+					   PPJA.cannabiskit/Tobacco_Starter_Crop,
+					   PPJA.cannabiskit/Blue_Dream, 
+					   PPJA.cannabiskit/Dried_Blue_Dream, 
+					   PPJA.cannabiskit/Blue_Dream_Starter,
+					   PPJA.cannabiskit/Blue_Dream_Crop,
+					   PPJA.cannabiskit/Joint_Blue_Dream,
+					   PPJA.cannabiskit/Cookies_and_Cream, 
+					   PPJA.cannabiskit/Dried_Cookies_and_Cream, 
+					   PPJA.cannabiskit/Cookies_and_Cream_Starter,
+					   PPJA.cannabiskit/Cookies_and_Cream_Crop,
+					   PPJA.cannabiskit/Joint_Cookies_and_Cream,
+					   PPJA.cannabiskit/Green_Dream, 
+					   PPJA.cannabiskit/Dried_Green_Dream, 
+					   PPJA.cannabiskit/Green_Dream_Starter,
+					   PPJA.cannabiskit/Green_Dream_Crop,
+					   PPJA.cannabiskit/Joint_Green_Dream,
+					   PPJA.cannabiskit/Purple_Haze, 
+					   PPJA.cannabiskit/Dried_Purple_Haze, 
+					   PPJA.cannabiskit/Purple_Haze_Starter,
+					   PPJA.cannabiskit/Purple_Haze_Crop,
+					   PPJA.cannabiskit/Joint_Purple_Haze,
+					   PPJA.cannabiskit/Orange_Sherbert, 
+					   PPJA.cannabiskit/Dried_Orange_Sherbert, 
+					   PPJA.cannabiskit/Orange_Sherbert_Starter,
+					   PPJA.cannabiskit/Orange_Sherbert_Crop,
+					   PPJA.cannabiskit/Joint_Orange_Sherbert,
+					   PPJA.cannabiskit/Northern_Lights, 
+					   PPJA.cannabiskit/Dried_Northern_Lights, 
+					   PPJA.cannabiskit/Northern_Lights_Starter,
+					   PPJA.cannabiskit/Northern_Lights_Crop,
+					   PPJA.cannabiskit/Joint_Northern_Lights,
+					   PPJA.cannabiskit/OG_Kush, 
+					   PPJA.cannabiskit/Dried_OG_Kush, 
+					   PPJA.cannabiskit/OG_Kush_Starter,
+					   PPJA.cannabiskit/OG_Kush_Crop,
+					   PPJA.cannabiskit/Joint_OG_Kush,
+					   PPJA.cannabiskit/Super_Silver, 
+					   PPJA.cannabiskit/Dried_Super_Silver, 
+					   PPJA.cannabiskit/Super_Silver_Starter,
+					   PPJA.cannabiskit/Super_Silver_Crop,
+					   PPJA.cannabiskit/Joint_Super_Silver,
+					   PPJA.cannabiskit/Sour_Diesel, 
+					   PPJA.cannabiskit/Dried_Sour_Diesel, 
+					   PPJA.cannabiskit/Sour_Diesel_Starter,
+					   PPJA.cannabiskit/Sour_Diesel_Crop,
+					   PPJA.cannabiskit/Joint_Sour_Diesel,
+					   PPJA.cannabiskit/Strawberry_Cough, 
+					   PPJA.cannabiskit/Dried_Strawberry_Cough, 
+					   PPJA.cannabiskit/Strawberry_Cough_Starter,
+					   PPJA.cannabiskit/Strawberry_Cough_Crop,
+					   PPJA.cannabiskit/Joint_Strawberry_Cough,
+					   PPJA.cannabiskit/White_Widow, 
+					   PPJA.cannabiskit/Dried_White_Widow, 
+					   PPJA.cannabiskit/White_Widow_Starter,
+					   PPJA.cannabiskit/White_Widow_Crop,
+					   PPJA.cannabiskit/Joint_White_Widow,
+					   PPJA.cannabiskit/Hemp,
+					   PPJA.cannabiskit/Hemp_Starter,
+					   PPJA.cannabiskit/Hemp_Crop,
+					   PPJA.cannabiskit/Cigarette,
+					   PPJA.cannabiskit/CBD_Oil,
+					   PPJA.cannabiskit/Canna_Butter,
+					   PPJA.cannabiskit/CBD_Elixir,
+					   PPJA.cannabiskit/Mind_Tonic,
+					   PPJA.cannabiskit/Honey_Stick,
+					   PPJA.cannabiskit/Pot_Brownie,
+					   PPJA.cannabiskit/Honey_Nibs,
+					   PPJA.cannabiskit/Canna_Tea,
+					   PPJA.cannabiskit/CBD_Punch,
+					   PPJA.cannabiskit/Moonrocks,
+					   PPJA.cannabiskit/Rolling_Machine",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Add new items",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"PPJA.cannabiskit_Tobacco": {
+					"Name": "Tobacco",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Tobacco.name}}",
+					"Texture": "PPJA.cannabiskit/Tobacco",
+					"Description": "{{i18n:PPJA.cannabiskit_Tobacco.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": -300,
+					"Price": 35,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Abigail", "Emily", "Sebastian"],
+							"Like": ["Elliott", "Harvey", "Krobus", "Leah", "Linus", "Pam", "Pierre", 	"Sam", "Sandy", "Shane", "Wizard"],
+							"Neutral": ["Clint", "Dwarf", "Evelyn", "George", "Gus", "Kent", "Lewis", 	"Marnie", "Maru", "Willy"],
+							"Dislike": ["Caroline", "Demetrius"],
+							"Hate": ["Alex", "Haley", "Jas", "Jodi", "Penny", "Robin", "Vincent"]
+						},
+					"ContextTags": [
+						"season_spring",
+						"season_summer"
+					]
+				},
+				"PPJA.cannabiskit_Dried_Tobacco": {
+					"Name": "Dried Tobacco",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_Tobacco.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_Tobacco",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_Tobacco.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": -300,
+					"Price": 50,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Abigail", "Emily", "Sebastian"],
+							"Like": ["Elliott", "Harvey", "Krobus", "Leah", "Linus", "Pam", "Pierre", 	"Sam", "Sandy", "Shane", "Wizard"],
+							"Neutral": ["Clint", "Dwarf", "Evelyn", "George", "Gus", "Kent", "Lewis", 	"Marnie", "Maru", "Willy"],
+							"Dislike": ["Caroline", "Demetrius"],
+							"Hate": ["Alex", "Haley", "Jas", "Jodi", "Penny", "Robin", "Vincent"]
+						},
+					"ContextTags": [
+						"season_spring",
+						"season_summer"
+					]
+				},
+				"PPJA.cannabiskit_Tobacco_Starter": {
+					"Name": "Tobacco Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Tobacco_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Tobacco_Starter_Seeds",
+					"Description": "{{i18n:PPJA.cannabiskit_Tobacco_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Cigarette": {
+					"Name": "Cigarette",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Cigarette.name}}",
+					"Texture": "PPJA.cannabiskit/Cigarette",
+					"Description": "{{i18n:PPJA.cannabiskit_Cigarette.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 20,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Cigarette",
+							"Duration": 800,
+							"IconTexture": "PPJA.cannabiskit/Dried_Tobacco",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 1,
+								"Speed": -1,
+							},
+						},
+					],
+					"Price": 200,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint", "Sam", "Penny"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Shit_Weed": {
+					"Name": "Shit Weed",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Shit_Weed.name}}",
+					"Texture": "PPJA.cannabiskit/Shit_Weed",
+					"Description": "{{i18n:PPJA.cannabiskit_Shit_Weed.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 10,
+					"Price": 30,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Abigail", "Emily", "Sebastian"],
+							"Like": ["Elliott", "Harvey", "Krobus", "Leah", "Linus", "Pam", "Pierre", 	"Sam", "Sandy", "Shane", "Wizard"],
+							"Neutral": ["Clint", "Dwarf", "Evelyn", "George", "Gus", "Kent", "Lewis", 	"Marnie", "Maru", "Willy"],
+							"Dislike": ["Caroline", "Demetrius"],
+							"Hate": ["Alex", "Haley", "Jas", "Jodi", "Penny", "Robin", "Vincent"]
+						},
+					"ContextTags": [
+						"season_spring",
+						"season_summer",
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Dried_Shit_Weed": {
+					"Name": "Dried Shit Weed",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_Shit_Weed.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_Shit_Weed",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_Shit_Weed.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": 10,
+					"Price": 60,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Abigail", "Emily", "Sebastian"],
+							"Like": ["Elliott", "Harvey", "Krobus", "Leah", "Linus", "Pam", "Pierre", 	"Sam", "Sandy", "Shane", "Wizard"],
+							"Neutral": ["Clint", "Dwarf", "Evelyn", "George", "Gus", "Kent", "Lewis", 	"Marnie", "Maru", "Willy"],
+							"Dislike": ["Caroline", "Demetrius"],
+							"Hate": ["Alex", "Haley", "Jas", "Jodi", "Penny", "Robin", "Vincent"]
+						},
+					"ContextTags": [
+						"season_spring",
+						"season_summer",
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Cannabis_Starter": {
+					"Name": "Cannabis Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Cannabis_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Cannabis_Starter_Seeds",
+					"Description": "{{i18n:PPJA.cannabiskit_Cannabis_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Joint_Shit_Weed": {
+					"Name": "Joint (Shit Weed)",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Joint_Shit_Weed.name}}",
+					"Texture": "PPJA.cannabiskit/Joint_Shit_Weed",
+					"Description": "{{i18n:PPJA.cannabiskit_Joint_Shit_Weed.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 24,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Shit Weed",
+							"Duration": 900,
+							"IconTexture": "PPJA.cannabiskit/Shit_Weed",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 2,
+								"Speed": 0,
+							},
+						},
+					],
+					"Price": 450,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Blue_Dream": {
+					"Name": "Blue Dream",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Blue_Dream.name}}",
+					"Texture": "PPJA.cannabiskit/Blue_Dream",
+					"Description": "{{i18n:PPJA.cannabiskit_Blue_Dream.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 18,
+					"Price": 140,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_summer",
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Dried_Blue_Dream": {
+					"Name": "Dried Blue Dream",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_Blue_Dream.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_Blue_Dream",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_Blue_Dream.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": 18,
+					"Price": 260,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_fall",
+						"season_summer",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Blue_Dream_Starter": {
+					"Name": "Blue Dream Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Blue_Dream_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Blue_Dream_Starter",
+					"Description": "{{i18n:PPJA.cannabiskit_Blue_Dream_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Joint_Blue_Dream": {
+					"Name": "Joint (Blue Dream)",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Joint_Blue_Dream.name}}",
+					"Texture": "PPJA.cannabiskit/Joint_Blue_Dream",
+					"Description": "{{i18n:PPJA.cannabiskit_Joint_Blue_Dream.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 30,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Blue Dream",
+							"Duration": 1200,
+							"IconTexture": "PPJA.cannabiskit/Blue_Dream",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 3,
+								"LuckLevel": 3,
+								"MaxStamina": 200,
+								"Speed": 0,
+							},
+						},
+					],
+					"Price": 450,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Cookies_and_Cream": {
+					"Name": "Cookies and Cream",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Cookies_and_Cream.name}}",
+					"Texture": "PPJA.cannabiskit/Cookies_and_Cream",
+					"Description": "{{i18n:PPJA.cannabiskit_Cookies_and_Cream.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 18,
+					"Price": 140,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_summer",
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Dried_Cookies_and_Cream": {
+					"Name": "Dried Cookies and Cream",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_Cookies_and_Cream.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_Cookies_and_Cream",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_Cookies_and_Cream.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": 18,
+					"Price": 260,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_fall",
+						"season_summer",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Cookies_and_Cream_Starter": {
+					"Name": "Cookies and Cream Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Cookies_and_Cream_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Cookies_and_Cream_Starter",
+					"Description": "{{i18n:PPJA.cannabiskit_Cookies_and_Cream_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Joint_Cookies_and_Cream": {
+					"Name": "Joint (Cookies and Cream)",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Joint_Cookies_and_Cream.name}}",
+					"Texture": "PPJA.cannabiskit/Joint_Cookies_and_Cream",
+					"Description": "{{i18n:PPJA.cannabiskit_Joint_Cookies_and_Cream.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 30,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Cookies and Cream",
+							"Duration": 1200,
+							"IconTexture": "PPJA.cannabiskit/Cookies_and_Cream",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 3,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 2,
+								"Speed": 2,
+							},
+						},
+					],
+					"Price": 450,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Green_Dream": {
+					"Name": "Green Dream",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Green_Dream.name}}",
+					"Texture": "PPJA.cannabiskit/Green_Dream",
+					"Description": "{{i18n:PPJA.cannabiskit_Green_Dream.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 18,
+					"Price": 150,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_summer",
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Dried_Green_Dream": {
+					"Name": "Dried Green Dream",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_Green_Dream.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_Green_Dream",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_Green_Dream.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": 18,
+					"Price": 290,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_fall",
+						"season_summer",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Green_Dream_Starter": {
+					"Name": "Green Dream Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Green_Dream_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Green_Dream_Starter",
+					"Description": "{{i18n:PPJA.cannabiskit_Green_Dream_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Joint_Green_Dream": {
+					"Name": "Joint (Green Dream)",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Joint_Green_Dream.name}}",
+					"Texture": "PPJA.cannabiskit/Joint_Green_Dream",
+					"Description": "{{i18n:PPJA.cannabiskit_Joint_Green_Dream.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 30,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Green Dream",
+							"Duration": 1200,
+							"IconTexture": "PPJA.cannabiskit/Green_Dream",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 3,
+								"ForagingLevel": 3,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 2,
+								"Speed": 0,
+							},
+						},
+					],
+					"Price": 450,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Purple_Haze": {
+					"Name": "Purple Haze",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Purple_Haze.name}}",
+					"Texture": "PPJA.cannabiskit/Purple_Haze",
+					"Description": "{{i18n:PPJA.cannabiskit_Purple_Haze.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 18,
+					"Price": 170,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_spring",
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Dried_Purple_Haze": {
+					"Name": "Dried Purple Haze",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_Purple_Haze.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_Purple_Haze",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_Purple_Haze.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": 18,
+					"Price": 300,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_fall",
+						"season_spring",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Purple_Haze_Starter": {
+					"Name": "Purple Haze Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Purple_Haze_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Purple_Haze_Starter",
+					"Description": "{{i18n:PPJA.cannabiskit_Purple_Haze_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Joint_Purple_Haze": {
+					"Name": "Joint (Purple Haze)",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Joint_Purple_Haze.name}}",
+					"Texture": "PPJA.cannabiskit/Joint_Purple_Haze",
+					"Description": "{{i18n:PPJA.cannabiskit_Joint_Purple_Haze.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 40,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Purple Haze",
+							"Duration": 1200,
+							"IconTexture": "PPJA.cannabiskit/Purple_Haze",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 2,
+								"FishingLevel": 2,
+								"LuckLevel": 5,
+								"MagnetRadius": 5,
+								"Defense": 2,
+								"Speed": 0,
+							},
+						},
+					],
+					"Price": 550,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Orange_Sherbert": {
+					"Name": "Orange Sherbert",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Orange_Sherbert.name}}",
+					"Texture": "PPJA.cannabiskit/Orange_Sherbert",
+					"Description": "{{i18n:PPJA.cannabiskit_Orange_Sherbert.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 18,
+					"Price": 170,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_summer",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Dried_Orange_Sherbert": {
+					"Name": "Dried Orange Sherbert",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_Orange_Sherbert.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_Orange_Sherbert",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_Orange_Sherbert.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": 18,
+					"Price": 300,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_summer",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Orange_Sherbert_Starter": {
+					"Name": "Orange Sherbert Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Orange_Sherbert_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Orange_Sherbert_Starter",
+					"Description": "{{i18n:PPJA.cannabiskit_Orange_Sherbert_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Joint_Orange_Sherbert": {
+					"Name": "Joint (Orange Sherbert)",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Joint_Orange_Sherbert.name}}",
+					"Texture": "PPJA.cannabiskit/Joint_Orange_Sherbert",
+					"Description": "{{i18n:PPJA.cannabiskit_Joint_Orange_Sherbert.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 40,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Orange Sherbert",
+							"Duration": 1200,
+							"IconTexture": "PPJA.cannabiskit/Orange_Sherbert",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 4,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 5,
+								"MaxStamina": 300,
+								"Speed": 2,
+							},
+						},
+					],
+					"Price": 550,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Northern_Lights": {
+					"Name": "Northern Lights",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Northern_Lights.name}}",
+					"Texture": "PPJA.cannabiskit/Northern_Lights",
+					"Description": "{{i18n:PPJA.cannabiskit_Northern_Lights.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 18,
+					"Price": 140,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_summer",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Dried_Northern_Lights": {
+					"Name": "Dried Northern Lights",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_Northern_Lights.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_Northern_Lights",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_Northern_Lights.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": 18,
+					"Price": 300,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_summer",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Northern_Lights_Starter": {
+					"Name": "Northern Lights Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Northern_Lights_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Northern_Lights_Starter",
+					"Description": "{{i18n:PPJA.cannabiskit_Northern_Lights_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Joint_Northern_Lights": {
+					"Name": "Joint (Northern Lights)",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Joint_Northern_Lights.name}}",
+					"Texture": "PPJA.cannabiskit/Joint_Northern_Lights",
+					"Description": "{{i18n:PPJA.cannabiskit_Joint_Northern_Lights.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 30,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Northern Lights",
+							"Duration": 1200,
+							"IconTexture": "PPJA.cannabiskit/Northern_Lights",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 4,
+								"Attack": 3,
+								"Speed": 1,
+							},
+						},
+					],
+					"Price": 450,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_OG_Kush": {
+					"Name": "OG Kush",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_OG_Kush.name}}",
+					"Texture": "PPJA.cannabiskit/OG_Kush",
+					"Description": "{{i18n:PPJA.cannabiskit_OG_Kush.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 18,
+					"Price": 140,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_summer",
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Dried_OG_Kush": {
+					"Name": "Dried OG Kush",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_OG_Kush.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_OG_Kush",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_OG_Kush.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": 18,
+					"Price": 300,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_summer",
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_OG_Kush_Starter": {
+					"Name": "OG Kush Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_OG_Kush_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/OG_Kush_Starter",
+					"Description": "{{i18n:PPJA.cannabiskit_OG_Kush_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Joint_OG_Kush": {
+					"Name": "Joint (OG Kush)",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Joint_OG_Kush.name}}",
+					"Texture": "PPJA.cannabiskit/Joint_OG_Kush",
+					"Description": "{{i18n:PPJA.cannabiskit_Joint_OG_Kush.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 30,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "OG Kush",
+							"Duration": 1200,
+							"IconTexture": "PPJA.cannabiskit/OG_Kush",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 3,
+								"FishingLevel": 0,
+								"LuckLevel": 2,
+								"MagnetRadius": 4,
+								"Attack": 0,
+								"Speed": 0,
+							},
+						},
+					],
+					"Price": 450,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Super_Silver": {
+					"Name": "Super Silver",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Super_Silver.name}}",
+					"Texture": "PPJA.cannabiskit/Super_Silver",
+					"Description": "{{i18n:PPJA.cannabiskit_Super_Silver.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 18,
+					"Price": 170,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Dried_Super_Silver": {
+					"Name": "Dried Super Silver",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_Super_Silver.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_Super_Silver",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_Super_Silver.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": 18,
+					"Price": 300,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Super_Silver_Starter": {
+					"Name": "Super Silver Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Super_Silver_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Super_Silver_Starter",
+					"Description": "{{i18n:PPJA.cannabiskit_Super_Silver_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Joint_Super_Silver": {
+					"Name": "Joint (Super Silver)",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Joint_Super_Silver.name}}",
+					"Texture": "PPJA.cannabiskit/Joint_Super_Silver",
+					"Description": "{{i18n:PPJA.cannabiskit_Joint_Super_Silver.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 40,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Super Silver",
+							"Duration": 1200,
+							"IconTexture": "PPJA.cannabiskit/Super_Silver",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 4,
+								"MiningLevel": 0,
+								"FishingLevel": 4,
+								"LuckLevel": 5,
+								"MagnetRadius": 0,
+								"Attack": 0,
+								"Speed": 0,
+							},
+						},
+					],
+					"Price": 550,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Sour_Diesel": {
+					"Name": "Sour Diesel",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Sour_Diesel.name}}",
+					"Texture": "PPJA.cannabiskit/Sour_Diesel",
+					"Description": "{{i18n:PPJA.cannabiskit_Sour_Diesel.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 18,
+					"Price": 140,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Dried_Sour_Diesel": {
+					"Name": "Dried Sour Diesel",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_Sour_Diesel.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_Sour_Diesel",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_Sour_Diesel.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": 18,
+					"Price": 280,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Sour_Diesel_Starter": {
+					"Name": "Sour Diesel Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Sour_Diesel_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Sour_Diesel_Starter",
+					"Description": "{{i18n:PPJA.cannabiskit_Sour_Diesel_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Joint_Sour_Diesel": {
+					"Name": "Joint (Sour Diesel)",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Joint_Sour_Diesel.name}}",
+					"Texture": "PPJA.cannabiskit/Joint_Sour_Diesel",
+					"Description": "{{i18n:PPJA.cannabiskit_Joint_Sour_Diesel.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 30,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Sour Diesel",
+							"Duration": 1200,
+							"IconTexture": "PPJA.cannabiskit/Sour_Diesel",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 2,
+								"MagnetRadius": 0,
+								"Attack": 4,
+								"Speed": 2,
+							},
+						},
+					],
+					"Price": 450,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Strawberry_Cough": {
+					"Name": "Strawberry Cough",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Strawberry_Cough.name}}",
+					"Texture": "PPJA.cannabiskit/Strawberry_Cough",
+					"Description": "{{i18n:PPJA.cannabiskit_Strawberry_Cough.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 18,
+					"Price": 140,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_spring",
+						"season_summer",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Dried_Strawberry_Cough": {
+					"Name": "Dried Strawberry Cough",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_Strawberry_Cough.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_Strawberry_Cough",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_Strawberry_Cough.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": 18,
+					"Price": 280,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_spring",
+						"season_summer",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Strawberry_Cough_Starter": {
+					"Name": "Strawberry Cough Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Strawberry_Cough_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Strawberry_Cough_Starter",
+					"Description": "{{i18n:PPJA.cannabiskit_Strawberry_Cough_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Joint_Strawberry_Cough": {
+					"Name": "Joint (Strawberry Cough)",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Joint_Strawberry_Cough.name}}",
+					"Texture": "PPJA.cannabiskit/Joint_Strawberry_Cough",
+					"Description": "{{i18n:PPJA.cannabiskit_Joint_Strawberry_Cough.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 30,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Strawberry Cough",
+							"Duration": 1200,
+							"IconTexture": "PPJA.cannabiskit/Strawberry_Cough",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 2,
+								"MagnetRadius": 0,
+								"MaxStamina": 300,
+								"Attack": 0,
+								"Defense": 3,
+								"Speed": 0,
+							},
+						},
+					],
+					"Price": 450,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_White_Widow": {
+					"Name": "White Widow",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_White_Widow.name}}",
+					"Texture": "PPJA.cannabiskit/White_Widow",
+					"Description": "{{i18n:PPJA.cannabiskit_White_Widow.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 18,
+					"Price": 180,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_spring",
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Dried_White_Widow": {
+					"Name": "Dried White Widow",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Dried_White_Widow.name}}",
+					"Texture": "PPJA.cannabiskit/Dried_White_Widow",
+					"Description": "{{i18n:PPJA.cannabiskit_Dried_White_Widow.description}}",
+					"Type": "Basic",
+					"Category": "-26",
+					"Edibility": 18,
+					"Price": 360,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_spring",
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_White_Widow_Starter": {
+					"Name": "White Widow Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_White_Widow_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/White_Widow_Starter",
+					"Description": "{{i18n:PPJA.cannabiskit_White_Widow_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_Joint_White_Widow": {
+					"Name": "Joint (White Widow)",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Joint_White_Widow.name}}",
+					"Texture": "PPJA.cannabiskit/Joint_White_Widow",
+					"Description": "{{i18n:PPJA.cannabiskit_Joint_White_Widow.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 40,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "White Widow",
+							"Duration": 1800,
+							"IconTexture": "PPJA.cannabiskit/White_Widow",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 5,
+								"MagnetRadius": 0,
+								"MaxStamina": 300,
+								"Attack": 3,
+								"Defense": 3,
+								"Speed": 2,
+							},
+						},
+					],
+					"Price": 550,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Hemp": {
+					"Name": "Hemp",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Hemp.name}}",
+					"Texture": "PPJA.cannabiskit/Hemp",
+					"Description": "{{i18n:PPJA.cannabiskit_Hemp.description}}",
+					"Type": "Basic",
+					"Category": "-80",
+					"Edibility": 9,
+					"Price": 120,
+					"IsColored": false,
+					"Recipe": null,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Penny", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+					"ContextTags": [
+						"season_spring",
+						"season_summer",
+						"season_fall",
+						"flower_item",
+						"flower_cannabinoid",
+						"trellis_item"
+					]
+				},
+				"PPJA.cannabiskit_Hemp_Starter": {
+					"Name": "Hemp Starter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Hemp_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Hemp_Starter",
+					"Description": "{{i18n:PPJA.cannabiskit_Hemp_Starter.description}}",
+					"Type": "Seeds",
+					"Category": -74,
+				},
+				"PPJA.cannabiskit_CBD_Oil": {
+					"Name": "CBD Oil",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_CBD_Oil.name}}",
+					"Texture": "PPJA.cannabiskit/CBD_Oil",
+					"Description": "{{i18n:PPJA.cannabiskit_CBD_Oil.description}}",
+					"Type": "Cooking",
+					"Category": "-7",
+					"Edibility": 28,
+					"IsDrink": true,
+					"Buffs": [
+						{
+							"Id": "CBD Oil",
+							"Duration": 1100,
+							"IconTexture": "PPJA.cannabiskit/CBD_Oil",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 2,
+								"Speed": 1,
+							},
+						},
+					],
+					"Price": 260,
+					"GiftTastes":
+						{
+							"Love": ["Harvey", "Kent"],
+							"Like": ["George"],
+							"Neutral": ["Krobus", "Evelyn", "Pierre", "Caroline", "Jodi", "Sam", "Sebastian", "Penny", "Pam", "Abigail", "Elliott", "Willy"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Canna_Butter": {
+					"Name": "Canna-Butter",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Canna_Butter.name}}",
+					"Texture": "PPJA.cannabiskit/Canna_Butter",
+					"Description": "{{i18n:PPJA.cannabiskit_Canna_Butter.description}}",
+					"Type": "Cooking",
+					"Category": "-7",
+					"Edibility": 28,
+					"IsDrink": true,
+					"Buffs": [
+						{
+							"Id": "Canna-Butter",
+							"Duration": 1100,
+							"IconTexture": "PPJA.cannabiskit/Canna_Butter",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 2,
+								"Speed": 0,
+							},
+						},
+					],
+					"Price": 220,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Elliot", "Leah", "Penny", "Gus", "Willy", "Evelyn", "Pierre", "Abigail"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_CBD_Elixir": {
+					"Name": "CBD Elixir",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_CBD_Elixir.name}}",
+					"Texture": "PPJA.cannabiskit/CBD_Elixir",
+					"Description": "{{i18n:PPJA.cannabiskit_CBD_Elixir.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 280,
+					"IsDrink": true,
+					"Price": 500,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Kent", "Sam", "Penny", "Harvey"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Elliott", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Mind_Tonic": {
+					"Name": "Mind Tonic",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Mind_Tonic.name}}",
+					"Texture": "PPJA.cannabiskit/Mind_Tonic",
+					"Description": "{{i18n:PPJA.cannabiskit_Mind_Tonic.description}}",
+					"Type": "Cooking",
+					"Category": "-7",
+					"Edibility": 125,
+					"IsDrink": true,
+					"Buffs": [
+						{
+							"Id": "Mind Tonic",
+							"Duration": 1800,
+							"IconTexture": "PPJA.cannabiskit/Mind_Tonic",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 4,
+								"ForagingLevel": 4,
+								"MiningLevel": 4,
+								"FishingLevel": 4,
+								"LuckLevel": 4,
+								"Speed": 1,
+							},
+						},
+					],
+					"Price": 2000,
+					"GiftTastes":
+						{
+							"Love": ["Harvey", "Kent"],
+							"Neutral": ["Krobus", "Evelyn", "Pierre", "Caroline", "Jodi", "Sam", "Sebastian", "Penny", "Pam", "Abigail", "Elliott", "Willy", "George"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Honey_Stick": {
+					"Name": "Honey Stick",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Honey_Stick.name}}",
+					"Texture": "PPJA.cannabiskit/Honey_Stick",
+					"Description": "{{i18n:PPJA.cannabiskit_Honey_Stick.description}}",
+					"Type": "Cooking",
+					"Category": "-7",
+					"Edibility": 38,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Honey Stick",
+							"Duration": 840,
+							"IconTexture": "PPJA.cannabiskit/Honey_Stick",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 3,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 3,
+								"Speed": 1,
+							},
+						},
+					],
+					"Price": 220,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail", "Haley", "Emily", "Shane", "Alex", "Harvey"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Pot_Brownie": {
+					"Name": "Pot Brownie",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Pot_Brownie.name}}",
+					"Texture": "PPJA.cannabiskit/Pot_Brownie",
+					"Description": "{{i18n:PPJA.cannabiskit_Pot_Brownie.description}}",
+					"Type": "Cooking",
+					"Category": "-7",
+					"Edibility": 55,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Pot Brownie",
+							"Duration": 1800,
+							"IconTexture": "PPJA.cannabiskit/Pot_Brownie",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 3,
+								"Speed": 2,
+							},
+						},
+					],
+					"Price": 500,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Honey_Nibs": {
+					"Name": "Honey Nibs",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Honey_Nibs.name}}",
+					"Texture": "PPJA.cannabiskit/Honey_Nibs",
+					"Description": "{{i18n:PPJA.cannabiskit_Honey_Nibs.description}}",
+					"Type": "Crafting",
+					"Category": "-26",
+					"Edibility": 38,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Honey Nibs",
+							"Duration": 450,
+							"IconTexture": "PPJA.cannabiskit/Honey_Nibs",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 1,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 1,
+								"Speed": 1,
+							},
+						},
+					],
+					"Price": 100,
+					"GiftTastes":
+						{
+							"Love": ["Harvey", "Kent"],
+							"Neutral": ["Krobus", "Evelyn", "Pierre", "Caroline", "Jodi", "Sam", "Sebastian", "Penny", "Pam", "Abigail", "Elliott", "Willy", "George"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Canna_Tea": {
+					"Name": "Canna-Tea",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Canna_Tea.name}}",
+					"Texture": "PPJA.cannabiskit/Canna_Tea",
+					"Description": "{{i18n:PPJA.cannabiskit_Canna_Tea.description}}",
+					"Type": "Cooking",
+					"Category": "-7",
+					"Edibility": 55,
+					"IsDrink": true,
+					"Buffs": [
+						{
+							"Id": "Canna-Tea",
+							"Duration": 1800,
+							"IconTexture": "PPJA.cannabiskit/Canna_Tea",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 3,
+								"Speed": 2,
+							},
+						},
+					],
+					"Price": 500,
+					"GiftTastes":
+						{
+							"Love": ["Sebastian", "Sam", "Abigail", "Penny"],
+							"Neutral": ["Robin", "Demetrius", "Pierre", "Pam", "Kent", "Elliott", "Harvey", "Willy", "Lewis", "Clint"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_CBD_Punch": {
+					"Name": "CBD-Punch",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_CBD_Punch.name}}",
+					"Texture": "PPJA.cannabiskit/CBD_Punch",
+					"Description": "{{i18n:PPJA.cannabiskit_CBD_Punch.description}}",
+					"Type": "Cooking",
+					"Category": "-7",
+					"Edibility": 48,
+					"IsDrink": true,
+					"Buffs": [
+						{
+							"Id": "CBD-Punch",
+							"Duration": 1850,
+							"IconTexture": "PPJA.cannabiskit/CBD_Punch",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 0,
+								"FishingLevel": 0,
+								"LuckLevel": 5,
+								"Speed": 5,
+							},
+						},
+					],
+					"Price": 500,
+					"GiftTastes":
+						{
+							"Love": ["Harvey", "Kent"],
+							"Neutral": ["Krobus", "Evelyn", "Pierre", "Caroline", "Jodi", "Sam", "Sebastian", "Penny", "Pam", "Abigail", "Elliott", "Willy", "George"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				},
+				"PPJA.cannabiskit_Moonrocks": {
+					"Name": "Moonrocks",
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Moonrocks.name}}",
+					"Texture": "PPJA.cannabiskit/Moonrocks",
+					"Description": "{{i18n:PPJA.cannabiskit_Moonrocks.description}}",
+					"Type": "Crafting",
+					"Category": "-8",
+					"Edibility": 48,
+					"IsDrink": false,
+					"Buffs": [
+						{
+							"Id": "Moonrocks",
+							"Duration": 1200,
+							"IconTexture": "PPJA.cannabiskit/Moonrocks",
+							"BuffId": null,
+							"CustomAttributes": {
+								"FarmingLevel": 0,
+								"ForagingLevel": 0,
+								"MiningLevel": 3,
+								"FishingLevel": 0,
+								"LuckLevel": 2,
+								"MaxStamina": 80,
+								"MagnetRadius": 4,
+								"Speed": 2,
+							},
+						},
+					],
+					"Price": 500,
+					"GiftTastes":
+						{
+							"Love": ["Harvey", "Kent"],
+							"Like": ["Krobus", "Evelyn", "Pierre", "Caroline", "Jodi", "Sam", "Sebastian", "Penny", "Pam", "Abigail", "Elliott", "Willy", "George"],
+							"Hate": ["Jas", "Vincent"],
+						},
+				}
+			}
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "PPJA.cannabiskit_Rolling_Machine": {
+                    "Name": "Rolling Machine",
+                    "DisplayName": "{{i18n:PPJA.cannabiskit_Rolling_Machine.name}}",
+                    "Description": "{{i18n:PPJA.cannabiskit_Rolling_Machine.description}}",
+                    "Price": 500,
+                    "Texture": "PPJA.cannabiskit/Rolling_Machine",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+		
+		{
+			"LogName": "Add Crops",
+			"Action": "EditData",
+			"Target": "Data/Crops",
+			"Entries": {
+				"PPJA.cannabiskit_Cannabis_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Cannabis_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Cannabis_Starter_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_Shit_Weed",
+					"Type": "Flower",
+					"Seasons": ["spring", "summer", "fall"],
+					"DaysInPhase": [1, 3, 4, 4, 4],
+					"RegrowDays": 3,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 2,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.1,
+				},
+				"PPJA.cannabiskit_Tobacco_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Tobacco_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Tobacco_Starter_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_Tobacco",
+					"Type": "Flower",
+					"Seasons": ["spring", "summer"],
+					"DaysInPhase": [1, 2, 2, 2],
+					"RegrowDays": -1,
+					"HarvestWithScythe": false,
+					"TrellisCrop": false,
+					"Colors": null,
+					"HarvestMinStack": 2,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.1,
+				},
+				"PPJA.cannabiskit_Blue_Dream_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Blue_Dream_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Blue_Dream_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_Blue_Dream",
+					"Type": "Flower",
+					"Seasons": ["fall", "summer"],
+					"DaysInPhase": [2, 3, 4, 4, 3],
+					"RegrowDays": 3,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 3,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.1,
+				},
+				"PPJA.cannabiskit_Cookies_and_Cream_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Cookies_and_Cream_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Cookies_and_Cream_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_Cookies_and_Cream",
+					"Type": "Flower",
+					"Seasons": ["fall", "summer"],
+					"DaysInPhase": [2, 3, 4, 4, 3],
+					"RegrowDays": 3,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 3,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.1,
+				},
+				"PPJA.cannabiskit_Green_Dream_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Green_Dream_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Green_Dream_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_Green_Dream",
+					"Type": "Flower",
+					"Seasons": ["fall", "summer"],
+					"DaysInPhase": [2, 3, 4, 4, 3],
+					"RegrowDays": 3,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 3,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.2,
+				},
+				"PPJA.cannabiskit_Purple_Haze_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Purple_Haze_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Purple_Haze_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_Purple_Haze",
+					"Type": "Flower",
+					"Seasons": ["fall", "spring"],
+					"DaysInPhase": [2, 3, 4, 4, 3],
+					"RegrowDays": 3,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 3,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.2,
+				},
+				"PPJA.cannabiskit_Orange_Sherbert_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Orange_Sherbert_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Orange_Sherbert_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_Orange_Sherbert",
+					"Type": "Flower",
+					"Seasons": ["summer"],
+					"DaysInPhase": [2, 3, 4, 4, 3],
+					"RegrowDays": 3,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 3,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.2,
+				},
+				"PPJA.cannabiskit_Northern_Lights_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Northern_Lights_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Northern_Lights_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_Northern_Lights",
+					"Type": "Flower",
+					"Seasons": ["summer"],
+					"DaysInPhase": [1, 2, 3, 4, 3],
+					"RegrowDays": 3,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 3,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.1,
+				},
+				"PPJA.cannabiskit_OG_Kush_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_OG_Kush_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/OG_Kush_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_OG_Kush",
+					"Type": "Flower",
+					"Seasons": ["summer", "fall"],
+					"DaysInPhase": [2, 3, 4, 4, 3],
+					"RegrowDays": 3,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 3,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.1,
+				},
+				"PPJA.cannabiskit_Super_Silver_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Super_Silver_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Super_Silver_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_Super_Silver",
+					"Type": "Flower",
+					"Seasons": ["fall"],
+					"DaysInPhase": [1, 3, 4, 4, 4],
+					"RegrowDays": 3,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 3,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.2,
+				},
+				"PPJA.cannabiskit_Sour_Diesel_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Sour_Diesel_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Sour_Diesel_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_Sour_Diesel",
+					"Type": "Flower",
+					"Seasons": ["fall"],
+					"DaysInPhase": [1, 3, 4, 4, 3],
+					"RegrowDays": 3,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 3,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.1,
+				},
+				"PPJA.cannabiskit_Strawberry_Cough_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Strawberry_Cough_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Strawberry_Cough_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_Strawberry_Cough",
+					"Type": "Flower",
+					"Seasons": ["summer", "spring"],
+					"DaysInPhase": [2, 3, 4, 5, 3],
+					"RegrowDays": 3,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 3,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.1,
+				},
+				"PPJA.cannabiskit_White_Widow_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_White_Widow_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/White_Widow_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_White_Widow",
+					"Type": "Flower",
+					"Seasons": ["fall", "spring"],
+					"DaysInPhase": [2, 5, 5, 3, 2],
+					"RegrowDays": 4,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 3,
+					"HarvestMaxStack": 5,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.1,
+				},
+				"PPJA.cannabiskit_Hemp_Starter": {
+					"DisplayName": "{{i18n:PPJA.cannabiskit_Hemp_Starter.name}}",
+					"Texture": "PPJA.cannabiskit/Hemp_Crop",
+					"HarvestItemID": "PPJA.cannabiskit_Hemp",
+					"Type": "Flower",
+					"Seasons": ["fall", "summer", "spring"],
+					"DaysInPhase": [1, 2, 3, 2, 2],
+					"RegrowDays": 3,
+					"HarvestWithScythe": false,
+					"TrellisCrop": true,
+					"Colors": null,
+					"HarvestMinStack": 2,
+					"HarvestMaxStack": 6,
+					"HarvestMaxIncreasePerFarmLevel": 5,
+					"ExtraHarvestChance": 0.2,
+				}
+			}
+		},
+		
+		{
+			"LogName": "Add Shop items",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["SeedShop", "Items"],
+			"Entries": {
+				"PPJA.cannabiskit_Cannabis_Starter": {
+					"Id": "PPJA.cannabiskit_Cannabis_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_Cannabis_Starter",
+					"Condition": null,
+					"Price": 40
+				},
+				"PPJA.cannabiskit_Tobacco_Starter": {
+					"Id": "PPJA.cannabiskit_Tobacco_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_Tobacco_Starter",
+					"Condition": null,
+					"Price": 30
+				},
+				"PPJA.cannabiskit_Blue_Dream_Starter": {
+					"Id": "PPJA.cannabiskit_Blue_Dream_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_Blue_Dream_Starter",
+					"Condition": "SEASON summer fall",
+					"Price": 50
+				},
+				"PPJA.cannabiskit_Cookies_and_Cream_Starter": {
+					"Id": "PPJA.cannabiskit_Cookies_and_Cream_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_Cookies_and_Cream_Starter",
+					"Condition": "SEASON summer fall",
+					"Price": 50
+				},
+				"PPJA.cannabiskit_Green_Dream_Starter": {
+					"Id": "PPJA.cannabiskit_Green_Dream_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_Green_Dream_Starter",
+					"Condition": "SEASON summer fall",
+					"Price": 60
+				},
+				"PPJA.cannabiskit_Purple_Haze_Starter": {
+					"Id": "PPJA.cannabiskit_Purple_Haze_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_Purple_Haze_Starter",
+					"Condition": "SEASON spring fall",
+					"Price": 75
+				},
+				"PPJA.cannabiskit_Orange_Sherbert_Starter": {
+					"Id": "PPJA.cannabiskit_Orange_Sherbert_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_Orange_Sherbert_Starter",
+					"Condition": "SEASON summer",
+					"Price": 75
+				},
+				"PPJA.cannabiskit_Northern_Lights_Starter": {
+					"Id": "PPJA.cannabiskit_Northern_Lights_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_Northern_Lights_Starter",
+					"Condition": "SEASON summer",
+					"Price": 50
+				},
+				"PPJA.cannabiskit_OG_Kush_Starter": {
+					"Id": "PPJA.cannabiskit_OG_Kush_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_OG_Kush_Starter",
+					"Condition": "SEASON summer fall",
+					"Price": 50
+				},
+				"PPJA.cannabiskit_Super_Silver_Starter": {
+					"Id": "PPJA.cannabiskit_Super_Silver_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_Super_Silver_Starter",
+					"Condition": "SEASON fall",
+					"Price": 75
+				},
+				"PPJA.cannabiskit_Sour_Diesel_Starter": {
+					"Id": "PPJA.cannabiskit_Sour_Diesel_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_Sour_Diesel_Starter",
+					"Condition": "SEASON fall",
+					"Price": 50
+				},
+				"PPJA.cannabiskit_Strawberry_Cough_Starter": {
+					"Id": "PPJA.cannabiskit_Strawberry_Cough_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_Strawberry_Cough_Starter",
+					"Condition": "SEASON spring summer",
+					"Price": 60
+				},
+				"PPJA.cannabiskit_White_Widow_Starter": {
+					"Id": "PPJA.cannabiskit_White_Widow_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_White_Widow_Starter",
+					"Condition": "SEASON fall spring",
+					"Price": 100
+				},
+				"PPJA.cannabiskit_Hemp_Starter": {
+					"Id": "PPJA.cannabiskit_Hemp_Starter",
+					"ItemId": "(O)PPJA.cannabiskit_Hemp_Starter",
+					"Condition": "SEASON fall summer spring",
+					"Price": 50
+				},
+				"PPJA.cannabiskit_Dried_Tobacco": {
+					"Id": "PPJA.cannabiskit_Dried_Tobacco",
+					"ItemId": "(O)PPJA.cannabiskit_Dried_Tobacco",
+					"Condition": null,
+					"Price": 140
+				},
+				"PPJA.cannabiskit_Cigarette": {
+					"Id": "PPJA.cannabiskit_Cigarette",
+					"ItemId": "(O)PPJA.cannabiskit_Cigarette",
+					"Condition": null,
+					"Price": 200
+				}
+			}
+		},
+		{
+			"LogName": "Add Shop items",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Hospital", "Items"],
+			"Entries": {
+			"PPJA.cannabiskit_Joint_Shit_Weed": {
+				"Id": "PPJA.cannabiskit_Joint_Shit_Weed",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Shit_Weed",
+				"Condition": null,
+				"Price": 650
+				},
+			"PPJA.cannabiskit_Joint_Shit_Weed_Recipe": {
+				"Id": "PPJA.cannabiskit_Joint_Shit_Weed_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Shit_Weed",
+				"ObjectInternalName": "PPJA.cannabiskit_Joint_Shit_Weed",
+				"Condition": null,
+				"IsRecipe": true,
+				"Price": 1000
+				},
+			"PPJA.cannabiskit_Joint_Blue_Dream": {
+				"Id": "PPJA.cannabiskit_Joint_Blue_Dream",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Blue_Dream",
+				"Condition": "SEASON summer fall",
+				"Price": 850
+				},
+			"PPJA.cannabiskit_Joint_Blue_Dream_Recipe": {
+				"Id": "PPJA.cannabiskit_Joint_Blue_Dream_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Blue_Dream",
+				"ObjectInternalName": "PPJA.cannabiskit_Joint_Blue_Dream",
+				"Condition": "SEASON summer fall",
+				"IsRecipe": true,
+				"Price": 1500
+				},
+			"PPJA.cannabiskit_Joint_Cookies_and_Cream": {
+				"Id": "PPJA.cannabiskit_Joint_Cookies_and_Cream",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Cookies_and_Cream",
+				"Condition": "SEASON summer fall",
+				"Price": 850
+				},
+			"PPJA.cannabiskit_Joint_Cookies_and_Cream_Recipe": {
+				"Id": "PPJA.cannabiskit_Joint_Cookies_and_Cream_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Cookies_and_Cream",
+				"ObjectInternalName": "PPJA.cannabiskit_Joint_Cookies_and_Cream",
+				"Condition": "SEASON summer fall",
+				"IsRecipe": true,
+				"Price": 1500
+				},
+			"PPJA.cannabiskit_Joint_Green_Dream": {
+				"Id": "PPJA.cannabiskit_Joint_Green_Dream",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Green_Dream",
+				"Condition": "SEASON summer fall",
+				"Price": 850
+				},
+			"PPJA.cannabiskit_Joint_Green_Dream_Recipe": {
+				"Id": "PPJA.cannabiskit_Joint_Green_Dream_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Green_Dream",
+				"ObjectInternalName": "PPJA.cannabiskit_Joint_Green_Dream",
+				"Condition": "SEASON summer fall",
+				"IsRecipe": true,
+				"Price": 1500
+				},
+			"PPJA.cannabiskit_Joint_Purple_Haze": {
+				"Id": "PPJA.cannabiskit_Joint_Purple_Haze",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Purple_Haze",
+				"Condition": "SEASON spring fall",
+				"Price": 950
+				},
+			"PPJA.cannabiskit_Joint_Purple_Haze_Recipe": {
+				"Id": "PPJA.cannabiskit_Joint_Purple_Haze_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Purple_Haze",
+				"ObjectInternalName": "PPJA.cannabiskit_Joint_Purple_Haze",
+				"Condition": "SEASON spring fall",
+				"IsRecipe": true,
+				"Price": 1500
+				},
+			"PPJA.cannabiskit_Joint_Orange_Sherbert": {
+				"Id": "PPJA.cannabiskit_Joint_Orange_Sherbert",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Orange_Sherbert",
+				"Condition": "SEASON summer",
+				"Price": 950
+				},
+			"PPJA.cannabiskit_Joint_Orange_Sherbert_Recipe": {
+				"Id": "PPJA.cannabiskit_Joint_Orange_Sherbert_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Orange_Sherbert",
+				"ObjectInternalName": "PPJA.cannabiskit_Joint_Orange_Sherbert",
+				"Condition": "SEASON summer",
+				"IsRecipe": true,
+				"Price": 1500
+				},
+			"PPJA.cannabiskit_Joint_Northern_Lights": {
+				"Id": "PPJA.cannabiskit_Joint_Northern_Lights",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Northern_Lights",
+				"Condition": "SEASON summer",
+				"Price": 850
+				},
+			"PPJA.cannabiskit_Joint_Northern_Lights_Recipe": {
+				"Id": "PPJA.cannabiskit_Joint_Northern_Lights_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Northern_Lights",
+				"ObjectInternalName": "PPJA.cannabiskit_Joint_Northern_Lights",
+				"Condition": "SEASON summer",
+				"IsRecipe": true,
+				"Price": 1500
+				},
+			"PPJA.cannabiskit_Joint_OG_Kush": {
+				"Id": "PPJA.cannabiskit_Joint_OG_Kush",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_OG_Kush",
+				"Condition": "SEASON summer fall",
+				"Price": 850
+				},
+			"PPJA.cannabiskit_Joint_OG_Kush_Recipe": {
+				"Id": "PPJA.cannabiskit_Joint_OG_Kush_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_OG_Kush",
+				"ObjectInternalName": "PPJA.cannabiskit_Joint_OG_Kush",
+				"Condition": "SEASON summer fall",
+				"IsRecipe": true,
+				"Price": 1500
+				},
+			"PPJA.cannabiskit_Joint_Super_Silver": {
+				"Id": "PPJA.cannabiskit_Joint_Super_Silver",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Super_Silver",
+				"Condition": "SEASON fall",
+				"Price": 950
+				},
+			"PPJA.cannabiskit_Joint_Super_Silver_Recipe": {
+				"Id": "PPJA.cannabiskit_Joint_Super_Silver_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Super_Silver",
+				"ObjectInternalName": "PPJA.cannabiskit_Joint_Super_Silver",
+				"Condition": "SEASON fall",
+				"IsRecipe": true,
+				"Price": 1500
+				},
+			"PPJA.cannabiskit_Joint_Sour_Diesel": {
+				"Id": "PPJA.cannabiskit_Joint_Sour_Diesel",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Sour_Diesel",
+				"Condition": "SEASON fall",
+				"Price": 850
+				},
+			"PPJA.cannabiskit_Joint_Sour_Diesel_Recipe": {
+				"Id": "PPJA.cannabiskit_Joint_Sour_Diesel_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Sour_Diesel",
+				"ObjectInternalName": "PPJA.cannabiskit_Joint_Sour_Diesel",
+				"Condition": "SEASON fall",
+				"IsRecipe": true,
+				"Price": 1500
+				},
+			"PPJA.cannabiskit_Joint_Strawberry_Cough": {
+				"Id": "PPJA.cannabiskit_Joint_Strawberry_Cough",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Strawberry_Cough",
+				"Condition": "SEASON spring summer",
+				"Price": 850
+				},
+			"PPJA.cannabiskit_Joint_Strawberry_Cough_Recipe": {
+				"Id": "PPJA.cannabiskit_Joint_Strawberry_Cough_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_Strawberry_Cough",
+				"ObjectInternalName": "PPJA.cannabiskit_Joint_Strawberry_Cough",
+				"Condition": "SEASON spring summer",
+				"IsRecipe": true,
+				"Price": 1500
+				},
+			"PPJA.cannabiskit_Joint_White_Widow": {
+				"Id": "PPJA.cannabiskit_Joint_White_Widow",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_White_Widow",
+				"Condition": "SEASON spring fall",
+				"Price": 950
+				},
+			"PPJA.cannabiskit_Joint_White_Widow_Recipe": {
+				"Id": "PPJA.cannabiskit_Joint_White_Widow_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Joint_White_Widow",
+				"ObjectInternalName": "PPJA.cannabiskit_Joint_White_Widow",
+				"Condition": "SEASON spring fall",
+				"IsRecipe": true,
+				"Price": 1500
+				},
+			"PPJA.cannabiskit_CBD_Oil": {
+				"Id": "PPJA.cannabiskit_CBD_Oil",
+				"ItemId": "(O)PPJA.cannabiskit_CBD_Oil",
+				"Condition": null,
+				"Price": 750
+				},
+			"PPJA.cannabiskit_CBD_Oil_Recipe": {
+				"Id": "PPJA.cannabiskit_CBD_Oil_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_CBD_Oil",
+				"ObjectInternalName": "PPJA.cannabiskit_CBD_Oil",
+				"Condition": "PLAYER_FARMING_LEVEL Current 3",
+				"IsRecipe": true,
+				"Price": 10000
+				},
+			"PPJA.cannabiskit_CBD_Elixir": {
+				"Id": "PPJA.cannabiskit_CBD_Elixir",
+				"ItemId": "(O)PPJA.cannabiskit_CBD_Elixir",
+				"Condition": null,
+				"Price": 1000
+				},
+			"PPJA.cannabiskit_CBD_Elixir_Recipe": {
+				"Id": "PPJA.cannabiskit_CBD_Elixir_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_CBD_Elixir",
+				"ObjectInternalName": "PPJA.cannabiskit_CBD_Elixir",
+				"Condition": "PLAYER_COMBAT_LEVEL Current 3",
+				"IsRecipe": true,
+				"Price": 20000
+				},
+			"PPJA.cannabiskit_Mind_Tonic": {
+				"Id": "PPJA.cannabiskit_Mind_Tonic",
+				"ItemId": "(O)PPJA.cannabiskit_Mind_Tonic",
+				"Condition": null,
+				"Price": 3000
+				},
+			"PPJA.cannabiskit_Mind_Tonic_Recipe": {
+				"Id": "PPJA.cannabiskit_Mind_Tonic_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Mind_Tonic",
+				"ObjectInternalName": "PPJA.cannabiskit_Mind_Tonic",
+				"Condition": "PLAYER_COMBAT_LEVEL Current 6",
+				"IsRecipe": true,
+				"Price": 30000
+				}
+			}
+		},
+		{
+			"LogName": "Add Shop items",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Saloon", "Items"],
+			"Entries": {
+			"PPJA.cannabiskit_Canna_Butter": {
+				"Id": "PPJA.cannabiskit_Canna_Butter",
+				"ItemId": "(O)PPJA.cannabiskit_Canna_Butter",
+				"Condition": null,
+				"Price": 750
+				},
+			"PPJA.cannabiskit_Canna_Butter_Recipe": {
+				"Id": "PPJA.cannabiskit_Canna_Butter_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Canna_Butter",
+				"ObjectInternalName": "PPJA.cannabiskit_Canna_Butter",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS Current Gus 1000",
+				"IsRecipe": true,
+				"Price": 1500
+				},
+			"PPJA.cannabiskit_Honey_Stick": {
+				"Id": "PPJA.cannabiskit_Honey_Stick",
+				"ItemId": "(O)PPJA.cannabiskit_Honey_Stick",
+				"Condition": null,
+				"Price": 750
+				},
+			"PPJA.cannabiskit_Honey_Nibs": {
+				"Id": "PPJA.cannabiskit_Honey_Nibs",
+				"ItemId": "(O)PPJA.cannabiskit_Honey_Nibs",
+				"Condition": null,
+				"Price": 420
+				},
+			"PPJA.cannabiskit_Honey_Stick_Recipe": {
+				"Id": "PPJA.cannabiskit_Honey_Stick_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Honey_Stick",
+				"ObjectInternalName": "PPJA.cannabiskit_Honey_Stick",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS Current Gus 1000",
+				"IsRecipe": true,
+				"Price": 2500
+				},
+			"PPJA.cannabiskit_Pot_Brownie": {
+				"Id": "PPJA.cannabiskit_Pot_Brownie",
+				"ItemId": "(O)PPJA.cannabiskit_Pot_Brownie",
+				"Condition": null,
+				"Price": 840
+				},
+			"PPJA.cannabiskit_Pot_Brownie_Recipe": {
+				"Id": "PPJA.cannabiskit_Pot_Brownie_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Pot_Brownie",
+				"ObjectInternalName": "PPJA.cannabiskit_Pot_Brownie",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS Current Gus 1500",
+				"IsRecipe": true,
+				"Price": 3000
+				},
+			"PPJA.cannabiskit_Canna_Tea": {
+				"Id": "PPJA.cannabiskit_Canna_Tea",
+				"ItemId": "(O)PPJA.cannabiskit_Canna_Tea",
+				"Condition": null,
+				"Price": 840
+				},
+			"PPJA.cannabiskit_Canna_Tea_Recipe": {
+				"Id": "PPJA.cannabiskit_Canna_Tea_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_Canna_Tea",
+				"ObjectInternalName": "PPJA.cannabiskit_Canna_Tea",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS Current Gus 1500",
+				"IsRecipe": true,
+				"Price": 3000
+				},
+			"PPJA.cannabiskit_CBD_Punch": {
+				"Id": "PPJA.cannabiskit_CBD_Punch",
+				"ItemId": "(O)PPJA.cannabiskit_CBD_Punch",
+				"Condition": null,
+				"Price": 1200
+				},
+			"PPJA.cannabiskit_CBD_Punch_Recipe": {
+				"Id": "PPJA.cannabiskit_CBD_Punch_Recipe",
+				"ItemId": "(O)PPJA.cannabiskit_CBD_Punch",
+				"ObjectInternalName": "PPJA.cannabiskit_CBD_Punch",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS Current Gus 1750",
+				"IsRecipe": true,
+				"Price": 20000
+				}
+			}
+		},
+		{
+			"LogName": "Add Shop items",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["ShadowShop", "Items"],
+			"Entries": {
+				"PPJA.cannabiskit_Moonrocks": {
+					"Id": "PPJA.cannabiskit_Moonrocks",
+					"ItemId": "(O)PPJA.cannabiskit_Moonrocks",
+					"Condition": null,
+					"Price": 600
+				},
+				"PPJA.cannabiskit_Moonrocks_Recipe": {
+					"Id": "PPJA.cannabiskit_Moonrocks_Recipe",
+					"ItemId": "(O)PPJA.cannabiskit_Moonrocks",
+					"ObjectInternalName": "PPJA.cannabiskit_Moonrocks",
+					"IsRecipe": true,
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Krobus 1000",
+					"Price": 2500
+				}
+			}
+		},
+		
+		{       
+			"Action": "EditData",
+			"LogName": "Craftables",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+			"PPJA.cannabiskit_Joint_Shit_Weed": "PPJA.cannabiskit_Dried_Tobacco 1 PPJA.cannabiskit_Dried_Shit_Weed 2/Field/PPJA.cannabiskit_Joint_Shit_Weed 1/false/null/",
+			"PPJA.cannabiskit_Joint_Blue_Dream": "PPJA.cannabiskit_Dried_Tobacco 1 PPJA.cannabiskit_Dried_Blue_Dream 1/Field/PPJA.cannabiskit_Joint_Blue_Dream 1/false/null/",
+			"PPJA.cannabiskit_Joint_Cookies_and_Cream": "PPJA.cannabiskit_Dried_Tobacco 1 PPJA.cannabiskit_Dried_Cookies_and_Cream 1/Field/PPJA.cannabiskit_Joint_Cookies_and_Cream 1/false/null/",
+			"PPJA.cannabiskit_Joint_Green_Dream": "PPJA.cannabiskit_Dried_Tobacco 1 PPJA.cannabiskit_Dried_Green_Dream 1/Field/PPJA.cannabiskit_Joint_Green_Dream 1/false/null/",
+			"PPJA.cannabiskit_Joint_Purple_Haze": "PPJA.cannabiskit_Dried_Tobacco 1 PPJA.cannabiskit_Dried_Purple_Haze 1/Field/PPJA.cannabiskit_Joint_Purple_Haze 1/false/null/",
+			"PPJA.cannabiskit_Joint_Orange_Sherbert": "PPJA.cannabiskit_Dried_Tobacco 1 PPJA.cannabiskit_Dried_Orange_Sherbert 1/Field/PPJA.cannabiskit_Joint_Orange_Sherbert 1/false/null/",
+			"PPJA.cannabiskit_Joint_Northern_Lights": "PPJA.cannabiskit_Dried_Tobacco 1 PPJA.cannabiskit_Dried_Northern_Lights 1/Field/PPJA.cannabiskit_Joint_Northern_Lights 1/false/null/",
+			"PPJA.cannabiskit_Joint_OG_Kush": "PPJA.cannabiskit_Dried_Tobacco 1 PPJA.cannabiskit_Dried_OG_Kush 1/Field/PPJA.cannabiskit_Joint_OG_Kush 1/false/null/",
+			"PPJA.cannabiskit_Joint_Super_Silver": "PPJA.cannabiskit_Dried_Tobacco 1 PPJA.cannabiskit_Dried_Super_Silver 1/Field/PPJA.cannabiskit_Joint_Super_Silver 1/false/null/",
+			"PPJA.cannabiskit_Joint_Sour_Diesel": "PPJA.cannabiskit_Dried_Tobacco 1 PPJA.cannabiskit_Dried_Sour_Diesel 1/Field/PPJA.cannabiskit_Joint_Sour_Diesel 1/false/null/",
+			"PPJA.cannabiskit_Joint_Strawberry_Cough": "PPJA.cannabiskit_Dried_Tobacco 1 PPJA.cannabiskit_Dried_Strawberry_Cough 1/Field/PPJA.cannabiskit_Joint_Strawberry_Cough 1/false/null/",
+			"PPJA.cannabiskit_Joint_White_Widow": "PPJA.cannabiskit_Dried_Tobacco 1 PPJA.cannabiskit_Dried_White_Widow 1/Field/PPJA.cannabiskit_Joint_White_Widow 1/false/null/",
+			"PPJA.cannabiskit_Cigarette": "PPJA.cannabiskit_Dried_Tobacco 1 /Field/PPJA.cannabiskit_Cigarette 1/false/default/",
+			"PPJA.cannabiskit_CBD_Elixir": "420 1 340 1 PPJA.cannabiskit_CBD_Oil 1/Field/PPJA.cannabiskit_CBD_Elixir 3/false/null/",
+			"PPJA.cannabiskit_Honey_Nibs": "PPJA.cannabiskit_Honey_Stick 1 /Field/PPJA.cannabiskit_Honey_Nibs 3/false/default/",
+			"PPJA.cannabiskit_Moonrocks": "245 1 566 1 PPJA.cannabiskit_Dried_Shit_Weed 2/Field/PPJA.cannabiskit_Moonrocks 2/false/null/",
+			"PPJA.cannabiskit_Rolling_Machine": "787 1 388 25 335 5/Field/PPJA.cannabiskit_Rolling_Machine 1/true/null/",
+			},
+		},
+		
+		{       
+			"Action": "EditData",
+			"LogName": "Cookables",
+			"Target": "Data/CookingRecipes",
+			"Entries": {
+			"PPJA.cannabiskit_CBD_Oil": "PPJA.cannabiskit_Dried_Shit_Weed 2 247 1 /Field/PPJA.cannabiskit_CBD_Oil 1/null/CBD Oil/",
+			"PPJA.cannabiskit_Canna_Butter": "PPJA.cannabiskit_Dried_Shit_Weed 2 -6 1 /Field/PPJA.cannabiskit_Canna_Butter 1/null/Canna-Butter/",
+			"PPJA.cannabiskit_Honey_Stick": "PPJA.cannabiskit_Dried_Shit_Weed 3 340 1 /Field/PPJA.cannabiskit_Honey_Stick 3/null/Honey Stick/",
+			"PPJA.cannabiskit_Pot_Brownie": "PPJA.cannabiskit_Canna_Butter 1 245 1 246 1 247 1 /Field/PPJA.cannabiskit_Pot_Brownie 5/null/Pot Brownie/",
+			"PPJA.cannabiskit_Canna_Tea": "PPJA.cannabiskit_Dried_Shit_Weed 2 815 1 /Field/PPJA.cannabiskit_Canna_Tea 1/null/Canna-Tea/",
+			"PPJA.cannabiskit_CBD_Punch": "PPJA.cannabiskit_CBD_Oil 1 92 8 268 1 /Field/PPJA.cannabiskit_CBD_Punch 2/null/CBD-Punch/",
+			"PPJA.cannabiskit_Mind_Tonic": "PPJA.cannabiskit_Canna_Butter 1 340 1 PPJA.cannabiskit_Dried_Purple_Haze 1 PPJA.cannabiskit_Dried_Orange_Sherbert 1 PPJA.cannabiskit_Dried_Super_Silver 1 PPJA.cannabiskit_Dried_White_Widow 1 /Field/PPJA.cannabiskit_Mind_Tonic 2/null/Mind Tonic/",
+			},
+		},
+		
+		{
+			"LogName": "Modify dehydrator machine rules (Dried Shit Weed)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Dried Shit Weed": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Shit_Weed": {
+					"Id": "PPJA.cannabiskit_Shit_Weed",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Shit_Weed",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_Shit_Weed",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_Shit_Weed",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 180
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Shit_Weed",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify dehydrator machine rules (Dried Blue Dream)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Dried Blue Dream": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Blue_Dream": {
+					"Id": "PPJA.cannabiskit_Blue_Dream",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Blue_Dream",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_Blue_Dream",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_Blue_Dream",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Blue_Dream",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify dehydrator machine rules (Dried Cookies and Cream)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Dried Cookies and Cream": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Cookies_and_Cream": {
+					"Id": "PPJA.cannabiskit_Cookies_and_Cream",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Cookies_and_Cream",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_Cookies_and_Cream",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_Cookies_and_Cream",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Cookies_and_Cream",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify dehydrator machine rules (Dried Green Dream)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Dried Green Dream": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Green_Dream": {
+					"Id": "PPJA.cannabiskit_Green_Dream",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Green_Dream",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_Green_Dream",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_Green_Dream",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Green_Dream",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify dehydrator machine rules (Dried Purple Haze)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Dried Purple Haze": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Purple_Haze": {
+					"Id": "PPJA.cannabiskit_Purple_Haze",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Purple_Haze",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_Purple_Haze",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_Purple_Haze",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Purple_Haze",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify dehydrator machine rules (Dried Orange Sherbert)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Dried Orange Sherbert": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Orange_Sherbert": {
+					"Id": "PPJA.cannabiskit_Orange_Sherbert",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Orange_Sherbert",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_Orange_Sherbert",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_Orange_Sherbert",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Orange_Sherbert",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify dehydrator machine rules (Dried Northern Lights)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Dried Northern Lights": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Northern_Lights": {
+					"Id": "PPJA.cannabiskit_Northern_Lights",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Northern_Lights",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_Northern_Lights",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_Northern_Lights",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Northern_Lights",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify dehydrator machine rules (Dried OG Kush)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Dried OG Kush": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_OG_Kush": {
+					"Id": "PPJA.cannabiskit_OG_Kush",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_OG_Kush",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_OG_Kush",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_OG_Kush",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_OG_Kush",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify dehydrator machine rules (Dried Super Silver)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Dried Super Silver": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Super_Silver": {
+					"Id": "PPJA.cannabiskit_Super_Silver",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Super_Silver",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_Super_Silver",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_Super_Silver",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Super_Silver",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify dehydrator machine rules (Dried Sour Diesel)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Dried Sour Diesel": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Sour_Diesel": {
+					"Id": "PPJA.cannabiskit_Sour_Diesel",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Sour_Diesel",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_Sour_Diesel",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_Sour_Diesel",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Sour_Diesel",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify dehydrator machine rules (Dried Strawberry Cough)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Dried Strawberry Cough": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Strawberry_Cough": {
+					"Id": "PPJA.cannabiskit_Strawberry_Cough",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Strawberry_Cough",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_Strawberry_Cough",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_Strawberry_Cough",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Strawberry_Cough",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify dehydrator machine rules (Dried White Widow)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Dried White Widow": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_White_Widow": {
+					"Id": "PPJA.cannabiskit_White_Widow",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_White_Widow",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_White_Widow",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_White_Widow",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_White_Widow",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify dehydrator machine rules (Tobacco)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Tobacco": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Tobacco": {
+					"Id": "PPJA.cannabiskit_Tobacco",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Tobacco",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)PPJA.cannabiskit_Dried_Tobacco",
+							"ItemId": "(O)PPJA.cannabiskit_Dried_Tobacco",
+							"CopyQuality": true,
+							"MinStack": 5,
+							"MaxStack": 5,
+						}
+					],
+					"MinutesUntilReady": 180
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Tobacco",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify Dehydrator machine rules (Hemp)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Hemp": true
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Hemp": {
+					"Id": "PPJA.cannabiskit_Hemp",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Hemp",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)388",
+							"ItemId": "(O)388",
+							"CopyQuality": false,
+							"MinStack": 10,
+							"MaxStack": 15,
+						}
+					],
+					"MinutesUntilReady": 180
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Hemp",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify Recycler machine rules (Hemp)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Hemp": true
+			},
+			"TargetField": [
+				"(BC)20",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Hemp": {
+					"Id": "PPJA.cannabiskit_Hemp",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Hemp",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)771",
+							"ItemId": "(O)771",
+							"CopyQuality": false,
+							"MinStack": 15,
+							"MaxStack": 25,
+						}
+					],
+					"MinutesUntilReady": 180
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Hemp",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify Oil Maker machine rules (Hemp)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Hemp": true
+			},
+			"TargetField": [
+				"(BC)19",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Hemp": {
+					"Id": "PPJA.cannabiskit_Hemp",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Hemp",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)247",
+							"ItemId": "(O)247",
+							"CopyQuality": false,
+							"MinStack": 1,
+							"MaxStack": 1,
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Hemp",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify Loom rules (Hemp)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Hemp": true
+			},
+			"TargetField": [
+				"(BC)17",
+				"OutputRules"
+			],
+			"Entries": {
+				"PPJA.cannabiskit_Hemp": {
+					"Id": "PPJA.cannabiskit_Hemp",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)PPJA.cannabiskit_Hemp",
+							"RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)428",
+							"ItemId": "(O)428",
+							"CopyQuality": false,
+							"MinStack": 1,
+							"MaxStack": 1,
+						}
+					],
+					"MinutesUntilReady": 180
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "PPJA.cannabiskit_Hemp",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Rolling Machine Items",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Rolling Machine": true
+			},
+			"Entries": {
+				"(BC)PPJA.cannabiskit_Rolling_Machine": {
+				"HasInput": true,
+				"HasOutput": true,
+				"AllowFairyDust": true,
+					"OutputRules": [
+						{
+							"Id": "PPJA.cannabiskit_Dried_Tobacco",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_Tobacco",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Cigarette",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Cigarette",
+									"ObjectDisplayName": "Quality Cigarette",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						{
+							"Id": "PPJA.cannabiskit_Dried_Shit_Weed",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_Shit_Weed",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Joint_Shit_Weed",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Joint_Shit_Weed",
+									"ObjectDisplayName": "Quality Shit Weed Joint",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						{
+							"Id": "PPJA.cannabiskit_Dried_Blue_Dream",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_Blue_Dream",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Joint_Blue_Dream",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Joint_Blue_Dream",
+									"ObjectDisplayName": "Quality Blue Dream Joint",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						{
+							"Id": "PPJA.cannabiskit_Dried_Cookies_and_Cream",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_Cookies_and_Cream",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Joint_Cookies_and_Cream",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Joint_Cookies_and_Cream",
+									"ObjectDisplayName": "Quality Cookies and Cream Joint",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						{
+							"Id": "PPJA.cannabiskit_Dried_Green_Dream",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_Green_Dream",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Joint_Green_Dream",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Joint_Green_Dream",
+									"ObjectDisplayName": "Quality Green Dream Joint",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						{
+							"Id": "PPJA.cannabiskit_Dried_Purple_Haze",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_Purple_Haze",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Joint_Purple_Haze",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Joint_Purple_Haze",
+									"ObjectDisplayName": "Quality Purple Haze Joint",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						{
+							"Id": "PPJA.cannabiskit_Dried_Orange_Sherbert",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_Orange_Sherbert",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Joint_Orange_Sherbert",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Joint_Orange_Sherbert",
+									"ObjectDisplayName": "Quality Orange Sherbert Joint",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						{
+							"Id": "PPJA.cannabiskit_Dried_OG_Kush",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_OG_Kush",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Joint_OG_Kush",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Joint_OG_Kush",
+									"ObjectDisplayName": "Quality OG Kush Joint",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						{
+							"Id": "PPJA.cannabiskit_Dried_Northern_Lights",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_Northern_Lights",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Joint_Northern_Lights",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Joint_Northern_Lights",
+									"ObjectDisplayName": "Quality Northern Lights Joint",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						{
+							"Id": "PPJA.cannabiskit_Dried_Super_Silver",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_Super_Silver",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Joint_Super_Silver",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Joint_Super_Silver",
+									"ObjectDisplayName": "Quality Super Silver Joint",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						{
+							"Id": "PPJA.cannabiskit_Dried_Sour_Diesel",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_Sour_Diesel",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Joint_Sour_Diesel",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Joint_Sour_Diesel",
+									"ObjectDisplayName": "Quality Sour Diesel Joint",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						{
+							"Id": "PPJA.cannabiskit_Dried_Strawberry_Cough",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_Strawberry_Cough",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Joint_Strawberry_Cough",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Joint_Strawberry_Cough",
+									"ObjectDisplayName": "Quality Strawberry Cough Joint",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						{
+							"Id": "PPJA.cannabiskit_Dried_White_Widow",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine_Artisan",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)PPJA.cannabiskit_Dried_White_Widow",
+									"RequiredTags": [
+                                        "category_artisan_goods"
+                                    ],
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"OutputItem": [
+								{
+									"CustomData": null,
+									"OutputMethod": null,
+									"CopyColor": false,
+									"CopyPrice": false,
+									"CopyQuality": true,
+									"PreserveType": null,
+									"IncrementMachineParentSheetIndex": 0,
+									"PriceModifierMode": "Stack",
+									"Condition": null,
+									"Id": "Default",
+									"ItemId": "(O)PPJA.cannabiskit_Joint_White_Widow",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": "PPJA.cannabiskit_Joint_White_Widow",
+									"ObjectDisplayName": "Quality White Widow Joint",
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							],
+							"MinutesUntilReady": 10
+						}
+					],
+                    "WobbleWhileWorking": true,
+                    "ShowNextIndexWhileWorking": true,
+                    "ShowNextIndexWhenReady": true,
+                    "LoadEffects": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "clank",
+                                    "Delay": 0
+                                }
+                            ],
+                            "Interval": 100,
+                            "Frames": null,
+                            "ShakeDuration": -1
+                        }
+                    ]
+				}
+			}
+		}
+	]
+}

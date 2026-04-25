@@ -1,0 +1,46 @@
+{
+  // the = sign is a star in english. This can change depending on font and language. You can pick your own symbol to use thats better
+  "blank": "{0}",
+  "star": "{0} =",
+  "any": "cualquier {0}",
+  "vanilla": "{0} (Cualquiera)",
+  "asterisk": "{0} *",
+  
+  "config.Ingredient Indicator.name": "Indicador de ingredientes",
+  "config.Ingredient Indicator.description": "Etiqueta los ingredientes flexibles en el menú de cocina con esta opción. ¡Se etiquetarán todos los ingredientes en las recetas originales! Fuera de esta opción, las categorías de ingredientes más amplias seguirán la convención original, como Queso (Cualquiera) y Aceite de cocina (Cualquiera).",
+  "config.Ingredient Indicator.values.A": "Objeto",
+  "config.Ingredient Indicator.values.B": "Objeto =",
+  "config.Ingredient Indicator.values.C": "cualquier Objeto",
+  "config.Ingredient Indicator.values.D": "Objeto (Cualquiera)",
+  "config.Ingredient Indicator.values.E": "Objeto *",
+  
+  "config.Extra Changes.name": "Cambios extra",
+  "config.Extra Changes.description": "Para algunas recetas, reemplaza ciertos ingredientes con diferentes categorías para dar variedad. Por ejemplo, en lugar de usar un Puerro para hacer Ensalada, puedes usar Cualquier vegetal de hoja o usar Cualquier vegetal de raíz en lugar de una Zanahoria cavernaria para hacer Salteado. También hace que el Sashimi y el Maki Roll solo puedan hacerse con peces reales y no con cosas como Caracoles, Almejas, etc. de las trampas para cangrejos.",
+  
+  //follow vanilla format such as for Egg (Any) and Milk (Any)
+  "Ingredient_EggAny": "Huevo (Cualquiera)",
+  "Ingredient_MilkAny": "Leche (Cualquiera)",
+  "Ingredient_CheeseAny": "Queso (Cualquiera)",
+  "Ingredient_ChiliAny": "Chile (Cualquiera)",
+  "Ingredient_FlourAny": "Harina (Cualquiera)",
+  "Ingredient_FishAny": "Pescado (Cualquiera)",
+  "Ingredient_FishNonCrabPot": "Pescado (Sin trampa para cangrejos)",
+  "Ingredient_EdibleMushroomAny": "Hongo comestible (Cualquiera)",
+  "Ingredient_LeafyGreenAny": "Vegetal de hoja (Cualquiera)",
+  "Ingredient_RootVegetableAny": "Vegetal de raíz (Cualquiera)",
+  "Ingredient_MayonnaiseAny": "Mayonesa (Cualquiera)",
+  "Ingredient_OilAny": "Aceite de cocina (Cualquiera)",
+  "Ingredient_SugarAny": "Azúcar (Cualquiera)",
+  
+  //not used in this mod but may be used in add-ons
+  "Ingredient_SoftCheeseAny": "Queso blando (Cualquiera)",
+  "Ingredient_ButterAny": "Manteca/Mantequilla (Cualquiera)",
+  "Ingredient_FlourAny": "Harina (Cualquiera)",
+  "Ingredient_VegetableAny": "Vegetal (Cualquiera)",
+  "Ingredient_FruitAny": "Fruta (Cualquiera)",
+  "Ingredient_EdibleFlowerAny": "Flor comestible (Cualquiera)",
+  "Ingredient_YogurtAny": "Yogur (Cualquiera)",
+  "Ingredient_GrainAny": "Grano (Cualquiera)",
+  "Ingredient_BeanAny": "Poroto/Frijol (Cualquiera)",
+  "Ingredient_HerbAny": "Hierba (Cualquiera)",
+}

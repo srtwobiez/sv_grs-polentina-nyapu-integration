@@ -1,0 +1,37 @@
+{
+    "config.Ts_AFC_EnableThisMod.name": "Activar este mod",
+    "config.Ts_AFC_EnableThisMod.description": "Activa y Desactiva este mod.",
+
+    "config.Ts_AFC_AvoidCertainBugs.name": "Evitar ciertos bugs",
+    "config.Ts_AFC_AvoidCertainBugs.description": "En la v1.3, existía un error que provocaba que los tótems de teletransportación aparecieran en los coleccionables frente a la capilla y no desaparecieran. Si te encuentras en esta situación, activa esta opción. ¡Precaución! Si activas esta opción, la cueva se creará como un mapa diferente, aunque su aspecto sea el mismo. Si has colocado objetos valiosos en la cueva, retíralos antes de cambiar la configuración.",
+
+    "config.Ts_AFC_OpenImmediately.name": "Abertura inmediata",
+    "config.Ts_AFC_OpenImmediately.description": "Originalmente, se abren cuando se cumplen las condiciones, pero al marcar esta casilla podrás ingresar a áreas adicionales inmediatamente.",
+
+
+    "config.section.Ts_AFC_Cautions.name": "Estas son las configuraciones al estar usando el Mod de ^Hippo's Farm Cave Variety.",
+    "config.section.Ts_AFC_Cautions.description": "La configuración debe ser exactamente la misma que la del mod Hippo's Farm Cave Variety. Si no es la misma, podrían producirse problemas de visualización.",
+
+
+    "config.Ts_AFC_HFCV_CaveType.name": "Tipo de Cueva",
+    "config.Ts_AFC_HFCV_MatchFarm.name": "Coincidir Granja",
+    "config.Ts_AFC_HFCV_AlternateCombat.name": "Combate Alterno",
+    "config.Ts_AFC_HFCV_AlternateIsland.name": "Isla Alterna",
+
+
+    "config.section.Section for line breaks.name": "^^Sección de Depuración.",
+    "config.section.Section for line breaks.description": "Esta casilla es no funcional, solo es para abordar un problema que ocurre cuando la configuración del mod se muestra en un idioma particular y los elementos no se muestran hasta el final.",
+
+    "config.This is a meaningless item.name": "Esta es una casilla inútil.",
+    "config.This is a meaningless item.description": "Esta casilla es no funcional, solo esta para solucionar un problema que ocurre cuando la configuración del mod se muestra en un idioma específico y los elementos no se muestran hasta el final. No tiene sentido activarlo y desactivarlo, así que puedes activarlo y desactivarlo cuantas veces quieras y experimentar con él.",
+
+
+
+    "AdFCms01": "Se oye un leve crujido que viene de detrás del pequeño santuario...",
+    "AdFCms02": "Alguien ha estado dejando regalos en este santuario. ¿Quién será?",
+    "AdFCms03": "Una brisa de la superficie sopla a través de la abertura en el santuario.^¿Tal vez sea un pasaje para pequeñas criaturas?",
+    "AdFCms04": "Hay un pequeño santuario aquí.^Espera, ¿hay algo moviéndose ahí...?",
+    "AdFCms05": "¡Este pequeño espíritu del bosque fue quien entregó los regalos todo el tiempo!",
+
+
+}

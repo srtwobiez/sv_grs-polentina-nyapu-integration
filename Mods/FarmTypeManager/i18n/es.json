@@ -1,0 +1,12 @@
+{
+   "Config.EnableConsoleCommands.Name": "Habilitar comandos de consola",
+   "Config.EnableConsoleCommands.Desc": "Habilita los comandos de la consola de FTM.\nEsto no tendrá efecto hasta que se reinicie Stardew Valley.",
+   "Config.EnableContentPacks.Name": "Habilitar paquetes de contenido",
+   "Config.EnableContentPacks.Desc": "Habilita todos los paquetes de contenido FTM.\nSi esto está deshabilitado, solo se usarán los archivos en FarmTypeManager/data.",
+   "Config.EnableTraceLogMessages.Name": "Habilitar mensajes de registro de seguimiento",
+   "Config.EnableTraceLogMessages.Desc": "Habilita los mensajes [TRACE] de FTM en los archivos de registro de SMAPI.\nSi esto está deshabilitado, los archivos de registro serán más pequeños, pero proporcionarán menos información sobre FTM.",
+   "Config.EnableEPUDebugMessages.Name": "Habilitar mensajes de depuración de EPU",
+   "Config.EnableEPUDebugMessages.Desc": "Habilita mensajes de depuración de Expanded Preconditions Utility (EPU).\nEsto puede ser útil al crear mods con condiciones previas.",
+   "Config.MonsterLimitPerLocation.Name": "Límite de monstruos por ubicación",
+   "Config.MonsterLimitPerLocation.Desc": "El número máximo de monstruos que FTM permitirá en un solo mapa simultáneamente.\nUsar un número menor puede mejorar la velocidad de fotogramas del juego. 50 es una sugerencia común.\nEscribe NULL para permitir monstruos ilimitados."
+}

@@ -1,0 +1,360 @@
+{
+	// Love of Cooking - Translation pack [ES-LATAM]
+	// Traducido para Stardew Valley.
+	"Format": "2.7.0",
+	"Changes": [
+		{
+			"LogName": "Love of Cooking - Mail [ES]",
+			"Action": "EditData",
+			"Target": "Data/mail",
+			"Entries": {
+
+				////////////////////// 2.0.0
+
+				"blueberry.LoveOfCooking.cookbook_unlocked": "Hola @,^  Estaba limpiando el sotano y encontré justo lo que necesitabas: ¡el viejo libro de cocina familiar! ^  Le faltan algunas páginas, pero estoy segura de que te servirá carajito. He incluido mi sartén de repuesto para que puedas empezar. esta todo quemado pero es lo que hay xd ^^ ¡Cuídate mucho, cielo, y recuerda comer tu arepa bien! ^  Con amor, Mamá%item id blueberry.LoveOfCooking_cookbook 1 %%[#]Libro de cocina de Mamá",
+				"blueberry.LoveOfCooking.seasoning_1": "Hola, cielo,^¡Me encontre esta receta en una revista!^Se supone que hace que cualquier cosa sepa rico.^^¡Recuerda preparar comidas equilibradas!^  Con amor, Mamá%item craftingRecipe blueberry.LoveOfCooking_seasoning_1 %%",
+				"blueberry.LoveOfCooking.seasoning_2": "¡Hola, cariño!^¡Dieron un programa de cocina maravilloso en la tele y mostraron formas nuevas de sazonar tu comida!^Tuve que escribir la receta para ti. Y tambien una receta de una arepa especial pero no alcanze a copiar la receta.^¡Sigue practicando tu cocina!^  Con amor, Mamá%item craftingRecipe blueberry.LoveOfCooking_seasoning_2 %%",
+				"blueberry.LoveOfCooking.migrate_refund_1_6": "Al propietario,^^Hemos revisado nuestros subsidios agrícolas anuales y encontramos algunas discrepancias durante nuestra última migración de sistema.^Sí, parece que alguien ha estado alterando las cuentas. Adjuntamos una compensación por cualquier producto perdido.^^Gracias por seguir confiando en nosotros,^  Blue Berry Farming & Supplies%item money {0} %%"
+			}
+		},
+		{
+			"LogName": "Love of Cooking - Translations [ES]",
+			"Action": "EditData",
+			"Target": "Mods/blueberry.LoveOfCooking.Assets/Strings",
+			"Entries": {
+
+				////////////////////// 2.0.2
+
+				// Config options
+				"config.info.cookingskill.subheading.maxlevel": "Nivel MÁX",
+
+				// BetterCrafting
+				"menu.better_crafting.can_craft.cooking_tool_level": "{0} solo puede cocinar con hasta {1} ingredientes.",
+
+				////////////////////// 2.0.0
+
+				// Mod info
+				"mod.name": "Love of Cooking",
+
+				// Config options
+				"config.page.info": "Información",
+				"config.page.options": "Opciones",
+
+				"config.option.cookingmenu_name": "Menú de cocina",
+				"config.option.cookingmenu_description": "¡Reemplaza la interfaz de creación con un nuevo menú de cocina!\nLas recetas se guardan en tu libro de cocina para buscar, ordenar, filtrar y marcar como favoritas.\nLos ingredientes se añaden manualmente al cocinar.",
+				"config.option.cookingskill_name": "Habilidad de cocina y recetas",
+				"config.option.cookingskill_description": "¡Añade una nueva habilidad de cocina para subir de nivel!\nLos niveles de habilidad desbloquean nuevas recetas y profesiones.\nGana experiencia cocinando, con bonificaciones por recetas nuevas y avanzadas.",
+				"config.option.cookingtool_name": "Herramienta de cocina y mejoras",
+				"config.option.cookingtool_description": "¡Añade una nueva herramienta de cocina para mejorar!\nReduce el número de ingredientes utilizables al cocinar a 1, aumentando con el nivel de la herramienta.\nPuedes comprar mejoras al Herrero para cocinar recetas avanzadas.\n\nRequiere el nuevo menú de cocina.",
+				"config.option.seasonings_name": "Más condimentos",
+				"config.option.seasonings_description": "¡Añade nuevos sabores para mejorar tu cocina!\nIntroduce objetos de bajo valor que aumentan la calidad de la comida cocinada.\nSe consumen automáticamente al cocinar.",
+				"config.option.foodbuffsstarthidden_name": "Efectos de comida ocultos al inicio",
+				"config.option.foodbuffsstarthidden_description": "¡Los valores de los efectos no se muestran en las comidas hasta que las hayas probado!\nSi se desactiva, las comidas y recetas siempre mostrarán sus atributos.",
+				"config.option.foodhealingtakestime_name": "La comida cura con el tiempo",
+				"config.option.foodhealingtakestime_description": "¡La comida restaurará la salud gradualmente al comerla!\nPodrás aprovechar mejor los efectos de la comida cuando tengas la energía llena,\npero no podrás restaurar salud instantáneamente cuando estés en peligro.",
+				"config.option.foodcanburn_name": "La comida puede quemarse",
+				"config.option.foodcanburn_description": "¡Tienes una probabilidad de arruinar tu comida al cocinar!\nNo se recomienda a menos que disfrutes del fracaso.",
+				"config.option.townkitchens_name": "Cocinas del pueblo",
+				"config.option.townkitchens_description": "¡Te permite interactuar con cualquier cocina del pueblo!\nNecesitas tener amistad con alguien que viva allí.",
+				"config.option.menuanimation_name": "Animaciones de menú",
+				"config.option.menuanimation_description": "Si se debe reproducir una transición rápida al abrir el menú de cocina.\n\nRequiere el nuevo menú de cocina.",
+				"config.option.cookinganimation_name": "Animaciones de cocina",
+				"config.option.cookinganimation_description": "Si se debe reproducir una pequeña animación al cocinar en la cocina.\n\nRequiere el nuevo menú de cocina.",
+				"config.option.foodregenbar_name": "Mostrar barra de regeneración",
+				"config.option.foodregenbar_description": "Con la curación prolongada activada, puedes ocultar la barra de regeneración.\nLa barra aparece junto a las de salud y energía para mostrar tu curación restante.",
+				"config.option.fixcraftingpagerecipesorting_name": "Corregir orden de recetas",
+				"config.option.fixcraftingpagerecipesorting_description": "Con el nuevo menú de cocina desactivado, las recetas se ordenan primero las originales y luego las personalizadas.\nEsta opción actualiza el método para mezclar todas las recetas juntas.\n\nRequiere el menú de cocina predeterminado.",
+				"config.option.remembersearchfilter_name": "Recordar filtro de búsqueda",
+				"config.option.remembersearchfilter_description": "Con el nuevo menú de cocina activado, puedes buscar recetas con filtros.\nEl menú ya guarda tu último filtro usado,\npero se reinicia la próxima vez que juegas.\nPuedes desactivar esto aquí para empezar siempre con el filtro predeterminado.",
+				"config.option.defaultsearchfilter_name": "Filtro de búsqueda predeterminado",
+				"config.option.defaultsearchfilter_description": "Con el nuevo menú de cocina activado, puedes buscar recetas con filtros.\nEl menú ya guarda tu último filtro usado,\npero se reinicia la próxima vez que juegas.\nPuedes establecer un filtro predeterminado para todas las sesiones aquí.",
+				"config.option.defaultsearchsorter_name": "Orden de búsqueda predeterminado",
+				"config.option.defaultsearchsorter_description": "Con el nuevo menú de cocina activado, puedes buscar recetas con filtros.\nEl menú ya guarda tu último filtro usado,\npero se reinicia la próxima vez que juegas.\nPuedes establecer un orden predeterminado para todas las sesiones aquí.",
+				"config.option.resizekoreanfonts_name": "Redimensionar fuentes coreanas",
+				"config.option.resizekoreanfonts_description": "Si juegas en coreano con la fuente predeterminada, mantén esto activado.\nSi usas FixFontOption u otros para cambiar el tamaño, quizás quieras desactivarlo.",
+
+				"config.info.controllermap.title": "Controles de mando",
+				"config.info.controllermap.button.a": "   Seleccionar",
+				"config.info.controllermap.button.b": "   Cancelar",
+				"config.info.controllermap.button.x": "   Auto-rellenar ingredientes",
+				"config.info.controllermap.button.y": "   Cancelar",
+				"config.info.controllermap.button.select": "   Buscar",
+				"config.info.controllermap.button.start": "   Cancelar",
+				"config.info.controllermap.shoulders": "LB/RB   Cambiar región",
+				"config.info.controllermap.triggers": "LT/RT   Cambiar receta",
+
+				"config.info.cookingmenu.text.1": "Reemplaza la interfaz de creación original con un nuevo menú de cocina.\nÁbrelo interactuando con las cocinas como de costumbre tras recibir {0} en el correo.\nBusca, ordena, filtra y marca recetas favoritas para cocinar lo que más te guste.\n\nNo ocupa espacio en el inventario: Se encuentra en la pestaña de = Objetos Especiales.\n\nUtilizable en las cocinas de la casa y cabañas, así como en el {1}.\nSe puede usar en las cocinas del pueblo si se activa en la página de Opciones.",
+				"config.info.cookingmenu.subheading.1": "Entrega del libro de cocina",
+
+				"config.info.cookingskill.text.1": "Los niveles de habilidad te enseñan nuevas recetas, mejoran tu cocina y desbloquean nuevas profesiones.\n\nSe gana más experiencia cocinando cada día, y menos cocinando en masa.\nGana experiencia extra cocinando recetas nuevas y difíciles.",
+				"config.info.cookingskill.text.2": "Las profesiones de cocina se desbloquean como cualquier otra habilidad.\nLas ventajas de profesión mejoran los resultados al cocinar y comer.",
+				"config.info.cookingskill.subheading.1": "Progreso de habilidad",
+				"config.info.cookingskill.subheading.2": "{0} experiencia",
+				"config.info.cookingskill.subheading.3": "{0}/{1} experiencia",
+				"config.info.cookingskill.subheading.4": "Recetas de cocina",
+				"config.info.cookingskill.subheading.5": "Profesiones de habilidad",
+
+				"config.info.cookingtool.text.1": "Tu {0} determina el número de ingredientes que puedes usar al cocinar.\nMejorar tu herramienta en el Herrero desbloquea ranuras extra.\n\nNo ocupa espacio en el inventario: Se encuentra en la pestaña de = Objetos Especiales.\n\nPuedes consultar el nivel de tu {0} aquí, en la página del personaje o en el menú de cocina.\nSi se desactiva en Opciones, tu {0} siempre se considerará de nivel máximo.",
+				"config.info.cookingtool.subheading.1": "Mejoras de herramienta",
+
+				"config.info.townkitchens.text.1": "Se puede cocinar en cualquier cocina del pueblo, siempre que seas amigo del dueño.\n¡Necesitarás un libro de cocina y recetas!",
+				"config.info.townkitchens.subheading.1": "Cocinas disponibles",
+				"config.info.townkitchens.subheading.2": "Amistad requerida",
+
+				"config.info.seasonings.text.1": "Añade nuevos condimentos para mejorar la calidad de la comida cocinada.\n\nLos condimentos se desbloquean al alcanzar hitos de cocina.\nSe consumen automáticamente al cocinar.",
+				"config.info.seasonings.subheading.1": "Objetos de condimento",
+
+				"config.info.foodhealingtakestime.text": "En lugar de curar al instante, la restauración ocurre gradualmente con el tiempo.\n\nLa salud y energía se restauran mucho más rápido cuando están bajas.\nLa curación se preserva mayormente cuando las barras están llenas.\nComer varias comidas acumulará la restauración del día.\nLa velocidad de curación aumenta con varios niveles de habilidad.\n{0} y {1} siempre curarán al instante.",
+				"config.info.foodbuffsstarthidden.text": "Todas las comidas tendrán sus efectos ocultos hasta que hayas comido una.\nLos efectos (o la falta de ellos) serán visibles en todos los objetos de ese tipo después.\nLa restauración de salud y energía permanece visible.",
+				"config.info.foodcanburn.text": "Al cocinar cualquier receta, parte de la comida podría arruinarse.\nLa comida quemada será basura inútil. Los ingredientes se desperdiciarán.\nSe otorga experiencia de habilidad incluso si la comida se quema.",
+				"config.info.foodcanburn.subheading": "Probabilidad de quemado: {0} ~ {1}%",
+
+				"config.info.disabled": "> Puede activarse en la página de Opciones.",
+				"config.info.disabled_bad": "> Puede activarse en la página de Opciones.\nADVERTENCIA: Esto no es nada divertido.",
+				"config.info.features_blocked": "Las funciones no pueden cambiarse mientras una partida está cargada.\n\nCuando estés listo, regresa a la pantalla de título para cambiar tus preferencias.",
+
+				"config.features_label": "Funciones",
+				"config.changes_label": "Cambios",
+				"config.others_label": "Otros",
+
+				"config.format.level": "Nivel {0}",
+				"config.format.profession": "{0} - {1}",
+				"config.format.unknown": "???",
+
+				// General strings
+
+				// Cooking tool
+				"menu.cooking_tool.name.basic": "Sartén",
+				"menu.cooking_tool.name.copper": "Sartén de cobre",
+				"menu.cooking_tool.name.steel": "Sartén de acero",
+				"menu.cooking_tool.name.gold": "Sartén de oro",
+				"menu.cooking_tool.name.iridium": "Sartén de iridio",
+				"menu.cooking_tool.description.basic": "Puede cocinar recetas con solo 1 ingrediente.",
+				"menu.cooking_tool.description.copper": "Puede cocinar recetas con solo 1 o 2 ingredientes.",
+				"menu.cooking_tool.description.steel": "Puede cocinar recetas con hasta 3 ingredientes.",
+				"menu.cooking_tool.description.gold": "Puede cocinar recetas con hasta 4 ingredientes.",
+				"menu.cooking_tool.description.iridium": "¡Puede cocinar recetas con cualquier cantidad de ingredientes!",
+
+				// Cooking menu
+				"menu.cooking_station.no_cookbook": "No tienes un libro de cocina.",
+				"menu.cooking_station.no_friendship": "No tienes suficiente amistad con {0} para usar esta cocina.",
+
+				"menu.cooking_recipe.title_unknown": "???",
+				"menu.cooking_recipe.notes_unknown": "Aún no has comido esto.",
+				"menu.cooking_recipe.ingredients_label": "Ingredientes:",
+				"menu.cooking_recipe.notes_label": "Notas:",
+				"menu.cooking_recipe.time_label": "Tiempo de cocción:",
+				"menu.cooking_recipe.time_value": "{0} min",
+				"menu.cooking_recipe.search_label": "Buscar",
+				"menu.cooking_recipe.favourite_label": "Favorito",
+				"menu.cooking_recipe.quantity_label": "Rinde",
+				"menu.cooking_recipe.which_label": "¿Qué te gustaría preparar?",
+				"menu.cooking_recipe.autofill_label": "Auto-rellenar ingredientes",
+
+				"menu.cooking_recipe.buff.0": "Agricultura",
+				"menu.cooking_recipe.buff.1": "Pesca",
+				"menu.cooking_recipe.buff.2": "Minería",
+				"menu.cooking_recipe.buff.3": "Excavación",
+				"menu.cooking_recipe.buff.4": "Suerte",
+				"menu.cooking_recipe.buff.5": "Recolección",
+				"menu.cooking_recipe.buff.6": "Creación",
+				"menu.cooking_recipe.buff.7": "Energía",
+				"menu.cooking_recipe.buff.8": "Magnetismo",
+				"menu.cooking_recipe.buff.9": "Velocidad",
+				"menu.cooking_recipe.buff.10": "Defensa",
+				"menu.cooking_recipe.buff.11": "Ataque",
+				"menu.cooking_recipe.buff.12": "Cocina",
+				"menu.cooking_recipe.buff.daily": "Todo el día",
+				"menu.cooking_recipe.buff.unknown": "???",
+
+				"menu.cooking_search.view_label": "Ver:",
+				"menu.cooking_search.filter_label": "Filtrar:",
+				"menu.cooking_search.sorter_label": "Ordenar por:",
+				"menu.cooking_search.view.list": "Lista",
+				"menu.cooking_search.view.grid": "Iconos",
+				"menu.cooking_search.filter.0": "Todas las recetas",
+				"menu.cooking_search.filter.1": "Listo para cocinar",
+				"menu.cooking_search.filter.2": "Favoritos",
+				"menu.cooking_search.filter.3": "No cocinados",
+				"menu.cooking_search.filter.4": "Recetas con efectos",
+				"menu.cooking_search.sorter.0": "Nombre",
+				"menu.cooking_search.sorter.1": "Curación",
+				"menu.cooking_search.sorter.2": "Precio",
+				"menu.cooking_search.none_label": "No se encontraron recetas.",
+
+				"menu.inventory.backpack": "Mochila",
+				"menu.inventory.fridge": "Refrigerador",
+				"menu.inventory.minifridge": "Mini-Refri",
+
+				"menu.config.enabled": "Abrir configuración del mod",
+				"menu.config.disabled": "Requiere Generic Mod Config Menu.",
+
+				// Mail
+				"mail.cookbook_unlocked.after.1": "El libro de cocina de mamá y la sartén se han añadido a tus = Objetos Especiales.",
+				"mail.cookbook_unlocked.after.2": "Las recetas que aprendas se guardarán en el libro para cocinar en la granja.",
+				"mail.cookbook_unlocked.after.2_alt": "Las recetas que aprendas se guardarán en el libro para cocinar en la granja o en el pueblo.",
+
+				// Special items
+				"menu.special_items.cookbook.name": "Libro de cocina de Mamá",
+				"menu.special_items.cookbook.description": "Contiene tus recetas de cocina.",
+
+				// Seasonings
+				"seasoning.seasoning_1.empty": "Se te ha acabado tu {0}.",
+				"seasoning.seasoning_2.empty": "Se te ha acabado tu {0}.",
+				"seasoning.seasoning_4.empty": "Se te ha acabado tu {0}.",
+
+				// Buffs
+				"buff.curry.name": "Aliento de Curry",
+				"buff.curry.description": "¡Caliente, caliente, caliente!",
+				"buff.kebab.name": "Luchador Ebrio",
+				"buff.kebab.description": "Te vuelves más fuerte con cada trago cuando estás Mareado.",
+				"buff.lasagna.name": "Aura de Saciedad",
+				"buff.lasagna.description": "Los enemigos cercanos se mueven más lento.",
+				"buff.paella.name": "Reserva de Azafrán",
+				"buff.paella.description": "Las monedas de oro caen por doquier al derrotar monstruos.",
+				"buff.profiteroles.name": "Proyectiles Proliferantes",
+				"buff.profiteroles.description": "Todos los proyectiles de la resortera se disparan de a tres.",
+				"buff.leeks.name": "¡Déjame en paz!",
+				"buff.leeks.description": "Aumenta el retroceso del arma.",
+
+				// Cooking skill
+				"menu.cooking_skill.name": "Cocina",
+				"menu.cooking_skill.levelup_burn": "La comida se quema un {0}% menos",
+
+				// Tier 1:
+				// Path 1: Cooking
+				"menu.cooking_skill.tier1_path1.name": "Sous Chef",
+				"menu.cooking_skill.tier1_path1.description": "El condimento mejora aún más la calidad de las recetas.",
+				// Path 2: Eating (CONFIG: Food restores over time)
+				"menu.cooking_skill.tier1_path2.name": "Comensal Veloz",
+				"menu.cooking_skill.tier1_path2.description": "La comida restaura tu energía más rápido.",
+				// Path 2: Eating (CONFIG: Food restores instantly)
+				"menu.cooking_skill.tier1_path2_alt.name": "Gran Comensal",
+				"menu.cooking_skill.tier1_path2_alt.description": "La comida cocinada restaura un {0}% más.",
+
+				// Tier 2: Path 1
+				// Choice A: Gifting
+				"menu.cooking_skill.tier2_path1a.name": "Chef Ejecutivo",
+				"menu.cooking_skill.tier2_path1a.description": "La comida cocinada regalada mejora la amistad más rápido.",
+				// Choice B: Selling
+				"menu.cooking_skill.tier2_path1b.name": "Cocinero Cinco Estrellas",
+				"menu.cooking_skill.tier2_path1b.description": "La comida cocinada vale un {0}% más.",
+
+				// Tier 2: Path B
+				// Choice A: Crafting
+				"menu.cooking_skill.tier2_path2a.name": "Gourmet",
+				"menu.cooking_skill.tier2_path2a.description": "Probabilidad de cocinar una porción extra.",
+				// Choice B: Healing
+				"menu.cooking_skill.tier2_path2b.name": "Glotón",
+				"menu.cooking_skill.tier2_path2b.description": "La duración de los efectos de comida y bebida aumenta con energía máxima.",
+
+				// Object categories
+				"item.fruit.label": "Fruta (Cualquiera)",
+				"item.flower.label": "Flor (Cualquiera)",
+				"item.vegetable.label": "Verdura (Cualquiera)",
+				"item.meat.label": "Carne (Cualquiera)",
+				"item.forage.label": "Recolección (Cualquiera)",
+				"item.cooking.label": "Cocina (Cualquiera)",
+				"item.mineral.label": "Mineral (Cualquiera)",
+				"item.seed.label": "Semillas (Cualquiera)",
+				"item.metal.label": "Metal (Cualquiera)",
+				"item.gem.label": "Gemas (Cualquiera)",
+
+				// Object names
+				// recipes
+				"item.admiralpie.name": "Pastel del Almirante",
+				"item.applepie.name": "Pay de Manzana",
+				"item.arancini.name": "Arancini",
+				"item.bakedpotato.name": "Papa Horneada",
+				"item.breakfast.name": "Desayuno Rápido",
+				"item.burger.name": "Hamburguesa de Betabel",
+				"item.burrito.name": "Burrito",
+				"item.carrotcake.name": "Pastel de Zanahoria",
+				"item.cherrypie.name": "Pay de Cereza",
+				"item.chocoflan.name": "Bakewell de Avellana",
+				"item.cocococktail.name": "Cóctel de Coco",
+				"item.craymornay.name": "Cray Mornay",
+				"item.crepes.name": "Crêpes Suzette",
+				"item.curry.name": "Curry Diablo",
+				"item.eggsando.name": "Sándwich de Huevo",
+				"item.eggsando_half.name": "Medio Sándwich de Huevo",
+				"item.fruity.name": "Syllabub de Jerez",
+				"item.hotcocoa.name": "Cocoa Caliente",
+				"item.hunters.name": "Plato del Cazador",
+				"item.kebab.name": "Kebab",
+				"item.lasagna.name": "Lasaña de Ricotta",
+				"item.leeks.name": "Puerros Braseados",
+				"item.lobster.name": "Langosta Horneada",
+				"item.nigiri.name": "Rollo de Huevas",
+				"item.oceanplatter.name": "Platón Oceánico",
+				"item.paella.name": "Paella",
+				"item.parfait.name": "Parfait de Ciruela",
+				"item.pilaf.name": "Pilaf de Champiñones",
+				"item.profiteroles.name": "Profiteroles",
+				"item.quiche.name": "Quiche Provenzal",
+				"item.roast.name": "Estofado Caliente",
+				"item.skewers.name": "Brochetas de Piña",
+				"item.saladsando.name": "Sándwich de Ensalada",
+				"item.saladsando_half.name": "Medio Sándwich de Ensalada",
+				"item.seafoodsando.name": "Sándwich de Mariscos",
+				"item.seafoodsando_half.name": "Medio Sándwich de Mariscos",
+				"item.summersalad.name": "Ensalada de Verano",
+				"item.unagi.name": "Sushi de Anguila",
+				"item.waffles.name": "Waffles de Bayas",
+				// objects
+				"item.burntfood.name": "Comida Quemada",
+				"item.chocolate.name": "Chocolate para Cocinar",
+				"item.cookbook.name": "Libro de cocina de Mamá",
+				"item.seasoning_1.name": "Condimento Simple",
+				"item.seasoning_2.name": "Súper Condimento",
+
+				// Object descriptions
+				// recipes
+				"item.admiralpie.description": "Pescado entero dentro de un pastel jugoso. ¡Cuidado con las espinas!",
+				"item.applepie.description": "Huele a manzanas frescas y canela.",
+				"item.arancini.description": "Relleno de bondad y frito.",
+				"item.bakedpotato.description": "Una humilde papa, rellena de puré y queso.",
+				"item.breakfast.description": "¡Garantizado para sacarte de la cama!",
+				"item.burger.description": "Una mezcla de sabores amargos y dulces en un estilo rosa picante.",
+				"item.burrito.description": "Un wrap con arroz, especias y todo lo rico.",
+				"item.carrotcake.description": "Betún cremoso y zanahoria crujiente, ¡delicioso!",
+				"item.cherrypie.description": "Se ve sabroso. Huele de maravilla.",
+				"item.chocoflan.description": "Una rica tarta de masa quebrada hecha con chocolate muy dulce.",
+				"item.cocococktail.description": "Una bebida refrescante con hojas de menta y leche de coco.",
+				"item.craymornay.description": "Cangrejos de río bañados en una rica salsa de crema.",
+				"item.crepes.description": "Panqueques delgados nadando en un rico almíbar de brandy de naranja.",
+				"item.curry.description": "¡Te pondrá el aliento en llamas!\n\nTe permite escupir fuego a los enemigos temporalmente.",
+				"item.eggsando.description": "Pan blanco esponjoso con huevo y mayonesa. Perfectamente sazonado.",
+				"item.eggsando_half.description": "¡Más, más!",
+				"item.fruity.description": "Una bebida alcohólica dulce con jerez, cereza y bayas, coronada con crema batida.",
+				"item.hotcocoa.description": "Te calienta el cuerpo. ¡Tiene un malvavisco gigante arriba!",
+				"item.hunters.description": "Un plato caliente de verduras sustanciosas.",
+				"item.kebab.description": "Va bien con un trago. Y otro. Y otro.\n\nAumenta el poder de combate temporalmente cuando estás Mareado.",
+				"item.lasagna.description": "Capas de queso decadente y espinacas en salsa bechamel.\n\nRalentiza a los enemigos cercanos temporalmente.",
+				"item.leeks.description": "Ideal como un aperitivo ligero.\n\nAumenta el retroceso del arma temporalmente.",
+				"item.lobster.description": "Una receta clásica de los isleños.",
+				"item.nigiri.description": "Huevas de pescado sobre arroz. Salado.",
+				"item.oceanplatter.description": "Una abundante selección de mariscos frescos fríos y calientes.",
+				"item.paella.description": "¿Qué hay dentro? ¡De todo!\n\nLas monedas caen de los monstruos derrotados temporalmente.",
+				"item.parfait.description": "Parfait con puré de ciruela, perfecto para los días largos y calurosos de verano.",
+				"item.pilaf.description": "Ligero y picante, con finos champiñones del bosque.",
+				"item.profiteroles.description": "¡Pequeños y dulces, fáciles de comer!\n\nTriplica los disparos de la resortera temporalmente.",
+				"item.quiche.description": "Todo es mejor con queso.",
+				"item.roast.description": "Un guiso abundante con todos los acompañamientos.",
+				"item.saladsando.description": "Tiene lechuga, rúcula, diente de león, espinaca...",
+				"item.saladsando_half.description": ".. ¡Oye, hay tomate en esta mitad!",
+				"item.seafoodsando.description": "Un sándwich recién hecho, relleno de cangrejo y berros.",
+				"item.seafoodsando_half.description": "¡A medio comer, pero aún sabe bueno!",
+				"item.summersalad.description": "Una refrescante ensalada de frutas con un toque cítrico.",
+				"item.unagi.description": "Es incluso más escurridizo por el alga.",
+				"item.waffles.description": "Waffles reconfortantes glaseados con un chorrito de bayas de verano.",
+				// objects
+				"item.burntfood.description": "Se puede vender. No salió tan bien...",
+				"item.chocolate.description": "Mmmmm... chocolate.",
+				"item.cookbook.description": "Objeto de depuración.\n\nEl libro de cocina de mamá y la sartén se añaden a tus Objetos Especiales al consumirlo.",
+				"item.seasoning_1.description": "Un poco de especia mejora ligeramente la calidad de un plato. Se aplica automáticamente al cocinar.",
+				"item.seasoning_2.description": "Una potente mezcla de condimentos para enriquecer cualquier plato. Se aplica automáticamente al cocinar."
+			}
+		}
+	]
+}

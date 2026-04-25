@@ -1,0 +1,96 @@
+{
+  // Config
+  "config.general.title": "Fashion Sense",
+  "config.general.require_hand_mirror.name": "Requiere espejo de mano",
+  "config.general.require_hand_mirror.description": "Cuando está activado, el atajo del Espejo de Mano requiere que el Espejo de Mano esté en el inventario del jugador.",
+  "config.general.shortcut_key.name": "Atajo de tecla del espejo de mano",
+  "config.general.shortcut_key.description": "Cuando se pulsa esta tecla, aparece el menú Espejo de mano.",
+  "config.general.allow_mannequin_animations.name": "Permitir animaciones de maniquí",
+  "config.general.allow_mannequin_animations.description": "Cuando se activa, los maniquíes con las apariencias de Fashion Sense reproducirán sus animaciones.",
+  "config.general.keep_hair_when_loading_outfits.name": "Mantén el peinado al cargar los atuendos",
+  "config.general.keep_hair_when_loading_outfits.description": "Cuando está habilitado, al cargar atuendos guardados no se sobrescribirá el peinado actual.",
+
+
+  // Tools
+  "tools.name.hand_mirror": "Espejo de Mano",
+  "tools.description.hand_mirror": "Te permite cambiar tu aspecto a uno más animado.",
+
+  // Messages
+  "messages.warning.mannequin_copied_appearance": "¡Copiado el atuendo del maniquí!",
+  "messages.warning.mannequin_occupied": "El maniquí tiene ropa encima. Quítaselas para establecer la apariencia de Fashion Sense.",
+  "messages.warning.mannequin_using_fashion_sense": "El maniquí está usando una apariencia de Fashion Sense. Pulsa Shift con el espejo de mano para quitarla.",
+  "messages.warning.requires_hand_mirror": "¡No hay espejo de mano en el inventario! Desactiva la opción RequireHandMirrorInInInventory para ignorar este requisito.",
+  "messages.warning.no_content_packs": "¡No tienes ningún paquete de contenidos de Fashion Sense instalado!",
+
+  // Letters
+  "letters.hand_mirror": "Me enteré de que alguien nuevo se mudaba al valle y pensé en ofrecerle un regalo de inauguración.^ ^He incluido mi viejo Espejo de Mano con esta carta, que debería ayudarte con tu sentido de la moda.^ ^Si alguna vez lo pierdes, puedes comprar otro en la tienda de Pierre.  ^   -Haley %item tool HandMirror %%",
+
+  // UI - Titles
+  "ui.fashion_sense.title.search": "Selecciona un paquete Fashion Sense",
+  "ui.fashion_sense.title.hair": "Peinados",
+  "ui.fashion_sense.title.accessory": "Accesorios",
+  "ui.fashion_sense.title.hat": "Sombreros",
+  "ui.fashion_sense.title.shirt": "Camisas",
+  "ui.fashion_sense.title.pants": "Pantalones",
+  "ui.fashion_sense.title.sleeves": "Mangas",
+  "ui.fashion_sense.title.sleevesAndShoes": "Mangas y zapatos",
+  "ui.fashion_sense.title.shoes": "Zapatos",
+  "ui.fashion_sense.title.body": "Cuerpo",
+  "ui.fashion_sense.title.mask_layer": "Capa",
+
+  // UI - Search
+  "ui.fashion_sense.search.filter.none": "Ninguno",
+  "ui.fashion_sense.search.filter.author": "Autor",
+  "ui.fashion_sense.search.filter.pack_name": "Nombre del paquete",
+  "ui.fashion_sense.search.filter.tags": "Etiquetas",
+  "ui.fashion_sense.search.about": "{0}\n\nAutor: {1}\nPaquete: {2}\nEtiquetas: {3}",
+
+  // UI - Outfits
+  "ui.fashion_sense.title.outfits": "Conjuntos",
+  "ui.fashion_sense.title.outfit_naming": "Nombre del Conjunto",
+  "ui.fashion_sense.create_outfit_button": "Crear un conjunto",
+  "ui.fashion_sense.create_outfit_hover": "Crea un nuevo conjunto basado en tu ropa actual.",
+  "ui.fashion_sense.outfit_info.save": "Guarda tu ropa actual en este conjunto.",
+  "ui.fashion_sense.outfit_info.rename": "Cambiar el nombre de este conjunto.",
+  "ui.fashion_sense.outfit_info.delete": "Eliminar este conjunto.",
+  "ui.fashion_sense.outfit_info.share.active": "Actualmente comparto este conjunto con otras partidas guardadas.",
+  "ui.fashion_sense.outfit_info.share.inactive": "No comparto este conjunto con otras partidas guardadas.",
+  "ui.fashion_sense.outfit_info.shared": "Compartido",
+  "ui.fashion_sense.outfit_info.preset": "Preestablecido",
+  "ui.fashion_sense.outfit_info.export": "Exporta el JSON del atuendo al portapapeles.",
+  "ui.fashion_sense.warning.name": "El nombre del conjunto está en blanco o ya existe.",
+  "ui.fashion_sense.mask_layer.base": "Base",
+  "ui.fashion_sense.outfit_info.missing_appearances": "Faltan los siguientes atuendos:\n{0}",
+  "ui.fashion_sense.buttons.import": "Importar",
+  "ui.fashion_sense.buttons.import.description": "Importa un conjunto Fashion Sense externo desde el portapapeles.",
+  "ui.fashion_sense.buttons.presets": "Preajustes",
+  "ui.fashion_sense.buttons.presets.description": "Vea los preajustes proporcionados por los paquetes de contenido Fashion Sense.",
+  "ui.fashion_sense.exported_outfit": "Atuendo copiado al portapapeles.",
+  "ui.fashion_sense.preset_info": "{0}\n\nAutor: {1}\nPaquete: {2}",
+
+  // UI - Etc
+  "ui.fashion_sense.start_with_hand_mirror": "Comenzar con Espejo",
+  "ui.fashion_sense.start_with_hand_mirror.description": "Comenzarás tu nueva partida con el Espejo de Mano en tu inventario.",
+  "ui.fashion_sense.color_override.shoes": "Anular el color de los zapatos",
+  "ui.fashion_sense.color_override.body": "Anular el color del cuerpo",
+  "ui.fashion_sense.search_button": "Buscar un paquete Fashion Sense específico.",
+  "ui.fashion_sense.outfit_button": "Accede a tus conjuntos Fashion Sense.",
+  "ui.fashion_sense.color_copy_button": "Copiar el color actual.",
+  "ui.fashion_sense.color_paste_button": "Pegar el color guardado.",
+  "ui.fashion_sense.color_paste_button_empty": "Pegar el color guardado (vacío).",
+  "ui.fashion_sense.clear_button": "Borra el elemento de Fashion Sense actualmente seleccionado.",
+  "ui.fashion_sense.random_button": "Selecciona al azar un artículo de Fashion Sense.",
+  "ui.fashion_sense.exit_button": "Salir del menú.",
+  "ui.fashion_sense.color_active.shoes": "Color del zapato",
+  "ui.fashion_sense.color_active.generic": "Color",
+  "ui.fashion_sense.color_disabled.generic": "(Ignorado)",
+  "ui.fashion_sense.color_info.hair": "Las superposiciones de color no afectarán a este peinado.",
+  "ui.fashion_sense.color_info.hat": "Las superposiciones de color no afectarán a este sombrero.",
+  "ui.fashion_sense.color_info.shirt": "Las superposiciones de color no afectarán a esta camiseta.",
+  "ui.fashion_sense.color_info.pants": "Las superposiciones de color no afectarán a estos pantalones.",
+  "ui.fashion_sense.color_info.accessory": "Las superposiciones de color no afectarán a este accesorio.",
+  "ui.fashion_sense.color_info.sleeves": "Las superposiciones de color no afectarán a estas mangas.",
+  "ui.fashion_sense.color_info.shoes": "Las superposiciones de color no afectarán shoes.",
+  "ui.fashion_sense.color_info.body": "Las superposiciones de color no afectarán a este cuerpo.",
+  "ui.fashion_sense.warning.hiding_player_sprite": "Este atuendo oculta el personaje base del jugador"
+}

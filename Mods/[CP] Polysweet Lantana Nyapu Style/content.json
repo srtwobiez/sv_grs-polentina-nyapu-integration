@@ -1,0 +1,51 @@
+{
+    "Format": "2.8.0",
+    "Changes": 
+    [
+      {
+        "LogName": "Loads Lantana Portrait",
+        "Action": "Load",
+        "Priority": "High",
+        "Target": "Portraits/LantanaPortrait, Portraits/LantanaPortrait_Winter",
+        "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png"
+      },
+      {
+        "LogName": "Loads Lantana Winter Outfit",
+        "Action": "Load",
+        "Priority": "High",
+        "Target": "Characters/LantanaPortrait_Winter",
+        "FromFile": "assets/Characters/{{TargetWithoutPath}}.png"
+      },
+      {
+        "LogName": "Lantan Nyapu Portrait Edit",
+        "Action": "EditImage",
+        "Priority": "Late",
+        "Target": "Portraits/MermaidLantana",
+        "FromFile": "Assets/Portraits/LantanaPortrait.png"
+      },
+      {
+            "LogName": "Nora Indoor Winter",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField":["MermaidLantana","Appearance"],
+            "Entries":
+            {
+                "PolyamorySweet.LantanaLoveShop":
+                {
+                    "ID": "PolyamorySweet.LantanaLoveShop",
+                    "Condition": "SEASON Spring Summer Fall",
+                    "Portrait": "Portraits/LantanaPortrait",
+                    "Priority": -100
+                },
+                "{{ModId}}.LantanaWinter":
+                {
+                    "ID": "{{ModId}}.LantanaWinter",
+                    "Condition": "SEASON Winter",
+                    "Sprite": "Characters/LantanaPortrait_Winter",
+                    "Portrait": "Portraits/LantanaPortrait_Winter",
+                    "Priority": -100
+                }
+            }
+        }
+    ]
+}

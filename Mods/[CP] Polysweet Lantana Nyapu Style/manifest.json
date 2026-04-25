@@ -1,0 +1,19 @@
+{
+  "Name": "[CP] Polyamory Sweet Lantana Nyapu Style!",
+  "Author": "AhCuteArt",
+  "Description": "Replaces Lantana's portraits",
+  "Version": "1.0",
+  "UniqueID": "AhCuteArt.PolyLantana_NyapuStyle",
+  "UpdateKeys": ["Nexus:40087"],
+  "ContentPackFor": 
+  {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": 
+  [
+    {
+      "UniqueID":"ApryllForever.CPPolyamorySweet", 
+      "IsRequired": true
+    }
+  ]
+}

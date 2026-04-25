@@ -1,0 +1,11 @@
+{
+    "Name": "[CP] Cornucopia More Crops Latin Spanish",
+    "Author": "Hayato2236",
+    "Version": "1.6.3",
+    "Description": "Traducción al español de [CP] Cornucopia More Crops",
+    "UniqueID": "Hayato2236.CornucopiaMCES-LATAM",
+    "UpdateKeys": ["Nexus:33929"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

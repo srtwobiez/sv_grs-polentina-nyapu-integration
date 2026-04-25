@@ -1,0 +1,87 @@
+{
+//Content.json
+//Config:
+
+  "Clean Room.Description": "Limpia la habitación de Shane en el rancho después de su evento de 6 corazones y también su habitación de casado.",
+  "Palette.Description": "Para recolores: si querés limpiar la habitación de Shane, elegí tu paleta.",
+  "Events.Description": "Cambia el comportamiento de Shane en los eventos de corazones.",
+  "GiftTastes.Description": "Cambia los gustos de regalos de Shane si ya viste su evento de 6 corazones.",
+  "Daily_Dialogue.Description": "Cambia los diálogos diarios de Shane si ya viste su evento de 6 corazones.",
+  "Festival_Dialogue.Description": "Cambia los diálogos de festivales de Shane si ya viste su evento de 6 corazones.",
+  "Marriage_Dialogue.Description": "Cambia los diálogos de matrimonio de Shane para que sean coherentes con su sobriedad.",
+  "Additional_Dialogue.Description": "Ajusta algunos diálogos de Shane para que sea *un poquito* menos desagradable.",
+  "Missing_Marriage_Dialogue.Description": "Agrega diálogos de matrimonio para Shane durante festivales, así tiene tantas líneas como los demás NPCs con los que se puede tener romance.",
+   
+// MISC UNIVERSAL CHANGES
+// this should be universal regardless of his current sobriety just so the taste is consistent.
+  "Stardrop.Tea.Dialogue": "Je... gracias. Tiene sabor a una pizza de Ciudad Zuzu.",
+
+//AdditionalDialogue
+  "Rainy_Day_Shane": "¿Está goteando el techo? Me preguntaba qué era ese sonido.",
+  "Indoor_Day_Shane": "Hay algo especial en el aire... *sniff*... ¿qué será? Ah...#$b#Solo es este viejo chip de maíz que guardé en el bolsillo hace unas semanas.#$e#¿Está mal si digo que me dan ganas de darle una mordida?",
+  "fall_Shane": "Creo que está creciendo una especie nueva de hongo detrás de mi mini refrigerador.#$e#Deberíamos encargarnos de eso antes de que %pet o uno de los animales lo descubra.",
+  "winter_Shane": "Allá afuera hay un mundo inmenso...$3#$b#Pero aquí adentro está más cálido.$6",
+
+//DailyDialogue
+  "Resort_Entering": "Buh... hace demasiado calor afuera...",
+  "Resort_Bar": "No encuentro estos refrescos con sabor tropical en ningún otro lado.#$e#Son tan refrescantes...$h",
+  "Tue8": "Deberíamos ir a un partido de los Tunnelers alguna vez. Cuando iba solo, solía tomar demasiada cerveza.",
+
+//FestivalDialogue
+//Sober Night Market
+  "winter_15.000": "Iba a comprar regalos por el Festival de la Estrella Invernal para Jas y Marnie pero...#$e#Todo está carísimo...$s",
+//Sober Spirits Eve
+  "Festivals.fall27.Shane": "Se quedaron sin refresco de arándano...$s",
+
+//GiftTastes
+//Alcohol Acceptance Dialogue
+  "AcceptGift_alcohol_item": "¿Por qué me das esto...?#$b#...Lo voy a tirar por el desagüe.$a",
+  "AcceptBirthdayGift_alcohol_item": "Tienes que estar bromeando.#$b#Dejame tirarlo por ti.$a",
+
+//Alcohol Gift Tastes and Joja Cola
+"Shane.GiftReaction.Love": "¡Guau, @! ¿Cómo supiste que este es mi favorito?",
+"Shane.GiftReaction.Like": "¡Está genial! ¡Gracias!",
+"Shane.GiftReaction.Dislike": "No me gusta mucho esto.",
+"Shane.GiftReaction.Hate": "¿Por qué me das tu basura?",
+"Shane.GiftReaction.Neutral": "Ah, ¿me trajiste algo? ¡Gracias!",
+
+//MarriageDialogue
+//Consitency Engagement Dialogue
+"Engagement.Dialogue.Shane1": "@... Me da vueltas la cabeza, pero no es por el alcohol.",
+
+//Consitency Marriage Dialogue
+"summer_Shane": "¿Qué tengo en agenda hoy...? hmmm...#$e#Creo que veo unos pretzels picantes y un bote de helado en el horizonte.",
+"spouseRoom_Shane": "#$c .5#¿Veo una peli o juego videojuegos? A veces la vida puede ser complicada.#$e#Hola, @. Me voy a quedar acá hoy y eh... tal vez barra un poco o algo así.",
+
+//Married Flower Dance Dialogue
+"FlowerDance_Accept_Spouse": "¿Bailar? Uff... bueno... No prometo no pisarte sin querer...",
+
+//replaces pale ale with pizza, beer with ginger ale
+//Consitency Specific Marriage Dialogue
+"Rainy_Day_2": "Ten... llevate esto.[206 174 903 305 215]#$e#Compré algunos de hace un tiempo y ya casi están por vencer...",
+"Indoor_Night_0": "Voy a comer un pequeño postre extra antes de cerrar los ojos esta noche.",
+"Neutral_6": "Si querés salir a ver a tus amigos en el pueblo, adelante. Yo estoy feliz con la tele y un par de pretzels para microondas.",
+"spring_1": "Aaay... me duele la cabeza. Creo que tomé demasiados refrescos y no suficiente agua.",
+"summer_27": "¿Qué planes tienes para el otoño? Yo voy a intentar meter más verduras en mi dieta.",
+"fall_1": "Hmm... Tal vez tenga que comprar unas cajas de sidra espumante de calabaza para celebrar la estación...$6",
+
+//Consitency Saloon Marriage Dialogue
+"marriage_Fri.002": "Si no pido un refresco de vez en cuando, Gus se va a quedar sin trabajo. Solo cumplo con mi deber ciudadano. Vuelvo a casa como a las 22.",
+
+//Missing Marriage Dialogue
+//Missing SV Fair
+"fall16.Shane_spouse": "Cuando termines de armar la exhibición de productos, ¿vamos a buscar unos sándwiches?",
+
+//Missing Spirits Eve
+"fall27.Shane_spouse": "¿Me puedes traer un refresco de arándano antes de que se acaben? Estoy ocupado con Jas...",
+
+//Missing Egg Festival
+"spring13.Shane_spouse": "Solo entre tu y yo, hay tres en el cementerio.$6",
+
+//Missing Luau
+"summer11.Shane_spouse": "¿Creés que está mal que haya traído un recipiente vacío para la sopa?",
+
+//Missing Festival of Ice
+"winter8.Shane_spouse": "Solo vine a apoyarte. Si no, estaría dentro, que hace más calor."
+}
+
