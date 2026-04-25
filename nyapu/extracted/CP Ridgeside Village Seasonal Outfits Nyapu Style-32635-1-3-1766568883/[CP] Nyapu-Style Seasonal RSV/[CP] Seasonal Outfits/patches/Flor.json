@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Flor Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Flor_spring, Portraits/Flor_summer, Portraits/Flor_fall, Portraits/Flor_winter, Portraits/Flor_spring24, Portraits/Flor_fall27-1, Portraits/Flor_fall27-2, Portraits/Flor_rain, Portraits/Flor_Beach, Portraits/Flor_Dress",
+            "FromFile": "assets/Portraits/Flor/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Flor Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Flor",
+            "FromFile": "assets/Portraits/Flor/Flor_fall.png"
+        },		
+		{
+			"LogName": "RSV Nyapu Edit - Flor Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Flor.png",
+			"When": {"Spouse": "Flor"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+    ]
+}

@@ -1,0 +1,24 @@
+{
+	"Changes": [
+	
+		{
+			"LogName": "Victor's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Victor_Spring, Portraits/Victor_Summer, Portraits/Victor_Fall, Portraits/Victor_Winter_Outdoor, Portraits/Victor_Winter_Indoor, Portraits/Victor_FlowerDance, Portraits/Victor_SpiritsEve, Portraits/Victor_Luau, Portraits/Victor_Beach, Characters/Victor_Luau",
+			"FromFile": "assets/{{TargetPathOnly}}/Victor/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Victor's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Victor",
+			"FromFile": "assets/Portraits/Victor/Victor_{{Season}}.png",
+		    "When": {"Season |contains=winter": false}
+		},		
+		{
+			"LogName": "Victor's Outfit Base Winter",
+			"Action": "EditImage",
+			"Target": "Portraits/Victor_Winter",
+			"FromFile": "assets/Portraits/Victor/Victor_Winter_Outdoor.png"
+		},				
+	]
+}

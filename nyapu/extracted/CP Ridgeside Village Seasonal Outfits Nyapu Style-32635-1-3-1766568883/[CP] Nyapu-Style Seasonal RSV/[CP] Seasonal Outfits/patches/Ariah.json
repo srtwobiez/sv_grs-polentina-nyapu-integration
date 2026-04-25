@@ -1,0 +1,18 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Ariah Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Ariah_spring, Portraits/Ariah_summer, Portraits/Ariah_fall, Portraits/Ariah_winter, Portraits/Ariah_spring24, Portraits/Ariah_fall27-1, Portraits/Ariah_fall27-2, Portraits/Ariah_rain, Portraits/Ariah_Beach",
+            "FromFile": "assets/Portraits/Ariah/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Ariah Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Ariah",
+            "FromFile": "assets/Portraits/Ariah/Ariah_summer.png"
+        },		
+    ]
+}

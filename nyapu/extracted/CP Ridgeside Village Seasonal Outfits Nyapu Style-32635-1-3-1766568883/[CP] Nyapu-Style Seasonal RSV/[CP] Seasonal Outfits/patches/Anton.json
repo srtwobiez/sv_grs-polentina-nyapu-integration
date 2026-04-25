@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Anton Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Anton_spring, Portraits/Anton_summer, Portraits/Anton_fall, Portraits/Anton_winter, Portraits/Anton_spring24, Portraits/Anton_fall27-1, Portraits/Anton_fall27-2, Portraits/Anton_rain, Portraits/Anton_Beach",
+            "FromFile": "assets/Portraits/Anton/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Anton Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Anton",
+            "FromFile": "assets/Portraits/Anton/Anton_fall.png"
+        },	
+		{
+			"LogName": "RSV Nyapu Edit - Anton Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Anton.png",
+			"When": {"Spouse": "Anton"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+    ]
+}

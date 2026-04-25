@@ -1,0 +1,41 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Jio Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Jio, Portraits/Jio_spring, Portraits/Jio_summer, Portraits/Jio_fall, Portraits/Jio_winter, Portraits/Jio_spring24, Portraits/Jio_fall27-1, Portraits/Jio_fall27-2, Portraits/Jio_rain",
+            "FromFile": "assets/Portraits/Jio/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Jio Portraits Beach",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Jio_Beach",
+            "FromFile": "assets/Portraits/Jio/Jio.png"
+        },		
+
+        {
+			"LogName": "RSV Nyapu Edit - Jio Work Mask",
+            "Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Jio_spring, Portraits/Jio_summer, Portraits/Jio_fall, Portraits/Jio_winter, Portraits/Jio_rain",
+			"FromFile": "assets/Portraits/Jio/Jio_mask.png",
+			"When":
+			{
+				"JioMasked": true
+			},
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},	
+		{
+			"LogName": "RSV Nyapu Edit - Jio Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Jio.png",
+			"When": {"Spouse": "Jio"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},
+    ]
+}

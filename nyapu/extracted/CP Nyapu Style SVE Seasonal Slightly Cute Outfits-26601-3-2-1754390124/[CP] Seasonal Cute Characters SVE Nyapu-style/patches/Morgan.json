@@ -1,0 +1,31 @@
+{
+	"Changes": [
+		{
+			"LogName": "Morgan's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Morgan_Spring, Portraits/Morgan_Summer, Portraits/Morgan_Fall, Portraits/Morgan_Winter",
+			"FromFile": "assets/Portraits/Morgan/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Morgan's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Morgan",
+			"FromFile": "assets/Portraits/Morgan/Morgan_{{Season}}.png"
+		},
+		{
+			"LogName": "Morgan Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Morgan", "Appearance"],
+			"Entries": {
+				"Poltergeister.SeasonalCuteSpritesSVE.MorganWinter": {
+					"Id": "Poltergeister.SeasonalCuteSpritesSVE.MorganWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Morgan_Winter",
+					"Portrait": "Portraits/Morgan_Winter",
+					"Precedence": -120,
+				},
+			},
+		},		
+	]
+}

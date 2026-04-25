@@ -1,0 +1,32 @@
+{
+	"Changes": [
+
+		{
+			"LogName": "Isaac's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Isaac_Spring, Portraits/Isaac_Summer, Portraits/Isaac_Fall, Portraits/Isaac_Winter, Portraits/Isaac_FlowerDance",
+			"FromFile": "assets/Portraits/Isaac/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Isaac's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Isaac",
+			"FromFile": "assets/Portraits/Isaac/Isaac_{{Season}}.png"
+		},		
+		{
+			"LogName": "Isaac Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Isaac", "Appearance"],
+			"Entries": {
+				"Poltergeister.SeasonalCuteSpritesSVE.IsaacWinter": {
+					"Id": "Poltergeister.SeasonalCuteSpritesSVE.IsaacWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Isaac_Winter",
+					"Portrait": "Portraits/Isaac_Winter",
+					"Precedence": -120,
+				},
+			},
+		},		
+	]
+}

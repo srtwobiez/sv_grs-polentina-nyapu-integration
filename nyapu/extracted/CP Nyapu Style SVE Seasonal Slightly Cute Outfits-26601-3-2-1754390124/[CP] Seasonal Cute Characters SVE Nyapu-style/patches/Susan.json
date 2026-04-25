@@ -1,0 +1,47 @@
+{
+	"Changes": [
+		{
+			"LogName": "Load Susan's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Susan_Summer_Indoor, Characters/Susan_Summer_Indoor",
+			"FromFile": "assets/{{TargetPathOnly}}/Susan/Susan_Summer_Indoor.png"
+		},
+		{
+			"LogName": "Susan's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Susan_Spring, Portraits/Susan_Summer, Portraits/Susan_Fall, Portraits/Susan_Winter_Outdoor, Portraits/Susan_Winter_Indoor, Portraits/Susan_FlowerDance, Portraits/Susan_SpiritsEve, Portraits/Susan_Luau, Portraits/Susan_Beach",
+			"FromFile": "assets/Portraits/Susan/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Susan's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Susan",
+			"FromFile": "assets/Portraits/Susan/Susan_{{Season}}.png",
+		    "When": {"Season |contains=winter": false}
+		},		
+		{
+			"LogName": "Susan's Outfit Base Winter",
+			"Action": "EditImage",
+			"Target": "Portraits/Susan_Winter",
+			"FromFile": "assets/Portraits/Susan/Susan_Winter_Outdoor.png"
+		},
+		{
+			"LogName": "Susan's Summer Indoor Change",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Susan", "Appearance"],
+			"Entries": {
+
+					"{{ModId}}.SusanSummerIndoor": {
+					"Id": "{{ModId}}.SusanSummerIndoor",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Susan_Summer_Indoor",
+					"Portrait": "Portraits/Susan_Summer_Indoor",
+					"Outdoors": false,
+					"Precedence": -130
+				}
+			}
+		}		
+	]
+}

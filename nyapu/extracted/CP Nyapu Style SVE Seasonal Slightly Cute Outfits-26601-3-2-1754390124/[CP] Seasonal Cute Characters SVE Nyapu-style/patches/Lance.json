@@ -1,0 +1,32 @@
+{
+	"Changes": [
+
+		{
+			"LogName": "Lance's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Lance_Spring, Portraits/Lance_Summer, Portraits/Lance_Fall, Portraits/Lance_Winter, Portraits/Lance_FlowerDance, Portraits/Lance_Beach",
+			"FromFile": "assets/Portraits/Lance/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Lance's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Lance",
+			"FromFile": "assets/Portraits/Lance/Lance_{{Season}}.png"
+		},		
+		{
+			"LogName": "Lance Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Lance", "Appearance"],
+			"Entries": {			
+				"Poltergeister.SeasonalCuteSpritesSVE.LanceWinter": {
+					"Id": "Poltergeister.SeasonalCuteSpritesSVE.LanceWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Lance_Winter",
+					"Portrait": "Portraits/Lance_Winter",
+					"Precedence": -120,
+				},
+			},
+		},		
+	]
+}

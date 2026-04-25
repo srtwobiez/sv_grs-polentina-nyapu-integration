@@ -1,0 +1,18 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Lorenzo Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Lorenzo_spring, Portraits/Lorenzo_summer, Portraits/Lorenzo_fall, Portraits/Lorenzo_winter, Portraits/Lorenzo_spring24, Portraits/Lorenzo_fall27-1, Portraits/Lorenzo_fall27-2, Portraits/Lorenzo_rain, Portraits/Lorenzo_Beach",
+            "FromFile": "assets/Portraits/Lorenzo/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Lorenzo Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Lorenzo",
+            "FromFile": "assets/Portraits/Lorenzo/Lorenzo_spring.png"
+        },		
+    ]
+}

@@ -1,0 +1,34 @@
+{
+	"Changes": [
+		{
+			"LogName": "Morris Tod's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/MorrisTod_Spring, Portraits/MorrisTod_Summer, Portraits/MorrisTod_Fall, Portraits/MorrisTod_Winter_Outdoor, Portraits/MorrisTod_Winter_Indoor",
+			"FromFile": "assets/Portraits/MorrisTod/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Morris's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/MorrisTod, Portraits/Morris",
+			"FromFile": "assets/Portraits/MorrisTod/MorrisTod_{{Season}}.png",
+		    "When": {"Season |contains=winter": false}
+		},		
+		{
+			"LogName": "Morris's Outfit Base Winter",
+			"Action": "EditImage",
+			"Target": "Portraits/MorrisTod_Winter",
+			"FromFile": "assets/Portraits/MorrisTod/MorrisTod_Winter_Outdoor.png"
+		},	
+		{ 
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheaterJoja_TileSheet",
+			"FromFile": "assets/Characters/MovieTheater_Blank.png",
+			"ToArea": {"X": 16, "Y": 224, "Width": 16, "Height": 32},
+			"Update": "OnLocationChange",
+			"When": {
+				"LocationName": "MovieTheater",
+				"HasFile:{{FromFile}}": true,
+			}
+		},		
+	]
+}

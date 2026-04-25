@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Kenneth Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Kenneth_spring, Portraits/Kenneth_summer, Portraits/Kenneth_fall, Portraits/Kenneth_winter, Portraits/Kenneth_spring24, Portraits/Kenneth_fall27-1, Portraits/Kenneth_fall27-2, Portraits/Kenneth_rain, Portraits/Kenneth_Beach",
+            "FromFile": "assets/Portraits/Kenneth/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Kenneth Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Kenneth",
+            "FromFile": "assets/Portraits/Kenneth/Kenneth_rain.png"
+        },			
+		{
+			"LogName": "RSV Nyapu Edit - Kenneth Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Kenneth.png",
+			"When": {"Spouse": "Kenneth"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+    ]
+}

@@ -1,0 +1,13 @@
+{
+   "Name": "Goth Haley Rooms",
+   "Author": "JefGrizli",
+   "Version": "1.0.2-r",
+   "Description": "Redesign of Haley's room and spouse room to better reflect her goth style.",
+   "UniqueID": "JefGrizli.GothHaleyRooms",
+   "MinimumApiVersion": "4.0.7",
+	"UpdateKeys": ["Nexus:24336@Rooms"],
+   "ContentPackFor": 
+	{
+    	"UniqueID": "Pathoschild.ContentPatcher"
+ 	}
+}

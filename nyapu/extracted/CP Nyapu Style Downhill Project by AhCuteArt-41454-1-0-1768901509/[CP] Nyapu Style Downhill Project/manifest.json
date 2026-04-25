@@ -1,0 +1,20 @@
+{
+   "Name": "Downhill Project in Nyapu Style ",
+   "Author": "AhCuteArt",
+   "Version": "1.0",
+   "Description": "Changes Downhill Project's portraits to Nyapu style.",
+   "UniqueID": "AhCuteArt.Downhill",
+   "UpdateKeys": [ "Nexus:41454" ],
+   "ContentPackFor": 
+   {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+   "Dependencies": 
+   [
+      {
+        "UniqueID": "DH.Kiyuga.Characters",
+        "IsRequired": true
+      }
+	  
+   ]
+}

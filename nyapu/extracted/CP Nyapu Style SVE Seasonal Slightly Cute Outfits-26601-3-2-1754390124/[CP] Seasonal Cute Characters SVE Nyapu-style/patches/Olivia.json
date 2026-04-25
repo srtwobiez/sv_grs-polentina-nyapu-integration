@@ -1,0 +1,23 @@
+{
+	"Changes": [
+		{
+			"LogName": "Olivia's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Olivia_Spring, Portraits/Olivia_Summer, Portraits/Olivia_Fall, Portraits/Olivia_Winter_Outdoor, Portraits/Olivia_Winter_Indoor, Portraits/Olivia_FlowerDance, Portraits/Olivia_SpiritsEve, Portraits/Olivia_Aerobics, Portraits/Olivia_EggFestival, Portraits/Olivia_Beach, Characters/Olivia_EggFestival",
+			"FromFile": "assets/{{TargetPathOnly}}/Olivia/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Olivia's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Olivia",
+			"FromFile": "assets/{{TargetPathOnly}}/Olivia/Olivia_{{Season}}.png",
+		    "When": {"Season |contains=winter": false}
+		},	
+		{
+			"LogName": "Olivia's Outfit Base Winter",
+			"Action": "EditImage",
+			"Target": "Portraits/Olivia_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/Olivia/Olivia_Winter_Outdoor.png"
+		},			
+	]
+}

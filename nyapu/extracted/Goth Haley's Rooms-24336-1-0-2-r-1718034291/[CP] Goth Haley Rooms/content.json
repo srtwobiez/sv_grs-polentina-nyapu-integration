@@ -1,0 +1,56 @@
+{
+   "Format": "2.2.0",
+	"ConfigSchema": {
+		"Spouse Room": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		}
+	},
+	"DynamicTokens": [
+		{
+			"Name": "HasSVE",
+			"Value": ""
+		},
+		{
+			"Name": "HasSVE",
+			"Value": "SVE",
+			"When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" }
+		}
+	],
+   "Changes": [
+		{
+			"LogName": "Haley's Goth Room",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}/GothHaleyRooms",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Haley's Room a",
+			"Action": "EditMap",
+			"Target": "Maps/HaleyHouse",
+			"FromFile": "assets/{{TargetWithoutPath}}_Haley{{HasSVE}}.tmx",
+			"FromArea": {"X": 0, "Y": 0, "Width": 11, "Height": 11},
+			"ToArea": {"X": 0, "Y": 0, "Width": 11, "Height": 11},
+			"Priority": "Late"
+		},
+		{
+			"LogName": "Haley's Room b",
+			"Action": "EditMap",
+			"Target": "Maps/HaleyHouse",
+			"FromFile": "assets/{{TargetWithoutPath}}_Haley{{HasSVE}}.tmx",
+			"FromArea": {"X": 5, "Y": 11, "Width": 1, "Height": 3},
+			"ToArea": {"X": 5, "Y": 11, "Width": 1, "Height": 3},
+			"Priority": "Late"
+		},
+		{
+			"LogName": "Haley's Spouse Room",
+			"Action": "EditMap",
+			"Target": "Maps/spouseRooms",
+			"FromFile": "assets/{{TargetWithoutPath}}_Haley.tmx",
+			"FromArea": {"X": 0, "Y": 0, "Width": 6, "Height": 9},
+			"ToArea": {"X": 18, "Y": 0, "Width": 6, "Height": 9},
+			"Priority": "Late",
+			"When": { "Spouse Room": true }
+		}
+	]
+}

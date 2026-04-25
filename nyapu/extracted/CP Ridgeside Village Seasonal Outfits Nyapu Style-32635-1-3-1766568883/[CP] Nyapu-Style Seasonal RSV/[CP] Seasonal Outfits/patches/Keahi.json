@@ -1,0 +1,18 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Keahi Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Keahi_spring, Portraits/Keahi_summer, Portraits/Keahi_fall, Portraits/Keahi_winter, Portraits/Keahi_spring24, Portraits/Keahi_fall27-1, Portraits/Keahi_fall27-2, Portraits/Keahi_rain, Portraits/Keahi_Beach",
+            "FromFile": "assets/Portraits/Keahi/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Keahi Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Keahi",
+            "FromFile": "assets/Portraits/Keahi/Keahi_summer.png"
+        },		
+    ]
+}

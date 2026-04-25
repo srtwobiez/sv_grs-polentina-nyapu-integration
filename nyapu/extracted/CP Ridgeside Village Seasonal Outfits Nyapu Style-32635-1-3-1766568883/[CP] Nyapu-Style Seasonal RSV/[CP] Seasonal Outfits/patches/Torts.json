@@ -1,0 +1,89 @@
+{
+    "Changes": [
+	
+//Think "Asset Loading" as putting images/dialogue/map/anything into a labeled box that would be understood by every other component of Content Patcher. We call these labeled boxes "Assets". 	
+
+// The original seasonal mod already does a Load on these festival portrait assets for Torts, so all we need to do now is to EditImage them. This Action is basically telling CP to take these box labeled "Portraits/Torts27-1" and replace the image inside with the image I provide."
+        {
+            "LogName": "RSV Nyapu Edit - Torts Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Torts_fall27-1, Portraits/Torts_fall27-2",
+            "FromFile": "assets/Portraits/Torts/{{TargetWithoutPath}}.png"
+        },	
+
+//The original mod *doesn't* Load these seasonal assets, so we'd need to Load them for the first time here. Basically "put these image into these labeled box".
+		{
+			"LogName": "RSV Nyapu Loads - Torts Portraits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Torts_spring, Portraits/Torts_summer, Portraits/Torts_fall, Portraits/Torts_winter, Characters/Torts_spring, Characters/Torts_summer, Characters/Torts_fall, Characters/Torts_winter, Portraits/Torts_rain, Characters/Torts_rain",
+			"FromFile": "Assets/{{TargetPathOnly}}/Torts/{{TargetWithoutPath}}.png"
+		},	
+
+//Again this is an asset already Loaded, this time by the original RSV mod, so we just EditImage it.
+        {
+            "LogName": "RSV Nyapu Edit - Torts Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Torts",
+            "FromFile": "assets/Portraits/Torts/Torts_default.png"
+        },	
+		
+//Appearance data basically read the "labels" of the "boxes". So here we basically tell it to use the asset named "Portraits/Torts_spring" for Torts's portrait when it's spring and so on.
+//The lower the Precendence, the more it takes precedence. Here, because the Torts Rain entry has a Precedence of -120, lower then all the rest, then Torts would always use his Rain assets when the conditions are met, no matter the season.
+		{
+			"LogName": "RSV Seasonal Appearances - Torts",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Torts", "Appearance" ],
+			"Entries": {
+
+			//Seasonal Outfits
+				"{{ModId}}.TortsSpring": {
+					"Id": "{{ModId}}.TortsSpring",
+					"Portrait": "Portraits/Torts_spring",
+					"Sprite": "Characters/Torts_spring",
+					"Condition": "SEASON spring",
+					"Precedence": -100
+				},
+				"{{ModId}}.TortsSummer": {
+					"Id": "{{ModId}}.TortsSummer",
+					"Portrait": "Portraits/Torts_summer",
+					"Sprite": "Characters/Torts_summer",
+					"Condition": "SEASON summer",
+					"Precedence": -100
+				},
+				"{{ModId}}.TortsFall": {
+					"Id": "{{ModId}}.TortsFall",
+					"Portrait": "Portraits/Torts_fall",
+					"Sprite": "Characters/Torts_fall",
+					"Condition": "SEASON fall",
+					"Precedence": -100
+				},
+				"{{ModId}}.TortsWinter": {
+					"Id": "{{ModId}}.TortsWinter",
+					"Portrait": "Portraits/Torts_winter",
+					"Sprite": "Characters/Torts_winter",
+					"Condition": "SEASON winter",
+					"Precedence": -100
+				},
+				"{{ModId}}.TortsRain": {
+					"Id": "{{ModId}}.TortsRain",
+					"Portrait": "Portraits/Torts_rain",
+					"Sprite": "Characters/Torts_rain",
+					"Condition": "SEASON spring summer fall, WEATHER Target Rain Storm",
+					"Precedence": -120
+				},
+			}
+		},		
+		
+		{
+			"LogName": "RSV Nyapu Edit - Torts Accessories",
+            "Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Characters/Torts",
+			"FromFile": "assets/Characters/Torts/Torts_{{season}}.png",
+		},
+    ]
+}

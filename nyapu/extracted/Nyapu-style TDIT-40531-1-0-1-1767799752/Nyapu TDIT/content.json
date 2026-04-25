@@ -1,0 +1,41 @@
+ {
+    "Format": "2.8.0",
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Welwick_Default, Portraits/OldMariner_Default, Portraits/OldMariner_GhostBlue, Portraits/OldMariner_GhostGrey, Portraits/DesertFood_Default, Portraits/ShadyGuy_Default, Portraits/CactusMan_Default, Portraits/DesertTrader_RacerGuy, Portraits/DesertTrader_Scholar, Portraits/EggShop_Default, Portraits/CraneMan_Default, Portraits/PurpleHairLady_Default, Portraits/robot, Portraits/LeahEx, Portraits/Marcello, Portraits/Mother_Default, Portraits/Child_Default, Portraits/RedCapGuy_Default, Portraits/Strongman_Default, Portraits/SlingshotLady_Default, Portraits/StarSeller_Default, Portraits/FishingFair_Default, Portraits/Clown_Default, Portraits/CornerGuy_Default, Portraits/ConcessionMan_Default, Portraits/MovieConcessionCC_Default, Portraits/MovieConcessionCC_Kevin, Portraits/MovieConcessionJoja_Default, Portraits/Gourmand_Default, Portraits/DesertTrader_Default, Portraits/ShroudedFigure_Default, Portraits/PainterLupini_Default, Portraits/ShadowGuy_Default, Portraits/Raccoon_Default, Portraits/DefaultMouse, Portraits/Television_GlamChef, Portraits/DealerMale_Default, Portraits/DealerFemale_Default, Portraits/Bartender_Default, Portraits/DrunkPirate_Default, Portraits/GrimPirate_Default, Portraits/GlassesPirate_Default, Portraits/Blackgull_Default, Portraits/DartMan_Default, Portraits/SquidChef_Default, Portraits/MasterFisher_Default, Portraits/Curator",
+            "FromFile": "assets/{{TargetWithoutPath}}.png",
+			"When": {"HasMod |contains=DolphINaF.ExtraPortraits": true,}
+		},
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Gervig91.StardewAquariumCP_SnackVendor",
+            "FromFile": "assets/TopHat.png",
+			"When": {"HasMod |contains=DolphINaF.ExtraPortraits": true,}  
+		},			
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/LeahEx",
+			"FromFile": "assets/LeahExMale.png",
+			"When": {
+				"HasMod |contains=DolphINaF.ExtraPortraits": true,
+				"PlayerGender": "Male",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/LeahEx",
+			"FromFile": "assets/LeahExAndro.png",
+			"When": {
+				"HasMod |contains=DolphINaF.ExtraPortraits": true,
+				"HasMod": "Orpheus.AndrogynousKel",
+			}
+		},	
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/CSPurseDog_Default, Portraits/CSFlamingo_Default, Portraits/CSGiftShop_Default, Portraits/CSFoodCourt_Default",
+            "FromFile": "assets/{{TargetWithoutPath}}.png",
+			"When": {"HasMod |contains=DolphINaF.CSPortraits": true,}
+        },			
+	]
+}

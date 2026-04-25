@@ -1,0 +1,94 @@
+{
+    "Format": "2.8.0",
+    "Changes": [
+		{
+            "LogName": "Load Anderson's Winter Outfit",
+            "Action": "Load",
+            "Priority": "High+1",
+            "Target": "Characters/Anderson_Winter, Portraits/Anderson_Winter",
+            "FromFile": "Assets/Arts/{{TargetPathOnly}}/Anderson/{{TargetWithoutPath}}.png"
+        },
+				{
+            "LogName": "Load Arthur's Winter Outfit",
+            "Action": "Load",
+            "Priority": "High+1",
+            "Target": "Characters/Arthur_Winter, Portraits/Arthur_Winter",
+            "FromFile": "Assets/Arts/{{TargetPathOnly}}/Arthur/{{TargetWithoutPath}}.png"
+        },
+				{
+            "LogName": "Load Julia's Winter Outfit",
+            "Action": "Load",
+            "Priority": "High+1",
+            "Target": "Characters/Julia_Winter, Portraits/Julia_Winter",
+            "FromFile": "Assets/Arts/{{TargetPathOnly}}/Julia/{{TargetWithoutPath}}.png"
+        },
+		{
+			"LogName": "Edit Anderson's Portrait",
+			"Action": "EditImage",
+			"Priority": "Late+1",
+			"Target": "Portraits/Anderson",
+			"FromFile": "Assets/Arts/{{TargetPathOnly}}/Anderson/{{TargetWithoutPath}}.png"
+        },
+		{
+			"LogName": "Edit Arthur's Portraits",
+			"Action": "EditImage",
+			"Priority": "Late+1",
+			"Target": "Portraits/Arthur",
+			"FromFile": "Assets/Arts/{{TargetPathOnly}}/Arthur/{{TargetWithoutPath}}.png"
+        },
+		{
+			"LogName": "Edit Julia's Portraits",
+			"Action": "EditImage",
+			"Priority": "Late+1",
+			"Target": "Portraits/Julia",
+			"FromFile": "Assets/Arts/{{TargetPathOnly}}/Julia/{{TargetWithoutPath}}.png"
+        },
+		// Added code below so the winter outfits shows up 100% of the time
+		{
+            "LogName": "Anderson Winter Outfit",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField":["Anderson","Appearance"],
+            "Entries":{
+                "{{ModId}}.AndersonWinterOutfit":{
+                    "ID": "{{ModId}}.AndersonWinterOutfit",
+                    "Condition": "SEASON Winter",
+                    "Sprite": "Characters/Anderson_Winter",
+                    "Portrait": "Portraits/Anderson_Winter",
+                    "Precedence": -100
+                }
+            }
+        },
+		{
+            "LogName": "Arthur Winter Outfit",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField":["Arthur","Appearance"],
+            "Entries":{
+                "{{ModId}}.ArthurWinterOutfit":{
+                    "ID": "{{ModId}}.ArthurWinterOutfit",
+                    "Condition": "SEASON Winter",
+                    "Sprite": "Characters/Arthur_Winter",
+                    "Portrait": "Portraits/Arthur_Winter",
+                    "Precedence": -100
+                }
+            }
+        },
+				{
+            "LogName": "Julia Winter Outfit",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField":["Julia","Appearance"],
+            "Entries":{
+                "{{ModId}}.JuliaWinterOutfit":{
+                    "ID": "{{ModId}}.JuliaWinterOutfit",
+                    "Condition": "SEASON Winter",
+                    "Sprite": "Characters/Julia_Winter",
+                    "Portrait": "Portraits/Julia_Winter",
+                    "Precedence": -100
+                }
+            }
+        },
+
+    ]
+}

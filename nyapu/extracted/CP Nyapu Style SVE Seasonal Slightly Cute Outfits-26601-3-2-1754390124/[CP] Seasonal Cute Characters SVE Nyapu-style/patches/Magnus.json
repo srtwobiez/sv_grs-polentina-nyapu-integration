@@ -1,0 +1,32 @@
+{
+	"Changes": [
+	
+		{
+			"LogName": "Magnus's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Magnus_Spring, Portraits/Magnus_Summer, Portraits/Magnus_Fall, Portraits/Magnus_Winter, Portraits/Magnus_FlowerDance",
+			"FromFile": "assets/Portraits/Magnus/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Magnus's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard",
+			"FromFile": "assets/Portraits/Magnus/Magnus_{{Season}}.png"
+		},	
+		{
+			"LogName": "Magnus Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Wizard", "Appearance"],
+			"Entries": {
+				"Poltergeister.SeasonalCuteSpritesSVE.MagnusWinter": {
+					"Id": "Poltergeister.SeasonalCuteSpritesSVE.MagnusWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Magnus_Winter",
+					"Portrait": "Portraits/Magnus_Winter",
+					"Precedence": -150,
+				},
+			},
+		},		
+	]
+}

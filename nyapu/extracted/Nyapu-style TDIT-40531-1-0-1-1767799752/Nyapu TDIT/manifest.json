@@ -1,0 +1,21 @@
+{
+  "Name": "Nyapu-style Portraits for Extras and Central Station",
+  "Author": "toshamagna",
+  "Description": "Give Nyapu-style portraits for TDIT extras and Central Station tourists",
+  "Version": "1.0.1",
+  "UniqueID": "toshamagna.NyapuTDIT",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+   "UpdateKeys": [ "Nexus:40531" ],  
+   "Dependencies": [
+      {
+         "UniqueID": "DolphINaF.ExtraPortraits",
+         "IsRequired": false
+      },
+      {
+         "UniqueID": "DolphINaF.CSPortraits",
+         "IsRequired": false
+      }, 
+   ],  
+}

@@ -1,0 +1,29 @@
+{
+	"Changes": [
+		{
+			"LogName": "Claire's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Claire_Spring, Portraits/Claire_Summer, Portraits/Claire_Fall, Portraits/Claire_Winter_Outdoor, Portraits/Claire_Winter_Indoor, Portraits/Claire_Beach, Portraits/Claire_FlowerDance, Portraits/Claire_SpiritsEve, Portraits/Claire_Joja, Portraits/Claire_Aerobics, Portraits/Claire_Theater",
+			"FromFile": "assets/Portraits/Claire/{{TargetWithoutPath}}.png"
+		},	
+		{
+			"LogName": "Theater Temp Claire",
+			"Action": "EditImage",
+			"Target": "Portraits/**Claire**",
+			"FromFile": "assets/Portraits/Claire/Claire_Theater.png",  
+		},	
+		{
+			"LogName": "Claire's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Claire",
+			"FromFile": "assets/Portraits/Claire/Claire_{{Season}}.png",
+		    "When": {"Season |contains=winter": false}
+		},	
+		{
+			"LogName": "Claire's Outfit Base Winter",
+			"Action": "EditImage",
+			"Target": "Portraits/Claire_Winter",
+			"FromFile": "assets/Portraits/Claire/Claire_Winter_Outdoor.png"
+		},			
+	]
+}

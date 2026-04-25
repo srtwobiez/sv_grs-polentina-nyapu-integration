@@ -1,0 +1,28 @@
+{
+	"Changes": [
+		
+		{
+            "LogName": "RSV Nyapu Edit - Alissa Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Alissa_spring, Portraits/Alissa_summer, Portraits/Alissa_fall, Portraits/Alissa_winter, Portraits/Alissa_spring24, Portraits/Alissa_fall27-1, Portraits/Alissa_fall27-2, Portraits/Alissa_rain, Portraits/Alissa_Beach",
+            "FromFile": "assets/Portraits/Alissa/{{TargetWithoutPath}}.png"
+        },
+		{
+            "LogName": "RSV Nyapu Edit - Alissa Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Alissa",
+            "FromFile": "assets/Portraits/Alissa/Alissa_spring.png"
+        },
+		{
+			"LogName": "RSV Nyapu Edit - Alissa Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Alissa.png",
+			"When": {"Spouse": "Alissa"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},		
+	]
+}

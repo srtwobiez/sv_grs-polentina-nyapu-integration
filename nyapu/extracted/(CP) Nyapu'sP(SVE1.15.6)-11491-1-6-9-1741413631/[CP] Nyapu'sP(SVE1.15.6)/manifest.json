@@ -1,0 +1,17 @@
+{
+	"Name": "Nyapu's Portraits for SVE",
+	"Author": "Nyapu",
+	"Version": "1.6.9",
+	"Description": "Replaces portraits from Stardew Valley Expanded",
+	"UniqueID": "Nyapu.PortraitsSVE",
+    "UpdateKeys": [ "Nexus:11491@SVE" ],
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+			"IsRequired": true,
+		},
+	]
+}

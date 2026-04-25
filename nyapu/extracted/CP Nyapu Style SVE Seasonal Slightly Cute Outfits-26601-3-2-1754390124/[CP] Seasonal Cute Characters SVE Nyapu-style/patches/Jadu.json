@@ -1,0 +1,32 @@
+{
+	"Changes": [
+	
+		{
+			"LogName": "Jadu's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Jadu_Spring, Portraits/Jadu_Summer, Portraits/Jadu_Fall, Portraits/Jadu_Winter",
+			"FromFile": "assets/Portraits/Jadu/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Jadu's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Jadu",
+			"FromFile": "assets/Portraits/Jadu/Jadu_{{Season}}.png"
+		},	
+		{
+			"LogName": "Jadu Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Jadu", "Appearance"],
+			"Entries": {
+				"Poltergeister.SeasonalCuteSpritesSVE.JaduWinter": {
+					"Id": "Poltergeister.SeasonalCuteSpritesSVE.JaduWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Jadu_Winter",
+					"Portrait": "Portraits/Jadu_Winter",
+					"Precedence": -120,
+				},
+			},
+		},		
+	]
+}

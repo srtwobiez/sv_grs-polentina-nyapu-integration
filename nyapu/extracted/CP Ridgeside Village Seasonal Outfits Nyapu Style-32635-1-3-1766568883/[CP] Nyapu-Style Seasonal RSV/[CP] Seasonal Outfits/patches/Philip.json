@@ -1,0 +1,42 @@
+{
+	"Changes": [
+		{
+            "LogName": "RSV Nyapu Edit - Philip Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Philip_spring, Portraits/Philip_summer, Portraits/Philip_fall, Portraits/Philip_winter, Portraits/Philip_spring24, Portraits/Philip_fall27-1, Portraits/Philip_fall27-2, Portraits/Philip_rain, Portraits/Philip_Beach, Portraits/Philip_work",
+            "FromFile": "assets/Portraits/{{PhilipGoatee}}/{{TargetWithoutPath}}.png"
+        },
+		{
+            "LogName": "RSV Nyapu Edit - Philip Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Philip",
+            "FromFile": "assets/Portraits/{{PhilipGoatee}}/Philip_work.png"
+        },		
+		{
+			"LogName": "RSV Nyapu Edit - Philip Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Philip.png",
+			"When": {
+				"Spouse": "Philip",
+				"NoGoateePhilip": false
+			},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+		{
+			"LogName": "RSV Nyapu Edit - Philip Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Philip_NoGoatee.png",
+			"When": {
+				"Spouse": "Philip",
+				"NoGoateePhilip": true
+			},
+			"Update": "OnLocationChange, OnTimeChange"
+		},		
+	]
+}

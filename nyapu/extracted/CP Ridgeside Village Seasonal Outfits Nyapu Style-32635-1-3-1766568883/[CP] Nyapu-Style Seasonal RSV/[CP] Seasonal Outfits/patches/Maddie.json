@@ -1,0 +1,27 @@
+{
+	"Changes": [
+		{
+            "LogName": "RSV Nyapu Edit - Maddie Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Maddie_spring, Portraits/Maddie_summer, Portraits/Maddie_fall, Portraits/Maddie_winter, Portraits/Maddie_spring24, Portraits/Maddie_fall27-1, Portraits/Maddie_fall27-2, Portraits/Maddie_rain, Portraits/Maddie_Beach, Portraits/Maddie_Lab, Portraits/Maddie_Ariel, Portraits/Maddie_Elsa, Portraits/Maddie_Merida",
+            "FromFile": "assets/Portraits/Maddie/{{TargetWithoutPath}}.png"
+        },
+		{
+            "LogName": "RSV Nyapu Edit - Maddie Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Maddie",
+            "FromFile": "assets/Portraits/Maddie/Maddie_spring.png"
+        },			
+		{
+			"LogName": "RSV Nyapu Edit - Maddie Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Maddie.png",
+			"When": {"Spouse": "Maddie"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+	]
+}

@@ -1,0 +1,146 @@
+{
+   "Format": "2.0.0",
+   "ConfigSchema": {
+        "NoNose": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "NoPiercings": {
+            "AllowValues": "true, false",
+            "Default": "false"
+        }
+   },
+    "DynamicTokens": [
+		// Backup Aerobics Token		
+		{
+            "Name": "Aerobics",
+            "Value": "{{Season}}",
+            "When": { "Season": "fall, spring, summer" }
+        },
+		{
+            "Name": "Aerobics",
+            "Value": "Winter_Indoor",
+            "When": { "Season": "winter" }
+        }
+    ],
+   "Changes": [
+		// OUTFIT LOADS 
+		{
+			"LogName": "Haley's Outfits",
+			"Action": "Load",
+			"Priority": "Exclusive",
+			"Target": "Portraits/Haley_Spring, Portraits/Haley_Summer, Portraits/Haley_Fall, Portraits/Haley_Winter_Outdoor, Portraits/Haley_Winter_Indoor, Portraits/Haley_FlowerDance, Portraits/Haley_SpiritsEve, Portraits/Haley_EggF, Portraits/Haley_Fair, Portraits/Haley_Jellies, Portraits/Haley_Luau, Portraits/Haley_Winter_IceF, Portraits/Haley_Winter_WinterStar, Characters/Haley_Spring, Characters/Haley_Summer, Characters/Haley_Fall, Characters/Haley_Winter_Outdoor, Characters/Haley_Winter_Indoor, Characters/Haley_FlowerDance, Characters/Haley_SpiritsEve, Characters/Haley_EggF, Characters/Haley_Fair, Characters/Haley_Jellies, Characters/Haley_Luau, Characters/Haley_Winter_IceF, Characters/Haley_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Haley/{{TargetWithoutPath}}.png",
+			"When": { "HasFile:{{FromFile}}": true }
+		},
+		{
+			"LogName": "Haley's Beach Outfit",
+			"Action": "Load",
+			"Target": "Portraits/GothHaley_Beach, Characters/GothHaley_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Haley/Haley_Beach.png",
+			"When": { "HasFile:{{FromFile}}": true }
+		},
+		// NOSE OVERLAY 
+		{
+			"LogName": "Haley - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Haley_Spring, Characters/Haley_Summer, Characters/Haley_Fall, Characters/Haley_Winter_Outdoor, Characters/Haley_Winter_Indoor, Characters/Haley_FlowerDance, Characters/Haley_SpiritsEve, Characters/Haley_EggF, Characters/Haley_Fair, Characters/Haley_Jellies, Characters/Haley_Luau, Characters/Haley_Winter_IceF, Characters/Haley_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Haley/Haley_Nose.png",
+            "PatchMode": "Overlay",
+			"When": {
+				"NoNose": "false",
+				"HasFile:{{FromFile}}": true
+				}
+		},
+		{
+			"LogName": "Haley - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/GothHaley_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Haley/Haley_Beach_Nose.png",
+            "PatchMode": "Overlay",
+			"When": {
+				"NoNose": "false",
+				"HasFile:{{FromFile}}": true
+				}
+		},
+		// PIERCING OVERLAY 
+		{
+			"LogName": "Haley - Piercing",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley_Spring, Portraits/Haley_Summer, Portraits/Haley_Fall, Portraits/Haley_Winter_Outdoor, Portraits/Haley_Winter_Indoor, Portraits/Haley_FlowerDance, Portraits/Haley_SpiritsEve, Portraits/Haley_EggF, Portraits/Haley_Fair, Portraits/Haley_Jellies, Portraits/Haley_Luau, Portraits/Haley_Winter_IceF, Portraits/Haley_Winter_WinterStar, Portraits/GothHaley_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Haley/Haley_Piercing.png",
+            "PatchMode": "Overlay",
+			"When": {
+				"NoPiercings": "true",
+				"HasFile:{{FromFile}}": true
+				}
+		},
+		//APPEARANCE DATA SCC 
+		{
+			"LogName": "Haley Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Haley", "Appearance"],
+			"Entries": {
+				//Beach	
+				"Poltergeister.SeasonalCuteCharacters.HaleyBeach": {
+					"Id": "Poltergeister.SeasonalCuteCharacters.HaleyBeach",
+					"Sprite": "Characters/GothHaley_Beach",
+					"Portrait": "Portraits/GothHaley_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				}	
+			},
+			"When": {
+				"HasFile:assets/Characters/Haley/Haley_Beach.png": true,
+				"HasFile:assets/Portraits/Haley/Haley_Beach.png": true
+				}
+		},
+		// MISCELLANEOUS 
+		{
+			"LogName": "Haley - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 36, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 36, "Y": 99, "Width": 9, "Height": 9},
+			"Priority": "Late",
+			"When": { "HasFile:{{FromFile}}": true }
+		},
+		{
+            "LogName": "Cow Photos",
+            "Action": "EditImage",
+            "Target": "LooseSprites/cowPhotos",
+            "FromFile": "assets/{{NoNose}}/Random/cowPhotos_{{Season}}.png",
+			"Priority": "Late",
+            "When": {
+				"Season |contains=winter": false,
+				"HasFile:{{FromFile}}": true
+				}
+        },
+		{
+            "LogName": "Cow Photos",
+            "Action": "EditImage",
+            "Target": "LooseSprites/cowPhotosWinter",
+            "FromFile": "assets/{{NoNose}}/Random/cowPhotos_Winter.png",
+			"Priority": "Late",
+            "When": { "HasFile:{{FromFile}}": true }
+        },
+		{
+			"LogName": "Haley - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "TileSheets/junimo_furniture",
+            "FromFile": "assets/Characters/junimo_furniture.png",
+			"FromArea": {"X": 39, "Y": 279, "Width": 18, "Height": 18},
+			"ToArea": {"X": 39, "Y": 279, "Width": 18, "Height": 18},
+			"Priority": "Late",
+			"When": { "HasFile:{{FromFile}}": true }
+		},
+		{
+            "LogName": "Haley Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Haley",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        }
+	]
+}
