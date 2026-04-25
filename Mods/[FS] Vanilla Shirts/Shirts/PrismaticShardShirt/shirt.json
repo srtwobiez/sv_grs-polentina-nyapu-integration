@@ -1,0 +1,99 @@
+{
+  "Name": "Prismatic Shard Shirt",
+  "FrontShirt": {
+    "IsPrismatic": true,
+    "PrismaticAnimationSpeedMultiplier": 2.0,
+    "SleeveColors": [
+      [ 35, 35, 36 ],
+      [ 73, 73, 75 ],
+      [ 90, 90, 91 ]
+    ],
+    "ColorMasks": [
+      [ 255, 254, 254 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+    "IsPrismatic": true,
+    "PrismaticAnimationSpeedMultiplier": 2.0,
+    "SleeveColors": [
+      [ 35, 35, 36 ],
+      [ 73, 73, 75 ],
+      [ 90, 90, 91 ]
+    ],
+    "ColorMasks": [
+      [ 255, 254, 254 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+    "IsPrismatic": true,
+    "PrismaticAnimationSpeedMultiplier": 2.0,
+    "SleeveColors": [
+      [ 35, 35, 36 ],
+      [ 73, 73, 75 ],
+      [ 90, 90, 91 ]
+    ],
+    "ColorMasks": [
+      [ 255, 254, 254 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+    "IsPrismatic": true,
+    "PrismaticAnimationSpeedMultiplier": 2.0,
+    "SleeveColors": [
+      [ 35, 35, 36 ],
+      [ 73, 73, 75 ],
+      [ 90, 90, 91 ]
+    ],
+    "ColorMasks": [
+      [ 255, 254, 254 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

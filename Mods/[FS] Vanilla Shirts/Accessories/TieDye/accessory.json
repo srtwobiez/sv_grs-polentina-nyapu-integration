@@ -1,0 +1,76 @@
+{
+  "Name": "Dyeable Tie",
+  "FrontAccessory": {
+	"HideWhileWearingBathingSuit": true,
+    "DrawOrderOverride": {
+		"Preposition": "Before",
+		"AppearanceType": "Hair"
+		},
+	"ColorMasks": [
+		[ 130, 120, 111 ],
+		[ 181, 175, 159 ],
+		[ 249, 249, 249 ]
+	],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": -4,
+      "Y": -13
+    },
+    "AccessorySize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftAccessory": {
+	"Flipped": true,
+	"HideWhileWearingBathingSuit": true,
+	"DrawOrderOverride": {
+		"Preposition": "Before",
+		"AppearanceType": "Hair"
+		},
+	"ColorMasks": [
+		[ 130, 120, 111 ],
+		[ 181, 175, 159 ],
+		[ 249, 249, 249 ]
+	],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 9
+    },
+    "HeadPosition": {
+      "X": -4,
+      "Y": -14
+    },
+    "AccessorySize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+    "RightAccessory": {
+	"HideWhileWearingBathingSuit": true,
+    "DrawOrderOverride": {
+		"Preposition": "Before",
+		"AppearanceType": "Hair"
+		},
+	"ColorMasks": [
+		[ 130, 120, 111 ],
+		[ 181, 175, 159 ],
+		[ 249, 249, 249 ]
+	],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 9
+    },
+    "HeadPosition": {
+      "X": -4,
+      "Y": -14
+    },
+    "AccessorySize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

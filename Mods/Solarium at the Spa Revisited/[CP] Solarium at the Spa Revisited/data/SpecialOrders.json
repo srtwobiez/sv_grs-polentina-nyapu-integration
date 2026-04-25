@@ -1,0 +1,64 @@
+{
+  // ===== SPECIAL ORDERS MODULE =====
+  // Evelyn seasonal flowers: collect 100 flowers, donate via shipping bin
+  "Changes": [
+    {
+      "LogName": "JJ Evelyn seasonal flowers special order",
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "{{ModId}}_EvelynSeasonalFlowers": {
+          "Name": "{{i18n:SpecialOrder.EvelynSeasonalFlowers.Name}}",
+          "Requester": "Evelyn",
+          "Duration": "Month",
+          "Repeatable": true,
+          "RequiredTags": "!season_winter",
+          "Condition": "PLAYER_HEARTS Current Evelyn 8",
+          "OrderType": "",
+          "SpecialRule": "",
+          "Text": "{{i18n:SpecialOrder.EvelynSeasonalFlowers.Text}}",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": [
+            {
+              "Name": "Flower",
+              "Values": [
+                {"RequiredTags": "season_spring", "Value": "PICK_ITEM Tulip, Blue Jazz"},
+                {"RequiredTags": "season_summer", "Value": "PICK_ITEM Summer Spangle, Poppy"},
+                {"RequiredTags": "season_fall", "Value": "PICK_ITEM Sunflower, Fairy Rose"}
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "{{i18n:SpecialOrder.EvelynSeasonalFlowers.Objective.Collect}}",
+              "RequiredCount": "100",
+              "Data": {"AcceptedContextTags": "{Flower:Tags}"}
+            },
+            {
+              "Type": "Ship",
+              "Text": "{{i18n:SpecialOrder.EvelynSeasonalFlowers.Objective.Ship}}",
+              "RequiredCount": "100",
+              "Data": {
+                "AcceptedContextTags": "{Flower:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {"Type": "Money", "Data": {"Amount": "{Flower:Price}", "Multiplier": "50"}},
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "{{ModId}}_EvelynFlowersReward",
+                "Host": "true",
+                "NoLetter": "false"
+              }
+            }
+          ],
+          "CustomFields": null
+        }
+      }
+    }
+  ]
+}

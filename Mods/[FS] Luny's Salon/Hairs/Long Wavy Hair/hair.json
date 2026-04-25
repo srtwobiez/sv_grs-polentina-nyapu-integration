@@ -1,0 +1,75 @@
+{
+	"Name": "Long Wavy Hair",
+	"FrontHair":
+	{
+		"StartingPosition":
+		{
+			"X": 0,
+			"Y": 0
+		},
+		"HeadPosition":
+		{
+			"X": 1,
+			"Y": 0
+		},
+		"HairSize":
+		{
+			"Width": 18,
+			"Length": 32
+		},
+	},
+	"RightHair":
+	{
+		"StartingPosition":
+		{
+			"X": 0,
+			"Y": 32
+		},
+		"HeadPosition":
+		{
+			"X": 1,
+			"Y": 1
+		},
+		"HairSize":
+		{
+			"Width": 18,
+			"Length": 32
+		},
+	},
+	"LeftHair":
+	{
+		"StartingPosition":
+		{
+			"X": 0,
+			"Y": 64
+		},
+		"HeadPosition":
+		{
+			"X": 0,
+			"Y": 1
+		},
+		"HairSize":
+		{
+			"Width": 18,
+			"Length": 32
+		}
+	},
+	"BackHair":
+	{
+		"StartingPosition":
+		{
+			"X": 1,
+			"Y": 96
+		},
+		"HeadPosition":
+		{
+			"X": 0,
+			"Y": -1
+		},
+		"HairSize":
+		{
+			"Width": 18,
+			"Length": 32
+		},
+	}
+}

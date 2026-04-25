@@ -1,0 +1,12 @@
+{
+  "Name": "[FS]Elegant Vampire Dress",
+  "Author": "cocu",
+  "Version": "1.0.0",
+  "Description": "none",
+  "UniqueID": "cocu-Elegant.Vampire.Dress",
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "3.0.1"
+  }
+}

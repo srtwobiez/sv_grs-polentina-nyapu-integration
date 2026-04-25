@@ -1,0 +1,282 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+        
+		
+		 "Recolor": {
+		"AllowValues": "Vanilla, RCTIDark, RCTIWhite, VPR, Elegant, Starblue",
+        "Default": "Vanilla" 
+		}, 
+		 "Lightbeams": {
+		"AllowValues": "true, false",
+        "Default": "true",
+		"Description": "Add or remove lightbeams from round windows"
+		}, 
+		"Floor Borders": {
+		"AllowValues": "true, false",
+        "Default": "true",
+		"Description": "Add or remove floor dividers between dirt and floor"
+		
+		}, 
+		"Old Floor Borders": {
+		"AllowValues": "true, false",
+        "Default": "false",
+		"Description": "Changes the floor borders to how they were in 1.0.0 version."
+		}, 
+		"Fountain": {
+		"AllowValues": "true, false",
+        "Default": "true",
+		"Description": "Add or remove fountain"
+		}, 
+		
+		"Cellar": {
+		"AllowValues": "true, false",
+        "Default": "true",
+		"Description": "Add or remove floor entrance to greenhouse cellar"
+		}, 
+		
+		
+	
+
+    },
+
+  
+	
+	"Changes": [
+	
+	//fish
+
+		//{
+  //"Action": "EditData",
+ // "Target": "Data/Locations",
+ // "Entries": {
+  //"Greenhouse": "-1/-1/-1/-1/142 -1 153 -1 157 -1/142 -1 153 -1 157 -1/142 -1 153 -1 157 -1/142 -1 153 -1 157 -1/-1",
+		//	},
+	//	},
+	
+	
+	
+	{
+			"Action": "Load",
+			"Target": "Maps/Greenhouse",
+			"FromFile": "assets/Greenhouse_{{season}}.tmx",
+		},
+		
+		//make it decoratable
+		{
+    "Action": "EditData",
+    "Target": "Data/Locations",
+    "TargetField": [ "Greenhouse", "CreateOnLoad" ],
+    "Entries": {
+		"MapPath": "Maps\\Greenhouse",
+         "Type": "StardewValley.Locations.DecoratableLocation",
+		 "AlwaysActive": true,
+		 },
+    },
+	
+
+	
+	
+	
+	//{
+   // "Action": "EditData",
+    //"Target": "Data/Locations",
+    //"TargetField": [ "Greenhouse", "Fish", "ItemId" ],
+    //"Entries": {
+	//						"ID": "Example.ModId_Pufferfish",
+     //                       "Condition": "RANDOM 0.95",
+      //                      "ItemId": "(O)128",
+                       
+					
+	//					},
+   // },
+   
+  // {
+   // "Action": "EditData",
+   // "Target": "Data/Locations",
+   // "TargetField": [ "Greenhouse", "Fish" ],
+   // "Entries": {
+                //"Fish": {
+                    //"Fish": [
+                        // 25% chance of pufferfish
+                        //{
+                            //"ID": "(O)128"
+                           // "Chance": "1",
+                            //"ItemId": "(O)128"
+							//}
+						//]
+                //}
+			//}
+		//},
+    		
+		
+		//nofountain
+		
+			{
+			"Action": "EditMap",
+			"Target": "Maps/Greenhouse",
+			"FromFile": "assets/Fountainno_{{season}}.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":7, "Height":8},
+			"ToArea": {"X":10, "Y":4, "Width":7, "Height":8},
+			"PatchMode": "Replace",
+			"When": { "Fountain": "false", },
+		},
+		
+		//nocellar
+		
+			{
+			"Action": "EditMap",
+			"Target": "Maps/Greenhouse",
+			"FromFile": "assets/Cellarno.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":19, "Height":2},
+			"ToArea": {"X":4, "Y":26, "Width":19, "Height":2},
+			"PatchMode": "Replace",
+			"When": { "Cellar": "false", },
+		},
+		
+		
+		
+		//RECOLORS
+		
+		{
+            "Action": "Load",
+            "Target": "Maps/z_RGtiles",
+            "FromFile": "assets/Tilesheets/z_RGtiles.png",
+        },
+		{
+            "Action": "Load",
+            "Target": "Maps/z_glight",
+            "FromFile": "assets/Tilesheets/z_glight.png",
+        },
+		{
+            "Action": "Load",
+            "Target": "Maps/z_gborders",
+            "FromFile": "assets/Tilesheets/z_gborders.png",
+        },
+ 
+ 
+		{
+       "Action": "EditImage",
+       "Target": "Maps/z_RGtiles",
+       "FromFile": "assets/Tilesheets/Recolors/z_RGtiles_{{Recolor}}.png",
+	   "PatchMode": "Replace",	
+        },
+		{
+       "Action": "EditImage",
+       "Target": "Maps/z_gborders",
+       "FromFile": "assets/Tilesheets/Recolors/z_gborders_{{Recolor}}.png",
+	   "PatchMode": "Replace",	
+        },
+		
+		
+		//nolights
+		{
+       "Action": "EditImage",
+       "Target": "Maps/z_glight",
+       "FromFile": "assets/Tilesheets/z_glightno.png",
+	   "PatchMode": "Replace",	
+		"When": { "Lightbeams": "true", 
+					  "Weather": "Rain, Storm", 
+					 },	
+			},
+			//nolights
+		{
+       "Action": "EditImage",
+       "Target": "Maps/z_glight",
+       "FromFile": "assets/Tilesheets/z_glightno.png",
+	   "PatchMode": "Replace",	
+		"When": { "Lightbeams": "false", 
+					 },	
+			},
+			
+			//noborders
+			{
+       "Action": "EditImage",
+       "Target": "Maps/z_gborders",
+       "FromFile": "assets/Tilesheets/z_gbordersno.png",
+	   "PatchMode": "Replace",	
+		"When": { "Floor Borders": "false", 
+					 },	
+			},
+		
+		
+		
+		//old borders
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Greenhouse",
+			"FromFile": "assets/OldBorders.tmx",
+			"FromArea": {"X":2, "Y":13, "Width":23, "Height":12},
+			"ToArea":  {"X":2, "Y":13, "Width":23, "Height":12},
+			"PatchMode": "Replace",
+			"When": { "Floor Borders": "true", "Old Floor Borders": "true",  },
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Greenhouse",
+			"FromFile": "assets/OldBorders.tmx",
+			"FromArea": {"X":6, "Y":12, "Width":15, "Height":14},
+			"ToArea": {"X":6, "Y":12, "Width":15, "Height":14},
+			"PatchMode": "Replace",
+			"When": { "Floor Borders": "true", "Old Floor Borders": "true",  },
+		},
+			{
+			"Action": "EditMap",
+			"Target": "Maps/Greenhouse",
+			"FromFile": "assets/OldBorders.tmx",
+			"FromArea": {"X":5, "Y":10, "Width":7, "Height":2},
+			"ToArea":  {"X":5, "Y":10, "Width":7, "Height":2},
+		"PatchMode": "Replace",
+			"When": { "Floor Borders": "true", "Old Floor Borders": "true",  },
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Greenhouse",
+			"FromFile": "assets/OldBorders.tmx",
+			"FromArea": {"X":15, "Y":10, "Width":7, "Height":2},
+			"ToArea":  {"X":15, "Y":10, "Width":7, "Height":2},
+			"PatchMode": "Replace",
+			"When": { "Floor Borders": "true", "Old Floor Borders": "true",  },
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Greenhouse",
+			"FromFile": "assets/OldBorders.tmx",
+			"FromArea": {"X":10, "Y":9, "Width":2, "Height":3},
+			"ToArea":  {"X":10, "Y":9, "Width":2, "Height":3},
+			"PatchMode": "Replace",
+			"When": { "Floor Borders": "true", "Old Floor Borders": "true", "Fountain": "true", },
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Greenhouse",
+			"FromFile": "assets/OldBorders.tmx",
+			"FromArea": {"X":15, "Y":9, "Width":2, "Height":3},
+			"ToArea":  {"X":15, "Y":9, "Width":2, "Height":3},
+			"PatchMode": "Replace",
+			"When": { "Floor Borders": "true", "Old Floor Borders": "true", "Fountain": "true",  },
+		},
+		
+		//
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Greenhouse",
+			"FromFile": "assets/OldBorders.tmx",
+			"FromArea": {"X":11, "Y":33, "Width":2, "Height":3},
+			"ToArea":  {"X":10, "Y":9, "Width":2, "Height":3},
+			"PatchMode": "Replace",
+			"When": { "Floor Borders": "true", "Old Floor Borders": "true", "Fountain": "false", },
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Greenhouse",
+			"FromFile": "assets/OldBorders.tmx",
+			"FromArea": {"X":16, "Y":33, "Width":2, "Height":3},
+			"ToArea": {"X":15, "Y":9, "Width":2, "Height":3},
+			"PatchMode": "Replace",
+			"When": { "Floor Borders": "true", "Old Floor Borders": "true", "Fountain": "false",  },
+		},
+	]
+}

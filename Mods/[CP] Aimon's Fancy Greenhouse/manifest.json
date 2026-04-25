@@ -1,0 +1,15 @@
+{
+  "Name": "Aimon's Fancy Greenhouse",
+  "Author": "Aimon111",
+  "Version": "2.0.2",
+  "Description": "Gives your greenhouse interior more fancy look. Heavily inspired by Gwen's Medieval Buildings greenhouse retexture.",
+  "UniqueID": "Aimon111.AimonsFancyGreenhouse",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": ["Nexus:16405"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+ }
+
+
+

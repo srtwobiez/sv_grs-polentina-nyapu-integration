@@ -1,0 +1,88 @@
+{
+	"Changes": [
+	{
+		"Action": "EditImage",
+		"Target": "Tilesheets/spring_SVE_Tilesheet2",
+		"FromFile": "assets/BearSeasonal1.png",
+		"ToArea": { "X": 416, "Y": 64, "Width": 96, "Height": 32 },
+		"When":{ "Bear":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Tilesheets/spring_SVE_Tilesheet2",
+		"FromFile": "assets/BearSeasonal2.png",
+		"ToArea": { "X": 416, "Y": 96, "Width": 64, "Height": 64 },
+		"When":{ "Bear":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Tilesheets/spring_SVE_Tilesheet2",
+		"FromFile": "assets/BearSeasonal3.png",
+		"ToArea": { "X": 336, "Y": 0, "Width": 48, "Height": 32 },
+		"When":{ "Bear":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Tilesheets/summer_SVE_Tilesheet2",
+		"FromFile": "assets/BearSeasonal1.png",
+		"ToArea": { "X": 416, "Y": 64, "Width": 96, "Height": 32 },
+		"When":{ "Bear":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Tilesheets/summer_SVE_Tilesheet2",
+		"FromFile": "assets/BearSeasonal2.png",
+		"ToArea": { "X": 416, "Y": 96, "Width": 64, "Height": 64 },
+		"When":{ "Bear":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Tilesheets/summer_SVE_Tilesheet2",
+		"FromFile": "assets/BearSeasonal3.png",
+		"ToArea": { "X": 336, "Y": 0, "Width": 48, "Height": 32 },
+		"When":{ "Bear":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Tilesheets/fall_SVE_Tilesheet2",
+		"FromFile": "assets/BearSeasonal1.png",
+		"ToArea": { "X": 416, "Y": 64, "Width": 96, "Height": 32 },
+		"When":{ "Bear":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Tilesheets/fall_SVE_Tilesheet2",
+		"FromFile": "assets/BearSeasonal2.png",
+		"ToArea": { "X": 416, "Y": 96, "Width": 64, "Height": 64 },
+		"When":{ "Bear":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Tilesheets/fall_SVE_Tilesheet2",
+		"FromFile": "assets/BearSeasonal3.png",
+		"ToArea": { "X": 336, "Y": 0, "Width": 48, "Height": 32 },
+		"When":{ "Bear":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Tilesheets/winter_SVE_Tilesheet2",
+		"FromFile": "assets/BearSeasonal1.png",
+		"ToArea": { "X": 416, "Y": 64, "Width": 96, "Height": 32 },
+		"When":{ "Bear":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Tilesheets/winter_SVE_Tilesheet2",
+		"FromFile": "assets/BearSeasonal2.png",
+		"ToArea": { "X": 416, "Y": 96, "Width": 64, "Height": 64 },
+		"When":{ "Bear":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Tilesheets/winter_SVE_Tilesheet2",
+		"FromFile": "assets/BearSeasonal3.png",
+		"ToArea": { "X": 336, "Y": 0, "Width": 48, "Height": 32 },
+		"When":{ "Bear":"true"}
+		}
+	]
+}

@@ -1,0 +1,20 @@
+The following assets were obtained from freesound.org, with the corresponding licenses:
+
+
+Adnova_been-a-while:
+- License: Creative Commons 0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- Author: ADNova
+- Source: https://freesound.org/people/ADnova/sounds/434785/
+
+
+Adnova_wishing:
+- License: Creative Commons 0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- Author: ADNova
+- Source: https://freesound.org/people/ADnova/sounds/434785/
+
+
+Kayyy_splash:
+- License: CC BY 3.0 DEED (https://creativecommons.org/licenses/by/3.0/)
+- Author: Kayyy
+- Source: https://freesound.org/people/Kayyy/sounds/61015/
+- Changs made: Shortened the file by a few seconds

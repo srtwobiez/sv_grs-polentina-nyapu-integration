@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="19" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="24" nextobjectid="86">
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="32" columns="4">
+  <image source="paths" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="33" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+  <tile id="1885">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="1887">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="1945">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="1946">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="2046">
+   <animation>
+    <frame tileid="2046" duration="250"/>
+    <frame tileid="2046" duration="250"/>
+    <frame tileid="2046" duration="250"/>
+    <frame tileid="2046" duration="250"/>
+    <frame tileid="2009" duration="250"/>
+    <frame tileid="2009" duration="250"/>
+    <frame tileid="2009" duration="250"/>
+    <frame tileid="2009" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="2047">
+   <animation>
+    <frame tileid="2047" duration="250"/>
+    <frame tileid="2047" duration="250"/>
+    <frame tileid="2047" duration="250"/>
+    <frame tileid="1977" duration="250"/>
+    <frame tileid="1977" duration="250"/>
+    <frame tileid="1977" duration="250"/>
+    <frame tileid="1977" duration="250"/>
+    <frame tileid="2047" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="2075">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="2076">
+   <properties>
+    <property name="Diggable" type="bool" value="true"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="2078">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="2079">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="2106">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="2107">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="2108">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="2109">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2209" name="z_RGtiles" tilewidth="16" tileheight="16" tilecount="1922" columns="31">
+  <image source="z_RGtiles.png" width="500" height="1000"/>
+  <tile id="361">
+   <animation>
+    <frame tileid="361" duration="100"/>
+    <frame tileid="363" duration="100"/>
+    <frame tileid="365" duration="100"/>
+    <frame tileid="367" duration="100"/>
+    <frame tileid="369" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="392">
+   <animation>
+    <frame tileid="392" duration="100"/>
+    <frame tileid="394" duration="100"/>
+    <frame tileid="396" duration="100"/>
+    <frame tileid="398" duration="100"/>
+    <frame tileid="400" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="423">
+   <animation>
+    <frame tileid="423" duration="100"/>
+    <frame tileid="424" duration="100"/>
+    <frame tileid="425" duration="100"/>
+    <frame tileid="426" duration="100"/>
+    <frame tileid="427" duration="100"/>
+    <frame tileid="428" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="454">
+   <animation>
+    <frame tileid="454" duration="100"/>
+    <frame tileid="455" duration="100"/>
+    <frame tileid="456" duration="100"/>
+    <frame tileid="457" duration="100"/>
+    <frame tileid="458" duration="100"/>
+    <frame tileid="459" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="485">
+   <animation>
+    <frame tileid="485" duration="100"/>
+    <frame tileid="486" duration="100"/>
+    <frame tileid="487" duration="100"/>
+    <frame tileid="488" duration="100"/>
+    <frame tileid="489" duration="100"/>
+    <frame tileid="490" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="4131" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="walls_and_floors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="4691" name="z_glight" tilewidth="16" tileheight="16" tilecount="110" columns="11">
+  <image source="z_glight.png" width="176" height="166"/>
+ </tileset>
+ <tileset firstgid="4801" name="z_gborders" tilewidth="16" tileheight="16" tilecount="110" columns="11">
+  <image source="z_gborders.png" width="176" height="166"/>
+ </tileset>
+ <layer id="1" name="Back" width="19" height="2">
+  <data encoding="csv">
+0,4482,4481,4482,4481,4482,4481,4482,4481,4482,4481,4482,4481,4482,4481,4482,4481,4482,0,
+0,4498,4497,4498,4497,4498,4497,4498,4497,4498,4497,4498,4497,4498,4497,4498,4497,4498,0
+</data>
+ </layer>
+ <layer id="18" name="Back2" width="19" height="2">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="8" name="Back3" width="19" height="2">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="11" name="Back4" width="19" height="2">
+  <data encoding="csv">
+0,3094,3094,3094,0,0,0,0,0,0,0,0,0,0,0,3093,3094,3094,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="13" name="Back5" width="19" height="2">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="15" name="Back6" width="19" height="2">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="17" name="Back7" width="19" height="2">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="19" height="2">
+  <data encoding="csv">
+2804,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2804,
+2804,2804,2804,2804,2804,2804,2804,0,0,0,0,0,2804,2804,2804,2804,2804,2804,2804
+</data>
+ </layer>
+ <layer id="14" name="Buildings1" width="19" height="2" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="19" name="Buildings2" width="19" height="2" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Front" width="19" height="2" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="12" name="AlwaysFront" width="19" height="2" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2926,2926,2926,2926,2926,2926,0,0,0,0,0,2926,2926,2926,2926,2926,2926,0
+</data>
+ </layer>
+ <layer id="7" name="AlwaysFront1" width="19" height="2" visible="0">
+  <data encoding="csv">
+0,2147486038,2389,2389,2389,2389,2389,2147486035,0,0,0,2387,2147486037,2147486037,2147486037,2147486037,2147486037,2390,0,
+0,0,0,0,0,0,0,2147486039,2147486038,2389,2390,2391,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="16" name="AlwaysFront2" width="19" height="2" visible="0">
+  <data encoding="csv">
+2384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147486032,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="20" name="AlwaysFront3" width="19" height="2" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="21" name="Paths" width="19" height="2" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Back" visible="0">
+  <object id="16" name="TileData" x="176" y="16" width="128" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="0" y="16" width="128" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="28" name="TileData" x="16" y="0" width="32" height="16">
+   <properties>
+    <property name="Diggable" value="t"/>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </object>
+  <object id="29" name="TileData" x="256" y="0" width="48" height="16">
+   <properties>
+    <property name="Diggable" value="t"/>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </object>
+  <object id="36" name="TileData" x="48" y="0" width="208" height="32">
+   <properties>
+    <property name="Diggable" value="t"/>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </object>
+  <object id="37" name="TileData" x="0" y="0" width="48" height="16">
+   <properties>
+    <property name="FloorID" value="1"/>
+   </properties>
+  </object>
+  <object id="39" name="TileData" x="48" y="0" width="256" height="16">
+   <properties>
+    <property name="FloorID" value="1"/>
+   </properties>
+  </object>
+  <object id="40" name="TileData" x="112" y="16" width="80" height="16">
+   <properties>
+    <property name="FloorID" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="Buildings"/>
+ <objectgroup id="6" name="Front"/>
+ <objectgroup id="22" name="Paths"/>
+</map>

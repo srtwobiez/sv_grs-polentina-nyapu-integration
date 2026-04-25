@@ -1,0 +1,89 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_Intro"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_RequestIntro"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_RequestFailed"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_Request_0"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_Request_0_Success"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_Request_1"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_Request_1_Success"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_Request_2"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_Request_2_Success"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_Reward"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_LastReward"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_Finished"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gourmand_InProgress"],
+					"Value": "Portraits/Gourmand_Default Strings/WorldMap:GingerIsland_West_GourmandCave",
+					"Delimiter": "🐬"
+				},
+			]
+		},					
+	],
+}

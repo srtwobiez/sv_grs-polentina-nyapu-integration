@@ -1,0 +1,50 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Robin's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Robin, Portraits/Robin_Beach, Portraits/Robin_Winter, Portraits/Robin_Summer, Portraits/Robin_Fall, Portraits/Robin_Winter_Outdoor, Portraits/Robin_FlowerDance, Portraits/Robin_SpiritsEve, Portraits/Robin_Aerobics",
+			"FromFile": "assets/Portraits/Robin/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Robin's Sprite Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/Robin_Winter_Outdoor, Characters/Robin_Winter_Indoor, Characters/Robin_FlowerDance",
+			"FromFile": "assets/Characters/Robin/{{TargetWithoutPath}}.png"
+		},					
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Robin Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Robin", "Appearance"],
+			"Fields": {
+				
+				"Poltergeister.SeasonalCuteCharacters.RobinSpring": {
+					"Portrait": "Portraits/Robin",
+				},
+
+				"Poltergeister.SeasonalCuteCharacters.RobinWinterIndoor": {
+					"Portrait": "Portraits/Robin_Winter",
+				},
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+            "LogName": "Robin Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Robin",
+            "FromFile": "assets/Characters/Robin/Robin_Winter_Outdoor.png",
+			"When": {"Season": "winter"}
+        },		
+		
+	]
+}

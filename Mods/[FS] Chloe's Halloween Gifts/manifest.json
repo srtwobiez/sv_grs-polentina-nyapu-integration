@@ -1,0 +1,11 @@
+{
+  "Name": "[FS] Chloe's Halloween Gifts",
+  "Author": "Chloe",
+  "Version": "1.0.0",
+  "Description": "Halloween gifts",
+  "UniqueID": "Chloe1202.HalloweenGifts",
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "6.0.0"
+  }
+}

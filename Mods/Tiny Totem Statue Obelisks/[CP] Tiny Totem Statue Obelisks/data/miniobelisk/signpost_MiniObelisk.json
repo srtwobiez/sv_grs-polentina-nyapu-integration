@@ -1,0 +1,75 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Load Mini Obelisk Signpost",
+      "Action": "EditImage",
+      "PatchMode": "Replace",
+      "Target": "TileSheets/Craftables",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_mini.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 96,
+        "Y": 928,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "MiniObeliskEnabled": "true",
+        "MiniObeliskStyle": "signpost"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Mini Obelisk Signpost Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Target": "TileSheets/Craftables",
+      "FromFile": "assets/flowers/mini_{{MiniObeliskFlowerColor}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 96,
+        "Y": 928,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "MiniObeliskEnabled": "true",
+        "MiniObeliskStyle": "signpost",
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Mini Obelisk Signpost Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Target": "TileSheets/Craftables",
+      "FromFile": "assets/moss/mini_moss.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 96,
+        "Y": 928,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "MiniObeliskEnabled": "true",
+        "MiniObeliskStyle": "signpost",
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "Name": "Sprinklers of Pelican Town",
+  "Author": "JennaJuffuffles",
+  "Version": "1.2.0",
+  "Description": "Enhanced sprinkler mod with custom colors and upgrade options",
+  "UniqueID": "JennaJuffuffles.SprinklersOfPelicanTown",
+  "UpdateKeys": ["Nexus:37722"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "2.8.1"
+  },
+  "MinimumApiVersion": "4.1.10",
+  "Dependencies": [
+    {
+      "UniqueID": "rtrox.LineSprinklersRedux",
+      "IsRequired": false
+    }
+  ],
+  "DeleteOldVersion": true
+}

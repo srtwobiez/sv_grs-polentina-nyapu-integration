@@ -1,0 +1,46 @@
+{
+	"Changes": [
+			{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/GreyRabbit1.png",
+		"ToArea": { "X": 128, "Y": 160, "Width": 192, "Height": 32 },
+		"When":{ "Rabbits":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/GreyRabbit2.png",
+		"ToArea": { "X": 256, "Y": 192, "Width": 32, "Height": 32 },
+		"When":{ "Rabbits":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/WhiteRabbit1.png",
+		"ToArea": { "X": 128, "Y": 224, "Width": 192, "Height": 32 },
+		"When":{ "Rabbits":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/WhiteRabbit2.png",
+		"ToArea": { "X": 228, "Y": 192, "Width": 32, "Height": 32 },
+		"When":{ "Rabbits":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Squirrel.png",
+		"ToArea": { "X": 0, "Y": 192, "Width": 260, "Height": 32 },
+		"When":{ "Squirrel":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Opossum.png",
+		"ToArea": { "X": 0, "Y": 480, "Width": 288, "Height": 32 },
+		"When":{ "Opossum":"true"}
+		}
+	]
+}

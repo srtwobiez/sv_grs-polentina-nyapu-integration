@@ -1,0 +1,92 @@
+{
+"Name": "Dyeable Island Bikini",
+  "FrontShirt": {
+    "ColorMasks": [
+      [ 255, 255, 255 ],
+	  [ 224, 224, 224 ],
+	  [ 155, 155, 155 ],
+	  [ 120, 120, 120 ],
+	  [ 80, 75, 75 ],
+      [ 41, 31, 31 ]
+    ],
+
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+    "ColorMasks": [
+      [ 255, 255, 255 ],
+	  [ 224, 224, 224 ],
+	  [ 155, 155, 155 ],
+	  [ 120, 120, 120 ],
+	  [ 80, 75, 75 ],
+      [ 41, 31, 31 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+    "ColorMasks": [
+      [ 255, 255, 255 ],
+	  [ 224, 224, 224 ],
+	  [ 155, 155, 155 ],
+	  [ 120, 120, 120 ],
+	  [ 80, 75, 75 ],
+      [ 41, 31, 31 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+    "ColorMasks": [
+      [ 255, 255, 255 ],
+	  [ 224, 224, 224 ],
+	  [ 155, 155, 155 ],
+	  [ 120, 120, 120 ],
+	  [ 80, 75, 75 ],
+      [ 41, 31, 31 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "Changes": [
+    // ========== secret notes suspension bridge ==========
+  {
+    "LogName": "WBPT Secret Notes Images",
+    "Action": "EditImage",
+    "PatchMode": "Overlay",
+    "Target": "TileSheets/SecretNotesImages",
+    "FromFile": "assets/base/SecretNotesImages.png",
+    "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false }
+  },
+  {
+    "LogName": "WBPT Suspension Bridge",
+    "Action": "EditImage",
+    "Target": "LooseSprites/SuspensionBridge",
+    "FromFile": "assets/base/SuspensionBridge.png"
+  },
+    // ========== temporary sprites 1 ==========
+  {
+  "LogName": "WBPT Merchants",
+  "Action": "EditImage",
+  "Target": "LooseSprites/temporary_sprites_1",
+  "FromFile": "assets/base/temporary_sprites_1.png",
+  	"FromArea": { "X": 45, "Y": 164, "Width": 98, "Height": 23 },
+  	"ToArea": { "X": 45, "Y": 164, "Width": 98, "Height": 23 },
+  },
+  {
+  "LogName": "WBPT Free Coffee Anim",
+  "Action": "EditImage",
+  "Target": "LooseSprites/temporary_sprites_1",
+  "FromFile": "assets/base/temporary_sprites_1.png",
+  	"FromArea": { "X": 354, "Y": 168, "Width": 64, "Height": 32 },
+  	"ToArea": { "X": 354, "Y": 168, "Width": 64, "Height": 32 },
+  },
+	//Desert
+  {
+  "LogName": "WBPT Tent",
+  "Action": "EditImage",
+  "Target": "LooseSprites/temporary_sprites_1",
+  "FromFile": "assets/base/temporary_sprites_1.png",
+  	"FromArea": { "X": 0, "Y": 513, "Width": 208, "Height": 127 },
+  	"ToArea": { "X": 0, "Y": 513, "Width": 208, "Height": 127 },
+  },
+  {
+  "LogName": "WBPT Camel Anim",
+  "Action": "EditImage",
+  "Target": "LooseSprites/temporary_sprites_1",
+  "FromFile": "assets/base/temporary_sprites_1.png",
+  	"FromArea": { "X": 208, "Y": 591, "Width": 65, "Height": 49 },
+  	"ToArea": { "X": 208, "Y": 591, "Width": 65, "Height": 49 },
+  },
+  {
+  "LogName": "WBPT Camel Anim Fest",
+  "Action": "EditImage",
+  "Target": "LooseSprites/temporary_sprites_1",
+  "FromFile": "assets/base/temporary_sprites_1.png",
+  	"FromArea": { "X": 208, "Y": 524, "Width": 130, "Height": 49 },
+  	"ToArea": { "X": 208, "Y": 524, "Width": 130, "Height": 49 }
+  },
+    // ========== sunny overlay ==========
+  {
+  "LogName": "WBPT Sunny Outdoors",
+  "Action": "EditImage",
+  	"PatchMode": "Overlay",	
+  "Target": "Maps/{{season}}_outdoorsTileSheet",
+  "FromFile": "assets/base/{{season}}_sunny.png",
+  	"FromArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+  	"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+  	"When": { "Weather |contains=Rain, Storm, Snow": false },
+  },
+  {
+  "LogName": "WBPT Sunny Town",
+  "Action": "EditImage",
+  	"PatchMode": "Overlay",	
+  "Target": "Maps/{{season}}_town",
+  "FromFile": "assets/base/{{season}}_sunny.png",
+  	"FromArea": { "X": 400, "Y": 0, "Width": 512, "Height": 1152 },
+  	"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 1152 },
+  	"When": { "Weather |contains=Rain, Storm, Snow": false },
+  },
+  {
+  "LogName": "WBPT Sunny Beach",
+  "Action": "EditImage",
+  	"PatchMode": "Overlay",	
+  "Target": "Maps/{{season}}_beach",
+  "FromFile": "assets/base/{{season}}_sunny.png",
+  	"FromArea": { "X": 63, "Y": 2861, "Width": 90, "Height": 80 },
+  	"ToArea": { "X": 63, "Y": 333, "Width": 90, "Height": 80 },
+  	"When": { "Weather |contains=Rain, Storm, Snow": false }
+  },
+    // ========== elliotts sea tiles ==========
+  {
+    "LogName": "WBPT Elliott Sea Tiles",
+    "Action": "EditImage",
+    "Target": "Maps/ElliottSeaTiles",
+    "FromFile": "assets/base/ElliottSeaTiles.png"
+  },
+    // ========== hats ==========
+  {
+    "LogName": "WBPT Trash Hat Retexture",
+    "Action": "EditImage",
+    "Target": "Characters/Farmer/hats",
+    "FromFile": "assets/base/hats.png",
+    "FromArea": { "X": 0, "Y": 0, "Width": 18, "Height": 78 },
+    "ToArea": { "X": 121, "Y": 400, "Width": 18, "Height": 78 },
+    "When": { "TrashCanHat": true }
+  },
+    // ========== marnie ==========
+  {
+    "LogName": "WBPT Marnie Stirring",
+    "Action": "EditImage",
+    "PatchMode": "Overlay",
+    "Target": "Characters/Marnie",
+    "FromFile": "assets/{{recolor}}/2_Festivals.png",
+    "FromArea": { "X": 0, "Y": 502, "Width": 48, "Height": 10 },
+    "ToArea": { "X": 16, "Y": 150, "Width": 48, "Height": 10 },
+    "When": { "DayEvent": "luau" }
+  },
+    // ========== krobus raven ==========
+  {
+    "LogName": "WBPT Krobus Raven",
+    "Action": "EditImage",
+    "Target": "Characters/KrobusRaven",
+    "FromFile": "assets/base/KrobusRaven.png",
+    "FromArea": { "X": 124, "Y": 110, "Width": 36, "Height": 50 },
+    "ToArea": { "X": 124, "Y": 110, "Width": 36, "Height": 50 }
+  }
+  ]
+}

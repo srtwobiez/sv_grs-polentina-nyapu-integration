@@ -1,0 +1,96 @@
+{
+  "Name": "N39",
+  "FrontHat": {
+    "HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"DisableGrayscale": false,
+	"ColorMasks": [
+      [ 215, 208, 209 ],
+	  [ 202, 194, 197 ],
+	  [ 177, 170, 175 ],
+	  [ 232, 227, 226 ]
+	],
+	"StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    }
+  },
+  "RightHat": {
+    "HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"DisableGrayscale": false,
+	"ColorMasks": [
+      [ 215, 208, 209 ],
+	  [ 202, 194, 197 ],
+	  [ 177, 170, 175 ],
+	  [ 232, 227, 226 ]
+	],
+	"StartingPosition": {
+      "X": 0,
+      "Y": 20
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    }
+  },
+  "LeftHat": {
+	"HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"DisableGrayscale": false,
+	"ColorMasks": [
+      [ 215, 208, 209 ],
+	  [ 202, 194, 197 ],
+	  [ 177, 170, 175 ],
+	  [ 232, 227, 226 ]
+	],
+	"Flipped": true,
+	"StartingPosition": {
+      "X": 0,
+      "Y": 20
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    }
+  },
+  "BackHat": {
+    "HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"DisableGrayscale": false,
+	"ColorMasks": [
+      [ 215, 208, 209 ],
+	  [ 202, 194, 197 ],
+	  [ 177, 170, 175 ],
+	  [ 232, 227, 226 ]
+	],
+	"StartingPosition": {
+      "X": 0,
+      "Y": 40
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -1
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    }
+  }
+}

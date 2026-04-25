@@ -1,0 +1,190 @@
+{
+    // CONFIG OPTIONS
+        "config.Seed Packet Variant.name": "Вариант пакета семян",
+        "config.Seed Packet Variant.description": "Выберите вариант пакета для всех значков семян.\nСмотрите изображения на странице мода для примеров.",
+        "config.Seed Packet Variant.values.(1) Sensible Sleeves": "(1) Sensible Sleeves",
+        "config.Seed Packet Variant.values.(2) Seasonal Sleeves": "(2) Seasonal Sleeves",
+        "config.Seed Packet Variant.values.(3) Sensible Satchels": "(3) Sensible Satchels",
+        "config.Seed Packet Variant.values.(4) Seasonal Satchels": "(4) Seasonal Satchels",
+        "config.Seed Packet Variant.values.(5) Sensible Stashes": "(5) Sensible Stashes",
+        "config.Seed Packet Variant.values.(6) Seasonal Stashes": "(6) Seasonal Stashes",
+
+        "config.Sapling Sack Color.name": "Цвет мешка саженцев",
+        "config.Sapling Sack Color.description": "Выберите цвет для всех мешков с саженцами.\nСмотрите изображения на странице мода для примеров.",
+        "config.Sapling Sack Color.values.(1) Cloud": "(1) Cloud",
+        "config.Sapling Sack Color.values.(2) Cream": "(2) Cream",
+        "config.Sapling Sack Color.values.(3) Chest": "(3) Chest",
+        "config.Sapling Sack Color.values.(4) Crypt": "(4) Crypt",
+
+    // GLOBAL TOGGLES
+        "config.= Disable Entire Mod.name": "= Отключить весь мод",
+        "config.= Disable Entire Mod.description": "Включает/выключает общий статус мода.",
+        "config.= Disable Entire Mod.values.true": "Включено",
+        "config.= Disable Entire Mod.values.false": "Выключено",
+
+        "config.Seed Sprites.name": "Переключатель значков семян",
+        "config.Seed Sprites.description": "Включает/выключает изменение значков семян.",
+        "config.Seed Sprites.values.Enabled": "Включено",
+        "config.Seed Sprites.values.Disabled": "Выключено",
+    
+        "config.Sapling Sprites.name": "Переключатель значков саженцев",
+        "config.Sapling Sprites.description": "Включает/выключает изменение значков саженцев.",
+        "config.Sapling Sprites.values.Enabled": "Включено",
+        "config.Sapling Sprites.values.Disabled": "Выключено",
+
+        "config.Bush Sprites.name": "Переключатель значков кустов",
+        "config.Bush Sprites.description": "Включает/выключает изменение значков кустов.",
+        "config.Bush Sprites.values.Enabled": "Включено",
+        "config.Bush Sprites.values.Disabled": "Выключено",
+
+        "config.Trellis Sprites.name": "Переключатель значков шпалер",
+        "config.Trellis Sprites.description": "Включает/выключает изменение значков шпалер.",
+        "config.Trellis Sprites.values.Enabled": "Включено",
+        "config.Trellis Sprites.values.Disabled": "Выключено",
+
+        "config.Tea Sapling Sprites.name": "Переключатель значков чайных саженцев",
+        "config.Tea Sapling Sprites.description": "Включает/выключает изменение значков чайных саженцев.",
+        "config.Tea Sapling Sprites.values.Enabled": "Включено",
+        "config.Tea Sapling Sprites.values.Disabled": "Выключено",
+
+        "config.Mixed Seed Sprites.name": "Переключатель значков смешанных семян",
+        "config.Mixed Seed Sprites.description": "Включает/выключает изменение значков смешанных семян.",
+        "config.Mixed Seed Sprites.values.Enabled": "Включено",
+        "config.Mixed Seed Sprites.values.Disabled": "Выключено",
+
+    // MOD SECTION TOGGLES
+        "config.(A) Vanilla.name": "(A) Vanilla",
+        "config.(A) Vanilla.description": "Включает/выключает все изменения в базовой игре.",
+        "config.(A) Vanilla.values.true": "Включено",
+        "config.(A) Vanilla.values.false": "Выключено",
+
+        "config.(B) Stardew Valley Expanded.name": "(B) Stardew Valley Expanded",
+        "config.(B) Stardew Valley Expanded.description": "Включает/выключает все изменения в Stardew Valley Expanded.",
+        "config.(B) Stardew Valley Expanded.values.true": "Включено",
+        "config.(B) Stardew Valley Expanded.values.false": "Выключено",
+
+        "config.(C) East Scarp.name": "(C) East Scarp",
+        "config.(C) East Scarp.description": "Включает/выключает все изменения в East Scarp.",
+        "config.(C) East Scarp.values.true": "Включено",
+        "config.(C) East Scarp.values.false": "Выключено",
+
+        "config.(D) Visit Mount Vapius.name": "(D) Visit Mount Vapius",
+        "config.(D) Visit Mount Vapius.description": "Включает/выключает все изменения в Visit Mount Vapius.",
+        "config.(D) Visit Mount Vapius.values.true": "Включено",
+        "config.(D) Visit Mount Vapius.values.false": "Выключено",
+
+        "config.(E) Serene Meadow.name": "(E) Serene Meadow",
+        "config.(E) Serene Meadow.description": "Включает/выключает все изменения в Serene Meadow.",
+        "config.(E) Serene Meadow.values.true": "Включено",
+        "config.(E) Serene Meadow.values.false": "Выключено",
+
+        "config.(F) Growable Forage.name": "(F) Growable Forage",
+        "config.(F) Growable Forage.description": "Включает/выключает все изменения в Growable Forage.",
+        "config.(F) Growable Forage.values.true": "Включено",
+        "config.(F) Growable Forage.values.false": "Выключено",
+
+        "config.(G) Cornucopia Crops.name": "(G) Cornucopia Crops",
+        "config.(G) Cornucopia Crops.description": "Включает/выключает все изменения в Cornucopia Crops.",
+        "config.(G) Cornucopia Crops.values.true": "Включено",
+        "config.(G) Cornucopia Crops.values.false": "Выключено",
+
+        "config.(H) Cornucopia Herbs.name": "(H) Cornucopia Herbs",
+        "config.(H) Cornucopia Herbs.description": "Включает/выключает все изменения в Cornucopia Herbs.",
+        "config.(H) Cornucopia Herbs.values.true": "Включено",
+        "config.(H) Cornucopia Herbs.values.false": "Выключено",
+
+        "config.(I) Cornucopia Flowers.name": "(I) Cornucopia Flowers",
+        "config.(I) Cornucopia Flowers.description": "Включает/выключает все изменения в Cornucopia Flowers.",
+        "config.(I) Cornucopia Flowers.values.true": "Включено",
+        "config.(I) Cornucopia Flowers.values.false": "Выключено",
+
+        "config.(J) Ilucie Winter Crops.name": "(J) Ilucie Winter Crops",
+        "config.(J) Ilucie Winter Crops.description": "Включает/выключает все изменения в Ilucie Winter Crops.",
+        "config.(J) Ilucie Winter Crops.values.true": "Включено",
+        "config.(J) Ilucie Winter Crops.values.false": "Выключено",
+
+        "config.(K) Flower Garden 2.name": "(K) Flower Garden 2",
+        "config.(K) Flower Garden 2.description": "Включает/выключает все изменения в Flower Garden 2.",
+        "config.(K) Flower Garden 2.values.true": "Включено",
+        "config.(K) Flower Garden 2.values.false": "Выключено",
+
+        "config.(L) Grapes of Ferngill.name": "(L) Grapes of Ferngill",
+        "config.(L) Grapes of Ferngill.description": "Включает/выключает все изменения в Grapes of Ferngill.",
+        "config.(L) Grapes of Ferngill.values.true": "Включено",
+        "config.(L) Grapes of Ferngill.values.false": "Выключено",
+
+        "config.(M) Atelier Goods Forager.name": "(M) Atelier Goods Forager",
+        "config.(M) Atelier Goods Forager.description": "Включает/выключает все изменения в Atelier Goods Forager.",
+        "config.(M) Atelier Goods Forager.values.true": "Включено",
+        "config.(M) Atelier Goods Forager.values.false": "Выключено",
+
+        "config.(N) Garden Variety Mixed Seeds.name": "(N) Garden Variety Mixed Seeds",
+        "config.(N) Garden Variety Mixed Seeds.description": "Включает/выключает все изменения в Garden Variety Mixed Seeds.",
+        "config.(N) Garden Variety Mixed Seeds.values.true": "Включено",
+        "config.(N) Garden Variety Mixed Seeds.values.false": "Выключено",
+
+        "config.(O) Forage of Ferngill.name": "(O) Forage of Ferngill",
+        "config.(O) Forage of Ferngill.description": "Включает/выключает все изменения в Forage of Ferngill.",
+        "config.(O) Forage of Ferngill.values.true": "Включено",
+        "config.(O) Forage of Ferngill.values.false": "Выключено",
+
+        "config.(P) Grains Overhull.name": "(P) Grains Overhull",
+        "config.(P) Grains Overhull.description": "Включает/выключает все изменения в Grains Overhull.",
+        "config.(P) Grains Overhull.values.true": "Включено",
+        "config.(P) Grains Overhull.values.false": "Выключено",
+
+        "config.(Q) Bonster Crops Combined.name": "(Q) Bonster Crops Combined",
+        "config.(Q) Bonster Crops Combined.description": "Включает/выключает все изменения в Bonster Crops Combined.",
+        "config.(Q) Bonster Crops Combined.values.true": "Включено",
+        "config.(Q) Bonster Crops Combined.values.false": "Выключено",
+
+        "config.(R) Uncle Iroh Tea.name": "(R) Uncle Iroh Tea",
+        "config.(R) Uncle Iroh Tea.description": "Включает/выключает все изменения в Uncle Iroh Tea.",
+        "config.(R) Uncle Iroh Tea.values.true": "Включено",
+        "config.(R) Uncle Iroh Tea.values.false": "Выключено",
+
+        "config.(S) Polyamory Sweet.name": "(S) Polyamory Sweet",
+        "config.(S) Polyamory Sweet.description": "Включает/выключает все изменения в Polyamory Sweet.",
+        "config.(S) Polyamory Sweet.values.true": "Включено",
+        "config.(S) Polyamory Sweet.values.false": "Выключено",
+
+        "config.(T) Ore Crops.name": "(T) Ore Crops",
+        "config.(T) Ore Crops.description": "Включает/выключает все изменения в Ore Crops.",
+        "config.(T) Ore Crops.values.true": "Включено",
+        "config.(T) Ore Crops.values.false": "Выключено",
+
+        "config.(U) Tahla Crops.name": "(U) Tahla Crops",
+        "config.(U) Tahla Crops.description": "Включает/выключает все изменения в Tahla Crops.",
+        "config.(U) Tahla Crops.values.true": "Включено",
+        "config.(U) Tahla Crops.values.false": "Выключено",
+    
+        "config.(V) Mildkewy Food Starter.name": "(V) Mildkewy Food Starter",
+        "config.(V) Mildkewy Food Starter.description": "Включает/выключает все изменения в Mildkewy Food Starter.",
+        "config.(V) Mildkewy Food Starter.values.true": "Включено",
+        "config.(V) Mildkewy Food Starter.values.false": "Выключено",
+    
+        "config.(W) Tobacco and Hemp.name": "(W) Tobacco and Hemp",
+        "config.(W) Tobacco and Hemp.description": "Включает/выключает все изменения в Tobacco and Hemp.",
+        "config.(W) Tobacco and Hemp.values.true": "Включено",
+        "config.(W) Tobacco and Hemp.values.false": "Выключено",
+    
+        "config.(X) Ridgeside Village.name": "(X) Ridgeside Village",
+        "config.(X) Ridgeside Village.description": "Включает/выключает все изменения в Ridgeside Village.",
+        "config.(X) Ridgeside Village.values.true": "Включено",
+        "config.(X) Ridgeside Village.values.false": "Выключено",
+    
+        "config.(Y) Adventurer Guild Expanded.name": "(Y) Adventurer Guild Expanded",
+        "config.(Y) Adventurer Guild Expanded.description": "Включает/выключает все изменения в Adventurer Guild Expanded.",
+        "config.(Y) Adventurer Guild Expanded.values.true": "Включено",
+        "config.(Y) Adventurer Guild Expanded.values.false": "Выключено",
+    
+        "config.(Z) Distant Lands.name": "(Z) Distant Lands",
+        "config.(Z) Distant Lands.description": "Включает/выключает все изменения в Distant Lands.",
+        "config.(Z) Distant Lands.values.true": "Включено",
+        "config.(Z) Distant Lands.values.false": "Выключено",
+
+        "config.(A²) Magical Crops.name": "(A²) Magical Crops",
+        "config.(A²) Magical Crops.description": "Включает/выключает все изменения в Magical Crops.",
+        "config.(A²) Magical Crops.values.true": "Включено",
+        "config.(A²) Magical Crops.values.false": "Выключено"
+}

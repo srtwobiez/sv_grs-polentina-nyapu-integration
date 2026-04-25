@@ -1,0 +1,73 @@
+{
+  "Name": "Hairs.prom.A",
+  "FrontHair": {
+    "DisableGrayscale": true, 
+    "DrawOrderOverride":  { 
+    "Preposition":"After",   
+    "AppearanceType":"sleeves"},
+	"StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 8,
+      "Y": -3
+    },
+    "HairSize": {
+      "Width": 32,
+      "Length": 32
+    }
+  },
+  "RightHair": {
+    "DisableGrayscale": true,
+    "DrawOrderOverride":  { 
+    "Preposition":"After",   
+    "AppearanceType":"sleeves"},
+	"StartingPosition": {
+      "X": 0,
+      "Y": 48
+    },
+    "HeadPosition": {
+      "X": 8,
+      "Y": -1
+    },
+    "HairSize": {
+      "Width": 32,
+      "Length": 32
+    }
+  },
+  "LeftHair": {
+    "DisableGrayscale": true,
+    "DrawOrderOverride":  { 
+    "Preposition":"After",   
+    "AppearanceType":"sleeves"},
+	"Flipped": true,
+	"StartingPosition": {
+      "X": 0,
+      "Y": 48
+    },
+    "HeadPosition": {
+      "X": 8,
+      "Y": -1
+    },
+    "HairSize": {
+      "Width": 32,
+      "Length": 32
+    }
+  },
+  "BackHair": {
+    "DisableGrayscale": true,
+	"StartingPosition": {
+      "X": 0,
+      "Y": 80
+    },
+    "HeadPosition": {
+      "X": 8,
+      "Y": -3
+    },
+    "HairSize": {
+      "Width": 32,
+      "Length": 32
+    }
+  }
+}

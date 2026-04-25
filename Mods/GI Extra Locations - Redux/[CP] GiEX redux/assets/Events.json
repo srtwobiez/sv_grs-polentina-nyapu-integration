@@ -1,0 +1,370 @@
+{
+    "Changes": [
+        //bundle start event
+        {
+            "LogName": "Add bundle event",
+            "Action": "EditData",
+            "Target": "Data/Events/GiEX_Temple",
+            "Entries": {
+                "GiEX_bundle_start/NpcVisible JaviGiex/!GameStateQuery PLAYER_HAS_SEEN_EVENT Any GiEX_Javi_badEnding": "starshoot/19 48/farmer 1 1 0 JaviGiex -2 -2 0/skippable/viewport move 0 -2 3000/pause 3000/warp farmer 19 46/move farmer 0 -5 0/emote farmer 48/warp JaviGiex 20 46/move JaviGiex 0 -5 0/speak JaviGiex \"{{i18n:Event.Temple.0}}\"/jump farmer/pause 1500/speak JaviGiex \"{{i18n:Event.Temple.1}}\"/pause 800/speak JaviGiex \"{{i18n:Event.Temple.2}}\"/viewport move 0 -1 1000/move JaviGiex 0 -3 0/pause 1000/speak JaviGiex \"{{i18n:Event.Temple.3}}\"/viewport move 0 -3 5000/beginSimultaneousCommand/move farmer 0 -10 0/move JaviGiex 0 -8 0/endSimultaneousCommand/pause 3000/doAction 20 29/viewport move 0 -2 3000/pause 3000/beginSimultaneousCommand/move farmer 0 -10 0/move JaviGiex 0 -8 0/endSimultaneousCommand/speak JaviGiex \"{{i18n:Event.Temple.4}}\"/globalFade/viewport -99 -99/playSound achievement/message \"{{i18n:Event.Temple.5}}\"/warp farmer 19 11/warp JaviGiex 20 11/globalFadeToClear 0.01 true/viewport 19 11/speak JaviGiex \"{{i18n:Event.Temple.6}}\"/pause 500/move JaviGiex 0 3 2/pause 500/speak JaviGiex \"{{i18n:Event.Temple.7}}\"/pause 200/faceDirection JaviGiex 0/speak JaviGiex \"{{i18n:Event.Temple.8}}\"/emote farmer 48/move JaviGiex 0 5 2 true/end",
+                "GiEX_bundle_start_withoutJavi/GameStateQuery PLAYER_HAS_SEEN_EVENT Any GiEX_Javi_badEnding": "starshoot/19 48/farmer 1 1 0/skippable/viewport move 0 -2 3000/pause 3000/warp farmer 19 46/move farmer 0 -5 0/emote farmer 48/jump farmer/pause 1500/message \"{{i18n:Event.Temple.0_alt}}\"/pause 800/message \"{{i18n:Event.Temple.1_alt}}\"/beginSimultaneousCommand/viewport move 0 -3 5000/move farmer 0 -10 0/endSimultaneousCommand/pause 3000/doAction 20 29/viewport move 0 -2 3000/pause 3000/move farmer 0 -10 0/message \"{{i18n:Event.Temple.2_alt}}\"/globalFade/viewport -99 -99/playSound achievement/message \"{{i18n:Event.Temple.3_alt}}\"/warp farmer 19 11/globalFadeToClear 0.01 true/viewport 19 11/message \"{{i18n:Event.Temple.4_alt}}\"/emote farmer 48/end"
+            }
+        },
+        //heart events
+        {
+            "LogName": "Add intro event",
+            "Action": "EditData",
+            "Target": "Data/Events/VolcanoDungeon0",
+            "Entries": {
+                "GiEX_JaviIntro/z summer/r 0": "tribal/31 46/farmer 31 51 0 JaviGiex 30 36 0/addTemporaryActor GiEXreduxMonsterSlime 16 32 30 34 2 false ???/addTemporaryActor GiEXMetalHead 16 16 29 30 2 false/addTemporaryActor GiEXMetalHead2 16 16 31 30 2 false/pause 2000/move farmer 0 -2 0/emote farmer 16/globalFade/viewport 0 0/if PLAYER_HAS_MAIL Any Island_VolcanoBridge##addObject 27 40 463##addObject 27 39 463/move farmer 0 -3 0 true/globalFadeToClear 0.01 true/viewport 30 36/pause 500/skippable/speak JaviGiex \"...#$b#{{i18n:Event.Intro.1}}\"/pause 1000/move GiEXMetalHead 0 3 2/move GiEXMetalHead2 0 3 2/pause 1000/speak JaviGiex \"{{i18n:Event.Intro.2}}$6\"/pause 1000/playSound pickUpItem/showFrame JaviGiex 29/showFrame GiEXreduxMonsterSlime 19/globalFade/viewport -9999 -9999/pause 1000/playSound toolCharge/pause 500/playSound swordswipe/pause 200/playSound parry/pause 200/playSound swordswipe/pause 500/playSound slimedead/playSound monsterdead/showFrame GiEXreduxMonsterSlime 16/warp GiEXMetalHead 1 1/warp GiEXMetalHead2 2 1/fade unfade/viewport 30 36/pause 900/speak JaviGiex \"{{i18n:Event.Intro.3}}$5\"/pause 500/faceDirection JaviGiex 2/move JaviGiex 0 3 2/move JaviGiex -2 0 3/showFrame JaviGiex 28/playSound openBox/pause 1000/playSound flameSpell/glow 0 64 100 true/pause 2000/stopGlowing/speak JaviGiex \"{{i18n:Event.Intro.4}}\"/viewport move 0 2 2000/pause 1000/faceDirection JaviGiex 2/move farmer 0 -4 0/jump JaviGiex/emote JaviGiex 16/playMusic WizardSong/pause 500/quickQuestion {{i18n:Event.Intro.5}}#{{i18n:Event.Intro.5qA}}#{{i18n:Event.Intro.5qB}}#{{i18n:Event.Intro.5qC}}(break)friendship JaviGiex 10\\speak JaviGiex \"{{i18n:Event.Intro.6A}}\"(break)friendship JaviGiex -20\\speak JaviGiex \"{{i18n:Event.Intro.6B}}$6\"(break)speak JaviGiex \"{{i18n:Event.Intro.6C}}$5\"/pause 500/speak JaviGiex \"{{i18n: Event.Intro.7}}\"/pause 1000/speak JaviGiex \"{{i18n:Event.Intro.8}}\"/speak JaviGiex \"{{i18n:Event.Intro.9}}\"/move JaviGiex 0 7 2/globalFade 0.007 true/move JaviGiex 0 5 2 true/pause 700/viewport -99 -99/warp JaviGiex 0 0/pause 500/globalFadeToClear 0.01 true/viewport 30 38/pause 1500/pause 1000/message \"{{i18n:Event.Intro.10}}\"/message \"{{i18n:Event.Intro.11}}#{{i18n:Event.Intro.12}}\"/end",
+                //if GI start
+                "GingerIslandStart_Compat": "speak JaviGiex \"{{i18n:Event.Intro.extra}}\"/pause 1200/speak JaviGiex \"{{i18n:Event.Intro.extra2}}\"/pause 500/emote JaviGiex 16/pause 500"
+            }
+        },
+        {
+            "LogName": "Add 2h event",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouthEastCave", //← pirate cove
+            "Entries": {
+                //occurs on non-rainy even numbered days, after pirate cove is unlocked
+                //use scenes: childhood2, youth, and youth_wanted
+                "GiEX_Javi_2h/f JaviGiex 500/n Island_Resort/w sunny/t 2000 2400/GameStateQuery DAY_OF_MONTH even": "continue/15 6/farmer 3 7 1 SurvivorPirateGiex 12 6 1/skippable/changeName SurvivorPirateGiex {{i18n:Pirate}}/pause 1000/jump SurvivorPirateGiex/emote SurvivorPirateGiex 16/pause 500/move farmer 3 0 1/pause 700/faceDirection SurvivorPirateGiex 3/speak SurvivorPirateGiex \"{{i18n:Javi2h.1}}\"/jump SurvivorPirateGiex/pause 500/speak SurvivorPirateGiex \"{{i18n:Javi2h.2}}\"/move farmer 0 -1 0/move farmer 3 0 1/speak SurvivorPirateGiex \"{{i18n:Javi2h.3}}\"/pause 1200/fade/viewport -100 -100/speak SurvivorPirateGiex \"{{i18n:Javi2h.4}}\"/addScene GiEX_childhood1 500201 2 1000/message \"{{i18n:Javi2h.5}}\"/fade/removeScene 500201/addScene GiEx_youth1 410003 2 1500/pause 700/message \"{{i18n:Javi2h.6}}\"/fade/removeScene 410003/addScene GiEx_youth2 221827 2 1500/pause 700/message \"{{i18n:Javi2h.7}}\"/fade/removeScene 221827/viewport 15 6/speak SurvivorPirateGiex \"{{i18n:Javi2h.8}}\"/pause 2000/speak SurvivorPirateGiex \"{{i18n:Javi2h.9}}\"/pause 500/emote SurvivorPirateGiex 16/pause 500/end"
+            }
+        },
+        {
+            "LogName": "Add events - 4H",
+            "Action": "EditData",
+            "Target": "Data/Events/GiEX_SouthWest",
+            "Entries": {
+                "GiEX_Javi_4h/f JaviGiex 1000/GameStateQuery PLAYER_HAS_MAIL Current {{ModId}}_Javi4Hearts Received": "continue/26 20/farmer 22 19 2 JaviGiex 20 19 2/skippable/addBigProp 19 18 124/pause 1000/speak JaviGiex \"{{i18n:Javi4h.1}}\"/pause 500/speak JaviGiex \"{{i18n:Javi4h.2}}#$b#{{i18n:Javi4h.3}}\"/pause 1200/fade/viewport -100 -100/faceDirection farmer 0/changeLocation GiEX_Hut/viewport 5 5/addObject 7 7 102/fade unfade/pause 500/warp farmer 5 9/playSound doorClose/move farmer 0 -4 0/pause 800/addBigProp 5 4 124/playSound hitEnemy/pause 500/faceDirection farmer 2/pause 500/emote farmer 8/move farmer 0 2 0/move farmer 1 0 1/emote farmer 40/message \"{{i18n:Javi4h.4}}\"/quickQuestion {{i18n:Javi4h.Q}}#{{i18n:Javi4h.Y}}#{{i18n:Javi4h.N}}(break)append GiEX_Javi_4h_read(break)addMailReceived GiEX_Javi_4h_noread/playMusic nightTime/pause 200/playSound stoneStep/pause 100/playSound stoneStep/jump farmer/emote farmer 16/speak JaviGiex \"{{i18n:Javi4h.5}}\"/pause 500/faceDirection farmer 2/pause 800/faceDirection farmer 1/pause 1000/removeObject 7 7/playSound rabbit/pause 500/move farmer -1 0 2/pause 300/playSound doorClose/faceDirection JaviGiex 0/pause 400/warp JaviGiex 5 9/pause 600/speak JaviGiex \"{{i18n:Javi4h.6}}\"/fade/viewport -100 -100/pause 1000/message \"{{i18n:Javi4h.7}}\"/message \"{{i18n:Javi4h.8}}\"/message \"{{i18n:Javi4h.9.alt}}\"/end"
+            }
+        },
+        {
+            "LogName": "Add events - 4H (hut extras)",
+            "Action": "EditData",
+            "Target": "Data/Events/GiEX_Hut",
+            "Entries": {
+                "GiEX_Javi_4h_read": "playMusic echos/{{journalify}}/pause 1200/speak JaviGiex \"{{i18n:Javi4h.read.0}}\"/pause 300/speak JaviGiex \"{{i18n:Javi4h.read.1}}#$b#{{i18n:Javi4h.read.1_cont}}\"/pause 1000/message \"{{i18n:Javi4h.read.2}}\"/pause 1000/speak JaviGiex \"{{i18n:Javi4h.read.3}}#$b#{{i18n:Javi4h.read.3_cont}}\"/pause 300/message \"{{i18n:Javi4h.read.4}}\"/pause 300/playMusic desolate/speak JaviGiex \"{{i18n:Javi4h.read.5}}\"/pause 1000/fade/viewport -100 -100/addScene GiEX_Pirates 401/pause 800/playMusic ocean/message \"{{i18n:Javi4h.read.6}}\"/pause 1000/message \"{{i18n:Javi4h.read.7}}\"/message \"{{i18n:Javi4h.read.8}}\"/fade/removeScene 401/fade/addScene GiEX_Captain 402/pause 800/message \"{{i18n:Javi4h.read.9}}\"/speak JaviGiex \"{{i18n:Javi4h.read.10}}\"/fade/removeScene 402/viewport -300 -300/warp farmer 6 8/warp JaviGiex -50 -50/changeSprite JaviGiex/fade/changeToTemporaryMap GiEX_Event_Hut false/pause 700/{{dejournal}}/viewport 5 5",
+                "GiEX_Javi_4h_alt": "nightTime/5 5/farmer 7 6 2 JaviGiex -50 -50 2/skippable/addObject 7 7 102/append GiEX_Javi_4h_read/playSound parrot/jump farmer/pause 500/faceDirection farmer 3/pause 800/faceDirection farmer 2/pause 1000/removeObject 7 7/playSound rabbit/pause 500/message \"{{i18n:Javi4h.read.altend}}\"/end"
+            }
+        },
+        {
+            "LogName": "Add 6H event",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouthEastCave",
+            "Entries": {
+                "GiEX_Javi_6h/f JaviGiex 1500/SawEvent GiEX_Javi_4h/n Island_Resort/w sunny/t 2000 2400/GameStateQuery DAY_OF_MONTH even": "continue/26 26/farmer 19 26 1 SurvivorPirateGiex 25 26 2/skippable/changeName SurvivorPirateGiex {{i18n:Pirate}}/showFrame SurvivorPirateGiex 16/pause 700/speak SurvivorPirateGiex \"{{i18n:Javi6h.1}}\"/pause 500/speak SurvivorPirateGiex \"{{i18n:Javi6h.2}}\"/pause 100/fade/viewport -100 -100/pause 1000/globalFadeToClear 0.01 true/addScene GiEx_pirate1 646101 2 1250/pause 2000/speak SurvivorPirateGiex \"{{i18n:Javi6h.3}}#$b#{{i18n:Javi6h.4}}\"/fade/removeScene 646101/pause 1200/addScene  GiEx_pirate2 646102 2 250/pause 2000/speak SurvivorPirateGiex \"{{i18n:Javi6h.5}}\"/pause 1500/message \"{{i18n:Javi6h.6}}\"/fade/removeScene 646102/speak SurvivorPirateGiex \"{{i18n:Javi6h.7}}#$b#{{i18n:Javi6h.8}}\"/addScene GiEx_pirate3 646103 2 250/fade unfade/pause 2000/speak SurvivorPirateGiex \"{{i18n:Javi6h.9}}\"/pause 1200/speak SurvivorPirateGiex \"{{i18n:Javi6h.10}}#$b#{{i18n:Javi6h.11}}\"/fade/removeScene 646103/stopMusic/message \"{{i18n:Javi6h.12}}\"/viewport 26 26/pause 1000/quickQuestion {{i18n:dots}}#{{i18n:Javi6h.QA}}#{{i18n:Javi6h.QB}}(break)speak SurvivorPirateGiex \"{{i18n:Javi6h.AA}}\"(break)speak SurvivorPirateGiex \"{{i18n:Javi6h.AB}}\"/pause 700/speak SurvivorPirateGiex \"{{i18n:Javi6h.13}}\"/pause 1000/end"
+            }
+        },
+        {
+            //notes: this event OK
+            "LogName": "Add 8H event",
+            "Action": "EditData",
+            "Target": "Data/Events/GiEX_Hut",
+            "Entries": {
+                "GiEX_Javi_8h/f JaviGiex 2000/SawEvent GiEX_Javi_6h/Weather sunny": "ocean/5 5/farmer 5 9 0 JaviGiex -10 -10 2/addObject 6 7 102/skippable/pause 2500/move farmer 0 -1 0/emote farmer 16/pause 500/move farmer 0 -1 1/pause 500/playSound newRecipe/pause 200/fade/viewport -100 -100/{{journalify}}/speak JaviGiex \"{{i18n:Javi8h.1}}#$b#{{i18n:Javi8h.2}}#$b#{{i18n:Javi8h.3}}#$b#{{i18n:Javi8h.4}}\"/pause 2000/fade/addScene GiEx_pirate4 646104/fade unfade/pause 1500/message \"{{i18n:dots}}\"/speak JaviGiex \"{{i18n:Javi8h.5}}\"/pause 600/speak JaviGiex \"{{i18n:Javi8h.6}}\"/playSound {{ModId}}_Splash/removeScene 646104/pause 2000/playMusic ocean/changeToTemporaryMap GiEX_Event_IslandSouthPast false/viewport 12 21/hideShadow JaviGiex true/warp JaviGiex 10 30/changeName JaviGiex {{i18n:Javier}}/changePortrait JaviGiex Quartermaster/changeSprite JaviGiex Younger/move JaviGiex 0 -2 0/pause 800/move JaviGiex 0 -4 0/pause 1000/move JaviGiex 0 -4 0/pause 1000/showFrame JaviGiex 0/speak JaviGiex \"{{i18n:dots}}$4#$b#{{i18n:Javi8h.7}}$4\"/message \"{{i18n:Javi8h.8}}\"/pause 1000/showFrame JaviGiex 4/pause 2800/playMusic shaneTheme/changePortrait JaviGiex Stranded/pause 1500/viewport -100 -100/pause 500/addScene GiEx_island1 171143/pause 700/speak JaviGiex \"{{i18n:Javi8h.9}}$5#$b#{{i18n:Javi8h.10}}$5#$b#{{i18n:Javi8h.11}}$6#$b#{{i18n:Javi8h.12}}$2\"/pause 1500/globalFade/removeScene 171143/globalFadeToClear/addScene GiEx_island2 171144/changePortrait JaviGiex Stranded2/speak JaviGiex \"{{i18n:Javi8h.13}}$6#$b#{{i18n:Javi8h.14}}#$b#{{i18n:Javi8h.15}}$5#$b#{{i18n:Javi8h.16}}#$b#{{i18n:Javi8h.17}}$2#$b#{{i18n:dots}}$5#$b#{{i18n:Javi8h.18}}$5\"/addScene GiEx_island2anim 171145 8 250 mid 1/removeScene 171144/pause 1000/message \"{{i18n:Javi8h.19}}\"/removeScene 171145/pause 500/changeSprite JaviGiex/changeToTemporaryMap GiEX_Event_Hut false/warp JaviGiex 5 9/faceDirection JaviGiex 0/viewport 5 6/playSound doorClose/stopMusic/pause 2500/{{dejournal}}/speak JaviGiex \"{{i18n:dots}}$3\"/pause 1500/speak JaviGiex \"{{i18n:Javi8h.20}}#$b#{{i18n:dots}}#$b#{{i18n:Javi8h.21}}$2\"/pause 500/emote farmer 28/move farmer 0 -3 0/move farmer -1 0 2/speak JaviGiex \"{{i18n:Javi8h.22}}\"/friendship JaviGiex -10/quickQuestion {{i18n:Javi8h.Q}}#{{i18n:Javi8h.QA}}#{{i18n:Javi8h.QB}}#{{i18n:Javi8h.QC}}(break)speak JaviGiex \"{{i18n:Javi8h.AA}}$2\"\\friendship JaviGiex -20(break)speak JaviGiex \"{{i18n:Javi8h.AB}}\"\\friendship JaviGiex 20(break)speak JaviGiex \"{{i18n:Javi8h.AC}}$3\"\\friendship JaviGiex -50/pause 2000/speak JaviGiex \"{{i18n:Javi8h.23}}$4\"/quickQuestion #{{i18n:Javi8h.2QA}}#{{i18n:Javi8h.2QB}}#{{i18n:Javi8h.2QC}}(break)speak JaviGiex \"{{i18n:Javi8h.2AA}}$4#$b#{{i18n:Javi8h.2AA2}}#$b#{{i18n:Javi8h.2AA3}}\"(break)speak JaviGiex \"{{i18n:Javi8h.2AB}}#$b#{{i18n:Javi8h.2AB2}}\"(break)speak JaviGiex \"{{i18n:Javi8h.2AC}}\"/pause 500/move JaviGiex 0 -3 0/move JaviGiex 2 0 3/faceDirection JaviGiex 0/speak JaviGiex \"{{i18n:Javi8h.24}}#$b#{{i18n:Javi8h.25}}$4\"/quickQuestion {{i18n:Javi8h.3Q}}#{{i18n:Javi8h.3QA}}#{{i18n:Javi8h.3QB}}#{{i18n:Javi8h.3QC}}(break)friendship JaviGiex -350\\addMailReceived GiEX_Javi_Reject\\speak JaviGiex \"{{i18n:Javi8h.3AA}}#$b#{{i18n:Javi8h.3AA2}}#$b#{{i18n:Javi8h.3AA3}}\"(break)speak JaviGiex \"{{i18n:Javi8h.3AB}}#$b#{{i18n:Javi8h.3AB2}}$4\"(break)speak JaviGiex \"{{i18n:Javi8h.3AC}}$4\"\\emote JaviGiex 40\\pause 900/speak JaviGiex \"{{i18n:Javi8h.3AC2}}#$b#{{i18n:Javi8h.3AC3}}$6\"/pause 1200/speak JaviGiex \"{{i18n:Javi8h.26}}\"/pause 800/speak JaviGiex \"{{i18n:Javi8h.27}}$6\"/pause 950/quickQuestion #{{i18n:Javi8h.4QA}}#{{i18n:Javi8h.4QB}}(break)speak JaviGiex \"{{i18n:Javi8h.4AA}}\"(break)speak JaviGiex \"{{i18n:Javi8h.4AB}}\"/pause 500/end invisible JaviGiex"
+            },
+            "When": {
+                "LighterBackstory": false
+            }
+        },
+        {
+            //notes: this event OK
+            "LogName": "Add 8H event",
+            "Action": "EditData",
+            "Target": "Data/Events/GiEX_Hut",
+            "Entries": {
+                "GiEX_Javi_8h/f JaviGiex 2000/SawEvent GiEX_Javi_6h/Weather sunny": "ocean/5 5/farmer 5 9 0 JaviGiex -10 -10 2/addObject 6 7 102/skippable/pause 2500/move farmer 0 -1 0/emote farmer 16/pause 500/move farmer 0 -1 1/pause 500/playSound newRecipe/pause 200/fade/viewport -100 -100/{{journalify}}/speak JaviGiex \"{{i18n:Javi8h.1}}#$b#{{i18n:Javi8h.2}}#$b#{{i18n:Javi8h.3}}\"/pause 2000/fade/addScene GiEx_pirate4 646104/fade unfade/pause 1500/message \"{{i18n:dots}}\"/speak JaviGiex \"{{i18n:Javi8h.alt}}\"/pause 600/speak JaviGiex \"{{i18n:Javi8h.6}}\"/playSound {{ModId}}_Splash/removeScene 646104/pause 2000/playMusic ocean/changeToTemporaryMap GiEX_Event_IslandSouthPast false/viewport 12 21/hideShadow JaviGiex true/warp JaviGiex 10 30/changeName JaviGiex {{i18n:Javier}}/changePortrait JaviGiex Quartermaster/changeSprite JaviGiex Younger/move JaviGiex 0 -2 0/pause 800/move JaviGiex 0 -4 0/pause 1000/move JaviGiex 0 -4 0/pause 1000/showFrame JaviGiex 0/speak JaviGiex \"{{i18n:dots}}$4#$b#{{i18n:Javi8h.7}}$4\"/message \"{{i18n:Javi8h.8}}\"/pause 1000/showFrame JaviGiex 4/pause 2800/playMusic shaneTheme/changePortrait JaviGiex Stranded/pause 1500/viewport -100 -100/pause 500/addScene GiEx_island1 171143/pause 700/speak JaviGiex \"{{i18n:Javi8h.9.alt}}$5#$b#{{i18n:Javi8h.10}}$5#$b#{{i18n:Javi8h.11}}$6#$b#{{i18n:Javi8h.12}}$2\"/pause 1500/globalFade/removeScene 171143/globalFadeToClear/addScene GiEx_island2 171144/changePortrait JaviGiex Stranded2/speak JaviGiex \"{{i18n:Javi8h.13}}$6#$b#{{i18n:Javi8h.14}}#$b#{{i18n:Javi8h.15}}$5#$b#{{i18n:Javi8h.16}}#$b#{{i18n:Javi8h.17}}$2#$b#{{i18n:dots}}$5#$b#{{i18n:Javi8h.18}}$5\"/addScene GiEx_island2anim 171145 8 250 mid 1/removeScene 171144/pause 1000/message \"{{i18n:Javi8h.19}}\"/removeScene 171145/pause 500/changeSprite JaviGiex/changeToTemporaryMap GiEX_Event_Hut false/warp JaviGiex 5 9/faceDirection JaviGiex 0/viewport 5 6/playSound doorClose/stopMusic/pause 2500/{{dejournal}}/speak JaviGiex \"{{i18n:dots}}$3\"/pause 1500/speak JaviGiex \"{{i18n:Javi8h.20}}#$b#{{i18n:dots}}#$b#{{i18n:Javi8h.21}}$2\"/pause 500/emote farmer 28/move farmer 0 -3 0/move farmer -1 0 2/speak JaviGiex \"{{i18n:Javi8h.22}}\"/friendship JaviGiex -10/quickQuestion {{i18n:Javi8h.Q}}#{{i18n:Javi8h.QA}}#{{i18n:Javi8h.QB}}#{{i18n:Javi8h.QC}}(break)speak JaviGiex \"{{i18n:Javi8h.AA}}$2\"\\friendship JaviGiex -20(break)speak JaviGiex \"{{i18n:Javi8h.AB}}\"\\friendship JaviGiex 20(break)speak JaviGiex \"{{i18n:Javi8h.AC}}$3\"\\friendship JaviGiex -50/pause 2000/speak JaviGiex \"{{i18n:Javi8h.23}}$4\"/quickQuestion #{{i18n:Javi8h.2QA}}#{{i18n:Javi8h.2QB}}#{{i18n:Javi8h.2QC}}(break)speak JaviGiex \"{{i18n:Javi8h.2AA}}$4#$b#{{i18n:Javi8h.2AA2}}#$b#{{i18n:Javi8h.2AA3}}\"(break)speak JaviGiex \"{{i18n:Javi8h.2AB}}#$b#{{i18n:Javi8h.2AB2}}\"(break)speak JaviGiex \"{{i18n:Javi8h.2AC}}\"/pause 500/move JaviGiex 0 -3 0/move JaviGiex 2 0 3/faceDirection JaviGiex 0/speak JaviGiex \"{{i18n:Javi8h.24}}#$b#{{i18n:Javi8h.25}}$4\"/quickQuestion {{i18n:Javi8h.3Q}}#{{i18n:Javi8h.3QA}}#{{i18n:Javi8h.3QB}}#{{i18n:Javi8h.3QC}}(break)friendship JaviGiex -350\\addMailReceived GiEX_Javi_Reject\\speak JaviGiex \"{{i18n:Javi8h.3AA}}#$b#{{i18n:Javi8h.3AA2}}#$b#{{i18n:Javi8h.3AA3}}\"(break)speak JaviGiex \"{{i18n:Javi8h.3AB}}#$b#{{i18n:Javi8h.3AB2}}$4\"(break)speak JaviGiex \"{{i18n:Javi8h.3AC}}$4\"\\emote JaviGiex 40\\pause 900/speak JaviGiex \"{{i18n:Javi8h.3AC2}}#$b#{{i18n:Javi8h.3AC3}}$6\"/pause 1200/speak JaviGiex \"{{i18n:Javi8h.26}}\"/pause 800/speak JaviGiex \"{{i18n:Javi8h.27}}$6\"/pause 950/quickQuestion #{{i18n:Javi8h.4QA}}#{{i18n:Javi8h.4QB}}(break)speak JaviGiex \"{{i18n:Javi8h.4AA}}\"(break)speak JaviGiex \"{{i18n:Javi8h.4AB}}\"/pause 500/end invisible JaviGiex"
+            },
+            "When": {
+                "LighterBackstory": true
+            }
+        },
+        {
+            "LogName": "Add 10H event",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "GiEX_Javi_10h/f JaviGiex 2500/SawEvent GiEX_Javi_8h/GameStateQuery PLAYER_HAS_MAIL Current {{ModId}}_Javi10Hearts Received": "continue/17 10/farmer 16 14 0 JaviGiex 18 5 2/move JaviGiex 0 5 2/speak JaviGiex \"{{i18n:Javi10h.1}}\"/move JaviGiex 0 3 2/speak JaviGiex \"{{i18n:Javi10h.2}}\"/quickQuestion {{i18n:Javi10h.Q}}#{{i18n:Javi10h.QA}}#{{i18n:Javi10h.QB}}(break)speak JaviGiex \"{{i18n:Javi10h.AA}}$1\"(break)mailReceived GiEX_Javi_UnwiseDecision/if PLAYER_HAS_MAIL Current GiEX_Javi_Reject, PLAYER_HAS_MAIL Current GiEX_Javi_UnwiseDecision##append GiEX_Javi_10h_badEnding##append GiEX_Javi_10h_furtherBranching/end",
+                "GiEX_Javi_10h_badEnding": "stopMusic/speak JaviGiex \"{{i18n:Javi10h.BadEnding.0}}\"/pause 800/speak JaviGiex \"{{i18n:Javi10h.BadEnding.1}}\"/pause 800/speak JaviGiex \"{{i18n:Javi10h.BadEnding.2}}$2\"/mailReceived GiEX_Javi_badEndingFlag/addConversationTopic GiEX_Javi_10H_hide",
+                "GiEX_Javi_10h_furtherBranching": "if PLAYER_HAS_MAIL Current GiEX_Javi_UnwiseDecision##append GiEX_Javi_10h_areYouSure##append GiEX_Javi_10h_goodEnding",
+                "GiEX_Javi_10h_areYouSure": "speak JaviGiex \"{{i18n:Javi10h.AreYouSure.1}}/quickQuestion {{i18n:Javi10h.AreYouSure.Q}}#{{i18n:Javi10h.AreYouSure.QA}}#{{i18n:Javi10h.AreYouSure.QB}}(break)append GiEX_Javi_10h_badEnding(break)append GiEX_Javi_10h_goodEnding",
+                "GiEX_Javi_10h_goodEnding": "speak JaviGiex \"{{i18n:Javi10h.GoodEnding.1}}\"/globalFade/viewport -100 -100/changeLocation IslandWest/viewport -100 -100/warp JaviGiex 69 74/faceDirection JaviGiex 2/warp farmer 70 73/faceDirection farmer 2/addTemporaryActor Birdie 16 32 62 85 2 true Birdie/viewport 70 74/pause 500/move JaviGiex 0 8 2 true/move farmer 0 8 2 true/viewport move 0 2 5000/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.2}}\"/pause 1500/stopMusic/emote farmer 28/pause 1000/emote JaviGiex 40/faceDirection Birdie 0/speak Birdie \"{{i18n:Javi10h.GoodEnding.3}}\"/emote farmer 40/pause 1200/speak Birdie \"{{i18n:Javi10h.GoodEnding.4}}\"/move JaviGiex 0 1 3/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.5}}\"/pause 500/speak Birdie \"{{i18n:Javi10h.GoodEnding.6}}\"/pause 800/quickQuestion {{i18n:Javi10h.GoodEnding.Q}}#{{i18n:Javi10h.GoodEnding.QA}}#{{i18n:Javi10h.GoodEnding.QB}}#{{i18n:Javi10h.GoodEnding.QC}}(break)speak JaviGiex \"{{i18n:Javi10h.GoodEnding.AA}}\"(break)speak JaviGiex \"{{i18n:Javi10h.GoodEnding.AB}}$5\"(break)speak JaviGiex \"{{i18n:Javi10h.GoodEnding.AC}}$5\"/emote JaviGiex 40/pause 850/quickQuestion {{i18n:Javi10h.GoodEnding.Q2}}#{{i18n:Javi10h.GoodEnding.Q2A}}#{{i18n:Javi10h.GoodEnding.Q2B}}(break)friendship JaviGiex -50\\pause 200\\faceDirection JaviGiex 0\\speak JaviGiex \"{{i18n:Javi10h.GoodEnding.A2A}}$2\"\\faceDirection JaviGiex 3(break)friendship JaviGiex 10/playMusic ocean/move farmer 0 -10 0 true/pause 100/faceDirection JaviGiex 2/pause 500/fade/warp Birdie 81 88/warp JaviGiex 76 88/showFrame Birdie 20/showFrame JaviGiex 32/extendSourceRect JaviGiex 0 16/viewport 79 87/pause 2200/fade unfade/pause 1200/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.7}}\"/pause 1000/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.8}}\"/emote JaviGiex 40/pause 1800/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.9}}\"/playMusic desolate/pause 1400/speak Birdie \"{{i18n:Javi10h.GoodEnding.10}}\"/pause 500/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.11}}$4\"/pause 900/speak Birdie \"{{i18n:Javi10h.GoodEnding.12}}\"/pause 900/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.13}}$4\"/pause 1500/speak Birdie \"{{i18n:Javi10h.GoodEnding.14}}\"/pause 600/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.15}}\"/pause 1400/speak Birdie \"{{i18n:Javi10h.GoodEnding.16}}$2\"/showFrame Birdie 12/pause 500/pause 900/speak Birdie \"{{i18n:Javi10h.GoodEnding.17}}$2\"/speak JaviGiex \"{{i18n:dots}}\"/globalFade/viewport -200 -200/pause 2200/globalFadeToClear/viewport 79 87/pause 600/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.19}}\"/textAboveHead Birdie \"{{i18n:dots}}\"/pause 900/stopMusic/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.20}}$6\"/pause 200/move JaviGiex 0 -2 0 true/pause 150/speak Birdie \"{{i18n:Javi10h.GoodEnding.21}}$2\"/playMusic shaneTheme/faceDirection JaviGiex 2/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.22}}\"/pause 500/move JaviGiex 0 1 2/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.23}}\"/pause 1500/speak Birdie \"{{i18n:Javi10h.GoodEnding.24}}\"/pause 800/textAboveHead JaviGiex \"{{i18n:Javi10h.GoodEnding.25}}\"/move JaviGiex 2 0 1 true/viewport move 0 3 7000/pause 4500/addConversationTopic GiEX_Javi_10H_tellTruth"
+            }
+        },
+        {
+            "LogName": "Add ending event - final",
+            "Action": "EditData",
+            "Target": "Data/Events/CaptainRoom",
+            "Entries": {
+                //this should make ghosts stop spawning in the ship. quite literally, Javi's ghosts don't haunt her anymore (game symbolism)
+                "GiEX_Javi_goodEnding/SawEvent GiEX_Javi_10h/GameStateQuery !PLAYER_HAS_MAIL Current GiEX_Javi_badEndingFlag/!ActiveDialogueEvent GiEX_Javi_10H_tellTruth": "none/3 5/farmer 0 5 1 JaviGiex 3 5 0/skippable/pause 1000/emote JaviGiex 40/pause 1000/faceDirection JaviGiex 3/emote JaviGiex 16/pause 500/speak JaviGiex \"{{i18n:Javi12h.1}}\"/pause 200/move farmer 1 0 1/speak JaviGiex \"{{i18n:Javi12h.2}}#$b#{{i18n:Javi12h.3}}\"/pause 1000/emote JaviGiex 40/pause 1000/speak JaviGiex \"{{i18n:Javi12h.4}}#$b#{{i18n:Javi12h.5}}#$b#{{i18n:Javi12h.6}}\"/pause 800/move JaviGiex 1 0 1/move JaviGiex 0 -1 3/playSound leafrustle/pause 100/speak JaviGiex \"{{i18n:Javi12h.7}}$4\"/pause 1500/speak JaviGiex \"{{i18n:Javi12h.8}}$6#$b#{{i18n:Javi12h.9}}\"/move JaviGiex 0 1 2/speak JaviGiex \"{{i18n:Javi12h.10}}\"/move JaviGiex 1 0 1/warp JaviGiex -100 -100/globalFade/viewport -200 -200/message \"{{i18n:Javi12h.end}}\"/pause 600/message \"{{i18n:Javi12h.end.cont}}\"/end",
+                "GiEX_Javi_badEnding/SawEvent GiEX_Javi_10h/GameStateQuery PLAYER_HAS_MAIL Current GiEX_Javi_badEndingFlag/!ActiveDialogueEvent GiEX_Javi_10H_hide": "ocean/3 5/farmer 0 5 1 JaviGiex 3 5 0/skippable/pause 1000/emote JaviGiex 40/pause 1000/faceDirection JaviGiex 3/emote JaviGiex 16/pause 500/speak JaviGiex \"{{i18n:Javi12h.BadEnding.0}}\"/pause 1000/speak JaviGiex \"{{i18n:Javi12h.BadEnding.1}}\"/pause 1000/speak JaviGiex \"{{i18n:Javi12h.BadEnding.2}}\"/pause 500/speak JaviGiex \"{{i18n:Javi12h.BadEnding.3}}\"/emote farmer 40/pause 1000/speak JaviGiex \"{{i18n:Javi12h.BadEnding.4}}\"/move JaviGiex 1 0 1/speak JaviGiex \"{{i18n:Javi12h.BadEnding.5}}\"/move JaviGiex 1 0 1/warp JaviGiex -100 -100/globalFade/viewport -200 -200/message \"{{i18n:Javi12h.BadEnding.6}}\"/pause 500/message \"{{i18n:Javi12h.BadEnding.7}}\"/addConversationTopic GiEX_Javi_10H_hide_badEnding/end invisible JackieGiex"
+            }
+        },
+        //compatibility with GI NPC Tweaks
+        {
+            "LogName": "Add events - 4H (hut extras) - GI NPC Tweaks",
+            "Action": "EditData",
+            "Target": "Data/Events/GiEX_Hut",
+            "Entries": {
+                "GiEX_Javi_4h_read": "playMusic echos/{{journalify}}/pause 1200/speak JaviGiex \"{{i18n:Javi4h.read.0}}\"/pause 300/speak JaviGiex \"{{i18n:Javi4h.read.1}}#$b#{{i18n:Javi4h.read.1_cont}}\"/pause 1000/message \"{{i18n:Javi4h.read.2}}\"/pause 1000/speak JaviGiex \"{{i18n:Javi4h.read.3}}#$b#{{i18n:Javi4h.read.3_cont}}\"/pause 300/message \"{{i18n:Javi4h.read.4}}\"/pause 300/playMusic desolate/speak JaviGiex \"{{i18n:Javi4h.read.5}}\"/pause 1000/fade/viewport -100 -100/addScene GiEX_Pirates 401/pause 800/playMusic ocean/message \"{{i18n:Javi4h.read.6}}\"/pause 1000/message \"{{i18n:Javi4h.read.7}}\"/message \"{{i18n:Javi4h.read.8.GINPCTweaks}}\"/fade/removeScene 401/fade/addScene GiEX_Captain 402/pause 800/message \"{{i18n:Javi4h.read.9.GINPCTweaks}}\"/speak JaviGiex \"{{i18n:Javi4h.read.10.GINPCTweaks}}\"/fade/removeScene 402/viewport -300 -300/warp farmer 6 8/warp JaviGiex -50 -50/changeSprite JaviGiex/fade/changeToTemporaryMap GiEX_Event_Hut false/pause 700/{{dejournal}}/viewport 5 5",
+                "GiEX_Javi_4h_alt": "nightTime/5 5/farmer 7 6 2 JaviGiex -50 -50 2/skippable/addObject 7 7 102/append GiEX_Javi_4h_read/playSound parrot/jump farmer/pause 500/faceDirection farmer 3/pause 800/faceDirection farmer 2/pause 1000/removeObject 7 7/playSound rabbit/pause 500/message \"{{i18n:Javi4h.read.altend}}\"/end"
+            },
+            "When": {
+                "HasMod": "ZoeDoll.GingerIslandNPCTweaks"
+            }
+        },
+        {
+            "LogName": "Add 6H event - GI NPC Tweaks",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouthEastCave",
+            "Entries": {
+                "GiEX_Javi_6h/f JaviGiex 1500/SawEvent GiEX_Javi_4h/n Island_Resort/w sunny/t 2000 2400/GameStateQuery DAY_OF_MONTH even": "continue/26 26/farmer 19 26 1 SurvivorPirateGiex 25 26 2/skippable/changeName SurvivorPirateGiex {{i18n:Pirate}}/showFrame SurvivorPirateGiex 16/pause 700/speak SurvivorPirateGiex \"{{i18n:Javi6h.1}}\"/pause 500/speak SurvivorPirateGiex \"{{i18n:Javi6h.2}}\"/pause 100/fade/viewport -100 -100/pause 1000/globalFadeToClear 0.01 true/addScene GiEx_pirate1 646101 2 1250/pause 2000/speak SurvivorPirateGiex \"{{i18n:Javi6h.3.GINPCTweaks}}#$b#{{i18n:Javi6h.4.GINPCTweaks}}\"/fade/removeScene 646101/pause 1200/addScene  GiEx_pirate2 646102 2 250/pause 2000/speak SurvivorPirateGiex \"{{i18n:Javi6h.5}}\"/pause 1500/message \"{{i18n:Javi6h.6}}\"/fade/removeScene 646102/speak SurvivorPirateGiex \"{{i18n:Javi6h.7.GINPCTweaks}}#$b#{{i18n:Javi6h.8}}\"/addScene GiEx_pirate3 646103 2 250/fade unfade/pause 2000/speak SurvivorPirateGiex \"{{i18n:Javi6h.9}}\"/pause 1200/speak SurvivorPirateGiex \"{{i18n:Javi6h.10}}#$b#{{i18n:Javi6h.11}}\"/fade/removeScene 646103/stopMusic/message \"{{i18n:Javi6h.12}}\"/viewport 26 26/pause 1000/quickQuestion {{i18n:dots}}#{{i18n:Javi6h.QA}}#{{i18n:Javi6h.QB}}(break)speak SurvivorPirateGiex \"{{i18n:Javi6h.AA}}\"(break)speak SurvivorPirateGiex \"{{i18n:Javi6h.AB}}\"/pause 700/speak SurvivorPirateGiex \"{{i18n:Javi6h.13}}\"/pause 1000/end"
+            },
+            "When": {
+                "HasMod": "ZoeDoll.GingerIslandNPCTweaks"
+            }
+        },
+        {
+            //notes: this event OK
+            "LogName": "Add 8H event - GI NPC Tweaks",
+            "Action": "EditData",
+            "Target": "Data/Events/GiEX_Hut",
+            "Entries": {
+                "GiEX_Javi_8h/f JaviGiex 2000/SawEvent GiEX_Javi_6h/Weather sunny": "ocean/5 5/farmer 5 9 0 JaviGiex -10 -10 2/addObject 6 7 102/skippable/pause 2500/move farmer 0 -1 0/emote farmer 16/pause 500/move farmer 0 -1 1/pause 500/playSound newRecipe/pause 200/fade/viewport -100 -100/{{journalify}}/speak JaviGiex \"{{i18n:Javi8h.1}}#$b#{{i18n:Javi8h.2}}#$b#{{i18n:Javi8h.3}}#$b#{{i18n:Javi8h.4}}\"/pause 2000/fade/addScene GiEx_pirate4 646104/fade unfade/pause 1500/message \"{{i18n:dots}}\"/speak JaviGiex \"{{i18n:Javi8h.5.GINPCTweaks}}\"/pause 600/speak JaviGiex \"{{i18n:Javi8h.6.GINPCTweaks}}\"/playSound {{ModId}}_Splash/removeScene 646104/pause 2000/playMusic ocean/changeToTemporaryMap GiEX_Event_IslandSouthPast false/viewport 12 21/hideShadow JaviGiex true/warp JaviGiex 10 30/changeName JaviGiex {{i18n:Javier}}/changePortrait JaviGiex Quartermaster/changeSprite JaviGiex Younger/move JaviGiex 0 -2 0/pause 800/move JaviGiex 0 -4 0/pause 1000/move JaviGiex 0 -4 0/pause 1000/showFrame JaviGiex 0/speak JaviGiex \"{{i18n:dots}}$4#$b#{{i18n:Javi8h.7}}$4\"/message \"{{i18n:Javi8h.8.GINPCTweaks}}\"/pause 1000/showFrame JaviGiex 4/pause 2800/playMusic shaneTheme/changePortrait JaviGiex Stranded/pause 1500/viewport -100 -100/pause 500/addScene GiEx_island1 171143/pause 700/speak JaviGiex \"{{i18n:Javi8h.9}}$5#$b#{{i18n:Javi8h.10}}$5#$b#{{i18n:Javi8h.11}}$6#$b#{{i18n:Javi8h.12}}$2\"/pause 1500/globalFade/removeScene 171143/globalFadeToClear/addScene GiEx_island2 171144/changePortrait JaviGiex Stranded2/speak JaviGiex \"{{i18n:Javi8h.13.GINPCTweaks}}$6#$b#{{i18n:Javi8h.14}}#$b#{{i18n:Javi8h.15.GINPCTweaks}}$5#$b#{{i18n:Javi8h.16}}#$b#{{i18n:Javi8h.17}}$2#$b#{{i18n:dots}}$5#$b#{{i18n:Javi8h.18}}$5\"/addScene GiEx_island2anim 171145 8 250 mid 1/removeScene 171144/pause 1000/message \"{{i18n:Javi8h.19}}\"/removeScene 171145/pause 500/changeSprite JaviGiex/changeToTemporaryMap GiEX_Event_Hut false/warp JaviGiex 5 9/faceDirection JaviGiex 0/viewport 5 6/playSound doorClose/stopMusic/pause 2500/{{dejournal}}/speak JaviGiex \"{{i18n:dots}}$3\"/pause 1500/speak JaviGiex \"{{i18n:Javi8h.20}}#$b#{{i18n:dots}}#$b#{{i18n:Javi8h.21}}$2\"/pause 500/emote farmer 28/move farmer 0 -3 0/move farmer -1 0 2/speak JaviGiex \"{{i18n:Javi8h.22}}\"/friendship JaviGiex -10/quickQuestion {{i18n:Javi8h.Q}}#{{i18n:Javi8h.QA}}#{{i18n:Javi8h.QB}}#{{i18n:Javi8h.QC}}(break)speak JaviGiex \"{{i18n:Javi8h.AA}}$2\"\\friendship JaviGiex -20(break)speak JaviGiex \"{{i18n:Javi8h.AB}}\"\\friendship JaviGiex 20(break)speak JaviGiex \"{{i18n:Javi8h.AC}}$3\"\\friendship JaviGiex -50/pause 2000/speak JaviGiex \"{{i18n:Javi8h.23}}$4\"/quickQuestion #{{i18n:Javi8h.2QA}}#{{i18n:Javi8h.2QB.GINPCTweaks}}#{{i18n:Javi8h.2QC}}(break)speak JaviGiex \"{{i18n:Javi8h.2AA}}$4#$b#{{i18n:Javi8h.2AA2}}#$b#{{i18n:Javi8h.2AA3}}\"(break)speak JaviGiex \"{{i18n:Javi8h.2AB.GINPCTweaks}}\"(break)speak JaviGiex \"{{i18n:Javi8h.2AC}}\"/pause 500/move JaviGiex 0 -3 0/move JaviGiex 2 0 3/faceDirection JaviGiex 0/speak JaviGiex \"{{i18n:Javi8h.24.GINPCTweaks}}#$b#{{i18n:Javi8h.25.GINPCTweaks}}$4\"/quickQuestion {{i18n:Javi8h.3Q.GINPCTweaks}}#{{i18n:Javi8h.3QA.GINPCTweaks}}#{{i18n:Javi8h.3QB}}#{{i18n:Javi8h.3QC.GINPCTweaks}}(break)friendship JaviGiex -350\\addMailReceived GiEX_Javi_Reject\\speak JaviGiex \"{{i18n:Javi8h.3AA}}#$b#{{i18n:Javi8h.3AA2}}#$b#{{i18n:Javi8h.3AA3}}\"(break)speak JaviGiex \"{{i18n:Javi8h.3AB}}#$b#{{i18n:Javi8h.3AB2}}$4\"(break)speak JaviGiex \"{{i18n:Javi8h.3AC.GINPCTweaks}}$4\"\\emote JaviGiex 40\\pause 900/speak JaviGiex \"{{i18n:Javi8h.3AC2}}#$b#{{i18n:Javi8h.3AC3.GINPCTweaks}}$6\"/pause 1200/speak JaviGiex \"{{i18n:Javi8h.26}}\"/pause 800/speak JaviGiex \"{{i18n:Javi8h.27}}$6\"/pause 950/quickQuestion #{{i18n:Javi8h.4QA}}#{{i18n:Javi8h.4QB}}(break)speak JaviGiex \"{{i18n:Javi8h.4AA}}\"(break)speak JaviGiex \"{{i18n:Javi8h.4AB}}\"/pause 500/end invisible JaviGiex"
+            },
+            "When": {
+                "LighterBackstory": false,
+                "HasMod": "ZoeDoll.GingerIslandNPCTweaks"
+            }
+        },
+        {
+            //notes: this event OK
+            "LogName": "Add 8H event - GI NPC Tweaks",
+            "Action": "EditData",
+            "Target": "Data/Events/GiEX_Hut",
+            "Entries": {
+                "GiEX_Javi_8h/f JaviGiex 2000/SawEvent GiEX_Javi_6h/Weather sunny": "ocean/5 5/farmer 5 9 0 JaviGiex -10 -10 2/addObject 6 7 102/skippable/pause 2500/move farmer 0 -1 0/emote farmer 16/pause 500/move farmer 0 -1 1/pause 500/playSound newRecipe/pause 200/fade/viewport -100 -100/{{journalify}}/speak JaviGiex \"{{i18n:Javi8h.1}}#$b#{{i18n:Javi8h.2}}#$b#{{i18n:Javi8h.3}}\"/pause 2000/fade/addScene GiEx_pirate4 646104/fade unfade/pause 1500/message \"{{i18n:dots}}\"/speak JaviGiex \"{{i18n:Javi8h.lighter.GINPCTweaks}}\"/pause 600/speak JaviGiex \"{{i18n:Javi8h.6.GINPCTweaks}}\"/playSound {{ModId}}_Splash/removeScene 646104/pause 2000/playMusic ocean/changeToTemporaryMap GiEX_Event_IslandSouthPast false/viewport 12 21/hideShadow JaviGiex true/warp JaviGiex 10 30/changeName JaviGiex {{i18n:Javier}}/changePortrait JaviGiex Quartermaster/changeSprite JaviGiex Younger/move JaviGiex 0 -2 0/pause 800/move JaviGiex 0 -4 0/pause 1000/move JaviGiex 0 -4 0/pause 1000/showFrame JaviGiex 0/speak JaviGiex \"{{i18n:dots}}$4#$b#{{i18n:Javi8h.7}}$4\"/message \"{{i18n:Javi8h.8.GINPCTweaks}}\"/pause 1000/showFrame JaviGiex 4/pause 2800/playMusic shaneTheme/changePortrait JaviGiex Stranded/pause 1500/viewport -100 -100/pause 500/addScene GiEx_island1 171143/pause 700/speak JaviGiex \"{{i18n:Javi8h.9.lighter}}$5#$b#{{i18n:Javi8h.10}}$5#$b#{{i18n:Javi8h.11}}$6#$b#{{i18n:Javi8h.12}}$2\"/pause 1500/globalFade/removeScene 171143/globalFadeToClear/addScene GiEx_island2 171144/changePortrait JaviGiex Stranded2/speak JaviGiex \"{{i18n:Javi8h.13.GINPCTweaks}}$6#$b#{{i18n:Javi8h.14}}#$b#{{i18n:Javi8h.15}}$5#$b#{{i18n:Javi8h.16}}#$b#{{i18n:Javi8h.17}}$2#$b#{{i18n:dots}}$5#$b#{{i18n:Javi8h.18}}$5\"/addScene GiEx_island2anim 171145 8 250 mid 1/removeScene 171144/pause 1000/message \"{{i18n:Javi8h.19}}\"/removeScene 171145/pause 500/changeSprite JaviGiex/changeToTemporaryMap GiEX_Event_Hut false/warp JaviGiex 5 9/faceDirection JaviGiex 0/viewport 5 6/playSound doorClose/stopMusic/pause 2500/{{dejournal}}/speak JaviGiex \"{{i18n:dots}}$3\"/pause 1500/speak JaviGiex \"{{i18n:Javi8h.20}}#$b#{{i18n:dots}}#$b#{{i18n:Javi8h.21}}$2\"/pause 500/emote farmer 28/move farmer 0 -3 0/move farmer -1 0 2/speak JaviGiex \"{{i18n:Javi8h.22}}\"/friendship JaviGiex -10/quickQuestion {{i18n:Javi8h.Q}}#{{i18n:Javi8h.QA}}#{{i18n:Javi8h.QB}}#{{i18n:Javi8h.QC}}(break)speak JaviGiex \"{{i18n:Javi8h.AA}}$2\"\\friendship JaviGiex -20(break)speak JaviGiex \"{{i18n:Javi8h.AB}}\"\\friendship JaviGiex 20(break)speak JaviGiex \"{{i18n:Javi8h.AC}}$3\"\\friendship JaviGiex -50/pause 2000/speak JaviGiex \"{{i18n:Javi8h.23}}$4\"/quickQuestion #{{i18n:Javi8h.2QA}}#{{i18n:Javi8h.2QB.GINPCTweaks}}#{{i18n:Javi8h.2QC}}(break)speak JaviGiex \"{{i18n:Javi8h.2AA}}$4#$b#{{i18n:Javi8h.2AA2}}#$b#{{i18n:Javi8h.2AA3}}\"(break)speak JaviGiex \"{{i18n:Javi8h.2AB}}#$b#{{i18n:Javi8h.2AB2}}\"(break)speak JaviGiex \"{{i18n:Javi8h.2AC}}\"/pause 500/move JaviGiex 0 -3 0/move JaviGiex 2 0 3/faceDirection JaviGiex 0/speak JaviGiex \"{{i18n:Javi8h.24.GINPCTweaks}}#$b#{{i18n:Javi8h.25.GINPCTweaks}}$4\"/quickQuestion {{i18n:Javi8h.3Q.GINPCTweaks}}#{{i18n:Javi8h.3QA.GINPCTweaks}}#{{i18n:Javi8h.3QB}}#{{i18n:Javi8h.3QC.GINPCTweaks}}(break)friendship JaviGiex -350\\addMailReceived GiEX_Javi_Reject\\speak JaviGiex \"{{i18n:Javi8h.3AA}}#$b#{{i18n:Javi8h.3AA2}}#$b#{{i18n:Javi8h.3AA3}}\"(break)speak JaviGiex \"{{i18n:Javi8h.3AB}}#$b#{{i18n:Javi8h.3AB2}}$4\"(break)speak JaviGiex \"{{i18n:Javi8h.3AC.GINPCTweaks}}$4\"\\emote JaviGiex 40\\pause 900/speak JaviGiex \"{{i18n:Javi8h.3AC2}}#$b#{{i18n:Javi8h.3AC3.GINPCTweaks}}$6\"/pause 1200/speak JaviGiex \"{{i18n:Javi8h.26}}\"/pause 800/speak JaviGiex \"{{i18n:Javi8h.27}}$6\"/pause 950/quickQuestion #{{i18n:Javi8h.4QA}}#{{i18n:Javi8h.4QB}}(break)speak JaviGiex \"{{i18n:Javi8h.4AA}}\"(break)speak JaviGiex \"{{i18n:Javi8h.4AB}}\"/pause 500/end invisible JaviGiex"
+            },
+            "When": {
+                "LighterBackstory": true,
+                "HasMod": "ZoeDoll.GingerIslandNPCTweaks"
+            }
+        },
+        {
+            "LogName": "Add 10H event - GI NPC Tweaks",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "GiEX_Javi_10h/f JaviGiex 2500/SawEvent GiEX_Javi_8h/GameStateQuery PLAYER_HAS_MAIL Current {{ModId}}_Javi10Hearts Received": "continue/17 10/farmer 16 14 0 JaviGiex 18 5 2/move JaviGiex 0 5 2/speak JaviGiex \"{{i18n:Javi10h.1}}\"/move JaviGiex 0 3 2/speak JaviGiex \"{{i18n:Javi10h.2}}\"/quickQuestion {{i18n:Javi10h.Q}}#{{i18n:Javi10h.QA}}#{{i18n:Javi10h.QB}}(break)speak JaviGiex \"{{i18n:Javi10h.AA}}$1\"(break)mailReceived GiEX_Javi_UnwiseDecision/if PLAYER_HAS_MAIL Current GiEX_Javi_Reject, PLAYER_HAS_MAIL Current GiEX_Javi_UnwiseDecision##append GiEX_Javi_10h_badEnding##append GiEX_Javi_10h_furtherBranching/end",
+                "GiEX_Javi_10h_badEnding": "stopMusic/speak JaviGiex \"{{i18n:Javi10h.BadEnding.0}}\"/pause 800/speak JaviGiex \"{{i18n:Javi10h.BadEnding.1.GINPCTweaks}}\"/pause 800/speak JaviGiex \"{{i18n:Javi10h.BadEnding.2}}$2\"/mailReceived GiEX_Javi_badEndingFlag/addConversationTopic GiEX_Javi_10H_hide",
+                "GiEX_Javi_10h_furtherBranching": "if PLAYER_HAS_MAIL Current GiEX_Javi_UnwiseDecision##append GiEX_Javi_10h_areYouSure##append GiEX_Javi_10h_goodEnding",
+                "GiEX_Javi_10h_areYouSure": "speak JaviGiex \"{{i18n:Javi10h.AreYouSure.1}}/quickQuestion {{i18n:Javi10h.AreYouSure.Q}}#{{i18n:Javi10h.AreYouSure.QA}}#{{i18n:Javi10h.AreYouSure.QB}}(break)append GiEX_Javi_10h_badEnding(break)append GiEX_Javi_10h_goodEnding",
+                "GiEX_Javi_10h_goodEnding": "speak JaviGiex \"{{i18n:Javi10h.GoodEnding.1}}\"/globalFade/viewport -100 -100/changeLocation IslandWest/viewport -100 -100/warp JaviGiex 69 74/faceDirection JaviGiex 2/warp farmer 70 73/faceDirection farmer 2/addTemporaryActor Birdie 16 32 62 85 2 true Birdie/viewport 70 74/pause 500/move JaviGiex 0 8 2 true/move farmer 0 8 2 true/viewport move 0 2 5000/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.2}}\"/pause 1500/stopMusic/emote farmer 28/pause 1000/emote JaviGiex 40/faceDirection Birdie 0/speak Birdie \"{{i18n:Javi10h.GoodEnding.3}}\"/emote farmer 40/pause 1200/speak Birdie \"{{i18n:Javi10h.GoodEnding.4}}\"/move JaviGiex 0 1 3/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.5}}\"/pause 500/speak Birdie \"{{i18n:Javi10h.GoodEnding.6}}\"/pause 800/quickQuestion {{i18n:Javi10h.GoodEnding.Q}}#{{i18n:Javi10h.GoodEnding.QA}}#{{i18n:Javi10h.GoodEnding.QB.GINPCTweaks}}#{{i18n:Javi10h.GoodEnding.QC}}(break)speak JaviGiex \"{{i18n:Javi10h.GoodEnding.AA}}\"(break)speak JaviGiex \"{{i18n:Javi10h.GoodEnding.AB}}$5\"(break)speak JaviGiex \"{{i18n:Javi10h.GoodEnding.AC}}$5\"/emote JaviGiex 40/pause 850/quickQuestion {{i18n:Javi10h.GoodEnding.Q2}}#{{i18n:Javi10h.GoodEnding.Q2A}}#{{i18n:Javi10h.GoodEnding.Q2B}}(break)friendship JaviGiex -50\\pause 200\\faceDirection JaviGiex 0\\speak JaviGiex \"{{i18n:Javi10h.GoodEnding.A2A}}$2\"\\faceDirection JaviGiex 3(break)friendship JaviGiex 10/playMusic ocean/move farmer 0 -10 0 true/pause 100/faceDirection JaviGiex 2/pause 500/fade/warp Birdie 81 88/warp JaviGiex 76 88/showFrame Birdie 20/showFrame JaviGiex 32/extendSourceRect JaviGiex 0 16/viewport 79 87/pause 2200/fade unfade/pause 1200/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.7}}\"/pause 1000/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.8.GINPCTweaks}}\"/emote JaviGiex 40/pause 1800/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.9}}\"/playMusic desolate/pause 1400/speak Birdie \"{{i18n:Javi10h.GoodEnding.10}}\"/pause 500/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.11.GINPCTweaks}}$4\"/pause 900/speak Birdie \"{{i18n:Javi10h.GoodEnding.12}}\"/pause 900/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.13.GINPCTweaks}}$4\"/pause 1500/speak Birdie \"{{i18n:Javi10h.GoodEnding.14}}\"/pause 600/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.15}}\"/pause 1400/speak Birdie \"{{i18n:Javi10h.GoodEnding.16}}$2\"/showFrame Birdie 12/pause 500/pause 900/speak Birdie \"{{i18n:Javi10h.GoodEnding.17.GINPCTweaks}}$2\"/speak JaviGiex \"{{i18n:dots}}\"/globalFade/viewport -200 -200/pause 2200/globalFadeToClear/viewport 79 87/pause 600/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.19}}\"/textAboveHead Birdie \"{{i18n:dots}}\"/pause 900/stopMusic/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.20}}$6\"/pause 200/move JaviGiex 0 -2 0 true/pause 150/speak Birdie \"{{i18n:Javi10h.GoodEnding.21}}$2\"/playMusic shaneTheme/faceDirection JaviGiex 2/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.22.GINPCTweaks}}\"/pause 500/move JaviGiex 0 1 2/speak JaviGiex \"{{i18n:Javi10h.GoodEnding.23.GINPCTweaks}}\"/pause 1500/speak Birdie \"{{i18n:Javi10h.GoodEnding.24.GINPCTweaks}}\"/pause 800/textAboveHead JaviGiex \"{{i18n:Javi10h.GoodEnding.25}}\"/move JaviGiex 2 0 1 true/viewport move 0 3 7000/pause 4500/addConversationTopic GiEX_Javi_10H_tellTruth"
+            },
+            "When": {
+                "HasMod": "ZoeDoll.GingerIslandNPCTweaks"
+            }
+        },
+        {
+            "LogName": "Add ending event - final - GI NPC Tweaks",
+            "Action": "EditData",
+            "Target": "Data/Events/CaptainRoom",
+            "Entries": {
+                //this should make ghosts stop spawning in the ship. quite literally, Javi's ghosts don't haunt her anymore (game symbolism)
+                "GiEX_Javi_goodEnding/SawEvent GiEX_Javi_10h/GameStateQuery !PLAYER_HAS_MAIL Current GiEX_Javi_badEndingFlag/!ActiveDialogueEvent GiEX_Javi_10H_tellTruth": "none/3 5/farmer 0 5 1 JaviGiex 3 5 0/skippable/pause 1000/emote JaviGiex 40/pause 1000/faceDirection JaviGiex 3/emote JaviGiex 16/pause 500/speak JaviGiex \"{{i18n:Javi12h.1}}\"/pause 200/move farmer 1 0 1/speak JaviGiex \"{{i18n:Javi12h.2}}#$b#{{i18n:Javi12h.3}}\"/pause 1000/emote JaviGiex 40/pause 1000/speak JaviGiex \"{{i18n:Javi12h.4}}#$b#{{i18n:Javi12h.5}}#$b#{{i18n:Javi12h.6.GINPCTweaks}}\"/pause 800/move JaviGiex 1 0 1/move JaviGiex 0 -1 3/playSound leafrustle/pause 100/speak JaviGiex \"{{i18n:Javi12h.7}}$4\"/pause 1500/speak JaviGiex \"{{i18n:Javi12h.8}}$6#$b#{{i18n:Javi12h.9}}\"/move JaviGiex 0 1 2/speak JaviGiex \"{{i18n:Javi12h.10}}\"/move JaviGiex 1 0 1/warp JaviGiex -100 -100/globalFade/viewport -200 -200/message \"{{i18n:Javi12h.end}}\"/pause 600/message \"{{i18n:Javi12h.end.cont}}\"/end",
+                "GiEX_Javi_badEnding/SawEvent GiEX_Javi_10h/GameStateQuery PLAYER_HAS_MAIL Current GiEX_Javi_badEndingFlag/!ActiveDialogueEvent GiEX_Javi_10H_hide": "ocean/3 5/farmer 0 5 1 JaviGiex 3 5 0/skippable/pause 1000/emote JaviGiex 40/pause 1000/faceDirection JaviGiex 3/emote JaviGiex 16/pause 500/speak JaviGiex \"{{i18n:Javi12h.BadEnding.0}}\"/pause 1000/speak JaviGiex \"{{i18n:Javi12h.BadEnding.1}}\"/pause 1000/speak JaviGiex \"{{i18n:Javi12h.BadEnding.2}}\"/pause 500/speak JaviGiex \"{{i18n:Javi12h.BadEnding.3.GINPCTweaks}}\"/emote farmer 40/pause 1000/speak JaviGiex \"{{i18n:Javi12h.BadEnding.4}}\"/move JaviGiex 1 0 1/speak JaviGiex \"{{i18n:Javi12h.BadEnding.5}}\"/move JaviGiex 1 0 1/warp JaviGiex -100 -100/globalFade/viewport -200 -200/message \"{{i18n:Javi12h.BadEnding.6}}\"/pause 500/message \"{{i18n:Javi12h.BadEnding.7}}\"/addConversationTopic GiEX_Javi_10H_hide_badEnding/end invisible JackieGiex"
+            },
+            "When": {
+                "HasMod": "ZoeDoll.GingerIslandNPCTweaks"
+            }
+        },
+        //bundle
+        {
+            "LogName": "Bundle completion event",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "GiEX_finishedBundles/n GiEXbundle.farming.done/n GiEXbundle.cooking.done/n GiEXbundle.fishing.done/n GiEXbundle.mining.done/n GiEXbundle.combat.done/w sunny/!GameStateQuery PLAYER_HAS_SEEN_EVENT Any GiEX_Javi_badEnding": "junimoStarSong/21 34/farmer -10 -10 0 Leo -11 -11 1 JaviGiex -12 -12 3/addMailReceived GiEXbundle.ALL/skippable/viewport move 0 -4 3000/pause 2500/globalFade/viewport -100 -100/fade unfade/changeLocation IslandEast/viewport 22 31/playSound parrot/pause 500/specificTemporarySprite parrots1/playSound parrot/pause 200/playSound parrot/pause 300/playSound parrot/pause 4000/changeLocation IslandNorth/fade unfade/viewport 40 40/viewport move 0 -3 5000/pause 4800/fade/viewport -100 -100/pause 200/changeToTemporaryMap GiEX_Island_Temple_Event/viewport 20 42/addTemporaryActor ParrotBoy 16 32 19 41 2 true ParrotBoy/translateName ParrotBoy Strings\\NPCNames:Leo/addTemporaryActor IslandParrot 32 32 20 40 2 false/advancedMove IslandParrot true 0 2 -3 0 0 -2 3 0/addTemporaryActor IslandParrot 32 32 20 38 2 false Parrot2/addTemporaryActor IslandParrot 32 32 15 44 1 false Parrot3/addTemporaryActor MrQi 16 32 21 41 2 true Qi/translateName MrQi Strings\\NPCNames:MisterQi/changeName MrQi \"[LocalizedText Strings\\NPCNames:MisterQi]\"/warp JaviGiex 21 43/addTemporaryActor Birdie 16 32 18 43 1 true Birdie/translateName Birdie Strings\\NPCNames:Birdie/warp farmer 20 47/unfade/specificTemporarySprite ccCelebration/move farmer 0 -2 0/emote farmer 8/pause 800/speak MrQi \"{{i18n:Event.Bundle.Finish_1}}\"/pause 500/speak JaviGiex \"{{i18n:Event.Bundle.Finish_2}}\"/pause 500/faceDirection JaviGiex 0/stopAdvancedMoves/faceDirection IslandParrot 2/if PLAYER_HAS_SEEN_EVENT Current 6497428##append GiEX_bundles_Leo##speak Leo \\\"{{i18n:Event.Bundle.Finish_3}}$1\\\"/pause 700/speak MrQi \"{{i18n:Event.Bundle.Finish_4}}\"/speak Birdie \"{{i18n:Event.Bundle.Finish_5}}$1\"/stopMusic/pause 2500/playMusic distantBanjo/quickQuestion #{{i18n:Event.Bundle.Finish_QA}}#{{i18n:Event.Bundle.Finish_QB}}(break)speak JaviGiex \"{{i18n:Event.Bundle.Finish_AA}}\"(break)speak Birdie \"{{i18n:Event.Bundle.Finish_AB}}\"/if PLAYER_HAS_SEEN_EVENT Current GiEX_Javi_8h, !PLAYER_HAS_SEEN_EVENT Current GiEX_Javi_10h##append GiEX_bundles_HaveWeMet##speak JaviGiex \\\"{{i18n:Event.Bundle.Finish_6}}$9\\\"/animate MrQi false false 100 0 1 2 3 3 3 2 1 2 3 3 3 2 1 0/pause 1000/playMusic junimoStarSong/speak MrQi \"{{i18n:Event.Bundle.Finish_7}}\"/move farmer 0 -2 0/if {{AllIslandUpgrades}}##speak MrQi \\\"{{i18n:Event.Bundle.Finish_8}}\\\"##speak MrQi \\\"{{i18n:Event.Bundle.Finish_8alt1}}#$b#{{i18n:Event.Bundle.Finish_8alt2}}\\\"/pause 500/speak MrQi \"{{i18n:Event.Bundle.Finish_9}}\"/addItem (F)GiEXredux_IslandTrophy 1/textAboveHead JaviGiex \"{{i18n:Event.Bundle.Finish_10}}\"/pause 200/textAboveHead ParrotBoy \"{{i18n:Event.Bundle.Finish_11}}\"/pause 100/textAboveHead Birdie \"{{i18n:Event.Bundle.Finish_12}}\"/pause 400/speak MrQi \"{{i18n:Event.Bundle.Finish_13}}\"/pause 1500/stopMusic/playSound explosion/pause 100/jump Birdie/pause 100/jump JaviGiex/jump ParrotBoy/pause 500/speak Leo \"{{i18n:Event.Bundle.Finish_14}}$3\"/pause 150/speak Birdie \"{{i18n:Event.Bundle.Finish_15}}\"/animate MrQi false false 100 0 1 2 3 3 3 2 1 0/pause 900/speak MrQi \"{{i18n:Event.Bundle.Finish_16}}#$b#{{i18n:Event.Bundle.Finish_17}}#$b#{{i18n:Event.Bundle.Finish_18}}\"/end",
+                "GiEX_finishedBundles_withoutJavi/n GiEXbundle.farming.done/n GiEXbundle.cooking.done/n GiEXbundle.fishing.done/n GiEXbundle.mining.done/n GiEXbundle.combat.done/w sunny/GameStateQuery PLAYER_HAS_SEEN_EVENT Any GiEX_Javi_badEnding": "junimoStarSong/21 34/farmer -10 -10 0 Leo -11 -11 1/addMailReceived GiEXbundle.ALL/skippable/viewport move 0 -4 3000/pause 2500/globalFade/viewport -100 -100/fade unfade/changeLocation IslandEast/viewport 22 31/playSound parrot/pause 500/specificTemporarySprite parrots1/playSound parrot/pause 200/playSound parrot/pause 300/playSound parrot/pause 4000/changeLocation IslandNorth/fade/viewport 40 40/viewport move 0 -3 5000/pause 4800/fade/viewport -100 -100/pause 200/changeToTemporaryMap GiEX_Island_Temple_Event/viewport 20 42/addTemporaryActor ParrotBoy 16 32 19 41 2 true ParrotBoy/translateName ParrotBoy Strings\\NPCNames:Leo/addTemporaryActor IslandParrot 32 32 20 40 2 false/advancedMove IslandParrot true 0 2 -3 0 0 -2 3 0/addTemporaryActor IslandParrot 32 32 20 38 2 false Parrot2/addTemporaryActor IslandParrot 32 32 15 44 1 false Parrot3/addTemporaryActor MrQi 16 32 21 41 2 true Qi/translateName MrQi Strings\\NPCNames:MisterQi/changeName MrQi \"[LocalizedText Strings\\NPCNames:MisterQi]\"/addTemporaryActor Birdie 16 32 18 43 1 true Birdie/translateName Birdie Strings\\NPCNames:Birdie/warp farmer 20 47/unfade/specificTemporarySprite ccCelebration/move farmer 0 -2 0/emote farmer 8/pause 800/speak MrQi \"{{i18n:Event.Bundle.Finish_1}}\"/pause 500/stopAdvancedMoves/faceDirection IslandParrot 2/if PLAYER_HAS_SEEN_EVENT Current 6497428##append GiEX_bundles_Leo_withoutJavi##speak Leo \\\"{{i18n:Event.Bundle.Finish_3}}$1\\\"/pause 700/speak MrQi \"{{i18n:Event.Bundle.Finish_4}}\"/speak Birdie \"{{i18n:Event.Bundle.Finish_5}}$1\"/stopMusic/pause 2500/playMusic distantBanjo/quickQuestion #{{i18n:Event.Bundle.Finish_QA}}#{{i18n:Event.Bundle.Finish_QB}}(break)speak Birdie \"{{i18n:Event.Bundle.Finish_AA_alt}}\"(break)speak Birdie \"{{i18n:Event.Bundle.Finish_AB}}\"/animate MrQi false false 100 0 1 2 3 3 3 2 1 2 3 3 3 2 1 0/pause 1000/playMusic junimoStarSong/speak MrQi \"{{i18n:Event.Bundle.Finish_7}}\"/move farmer 1 0 1/move farmer 0 -2 0/if {{AllIslandUpgrades}}##speak MrQi \\\"{{i18n:Event.Bundle.Finish_8}}\\\"##speak MrQi \\\"{{i18n:Event.Bundle.Finish_8alt1}}#$b#{{i18n:Event.Bundle.Finish_8alt2}}\\\"/pause 500/speak MrQi \"{{i18n:Event.Bundle.Finish_9}}\"/addItem (F)GiEXredux_IslandTrophy 1/textAboveHead JaviGiex \"{{i18n:Event.Bundle.Finish_10}}\"/pause 200/textAboveHead ParrotBoy \"{{i18n:Event.Bundle.Finish_11}}\"/pause 100/textAboveHead Birdie \"{{i18n:Event.Bundle.Finish_12}}\"/pause 400/speak MrQi \"{{i18n:Event.Bundle.Finish_13}}\"/pause 1500/stopMusic/playSound explosion/pause 100/jump Birdie/pause 100/jump JaviGiex/jump ParrotBoy/pause 500/speak Leo \"{{i18n:Event.Bundle.Finish_14}}$3\"/pause 150/speak Birdie \"{{i18n:Event.Bundle.Finish_15}}\"/animate MrQi false false 100 0 1 2 3 3 3 2 1 0/pause 900/speak MrQi \"{{i18n:Event.Bundle.Finish_16}}#$b#{{i18n:Event.Bundle.Finish_17}}#$b#{{i18n:Event.Bundle.Finish_18}}\"/end"
+            }
+        },
+        {
+            "LogName": "Bundle completion event - Friendable Mr Qi compat",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "GiEX_finishedBundles/n GiEXbundle.farming.done/n GiEXbundle.cooking.done/n GiEXbundle.fishing.done/n GiEXbundle.mining.done/n GiEXbundle.combat.done/w sunny/!GameStateQuery PLAYER_HAS_SEEN_EVENT Any GiEX_Javi_badEnding": "junimoStarSong/21 34/farmer -10 -10 0 Leo -11 -11 1 AngelOfStars.Mrqifriendable_TheMrQi -13 -13 2 JaviGiex -12 -12 3/addMailReceived GiEXbundle.ALL/skippable/viewport move 0 -4 3000/pause 2500/globalFade/viewport -100 -100/fade unfade/changeLocation IslandEast/viewport 22 31/playSound parrot/pause 500/specificTemporarySprite parrots1/playSound parrot/pause 200/playSound parrot/pause 300/playSound parrot/pause 4000/changeLocation IslandNorth/fade unfade/viewport 40 40/viewport move 0 -3 5000/pause 4800/fade/viewport -100 -100/pause 200/changeToTemporaryMap GiEX_Island_Temple_Event/viewport 20 42/addTemporaryActor ParrotBoy 16 32 19 41 2 true ParrotBoy/translateName ParrotBoy Strings\\NPCNames:Leo/addTemporaryActor IslandParrot 32 32 20 40 2 false/advancedMove IslandParrot true 0 2 -3 0 0 -2 3 0/addTemporaryActor IslandParrot 32 32 20 38 2 false Parrot2/addTemporaryActor IslandParrot 32 32 15 44 1 false Parrot3/warp JaviGiex 21 43/addTemporaryActor Birdie 16 32 18 43 1 true Birdie/translateName Birdie Strings\\NPCNames:Birdie/warp farmer 20 47/unfade/specificTemporarySprite ccCelebration/move farmer 0 -2 0/emote farmer 8/pause 800/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Finish_1}}\"/pause 500/speak JaviGiex \"{{i18n:Event.Bundle.Finish_2}}\"/pause 500/faceDirection JaviGiex 0/stopAdvancedMoves/faceDirection IslandParrot 2/if PLAYER_HAS_SEEN_EVENT Current 6497428##append GiEX_bundles_Leo##speak Leo \\\"{{i18n:Event.Bundle.Finish_3}}$1\\\"/pause 700/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Finish_4}}\"/speak Birdie \"{{i18n:Event.Bundle.Finish_5}}$1\"/stopMusic/pause 2500/playMusic distantBanjo/quickQuestion #{{i18n:Event.Bundle.Finish_QA}}#{{i18n:Event.Bundle.Finish_QB}}(break)speak JaviGiex \"{{i18n:Event.Bundle.Finish_AA}}\"(break)speak Birdie \"{{i18n:Event.Bundle.Finish_AB}}\"/if PLAYER_HAS_SEEN_EVENT Current GiEX_Javi_8h, !PLAYER_HAS_SEEN_EVENT Current GiEX_Javi_10h##append GiEX_bundles_HaveWeMet##speak JaviGiex \\\"{{i18n:Event.Bundle.Finish_6}}$9\\\"/animate AngelOfStars.Mrqifriendable_TheMrQi false false 100 0 1 2 3 3 3 2 1 2 3 3 3 2 1 0/pause 1000/playMusic junimoStarSong/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Finish_7}}\"/move farmer 0 -2 0/if {{AllIslandUpgrades}}##speak AngelOfStars.Mrqifriendable_TheMrQi \\\"{{i18n:Event.Bundle.Finish_8}}\\\"##speak AngelOfStars.Mrqifriendable_TheMrQi \\\"{{i18n:Event.Bundle.Finish_8alt1}}#$b#{{i18n:Event.Bundle.Finish_8alt2}}\\\"/pause 500/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Finish_9}}\"/addItem (F)GiEXredux_IslandTrophy 1/textAboveHead JaviGiex \"{{i18n:Event.Bundle.Finish_10}}\"/pause 200/textAboveHead ParrotBoy \"{{i18n:Event.Bundle.Finish_11}}\"/pause 100/textAboveHead Birdie \"{{i18n:Event.Bundle.Finish_12}}\"/pause 400/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Finish_13}}\"/pause 1500/stopMusic/playSound explosion/pause 100/jump Birdie/pause 100/jump JaviGiex/jump ParrotBoy/pause 500/speak Leo \"{{i18n:Event.Bundle.Finish_14}}$3\"/pause 150/speak Birdie \"{{i18n:Event.Bundle.Finish_15}}\"/animate AngelOfStars.Mrqifriendable_TheMrQi false false 100 0 1 2 3 3 3 2 1 0/pause 900/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Finish_16}}#$b#{{i18n:Event.Bundle.Finish_17}}#$b#{{i18n:Event.Bundle.Finish_18}}\"/end",
+                "GiEX_finishedBundles_withoutJavi/n GiEXbundle.farming.done/n GiEXbundle.cooking.done/n GiEXbundle.fishing.done/n GiEXbundle.mining.done/n GiEXbundle.combat.done/w sunny/GameStateQuery PLAYER_HAS_SEEN_EVENT Any GiEX_Javi_badEnding": "junimoStarSong/21 34/farmer -10 -10 0 Leo -11 -11 1 AngelOfStars.Mrqifriendable_TheMrQi -13 -13 2/addMailReceived GiEXbundle.ALL/skippable/viewport move 0 -4 3000/pause 2500/globalFade/viewport -100 -100/fade unfade/changeLocation IslandEast/viewport 22 31/playSound parrot/pause 500/specificTemporarySprite parrots1/playSound parrot/pause 200/playSound parrot/pause 300/playSound parrot/pause 4000/changeLocation IslandNorth/fade/viewport 40 40/viewport move 0 -3 5000/pause 4800/fade/viewport -100 -100/pause 200/changeToTemporaryMap GiEX_Island_Temple_Event/viewport 20 42/addTemporaryActor ParrotBoy 16 32 19 41 2 true ParrotBoy/translateName ParrotBoy Strings\\NPCNames:Leo/addTemporaryActor IslandParrot 32 32 20 40 2 false/advancedMove IslandParrot true 0 2 -3 0 0 -2 3 0/addTemporaryActor IslandParrot 32 32 20 38 2 false Parrot2/addTemporaryActor IslandParrot 32 32 15 44 1 false Parrot3/addTemporaryActor Birdie 16 32 18 43 1 true Birdie/translateName Birdie Strings\\NPCNames:Birdie/warp farmer 20 47/unfade/specificTemporarySprite ccCelebration/move farmer 0 -2 0/emote farmer 8/pause 800/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Finish_1}}\"/pause 500/stopAdvancedMoves/faceDirection IslandParrot 2/if PLAYER_HAS_SEEN_EVENT Current 6497428##append GiEX_bundles_Leo_withoutJavi##speak Leo \\\"{{i18n:Event.Bundle.Finish_3}}$1\\\"/pause 700/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Finish_4}}\"/speak Birdie \"{{i18n:Event.Bundle.Finish_5}}$1\"/stopMusic/pause 2500/playMusic distantBanjo/quickQuestion #{{i18n:Event.Bundle.Finish_QA}}#{{i18n:Event.Bundle.Finish_QB}}(break)speak Birdie \"{{i18n:Event.Bundle.Finish_AA_alt}}\"(break)speak Birdie \"{{i18n:Event.Bundle.Finish_AB}}\"/animate AngelOfStars.Mrqifriendable_TheMrQi false false 100 0 1 2 3 3 3 2 1 2 3 3 3 2 1 0/pause 1000/playMusic junimoStarSong/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Finish_7}}\"/move farmer 1 0 1/move farmer 0 -2 0/if {{AllIslandUpgrades}}##speak AngelOfStars.Mrqifriendable_TheMrQi \\\"{{i18n:Event.Bundle.Finish_8}}\\\"##speak AngelOfStars.Mrqifriendable_TheMrQi \\\"{{i18n:Event.Bundle.Finish_8alt1}}#$b#{{i18n:Event.Bundle.Finish_8alt2}}\\\"/pause 500/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Finish_9}}\"/addItem (F)GiEXredux_IslandTrophy 1/textAboveHead JaviGiex \"{{i18n:Event.Bundle.Finish_10}}\"/pause 200/textAboveHead ParrotBoy \"{{i18n:Event.Bundle.Finish_11}}\"/pause 100/textAboveHead Birdie \"{{i18n:Event.Bundle.Finish_12}}\"/pause 400/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Finish_13}}\"/pause 1500/stopMusic/playSound explosion/pause 100/jump Birdie/pause 100/jump JaviGiex/jump ParrotBoy/pause 500/speak Leo \"{{i18n:Event.Bundle.Finish_14}}$3\"/pause 150/speak Birdie \"{{i18n:Event.Bundle.Finish_15}}\"/animate AngelOfStars.Mrqifriendable_TheMrQi false false 100 0 1 2 3 3 3 2 1 0/pause 900/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Finish_16}}#$b#{{i18n:Event.Bundle.Finish_17}}#$b#{{i18n:Event.Bundle.Finish_18}}\"/end"
+            },
+            "When": {
+                "HasMod": "AngelOfStars.Mrqifriendable"
+            }
+        },
+        {
+            "LogName": "Bundle completion event - possible forks",
+            "Action": "EditData",
+            "Target": "Data/Events/Temp",
+            "Entries": {
+                "GiEX_bundles_Leo": "pause 1000/speak JaviGiex \"{{i18n:Event.Bundle.Finish_3_inter1}}\"/pause 100/speak Leo \"{{i18n:Event.Bundle.Finish_3_inter2}}#$b#{{i18n:Event.Bundle.Finish_3_inter3}}\"/pause 1000/speak JaviGiex \"{{i18n:Event.Bundle.Finish_3_inter4}}$6\"",
+                "GiEX_bundles_Leo_withoutJavi": "pause 1000/message \"{{i18n:Event.Bundle.Finish_3_inter1_alt}}\"/speak Leo \"{{i18n:Event.Bundle.Finish_3_inter2}}#$b#{{i18n:Event.Bundle.Finish_3_inter3}}\"/pause 1000/message \"{{i18n:Event.Bundle.Finish_3_inter4}}\"",
+                "GiEX_bundles_HaveWeMet": "faceDirection Birdie 3/pause 500/speak Birdie \"{{i18n:Event.Bundle.Finish_6alt1}}\"/speak JaviGiex \"{{i18n:Event.Bundle.Finish_6alt2}}$4\"/textAboveHead Birdie \"{{i18n:Event.Bundle.Finish_6alt3}}\"/pause 500/faceDirection Birdie 0"
+            }
+        },
+        {
+            /* useful sounds:
+             * junimoMeep1
+             * crystal
+             * potterySmash
+             * clubhit
+             * parry,clank
+             * throw
+             * boulderBreak
+             * dirtyHit
+             * robotSoundEffects
+             * submarine_landing
+             */
+            "Action": "EditData",
+            "Target": "Data/Events/IslandNorth",
+            "Entries": {
+                //gsq false means it'll never happen, so we can add it w/o fear of accidentally seeing before it's meant
+                "GiEXbundle.mining.upgrade/n GiEXbundle.mining.done": "distantBanjo/40 26/farmer -10 -10 0/addTemporaryActor GiEXPinkJunimo 16 32 41 25 0 false/addTemporaryActor GiEXGrnJunimo 16 32 40 26 0 false/pause 2000/jump GiEXPinkJunimo/playSound junimoMeep1/pause 500/jump GiEXGrnJunimo/playSound junimoMeep1/pause 1000/move GiEXGrnJunimo 0 -5 0/warp GiEXGrnJunimo 0 1/move GiEXPinkJunimo 0 -4 0/warp GiEXPinkJunimo 1 0/stopMusic/pause 2000/playSound clank/pause 100/playSound boulderBreak/pause 500/playSound potterySmash/pause 1000/playSound throw/pause 300/playSound junimoMeep1/pause 100/playSound throw/pause 800/playSound clank/pause 800/playSound robotSoundEffects/pause 2000/playSound crystal/pause 1000/faceDirection GiEXPinkJunimo 2/warp GiEXPinkJunimo 41 21/move GiEXPinkJunimo 0 3 2/pause 200/faceDirection GiEXGrnJunimo 2/warp GiEXGrnJunimo 40 21/move GiEXGrnJunimo 0 4 2/pause 200/animate GiEXPinkJunimo false false 150 24 25 26 27/pause 600/showFrame GiEXPinkJunimo 27/animate GiEXGrnJunimo false true 150 28 29 30 31/pause 1000/end lastSleepLocation"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/GiEX_SunkenShip",
+            "Entries": {
+                "GiEXbundle.fishing.upgrade/GameStateQuery FALSE": "ocean/14 7/farmer 0 1 0/addCraftingRecipe GiEXredux_LumiBait/addCraftingRecipe GiEXredux_LumiTackle/makeInvincible/addTemporaryActor GiEXSeaJunimo 16 32 21 7 2 false/addTemporaryActor GiEXYlwJunimo 16 32 16 5 2 false/addTemporaryActor GiEXAquaJunimo 16 32 15 9 2 false/animate GiEXSeaJunimo false true 500 16 17 18 19/animate GiEXYlwJunimo false true 500 24 25 26 27/animate GiEXAquaJunimo false true 500 20 21 22 23/pause 2000/playSound junimoMeep1/pause 800/playSound junimoMeep1/pause 1000/jump GiEXSeaJunimo/pause 800/playSound junimoMeep1/pause 500/jump GiEXYlwJunimo/temporarySprite 13 2 4 9 250 false/temporarySprite 19 3 3 9 250 false/pause 2250/removeTemporarySprites/temporarySprite 18 8 4 9 250 false/pause 500/temporarySprite 12 9 10 9 250 false/pause 1500/temporarySprite 21 10 3 9 250 false/pause 250/stopAnimation GiEXSeaJunimo 0/removeSprite 18 8/pause 500/removeSprite 12 9/temporarySprite 12 9 10 9 250 false/pause 500/jump GiEXYlwJunimo/playSound junimoMeep1/pause 1000/removeSprite 21 10/pause 750/removeSprite 12 9/makeInvincible true/end lastSleepLocation"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/IslandWest",
+            "Entries": {
+                "GiEXbundle.cooking.upgrade/GameStateQuery FALSE": "clubloop/7 4/farmer -10 -10 0/warp farmer -100 -100/changeToTemporaryMap GiEX_Event_QiNutRoom/addTemporaryActor MrQi 16 32 7 4 0 true/translateName MrQi Strings\\NPCNames:MisterQi/viewport move 1 0 2500/pause 2000/addCookingRecipe GiEXredux_SeaPlate/addCookingRecipe GiEXredux_AncientJuice/addCookingRecipe GiEXredux_AncientCobbler/addCookingRecipe GiEXredux_IridiumPie/addCookingRecipe GiEXredux_FruitSalad/addCookingRecipe GiEXredux_OmniBurger/addCookingRecipe GiEXredux_StardropCake/addCookingRecipe GiEXredux_ChoppedAncientFruit/addCookingRecipe GiEXredux_BerriesPlate/addCookingRecipe GiEXredux_SweetSauce/addCookingRecipe GiEXredux_MagicIceCream/addCookingRecipe GiEXredux_IceCream/addCookingRecipe GiEXredux_MidnightCravings/addCookingRecipe iEXredux_FishAndRice/addCookingRecipe GiEXredux_MushroomPizza/addCookingRecipe GiEXredux_JellyBurger/addCookingRecipe GiEXredux_VeggieSoup/warp farmer -100 -100/pause 2000/playSound keyboardTyping/pause 500/playSound mouseClick/pause 500/playSound keyboardTyping/pause 200/playSound keyboardTyping/pause 800/playSound jojaOfficeSoundscape/speak MrQi \"{{i18n:Event.Bundle.Cooking_1}}#$b#{{i18n:Event.Bundle.Cooking_2}}\"/pause 1500/playSound achievement/message \"{{i18n:Event.Bundle.Cooking_3}}\"/pause 1200/stopSound jojaOfficeSoundscape/end lastSleepLocation"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/GiEX_NorthWest",
+            "Entries": {
+                "GiEXbundle.farming.upgrade/GameStateQuery FALSE": "ocean/30 11/farmer -10 -10 0/changeToTemporaryMap GiEX_Event_NorthWest/addTemporaryActor GiEXPinkJunimo 16 32 32 13 0 false/addTemporaryActor GiEXYlwJunimo 16 32 25 10 1 false/addTemporaryActor GiEXGrnJunimo 16 32 30 13 0/pause 2000/playSound junimoMeep1/jump GiEXPinkJunimo/pause 500/playSound junimoMeep1/pause 100/jump GiEXGrnJunimo/pause 500/playSound junimoMeep1/pause 100/jump GiEXYlwJunimo/move GiEXYlwJunimo 2 0 1/move GiEXGrnJunimo 0 -1 0/move GiEXPinkJunimo 0 -2 3/pause 500/addObject 13 11 788/playSound toolSwap/pause 300/fade/viewport -100 -100/playSound parry/pause 500/playSound clank/pause 200/playSound throw/pause 200/playSound dirtyHit/pause 1200/playSound doorClose/pause 700/playSound achievement/pause 500/end lastSleepLocation"
+            }
+        },
+        //scenes
+        {
+            "LogName": "Scene - 2H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEx_childhood1",
+            "FromFile": "assets/NPC/Scenes/childhood_boat.png"
+        },
+        {
+            "LogName": "Scene - 4H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEx_ship1",
+            "FromFile": "assets/NPC/Scenes/pirate_ship.png"
+        },
+        {
+            "LogName": "Scene - 4H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEx_youth1",
+            "FromFile": "assets/NPC/Scenes/youth_conning.png"
+        },
+        {
+            "LogName": "Scene - 4H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEx_youth2",
+            "FromFile": "assets/NPC/Scenes/youth_wanted.png"
+        },
+        {
+            "LogName": "Scene - 4H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEX_Pirates",
+            "FromFile": "assets/NPC/Scenes/pirates.png"
+        },
+        {
+            "LogName": "Scene - 4H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEX_Captain",
+            "FromFile": "assets/NPC/Scenes/captain.png",
+            "When": {
+                "HasMod|contains=ZoeDoll.GingerIslandNPCTweaks": false
+            }
+        },
+        {
+            "LogName": "Scene - 4H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEX_Captain",
+            "FromFile": "assets/NPC/Scenes/captain_GINPCTweaks.png",
+            "When": {
+                "HasMod": "ZoeDoll.GingerIslandNPCTweaks"
+            }
+        },
+        {
+            "LogName": "Scene - 6H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEx_pirate1",
+            "FromFile": "assets/NPC/Scenes/pirate_sword.png"
+        },
+        {
+            "LogName": "Scene - 6H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEx_pirate2",
+            "FromFile": "assets/NPC/Scenes/pirate_supplies.png"
+        },
+        {
+            "LogName": "Scene - 6H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEx_pirate3",
+            "FromFile": "assets/NPC/Scenes/pirate_boredom.png"
+        },
+        {
+            "LogName": "Scene - 6H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEx_pirate4",
+            "FromFile": "assets/NPC/Scenes/pirate_navy.png"
+        },
+        {
+            "LogName": "Scene - 6H Blood",
+            "Action": "EditImage",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEx_pirate4",
+            "FromFile": "assets/NPC/Scenes/overlay_blood.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "LighterBackstory": false
+            }
+        },
+        {
+            "LogName": "Scene - 8H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEx_island1",
+            "FromFile": "assets/NPC/Scenes/island_day.png"
+        },
+        {
+            "LogName": "Scene - 8H",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEx_island2",
+            "FromFile": "assets/NPC/Scenes/island_night.png"
+        },
+        {
+            "LogName": "Scene - 8H ANIM",
+            "Action": "Load",
+            "Target": "Mods/mistyspring.mistycore/Scenes/GiEx_island2anim",
+            "FromFile": "assets/NPC/Scenes/island_night_anim.png"
+        },
+        {
+            "LogName": "Load pirate character",
+            "Action": "Load",
+            "Target": "Characters/GiEX_Pirate",
+            "FromFile": "assets/NPC/Pirate_ch.png"
+        },
+        {
+            "LogName": "Load pirate portrait",
+            "Action": "Load",
+            "Target": "Portraits/GiEX_Pirate",
+            "FromFile": "assets/NPC/Pirate.png"
+        }
+    ]
+}

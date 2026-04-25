@@ -1,0 +1,83 @@
+{
+"Name": "Dyeable Tube Top",
+  "FrontShirt": {
+    "ColorMasks": [
+      [ 234, 234, 234 ],
+	  [ 212, 208, 197 ],
+	  [ 181, 175, 159 ],
+      [ 71, 68, 57 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+    "ColorMasks": [
+      [ 234, 234, 234 ],
+	  [ 212, 208, 197 ],
+	  [ 181, 175, 159 ],
+      [ 71, 68, 57 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+    "ColorMasks": [
+      [ 234, 234, 234 ],
+	  [ 212, 208, 197 ],
+	  [ 181, 175, 159 ],
+      [ 71, 68, 57 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+    "ColorMasks": [
+      [ 234, 234, 234 ],
+	  [ 212, 208, 197 ],
+	  [ 181, 175, 159 ],
+      [ 71, 68, 57 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

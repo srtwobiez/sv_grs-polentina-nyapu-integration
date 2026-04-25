@@ -1,0 +1,159 @@
+{
+"Name": "Dyeable Sailor Shirt 02 (lighter collar)",
+  "FrontShirt": {
+    "ColorMaskLayers": [
+	  {
+		"Name": "Shirt Color",
+		"Values": [
+		  [ 234, 234, 234 ],
+		  [ 149, 168, 191 ],
+		  [ 46, 46, 68 ]
+		 ]
+	  },
+	  {
+		"Name": "Collar Color",
+		"Values": [
+		  [ 233, 234, 234 ],
+		  [ 226, 226, 226 ],
+		  [ 198, 198, 198 ],
+		  [ 97, 97, 112 ],
+		  [ 70, 70, 81 ]
+		 ]
+	  }
+	],
+    "SleeveColors": [
+      [ 46, 46, 68 ],
+      [ 149, 168, 191 ],
+      [ 234, 234, 234 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+    "ColorMaskLayers": [
+	  {
+		"Name": "Shirt Color",
+		"Values": [
+		  [ 234, 234, 234 ],
+		  [ 149, 168, 191 ],
+		  [ 46, 46, 68 ]
+		 ]
+	  },
+	  {
+		"Name": "Collar Color",
+		"Values": [
+		  [ 233, 234, 234 ],
+		  [ 226, 226, 226 ],
+		  [ 198, 198, 198 ],
+		  [ 97, 97, 112 ],
+		  [ 70, 70, 81 ]
+		 ]
+	  }
+	],
+    "SleeveColors": [
+      [ 46, 46, 68 ],
+      [ 149, 168, 191 ],
+      [ 234, 234, 234 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+    "ColorMaskLayers": [
+	  {
+		"Name": "Shirt Color",
+		"Values": [
+		  [ 234, 234, 234 ],
+		  [ 149, 168, 191 ],
+		  [ 46, 46, 68 ]
+		 ]
+	  },
+	  {
+		"Name": "Collar Color",
+		"Values": [
+		  [ 233, 234, 234 ],
+		  [ 226, 226, 226 ],
+		  [ 198, 198, 198 ],
+		  [ 97, 97, 112 ],
+		  [ 70, 70, 81 ]
+		 ]
+	  }
+	],
+    "SleeveColors": [
+      [ 46, 46, 68 ],
+      [ 149, 168, 191 ],
+      [ 234, 234, 234 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+    "ColorMaskLayers": [
+	  {
+		"Name": "Shirt Color",
+		"Values": [
+		  [ 234, 234, 234 ],
+		  [ 149, 168, 191 ],
+		  [ 46, 46, 68 ]
+		 ]
+	  },
+	  {
+		"Name": "Collar Color",
+		"Values": [
+		  [ 233, 234, 234 ],
+		  [ 226, 226, 226 ],
+		  [ 198, 198, 198 ],
+		  [ 97, 97, 112 ],
+		  [ 70, 70, 81 ]
+		 ]
+	  }
+	],
+    "SleeveColors": [
+      [ 46, 46, 68 ],
+      [ 149, 168, 191 ],
+      [ 234, 234, 234 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

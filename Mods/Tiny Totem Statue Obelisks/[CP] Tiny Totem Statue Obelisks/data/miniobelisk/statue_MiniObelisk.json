@@ -1,0 +1,75 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Load Mini Obelisk Statue",
+      "Action": "EditImage",
+      "PatchMode": "Replace",
+      "Target": "TileSheets/Craftables",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_remote.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 96,
+        "Y": 928,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "MiniObeliskEnabled": "true",
+        "MiniObeliskStyle": "statue"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Mini Obelisk Statue Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Target": "TileSheets/Craftables",
+      "FromFile": "assets/flowers/remote_{{MiniObeliskFlowerColor}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 96,
+        "Y": 928,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "MiniObeliskEnabled": "true",
+        "MiniObeliskStyle": "statue",
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Mini Obelisk Statue Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Target": "TileSheets/Craftables",
+      "FromFile": "assets/moss/remote_moss.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 96,
+        "Y": 928,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "MiniObeliskEnabled": "true",
+        "MiniObeliskStyle": "statue",
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

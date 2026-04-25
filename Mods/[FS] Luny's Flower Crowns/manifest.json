@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Luny's Flower Crowns",
+  "Author": "Luny",
+  "Version": "1.0",
+  "Description": "Adds several flower crowns to Fashion Sense",
+  "UniqueID": "Luny.FlowerCrowns",
+  "UpdateKeys": ["Nexus:31777"],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+	"MinimumVersion": "6.6.0"
+  }
+}

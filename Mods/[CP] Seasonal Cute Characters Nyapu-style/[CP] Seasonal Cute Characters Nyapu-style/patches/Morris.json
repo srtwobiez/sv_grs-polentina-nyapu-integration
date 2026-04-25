@@ -1,0 +1,75 @@
+{
+	"Changes": [
+	
+
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Morris's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Morris, Portraits/Morris_Summer, Portraits/Morris_Fall, Portraits/Morris_Winter, Portraits/Morris_Winter2",
+			"FromFile": "assets/Portraits/Morris/{{TargetWithoutPath}}.png"
+		},		
+		{
+			"LogName": "Morris - Seasonal",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Morris",
+			"FromFile": "assets/Portraits/Morris/Morris_{{season}}.png",
+			"When": {"HasFile:{{FromFile}}": true,},
+		},		
+
+		//APPEARANCE DATA 
+		{
+			"LogName": "Morris Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Morris", "Appearance"],
+			"Entries": {
+				
+				"Poltergeister.SeasonalCuteCharacters.MorrisSpring": {
+					"Id": "{{ModId}}.MorrisSpring",
+					"Condition": "SEASON spring",
+					"Portrait": "Portraits/Morris",
+					"Precedence": -120,
+				},
+			},
+		},
+		
+// MISCELLANEOUS
+		{   
+			"LogName": "Morris - Joja TownInteriors 1",
+            "Action": "EditImage",
+            "Target": "Maps/townInterior",
+            "FromFile": "assets/TileSheets/townInterior_{{Season}}.png",
+            "FromArea": { "X": 368, "Y": 1008, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 368, "Y": 1008, "Width": 16, "Height": 32 }
+		},
+		{   
+			"LogName": "Morris - Joja TownInteriors 2",
+            "Action": "EditImage",
+            "Target": "Maps/townInterior",
+            "FromFile": "assets/TileSheets/townInterior_{{Season}}.png",
+            "FromArea": { "X": 384, "Y": 1008, "Width": 16, "Height": 16 },
+            "ToArea": { "X": 384, "Y": 1008, "Width": 16, "Height": 16 }
+		},
+		{   
+			"LogName": "Morris - Joja TownInteriors 3",
+            "Action": "EditImage",
+            "Target": "Maps/townInterior",
+            "FromFile": "assets/TileSheets/townInterior_{{Season}}.png",
+            "FromArea": { "X": 400, "Y": 1008, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 400, "Y": 1008, "Width": 16, "Height": 32 }
+		},		
+		{   
+			"LogName": "Morris - Joja Theater",
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+            "FromFile": "assets/TileSheets/MovieTheater_TileSheet_{{Season}}.png",
+            "FromArea": { "X": 16, "Y": 224, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 16, "Y": 224, "Width": 16, "Height": 32 },
+		},
+	]
+}

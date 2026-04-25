@@ -1,0 +1,13 @@
+{
+  "config.section.RestartRequired.name": "Return to the title screen to apply changes",
+  "config.ForceMinBarn.name": "Premium barn: basic look",
+  "config.ForceMinBarn.description": "Shows the regular Barn exterior instead of the Deluxe Barn on SVE's Premium Barn.",
+  "config.ForceMinCoop.name": "Premium coop: basic look",
+  "config.ForceMinCoop.description": "Shows the regular Coop exterior instead of the Deluxe Coop on SVE's Premium Coop.",
+  "config.ForceMinShed.name": "Winery: basic shed look",
+  "config.ForceMinShed.description": "Shows the small Shed exterior instead of the Big Shed on SVE's Winery.",
+  "config.ForceMinVanillaBigShed.name": "Vanilla Big Shed: basic look",
+  "config.ForceMinVanillaBigShed.description": "Shows the regular Shed exterior on the vanilla Big Shed (you still upgrade from Shed).",
+  "config.EnableBuildingUpgrades.name": "Require building upgrades",
+  "config.EnableBuildingUpgrades.description": "When on, SVE premium buildings must replace the building you're upgrading from. When off, you can build them on their own without upgrading."
+}

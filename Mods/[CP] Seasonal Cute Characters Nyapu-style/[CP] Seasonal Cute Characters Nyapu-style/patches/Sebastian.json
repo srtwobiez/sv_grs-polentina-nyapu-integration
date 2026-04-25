@@ -1,0 +1,56 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Sebastian's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Sebastian, Portraits/Sebastian_Beach, Portraits/Sebastian_Winter, Portraits/Sebastian_Spring, Portraits/Sebastian_Summer, Portraits/Sebastian_Fall, Portraits/Sebastian_Winter_Outdoor, Portraits/Sebastian_Winter_Indoor, Portraits/Sebastian_FlowerDance, Portraits/Sebastian_SpiritsEve, Portraits/Sebastian_EggF, Portraits/Sebastian_Fair, Portraits/Sebastian_Jellies, Portraits/Sebastian_Luau, Portraits/Sebastian_Winter_IceF, Portraits/Sebastian_Winter_WinterStar, ",
+			"FromFile": "assets/Portraits/Sebastian/{{TargetWithoutPath}}.png"
+		},
+
+		{
+			"LogName": "Sebastian's Sprite Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/Sebastian_Summer, Characters/Sebastian_Fall, Characters/Sebastian_Jellies",
+			"FromFile": "assets/Characters/Sebastian/{{TargetWithoutPath}}.png"
+		},			
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Sebastian Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Sebastian", "Appearance"],
+			"Fields": {
+				
+				"Poltergeister.SeasonalCuteCharacters.SebastianSpring": {
+					"Portrait": "Portraits/Sebastian",
+				},
+
+				"Poltergeister.SeasonalCuteCharacters.SebastianIceFestival": {
+					"Portrait": "Portraits/Sebastian_Winter",
+				},
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+            "LogName": "Sebastian Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Sebastian",
+            "FromFile": "assets/Characters/Sebastian/Sebastian_Summer.png",
+			"When": {"Season": "summer"}
+        },	
+		{
+            "LogName": "Sebastian Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Sebastian",
+            "FromFile": "assets/Characters/Sebastian/Sebastian_Fall.png",
+			"When": {"Season": "fall"}
+        },	
+		
+	]
+}

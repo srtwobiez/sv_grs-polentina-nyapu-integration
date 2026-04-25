@@ -1,0 +1,1152 @@
+{
+	"Changes": [
+		/*Bundle theme*/
+		{
+			"LogName": "Add bundle theme",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/BundleThemes",
+			"Entries": {
+				"{{ModId}}.Custom": {
+					"ShopType": "CCBundle",
+					"ShopTexture": "Mods\\{{ModId}}\\Textures\\GeneralStatue",
+					"ShopTextureSource": {
+						"X": 0,
+						"Y": 0,
+						"Width": 32,
+						"Height": 32
+					},
+					"ShopDrawDimensions": "128, 128",
+					"InstantShopRemoval": true,
+					"ShopEvent": "none",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote"
+				},
+				"{{ModId}}.Aquarium": {
+					"ShopType": "CCBundle",
+					"ShopTexture": "Mods\\{{ModId}}\\Textures\\AquariumStatue",
+					"ShopTextureSource": {
+						"X": 0,
+						"Y": 0,
+						"Width": 16,
+						"Height": 32
+					},
+					"ShopDrawDimensions": "64, 128",
+					"InstantShopRemoval": true,
+					"ShopEvent": "none",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/AquariumNote"
+				}
+			}
+		},
+		/* Bundles */
+		{
+			"LogName": "Bundles - normal",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+			"Entries": {
+				//temple
+				"{{ModId}}.bundle.fishing": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Fishing}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:Helmet}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/FishingBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"838": 1, //blue discus
+						"836": 1, //stringray
+						"837": 1, //lionfish
+						"155": 1, //super cucumber
+						"128": 1 //pufferfish
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"{{ModPrefix}}LumiBait": 1, //luminous bait
+						"{{ModPrefix}}LumiTackle": 1 //luminous tackle
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.fishing.done received",
+						"MarkCraftingRecipeKnown All GiEXredux_LumiBait",
+						"MarkCraftingRecipeKnown All GiEXredux_LumiTackle"
+					],
+					"ShopPosition": "10,9",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "mermaidSong/12 10/farmer 10 10 0/playSound achievement/message \"{{i18n:Event.Bundle.Fishing_1}}\"/end",
+					"EditMap": "Maps/Patches/GiEX_FishingBundle",
+					"EditMapPosition": "10,7"
+				},
+				"{{ModId}}.bundle.farming": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Farming}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:MagicShop}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/FarmingBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"91": 3, //banana
+						"834": 3, //mango
+						"830": 10, //taro root
+						"88": 3, //coconut
+						"829": 10 //ginger
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(BC)239": 1, //farm computer
+						"(BC)248": 1 //mini shipping bin
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.farming.done received"
+					],
+					"ShopPosition": "10,13",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "distantBanjo/40 26/farmer -10 -10 0/changeToTemporaryMap GiEX_Event_NorthWest/viewport 30 14/addTemporaryActor GiEXPinkJunimo 16 32 28 13 0 false/addTemporaryActor GiEXGrnJunimo 16 32 32 14 0 false/pause 2000/jump GiEXPinkJunimo/playSound junimoMeep1/pause 500/jump GiEXGrnJunimo/playSound junimoMeep1/pause 1000/move GiEXGrnJunimo 0 -1 0/move GiEXPinkJunimo 0 -1 0/stopMusic/fade/viewport -100 -10/pause 2000/playSound clank/pause 100/playSound boulderBreak/pause 500/playSound potterySmash/pause 1000/playSound throw/pause 300/playSound junimoMeep1/pause 100/playSound throw/pause 800/playSound clank/pause 800/pause 2000/message \"{{i18n:FixedStore}}\"/end",
+					"EditMap": "Maps/Patches/GiEX_FarmingBundle",
+					"EditMapPosition": "10,11"
+				},
+				"{{ModId}}.bundle.cooking": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Cooking}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:SecretRecipes}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/CookingBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"873": 1, //piña colada
+						"907": 1, //tropical curry
+						"903": 1, //ginger ale
+						"904": 1, //banana pudding
+						"265": 1, //seafoam pudding
+						"432": 2 //truffle oil
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)917": 10 //qi seasoning
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.cooking.done received",
+						"MarkCookingRecipeKnown All {{ModPrefix}}ShrimpMangoSalad",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutCheesecakeBars",
+						"MarkCookingRecipeKnown All {{ModPrefix}}StardropCake",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutPineappleSpritz",
+						"MarkCookingRecipeKnown All {{ModPrefix}}FriedCoconutShrimp",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SweetSauce",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MagicIceCream",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MangoMilk",
+						"MarkCookingRecipeKnown All {{ModPrefix}}AncientJuice",
+						"MarkCookingRecipeKnown All {{ModPrefix}}AncientCobbler",
+						"MarkCookingRecipeKnown All {{ModPrefix}}PineappleCoconutCake",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SeaPlate",
+						"MarkCookingRecipeKnown All {{ModPrefix}}TilapiaWithMangoSalsa",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutCurryFishStew",
+						"MarkCookingRecipeKnown All {{ModPrefix}}EggRolls",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MushroomPizza",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SalmonWithMangoCitrusSalsa",
+						"MarkCookingRecipeKnown All {{ModPrefix}}OmniBurger"
+					],
+					"ShopPosition": "27,9",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "clubloop/7 4/farmer 0 0 0/warp farmer -100 -100/changeToTemporaryMap GiEX_Event_QiNutRoom/addTemporaryActor MrQi 16 32 7 4 0 true/translateName MrQi Strings\\NPCNames:MisterQi/viewport move 1 0 2500/pause 2000/warp farmer -100 -100/pause 2000/playSound keyboardTyping/pause 500/playSound mouseClick/pause 500/playSound keyboardTyping/pause 200/playSound keyboardTyping/pause 800/playSound jojaOfficeSoundscape/speak MrQi \"{{i18n:Event.Bundle.Cooking_1}}#$b#{{i18n:Event.Bundle.Cooking_2}}\"/pause 1500/playSound achievement/message \"{{i18n:Event.Bundle.Cooking_3}}\"/pause 1200/stopSound jojaOfficeSoundscape/end",
+					"EditMap": "Maps/Patches/GiEX_CookingBundle",
+					"EditMapPosition": "27,7"
+				},
+				"{{ModId}}.bundle.mining": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Mining}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:Elevator}}",
+					"OverviewDescription": "{{i18n: MiningOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/MiningBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"852": 3, //dragon tooth
+						"848": 20, //cinder shard
+						"749": 5, //omni geode
+						"337": 3, //iridium bar
+						"386": 10 //coal
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)910": 3, //radioactive bar
+						"(O)909": 15 //radioactive ore
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.mining.done received"
+					],
+					"ShopPosition": "27,13",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "distantBanjo/40 26/farmer 0 0 0/changeToTemporaryMap Island_N/viewport 40 26/addTemporaryActor GiEXPinkJunimo 16 32 41 25 0 false/addTemporaryActor GiEXGrnJunimo 16 32 40 26 0 false/pause 2000/jump GiEXPinkJunimo/playSound junimoMeep1/pause 500/jump GiEXGrnJunimo/playSound junimoMeep1/pause 1000/move GiEXGrnJunimo 0 -5 0/warp GiEXGrnJunimo 0 1/move GiEXPinkJunimo 0 -4 0/warp GiEXPinkJunimo 1 0/stopMusic/pause 2000/playSound clank/pause 100/playSound boulderBreak/pause 500/playSound potterySmash/pause 1000/playSound throw/pause 300/playSound junimoMeep1/pause 100/playSound throw/pause 800/playSound clank/pause 800/playSound robotSoundEffects/pause 2000/addCraftingRecipe GiEXredux_FireRing/playSound crystal/pause 1000/faceDirection GiEXPinkJunimo 2/warp GiEXPinkJunimo 41 21/move GiEXPinkJunimo 0 3 2/pause 200/faceDirection GiEXGrnJunimo 2/warp GiEXGrnJunimo 40 21/move GiEXGrnJunimo 0 4 2/pause 200/animate GiEXPinkJunimo false false 150 24 25 26 27/pause 600/showFrame GiEXPinkJunimo 27/animate GiEXGrnJunimo false true 150 28 29 30 31/pause 1000/end",
+					"EditMap": "Maps/Patches/GiEX_MiningBundle",
+					"EditMapPosition": "27,11"
+				},
+				"{{ModId}}.bundle.combat": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Combat}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:Weapon}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/CombatBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 3,
+					"Price": {
+						"769": 10, //void essence
+						"768": 10, //solar essence
+						"767": 50, //bat wing
+						"766": 99, //slime
+						"GiEXredux_FireEssence": 10 //fire essence
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(W){{ModPrefix}}FlameSword": 1
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.combat.done received"
+					],
+					"ShopPosition": "18,17",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"EditMap": "Maps/Patches/GiEX_CombatBundle",
+					"EditMapPosition": "18,15"
+				},
+				//aquarium
+				"{{ModId}}.bundle.piratecove": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/PirateCoveIcon",
+					"BundleSlots": 1,
+					"Price": {
+						"836:Silver": 1 //Stingray
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)774": 10 //wild bait
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank1 received",
+						"GiEX.AddFishTank GiEX_Aquarium 17 13 2322"
+					],
+					"ShopPosition": "17, 13",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/PirateCoveStatue",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				},
+				"{{ModId}}.bundle.freshwater": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/FreshwaterIcon",
+					"BundleSlots": 2,
+					"Price": {
+						"269:Silver": 1, //blue discus
+						"838:Silver": 1 //midnight carp
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)685": 10 //bait
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank2 received",
+						"GiEX.AddFishTank GiEX_Aquarium 28 13 2312"
+					],
+					"ShopPosition": "30,13",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/FreshwaterStatue",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				},
+				"{{ModId}}.bundle.ocean2": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/OceanIcon2",
+					"BundleSlots": 4,
+					"Price": {
+						"701:Silver": 1, //tilapia
+						"267:Silver": 1, //flounder
+						"837:Silver": 1, //lionfish
+						"128:Silver": 1
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)774": 10 //wild bait
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank3 received",
+						"GiEX.AddFishTank GiEX_Aquarium 9 24 2312"
+					],
+					"ShopPosition": "11,24",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/OceanStatue2",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				},
+				"{{ModId}}.bundle.ocean1": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/OceanIcon1",
+					"BundleSlots": 4,
+					"Price": {
+						"155:Silver": 1, //Super Cucumber
+						"130:Silver": 1, //Tuna
+						"149:Silver": 1 //octopus
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)685": 10 //bait
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank4 received",
+						"GiEX.AddFishTank GiEX_Aquarium 31 24 2312"
+					],
+					"ShopPosition": "33,24",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/OceanStatue1",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				},
+				"{{ModId}}.bundle.deepsea": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/DeepSeaIcon",
+					"BundleSlots": 5,
+					"Price": {
+						"{{ModPrefix}}AtollaJellyfish:Silver": 1,
+						"{{ModPrefix}}Facelessfish:Silver": 1,
+						"{{ModPrefix}}CosmicJelly:Silver": 1,
+						"{{ModPrefix}}HarpSponge:Silver": 1,
+						"{{ModPrefix}}Hadalfish:Silver": 1
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O){{ModPrefix}}LumiBait": 10
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank5 received",
+						"GiEX.AddFishTank GiEX_Aquarium 19 23 2400"
+					],
+					"ShopPosition": "22,23",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/DeepSeaStatue",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				}
+			}
+		},
+		{
+			"LogName": "Bundles - easy",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+			"Entries": {
+				"{{ModId}}.bundle.fishing": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Fishing}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:Helmet}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/FishingBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"838": 1, //blue discus
+						"836": 1, //stringray
+						"837": 1 //lionfish
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"{{ModPrefix}}LumiBait": 1, //luminous bait
+						"{{ModPrefix}}LumiTackle": 1 //luminous tackle
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.fishing.done received",
+						"MarkCraftingRecipeKnown All GiEXredux_LumiBait",
+						"MarkCraftingRecipeKnown All GiEXredux_LumiTackle"
+					],
+					"ShopPosition": "10,9",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "mermaidSong/12 10/farmer 10 10 0/playSound achievement/message \"{{i18n:Event.Bundle.Fishing_1}}\"/end",
+					"EditMap": "Maps/Patches/GiEX_FishingBundle",
+					"EditMapPosition": "10,7"
+				},
+				"{{ModId}}.bundle.farming": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Farming}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:MagicShop}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/FarmingBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"91": 2, //banana
+						"834": 2, //mango
+						"830": 5, //taro root
+						"88": 2, //coconut
+						"829": 5 //ginger
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(BC)239": 1, //farm computer
+						"(BC)248": 1 //mini shipping bin
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.farming.done received"
+					],
+					"ShopPosition": "10,13",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "distantBanjo/40 26/farmer -10 -10 0/changeToTemporaryMap GiEX_Event_NorthWest/viewport 30 14/addTemporaryActor GiEXPinkJunimo 16 32 28 13 0 false/addTemporaryActor GiEXGrnJunimo 16 32 32 14 0 false/pause 2000/jump GiEXPinkJunimo/playSound junimoMeep1/pause 500/jump GiEXGrnJunimo/playSound junimoMeep1/pause 1000/move GiEXGrnJunimo 0 -1 0/move GiEXPinkJunimo 0 -1 0/stopMusic/fade/viewport -100 -10/pause 2000/playSound clank/pause 100/playSound boulderBreak/pause 500/playSound potterySmash/pause 1000/playSound throw/pause 300/playSound junimoMeep1/pause 100/playSound throw/pause 800/playSound clank/pause 800/pause 2000/message \"{{i18n:FixedStore}}\"/end",
+					"EditMap": "Maps/Patches/GiEX_FarmingBundle",
+					"EditMapPosition": "10,11"
+				},
+				"{{ModId}}.bundle.cooking": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Cooking}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:SecretRecipes}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/CookingBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"873": 1, //piña colada
+						"907": 1, //tropical curry
+						"903": 1, //ginger ale
+						"904": 1 //banana pudding
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)917": 10 //qi seasoning
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.cooking.done received",
+						"MarkCookingRecipeKnown All {{ModPrefix}}ShrimpMangoSalad",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutCheesecakeBars",
+						"MarkCookingRecipeKnown All {{ModPrefix}}StardropCake",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutPineappleSpritz",
+						"MarkCookingRecipeKnown All {{ModPrefix}}FriedCoconutShrimp",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SweetSauce",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MagicIceCream",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MangoMilk",
+						"MarkCookingRecipeKnown All {{ModPrefix}}AncientJuice",
+						"MarkCookingRecipeKnown All {{ModPrefix}}AncientCobbler",
+						"MarkCookingRecipeKnown All {{ModPrefix}}PineappleCoconutCake",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SeaPlate",
+						"MarkCookingRecipeKnown All {{ModPrefix}}TilapiaWithMangoSalsa",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutCurryFishStew",
+						"MarkCookingRecipeKnown All {{ModPrefix}}EggRolls",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MushroomPizza",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SalmonWithMangoCitrusSalsa",
+						"MarkCookingRecipeKnown All {{ModPrefix}}OmniBurger"
+					],
+					"ShopPosition": "27,9",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "clubloop/7 4/farmer 0 0 0/warp farmer -100 -100/changeToTemporaryMap GiEX_Event_QiNutRoom/addTemporaryActor MrQi 16 32 7 4 0 true/translateName MrQi Strings\\NPCNames:MisterQi/viewport move 1 0 2500/pause 2000/warp farmer -100 -100/pause 2000/playSound keyboardTyping/pause 500/playSound mouseClick/pause 500/playSound keyboardTyping/pause 200/playSound keyboardTyping/pause 800/playSound jojaOfficeSoundscape/speak MrQi \"{{i18n:Event.Bundle.Cooking_1}}#$b#{{i18n:Event.Bundle.Cooking_2}}\"/pause 1500/playSound achievement/message \"{{i18n:Event.Bundle.Cooking_3}}\"/pause 1200/stopSound jojaOfficeSoundscape/end",
+					"EditMap": "Maps/Patches/GiEX_CookingBundle",
+					"EditMapPosition": "27,7"
+				},
+				"{{ModId}}.bundle.mining": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Mining}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:Elevator}}",
+					"OverviewDescription": "{{i18n: MiningOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/MiningBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"852": 2, //dragon tooth
+						"848": 15, //cinder shard
+						"749": 5, //omni geode
+						"386": 5 //coal
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)910": 3, //radioactive bar
+						"(O)909": 15 //radioactive ore
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.mining.done received"
+					],
+					"ShopPosition": "27,13",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "distantBanjo/40 26/farmer 0 0 0/changeToTemporaryMap Island_N/viewport 40 26/addTemporaryActor GiEXPinkJunimo 16 32 41 25 0 false/addTemporaryActor GiEXGrnJunimo 16 32 40 26 0 false/pause 2000/jump GiEXPinkJunimo/playSound junimoMeep1/pause 500/jump GiEXGrnJunimo/playSound junimoMeep1/pause 1000/move GiEXGrnJunimo 0 -5 0/warp GiEXGrnJunimo 0 1/move GiEXPinkJunimo 0 -4 0/warp GiEXPinkJunimo 1 0/stopMusic/pause 2000/playSound clank/pause 100/playSound boulderBreak/pause 500/playSound potterySmash/pause 1000/playSound throw/pause 300/playSound junimoMeep1/pause 100/playSound throw/pause 800/playSound clank/pause 800/playSound robotSoundEffects/pause 2000/addCraftingRecipe GiEXredux_FireRing/playSound crystal/pause 1000/faceDirection GiEXPinkJunimo 2/warp GiEXPinkJunimo 41 21/move GiEXPinkJunimo 0 3 2/pause 200/faceDirection GiEXGrnJunimo 2/warp GiEXGrnJunimo 40 21/move GiEXGrnJunimo 0 4 2/pause 200/animate GiEXPinkJunimo false false 150 24 25 26 27/pause 600/showFrame GiEXPinkJunimo 27/animate GiEXGrnJunimo false true 150 28 29 30 31/pause 1000/end",
+					"EditMap": "Maps/Patches/GiEX_MiningBundle",
+					"EditMapPosition": "27,11"
+				},
+				"{{ModId}}.bundle.combat": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Combat}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:Weapon}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/CombatBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 3,
+					"Price": {
+						"769": 5, //void essence
+						"768": 5, //solar essence
+						"767": 25, //bat wing
+						"766": 99, //slime
+						"GiEXredux_FireEssence": 5 //fire essence
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(W){{ModPrefix}}FlameSword": 1
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.combat.done received"
+					],
+					"ShopPosition": "18,17",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"EditMap": "Maps/Patches/GiEX_CombatBundle",
+					"EditMapPosition": "18,15"
+				},
+				"{{ModId}}.bundle.piratecove": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/PirateCoveIcon",
+					"BundleSlots": 1,
+					"Price": {
+						"836": 1 //Stingray
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)774": 10 //wild bait
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank1 received",
+						"GiEX.AddFishTank GiEX_Aquarium 17 13 2322"
+					],
+					"ShopPosition": "17, 13",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/PirateCoveStatue",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				},
+				"{{ModId}}.bundle.freshwater": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/FreshwaterIcon",
+					"BundleSlots": 2,
+					"Price": {
+						"269": 1, //blue discus
+						"838": 1 //midnight carp
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)685": 10 //bait
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank2 received",
+						"GiEX.AddFishTank GiEX_Aquarium 28 13 2312"
+					],
+					"ShopPosition": "30,13",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/FreshwaterStatue",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				},
+				"{{ModId}}.bundle.ocean2": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/OceanIcon2",
+					"BundleSlots": 4,
+					"Price": {
+						"701": 1, //tilapia
+						"267": 1, //flounder
+						"837": 1, //lionfish
+						"128": 1
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)774": 10 //wild bait
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank3 received",
+						"GiEX.AddFishTank GiEX_Aquarium 9 24 2312"
+					],
+					"ShopPosition": "11,24",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/OceanStatue2",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				},
+				"{{ModId}}.bundle.ocean1": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/OceanIcon1",
+					"BundleSlots": 4,
+					"Price": {
+						"155": 1, //Super Cucumber
+						"130": 1, //Tuna
+						"149": 1 //octopus
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)685": 10 //bait
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank4 received",
+						"GiEX.AddFishTank GiEX_Aquarium 31 24 2312"
+					],
+					"ShopPosition": "33,24",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/OceanStatue1",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				},
+				"{{ModId}}.bundle.deepsea": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/DeepSeaIcon",
+					"BundleSlots": 5,
+					"Price": {
+						"{{ModPrefix}}AtollaJellyfish": 1,
+						"{{ModPrefix}}Facelessfish": 1,
+						"{{ModPrefix}}CosmicJelly": 1,
+						"{{ModPrefix}}HarpSponge": 1,
+						"{{ModPrefix}}Hadalfish": 1
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O){{ModPrefix}}LumiBait": 10
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank5 received",
+						"GiEX.AddFishTank GiEX_Aquarium 19 23 2400"
+					],
+					"ShopPosition": "22,23",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/DeepSeaStatue",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				}
+			},
+			"When": {
+				"QuestDifficulty": "easy"
+			}
+		},
+		{
+			"LogName": "Bundles - hard",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+			"Entries": {
+				"{{ModId}}.bundle.fishing": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Fishing}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:Helmet}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/FishingBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"838:Gold": 1, //blue discus
+						"836:Gold": 1, //stringray
+						"837:Gold": 1, //lionfish
+						"155:Gold": 1, //super cucumber
+						"128:Gold": 1 //pufferfish
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"{{ModPrefix}}LumiBait": 1, //luminous bait
+						"{{ModPrefix}}LumiTackle": 1 //luminous tackle
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.fishing.done received",
+						"MarkCraftingRecipeKnown All GiEXredux_LumiTackle",
+						"MarkCraftingRecipeKnown All GiEXredux_LumiBait"
+					],
+					"ShopPosition": "10,9",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "mermaidSong/12 10/farmer 10 10 0/playSound achievement/message \"{{i18n:Event.Bundle.Fishing_1}}\"/end",
+					"EditMap": "Maps/Patches/GiEX_FishingBundle",
+					"EditMapPosition": "10,7"
+				},
+				"{{ModId}}.bundle.farming": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Farming}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:MagicShop}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/FarmingBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"91": 5, //banana
+						"834": 5, //mango
+						"830": 20, //taro root
+						"88": 5, //coconut
+						"829": 15 //ginger
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(BC)239": 1, //farm computer
+						"(BC)248": 1 //mini shipping bin
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.farming.done received"
+					],
+					"ShopPosition": "10,13",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "distantBanjo/40 26/farmer -10 -10 0/changeToTemporaryMap GiEX_Event_NorthWest/viewport 30 14/addTemporaryActor GiEXPinkJunimo 16 32 28 13 0 false/addTemporaryActor GiEXGrnJunimo 16 32 32 14 0 false/pause 2000/jump GiEXPinkJunimo/playSound junimoMeep1/pause 500/jump GiEXGrnJunimo/playSound junimoMeep1/pause 1000/move GiEXGrnJunimo 0 -1 0/move GiEXPinkJunimo 0 -1 0/stopMusic/fade/viewport -100 -10/pause 2000/playSound clank/pause 100/playSound boulderBreak/pause 500/playSound potterySmash/pause 1000/playSound throw/pause 300/playSound junimoMeep1/pause 100/playSound throw/pause 800/playSound clank/pause 800/pause 2000/message \"{{i18n:FixedStore}}\"/end",
+					"EditMap": "Maps/Patches/GiEX_FarmingBundle",
+					"EditMapPosition": "10,11"
+				},
+				"{{ModId}}.bundle.cooking": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Cooking}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:SecretRecipes}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/CookingBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"873": 1, //piña colada
+						"907:Gold": 1, //tropical curry
+						"903:Gold": 1, //ginger ale
+						"904:Gold": 1, //banana pudding
+						"265:Gold": 1, //seafoam pudding
+						"432": 2 //truffle oil
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)917": 10 //qi seasoning
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.cooking.done received",
+						"MarkCookingRecipeKnown All {{ModPrefix}}ShrimpMangoSalad",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutCheesecakeBars",
+						"MarkCookingRecipeKnown All {{ModPrefix}}StardropCake",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutPineappleSpritz",
+						"MarkCookingRecipeKnown All {{ModPrefix}}FriedCoconutShrimp",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SweetSauce",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MagicIceCream",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MangoMilk",
+						"MarkCookingRecipeKnown All {{ModPrefix}}AncientJuice",
+						"MarkCookingRecipeKnown All {{ModPrefix}}AncientCobbler",
+						"MarkCookingRecipeKnown All {{ModPrefix}}PineappleCoconutCake",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SeaPlate",
+						"MarkCookingRecipeKnown All {{ModPrefix}}TilapiaWithMangoSalsa",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutCurryFishStew",
+						"MarkCookingRecipeKnown All {{ModPrefix}}EggRolls",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MushroomPizza",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SalmonWithMangoCitrusSalsa",
+						"MarkCookingRecipeKnown All {{ModPrefix}}OmniBurger"
+					],
+					"ShopPosition": "27,9",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "clubloop/7 4/farmer 0 0 0/warp farmer -100 -100/changeToTemporaryMap GiEX_Event_QiNutRoom/addTemporaryActor MrQi 16 32 7 4 0 true/translateName MrQi Strings\\NPCNames:MisterQi/viewport move 1 0 2500/pause 2000/warp farmer -100 -100/pause 2000/playSound keyboardTyping/pause 500/playSound mouseClick/pause 500/playSound keyboardTyping/pause 200/playSound keyboardTyping/pause 800/playSound jojaOfficeSoundscape/speak MrQi \"{{i18n:Event.Bundle.Cooking_1}}#$b#{{i18n:Event.Bundle.Cooking_2}}\"/pause 1500/playSound achievement/message \"{{i18n:Event.Bundle.Cooking_3}}\"/pause 1200/stopSound jojaOfficeSoundscape/end",
+					"EditMap": "Maps/Patches/GiEX_CookingBundle",
+					"EditMapPosition": "27,7"
+				},
+				"{{ModId}}.bundle.mining": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Mining}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:Elevator}}",
+					"OverviewDescription": "{{i18n: MiningOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/MiningBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"852": 3, //dragon tooth
+						"848": 20, //cinder shard
+						"749": 10, //omni geode
+						"337": 5, //iridium bar
+						"72": 1 //diamond
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)910": 3, //radioactive bar
+						"(O)909": 15 //radioactive ore
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.mining.done received"
+					],
+					"ShopPosition": "27,13",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "distantBanjo/40 26/farmer 0 0 0/changeToTemporaryMap Island_N/viewport 40 26/addTemporaryActor GiEXPinkJunimo 16 32 41 25 0 false/addTemporaryActor GiEXGrnJunimo 16 32 40 26 0 false/pause 2000/jump GiEXPinkJunimo/playSound junimoMeep1/pause 500/jump GiEXGrnJunimo/playSound junimoMeep1/pause 1000/move GiEXGrnJunimo 0 -5 0/warp GiEXGrnJunimo 0 1/move GiEXPinkJunimo 0 -4 0/warp GiEXPinkJunimo 1 0/stopMusic/pause 2000/playSound clank/pause 100/playSound boulderBreak/pause 500/playSound potterySmash/pause 1000/playSound throw/pause 300/playSound junimoMeep1/pause 100/playSound throw/pause 800/playSound clank/pause 800/playSound robotSoundEffects/pause 2000/addCraftingRecipe GiEXredux_FireRing/playSound crystal/pause 1000/faceDirection GiEXPinkJunimo 2/warp GiEXPinkJunimo 41 21/move GiEXPinkJunimo 0 3 2/pause 200/faceDirection GiEXGrnJunimo 2/warp GiEXGrnJunimo 40 21/move GiEXGrnJunimo 0 4 2/pause 200/animate GiEXPinkJunimo false false 150 24 25 26 27/pause 600/showFrame GiEXPinkJunimo 27/animate GiEXGrnJunimo false true 150 28 29 30 31/pause 1000/end",
+					"EditMap": "Maps/Patches/GiEX_MiningBundle",
+					"EditMapPosition": "27,11"
+				},
+				"{{ModId}}.bundle.combat": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Combat}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:Weapon}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/CombatBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 3,
+					"Price": {
+						"769": 20, //void essence
+						"768": 20, //solar essence
+						"767": 99, //bat wing
+						"766": 198, //slime
+						"GiEXredux_FireEssence": 20 //fire essence
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(W){{ModPrefix}}FlameSword": 1
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.combat.done received"
+					],
+					"ShopPosition": "18,17",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"EditMap": "Maps/Patches/GiEX_CombatBundle",
+					"EditMapPosition": "18,15"
+				},
+				"{{ModId}}.bundle.piratecove": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/PirateCoveIcon",
+					"BundleSlots": 1,
+					"Price": {
+						"836:Gold": 1 //Stingray
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)774": 10 //wild bait
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank1 received",
+						"GiEX.AddFishTank GiEX_Aquarium 17 13 2322"
+					],
+					"ShopPosition": "17, 13",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/PirateCoveStatue",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				},
+				"{{ModId}}.bundle.freshwater": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/FreshwaterIcon",
+					"BundleSlots": 2,
+					"Price": {
+						"269:Gold": 1, //blue discus
+						"838:Gold": 1 //midnight carp
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)685": 10 //bait
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank2 received",
+						"GiEX.AddFishTank GiEX_Aquarium 28 13 2312"
+					],
+					"ShopPosition": "30,13",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/FreshwaterStatue",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				},
+				"{{ModId}}.bundle.ocean2": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/OceanIcon2",
+					"BundleSlots": 4,
+					"Price": {
+						"701:Gold": 1, //tilapia
+						"267:Gold": 1, //flounder
+						"837:Gold": 1, //lionfish
+						"128:Gold": 1
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)774": 10 //wild bait
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank3 received",
+						"GiEX.AddFishTank GiEX_Aquarium 9 24 2312"
+					],
+					"ShopPosition": "11,24",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/OceanStatue2",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				},
+				"{{ModId}}.bundle.ocean1": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/OceanIcon1",
+					"BundleSlots": 4,
+					"Price": {
+						"155:Gold": 1, //Super Cucumber
+						"130:Gold": 1, //Tuna
+						"149:Gold": 1 //octopus
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)685": 10 //bait
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank4 received",
+						"GiEX.AddFishTank GiEX_Aquarium 31 24 2312"
+					],
+					"ShopPosition": "33,24",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/OceanStatue1",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				},
+				"{{ModId}}.bundle.deepsea": {
+					"Location": "GiEX_Aquarium",
+					"BundleName": "{{i18n: Aquarium}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:FishTank}}",
+					"OverviewDescription": "{{i18n: AquariumOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/DeepSeaIcon",
+					"BundleSlots": 5,
+					"Price": {
+						"{{ModPrefix}}AtollaJellyfish:Gold": 1,
+						"{{ModPrefix}}Facelessfish:Gold": 1,
+						"{{ModPrefix}}CosmicJelly:Gold": 1,
+						"{{ModPrefix}}HarpSponge:Gold": 1,
+						"{{ModPrefix}}Hadalfish:Gold": 1
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O){{ModPrefix}}LumiBait": 10
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.FixedFishTank5 received",
+						"GiEX.AddFishTank GiEX_Aquarium 19 23 2400"
+					],
+					"ShopPosition": "22,23",
+					"ShopType": "{{ModId}}.Aquarium",
+					"ShopTexture": "Mods/{{ModId}}/Textures/DeepSeaStatue",
+					"DrawQuestionMark": false,
+					"QuestionMarkOffset": "32, 64"
+				}
+			},
+			"When": {
+				"QuestDifficulty": "hard"
+			}
+		},
+		// Friendable mr qi compat
+		{
+			"LogName": "Bundles - normal",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+			"Entries": {
+				"{{ModId}}.bundle.cooking": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Cooking}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:SecretRecipes}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/CookingBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"873": 1, //piña colada
+						"907": 1, //tropical curry
+						"903": 1, //ginger ale
+						"904": 1, //banana pudding
+						"265": 1, //seafoam pudding
+						"432": 2 //truffle oil
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)917": 10 //qi seasoning
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.cooking.done received",
+						"MarkCookingRecipeKnown All {{ModPrefix}}ShrimpMangoSalad",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutCheesecakeBars",
+						"MarkCookingRecipeKnown All {{ModPrefix}}StardropCake",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutPineappleSpritz",
+						"MarkCookingRecipeKnown All {{ModPrefix}}FriedCoconutShrimp",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SweetSauce",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MagicIceCream",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MangoMilk",
+						"MarkCookingRecipeKnown All {{ModPrefix}}AncientJuice",
+						"MarkCookingRecipeKnown All {{ModPrefix}}AncientCobbler",
+						"MarkCookingRecipeKnown All {{ModPrefix}}PineappleCoconutCake",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SeaPlate",
+						"MarkCookingRecipeKnown All {{ModPrefix}}TilapiaWithMangoSalsa",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutCurryFishStew",
+						"MarkCookingRecipeKnown All {{ModPrefix}}EggRolls",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MushroomPizza",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SalmonWithMangoCitrusSalsa",
+						"MarkCookingRecipeKnown All {{ModPrefix}}OmniBurger"
+					],
+					"ShopPosition": "27,9",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "clubloop/7 4/farmer 0 0 0 AngelOfStars.Mrqifriendable_TheMrQi -10 -10 1/warp farmer -100 -100/changeToTemporaryMap GiEX_Event_QiNutRoom/warp AngelOfStars.Mrqifriendable_TheMrQi 7 4/viewport move 1 0 2500/pause 2000/warp farmer -100 -100/pause 2000/playSound keyboardTyping/pause 500/playSound mouseClick/pause 500/playSound keyboardTyping/pause 200/playSound keyboardTyping/pause 800/playSound jojaOfficeSoundscape/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Cooking_1}}#$b#{{i18n:Event.Bundle.Cooking_2}}\"/pause 1500/playSound achievement/message \"{{i18n:Event.Bundle.Cooking_3}}\"/pause 1200/stopSound jojaOfficeSoundscape/end",
+					"EditMap": "Maps/Patches/GiEX_CookingBundle",
+					"EditMapPosition": "27,7"
+				}
+			},
+			"When": {
+                "HasMod": "AngelOfStars.Mrqifriendable"
+			}
+		},
+		{
+			"LogName": "Bundles - easy",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+			"Entries": {
+				"{{ModId}}.bundle.cooking": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Cooking}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:SecretRecipes}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/CookingBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"873": 1, //piña colada
+						"907": 1, //tropical curry
+						"903": 1, //ginger ale
+						"904": 1 //banana pudding
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)917": 10 //qi seasoning
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.cooking.done received",
+						"MarkCookingRecipeKnown All {{ModPrefix}}ShrimpMangoSalad",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutCheesecakeBars",
+						"MarkCookingRecipeKnown All {{ModPrefix}}StardropCake",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutPineappleSpritz",
+						"MarkCookingRecipeKnown All {{ModPrefix}}FriedCoconutShrimp",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SweetSauce",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MagicIceCream",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MangoMilk",
+						"MarkCookingRecipeKnown All {{ModPrefix}}AncientJuice",
+						"MarkCookingRecipeKnown All {{ModPrefix}}AncientCobbler",
+						"MarkCookingRecipeKnown All {{ModPrefix}}PineappleCoconutCake",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SeaPlate",
+						"MarkCookingRecipeKnown All {{ModPrefix}}TilapiaWithMangoSalsa",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutCurryFishStew",
+						"MarkCookingRecipeKnown All {{ModPrefix}}EggRolls",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MushroomPizza",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SalmonWithMangoCitrusSalsa",
+						"MarkCookingRecipeKnown All {{ModPrefix}}OmniBurger"
+					],
+					"ShopPosition": "27,9",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "clubloop/7 4/farmer 0 0 0 AngelOfStars.Mrqifriendable_TheMrQi -10 -10 1/warp farmer -100 -100/changeToTemporaryMap GiEX_Event_QiNutRoom/warp AngelOfStars.Mrqifriendable_TheMrQi 7 4/viewport move 1 0 2500/pause 2000/warp farmer -100 -100/pause 2000/playSound keyboardTyping/pause 500/playSound mouseClick/pause 500/playSound keyboardTyping/pause 200/playSound keyboardTyping/pause 800/playSound jojaOfficeSoundscape/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Cooking_1}}#$b#{{i18n:Event.Bundle.Cooking_2}}\"/pause 1500/playSound achievement/message \"{{i18n:Event.Bundle.Cooking_3}}\"/pause 1200/stopSound jojaOfficeSoundscape/end",
+					"EditMap": "Maps/Patches/GiEX_CookingBundle",
+					"EditMapPosition": "27,7"
+				}
+			},
+			"When": {
+				"QuestDifficulty": "easy",
+                "HasMod": "AngelOfStars.Mrqifriendable"
+			}
+		},
+		{
+			"LogName": "Bundles - hard",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+			"Entries": {
+				"{{ModId}}.bundle.cooking": {
+					"Location": "GiEX_Temple",
+					"BundleName": "{{i18n: Cooking}}",
+					"BundleDescription": "{{i18n:Reward}}: {{i18n:SecretRecipes}}",
+					"OverviewDescription": "{{i18n: AltarOverviewDescription}}",
+					"BundleIconAsset": "Mods/{{ModId}}/Textures/CookingBundle",
+					"JunimoNoteTexture": "Mods/{{ModId}}/Textures/IslandNote",
+					"BundleSlots": 5,
+					"Price": {
+						"873": 1, //piña colada
+						"907:Gold": 1, //tropical curry
+						"903:Gold": 1, //ginger ale
+						"904:Gold": 1, //banana pudding
+						"265:Gold": 1, //seafoam pudding
+						"432": 2 //truffle oil
+					},
+					"RandomRewardEntries": 1,
+					"BundleReward": {
+						"(O)917": 10 //qi seasoning
+					},
+					"BundleCompletedActions": [
+						"AddMail All GiEXbundle.cooking.done received",
+						"MarkCookingRecipeKnown All {{ModPrefix}}ShrimpMangoSalad",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutCheesecakeBars",
+						"MarkCookingRecipeKnown All {{ModPrefix}}StardropCake",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutPineappleSpritz",
+						"MarkCookingRecipeKnown All {{ModPrefix}}FriedCoconutShrimp",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SweetSauce",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MagicIceCream",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MangoMilk",
+						"MarkCookingRecipeKnown All {{ModPrefix}}AncientJuice",
+						"MarkCookingRecipeKnown All {{ModPrefix}}AncientCobbler",
+						"MarkCookingRecipeKnown All {{ModPrefix}}PineappleCoconutCake",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SeaPlate",
+						"MarkCookingRecipeKnown All {{ModPrefix}}TilapiaWithMangoSalsa",
+						"MarkCookingRecipeKnown All {{ModPrefix}}CoconutCurryFishStew",
+						"MarkCookingRecipeKnown All {{ModPrefix}}EggRolls",
+						"MarkCookingRecipeKnown All {{ModPrefix}}MushroomPizza",
+						"MarkCookingRecipeKnown All {{ModPrefix}}SalmonWithMangoCitrusSalsa",
+						"MarkCookingRecipeKnown All {{ModPrefix}}OmniBurger"
+					],
+					"ShopPosition": "27,9",
+					"ShopType": "{{ModId}}.Custom",
+					"DrawQuestionMark": true,
+					"QuestionMarkOffset": "48, 64",
+					"ShopEvent": "clubloop/7 4/farmer 0 0 0 AngelOfStars.Mrqifriendable_TheMrQi -10 -10 1/warp farmer -100 -100/changeToTemporaryMap GiEX_Event_QiNutRoom/warp AngelOfStars.Mrqifriendable_TheMrQi 7 4/viewport move 1 0 2500/pause 2000/warp farmer -100 -100/pause 2000/playSound keyboardTyping/pause 500/playSound mouseClick/pause 500/playSound keyboardTyping/pause 200/playSound keyboardTyping/pause 800/playSound jojaOfficeSoundscape/speak AngelOfStars.Mrqifriendable_TheMrQi \"{{i18n:Event.Bundle.Cooking_1}}#$b#{{i18n:Event.Bundle.Cooking_2}}\"/pause 1500/playSound achievement/message \"{{i18n:Event.Bundle.Cooking_3}}\"/pause 1200/stopSound jojaOfficeSoundscape/end",
+					"EditMap": "Maps/Patches/GiEX_CookingBundle",
+					"EditMapPosition": "27,7"
+				}
+			},
+			"When": {
+				"QuestDifficulty": "hard",
+                "HasMod": "AngelOfStars.Mrqifriendable"
+			}
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+  "ForceMinBarn": "false",
+  "ForceMinCoop": "false",
+  "ForceMinShed": "false",
+  "ForceMinVanillaBigShed": "false",
+  "EnableBuildingUpgrades": "true"
+}

@@ -1,0 +1,83 @@
+{
+  "Name": "Farmer's Lunch Shirt",
+  "FrontShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 19, 56, 34 ],
+		[ 151, 178, 114 ],
+		[ 189, 219, 140 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 19, 56, 34 ],
+		[ 151, 178, 114 ],
+		[ 189, 219, 140 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 19, 56, 34 ],
+		[ 151, 178, 114 ],
+		[ 189, 219, 140 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 19, 56, 34 ],
+		[ 151, 178, 114 ],
+		[ 189, 219, 140 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

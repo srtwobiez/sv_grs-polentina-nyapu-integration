@@ -1,0 +1,15 @@
+﻿{
+
+  "Name": "Luny's Summer Witch Attire for FS",
+  "Author": "Luny",
+  "Version": "1.0",
+  "UniqueID": "Luny.SummerWitchAttire",
+
+  "UpdateKeys": ["Nexus:37450"],
+
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+	"MinimumVersion": "6.6.0"
+
+   }
+  }

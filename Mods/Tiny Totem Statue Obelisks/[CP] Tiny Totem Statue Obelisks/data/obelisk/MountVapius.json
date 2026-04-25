@@ -1,0 +1,50 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Data Mount Vapius",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "Lumisteria.MtVapius_Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          },
+          "Texture": "Buildings\\Replacement_MountVapius_Obelisk",
+          "Description": "Warps you to Glimsap in Mount Vapius"
+        }
+      }
+    },
+    {
+      "LogName": "JJ Load Mount Vapius",
+      "Action": "Load",
+      "Target": "Buildings/Replacement_MountVapius_Obelisk",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_mount-vapius.png"
+    },
+    {
+      "LogName": "JJ Decorations Mount Vapius Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Replacement_MountVapius_Obelisk",
+      "FromFile": "assets/flowers/mount-vapius_{{MountVapiusFlowerColor}}.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Mount Vapius Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Replacement_MountVapius_Obelisk",
+      "FromFile": "assets/moss/mount-vapius_moss.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

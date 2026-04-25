@@ -1,0 +1,283 @@
+{
+  
+	//"HasMod |contains=Badger.TinyFarmhouse": false,	
+	
+ 
+
+    "Changes": [
+	
+//----------------------------------------Vanilla
+		
+			{	
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"When": {  
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,	
+				"ModEnabled": "true", },
+
+            "AddWarps": [
+                "4 1 FarmHouse 20 34"
+            ]
+        },
+		{	
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse2",
+			"When": {  
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,	
+				"ModEnabled": "true", },
+			"AddWarps": [
+                 "19 35 Cellar 4 3",  "20 35 Cellar 4 3",
+					]
+
+         //"MapTiles": [
+           //     {
+             //       "Position": { "X": 19, "Y": 34 },
+             //       "Layer": "Back",
+              //      "SetProperties": {  "TouchAction": "Warp Cellar 4 3" }
+            //   },
+				// {
+              //      "Position": { "X": 20, "Y": 34 },
+              //      "Layer": "Back",
+              //      "SetProperties": {  "TouchAction": "Warp Cellar 4 3" }
+              //  },
+            //
+        },
+      
+		  
+		{	
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse2_marriage",
+			"When": {  
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,	
+				"ModEnabled": "true", },
+				 "AddWarps": [
+                 "19 35 Cellar 4 3",  "20 35 Cellar 4 3",
+					]
+
+         //"MapTiles": [
+           //     {
+             //       "Position": { "X": 19, "Y": 34 },
+             //       "Layer": "Back",
+              //      "SetProperties": {  "TouchAction": "Warp Cellar 4 3" }
+            //   },
+				// {
+              //      "Position": { "X": 20, "Y": 34 },
+              //      "Layer": "Back",
+              //      "SetProperties": {  "TouchAction": "Warp Cellar 4 3" }
+              //  },
+            //
+        },
+		 
+//----------------------------------------TidyCozyFarmhouse
+		
+
+		
+			{	
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"When": {  
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": true,	
+				"ModEnabled": "true", },
+
+            "AddWarps": [
+                 "17 1 FarmHouse 34 37"
+            ]
+        },
+
+	{	
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse2",
+			"When": {  
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": true,	
+				"ModEnabled": "true", },
+				
+				   "AddWarps": [
+                 "34 39 Cellar 17 3",
+				   "35 39 Cellar 17 3"
+            ],
+
+         "MapTiles": [
+                {
+                    "Position": { "X": 34, "Y": 39 },
+                    "Layer": "Back",
+                    "SetProperties": {  "TouchAction": "Warp Cellar 17 3" }
+                },
+				 {
+                    "Position": { "X": 35, "Y": 39 },
+                    "Layer": "Back",
+                    "SetProperties": {  "TouchAction": "Warp Cellar 17 3" }
+                },
+            ]
+        },
+		  
+
+	{	
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse2_marriage",
+			"When": {  
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": true,	
+				
+				"ModEnabled": "true", },
+				
+				   "AddWarps": [
+                 "34 39 Cellar 17 3",
+				   "35 39 Cellar 17 3"
+            ],
+
+         "MapTiles": [
+                {
+                    "Position": { "X": 34, "Y": 38 },
+                    "Layer": "Back",
+                    "SetProperties": {  "TouchAction": "Warp Cellar 17 3" }
+                },
+				 {
+                    "Position": { "X": 35, "Y": 38 },
+                    "Layer": "Back",
+                    "SetProperties": {  "TouchAction": "Warp Cellar 17 3" }
+                },
+            ]
+        },
+
+//----------------------------------------		
+
+
+
+//----------------------------------------FancyFarmhouse
+		
+
+		
+			{	
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"When": {  
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": true,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,	
+				"ModEnabled": "true", },
+
+            "AddWarps": [
+                "17 1 FarmHouse 38 35"
+            ]
+        },
+
+	{	
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse2",
+			"When": {  
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": true,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,	
+				"ModEnabled": "true", },
+				
+				
+				   "AddWarps": [
+                 "38 37 Cellar 17 3",
+				   "39 37 Cellar 17 3"
+            ],
+
+      
+        },
+		  
+
+	{	
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse2_marriage",
+			"When": {  
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": true,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,	
+				"ModEnabled": "true", },
+	    "AddWarps": [
+                 "38 37 Cellar 17 3",
+				   "39 37 Cellar 17 3"
+            ],
+
+       
+        },
+		  
+//----------------------------------------		
+
+
+
+//----------------------------------------RedesignedFarmhouse
+
+		{	
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"When": {  
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": true,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,	
+				"ModEnabled": "true", },
+
+            "AddWarps": [
+                "17 1 FarmHouse 34 50"
+            ]
+        },
+
+	{	
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse2",
+			"When": {  
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": true,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,	
+				"ModEnabled": "true", },
+
+         "MapTiles": [
+                {
+                    "Position": { "X": 35, "Y": 51 },
+                    "Layer": "Back",
+                    "SetProperties": {  "TouchAction": "Warp Cellar 17 3" }
+                },
+				 {
+                    "Position": { "X": 35, "Y": 51 },
+                    "Layer": "Back",
+                    "SetProperties": {  "TouchAction": "Warp Cellar 17 3" }
+                },
+            ]
+        },
+		  
+
+	{	
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse2_marriage",
+			"When": {  
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": true,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,	
+				"ModEnabled": "true", },
+
+         "MapTiles": [
+               {
+                     "Position": { "X": 35, "Y": 51 },
+                    "Layer": "Back",
+                    "SetProperties": {  "TouchAction": "Warp Cellar 17 3" }
+                },
+				 {
+                    "Position": { "X": 35, "Y": 51 },
+                    "Layer": "Back",
+                    "SetProperties": {  "TouchAction": "Warp Cellar 17 3" }
+                },
+            ]
+        },
+
+
+
+
+
+	]
+}
+	

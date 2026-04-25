@@ -1,0 +1,60 @@
+{
+  "Format": "2.8.1",
+  "ConfigSchema": {
+    "MapStyle": {
+      "AllowValues": "Normal, Clean",
+      "Default": "Normal",
+      "Name": "{{i18n:config.MapStyle.name}}",
+      "Description": "{{i18n:config.MapStyle.description}}",
+      "Section": "Solarium"
+    },
+    "HatchStyle": {
+      "AllowValues": "Ladder, Lift",
+      "Default": "Ladder",
+      "Name": "{{i18n:config.HatchStyle.name}}",
+      "Description": "{{i18n:config.HatchStyle.description}}",
+      "Section": "Solarium"
+    },
+    "UnlockPath": {
+      "AllowValues": "SpecialOrder, CCOrJoja, FriendshipOnly",
+      "Default": "SpecialOrder",
+      "Name": "{{i18n:config.UnlockPath.name}}",
+      "Description": "{{i18n:config.UnlockPath.description}}",
+      "Section": "Solarium"
+    },
+    "AdjustLinussSchedule": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.AdjustLinussSchedule.name}}",
+      "Description": "{{i18n:config.AdjustLinussSchedule.description}}",
+      "Section": "Schedules"
+    },
+    "AdjustCarolineSchedule": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.AdjustCarolineSchedule.name}}",
+      "Description": "{{i18n:config.AdjustCarolineSchedule.description}}",
+      "Section": "Schedules"
+    }
+  },
+  "DynamicTokens": [
+    {"Name": "CarolineMagazine2Key", "Value": "Events.CarolineMagazine.2"},
+    {"Name": "CarolineMagazine2Key", "Value": "Events.CarolineMagazine.2.Piper", "When": {"HasMod": "Heliax.PiperAPierreRewrite"}},
+    {"Name": "CarolineMagazine3Key", "Value": "Events.CarolineMagazine.3"},
+    {"Name": "CarolineMagazine3Key", "Value": "Events.CarolineMagazine.3.Piper", "When": {"HasMod": "Heliax.PiperAPierreRewrite"}},
+    {"Name": "PierresCatalogueKey", "Value": "Shop.PierresCatalogue"},
+    {"Name": "PierresCatalogueKey", "Value": "Shop.PierresCatalogue.Piper", "When": {"HasMod": "Heliax.PiperAPierreRewrite"}}
+  ],
+  "Changes": [
+    {"LogName": "JJ Include Maps","Action": "Include","FromFile": "data/Maps.json"},
+    {"LogName": "JJ Include Shops","Action": "Include","FromFile": "data/Shops.json"},
+    {"LogName": "JJ Include Strings","Action": "Include","FromFile": "data/Strings.json"},
+    {"LogName": "JJ Include Game Data","Action": "Include","FromFile": "data/GameData.json"},
+    {"LogName": "JJ Include Events","Action": "Include","FromFile": "data/Events.json"},
+    {"LogName": "JJ Include Dialogue","Action": "Include","FromFile": "data/Dialogue.json"},
+    {"LogName": "JJ Include Powers","Action": "Include","FromFile": "data/Powers.json"},
+    {"LogName": "JJ Include Special Orders","Action": "Include","FromFile": "data/SpecialOrders.json"},
+    {"LogName": "JJ Include Mail","Action": "Include","FromFile": "data/Mail.json"},
+    {"LogName": "JJ Include Compatibility","Action": "Include","FromFile": "data/Compatibility.json"}
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "Changes": [
+    // ===== MONSTER VARIETY (MUSHYMATO.MONSTERVARIETY) =====
+    // Load textures and EditData when Monster Variety is installed. Default variety fallback is in EditData.
+
+    // ===== GREEN SLIME (MV) =====
+    {
+      "LogName": "JJ MV Load Green Slime",
+      "Action": "Load",
+      "Target": "{{ModId}}_Green Slime/texture_0, {{ModId}}_Green Slime/texture_1",
+      "FromFile": "assets/{{Mode}}/GreenSlime/{{TargetWithoutPath}}.png",
+      "When": {
+        "HasFile:assets/{{Mode}}/GreenSlime/texture_0.png": true
+      }
+    },
+
+    // ===== GREEN SLIME DANGEROUS (MV) =====
+    {
+      "LogName": "JJ MV Load Green Slime Dangerous",
+      "Action": "Load",
+      "Target": "{{ModId}}_Green Slime_dangerous/texture_0, {{ModId}}_Green Slime_dangerous/texture_3",
+      "FromFile": "assets/{{Mode}}/GreenSlime_dangerous/{{TargetWithoutPath}}.png",
+      "When": {
+        "HasFile:assets/{{Mode}}/GreenSlime_dangerous/texture_0.png": true
+      }
+    },
+
+    // ===== BIG SLIME (MV) =====
+    {
+      "LogName": "JJ MV Load Big Slime",
+      "Action": "Load",
+      "Target": "{{ModId}}_Big Slime/texture_0",
+      "FromFile": "assets/{{Mode}}/BigSlime/texture_0.png",
+      "When": {
+        "HasFile:assets/{{Mode}}/BigSlime/texture_0.png": true
+      }
+    },
+
+    // ===== TIGER SLIME (MV) =====
+    {
+      "LogName": "JJ MV Load Tiger Slime",
+      "Action": "Load",
+      "Target": "{{ModId}}_Tiger Slime/texture_0, {{ModId}}_Tiger Slime/texture_1",
+      "FromFile": "assets/{{Mode}}/TigerSlime/{{TargetWithoutPath}}.png",
+      "When": {
+        "HasFile:assets/{{Mode}}/TigerSlime/texture_0.png": true
+      }
+    },
+
+    // ===== MONSTER VARIETY DATA =====
+    // Register slime varieties with Monster Variety so textures apply.
+    {
+      "LogName": "JJ MV EditData",
+      "Action": "EditData",
+      "Target": "mushymato.MonsterVariety/Data",
+      "Entries": {
+        "{{ModId}}_Green Slime": {
+          "Id": "{{ModId}}_Green Slime",
+          "MonsterName": "Green Slime",
+          "Varieties": {
+            "{{ModId}}_Green Slime/texture_0": {"Sprite": "{{ModId}}_Green Slime/texture_0", "AlwaysOverride": true},
+            "{{ModId}}_Green Slime/texture_1": {"Sprite": "{{ModId}}_Green Slime/texture_1", "AlwaysOverride": true},
+            "Default": {"Sprite": "Characters/Monsters/Green Slime"}
+          },
+          "DangerousVarieties": {
+            "{{ModId}}_Green Slime_dangerous/texture_0": {"Sprite": "{{ModId}}_Green Slime_dangerous/texture_0", "AlwaysOverride": true},
+            "{{ModId}}_Green Slime_dangerous/texture_3": {"Sprite": "{{ModId}}_Green Slime_dangerous/texture_3", "AlwaysOverride": true},
+            "Default": {"Sprite": "Characters/Monsters/Green Slime_dangerous"}
+          }
+        },
+        "{{ModId}}_Big Slime": {
+          "Id": "{{ModId}}_Big Slime",
+          "MonsterName": "Big Slime",
+          "Varieties": {
+            "{{ModId}}_Big Slime/texture_0": {"Sprite": "{{ModId}}_Big Slime/texture_0", "AlwaysOverride": true},
+            "Default": {"Sprite": "Characters/Monsters/Big Slime"}
+          }
+        },
+        "{{ModId}}_Tiger Slime": {
+          "Id": "{{ModId}}_Tiger Slime",
+          "MonsterName": "Tiger Slime",
+          "Varieties": {
+            "{{ModId}}_Tiger Slime/texture_0": {"Sprite": "{{ModId}}_Tiger Slime/texture_0", "AlwaysOverride": true},
+            "{{ModId}}_Tiger Slime/texture_1": {"Sprite": "{{ModId}}_Tiger Slime/texture_1", "AlwaysOverride": true},
+            "Default": {"Sprite": "Characters/Monsters/Tiger Slime"}
+          }
+        }
+      }
+    }
+  ]
+}

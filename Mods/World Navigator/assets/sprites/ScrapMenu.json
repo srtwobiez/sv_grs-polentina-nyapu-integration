@@ -1,0 +1,13 @@
+{
+    "Sprites": {
+        "Blank": {
+            "SourceRect": "0, 0, 32, 32"
+        },
+        "Writing": {
+            "SourceRect": "32, 0, 32, 32"
+        },
+        "Quill": {
+            "SourceRect": "64, 0, 32, 32"
+        }
+    }
+}

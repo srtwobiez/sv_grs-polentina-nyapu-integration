@@ -1,0 +1,136 @@
+{
+	"Changes":[	
+		{
+			"LogName": "Kel Event",
+			"Action": "EditData",
+			"Priority": "Late + 50",
+			"Target": "Data/Events/Forest",
+			"Fields": {
+				"54/f Leah 2500/t 1100 1600/z winter/w sunny": {
+					33: "changeName LeahEx [LocalizedText Strings\\DolphINaF.ExtraPortraits:Name.LeahEx]",
+					94: "speak LeahEx \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.Kel.01]$1\"",
+					96: "speak LeahEx \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.Kel.02]\"",
+					97: "speak LeahEx \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.Kel.03]\"",
+					103: "speak LeahEx \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.Kel.04]$1\"",
+				},
+			},
+			"When": {
+				"HasMod |contains=Spiderbuttons.CMCT": true,
+				"Spiderbuttons.CMCT/Config: Cherry.PlatonicRelationships, AddDatingRequirementToRomanticEvents": false
+				}
+		},	
+		{
+			"LogName": "MarILDA Event",
+			"Action": "EditData",
+			"Priority": "Late + 50",
+			"Target": "Data/Events/ScienceHouse",
+			"Fields": {
+				"10/f Maru 2500/t 900 1600": {
+					68: "changeName robot [LocalizedText Strings\\DolphINaF.ExtraPortraits:Name.robot]",
+					101: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.01]\"",
+					103: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.02]\"",
+					130: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.03]\"",
+					160: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.04]\"",
+					163: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.05]\"",
+					167: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.06]\"",
+					169: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.07]\"",
+					216: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.08]\"",
+				}
+			},
+			"When": {
+				"HasMod |contains=Spiderbuttons.CMCT": true,
+				"Spiderbuttons.CMCT/Config: Cherry.PlatonicRelationships, AddDatingRequirementToRomanticEvents": false
+			}
+		},	
+		{
+			"LogName": "Kel Event",
+			"Action": "EditData",
+			"Priority": "Late + 50",
+			"Target": "Data/Events/Forest",
+			"Fields": {
+				"54/D Leah/f Leah 2500/t 1100 1600/z winter/w sunny": {
+					33: "changeName LeahEx [LocalizedText Strings\\DolphINaF.ExtraPortraits:Name.LeahEx]",
+					94: "speak LeahEx \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.Kel.01]$1\"",
+					96: "speak LeahEx \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.Kel.02]\"",
+					97: "speak LeahEx \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.Kel.03]\"",
+					103: "speak LeahEx \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.Kel.04]$1\"",
+				},
+			},
+			"When": {
+				"HasMod |contains=Spiderbuttons.CMCT": true,
+				"Spiderbuttons.CMCT/Config: Cherry.PlatonicRelationships, AddDatingRequirementToRomanticEvents": true,
+				"HasMod |contains=PPAF.Core": false,
+			}
+		},
+		{
+			"LogName": "MarILDA Event",
+			"Action": "EditData",
+			"Priority": "Late + 50",
+			"Target": "Data/Events/ScienceHouse",
+			"Fields": {
+				"10/D Maru/f Maru 2500/t 900 1600": {
+					68: "changeName robot [LocalizedText Strings\\DolphINaF.ExtraPortraits:Name.robot]",
+					101: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.01]\"",
+					103: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.02]\"",
+					130: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.03]\"",
+					160: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.04]\"",
+					163: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.05]\"",
+					167: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.06]\"",
+					169: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.07]\"",
+					216: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.08]\"",
+				}
+			},
+			"When": {
+				"HasMod |contains=Spiderbuttons.CMCT": true,
+				"Spiderbuttons.CMCT/Config: Cherry.PlatonicRelationships, AddDatingRequirementToRomanticEvents": true,
+				"HasMod |contains=PPAF.Core": false,
+			}
+		},	
+		{
+			"LogName": "Kel Event",
+			"Action": "EditData",
+			"Priority": "Late + 50",
+			"Target": "Data/Events/Forest",
+			"Fields": {
+				"54/D Leah/f Leah 2500/t 1100 1600/z winter/w sunny": {
+					33: "changeName LeahEx [LocalizedText Strings\\DolphINaF.ExtraPortraits:Name.LeahEx]",
+					94: "speak LeahEx \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.Kel.01]$1\"",
+					96: "speak LeahEx \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.Kel.02]\"",
+					97: "speak LeahEx \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.Kel.03]\"",
+					103: "speak LeahEx \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.Kel.04]$1\"",
+				},
+			},
+			"When": {
+				"HasMod |contains=Spiderbuttons.CMCT": true,
+				"Spiderbuttons.CMCT/Config: Cherry.PlatonicRelationships, AddDatingRequirementToRomanticEvents": true,
+				"HasMod |contains=PPAF.Core": true,
+				"PPAF.Core/ConfigValue:LeahRelationshipType |contains= FullyPlatonic, SexWithoutRomance": false
+			}
+		},
+		{
+			"LogName": "MarILDA Event",
+			"Action": "EditData",
+			"Priority": "Late + 50",
+			"Target": "Data/Events/ScienceHouse",
+			"Fields": {
+				"10/D Maru/f Maru 2500/t 900 1600": {
+					68: "changeName robot [LocalizedText Strings\\DolphINaF.ExtraPortraits:Name.robot]",
+					101: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.01]\"",
+					103: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.02]\"",
+					130: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.03]\"",
+					160: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.04]\"",
+					163: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.05]\"",
+					167: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.06]\"",
+					169: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.07]\"",
+					216: "speak robot \"[LocalizedText Strings\\DolphINaF.ExtraPortraits:Event.MarILDA.08]\"",
+				}
+			},
+			"When": {
+				"HasMod |contains=Spiderbuttons.CMCT": true,
+				"Spiderbuttons.CMCT/Config: Cherry.PlatonicRelationships, AddDatingRequirementToRomanticEvents": true,
+				"HasMod |contains=PPAF.Core": true,
+				"PPAF.Core/ConfigValue:LeahRelationshipType |contains= FullyPlatonic, SexWithoutRomance": false
+			}
+		},		
+	],
+}

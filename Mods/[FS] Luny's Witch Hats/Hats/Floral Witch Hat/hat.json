@@ -1,0 +1,142 @@
+{
+  "Name": "Luny's Floral Witch Hat",
+  "FrontHat": {
+        "ColorMaskLayers": [
+      {
+        "Name": "Hat Color",
+        "Values": [
+                      [ 66, 66, 66 ],
+                      [ 109, 109, 109 ],
+                      [ 141, 141, 141 ],
+                      [ 176, 176, 176 ],
+                      [ 217, 217, 217 ],
+                      [ 240, 240, 240 ]
+        ]
+      },
+    {
+        "Name": "Flower Color",
+        "Values": [
+	  [ 243, 243, 243 ],
+	  [ 200, 200, 200 ]
+        ]
+      }
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 22,
+      "Length": 20
+    }
+  },
+  "RightHat": {
+    "HideHair": false,
+        "ColorMaskLayers": [
+      {
+        "Name": "Hat Color",
+        "Values": [
+                      [ 62, 62, 62 ],
+                      [ 109, 109, 109 ],
+                      [ 141, 141, 141 ],
+                      [ 176, 176, 176 ],
+                      [ 217, 217, 217 ],
+                      [ 240, 240, 240 ]
+        ]
+      },
+    {
+        "Name": "Flower Color",
+        "Values": [
+	  [ 243, 243, 243 ],
+	  [ 200, 200, 200 ]
+        ]
+      }
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 20
+    },
+    "HeadPosition": {
+      "X": 2,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 22,
+      "Length": 20
+    }
+  },
+   "LeftHat": {
+    "HideHair": false,
+        "ColorMaskLayers": [
+      {
+        "Name": "Hat Color",
+        "Values": [
+                      [ 62, 62, 62 ],
+                      [ 109, 109, 109 ],
+                      [ 141, 141, 141 ],
+                      [ 176, 176, 176 ],
+                      [ 217, 217, 217 ],
+                      [ 240, 240, 240 ]
+        ]
+      },
+    {
+        "Name": "Flower Color",
+        "Values": [
+	  [ 243, 243, 243 ],
+	  [ 200, 200, 200 ]
+        ]
+      }
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 40
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 22,
+      "Length": 20
+    }
+  },
+  "BackHat": {
+    "HideHair": false,
+        "ColorMaskLayers": [
+      {
+        "Name": "Hat Color",
+        "Values": [
+                      [ 62, 62, 62 ],
+                      [ 109, 109, 109 ],
+                      [ 141, 141, 141 ],
+                      [ 176, 176, 176 ],
+                      [ 217, 217, 217 ],
+                      [ 240, 240, 240 ]
+        ]
+      },
+    {
+        "Name": "Flower Color",
+        "Values": [
+	  [ 243, 243, 243 ],
+	  [ 200, 200, 200 ]
+        ]
+      }
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 60
+    },
+    "HeadPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 22,
+      "Length": 20
+    }
+  }
+}

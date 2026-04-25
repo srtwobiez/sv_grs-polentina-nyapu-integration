@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.0" orientation="orthogonal" renderorder="right-down" width="1" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="18">
+ <properties>
+  <property name="LocationContext" value="Island"/>
+  <property name="Music" value="moonlightJellies"/>
+  <property name="NPCWarp" value="5 10 GiEX_SouthWest 21 17"/>
+  <property name="SeasonOverride" value="summer"/>
+  <property name="Warp" value="5 10 GiEX_SouthWest 21 17"/>
+ </properties>
+ <tileset firstgid="1" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="z_springobjects" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="springobjects.png" width="384" height="624"/>
+ </tileset>
+ <tileset firstgid="1001" name="z_leohut" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Island_Hut_tilesheet.png" width="256" height="288"/>
+ </tileset>
+ <layer id="1" name="Back" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJybxMLAAAACWACX
+  </data>
+ </layer>
+ <layer id="3" name="Buildings" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxbzsDAAAACoACo
+  </data>
+ </layer>
+ <layer id="5" name="Front" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgAAAABAAB
+  </data>
+ </layer>
+ <layer id="9" name="AlwaysFront" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgAAAABAAB
+  </data>
+ </layer>
+ <layer id="7" name="Paths" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgAAAABAAB
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <objectgroup id="4" name="Buildings">
+  <object id="17" name="TileData" x="0" y="0" width="16" height="16">
+   <properties>
+    <property name="Action" value="GiEX.Journal"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+</map>

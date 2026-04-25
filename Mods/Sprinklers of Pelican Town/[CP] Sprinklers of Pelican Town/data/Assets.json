@@ -1,0 +1,160 @@
+{
+  // ===== VISUAL ASSETS MODULE =====
+  "Changes": [
+    // ===== VISUAL ASSETS - SPRINKLER SPRITES =====
+    {
+      "LogName": "JJ Basic Sprinkler Visual Assets",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/spritesheets/{{BasicSprinklerStyle}}.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 368, "Y": 384, "Width": 16, "Height": 16 },
+      "When": { "BasicSprinklerStyle": "aged, ancient, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip" }
+    },
+    {
+      "LogName": "JJ Quality Sprinkler Visual Assets",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/spritesheets/{{QualitySprinklerStyle}}.png",
+      "FromArea": { "X": 16, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 336, "Y": 400, "Width": 16, "Height": 16 },
+      "When": { "QualitySprinklerStyle": "aged, ancient, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip" }
+    },
+    {
+      "LogName": "JJ Iridium Sprinkler Visual Assets",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/spritesheets/{{IridiumSprinklerStyle}}.png",
+      "FromArea": { "X": 32, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 336, "Y": 416, "Width": 16, "Height": 16 },
+      "When": { "IridiumSprinklerStyle": "aged, ancient, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip" }
+    },
+    // ===== VISUAL ASSETS - SPRINKLER ACCESSORIES =====
+    {
+      "LogName": "JJ Pressure Nozzle Menu Item Visual Assets",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/spritesheets/{{PressureNozzleStyle}}.png",
+      "FromArea": { "X": 64, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 48, "Y": 608, "Width": 16, "Height": 16 },
+      "When": { "PressureNozzleStyle": "aged, ancient, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip" }
+    },
+    {
+      "LogName": "JJ Pressure Nozzle Visual Assets",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/spritesheets/{{PressureNozzleStyle}}.png",
+      "FromArea": { "X": 48, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 64, "Y": 608, "Width": 16, "Height": 16 },
+      "When": { "PressureNozzleStyle": "aged, ancient, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip" }
+    },
+    {
+      "LogName": "JJ Enricher Menu Item Visual Assets",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/spritesheets/{{EnricherStyle}}.png",
+      "FromArea": { "X": 80, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 16, "Y": 608, "Width": 16, "Height": 16 },
+      "When": { "EnricherStyle": "aged, ancient, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip" }
+    },
+    {
+      "LogName": "JJ Enricher Visual Assets",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/spritesheets/{{EnricherStyle}}.png",
+      "FromArea": { "X": 80, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 32, "Y": 608, "Width": 16, "Height": 16 },
+      "When": { "EnricherStyle": "aged, ancient, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip" }
+    },
+    // ===== VISUAL ASSETS - DECORATIVE OVERLAYS =====
+    {
+      "LogName": "JJ Quality Sprinkler Ends Overlay",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/spritesheets/{{QualitySprinklerDecoStyle}}.png",
+      "FromArea": { "X": 112, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 336, "Y": 400, "Width": 16, "Height": 16 },
+      "PatchMode": "Overlay",
+      "When": { "QualitySprinklerDecoStyle": "aged, ancient, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip" }
+    },
+    {
+      "LogName": "JJ Iridium Sprinkler Ends Overlay",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/spritesheets/{{IridiumSprinklerDecoStyle}}.png",
+      "FromArea": { "X": 0, "Y": 16, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 336, "Y": 416, "Width": 16, "Height": 16 },
+      "PatchMode": "Overlay",
+      "When": { "IridiumSprinklerDecoStyle": "aged, ancient, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip" }
+    },
+    {
+      "LogName": "JJ Enricher Base Overlay",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/spritesheets/{{EnricherDecoStyle}}.png",
+      "FromArea": { "X": 96, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 32, "Y": 608, "Width": 16, "Height": 16 },
+      "PatchMode": "Overlay",
+      "When": { "EnricherDecoStyle": "aged, ancient, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip" }
+    },
+    {
+      "LogName": "JJ Enricher Item Base Overlay",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/spritesheets/{{EnricherDecoStyle}}.png",
+      "FromArea": { "X": 96, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 16, "Y": 608, "Width": 16, "Height": 16 },
+      "PatchMode": "Overlay",
+      "When": { "EnricherDecoStyle": "aged, ancient, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip" }
+    },
+    // ===== VISUAL ASSETS - SEASONAL OVERLAYS =====
+    {
+      "LogName": "JJ Basic Sprinkler Winter Overlay",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/winter/basic_sprinkler_overlay.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 368, "Y": 384, "Width": 16, "Height": 16 },
+      "PatchMode": "Overlay",
+      "Priority": "Default + 1",
+      "Update": "OnLocationChange",
+      "When": {
+        "EnableWinterSnowOverlays": "true",
+        "Season": "winter",
+        "IsOutdoors": "true"
+      }
+    },
+    {
+      "LogName": "JJ Quality Sprinkler Winter Overlay",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/winter/quality_sprinkler_overlay.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 336, "Y": 400, "Width": 16, "Height": 16 },
+      "PatchMode": "Overlay",
+      "Priority": "Default + 1",
+      "Update": "OnLocationChange",
+      "When": {
+        "EnableWinterSnowOverlays": "true",
+        "Season": "winter",
+        "IsOutdoors": "true"
+      }
+    },
+    {
+      "LogName": "JJ Iridium Sprinkler Winter Overlay",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/winter/iridium_sprinkler_overlay.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 336, "Y": 416, "Width": 16, "Height": 16 },
+      "PatchMode": "Overlay",
+      "Priority": "Default + 1",
+      "Update": "OnLocationChange",
+      "When": {
+        "EnableWinterSnowOverlays": "true",
+        "Season": "winter",
+        "IsOutdoors": "true"
+      }
+    }
+  ]
+}

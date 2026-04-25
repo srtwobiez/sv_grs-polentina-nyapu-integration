@@ -1,0 +1,61 @@
+{
+
+"Name": "Mysterious Witch Hat M",
+
+"FrontHat": {
+	"StartingPosition": {
+	"X": 0,
+	"Y": 0
+   	 },
+	"HeadPosition": {
+	"X": 0,
+	"Y": 0
+	},
+	"HatSize": {
+	"Width": 20,
+	"Length": 36
+	}
+	},
+"RightHat": {
+	"StartingPosition": {
+	"X": 0,
+	"Y": 36
+	},
+	"HeadPosition": {
+	"X": 2,
+	"Y": 0
+	},
+	"HatSize": {
+	"Width": 20,
+	"Length": 36
+	}
+	},
+"LeftHat": {
+	"StartingPosition": {
+	"X": 0,
+	"Y": 72
+	},
+	"HeadPosition": {
+	"X": -2,
+	"Y": 0
+	},
+	"HatSize": {
+	"Width": 20,
+	"Length": 36
+	}
+	},
+"BackHat": {
+	"StartingPosition": {
+	"X": 0,
+	"Y": 108
+	},
+	"HeadPosition": {
+	"X": 0,
+	"Y": 0
+	},
+	"HatSize": {
+	"Width": 20,
+	"Length": 36
+	}
+	}
+}

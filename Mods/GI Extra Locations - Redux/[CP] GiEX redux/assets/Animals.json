@@ -1,0 +1,2203 @@
+{
+    "Changes": [
+        /* Transformation data */
+        //goat
+        {
+            "LogName": "Add goat variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Goat": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenGoat",
+                    "Voided": "mistyspring.GiEXredux_VoidGoat"
+                },
+                "mistyspring.GiEXredux_GoldenGoat": {
+                    "Purified": "Goat",
+                    "Voided": "mistyspring.GiEXredux_VoidGoat"
+                },
+                "mistyspring.GiEXredux_VoidGoat": {
+                    "Purified": "Goat",
+                    "Gilded": "mistyspring.GiEXredux_GoldenGoat"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidGoat": true,
+                "mistyspring.GiEXredux.code/GoldenGoat": true
+            }
+        },
+        {
+            "LogName": "Add goat variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Goat": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenGoat"
+                },
+                "mistyspring.GiEXredux_GoldenGoat": {
+                    "Purified": "Goat"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidGoat": false,
+                "mistyspring.GiEXredux.code/GoldenGoat": true
+            }
+        },
+        {
+            "LogName": "Add goat variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Goat": {
+                    "Voided": "mistyspring.GiEXredux_VoidGoat"
+                },
+                "mistyspring.GiEXredux_VoidGoat": {
+                    "Purified": "Goat"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidGoat": true,
+                "mistyspring.GiEXredux.code/GoldenGoat": false
+            }
+        },
+        //duck
+        {
+            "LogName": "Add Duck variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Duck": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenDuck",
+                    "Voided": "mistyspring.GiEXredux_VoidDuck"
+                },
+                "mistyspring.GiEXredux_GoldenDuck": {
+                    "Purified": "Duck",
+                    "Voided": "mistyspring.GiEXredux_VoidDuck"
+                },
+                "mistyspring.GiEXredux_VoidDuck": {
+                    "Purified": "Duck",
+                    "Gilded": "mistyspring.GiEXredux_GoldenDuck"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidDuck": true,
+                "mistyspring.GiEXredux.code/GoldenDuck": true
+            }
+        },
+        {
+            "LogName": "Add Duck variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Duck": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenDuck"
+                },
+                "mistyspring.GiEXredux_GoldenDuck": {
+                    "Purified": "Duck"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidDuck": false,
+                "mistyspring.GiEXredux.code/GoldenDuck": true
+            }
+        },
+        {
+            "LogName": "Add Duck variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Duck": {
+                    "Voided": "mistyspring.GiEXredux_VoidDuck"
+                },
+                "mistyspring.GiEXredux_VoidDuck": {
+                    "Purified": "Duck"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidDuck": true,
+                "mistyspring.GiEXredux.code/GoldenDuck": false
+            }
+        },
+        //rabbit
+        {
+            "LogName": "Add rabbit variant",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Rabbit": {
+                    "Voided": "mistyspring.GiEXredux_VoidRabbit"
+                },
+                "mistyspring.GiEXredux_VoidRabbit": {
+                    "Purified": "Rabbit"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidRabbit": true
+            }
+        },
+        //dinosaur
+        {
+            "LogName": "Add dinosaur variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Dinosaur": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenDinosaur",
+                    "Voided": "mistyspring.GiEXredux_VoidDinosaur"
+                },
+                "mistyspring.GiEXredux_GoldenDinosaur": {
+                    "Purified": "Dinosaur",
+                    "Voided": "mistyspring.GiEXredux_VoidDinosaur"
+                },
+                "mistyspring.GiEXredux_VoidDinosaur": {
+                    "Purified": "Dinosaur",
+                    "Gilded": "mistyspring.GiEXredux_GoldenDinosaur"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenDinosaur": true,
+                "mistyspring.GiEXredux.code/VoidDinosaur": true
+            }
+        },
+        {
+            "LogName": "Add dinosaur variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Dinosaur": {
+                    "Voided": "mistyspring.GiEXredux_VoidDinosaur"
+                },
+                "mistyspring.GiEXredux_VoidDinosaur": {
+                    "Purified": "Dinosaur"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenDinosaur": false,
+                "mistyspring.GiEXredux.code/VoidDinosaur": true
+            }
+        },
+        {
+            "LogName": "Add dinosaur variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Dinosaur": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenDinosaur"
+                },
+                "mistyspring.GiEXredux_GoldenDinosaur": {
+                    "Purified": "Dinosaur"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenDinosaur": true,
+                "mistyspring.GiEXredux.code/VoidDinosaur": false
+            }
+        },
+        //cow
+        {
+            "LogName": "Add cow variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "White Cow": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenWhiteCow",
+                    "Voided": "mistyspring.GiEXredux_VoidWhiteCow"
+                },
+                "Brown Cow": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenBrownCow",
+                    "Voided": "mistyspring.GiEXredux_VoidBrownCow"
+                },
+                "mistyspring.GiEXredux_GoldenBrownCow": {
+                    "Purified": "White Cow",
+                    "Voided": "mistyspring.GiEXredux_VoidBrownCow"
+                },
+                "mistyspring.GiEXredux_GoldenWhiteCow": {
+                    "Purified": "White Cow",
+                    "Voided": "mistyspring.GiEXredux_VoidWhiteCow"
+                },
+                "mistyspring.GiEXredux_VoidBrownCow": {
+                    "Purified": "Brown Cow",
+                    "Gilded": "mistyspring.GiEXredux_GoldenBrownCow"
+                },
+                "mistyspring.GiEXredux_VoidWhiteCow": {
+                    "Purified": "White Cow",
+                    "Gilded": "mistyspring.GiEXredux_GoldenWhiteCow"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenCow": true,
+                "mistyspring.GiEXredux.code/VoidCow": true
+            }
+        },
+        {
+            "LogName": "Add cow variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "White Cow": {
+                    "Voided": "mistyspring.GiEXredux_VoidWhiteCow"
+                },
+                "Brown Cow": {
+                    "Voided": "mistyspring.GiEXredux_VoidBrownCow"
+                },
+                "mistyspring.GiEXredux_VoidBrownCow": {
+                    "Purified": "Brown Cow"
+                },
+                "mistyspring.GiEXredux_VoidWhiteCow": {
+                    "Purified": "White Cow"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenCow": false,
+                "mistyspring.GiEXredux.code/VoidCow": true
+            }
+        },
+        {
+            "LogName": "Add cow variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "White Cow": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenWhiteCow"
+                },
+                "Brown Cow": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenBrownCow"
+                },
+                "mistyspring.GiEXredux_GoldenBrownCow": {
+                    "Purified": "White Cow"
+                },
+                "mistyspring.GiEXredux_GoldenWhiteCow": {
+                    "Purified": "White Cow"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenCow": true,
+                "mistyspring.GiEXredux.code/VoidCow": false
+            }
+        },
+        //goat
+        {
+            "LogName": "Add goat variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Goat": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenGoat",
+                    "Voided": "mistyspring.GiEXredux_VoidGoat"
+                },
+                "mistyspring.GiEXredux_GoldenGoat": {
+                    "Purified": "Goat",
+                    "Voided": "mistyspring.GiEXredux_VoidGoat"
+                },
+                "mistyspring.GiEXredux_VoidGoat": {
+                    "Purified": "Goat",
+                    "Gilded": "mistyspring.GiEXredux_GoldenGoat"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenGoat": true,
+                "mistyspring.GiEXredux.code/VoidGoat": true
+            }
+        },
+        {
+            "LogName": "Add goat variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Goat": {
+                    "Voided": "mistyspring.GiEXredux_VoidGoat"
+                },
+                "mistyspring.GiEXredux_VoidGoat": {
+                    "Purified": "Goat"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenGoat": false,
+                "mistyspring.GiEXredux.code/VoidGoat": true
+            }
+        },
+        {
+            "LogName": "Add goat variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Goat": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenGoat"
+                },
+                "mistyspring.GiEXredux_GoldenGoat": {
+                    "Purified": "Goat"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenGoat": true,
+                "mistyspring.GiEXredux.code/VoidGoat": false
+            }
+        },
+        //sheep
+        {
+            "LogName": "Add Sheep variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Sheep": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenSheep",
+                    "Voided": "mistyspring.GiEXredux_VoidSheep"
+                },
+                "mistyspring.GiEXredux_GoldenSheep": {
+                    "Purified": "Sheep",
+                    "Voided": "mistyspring.GiEXredux_VoidSheep"
+                },
+                "mistyspring.GiEXredux_VoidSheep": {
+                    "Purified": "Sheep",
+                    "Gilded": "mistyspring.GiEXredux_GoldenSheep"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenSheep": true,
+                "mistyspring.GiEXredux.code/VoidSheep": true
+            }
+        },
+        {
+            "LogName": "Add Sheep variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Sheep": {
+                    "Voided": "mistyspring.GiEXredux_VoidSheep"
+                },
+                "mistyspring.GiEXredux_VoidSheep": {
+                    "Purified": "Sheep"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenSheep": false,
+                "mistyspring.GiEXredux.code/VoidSheep": true
+            }
+        },
+        {
+            "LogName": "Add Sheep variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Sheep": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenSheep"
+                },
+                "mistyspring.GiEXredux_GoldenSheep": {
+                    "Purified": "Sheep"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenSheep": true,
+                "mistyspring.GiEXredux.code/VoidSheep": false
+            }
+        },
+        //ostrich
+        {
+            "LogName": "Add Ostrich variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Ostrich": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenOstrich",
+                    "Voided": "mistyspring.GiEXredux_VoidOstrich"
+                },
+                "mistyspring.GiEXredux_GoldenOstrich": {
+                    "Purified": "Ostrich",
+                    "Voided": "mistyspring.GiEXredux_VoidOstrich"
+                },
+                "mistyspring.GiEXredux_VoidOstrich": {
+                    "Purified": "Ostrich",
+                    "Gilded": "mistyspring.GiEXredux_GoldenOstrich"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenOstrich": true,
+                "mistyspring.GiEXredux.code/VoidOstrich": true
+            }
+        },
+        {
+            "LogName": "Add Ostrich variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Ostrich": {
+                    "Voided": "mistyspring.GiEXredux_VoidOstrich"
+                },
+                "mistyspring.GiEXredux_VoidOstrich": {
+                    "Purified": "Ostrich"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenOstrich": false,
+                "mistyspring.GiEXredux.code/VoidOstrich": true
+            }
+        },
+        {
+            "LogName": "Add Ostrich variants",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "Ostrich": {
+                    "Gilded": "mistyspring.GiEXredux_GoldenOstrich"
+                },
+                "mistyspring.GiEXredux_GoldenOstrich": {
+                    "Purified": "Ostrich"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenOstrich": true,
+                "mistyspring.GiEXredux.code/VoidOstrich": false
+            }
+        },
+        //banana cow
+        {
+            "LogName": "Add fruit cow variants - banana",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "mistyspring.GiEXredux_BananaBrownCow": {
+                    "Purified": "Brown Cow"
+                },
+                "mistyspring.GiEXredux_BananaWhiteCow": {
+                    "Purified": "White Cow"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/BananaCow": true
+            }
+        },
+        //coconut cow
+        {
+            "LogName": "Add fruit cow variants - Coconut",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "mistyspring.GiEXredux_CoconutBrownCow": {
+                    "Purified": "Brown Cow"
+                },
+                "mistyspring.GiEXredux_CoconutWhiteCow": {
+                    "Purified": "White Cow"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/CoconutCow": true
+            }
+        },
+        //mango cow
+        {
+            "LogName": "Add fruit cow variants - Mango",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/AnimalTransformation",
+            "Entries": {
+                "mistyspring.GiEXredux_MangoBrownCow": {
+                    "Purified": "Brown Cow"
+                },
+                "mistyspring.GiEXredux_MangoWhiteCow": {
+                    "Purified": "White Cow"
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/MangoCow": true
+            }
+        },
+        /* Animal data */
+        {
+            "LogName": "Animals - golden cow",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_GoldenWhiteCow": {
+                    "DisplayName": "{{i18n: Golden_Cow}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 3000,
+                    //"EggItemIds": null,
+                    //"IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    //"RequiredBuilding": "Barn",
+                    //"BirthText": null,
+                    "DaysToMature": 5,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 1,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Milk Pail",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Milk_G"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_LargeMilk_G"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    //"ProfessionForFasterProduce": -1,
+                    "Sound": "cow",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\GoldenWhiteCow",
+                    //"HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyGoldenWhiteCow",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": false,
+                    "CustomFields": {}
+                },
+                "{{ModId}}_GoldenBrownCow": {
+                    "DisplayName": "{{i18n: Golden_Cow}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 3000,
+                    "IncubatorParentSheetOffset": 1,
+                    "DaysToMature": 5,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 1,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Milk Pail",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Milk_G"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_LargeMilk_G"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    "Sound": "cow",
+                    "Texture": "Mods\\{{ModId}}\\Animals\\GoldenBrownCow",
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyGoldenBrownCow",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    "ShowInSummitCredits": false,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenCow": true
+            }
+        },
+        {
+            "LogName": "Animals - golden sheep",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_GoldenSheep": {
+                    "DisplayName": "{{i18n: Golden_Sheep}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 16000,
+                    //"EggItemIds": null,
+                    //"IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    //"RequiredBuilding": "Deluxe Barn",
+                    //"BirthText": null,
+                    "DaysToMature": 4,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 3,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Shears",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Wool_G"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "ProduceOnMature": true,
+                    "FriendshipForFasterProduce": 900,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    "ProfessionForFasterProduce": 3,
+                    "Sound": "sheep",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\GoldenSheep",
+                    "HarvestedTexture": "Mods\\{{ModId}}\\Animals\\ShearedGoldenSheep",
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyGoldenSheep",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1.5, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenSheep": true
+            }
+        },
+        {
+            "LogName": "Animals - golden ostrich",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_GoldenOstrich": {
+                    "DisplayName": "{{i18n: Golden_Ostrich}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 32000,
+                    "EggItemIds": [
+                        "GiEXredux_OstrichEgg_G"
+                    ],
+                    //"RequiredBuilding": "Barn",
+                    //"IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_Ostrich]",
+                    "DaysToMature": 7,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 7,
+                    "HarvestType": "DropOvernight",
+                    //"HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_OstrichEgg_G"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    //"ProfessionForFasterProduce": -1,
+                    "Sound": "Ostrich",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\GoldenOstrich",
+                    //"HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyGoldenOstrich",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1.5, 2",
+                    "LeftRightPetHitboxTileSize": "2, 2",
+                    "BabyUpDownPetHitboxTileSize": "1, 1",
+                    "BabyLeftRightPetHitboxTileSize": "1, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenOstrich": true
+            }
+        },
+        {
+            "LogName": "Animals - golden dinosaur",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_GoldenDinosaur": {
+                    "DisplayName": "{{i18n: Golden_Dinosaur}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "SellPrice": 3000,
+                    "EggItemIds": [
+                        "GiEXredux_DinoEgg_G"
+                    ],
+                    "IncubationTime": 18000,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_DinosaurEgg]",
+                    "DaysToMature": 0,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 7,
+                    "HarvestType": "DropOvernight",
+                    //"HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_DinoEgg_G"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    //"ProfessionForFasterProduce": -1,
+                    //"Sound": null,
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\GoldenDinosaur",
+                    //"HarvestedTexture": null,
+                    //"BabyTexture": null,
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": -16
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 8,
+                    "UpDownPetHitboxTileSize": "1, 1",
+                    "LeftRightPetHitboxTileSize": "1, 1",
+                    "BabyUpDownPetHitboxTileSize": "1, 1",
+                    "BabyLeftRightPetHitboxTileSize": "1, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenDinosaur": true
+            }
+        },
+        {
+            "LogName": "Animals - void cow",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_VoidBrownCow": {
+                    "DisplayName": "{{i18n: Void_Cow}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 3000,
+                    //"EggItemIds": null,
+                    //"IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    //"BirthText": null,
+                    "DaysToMature": 5,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 1,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Milk Pail",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Milk_V"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_LargeMilk_V"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    //"ProfessionForFasterProduce": -1,
+                    "Sound": "cow",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\VoidBrownCow",
+                    //"HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyVoidBrownCow",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": false,
+                    "CustomFields": {}
+                },
+                "{{ModId}}_VoidWhiteCow": {
+                    "DisplayName": "{{i18n: Void_Cow}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 3000,
+                    //"EggItemIds": null,
+                    //"IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    //"BirthText": null,
+                    "DaysToMature": 5,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 1,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Milk Pail",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Milk_V"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_LargeMilk_V"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    //"ProfessionForFasterProduce": -1,
+                    "Sound": "cow",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\VoidWhiteCow",
+                    //"HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyVoidWhiteCow",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": false,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidCow": true
+            }
+        },
+        {
+            "LogName": "Animals - void sheep",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_VoidSheep": {
+                    "DisplayName": "{{i18n: Void_Sheep}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 16000,
+                    //"EggItemIds": null,
+                    //"IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    //"RequiredBuilding": "Deluxe Barn",
+                    //"BirthText": null,
+                    "DaysToMature": 4,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 3,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Shears",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Wool_V"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "ProduceOnMature": true,
+                    "FriendshipForFasterProduce": 900,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    "ProfessionForFasterProduce": 3,
+                    "Sound": "sheep",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\VoidSheep",
+                    "HarvestedTexture": "Mods\\{{ModId}}\\Animals\\ShearedVoidSheep",
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyVoidSheep",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1.5, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidSheep": true
+            }
+        },
+        {
+            "LogName": "Animals - iridium chicken",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_IridiumChicken": {
+                    "DisplayName": "{{i18n: Iridium_Chicken}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "SellPrice": 1600,
+                    "EggItemIds": [
+                        "GiEXredux_IridiumEgg"
+                    ],
+                    //"IncubationTime":-1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_RegularEgg]",
+                    "DaysToMature": 7,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 1,
+                    "HarvestType": "DropOvernight",
+                    //"HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_IridiumEgg"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    //"ProfessionForFasterProduce": -1,
+                    "Sound": "cluck",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\IridiumChicken",
+                    //"HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyIridiumChicken",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 18,
+                    "SpriteHeight": 18,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": -18
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1",
+                    "LeftRightPetHitboxTileSize": "1, 1",
+                    "BabyUpDownPetHitboxTileSize": "1, 1",
+                    "BabyLeftRightPetHitboxTileSize": "1, 1",
+                    "StatToIncrementOnProduce": [
+                        {
+                            //"RequiredItemId": null,
+                            "RequiredTags": [
+                                "egg_item"
+                            ],
+                            "StatName": "ChickenEggsLayed"
+                        }
+                    ],
+                    "ShowInSummitCredits": true //,
+                    //"CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/IridiumChicken": true
+            }
+        },
+        {
+            "LogName": "Animals - void ostrich",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_VoidOstrich": {
+                    "DisplayName": "{{i18n: Void_Ostrich}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 30000,
+                    "EggItemIds": [
+                        "GiEXredux_OstrichEgg_V"
+                    ],
+                    //"RequiredBuilding": "Barn",
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_Ostrich]",
+                    "DaysToMature": 7,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 7,
+                    "HarvestType": "DropOvernight",
+                    //"HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_OstrichEgg_G"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "Ostrich",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\VoidOstrich",
+                    //"HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyVoidOstrich",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1.5, 2",
+                    "LeftRightPetHitboxTileSize": "2, 2",
+                    "BabyUpDownPetHitboxTileSize": "1, 1",
+                    "BabyLeftRightPetHitboxTileSize": "1, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidOstrich": true
+            }
+        },
+        {
+            "LogName": "Animals - void dinosaur",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_VoidDinosaur": {
+                    "DisplayName": "{{i18n: Void_Dinosaur}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "SellPrice": 2000,
+                    "EggItemIds": [
+                        "GiEXredux_DinoEgg_V"
+                    ],
+                    "IncubationTime": 18000,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_DinosaurEgg]",
+                    "DaysToMature": 0,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 7,
+                    "HarvestType": "DropOvernight",
+                    //"HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_DinoEgg_G"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    //"ProfessionForFasterProduce": -1,
+                    "Sound": null,
+                    "BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\VoidDinosaur",
+                    "HarvestedTexture": null,
+                    "BabyTexture": null,
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": -16
+                    },
+                    "Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 8,
+                    "UpDownPetHitboxTileSize": "1, 1",
+                    "LeftRightPetHitboxTileSize": "1, 1",
+                    "BabyUpDownPetHitboxTileSize": "1, 1",
+                    "BabyLeftRightPetHitboxTileSize": "1, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidDinosaur": true
+            }
+        },
+        {
+            "LogName": "Animals - golden duck",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_Duck": {
+                    "DisplayName": "{{i18n: Golden_Duck}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "SellPrice": 1200,
+                    "RequiredBuilding": "Big Coop",
+                    "EggItemIds": [
+                        "{{ModPrefix}}DuckEgg_G"
+                    ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_DuckEgg]",
+                    "DaysToMature": 5,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 2,
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModPrefix}}DuckEgg_G"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModPrefix}}DuckEgg_G"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 4750.0,
+                    "DeluxeProduceLuckMultiplier": 1.01,
+                    "CanEatGoldenCrackers": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "Duck",
+                    "BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\GoldenDuck",
+                    "HarvestedTexture": null,
+                    "BabyTexture": "Animals\\BabyGolden Chicken",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "SleepFrame": 16,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": -16
+                    },
+                    "SwimOffset": {
+                        "X": 0,
+                        "Y": 112
+                    },
+                    "Skins": null,
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "Shadow": null,
+                    "CanSwim": true,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1",
+                    "LeftRightPetHitboxTileSize": "1, 1",
+                    "BabyUpDownPetHitboxTileSize": "1, 1",
+                    "BabyLeftRightPetHitboxTileSize": "1, 1",
+                    "StatToIncrementOnProduce": [
+                        {
+                            "Id": "DuckEggsLayed",
+                            "RequiredItemId": null,
+                            "RequiredTags": [
+                                "egg_item"
+                            ],
+                            "StatName": "DuckEggsLayed"
+                        }
+                    ],
+                    "ShowInSummitCredits": true,
+                    "CustomFields": null
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/GoldenDuck":true
+            }
+        },
+        {
+            "LogName": "Animals - void duck",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_VoidDuck": {
+                    "DisplayName": "{{i18n: Void_Duck}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "SellPrice": 2400,
+                    "EggItemIds": [
+                        "GiEXredux_DuckEgg_V"
+                    ],
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_DuckEgg]",
+                    "DaysToMature": 5,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 2,
+                    "HarvestType": "DropOvernight",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_DuckEgg_V"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_DuckFeather_V"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 4750.0,
+                    "DeluxeProduceLuckMultiplier": 1.01,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "Sound": "Duck",
+                    "BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\VoidDuck",
+                    "HarvestedTexture": null,
+                    "BabyTexture": "Animals\\BabyVoid Chicken",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": -16
+                    },
+                    "Skins": null,
+                    "CanSwim": true,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 8,
+                    "UpDownPetHitboxTileSize": "1, 1",
+                    "LeftRightPetHitboxTileSize": "1, 1",
+                    "BabyUpDownPetHitboxTileSize": "1, 1",
+                    "BabyLeftRightPetHitboxTileSize": "1, 1",
+                    "StatToIncrementOnProduce": [
+                        {
+                            "RequiredItemId": null,
+                            "RequiredTags": [
+                                "egg_item"
+                            ],
+                            "StatName": "DuckEggsLayed"
+                        }
+                    ],
+                    "ShowInSummitCredits": true,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidDuck": true
+            }
+        },
+        {
+            "LogName": "Animals - void rabbit",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_VoidRabbit": {
+                    "DisplayName": "{{i18n: Void_Rabbit}}",
+                    "House": "Coop",
+                    "Gender": "MaleOrFemale",
+                    "SellPrice": 8000,
+                    "DaysToMature": 6,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 4,
+                    "HarvestType": "DropOvernight",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Wool_V"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_RabbitFoot_V"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 0,
+                    "DeluxeProduceCareDivisor": 5000.0,
+                    "DeluxeProduceLuckMultiplier": 1.02,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "rabbit",
+                    "BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\VoidRabbit",
+                    "HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyVoidRabbit",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": -16
+                    },
+                    "Skins": null,
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1",
+                    "LeftRightPetHitboxTileSize": "1, 1",
+                    "BabyUpDownPetHitboxTileSize": "1, 1",
+                    "BabyLeftRightPetHitboxTileSize": "1, 1",
+                    "StatToIncrementOnProduce": [
+                        {
+                            "RequiredItemId": "(O)440",
+                            "RequiredTags": null,
+                            "StatName": "RabbitWoolProduced"
+                        }
+                    ],
+                    "ShowInSummitCredits": true,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidRabbit": true
+            }
+        },
+        {
+            "LogName": "Animals - mango cow",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_MangoBrownCow": {
+                    "DisplayName": "{{i18n: Mango_Cow}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 2000,
+                    //"EggItemIds": null,
+                    //"IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    //"RequiredBuilding": "Barn",
+                    //"BirthText": null,
+                    "DaysToMature": 5,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 1,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Milk Pail",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Milk_M"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_LargeMilk_M"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    //"ProfessionForFasterProduce": -1,
+                    "Sound": "cow",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\MangoCow",
+                    //"HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyMangoCow",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": false,
+                    "CustomFields": {}
+                },
+                "{{ModId}}_MangoWhiteCow": {
+                    "DisplayName": "{{i18n: Mango_Cow}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 2000,
+                    //"EggItemIds": null,
+                    //"IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    //"RequiredBuilding": "Barn",
+                    //"BirthText": null,
+                    "DaysToMature": 5,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 1,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Milk Pail",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Milk_M"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_LargeMilk_M"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    //"ProfessionForFasterProduce": -1,
+                    "Sound": "cow",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\MangoCow",
+                    //"HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyMangoCow",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": false,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/MangoCow": true
+            }
+        },
+        {
+            "LogName": "Animals - coconut cow",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_CoconutBrownCow": {
+                    "DisplayName": "{{i18n: Coconut_Cow}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 2000,
+                    //"EggItemIds": null,
+                    //"IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    //"RequiredBuilding": "Barn",
+                    //"BirthText": null,
+                    "DaysToMature": 5,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 1,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Milk Pail",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Milk_C"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_LargeMilk_C"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    //"ProfessionForFasterProduce": -1,
+                    "Sound": "cow",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\CoconutCow",
+                    //"HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyCoconutCow",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": false,
+                    "CustomFields": {}
+                },
+                "{{ModId}}_CoconutWhiteCow": {
+                    "DisplayName": "{{i18n: Coconut_Cow}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 2000,
+                    //"EggItemIds": null,
+                    //"IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    //"RequiredBuilding": "Barn",
+                    //"BirthText": null,
+                    "DaysToMature": 5,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 1,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Milk Pail",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Milk_C"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_LargeMilk_C"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    //"ProfessionForFasterProduce": -1,
+                    "Sound": "cow",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\CoconutCow",
+                    //"HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyCoconutCow",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": false,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/CoconutCow": true
+            }
+        },
+        {
+            "LogName": "Animals - banana cow",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_BananaBrownCow": {
+                    "DisplayName": "{{i18n: Banana_Cow}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 2000,
+                    //"EggItemIds": null,
+                    //"IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    //"RequiredBuilding": "Barn",
+                    //"BirthText": null,
+                    "DaysToMature": 5,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 1,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Milk Pail",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Milk_M"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_LargeMilk_M"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    //"ProfessionForFasterProduce": -1,
+                    "Sound": "cow",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\BananaCow",
+                    //"HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyBananaCow",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": false,
+                    "CustomFields": {}
+                },
+                "{{ModId}}_BananaWhiteCow": {
+                    "DisplayName": "{{i18n: Banana_Cow}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 2000,
+                    //"EggItemIds": null,
+                    //"IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    //"RequiredBuilding": "Barn",
+                    //"BirthText": null,
+                    "DaysToMature": 5,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 1,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Milk Pail",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_Milk_B"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            //"Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_LargeMilk_B"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    //"ProfessionForFasterProduce": -1,
+                    "Sound": "cow",
+                    //"BabySound": null,
+                    "Texture": "Mods\\{{ModId}}\\Animals\\BananaCow",
+                    //"HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyBananaCow",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    //"Skins": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    //"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": false,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/BananaCow": true
+            }
+        },
+        {
+            "LogName": "Animals - mini lava dragon",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_MiniLavaDragon": {
+                    "DisplayName": "{{i18n:MiniLavaDragon}}",
+                    "House": "Coop",
+                    "Gender": "MaleOrFemale",
+                    "SellPrice": 5000,
+                    "EggItemIds": [
+                        "GiEXredux_LavaDragonEgg"
+                    ],
+                    "IncubationTime": 20000,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_DinosaurEgg]",
+                    "DaysToMature": 7,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 3,
+                    "HarvestType": "DropOvernight",
+                    "ProduceItemIds": [
+                        //25% each
+                        {
+                            "Id": "Fire quartz",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "82"
+                        },
+                        {
+                            "Id": "Obsidian",
+                            "Condition": null,
+                            "MinimumFriendship": 250,
+                            "ItemId": "575"
+                        },
+                        {
+                            "Id": "Ruby",
+                            "Condition": null,
+                            "MinimumFriendship": 500,
+                            "ItemId": "64"
+                        },
+                        {
+                            "Id": "Fire opal",
+                            "Condition": null,
+                            "MinimumFriendship": 750,
+                            "ItemId": "565"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        //10% egg, 85% star shard, 5% diamond
+                        {
+                            "Id": "Egg",
+                            "Condition": null,
+                            "MinimumFriendship": 300,
+                            "ItemId": "GiEXredux_LavaDragonEgg"
+                        },
+                        {
+                            "Id": "Star shard",
+                            "Condition": null,
+                            "MinimumFriendship": 700,
+                            "ItemId": "578"
+                        },
+                        {
+                            "Id": "Star shard",
+                            "Condition": "RANDOM 0.05 @addDailyLuck",
+                            "MinimumFriendship": 1000,
+                            "ItemId": "578"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 300,
+                    "DeluxeProduceCareDivisor": 5000.0,
+                    "DeluxeProduceLuckMultiplier": 1.02,
+                    "ProfessionForHappinessBoost": 3, //mining
+                    "Sound": "batScreech",
+                    "BabySound": "croak",
+                    "Texture": "Mods\\{{ModId}}\\Animals\\MiniLavaDragon",
+                    "HarvestedTexture": null,
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\MiniLavaDragon",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": 24,
+                    "SpriteHeight": 16,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": -16
+                    },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 3,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1",
+                    "LeftRightPetHitboxTileSize": "1, 1",
+                    "BabyUpDownPetHitboxTileSize": "1, 1",
+                    "BabyLeftRightPetHitboxTileSize": "1, 1",
+                    "ShowInSummitCredits": true,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/LavaDragon": true
+            }
+        },
+        {
+            "LogName": "Add golden goat farmanimal data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_GoldenGoat": {
+                    "DisplayName": "{{i18n: Golden_Goat}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 8000,
+                    "IncubatorParentSheetOffset": 1,
+                    "DaysToMature": 5,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 2,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Milk Pail",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_GoatMilk_G"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_LargeGoatMilk_G"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    //"FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    "Sound": "goat",
+                    "Texture": "Mods\\{{ModId}}\\Animals\\GoldenGoat",
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyGoldenGoat",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    "ShowInSummitCredits": true,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenGoat": true
+            }
+        },
+        {
+            "LogName": "Add void goat farmanimal data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_VoidGoat": {
+                    "DisplayName": "{{i18n: Void_Goat}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "SellPrice": 8000,
+                    "IncubatorParentSheetOffset": 1,
+                    "DaysToMature": 5,
+                    "CanGetPregnant": true,
+                    "DaysToProduce": 2,
+                    "HarvestType": "HarvestWithTool",
+                    "HarvestTool": "Milk Pail",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_VoatMilk_V"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "MinimumFriendship": 0,
+                            "ItemId": "GiEXredux_LargeGoatMilk_V"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 3,
+                    "ProfessionForQualityBoost": 3,
+                    "Sound": "goat",
+                    "Texture": "Mods\\{{ModId}}\\Animals\\VoidGoat",
+                    "BabyTexture": "Mods\\{{ModId}}\\Animals\\BabyVoidGoat",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": false,
+                    "GrassEatAmount": 4,
+                    "HappinessDrain": 5,
+                    "UpDownPetHitboxTileSize": "1, 1.75",
+                    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+                    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+                    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+                    "ShowInSummitCredits": true,
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "mistyspring.GiEXredux.code/VoidGoat": true
+            }
+        },
+        /* Spritesheet - baby */
+        //golden
+        {
+            "LogName": "Load tilesheet - baby (gold)",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Animals/BabyGoldenBrownCow, Mods/{{ModId}}/Animals/BabyGoldenWhiteCow, Mods/{{ModId}}/Animals/BabyGoldenGoat, Mods/{{ModId}}/Animals/BabyGoldenSheep, Mods/{{ModId}}/Animals/BabyGoldenOstrich, Mods/{{ModId}}/Animals/GoldenDuck",
+            "FromFile": "assets/Animals/{{TargetWithoutPath}}.png"
+        },
+        //void
+        {
+            "LogName": "Load tilesheet - baby (void)",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Animals/BabyVoidBrownCow, Mods/{{ModId}}/Animals/BabyVoidWhiteCow, Mods/{{ModId}}/Animals/BabyVoidGoat, Mods/{{ModId}}/Animals/BabyVoidSheep, Mods/{{ModId}}/Animals/BabyVoidOstrich, Mods/{{ModId}}/Animals/BabyVoidRabbit",
+            "FromFile": "assets/Animals/{{TargetWithoutPath}}.png"
+        },
+        //iridium
+        {
+            "LogName": "Load tilesheet - iridium (baby)",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Animals/BabyIridiumChicken",
+            "FromFile": "assets/Animals/{{TargetWithoutPath}}.png"
+        },
+        //other
+        {
+            "LogName": "Load tilesheet - other (baby)",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Animals/BabyBananaCow, Mods/{{ModId}}/Animals/BabyCoconutCow, Mods/{{ModId}}/Animals/BabyMangoCow",
+            "FromFile": "assets/Animals/{{TargetWithoutPath}}.png"
+        },
+        /* Tilesheet - adult */
+        //golden
+        {
+            "LogName": "Load tilesheet - adult (gold)",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Animals/GoldenBrownCow, Mods/{{ModId}}/Animals/GoldenWhiteCow, Mods/{{ModId}}/Animals/GoldenGoat, Mods/{{ModId}}/Animals/GoldenSheep, Mods/{{ModId}}/Animals/ShearedGoldenSheep, Mods/{{ModId}}/Animals/GoldenOstrich, Mods/{{ModId}}/Animals/GoldenDinosaur",
+            "FromFile": "assets/Animals/{{TargetWithoutPath}}.png"
+        },
+        //void
+        {
+            "LogName": "Load tilesheet - adult (void)",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Animals/VoidBrownCow, Mods/{{ModId}}/Animals/VoidWhiteCow, Mods/{{ModId}}/Animals/VoidGoat, Mods/{{ModId}}/Animals/VoidSheep, Mods/{{ModId}}/Animals/ShearedVoidSheep, Mods/{{ModId}}/Animals/VoidOstrich, Mods/{{ModId}}/Animals/VoidDinosaur, Mods/{{ModId}}/Animals/VoidDuck, Mods/{{ModId}}/Animals/VoidRabbit",
+            "FromFile": "assets/Animals/{{TargetWithoutPath}}.png"
+        },
+        //iridium
+        {
+            "LogName": "Load tilesheet - adult (iridium)",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Animals/IridiumChicken",
+            "FromFile": "assets/Animals/{{TargetWithoutPath}}.png"
+        },
+        //other
+        {
+            "LogName": "Load tilesheet - other (adult)",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Animals/BananaCow, Mods/{{ModId}}/Animals/CoconutCow, Mods/{{ModId}}/Animals/MangoCow, Mods\\{{ModId}}\\Animals\\MiniLavaDragon",
+            "FromFile": "assets/Animals/{{TargetWithoutPath}}.png"
+        }
+    ]
+}

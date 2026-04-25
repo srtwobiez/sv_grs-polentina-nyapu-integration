@@ -1,0 +1,47 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Data Water",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Water Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          }
+        }
+      }
+    },
+    {
+      "LogName": "JJ Load Water",
+      "Action": "Load",
+      "Target": "Buildings/Water Obelisk",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_water.png"
+    },
+    {
+      "LogName": "JJ Decorations Water Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Water Obelisk",
+      "FromFile": "assets/flowers/water_{{WaterFlowerColor}}.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Water Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Water Obelisk",
+      "FromFile": "assets/moss/water_moss.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.0" orientation="orthogonal" renderorder="right-down" width="10" height="11" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="19">
+ <properties>
+  <property name="AmbientLight" value="110 110 110"/>
+  <property name="DayTiles" value="Buildings 1 7 790"/>
+  <property name="LocationContext" value="Island"/>
+  <property name="Music" value="moonlightJellies"/>
+  <property name="NPCWarp" value="5 10 GiEX_SouthWest 21 17"/>
+  <property name="SeasonOverride" value="summer"/>
+  <property name="Warp" value="5 10 GiEX_SouthWest 21 17"/>
+ </properties>
+ <tileset firstgid="1" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="island" tilewidth="16" tileheight="16" tilecount="2080" columns="32">
+  <image source="island_tilesheet_1" width="512" height="1040"/>
+ </tileset>
+ <tileset firstgid="2145" name="springobjects" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="springobjects.png" width="384" height="624"/>
+ </tileset>
+ <tileset firstgid="3081" name="island_extras" tilewidth="16" tileheight="16" tilecount="216" columns="18">
+  <image source="giex_island_extras.png" width="288" height="192"/>
+  <tile id="54">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="55">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="56">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="72">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="91">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="92">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="212">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="213">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="3297" name="leohut" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Island_Hut_tilesheet.png" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="3585" name="javi_hut" tilewidth="16" tileheight="16" tilecount="3" columns="3">
+  <image source="giex_javi_hut.png" width="48" height="16"/>
+ </tileset>
+ <layer id="1" name="Back" width="10" height="11">
+  <data encoding="base64" compression="zlib">
+   eJyTYWdgkCESi/AwMIjy4KZh6tSAbHUe3DRMnQWQbcmDm4apS+VlYOgC4k4sNFCuAVndLCCeiYVm5EOoA7Jxmoeujhjz1gDdQIx5yBhmDrFhj44B7tUj2g==
+  </data>
+ </layer>
+ <layer id="3" name="Buildings" width="10" height="11">
+  <data encoding="base64" compression="zlib">
+   eJyTYWdgkCESEwIwdU48YNxASJ0+UA0QM1gAsSUWGqZOGsQG4nQehBn2QLYDEDsiqdMFsvXQ1AUC2UFAHMyD3x/JQPkUIE5FUufATZx/S3Go82FiYKjgwR+exIY7uhgARVIQRQ==
+  </data>
+ </layer>
+ <layer id="5" name="Front" width="10" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAcuPOg8iuB/Ps82NU6cjMsgLFDgGpCcahDB3s4yHQcjUAake6mFMiwQzA6AACexgTt
+  </data>
+ </layer>
+ <layer id="9" name="AlwaysFront" width="10" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxzYGNosGVjYLCDYnsgtgFiWyS+AxA3ANUxEABANQzRbAwOuOQjeRgYonjAag6QYB5BAFTTMFDmMfMxNNiwA8OQHRheQMzEB5ED0g0gPkicmQ+LZnaIPAM7YfdgAwCWrhJW
+  </data>
+ </layer>
+ <layer id="7" name="Paths" width="10" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFuADnQDsACrC5AwAH6AAT
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <objectgroup id="4" name="Buildings">
+  <object id="6" name="TileData" x="16" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;GiEX_Hut.0&quot;"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="128" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;GiEX_Hut.1&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+</map>

@@ -1,0 +1,83 @@
+{
+  "Name": "Sweet Pea Shirt",
+  "FrontShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 66, 66, 166 ],
+		[ 98, 98, 196 ],
+		[ 138, 138, 230 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 66, 66, 166 ],
+		[ 98, 98, 196 ],
+		[ 138, 138, 230 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 66, 66, 166 ],
+		[ 98, 98, 196 ],
+		[ 138, 138, 230 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 66, 66, 166 ],
+		[ 98, 98, 196 ],
+		[ 138, 138, 230 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

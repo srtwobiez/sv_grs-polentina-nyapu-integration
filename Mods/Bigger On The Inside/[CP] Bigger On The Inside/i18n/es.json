@@ -1,0 +1,13 @@
+{
+  "config.section.RestartRequired.name": "Vuelve a la pantalla de título para ver los cambios",
+  "config.ForceMinBarn.name": "Textura mínima del Establo",
+  "config.ForceMinBarn.description": "Usa el exterior de Establo en lugar del Establo de Lujo para el Establo Premium de SVE.",
+  "config.ForceMinCoop.name": "Textura mínima del Corral",
+  "config.ForceMinCoop.description": "Usa el exterior de Corral en lugar del Corral de Lujo para el Corral Premium de SVE.",
+  "config.ForceMinShed.name": "Textura mínima del Cobertizo",
+  "config.ForceMinShed.description": "Usa el exterior del Cobertizo en lugar del Cobertizo de Lujo para la Bodega de SVE.",
+  "config.ForceMinVanillaBigShed.name": "Reemplazar textura del Cobertizo Grande vanilla",
+  "config.ForceMinVanillaBigShed.description": "Usa el exterior base del Cobertizo para el Cobertizo Grande vanilla.",
+  "config.EnableBuildingUpgrades.name": "Los edificios son mejoras",
+  "config.EnableBuildingUpgrades.description": "Si está activado, los edificios de SVE deben mejorar edificios previos. Si está desactivado, los edificios de SVE pueden construirse de forma independiente."
+}

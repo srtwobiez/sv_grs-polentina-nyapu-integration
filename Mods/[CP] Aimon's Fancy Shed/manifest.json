@@ -1,0 +1,18 @@
+{
+  "Name": "Aimon's Fancy Shed",
+  "Author": "Aimon111",
+  "Version": "2.0.2",
+  
+  "Description": "AkA Redesigned Shed Layout. Makes your Shed maps look new and fresh towards more realistic layout.",
+  "UniqueID": "Aimon111.RedesignedShedLayout",
+    "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:15250" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+	},
+	
+ "Dependencies": [
+   
+	
+	]
+}

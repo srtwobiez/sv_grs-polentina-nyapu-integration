@@ -1,0 +1,209 @@
+{
+  /*
+   * =============================================================================
+   *   A Secret Note from Gwen ♥
+   *   HI THERE! (: 
+   *   Editing this file changes how the mod works.
+   *   To turn options on/off, use GMCM (Generic Mod Config Menu) in-game, or
+   *   edit config.json in the mod folder (created on first load).
+   * =============================================================================
+   */
+
+  /*
+   * =============================================================================
+   *   A Secret Note from Jenna ♥
+   *   This patch is included as part of the Witchcore collection and should
+   *   not be redistributed. Gwen may ask for its removal at any time.
+   * =============================================================================
+   */
+
+
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    "SetFallColor": {
+      "AllowValues": "Green, Orange",
+      "Default": "Green",
+      "Name": "{{i18n:config.SetFallColor.name}}",
+      "Description": "{{i18n:config.SetFallColor.description}}",
+      "Section": "Recolor"
+    },
+    "RecolorOverride": {
+      "AllowValues": "Auto, Vanilla, DNEarthyRecolour, Eemie, FoliageRedone, Starblue, VibrantPastoral, WittilyNamed",
+      "Default": "Auto",
+      "Name": "{{i18n:config.RecolorOverride.name}}",
+      "Description": "{{i18n:config.RecolorOverride.description}}",
+      "Section": "Recolor"
+    },
+    "PlaygroundOption": {
+      "AllowValues": "playground, clothesline with well",
+      "Default": "playground",
+      "Name": "{{i18n:config.PlaygroundOption.name}}",
+      "Description": "{{i18n:config.PlaygroundOption.description}}",
+      "Section": "Options"
+    },
+    "FencesOption": {
+      "AllowValues": "stone, wood",
+      "Default": "stone",
+      "Name": "{{i18n:config.FencesOption.name}}",
+      "Description": "{{i18n:config.FencesOption.description}}",
+      "Section": "Options"
+    },
+    "SetLuauMusicPlayer": {
+      "AllowValues": "record player, junimos drummers",
+      "Default": "record player",
+      "Name": "{{i18n:config.SetLuauMusicPlayer.name}}",
+      "Description": "{{i18n:config.SetLuauMusicPlayer.description}}",
+      "Section": "Options"
+    },
+    "SetWeddingArchOption": {
+      "AllowValues": "cottagecore, sunflowers, curtain, boho, off",
+      "Default": "cottagecore",
+      "Name": "{{i18n:config.SetWeddingArchOption.name}}",
+      "Description": "{{i18n:config.SetWeddingArchOption.description}}",
+      "Section": "Options"
+    },
+    "GrangeDisplayDecor": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.GrangeDisplayDecor.name}}",
+      "Description": "{{i18n:config.GrangeDisplayDecor.description}}",
+      "Section": "Options"
+    },
+    "JojaChanged": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.JojaChanged.name}}",
+      "Description": "{{i18n:config.JojaChanged.description}}",
+      "Section": "Options"
+    },
+    "BusChanged": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.BusChanged.name}}",
+      "Description": "{{i18n:config.BusChanged.description}}",
+      "Section": "Options"
+    },
+    "TrashCanHat": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.TrashCanHat.name}}",
+      "Description": "{{i18n:config.TrashCanHat.description}}",
+      "Section": "Options"
+    },
+    "TotemsEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.TotemsEnabled.name}}",
+      "Description": "{{i18n:config.TotemsEnabled.description}}",
+      "Section": "Options"
+    }
+  },
+
+  "DynamicTokens": [
+    // Auto: detect recolor by HasMod (only when RecolorOverride is Auto)
+    {
+      "Name": "recolor",
+      "Value": "Vanilla",
+      "When": { "RecolorOverride": "Auto" }
+    },
+    {
+      "Name": "recolor",
+      "Value": "DNEarthyRecolour",
+      "When": { "RecolorOverride": "Auto", "HasMod": "DaisyNiko.EarthyRecolour" }
+    },
+    {
+      "Name": "recolor",
+      "Value": "Eemie",
+      "When": { "RecolorOverride": "Auto", "HasMod": "minervamaga.CP.eemieMapRecolour" }
+    },
+    {
+      "Name": "recolor",
+      "Value": "FoliageRedone",
+      "When": { "RecolorOverride": "Auto", "HasMod": "stardewfoliageredone" }
+    },
+    {
+      "Name": "recolor",
+      "Value": "Starblue",
+      "When": { "RecolorOverride": "Auto", "HasMod": "Lita.StarblueValley" }
+    },
+    {
+      "Name": "recolor",
+      "Value": "VibrantPastoral",
+      "When": { "RecolorOverride": "Auto", "HasMod": "grapeponta.VibrantPastoralRecolor" }
+    },
+    {
+      "Name": "recolor",
+      "Value": "WittilyNamed",
+      "When": { "RecolorOverride": "Auto", "HasMod": "Acerbicon.Recolor" }
+    },
+    // Manual overwrite: use config value when user picked a specific recolor (not Auto)
+    {
+      "Name": "recolor",
+      "Value": "{{RecolorOverride}}",
+      "When": { "RecolorOverride |contains=Vanilla, DNEarthyRecolour, Eemie, FoliageRedone, Starblue, VibrantPastoral, WittilyNamed": true }
+    },
+    // Fall color overwrite
+    {
+      "Name": "FallColor",
+      "Value": "1",
+      "When": { "SetFallColor": "Green" }
+    },
+    {
+      "Name": "FallColor",
+      "Value": "2",
+      "When": { "SetFallColor": "Orange" }
+    },
+    // Luau music
+    {
+      "Name": "LuauMusicPlayer",
+      "Value": "1",
+      "When": { "SetLuauMusicPlayer": "record player" }
+    },
+    {
+      "Name": "LuauMusicPlayer",
+      "Value": "2",
+      "When": { "SetLuauMusicPlayer": "junimos drummers" }
+    },
+    // Wedding arch
+    {
+      "Name": "WeddingArchOption",
+      "Value": "1",
+      "When": { "SetWeddingArchOption": "cottagecore" }
+    },
+    {
+      "Name": "WeddingArchOption",
+      "Value": "2",
+      "When": { "SetWeddingArchOption": "sunflowers" }
+    },
+    {
+      "Name": "WeddingArchOption",
+      "Value": "3",
+      "When": { "SetWeddingArchOption": "curtain" }
+    },
+    {
+      "Name": "WeddingArchOption",
+      "Value": "4",
+      "When": { "SetWeddingArchOption": "boho" }
+    },
+    {
+      "Name": "WeddingArchOption",
+      "Value": "off",
+      "When": { "SetWeddingArchOption": "off" }
+    },
+    {
+      "Name": "recolor",
+      "Value": "{{recolor}}/{{FallColor}}",
+      "When": { "recolor |contains=Eemie, VibrantPastoral": true, "Season": "fall" }
+    }
+  ],
+  "Changes": [
+    { "Action": "Include", "FromFile": "patches/desert.json" },
+    { "Action": "Include", "FromFile": "patches/season.json" },
+    { "Action": "Include", "FromFile": "patches/festivals.json" },
+    { "Action": "Include", "FromFile": "patches/cursors.json" },
+    { "Action": "Include", "FromFile": "patches/island.json" },
+    { "Action": "Include", "FromFile": "patches/outdoors.json" },
+    { "Action": "Include", "FromFile": "patches/town.json" },
+    { "Action": "Include", "FromFile": "patches/misc.json" }
+  ]
+}

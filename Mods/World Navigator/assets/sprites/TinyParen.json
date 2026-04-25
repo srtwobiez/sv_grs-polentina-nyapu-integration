@@ -1,0 +1,10 @@
+{
+    "Sprites": {
+        "TinyLeftParen": {
+            "SourceRect": "0, 0, 3, 7"
+        },
+        "TinyRightParen": {
+            "SourceRect": "3, 0, 3, 7"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Data Island",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Island Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          }
+        }
+      }
+    },
+    {
+      "LogName": "JJ Load Island",
+      "Action": "Load",
+      "Target": "Buildings/Island Obelisk",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_island.png"
+    },
+    {
+      "LogName": "JJ Decorations Island Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Island Obelisk",
+      "FromFile": "assets/flowers/island_{{IslandFlowerColor}}.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Island Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Island Obelisk",
+      "FromFile": "assets/moss/island_moss.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "Name": "GI Extra locations - FarmTypeManager",
+  "Author": "mistyspring",
+  "Version": "1.1.0",
+  "Description": "Extra GI maps (redux). FTM content pack",
+  "UniqueID": "mistyspring.GiEXreduxFTM",
+  "MinimumApiVersion": "4.4.0",
+  "UpdateKeys": [
+    "nexus:-1@FTM"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Esca.FarmTypeManager"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "mistyspring.GiEXredux.code",
+      "IsRequired": true
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "RequireHandMirrorInInventory": false,
+  "QuickMenuKey": "G",
+  "AllowMannequinAnimations": true,
+  "KeepHairWhenLoadingOutfits": false
+}

@@ -1,0 +1,11 @@
+{
+	"Name": "Em's SVE Animals",
+	"Author": "RivalRabbit",
+	"Version": "1.1",
+	"Description": "Retexture of the SVE Bears, Geese and Camels, including produce & Marnie's shop icon",
+	"UniqueID": "RivalRabbit.EmsCamelsCP",
+		"UpdateKeys": [ "Nexus:39719" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	}
+}

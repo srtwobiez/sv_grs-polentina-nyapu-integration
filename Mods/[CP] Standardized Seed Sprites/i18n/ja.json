@@ -1,0 +1,190 @@
+{
+    // CONFIG OPTIONS
+        "config.Seed Packet Variant.name": "タネ袋のデザイン",
+        "config.Seed Packet Variant.description": "全てのタネ袋のデザインを設定する。\nデザインはMODページを確認してください。",
+        "config.Seed Packet Variant.values.(1) Sensible Sleeves": "(1) Sensible Sleeves",
+        "config.Seed Packet Variant.values.(2) Seasonal Sleeves": "(2) Seasonal Sleeves",
+        "config.Seed Packet Variant.values.(3) Sensible Satchels": "(3) Sensible Satchels",
+        "config.Seed Packet Variant.values.(4) Seasonal Satchels": "(4) Seasonal Satchels",
+        "config.Seed Packet Variant.values.(5) Sensible Stashes": "(5) Sensible Stashes",
+        "config.Seed Packet Variant.values.(6) Seasonal Stashes": "(6) Seasonal Stashes",
+
+        "config.Sapling Sack Color.name": "苗の袋の色",
+        "config.Sapling Sack Color.description": "果樹などの苗袋の色を設定する。\nデザインはMODページを確認してください。",
+        "config.Sapling Sack Color.values.(1) Cloud": "(1) Cloud",
+        "config.Sapling Sack Color.values.(2) Cream": "(2) Cream",
+        "config.Sapling Sack Color.values.(3) Chest": "(3) Chest",
+        "config.Sapling Sack Color.values.(4) Crypt": "(4) Crypt",
+
+    // GLOBAL TOGGLES
+        "config.= Disable Entire Mod.name": "= MODを無効にする",
+        "config.= Disable Entire Mod.description": "MOD要素を無効にします。",
+        "config.= Disable Entire Mod.values.true": "有効",
+        "config.= Disable Entire Mod.values.false": "無効",
+
+        "config.Seed Sprites.name": "タネのスプライトを変更",
+        "config.Seed Sprites.description": "作物などのタネのデザインを変更する。",
+        "config.Seed Sprites.values.Enabled": "有効",
+        "config.Seed Sprites.values.Disabled": "無効",
+    
+        "config.Sapling Sprites.name": "苗のスプライトを変更",
+        "config.Sapling Sprites.description": "果樹などの苗のデザインを変更する。",
+        "config.Sapling Sprites.values.Enabled": "有効",
+        "config.Sapling Sprites.values.Disabled": "無効",
+
+        "config.Bush Sprites.name": "茂み系のスプライトを変更",
+        "config.Bush Sprites.description": "茂み系のタネのデザインを変更する。",
+        "config.Bush Sprites.values.Enabled": "有効",
+        "config.Bush Sprites.values.Disabled": "無効",
+
+        "config.Trellis Sprites.name": "トレリス系のスプライトを変更",
+        "config.Trellis Sprites.description": "ホップやブドウのようなトレリス（フェンス）があるタネのデザインを変更する。",
+        "config.Trellis Sprites.values.Enabled": "有効",
+        "config.Trellis Sprites.values.Disabled": "無効",
+
+        "config.Tea Sapling Sprites.name": "茶の苗木のスプライトを変更",
+        "config.Tea Sapling Sprites.description": "茶の苗木のデザインを変更する。",
+        "config.Tea Sapling Sprites.values.Enabled": "有効",
+        "config.Tea Sapling Sprites.values.Disabled": "無効",
+
+        "config.Mixed Seed Sprites.name": "ミックスシードのスプライトを変更",
+        "config.Mixed Seed Sprites.description": "ミックスシードのデザインを変更する。",
+        "config.Mixed Seed Sprites.values.Enabled": "有効",
+        "config.Mixed Seed Sprites.values.Disabled": "無効",
+
+    // MOD SECTION TOGGLES
+        "config.(A) Vanilla.name": "(A) Vanilla",
+        "config.(A) Vanilla.description": "すべての基本ゲームのスプライト デザインを変更します。",
+        "config.(A) Vanilla.values.true": "有効",
+        "config.(A) Vanilla.values.false": "無効",
+
+        "config.(B) Stardew Valley Expanded.name": "(B) Stardew Valley Expanded",
+        "config.(B) Stardew Valley Expanded.description": "Stardew Valley Expandedのスプライトのデザインを全て変更する。",
+        "config.(B) Stardew Valley Expanded.values.true": "有効",
+        "config.(B) Stardew Valley Expanded.values.false": "無効",
+
+        "config.(C) East Scarp.name": "(C) East Scarp",
+        "config.(C) East Scarp.description": "East Scarpのスプライトのデザインを全て変更する。",
+        "config.(C) East Scarp.values.true": "有効",
+        "config.(C) East Scarp.values.false": "無効",
+
+        "config.(D) Visit Mount Vapius.name": "(D) Visit Mount Vapius",
+        "config.(D) Visit Mount Vapius.description": "Visit Mount Vapiusのスプライトのデザインを全て変更する。",
+        "config.(D) Visit Mount Vapius.values.true": "有効",
+        "config.(D) Visit Mount Vapius.values.false": "無効",
+
+        "config.(E) Serene Meadow.name": "(E) Serene Meadow",
+        "config.(E) Serene Meadow.description": "Serene Meadowのスプライトのデザインを全て変更する。",
+        "config.(E) Serene Meadow.values.true": "有効",
+        "config.(E) Serene Meadow.values.false": "無効",
+
+        "config.(F) Growable Forage.name": "(F) Growable Forage",
+        "config.(F) Growable Forage.description": "Growable Forageのスプライトのデザインを全て変更する。",
+        "config.(F) Growable Forage.values.true": "有効",
+        "config.(F) Growable Forage.values.false": "無効",
+
+        "config.(G) Cornucopia Crops.name": "(G) Cornucopia Crops",
+        "config.(G) Cornucopia Crops.description": "Cornucopia Cropsのスプライトのデザインを全て変更する。",
+        "config.(G) Cornucopia Crops.values.true": "有効",
+        "config.(G) Cornucopia Crops.values.false": "無効",
+
+        "config.(H) Cornucopia Herbs.name": "(H) Cornucopia Herbs",
+        "config.(H) Cornucopia Herbs.description": "Cornucopia Herbsのスプライトのデザインを全て変更する。",
+        "config.(H) Cornucopia Herbs.values.true": "有効",
+        "config.(H) Cornucopia Herbs.values.false": "無効",
+
+        "config.(I) Cornucopia Flowers.name": "(I) Cornucopia Flowers",
+        "config.(I) Cornucopia Flowers.description": "Cornucopia Flowersのスプライトのデザインを全て変更する。",
+        "config.(I) Cornucopia Flowers.values.true": "有効",
+        "config.(I) Cornucopia Flowers.values.false": "無効",
+
+        "config.(J) Ilucie Winter Crops.name": "(J) Ilucie Winter Crops",
+        "config.(J) Ilucie Winter Crops.description": "Ilucie Winter Cropsのスプライトのデザインを全て変更する。",
+        "config.(J) Ilucie Winter Crops.values.true": "有効",
+        "config.(J) Ilucie Winter Crops.values.false": "無効",
+
+        "config.(K) Flower Garden 2.name": "(K) Flower Garden 2",
+        "config.(K) Flower Garden 2.description": "Flower Garden 2のスプライトのデザインを全て変更する。",
+        "config.(K) Flower Garden 2.values.true": "有効",
+        "config.(K) Flower Garden 2.values.false": "無効",
+
+        "config.(L) Grapes of Ferngill.name": "(L) Grapes of Ferngill",
+        "config.(L) Grapes of Ferngill.description": "Grapes of Ferngillのスプライトのデザインを全て変更する。",
+        "config.(L) Grapes of Ferngill.values.true": "有効",
+        "config.(L) Grapes of Ferngill.values.false": "無効",
+
+        "config.(M) Atelier Goods Forager.name": "(M) Atelier Goods Forager",
+        "config.(M) Atelier Goods Forager.description": "Atelier Goods Foragerのスプライトのデザインを全て変更する。",
+        "config.(M) Atelier Goods Forager.values.true": "有効",
+        "config.(M) Atelier Goods Forager.values.false": "無効",
+
+        "config.(N) Garden Variety Mixed Seeds.name": "(N) Garden Variety Mixed Seeds",
+        "config.(N) Garden Variety Mixed Seeds.description": "Garden Variety Mixed Seedsのスプライトのデザインを全て変更する。",
+        "config.(N) Garden Variety Mixed Seeds.values.true": "有効",
+        "config.(N) Garden Variety Mixed Seeds.values.false": "無効",
+
+        "config.(O) Forage of Ferngill.name": "(O) Forage of Ferngill",
+        "config.(O) Forage of Ferngill.description": "Forage of Ferngillのスプライトのデザインを全て変更する。",
+        "config.(O) Forage of Ferngill.values.true": "有効",
+        "config.(O) Forage of Ferngill.values.false": "無効",
+
+        "config.(P) Grains Overhull.name": "(P) Grains Overhull",
+        "config.(P) Grains Overhull.description": "Grains Overhullのスプライトのデザインを全て変更する。",
+        "config.(P) Grains Overhull.values.true": "有効",
+        "config.(P) Grains Overhull.values.false": "無効",
+
+        "config.(Q) Bonster Crops Combined.name": "(Q) Bonster Crops Combined",
+        "config.(Q) Bonster Crops Combined.description": "Bonster Crops Combinedのスプライトのデザインを全て変更する。",
+        "config.(Q) Bonster Crops Combined.values.true": "有効",
+        "config.(Q) Bonster Crops Combined.values.false": "無効",
+
+        "config.(R) Uncle Iroh Tea.name": "(R) Uncle Iroh Tea",
+        "config.(R) Uncle Iroh Tea.description": "Uncle Iroh Teaのスプライトのデザインを全て変更する。",
+        "config.(R) Uncle Iroh Tea.values.true": "有効",
+        "config.(R) Uncle Iroh Tea.values.false": "無効",
+
+        "config.(S) Polyamory Sweet.name": "(S) Polyamory Sweet",
+        "config.(S) Polyamory Sweet.description": "Polyamory Sweetのスプライトのデザインを全て変更する。",
+        "config.(S) Polyamory Sweet.values.true": "有効",
+        "config.(S) Polyamory Sweet.values.false": "無効",
+
+        "config.(T) Ore Crops.name": "(T) Ore Crops",
+        "config.(T) Ore Crops.description": "Ore Cropsのスプライトのデザインを全て変更する。",
+        "config.(T) Ore Crops.values.true": "有効",
+        "config.(T) Ore Crops.values.false": "無効",
+
+        "config.(U) Tahla Crops.name": "(U) Tahla Crops",
+        "config.(U) Tahla Crops.description": "Tahla Cropsのスプライトのデザインを全て変更する。",
+        "config.(U) Tahla Crops.values.true": "有効",
+        "config.(U) Tahla Crops.values.false": "無効",
+    
+        "config.(V) Mildkewy Food Starter.name": "(V) Mildkewy Food Starter",
+        "config.(V) Mildkewy Food Starter.description": "Mildkewy Food Starterのスプライトのデザインを全て変更する。",
+        "config.(V) Mildkewy Food Starter.values.true": "有効",
+        "config.(V) Mildkewy Food Starter.values.false": "無効",
+    
+        "config.(W) Tobacco and Hemp.name": "(W) Tobacco and Hemp",
+        "config.(W) Tobacco and Hemp.description": "Tobacco and Hempのスプライトのデザインを全て変更する。",
+        "config.(W) Tobacco and Hemp.values.true": "有効",
+        "config.(W) Tobacco and Hemp.values.false": "無効",
+    
+        "config.(X) Ridgeside Village.name": "(X) Ridgeside Village",
+        "config.(X) Ridgeside Village.description": "Ridgeside Villageのスプライトのデザインを全て変更する。",
+        "config.(X) Ridgeside Village.values.true": "有効",
+        "config.(X) Ridgeside Village.values.false": "無効",
+    
+        "config.(Y) Adventurer Guild Expanded.name": "(Y) Adventurer Guild Expanded",
+        "config.(Y) Adventurer Guild Expanded.description": "Adventurer Guild Expandedのスプライトのデザインを全て変更する。",
+        "config.(Y) Adventurer Guild Expanded.values.true": "有効",
+        "config.(Y) Adventurer Guild Expanded.values.false": "無効",
+    
+        "config.(Z) Distant Lands.name": "(Z) Distant Lands",
+        "config.(Z) Distant Lands.description": "Distant Landsのスプライトのデザインを全て変更する。",
+        "config.(Z) Distant Lands.values.true": "有効",
+        "config.(Z) Distant Lands.values.false": "無効",
+
+        "config.(A²) Magical Crops.name": "(A²) Magical Crops",
+        "config.(A²) Magical Crops.description": "Magical Cropsのスプライトのデザインを全て変更する。",
+        "config.(A²) Magical Crops.values.true": "有効",
+        "config.(A²) Magical Crops.values.false": "無効"
+}

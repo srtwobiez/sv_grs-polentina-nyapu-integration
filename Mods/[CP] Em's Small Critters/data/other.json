@@ -1,0 +1,18 @@
+{
+	"Changes": [
+			{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Frogs.png",
+		"ToArea": { "X": 0, "Y": 224, "Width": 112, "Height": 32 },
+		"When":{ "Frogs":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Owl.png",
+		"ToArea": { "X": 96, "Y": 256, "Width": 128, "Height": 32 },
+		"When":{ "Owl":"true"}
+		}
+	]
+}

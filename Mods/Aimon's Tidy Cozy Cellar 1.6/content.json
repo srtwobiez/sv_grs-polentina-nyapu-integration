@@ -1,0 +1,298 @@
+{
+   "Format": "2.0.0",
+   
+   "ConfigSchema": {
+		
+			"ModEnabled": { 
+		"AllowValues": "true, false",
+		"Default": "true",
+			},
+		
+			"Recolor": { 
+		"AllowValues": "Dark, Light",
+		"Default": "Dark",
+		},
+		
+		"Cellar size": { 
+		"AllowValues": "Small, Big",
+		"Default": "Big",
+		},
+		"Wooden Floor sections": { 
+		"AllowValues": "true, false",
+		"Default": "true",
+			},
+			
+		},
+
+
+
+    "Changes": [
+	
+	
+//---------------------INCLUDE
+	
+	{
+      "Action": "Include",
+      "FromFile": "assets/code/warps.json",
+	   },
+	 
+
+	
+//------------------TILESHEETS	
+	
+	{
+            "Action": "Load",
+            "Target": "Maps/z_TCC",
+            "FromFile": "assets/Tilesheets/z_TCC.png",
+        },
+	
+		{
+      "Action": "EditImage",
+      "Target": "Maps/z_TCC",
+      "FromFile": "assets/Tilesheets/z_TCC_light.png",
+	  "When": { "ModEnabled": "true", "Recolor": "Light",  },
+        },
+		{
+      "Action": "EditImage",
+      "Target": "Maps/z_TCC",
+      "FromFile": "assets/Tilesheets/z_TCC.png",
+	  "When": { "ModEnabled": "true", "Recolor": "Dark",  },
+        },
+
+
+//------------------------------CELLAR MAPS
+
+	  {  //VANILLA (entrance on the left side)
+      "Action": "Load",
+      "Target": "Maps/Cellar",
+      "FromFile": "assets/Cellar_Vanilla.tmx",
+		"When": { "ModEnabled": "true",
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,			
+				},
+        },
+	
+	  {  //MYDAMNMODS (entrance on the right side)
+      "Action": "Load",
+      "Target": "Maps/Cellar",
+      "FromFile": "assets/Cellar_Modded.tmx",
+		"When": { "ModEnabled": "true",
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": true,			
+				},
+        },
+		 { 
+      "Action": "Load",
+      "Target": "Maps/Cellar",
+      "FromFile": "assets/Cellar_Modded.tmx",
+		"When": { "ModEnabled": "true",
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": true,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,			
+				},
+        },
+		 {  
+      "Action": "Load",
+      "Target": "Maps/Cellar",
+      "FromFile": "assets/Cellar_Modded.tmx",
+		"When": { "ModEnabled": "true",
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": true,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,			
+				},
+        },
+//-----------------------------EDITS
+
+//big
+
+{
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"FromFile": "assets/Big_Vanilla.tmx",
+			"FromArea": {"X":0, "Y":19, "Width":22, "Height":32},
+			"ToArea": {"X":0, "Y":19, "Width":22, "Height":32},
+			"PatchMode": "Replace",
+			"When":  { "ModEnabled": "true", "Cellar size": "Big",
+			
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,			
+				},
+		},
+		
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"FromFile": "assets/Big_Modded.tmx",
+			"FromArea": {"X":0, "Y":19, "Width":22, "Height":32},
+			"ToArea": {"X":0, "Y":19, "Width":22, "Height":32},
+			"PatchMode": "Replace",
+			"When":  { "ModEnabled": "true", "Cellar size": "Big",
+			
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": true,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,			
+				},
+		},
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"FromFile": "assets/Big_Modded.tmx",
+			"FromArea": {"X":0, "Y":19, "Width":22, "Height":32},
+			"ToArea": {"X":0, "Y":19, "Width":22, "Height":32},
+			"PatchMode": "Replace",
+			"When":  { "ModEnabled": "true", "Cellar size": "Big",
+			
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout":  false, 
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": true,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,			
+				},
+		},
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"FromFile": "assets/Big_Modded.tmx",
+			"FromArea": {"X":0, "Y":19, "Width":22, "Height":32},
+			"ToArea": {"X":0, "Y":19, "Width":22, "Height":32},
+			"PatchMode": "Replace",
+			"When":  { "ModEnabled": "true", "Cellar size": "Big",
+			
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout":  false, 
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false, 
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": true,		
+				},
+		},
+		
+		
+//floor
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"FromFile": "assets/Cellar_Floor_Vanilla.tmx",
+			"FromArea": {"X":0, "Y":7, "Width":22, "Height":7},
+			"ToArea":  {"X":0, "Y":7, "Width":22, "Height":7},
+			"PatchMode": "Replace",
+			"When":  { "ModEnabled": "true", "Wooden Floor sections": false,
+			
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,			
+				},
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"FromFile": "assets/Cellar_Floor_Vanilla.tmx",
+			"FromArea": {"X":0, "Y":32, "Width":22, "Height":19},
+			"ToArea":  {"X":0, "Y":32, "Width":22, "Height":19},
+			"PatchMode": "Replace",
+			"When":  { "ModEnabled": "true", "Wooden Floor sections": false, "Cellar size": "Big",
+			
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,			
+				},
+		},
+		
+		//modded
+		
+		
+			{
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"FromFile": "assets/Cellar_Floor_Modded.tmx",
+			"FromArea": {"X":0, "Y":7, "Width":22, "Height":7},
+			"ToArea":  {"X":0, "Y":7, "Width":22, "Height":7},
+			"PatchMode": "Replace",
+			"When":  { "ModEnabled": "true", "Wooden Floor sections": false,
+			
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": true,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,			
+				},
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"FromFile": "assets/Cellar_Floor_Modded.tmx",
+			"FromArea": {"X":0, "Y":32, "Width":22, "Height":19},
+			"ToArea":  {"X":0, "Y":32, "Width":22, "Height":19},
+			"PatchMode": "Replace",
+			"When":  { "ModEnabled": "true", "Wooden Floor sections": false, "Cellar size": "Big",
+			
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": true,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,			
+				},
+		},
+		
+		//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"FromFile": "assets/Cellar_Floor_Modded.tmx",
+			"FromArea": {"X":0, "Y":7, "Width":22, "Height":7},
+			"ToArea":  {"X":0, "Y":7, "Width":22, "Height":7},
+			"PatchMode": "Replace",
+			"When":  { "ModEnabled": "true", "Wooden Floor sections": false,
+			
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": true,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,			
+				},
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"FromFile": "assets/Cellar_Floor_Modded.tmx",
+			"FromArea": {"X":0, "Y":32, "Width":22, "Height":19},
+			"ToArea":  {"X":0, "Y":32, "Width":22, "Height":19},
+			"PatchMode": "Replace",
+			"When":  { "ModEnabled": "true", "Wooden Floor sections": false, "Cellar size": "Big",
+			
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,	
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt": true,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": false,			
+				},
+		},
+		//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"FromFile": "assets/Cellar_Floor_Modded.tmx",
+			"FromArea": {"X":0, "Y":7, "Width":22, "Height":7},
+			"ToArea":  {"X":0, "Y":7, "Width":22, "Height":7},
+			"PatchMode": "Replace",
+			"When":  { "ModEnabled": "true", "Wooden Floor sections": false,
+			
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt":  false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": true,			
+				},
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Cellar",
+			"FromFile": "assets/Cellar_Floor_Modded.tmx",
+			"FromArea": {"X":0, "Y":32, "Width":22, "Height":19},
+			"ToArea":  {"X":0, "Y":32, "Width":22, "Height":19},
+			"PatchMode": "Replace",
+			"When":  { "ModEnabled": "true", "Wooden Floor sections": false, "Cellar size": "Big",
+			
+				"HasMod |contains=Aimon111.RedisignedFarmHouseLayout": false,
+				"HasMod |contains=Aimon111.RedesignedFarmHouseLayoutAlt":  false,
+				"HasMod |contains=Aimon111.AimonsTidyCozyFarmhouse": true,		
+				},
+		},
+		
+
+	]
+}
+	
+
+ 

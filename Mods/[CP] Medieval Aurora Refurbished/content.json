@@ -1,0 +1,240 @@
+{
+   "Format": "1.27.0",
+   "ConfigSchema": {
+		"Replace": {"AllowValues":"Aurora Refurbished, Aurora Shipping Bin, Aurora Sign ",
+					"AllowMultiple": true,
+					"AllowBlank": true,
+					"Default": "Aurora Refurbished, Aurora Shipping Bin, Aurora Sign",
+					"Description": "You can anable/disable which buildings retextures you want loaded" },
+		"FallColor":{"AllowValues": "1, 2",
+					"Default": "1",
+					"Description": "To match recolor mods that have that option -> green(1) orange(2)" },
+		"RecolorOverwrite":{"AllowValues": "Vanilla, DNEarthyRecolour, Eemie's, FoliageRedone, Starblue, VibrantPastoral, WittilyNamed",
+					"AllowBlank": true,
+					"Default": "",
+					"Description": "If you want to change automaticcaly matched recolor palette" },
+					},
+		"DynamicTokens": [
+		{
+		"Name": "recolor",
+		"Value": "Vanilla",
+		},
+		{
+		"Name": "recolor",
+		"Value": "DNEarthyRecolour",
+			"When": { "HasMod": "DaisyNiko.EarthyRecolour" },
+		},
+		{
+		"Name": "recolor",
+		"Value": "Eemie's",
+			"When": { "HasMod": "minervamaga.CP.eemieMapRecolour" },
+		},
+		{
+		"Name": "recolor",
+		"Value": "FoliageRedone",
+			"When": { "HasMod": "stardewfoliageredone" },
+		},
+		{
+		"Name": "recolor",
+		"Value": "Starblue",
+			"When": { "HasMod": "Lita.StarblueValley" },
+		},
+		{
+		"Name": "recolor",
+		"Value": "VibrantPastoral",
+			"When": { "HasMod": "grapeponta.VibrantPastoralRecolor" },
+		},
+		{
+		"Name": "recolor",
+		"Value": "WittilyNamed",
+			"When": { "HasMod": "Acerbicon.Recolor" },
+		},
+	//recolor overwrite
+		{
+		"Name": "recolor",
+		"Value": "{{RecolorOverwrite}}",
+			"When": { "RecolorOverwrite |contains=Vanilla, DNEarthyRecolour, Eemie's, FoliageRedone, Starblue, VibrantPastoral, WittilyNamed": true },
+		},
+	//fall color overwrite
+		{
+		"Name": "recolor",
+		"Value": "{{recolor}}/{{FallColor}}",
+			"When": { "recolor |contains=Eemie's, VibrantPastoral": true,
+					"Season": "fall" },
+		},
+	],
+   "Changes": [
+ 	 // Aurora Refurbished CC Route
+    {
+         "Action": "EditImage",
+		 "PatchMode": "Replace", 
+         "Target": "Maps/{{season}}_z_extras",
+         "FromFile": "assets/{{recolor}}/{{season}}_Aurora.png",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 176, "Height": 160 },
+		 "ToArea": { "X": 224, "Y": 3216, "Width": 176, "Height": 160 },
+		 "When": { 
+				"Replace |contains=Aurora Refurbished": true,
+				"HasFlag": "PlayerWantsAuroraVineyard", 
+				 },
+	},
+	 // Aurora Refurbished Joja Route
+    {
+         "Action": "EditImage",
+		 "PatchMode": "Replace", 
+         "Target": "Maps/{{season}}_z_extras",
+         "FromFile": "assets/{{recolor}}/{{season}}_Aurora.png",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 176, "Height": 160 },
+		 "ToArea": { "X": 224, "Y": 3216, "Width": 176, "Height": 160 },
+		 "When": { 
+				"Replace |contains=Aurora Refurbished": true,
+				"HasSeenEvent": "746153084",
+				 },
+ 	},
+	 // Aurora Refurbished Roof CC Route
+    {
+		"Action": "EditMap",
+		"PatchMode": "Overlay",
+		"Target": "Maps/Custom_ForestWest",
+		"FromFile": "assets/base/Aurora_Roof.tmx",
+		"ToArea": { "X": 54, "Y": 9, "Width": 11, "Height": 6 },
+		"When": { 
+				"Replace |contains=Aurora Refurbished": true,
+				"HasFlag": "PlayerWantsAuroraVineyard",
+				},
+    },
+	 // Aurora Refurbished Roof Joja Route
+    {
+		"Action": "EditMap",
+		"PatchMode": "Overlay",
+		"Target": "Maps/Custom_ForestWest",
+		"FromFile": "assets/base/Aurora_Roof.tmx",
+		"ToArea": { "X": 54, "Y": 9, "Width": 11, "Height": 6 },
+		"When": { 
+				"Replace |contains=Aurora Refurbished": true,
+				"HasSeenEvent": "746153084", 
+				},
+	},
+	 // Shipping Bin CC Route
+   {
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": 
+				[
+			{
+				"Position": { "X": 66, "Y": 13 },
+				"Layer": "Front",
+				"SetTilesheet": "spring_z_extras",
+				"SetIndex": "454",
+			},
+			{
+				"Position": { "X": 67, "Y": 13 },
+				"Layer": "Front",
+				"SetTilesheet": "spring_z_extras",
+				"SetIndex": "455",
+			},
+			{
+				"Position": { "X": 66, "Y": 14 },
+				"Layer": "Buildings",
+				"SetTilesheet": "spring_z_extras",
+				"SetIndex": "479",
+			},
+			{
+				"Position": { "X": 67, "Y": 14 },
+				"Layer": "Buildings",
+				"SetTilesheet": "spring_z_extras",
+				"SetIndex": "480",
+			},
+			],
+				"When": { 
+				"Replace |contains=Aurora Shipping Bin": true,
+				"HasFlag": "PlayerWantsAuroraVineyard",
+				},
+	},
+	 // Shipping Bin Joja Route
+   {
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": 
+				[
+			{
+				"Position": { "X": 66, "Y": 13 },
+				"Layer": "Front",
+				"SetTilesheet": "spring_z_extras",
+				"SetIndex": "454",
+			},
+			{
+				"Position": { "X": 67, "Y": 13 },
+				"Layer": "Front",
+				"SetTilesheet": "spring_z_extras",
+				"SetIndex": "455",
+			},
+			{
+				"Position": { "X": 66, "Y": 14 },
+				"Layer": "Buildings",
+				"SetTilesheet": "spring_z_extras",
+				"SetIndex": "479",
+			},
+			{
+				"Position": { "X": 67, "Y": 14 },
+				"Layer": "Buildings",
+				"SetTilesheet": "spring_z_extras",
+				"SetIndex": "480",
+			},
+			],
+		"When": { 
+				"Replace |contains=Aurora Shipping Bin": true,
+				"HasSeenEvent": "746153084", 
+				},
+	},
+ 	 // Aurora Repaired Sign CC Route
+   {
+         "Action": "EditImage",
+		 "PatchMode": "Replace", 
+         "Target": "Maps/{{season}}_z_extras",
+         "FromFile": "assets/AuroraSign/{{season}}_AuroraSign.png",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 48 },
+		 "ToArea": { "X": 80, "Y": 3280, "Width": 48, "Height": 48 },
+		 "When": { 
+				"Replace |contains=Aurora Sign": true,
+				"HasFlag": "PlayerWantsAuroraVineyard",  
+				},
+ 	},
+	 // Aurora Repaired Sign Joja Route
+    {
+         "Action": "EditImage",
+		 "PatchMode": "Replace", 
+         "Target": "Maps/{{season}}_z_extras",
+         "FromFile": "assets/AuroraSign/{{season}}_AuroraSign.png",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 48 },
+		 "ToArea": { "X": 80, "Y": 3280, "Width": 48, "Height": 48 },
+		 "When": { 
+				"Replace |contains=Aurora Sign": true,
+				"HasSeenEvent": "746153084",
+				},
+			},
+ 	 // Aurora Refurbished Sign CC Route Map Edit
+    {
+		"Action": "EditMap",
+		"PatchMode": "Overlay",
+		"Target": "Maps/Custom_ForestWest",
+		"FromFile": "assets/base/AuroraRepairedSign.tmx",
+		"ToArea": { "X": 60, "Y": 33, "Width": 3, "Height": 3 },
+		 "When": { 
+				"Replace |contains=Aurora Sign": true,
+				"HasFlag": "PlayerWantsAuroraVineyard",  
+				},
+    },
+ 	// Aurora Refurbished Sign Joja Route Map Edit
+    {
+		"Action": "EditMap",
+		"PatchMode": "Overlay",
+		"Target": "Maps/Custom_ForestWest",
+		"FromFile": "assets/base/AuroraRepairedSign.tmx",
+		"ToArea": { "X": 60, "Y": 33, "Width": 3, "Height": 3 },
+		 "When": { 
+			"Replace |contains=Aurora Sign": true,
+			"HasSeenEvent": "746153084",
+			},
+		},
+	],
+}

@@ -1,0 +1,55 @@
+{
+  // ===== POWERS MODULE =====
+  // Solarium Key wallet item and recolor-compatible key textures
+  "Changes": [
+    // ===== SOLARIUM KEY TEXTURE (VANILLA) =====
+    // Only when no supported recolor is loaded (Vibrant Pastoral, Earthy Recolour, Starblue Valley).
+    {
+      "LogName": "JJ Solarium Key texture (vanilla)",
+      "Action": "Load",
+      "Target": "{{ModId}}/SolariumKey",
+      "FromFile": "assets/SolariumKey/Vanilla.png",
+      "When": {
+        "HasMod |contains=grapeponta.VibrantPastoralRecolor": "false",
+        "HasMod |contains=DaisyNiko.EarthyRecolour": "false",
+        "HasMod |contains=Lita.StarblueValleyUnofficial": "false"
+      }
+    },
+    // ===== SOLARIUM KEY TEXTURE RECOLORS =====
+    {
+      "LogName": "JJ Solarium Key texture (Vibrant Pastoral Recolor)",
+      "Action": "Load",
+      "Target": "{{ModId}}/SolariumKey",
+      "FromFile": "assets/SolariumKey/VibrantPastoralRecolor.png",
+      "When": {
+        "HasMod": "grapeponta.VibrantPastoralRecolor"
+      }
+    },
+    {
+      "LogName": "JJ Solarium Key texture (Earthy Recolour)",
+      "Action": "Load",
+      "Target": "{{ModId}}/SolariumKey",
+      "FromFile": "assets/SolariumKey/DNEarthyRecolour.png",
+      "When": {
+        "HasMod": "DaisyNiko.EarthyRecolour"
+      }
+    },
+    {
+      "LogName": "JJ Solarium Key texture (Starblue Valley)",
+      "Action": "Load",
+      "Target": "{{ModId}}/SolariumKey",
+      "FromFile": "assets/SolariumKey/StarBlue.png",
+      "When": {
+        "HasMod": "Lita.StarblueValleyUnofficial"
+      }
+    },
+    // ===== SOLARIUM KEY POWER (WALLET ITEM) =====
+    // Unlocks hatch access; texture path points to loaded key asset
+    {
+      "LogName": "JJ Solarium Key power (wallet item)",
+      "Action": "EditData",
+      "Target": "Data/Powers",
+      "Entries": { "SolariumKey": { "DisplayName": "{{i18n:Power.SolariumKey}}", "Description": "{{i18n:Power.SolariumKey_Description}}", "TexturePath": "{{ModId}}/SolariumKey", "TexturePosition": {"X": 0, "Y": 0}, "UnlockedCondition": "ANY \"PLAYER_HAS_CONVERSATION_TOPIC Current {{ModId}}_HasSolariumKey\" \"PLAYER_HAS_CONVERSATION_TOPIC Current jennajuffuffles.SpaSolariumRevisited_HasSolariumKey\" \"PLAYER_HAS_SEEN_EVENT Current {{ModId}}_EvelynKey\" \"PLAYER_HAS_SEEN_EVENT Current jennajuffuffles.SpaSolariumRevisited_EvelynKey\"", "CustomFields": null } }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "Name": "Mushroom Witch Hat",
+
+  //FRONT
+  "FrontHat": {
+    "ColorMasks": [
+      [ 56, 32, 21 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    }
+  },
+
+  //RIGHT
+  "RightHat": {
+    "ColorMasks": [
+      [ 56, 32, 21 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 20
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    }
+  }, 
+
+  //LEFT
+    "LeftHat": {
+      "ColorMasks": [
+        [ 56, 32, 21 ]
+      ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 40
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    }
+  },
+
+  //BACK
+  "BackHat": {
+    "ColorMasks": [
+      [ 56, 32, 21 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 60
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    }
+  }
+}

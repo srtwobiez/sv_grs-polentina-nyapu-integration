@@ -1,0 +1,198 @@
+{
+  "Changes": [
+    // ===== SVE PREMIUM BARN BLOCK EXTRA DOOR =====
+    // Block interior tiles where the second door was on SVE Premium Barn.
+    // Front layer uses barn index 9 across the top of that wall.
+    // AlwaysFront uses barn index 48 to cover the old doorway area.
+    {
+      "LogName": "JJ SVE Premium Barn block extra door",
+      "Action": "EditMap",
+      "Target": "Maps/SVE_PremiumBarn",
+      "Priority": "Late",
+      "MapTiles": [
+        {
+          "Position": { "X": 23, "Y": 16 },
+          "Layer": "Buildings",
+          "SetTilesheet": "barn",
+          "SetIndex": "71"
+        },
+        {
+          "Position": { "X": 23, "Y": 17 },
+          "Layer": "Buildings",
+          "SetTilesheet": "barn",
+          "SetIndex": "75"
+        },
+        {
+          "Position": { "X": 23, "Y": 18 },
+          "Layer": "Buildings",
+          "SetTilesheet": "barn",
+          "SetIndex": "22"
+        },
+        {
+          "Position": { "X": 22, "Y": 16 },
+          "Layer": "Front",
+          "SetTilesheet": "barn",
+          "SetIndex": "9"
+        },
+        {
+          "Position": { "X": 23, "Y": 16 },
+          "Layer": "Front",
+          "SetTilesheet": "barn",
+          "SetIndex": "9"
+        },
+        {
+          "Position": { "X": 24, "Y": 16 },
+          "Layer": "Front",
+          "SetTilesheet": "barn",
+          "SetIndex": "9"
+        },
+        {
+          "Position": { "X": 22, "Y": 17 },
+          "Layer": "AlwaysFront",
+          "SetTilesheet": "barn",
+          "SetIndex": "48"
+        },
+        {
+          "Position": { "X": 23, "Y": 17 },
+          "Layer": "AlwaysFront",
+          "SetTilesheet": "barn",
+          "SetIndex": "48"
+        },
+        {
+          "Position": { "X": 24, "Y": 17 },
+          "Layer": "AlwaysFront",
+          "SetTilesheet": "barn",
+          "SetIndex": "48"
+        },
+        {
+          "Position": { "X": 22, "Y": 18 },
+          "Layer": "AlwaysFront",
+          "SetTilesheet": "barn",
+          "SetIndex": "48"
+        },
+        {
+          "Position": { "X": 23, "Y": 18 },
+          "Layer": "AlwaysFront",
+          "SetTilesheet": "barn",
+          "SetIndex": "48"
+        },
+        {
+          "Position": { "X": 24, "Y": 18 },
+          "Layer": "AlwaysFront",
+          "SetTilesheet": "barn",
+          "SetIndex": "48"
+        }
+      ]
+    },
+    // ===== SVE PREMIUM BARN DELUXE EXTERIOR =====
+    // Match vanilla Deluxe Barn door layout. Runs when ForceMinBarn is false.
+    // With upgrades includes BuildingToUpgrade.
+    {
+      "LogName": "JJ SVE Premium Barn deluxe upgrade path",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_PremiumBarn": {
+          "BuildingToUpgrade": "Deluxe Barn",
+          "Texture": "Buildings\\Deluxe Barn",
+          "Size": { "X": 7, "Y": 4 },
+          "SourceRect": { "X": 0, "Y": 0, "Width": 112, "Height": 112 },
+          "BuildMenuDrawOffset": { "X": 0, "Y": 0 },
+          "UpgradeSignTile": "4.5, 2",
+          "UpgradeSignHeight": 31.0,
+          "HumanDoor": { "X": 1, "Y": 3 },
+          "AnimalDoor": { "X": 4, "Y": 3, "Width": 2, "Height": 1 },
+          "DrawLayers": [
+            { "Id": "Default_AnimalDoor_Bottom", "Texture": null, "SourceRect": { "X": 0, "Y": 112, "Width": 32, "Height": 16 }, "DrawPosition": "64, 96", "DrawInBackground": false, "SortTileOffset": 0.02, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": -19 } },
+            { "Id": "Default_AnimalDoor_Top", "Texture": null, "SourceRect": { "X": 0, "Y": 112, "Width": 32, "Height": 12 }, "DrawPosition": "64, 84", "DrawInBackground": false, "SortTileOffset": 0.02, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": -19 } },
+            { "Id": "Default_AnimalDoor_Open_Top", "Texture": null, "SourceRect": { "X": 32, "Y": 112, "Width": 32, "Height": 16 }, "DrawPosition": "64, 80", "DrawInBackground": false, "SortTileOffset": 1.0, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": 0 } },
+            { "Id": "Default_AnimalDoor_Open_Bottom", "Texture": null, "SourceRect": { "X": 64, "Y": 112, "Width": 32, "Height": 16 }, "DrawPosition": "64, 96", "DrawInBackground": false, "SortTileOffset": 1.0, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": 0 } }
+          ]
+        }
+      },
+      "When": { "ForceMinBarn": "false", "EnableBuildingUpgrades": "true" }
+    },
+    // Without upgrades omits BuildingToUpgrade.
+    {
+      "LogName": "JJ SVE Premium Barn deluxe standalone",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_PremiumBarn": {
+          "Texture": "Buildings\\Deluxe Barn",
+          "Size": { "X": 7, "Y": 4 },
+          "SourceRect": { "X": 0, "Y": 0, "Width": 112, "Height": 112 },
+          "BuildMenuDrawOffset": { "X": 0, "Y": 0 },
+          "UpgradeSignTile": "4.5, 2",
+          "UpgradeSignHeight": 31.0,
+          "HumanDoor": { "X": 1, "Y": 3 },
+          "AnimalDoor": { "X": 4, "Y": 3, "Width": 2, "Height": 1 },
+          "DrawLayers": [
+            { "Id": "Default_AnimalDoor_Bottom", "Texture": null, "SourceRect": { "X": 0, "Y": 112, "Width": 32, "Height": 16 }, "DrawPosition": "64, 96", "DrawInBackground": false, "SortTileOffset": 0.02, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": -19 } },
+            { "Id": "Default_AnimalDoor_Top", "Texture": null, "SourceRect": { "X": 0, "Y": 112, "Width": 32, "Height": 12 }, "DrawPosition": "64, 84", "DrawInBackground": false, "SortTileOffset": 0.02, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": -19 } },
+            { "Id": "Default_AnimalDoor_Open_Top", "Texture": null, "SourceRect": { "X": 32, "Y": 112, "Width": 32, "Height": 16 }, "DrawPosition": "64, 80", "DrawInBackground": false, "SortTileOffset": 1.0, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": 0 } },
+            { "Id": "Default_AnimalDoor_Open_Bottom", "Texture": null, "SourceRect": { "X": 64, "Y": 112, "Width": 32, "Height": 16 }, "DrawPosition": "64, 96", "DrawInBackground": false, "SortTileOffset": 1.0, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": 0 } }
+          ]
+        }
+      },
+      "When": { "ForceMinBarn": "false", "EnableBuildingUpgrades": "false" }
+    },
+    // ===== SVE PREMIUM BARN BASIC EXTERIOR =====
+    // Use Barn skin but keep upgrade path to Deluxe Barn. Runs when ForceMinBarn is true.
+    // With upgrades includes BuildingToUpgrade.
+    {
+      "LogName": "JJ SVE Premium Barn basic upgrade path",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_PremiumBarn": {
+          "BuildingToUpgrade": "Deluxe Barn",
+          "Texture": "Buildings\\Barn",
+          "Size": { "X": 7, "Y": 4 },
+          "SourceRect": { "X": 0, "Y": 0, "Width": 112, "Height": 112 },
+          "BuildMenuDrawOffset": { "X": 0, "Y": 0 },
+          "UpgradeSignTile": "3, 3",
+          "UpgradeSignHeight": 31.0,
+          "HumanDoor": { "X": 1, "Y": 3 },
+          "AnimalDoor": { "X": 3, "Y": 3, "Width": 2, "Height": 1 },
+          "DrawLayers": [
+            { "Id": "Default_AnimalDoor_Bottom", "Texture": null, "SourceRect": { "X": 0, "Y": 112, "Width": 32, "Height": 16 }, "DrawPosition": "48, 96", "DrawInBackground": false, "SortTileOffset": 0.02, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": -19 } },
+            { "Id": "Default_AnimalDoor_Top", "Texture": null, "SourceRect": { "X": 0, "Y": 112, "Width": 32, "Height": 12 }, "DrawPosition": "48, 84", "DrawInBackground": false, "SortTileOffset": 0.02, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": -19 } },
+            { "Id": "Default_AnimalDoor_Open_Top", "Texture": null, "SourceRect": { "X": 32, "Y": 112, "Width": 32, "Height": 16 }, "DrawPosition": "48, 80", "DrawInBackground": false, "SortTileOffset": 1.0, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": 0 } },
+            { "Id": "Default_AnimalDoor_Open_Bottom", "Texture": null, "SourceRect": { "X": 64, "Y": 112, "Width": 32, "Height": 16 }, "DrawPosition": "48, 96", "DrawInBackground": false, "SortTileOffset": 1.0, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": 0 } }
+          ]
+        }
+      },
+      "When": { "ForceMinBarn": "true", "EnableBuildingUpgrades": "true" }
+    },
+    // Without upgrades omits BuildingToUpgrade.
+    {
+      "LogName": "JJ SVE Premium Barn basic standalone",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_PremiumBarn": {
+          "Texture": "Buildings\\Barn",
+          "Size": { "X": 7, "Y": 4 },
+          "SourceRect": { "X": 0, "Y": 0, "Width": 112, "Height": 112 },
+          "BuildMenuDrawOffset": { "X": 0, "Y": 0 },
+          "UpgradeSignTile": "3, 3",
+          "UpgradeSignHeight": 31.0,
+          "HumanDoor": { "X": 1, "Y": 3 },
+          "AnimalDoor": { "X": 3, "Y": 3, "Width": 2, "Height": 1 },
+          "DrawLayers": [
+            { "Id": "Default_AnimalDoor_Bottom", "Texture": null, "SourceRect": { "X": 0, "Y": 112, "Width": 32, "Height": 16 }, "DrawPosition": "48, 96", "DrawInBackground": false, "SortTileOffset": 0.02, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": -19 } },
+            { "Id": "Default_AnimalDoor_Top", "Texture": null, "SourceRect": { "X": 0, "Y": 112, "Width": 32, "Height": 12 }, "DrawPosition": "48, 84", "DrawInBackground": false, "SortTileOffset": 0.02, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": -19 } },
+            { "Id": "Default_AnimalDoor_Open_Top", "Texture": null, "SourceRect": { "X": 32, "Y": 112, "Width": 32, "Height": 16 }, "DrawPosition": "48, 80", "DrawInBackground": false, "SortTileOffset": 1.0, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": 0 } },
+            { "Id": "Default_AnimalDoor_Open_Bottom", "Texture": null, "SourceRect": { "X": 64, "Y": 112, "Width": 32, "Height": 16 }, "DrawPosition": "48, 96", "DrawInBackground": false, "SortTileOffset": 1.0, "OnlyDrawIfChestHasContents": null, "FrameDuration": 90, "FrameCount": 1, "FramesPerRow": -1, "AnimalDoorOffset": { "X": 0, "Y": 0 } }
+          ]
+        }
+      },
+      "When": { "ForceMinBarn": "true", "EnableBuildingUpgrades": "false" }
+    }
+  ]
+}

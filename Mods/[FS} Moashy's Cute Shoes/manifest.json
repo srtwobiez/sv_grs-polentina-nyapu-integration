@@ -1,0 +1,14 @@
+
+{
+  "Name": "[FS] Cute Shoes",
+  "Author": "Moashy",
+  "Version": "1.0.2",
+  "Description": "Cute Shoes for farmer",
+  "UniqueID": "Moashy.CuteShoes",
+  "UpdateKeys": ["Nexus:23341"],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "5.4.0"
+  }
+}

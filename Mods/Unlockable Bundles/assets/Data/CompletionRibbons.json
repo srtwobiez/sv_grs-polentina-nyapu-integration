@@ -1,0 +1,65 @@
+{
+
+"Valentine": { //The ribbon id
+      "Texture": "UnlockableBundles/UI/Ribbons",
+      "TextureSource": { "X": 0, "Y": 0, "Width": 161, "Height": 71 },
+      "CompletedTextPosition": "40, 25",
+      "Effects": [
+      ]
+    },
+
+"StarrySky": {
+      "Texture": "UnlockableBundles/UI/Ribbons",
+      "TextureSource": { "X": 0, "Y": 71, "Width": 161, "Height": 71 },
+      "CompletedTextPosition": "40, 25",
+      "Effects": [
+	  //Sparköes
+		{
+			"Texture": "UnlockableBundles/UI/Ribbons",
+			"TextureSource": { "X": 161, "Y": 71, "Width": 5, "Height": 5 },
+			"Animation": "0@50,1-2@100,0@300",
+			"Area": { "X": 2, "Y": 10, "Width": 156, "Height": 50 },
+			"Repeat": true,
+			"Drag": false,
+		},
+		
+		{
+			"Texture": "UnlockableBundles/UI/Ribbons",
+			"TextureSource": { "X": 161, "Y": 71, "Width": 5, "Height": 5 },
+			"Animation": "0@270,1-2@100,0@60",
+			"Area": { "X": 2, "Y": 10, "Width": 156, "Height": 50 },
+			"Repeat": true,
+			"Drag": false,
+		},
+		
+		{
+			"Texture": "UnlockableBundles/UI/Ribbons",
+			"TextureSource": { "X": 161, "Y": 71, "Width": 5, "Height": 5 },
+			"Animation": "0@85,1-2@100,0@100",
+			"Area": { "X": 2, "Y": 10, "Width": 156, "Height": 50 },
+			"Repeat": true,
+			"Drag": false,
+		},
+		
+		{
+			"Texture": "UnlockableBundles/UI/Ribbons",
+			"TextureSource": { "X": 161, "Y": 71, "Width": 5, "Height": 5 },
+			"Animation": "0@410,1-2@100,0@50",
+			"Area": { "X": 2, "Y": 10, "Width": 156, "Height": 50 },
+			"Repeat": true,
+			"Drag": false,
+		},
+		
+		//Meteor Shower
+		{
+			"Texture": "UnlockableBundles/UI/Ribbons",
+			"TextureSource": { "X": 161, "Y": 96, "Width": 79, "Height": 46 },
+			"Animation": "0@99999",
+			"Position": "-36, 15",
+			"Repeat": true,
+			"Drag": true,
+		},
+      ]
+    }
+
+}

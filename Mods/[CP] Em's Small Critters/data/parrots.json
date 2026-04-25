@@ -1,0 +1,30 @@
+{
+	"Changes": [
+			{
+		"Action": "EditImage",
+		"Target": "LooseSprites/parrots",
+		"FromFile": "assets/Parrots.png",
+		"When":{ "Parrots":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/IslandParrot",
+		"FromFile": "assets/IslandParrot.png",
+		"When":{ "Parrots":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/CursorParrot1.png",
+		"ToArea": { "X": 48, "Y": 144, "Width": 128, "Height": 20 },
+		"When":{ "Parrots":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/CursorParrot2.png",
+		"ToArea": { "X": 0, "Y": 165, "Width": 192, "Height": 23 },
+		"When":{ "Parrots":"true"}
+		}
+	]
+}

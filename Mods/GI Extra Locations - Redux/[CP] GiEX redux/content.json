@@ -1,0 +1,612 @@
+{
+   "$schema": "https://smapi.io/schemas/content-patcher.json",
+   "Format": "2.9.0",
+   "DynamicTokens": [
+      /* CONFIG */
+      //default
+      {
+         "Name": "Perfectionist",
+         "Value": false
+      },
+      {
+         "Name": "Difficulty",
+         "Value": "normal" //default
+      },
+      {
+         "Name": "QuestDifficulty",
+         "Value": "normal" //default
+      },
+      {
+         "Name": "ShopDifficulty",
+         "Value": "normal"
+      },
+      {
+         "Name": "Bowlegs",
+         "Value": "" //default
+      },
+      {
+         "Name": "PortraitStyle",
+         "Value": "Vanilla"
+      },
+      {
+         "Name": "LighterBackstory",
+         "Value": "false" //default
+      },
+      {
+         "Name": "DifficultyMultiplier",
+         "Value": 1
+      },
+      {
+         "Name": "DifficultyMultiplier",
+         "Value": 0.5,
+         "When": {
+            "mistyspring.GiEXredux.code/Difficulty": "easy"
+         }
+      },
+      {
+         "Name": "DifficultyMultiplier",
+         "Value": 2,
+         "When": {
+            "mistyspring.GiEXredux.code/Difficulty": "hard"
+         }
+      },
+      //from user settings
+      {
+         "Name": "Perfectionist",
+         "Value": "true",
+         "When": {
+            "mistyspring.GiEXredux.code/Perfectionist": "true"
+         }
+      },
+      {
+         "Name": "Difficulty",
+         "Value": "{{mistyspring.GiEXredux.code/Difficulty}}",
+         "When": {
+            "HasMod": "mistyspring.GiEXredux.code"
+         }
+      },
+      {
+         "Name": "QuestDifficulty",
+         "Value": "{{mistyspring.GiEXredux.code/QuestDifficulty}}",
+         "When": {
+            "HasMod": "mistyspring.GiEXredux.code"
+         }
+      },
+      {
+         "Name": "ShopDifficulty",
+         "Value": "{{mistyspring.GiEXredux.code/ShopDifficulty}}",
+         "When": {
+            "HasMod": "mistyspring.GiEXredux.code"
+         }
+      },
+      {
+         "Name": "Bowlegs",
+         "Value": "-nobowlegs",
+         "When": {
+            "mistyspring.GiEXredux.code/NoBowlegs": "true"
+         }
+      },
+      {
+         "Name": "PortraitStyle",
+         "Value": "{{mistyspring.GiEXredux.code/PortraitStyle}}",
+         "When": {
+            "HasMod": "mistyspring.GiEXredux.code"
+         }
+      },
+      {
+         "Name": "LighterBackstory",
+         "Value": "true",
+         "When": {
+            "mistyspring.GiEXredux.code/LighterBackstory": "true"
+         }
+      },
+      /* CONTENT */
+      {
+         "Name": "AllBundleFlags", //different from has all, this refers to the status of as a whole
+         "Value": "false"
+      },
+      {
+         "Name": "AllBundleFlags",
+         "Value": "true",
+         "When": {
+            "HasFlag|contains=GiEXbundle.mining.done": true,
+            "HasFlag|contains=GiEXbundle.farming.done": true,
+            "HasFlag|contains=GiEXbundle.cooking.done": true,
+            "HasFlag|contains=GiEXbundle.fishing.done": true,
+            "HasFlag|contains=GiEXbundle.combat.done": true
+         }
+      },
+      {
+         "Name": "BeachState",
+         "Value": "dirty"
+      },
+      {
+         "Name": "BeachState",
+         "Value": "clean",
+         "When": {
+            "HasFlag": "GiEX.CleanedBeach"
+         }
+      },
+      {
+         "Name": "SpawnConditions",
+         "Value": "PLAYER_HAS_MAIL Any willyBoatFixed"
+      },
+      {
+         "Name": "SpawnConditions",
+         "Value": "ANY \"PLAYER_HAS_MAIL Any willyBoatFixed\" \"PLAYER_HAS_MAIL Any mistyspring.GingerIslandStart_gotGiftWarped\"",
+         "When": {
+            "HasMod": "mistyspring.GingerIslandStart"
+         }
+      },
+      {
+         "Name": "StrandedInIsland",
+         "Value": "FALSE"
+      },
+      {
+         "Name": "StrandedInIsland",
+         "Value": "TRUE",
+         "When": {
+            "HasMod": "mistyspring.GingerIslandStart",
+            "HasFlag": "mistyspring.GingerIslandStart_gotGiftWarped"
+         }
+      },
+      {
+         "Name": "CompleteShopRequirements",
+         "Value": false
+      },
+      {
+         "Name": "CompleteShopRequirements",
+         "Value": true,
+         "When": {
+            "HasFlag|contains=GiEXbundle.farming.done": "true",
+            "HasFlag": "GiEX_CleanedBeach"
+         }
+      },
+      {
+         //used to put before item ids and that kind of thing
+         "Name": "ModPrefix",
+         "Value": "GiEXredux_"
+      },
+      {
+         "Name": "LumiBaitOrTackle",
+         "Value": "{{Random: GiEXredux_LumiBait, GiEXredux_LumiTackle}}"
+      },
+      /* EVENTS */
+      {
+         "Name": "journalify",
+         "Value": "changePortrait JaviGiex Book/changeName JaviGiex {{i18n:Journal}}"
+      },
+      {
+         "Name": "dejournal",
+         "Value": "changePortrait JaviGiex/changeName JaviGiex {{i18n:Javi}}"
+      },
+      {
+         "Name": "AllIslandUpgrades",
+         "Value": "FALSE"
+      },
+      {
+         "Name": "AllIslandUpgrades",
+         "Value": "TRUE",
+         "When": {
+            "HasFlag|contains=Island_UpgradeHouse": true,
+            "HasFlag|contains=Island_UpgradeHouse_Mailbox": true,
+            "HasFlag|contains=Island_W_Obelisk": true,
+            "HasFlag|contains=Island_FirstParrot": true,
+            "HasFlag|contains=Island_UpgradeBridge": true,
+            "HasFlag|contains=Island_UpgradeTrader": true,
+            "HasFlag|contains=Island_Resort": true,
+            "HasFlag|contains=Island_Turtle": true,
+            "HasFlag|contains=Island_VolcanoBridge": true
+         }
+      },
+      {
+         "Name": "CanSeeJournal",
+         "Value": false
+      },
+      {
+         "Name": "CanSeeJournal",
+         "Value": true,
+         "When": {
+            "HasFlag": "GiEX_Javi_4h_noread",
+            "HasSeenEvent |contains= GiEX_Javi_4h_alt": false
+         }
+      },
+      {
+         "Name": "CanSeeJournal",
+         "Value": true,
+         "When": {
+            "HasSeenEvent": "GiEX_Javi_10h"
+         }
+      },
+      /* COMPAT */
+      {
+         "Name": "compat",
+         "Value": "vanilla"
+      },
+      {
+         "Name": "compat",
+         "Value": "earthy",
+         "When": {
+            "HasMod": "DaisyNiko.EarthyRecolour"
+         }
+      },
+      {
+         "Name": "compat",
+         "Value": "starblue",
+         "When": {
+            "HasMod": "Lita.StarblueValley"
+         }
+      },
+      {
+         "Name": "compat",
+         "Value": "starblue",
+         "When": {
+            "HasMod": "Lita.StarblueValleyUnofficial"
+         }
+      },
+      {
+         "Name": "compat",
+         "Value": "vpr",
+         "When": {
+            "HasMod": "grapeponta.VibrantPastoralRecolor"
+         }
+      },
+      {
+         "Name": "GIversion",
+         "Value": "vanilla"
+      },
+      {
+         "Name": "GIversion",
+         "Value": "LNH",
+         "When": {
+            "HasMod": "Lnh.IslandOverhaul"
+         }
+      },
+      {
+         "Name": "HasAnyMuseumMod",
+         "Value": false
+      },
+      {
+         "Name": "HasAnyMuseumMod",
+         "Value": true,
+         "When": {
+            "HasMod":"RaffieJohn.ExtraSpace"
+         }
+      },
+      {
+         "Name": "HasAnyMuseumMod",
+         "Value": true,
+         "When": {
+            "HasMod":"Wolf.Gun"
+         }
+      },
+      {
+         "Name": "HasAnyMuseumMod",
+         "Value": true,
+         "When": {
+            "HasMod":"FlashShifter.StardewValleyExpandedCP"
+         }
+      },
+      {
+         "Name": "HasAnyMuseumMod",
+         "Value": true,
+         "When": {
+            "HasMod":"maat.BetterThings"
+         }
+      },
+      {
+         "Name": "HasAnyMuseumMod",
+         "Value": true,
+         "When": {
+            "HasMod":"Nekotekina.BetterMuseumDisplayCases"
+         }
+      },
+      {
+         "Name": "HasAnyMuseumMod",
+         "Value": true,
+         "When": {
+            "HasMod":"Solariaze.RAR"
+         }
+      },
+      {
+         "Name": "CanPatchMuseum",
+         "Value": true
+      },
+      {
+         "Name": "CanPatchMuseum",
+         "Value": false,
+         "When": {
+            "HasAnyMuseumMod": true
+         }
+      },
+      {
+         "Name": "CanPatchMuseum",
+         "Value": false,
+         "When": {
+            "mistyspring.GiEXredux.code/HideExtraMuseumSpace": true
+         }
+      },
+      {
+         "Name": "CanPatchMuseum",
+         "Value": false,
+         "When": {
+            "HasAnyMuseumMod": true,
+            "mistyspring.GiEXredux.code/HideExtraMuseumSpace": true
+         }
+      }
+   ],
+   "Changes": [
+      //audio
+      {
+         "LogName": "Add audio",
+         "Action": "EditData",
+         "Target": "Data/AudioChanges",
+         "Entries": {
+            "GiEX.LairMusic": {
+               "ID": "GiEX.LairMusic",
+               "Category": "Music",
+               "FilePaths": [
+                  "{{AbsoluteFilePath: assets/Audio/Adnova_been-a-while.wav}}",
+                  "{{AbsoluteFilePath: assets/Audio/Adnova_wishing.wav}}"
+               ],
+               "StreamedVorbis": false,
+               "Looped": true
+            },
+            "{{ModId}}_Splash": {
+               "ID": "{{ModId}}_Splash",
+               "Category": "Sound",
+               "FilePaths": [
+                  "{{AbsoluteFilePath: assets/Audio/Kayyy_splash.wav}}"
+               ],
+               "StreamedVorbis": false,
+               "Looped": false
+            }
+         }
+      },
+      //chair
+      {
+         "LogName": "Add chair",
+         "Action": "EditData",
+         "Target": "Data\\ChairTiles",
+         "Entries": {
+            "island_extras/4/5": "1/1/left/default/-1/-1/false"
+            //"zshipwreck":""
+         }
+      },
+      //buffs
+      {
+         "LogName": "Add buffs",
+         "Action": "EditData",
+         "Target": "Data/Buffs",
+         "Entries": {
+            "{{ModId}}/Charmer": {
+               "DisplayName": "{{i18n: Charmer.Name}}",
+               "Description": "{{i18n: Charmer.Description}}",
+               "IsDebuff": false,
+               "Duration": 60000, //in ms
+               "IconTexture": "Mods/mistyspring.GiEXredux/Textures/Buffs",
+               "IconSpriteIndex": 0,
+               "Effects": {
+                  "LuckLevel": 1
+               }
+            },
+            "{{ModId}}/Melting": {
+               "DisplayName": "{{i18n: Melting.Name}}",
+               "Description": "{{i18n: Melting.Description}}",
+               "IsDebuff": true,
+               "Duration": 60000, //in ms
+               "IconTexture": "Mods/mistyspring.GiEXredux/Textures/Buffs",
+               "IconSpriteIndex": 5,
+               "Effects": {
+                  "Attack": -2,
+                  "Defense": -5,
+                  "Speed": -1
+               }
+            },
+            "{{ModId}}/Regen": {
+               "DisplayName": "{{i18n: Regeneration.Name}}",
+               "Description": "{{i18n: Regeneration.Description}}",
+               "IsDebuff": false,
+               "Duration": 60000, //in ms
+               "IconTexture": "Mods/mistyspring.GiEXredux/Textures/Buffs",
+               "IconSpriteIndex": 1,
+               "Effects": {
+                  "Defense": 1
+               }
+            },
+            "{{ModId}}/Resistant": {
+               "DisplayName": "{{i18n: Resistant.Name}}",
+               "Description": "{{i18n: Resistant.Description}}",
+               "IsDebuff": false,
+               "Duration": 60000, //in ms
+               "IconTexture": "Mods/mistyspring.GiEXredux/Textures/Buffs",
+               "IconSpriteIndex": 2
+            },
+            "{{ModId}}/UnderwaterBreathing": {
+               "DisplayName": "{{i18n: UnderwaterBreathing.Name}}",
+               "Description": "{{i18n:UnderwaterBreathing.Description}}",
+               "IsDebuff": false,
+               "Duration": 60000, //in ms
+               "IconTexture": "Mods/mistyspring.GiEXredux/Textures/Buffs",
+               "IconSpriteIndex": 4
+            }, /*,
+              "{{ModId}}/NAME": {
+                  "DisplayName": "[LocalizedText Mods/{{ModId}}/Strings/Buffs:NAME.Name]",
+                  "Description":"[LocalizedText Mods/{{ModId}}/Strings/Buffs:NAME.Description]",
+                  "IsDebuff":"",
+                  "GlowColor":"",
+                  "Duration": 60000, //in ms
+                  "MaxDuration":"",
+                  "IconTexture":"Mods/mistyspring.GiEXredux/Textures/Buffs",
+                  "IconSpriteIndex":"",
+                  "Effects":{
+                      "FarmingLevel":"",
+                      "FishingLevel":"",
+                      "ForagingLevel":"",
+                      "LuckLevel":"",
+                      "MiningLevel":"",
+                      "Attack":"",
+                      "Defense":"",
+                      "MagneticRadius":"",
+                      "MaxStamina":"",
+                      "Speed":""
+                  },
+                  "CustomFields":{}
+              }*/
+         }
+      },
+      //powers
+      {
+         "Action": "EditData",
+         "Target": "Data/Powers",
+         "Entries": {
+            "Helmet": {
+               "DisplayName": "{{i18n: Helmet}}",
+               "Description": "{{i18n: Helmet_Description}}",
+               "TexturePath": "Mods/mistyspring.GiEXredux/Textures/HelmetIcon",
+               "TexturePosition": {
+                  "X": 0,
+                  "Y": 0
+               },
+               "UnlockedCondition": "PLAYER_HAS_MAIL Current GiEXbundle.fishing.done"
+            }
+         }
+      },
+      //trigger actions - used for making the fish tanks unable to be picked up
+      {
+         "Action": "EditData",
+         "Target": "Data/TriggerActions",
+         "Entries": {
+            "{{ModId}}.AddFishTank1": {
+               "Id": "{{ModId}}_AddFishTank1",
+               "Trigger": "LocationChanged",
+               "Condition": "PLAYER_HAS_MAIL Current willyBoatFixed, PLAYER_HAS_MAIL Current GiEXbundle.FixedFishTank1, LOCATION_NAME Here GiEX_Aquarium",
+               "SkipPermanentlyCondition": null,
+               "HostOnly": false,
+               "Action": "GiEX.AddFishTank GiEX_Aquarium 17 13 2322", //2400 aquatic sanctuary, 2312 deluxe fish tank, 2304 large fish tank, 2322 small fish tank
+               "Actions": null,
+               "CustomFields": null,
+               "MarkActionApplied": false
+            },
+            "{{ModId}}.AddFishTank2": {
+               "Id": "{{ModId}}_AddFishTank2",
+               "Trigger": "LocationChanged",
+               "Condition": "PLAYER_HAS_MAIL Current willyBoatFixed, PLAYER_HAS_MAIL Current GiEXbundle.FixedFishTank2, LOCATION_NAME Here GiEX_Aquarium",
+               "SkipPermanentlyCondition": null,
+               "HostOnly": false,
+               "Action": "GiEX.AddFishTank GiEX_Aquarium 28 13 2312",
+               "Actions": null,
+               "CustomFields": null,
+               "MarkActionApplied": false
+            },
+            "{{ModId}}.AddFishTank3": {
+               "Id": "{{ModId}}_AddFishTank3",
+               "Trigger": "LocationChanged",
+               "Condition": "PLAYER_HAS_MAIL Current willyBoatFixed, PLAYER_HAS_MAIL Current GiEXbundle.FixedFishTank3, LOCATION_NAME Here GiEX_Aquarium",
+               "SkipPermanentlyCondition": null,
+               "HostOnly": false,
+               "Action": "GiEX.AddFishTank GiEX_Aquarium 9 24 2312",
+               "Actions": null,
+               "CustomFields": null,
+               "MarkActionApplied": false
+            },
+            "{{ModId}}.AddFishTank4": {
+               "Id": "{{ModId}}_AddFishTank4",
+               "Trigger": "LocationChanged",
+               "Condition": "PLAYER_HAS_MAIL Current willyBoatFixed, PLAYER_HAS_MAIL Current GiEXbundle.FixedFishTank4, LOCATION_NAME Here GiEX_Aquarium",
+               "SkipPermanentlyCondition": null,
+               "HostOnly": false,
+               "Action": "GiEX.AddFishTank GiEX_Aquarium 31 24 2312",
+               "Actions": null,
+               "CustomFields": null,
+               "MarkActionApplied": false
+            },
+            "{{ModId}}.AddFishTank5": {
+               "Id": "{{ModId}}_AddFishTank5",
+               "Trigger": "LocationChanged",
+               "Condition": "PLAYER_HAS_MAIL Current willyBoatFixed, PLAYER_HAS_MAIL Current GiEXbundle.FixedFishTank5, LOCATION_NAME Here GiEX_Aquarium",
+               "SkipPermanentlyCondition": null,
+               "HostOnly": false,
+               "Action": "GiEX.AddFishTank GiEX_Aquarium 19 23 2400",
+               "Actions": null,
+               "CustomFields": null,
+               "MarkActionApplied": false
+            }
+         }
+      },
+      /* Include */
+      {
+         "LogName": "Animals",
+         "Action": "Include",
+         "FromFile": "assets/Animals.json"
+      },
+      {
+         "Action": "Include",
+         "FromFile": "assets/Bundle.json"
+      },
+      {
+         "Action": "Include",
+         "FromFile": "assets/Core.json"
+      },
+      {
+         "LogName": "Events",
+         "Action": "Include",
+         "FromFile": "assets/Events.json"
+      },
+      {
+         "LogName": "Fish",
+         "Action": "Include",
+         "FromFile": "assets/FishData.json"
+      },
+      {
+         "LogName": "Gift tastes",
+         "Action": "Include",
+         "FromFile": "assets/GiftTastes.json"
+      },
+      {
+         "LogName": "Locations",
+         "Action": "Include",
+         "FromFile": "assets/Locations.json"
+      },
+      {
+         "LogName": "Maps",
+         "Action": "Include",
+         "FromFile": "assets/Maps.json"
+      },
+      {
+         "LogName": "NPC",
+         "Action": "Include",
+         "FromFile": "assets/NPC.json"
+      },
+      {
+         "Action": "Include",
+         "FromFile": "assets/Objects.json"
+      },
+      {
+         "LogName": "Rules",
+         "Action": "Include",
+         "FromFile": "assets/Produce.json"
+      },
+      {
+         "Action": "Include",
+         "FromFile": "assets/Resources.json"
+      },
+      {
+         "Action": "Include",
+         "FromFile": "assets/Shops.json"
+      },
+      {
+         "Action": "Include",
+         "FromFile": "assets/Strings.json"
+      },
+      {
+         "Action": "Include",
+         "FromFile": "assets/Textures.json"
+      },
+      {
+         "LogName": "i18n",
+         "Action": "Include",
+         "FromFile": "assets/Translations.json"
+      }
+   ]
+}

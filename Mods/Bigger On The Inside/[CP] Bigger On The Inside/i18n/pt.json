@@ -1,0 +1,13 @@
+{
+  "config.section.RestartRequired.name": "Retorne à Tela de Título para ver as alterações",
+  "config.ForceMinBarn.name": "Textura Mín. do Celeiro",
+  "config.ForceMinBarn.description": "Usa o visual do Celeiro em vez do Celeiro de Luxo para o Celeiro Prêmio do SVE.",
+  "config.ForceMinCoop.name": "Textura Mín. do Galinheiro",
+  "config.ForceMinCoop.description": "Usa o visual do Galinheiro em vez do Galinheiro de Luxo para o Galinheiro Prêmio do SVE.",
+  "config.ForceMinShed.name": "Textura Mín. do Galpão",
+  "config.ForceMinShed.description": "Usa o visual do Galpão em vez do Galpão Grande para a Adega do SVE.",
+  "config.ForceMinVanillaBigShed.name": "Retexturizar Galpão Grande (Vanilla)",
+  "config.ForceMinVanillaBigShed.description": "Usa o visual base do Galpão para o Galpão Grande padrão.",
+  "config.EnableBuildingUpgrades.name": "Construções como Melhorias",
+  "config.EnableBuildingUpgrades.description": "Quando ativado, as construções do SVE devem evoluir a partir das anteriores. Quando desativado, podem ser construídas de forma independente."
+}

@@ -1,0 +1,94 @@
+{
+//Config
+  "config.section.Solarium.name": "Solarium",
+  "config.section.Solarium.description": "Opciones de mapa y diseño para el solarium.",
+  
+  "config.section.Schedules.name": "Horarios",
+  "config.section.Schedules.description": "Ajustes en los horarios de los personajes.",
+  
+  "config.MapStyle.name": "Decoración del mapa del solarium",
+  "config.MapStyle.description": "Normal incluye muebles y edificios decorativos. Despejado es minimalista (sin adornos extra).",
+  "config.MapStyle.values.Normal": "Normal (con muebles)",
+  "config.MapStyle.values.Clean": "Despejado (minimalista)",
+  
+  "config.HatchStyle.name": "Acceso por escotilla",
+  "config.HatchStyle.description": "Estilo visual para la escotilla al solarium.",
+  "config.HatchStyle.values.Ladder": "Escalera",
+  "config.HatchStyle.values.Lift": "Ascensor",
+  
+  "config.UnlockPath.name": "Forma de desbloqueo",
+  "config.UnlockPath.description": "Cómo se obtiene la llave del solarium. Pedido especial de Evelyn: completa su pedido de flores de temporada y abre el correo de recompensa. Evelyn 8 corazones + CC/Joja: completa el Centro Cívico o Joja y ten 8 corazones con Evelyn. Solo Evelyn 8 corazones: recibes la llave y Evelyn te visita un día soleado (6 a.m. – 7 p.m.) cuando estés en la granja.",
+  
+  "config.UnlockPath.values.SpecialOrder": "Pedido especial de Evelyn (8 corazones)",
+  "config.UnlockPath.values.CCOrJoja": "Evelyn (8 corazones) + CC/Joja",
+  "config.UnlockPath.values.FriendshipOnly": "Evelyn (8 corazones) solamente",
+  
+  "config.AdjustLinussSchedule.name": "Ajustar horario de Linus",
+  "config.AdjustLinussSchedule.description": "Si se activa, Linus visita el solarium en otoño e invierno.",
+  
+  "config.AdjustCarolineSchedule.name": "Ajustar horario de Caroline",
+  "config.AdjustCarolineSchedule.description": "Si se activa, Caroline visita el solarium los miércoles después de ir a la fuente.",
+  
+  //Misc
+  "Location.Solarium": "Solarium",
+  "Power.SolariumKey": "Llave del solarium",
+  "Power.SolariumKey_Description": "Una llave para el solarium de la azotea del Spa.",
+  "Strings.BookShelf": "Una estantería llena de libros viejos de jardinería.",
+  "Strings.SolariumHatchLocked": "La escotilla está cerrada.",
+  "Strings.SolariumLiftLocked": "La puerta del ascensor está cerrada.",
+  "Shop.PierresCatalogue": "Revista de Pierre",
+  "Shop.PierresCatalogue.Piper": "Revista de Piper",    
+  
+  //Evelyn
+  "Events.EvelynKey.1": "Hola, cielo.#$b#Estoy muy impresionada contigo y con todo el trabajo que has hecho desde que llegaste. Las flores que has estado cultivando son hermosas.$1",
+  "Events.EvelynKey.2": "Por eso quería darte esto. Es la llave del solarium que hay sobre el Spa. La encontré juntando polvo en el cajón de mi cocina.$0",
+  "Events.EvelynKey.GotKey": "¡Obtuviste la llave del Solarium!",
+  "Events.EvelynKey.3": "Ya no puedo subir a las montañas para cuidar el viejo solarium como antes... no con mis rodillas en este estado.$2#$b#Solía cuidar un pequeño jardín donde cultivaba plantines para los maceteros del pueblo. El solarium ha estado cerrado y vacío durante años.$2",
+  "Events.EvelynKey.4": "Es un alivio saber que el solarium volverá a estar en buenas manos.#$b#Cuídalo bien por mí, @, espero que te traiga mucha alegría.$1",
+  "Events.EvelynKey.SolariumAccess": "Ahora puedes acceder al solarium situado sobre el Spa.",
+  
+  //Robin
+  "Events.RobinSolarium.1Ladder": "¡Ah, hola @! ¡No sabía que había alguien aquí!#$b#Me enteré de que Evelyn te iba a dar la llave, así que quise pasarme para cerciorarme de que la escalera fuera segura.",
+  "Events.RobinSolarium.1Lift": "¡Ah, hola @! ¡No sabía que había alguien aquí!#$b#Me enteré de que Evelyn te iba a dar la llave, así que quería pasarme para cerciorarme de que el ascensor fuera seguro.",
+  "Events.RobinSolarium.2Ladder": "Sí, la escalera es sólida, pero la bisagra de la escotilla se estaba trabando.#$b#Nada que un poco de fuerza no pudiera arreglar.$1",
+  "Events.RobinSolarium.2Lift": "Sí, el ascensor es sólido, pero la bisagra de la puerta se estaba trabando.#$b#Nada que un poco de fuerza no pudiera arreglar.$1",
+  "Events.RobinSolarium.3": "¡Este lugar es aún más grande por dentro!",
+  "Events.RobinSolarium.4": "Con la forma en que reforzaron el suelo y lo alto que es el techo, este lugar tiene mucho potencial.#$b#Sé que a Evelyn le entusiasmaban las flores, ¿pero has considerado cultivar árboles frutales en el solarium también?#$b#Tienes espacio para que crezcan aquí arriba y den frutos todo el año.",
+  "Events.RobinSolarium.5": "Bueno, si plantas árboles frutales, ¡no dudes en traerme los melocotones que te sobren cuando los coseches!$1#$b#Ah, aceitaré esa vieja bisagra antes de irme.",
+  
+  //Caroline
+  "Events.CarolineMagazine.1": "¡Hola, @! Evelyn mencionó que te había entregado la llave del solarium. Fue muy dulce de su parte... de verdad te considera parte de la familia.",
+  "Events.CarolineMagazine.2": "Desde que lo abriste de nuevo, Pierre y yo fuimos a echar un vistazo.#$b#La luz en el solarium es muy agradable... es un lugar donde cualquier planta prosperaría.#$b#Mmm... tal vez podría traer algunas plantas de mi invernadero para que disfruten de la vista.$1",
+  "Events.CarolineMagazine.3": "¡Ah! Pierre sugirió que... bueno...$2",
+  "Events.CarolineMagazine.4": "Te dejamos el ejemplar más reciente de la revista de la tienda. ¡Vas a necesitar muchas semillas y brotes para llenar ese lugar!$1",
+  "Events.CarolineMagazine.5": "Está sobre la mesa, donde no puedas perderla de vista.$2#$b#Solo queríamos darnos una vuelta antes de volver al pueblo, pero sería mejor que nos vayamos. Cuídate, @.",
+  "Events.CarolineMagazine.6": "¡Espero verte pronto!",
+  "Events.CarolineMagazine.2": "Desde que lo abriste de nuevo, Pierre y yo fuimos a echar un vistazo.#$b#La luz en el solárium es muy agradable... es el tipo de lugar donde cualquier planta prosperaría.#$b#Mmm... tal vez podría traer algunas plantas de mi pequeño invernadero para que disfruten de la vista.$1",
+  "Events.CarolineMagazine.3.Piper": "¡Ah! Piper sugirió que... bueno...$2",
+  
+  //Linus
+  "Events.LinusNewShelter.1": "Hola, @.#$b#Observé que tú y algunos más venían aquí arriba. Tenía curiosidad, así que decidí venir a echar un vistazo por mi cuenta.#$b#Es un lugar estupendo para refugiarse del frío, ¿verdad?#$b#Un poco de calor le hace bien al espíritu.$1",
+  
+  //Dialogues
+  "Dialogue.SolariumUnlocked.Caroline": "Ah, Evelyn le ha estado contando a todo el mundo que ahora te encargas del solarium. Se siente muy orgullosa de ti.",
+  "Dialogue.SolariumUnlocked.Evelyn": "Tengo muchas ganas de ver qué cultivas en el solarium, cielo. Es un lugar muy especial para mí.",
+  "Dialogue.SolariumUnlocked.Lewis": "Me enteré de que Evelyn te entregó la llave del solarium. Creo que tomó una decisión muy sabia.",
+  
+  //Quests
+  "SpecialOrder.EvelynSeasonalFlowers.Name": "Flores de temporada",
+  "SpecialOrder.EvelynSeasonalFlowers.Text": "Me gustaría decorar el pueblo con hermosas {Flower:TextPlural}. Por favor, envíame 100 a través de tu contenedor de envíos y les daré un buen uso. -Evelyn",
+  "SpecialOrder.EvelynSeasonalFlowers.Objective.Collect": "Cosecha 100 {Flower:TextPlural} (deben cosecharse mientras la misión esté activa)",
+  "SpecialOrder.EvelynSeasonalFlowers.Objective.Ship": "Envía 100 {Flower:TextPlural} a través dell contenedor de envíos. Serán entregadas a Evelyn.",
+  
+  //Mails
+  "Mail.EvelynFlowersReward": "${Querido^Querida}$ @:^¡Muchas gracias por las hermosas flores, cielo! Pueblo Pelícano ya se ve mucho más lindo con tu ayuda.^Te adjunto algunas semillas de flores variadas como agradecimiento. Espero que traigan nueva vida al solarium.^^  -Evelyn",
+  "Mail.EvelynFlowersReward.Title": "La gratitud de Evelyn",
+  
+  //Schedules
+  "Schedules.Linus.Solarium.Cold": "Es un lugar estupendo para refugiarse del frío.",
+  "Schedules.Linus.Solarium.Warmth": "Un poco de calor le hace bien al espíritu.$1",
+  "Schedules.Caroline.Solarium": "A Evelyn le encantaba este lugar. Es agradable ver que continúas con lo que ella empezó.",
+  "Schedules.Caroline.Solarium.Putter": "Me encanta tener un lugar tranquilo como este. Me gusta venir a pasar el rato cuando puedo.",
+  "Schedules.Caroline.Solarium.Summer": "Evelyn siempre cultivaba lentejuelas de verano aquí, son mis favoritas. ¿Cuáles son las tuyas?",
+  "Schedules.Caroline.Solarium.Rain": "Hay algo muy pacífico en el sonido de la lluvia golpeando en el cristal."
+}

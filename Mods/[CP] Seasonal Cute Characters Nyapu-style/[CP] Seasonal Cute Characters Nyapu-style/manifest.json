@@ -1,0 +1,29 @@
+{
+	"Name": "Seasonal Cute Nyapu Portrait Retextures",
+	"Author": "Nyapu and AhCuteArt",
+	"Version": "2.0.0",
+	"Description": "Nyapu-style portrait replacement for Seasonal Cute Characters of Vanilla Villagers.",
+	"UniqueID": "AhCuteArt.Nyapu_SeasonalCute",
+	"UpdateKeys": [ "Nexus:36255" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "Poltergeister.SeasonalCuteCharacters",
+			"IsRequired": true
+		},
+		{   
+		    "UniqueID": "Nyapu.Portraits",
+			"IsRequired": true
+		},		
+		{   
+		    "UniqueID": "Nyapu.AllPortraits",
+			"IsRequired": false
+		},
+		{   
+		    "UniqueID": "SoftPandaBoi.ClintReforged",
+			"IsRequired": false
+		},			
+	]
+}

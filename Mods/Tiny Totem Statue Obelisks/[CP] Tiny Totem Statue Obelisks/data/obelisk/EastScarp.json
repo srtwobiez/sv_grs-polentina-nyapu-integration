@@ -1,0 +1,49 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Data East Scarp Enabled",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "Scarp Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          },
+          "Texture": "Buildings\\Replacement_Scarp_Obelisk"
+        }
+      }
+    },
+    {
+      "LogName": "JJ Load East Scarp",
+      "Action": "Load",
+      "Target": "Buildings/Replacement_Scarp_Obelisk",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_es.png"
+    },
+    {
+      "LogName": "JJ Decorations East Scarp Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Replacement_Scarp_Obelisk",
+      "FromFile": "assets/flowers/es_{{EastScarpFlowerColor}}.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations East Scarp Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Replacement_Scarp_Obelisk",
+      "FromFile": "assets/moss/es_moss.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "CustomHoeDirt": true,
+  "CustomBackgrounds": true,
+  "CritterSpawning": true,
+  "FishingOverrides": true,
+  "TreeChopEvents": true,
+  "TreeFallEvents": true
+}

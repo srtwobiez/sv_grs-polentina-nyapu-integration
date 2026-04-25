@@ -1,0 +1,210 @@
+{
+  "Name": "Hairbow",
+
+"FrontHat": {
+	"Flipped": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+    "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Hair"
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      },
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      }
+	  ]
+},
+  "BackHat": {
+	"Flipped": false,
+	"DrawBeforeHair": true,
+	"DrawBeforePlayer": true,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 59
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 4
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 170
+      },
+      {
+        "Frame": 1,
+        "Duration": 170
+      },
+      {
+        "Frame": 2,
+        "Duration": 170
+      },
+      {
+        "Frame": 3,
+        "Duration": 170
+      },
+      {
+        "Frame": 0,
+        "Duration": 170
+      },
+      {
+        "Frame": 1,
+        "Duration": 170
+      },
+      {
+        "Frame": 2,
+        "Duration": 170
+      },
+      {
+        "Frame": 3,
+        "Duration": 170
+      }
+	  ]
+},
+  "RightHat": {
+	"Flipped": false,
+	"DrawBeforeHair": true,
+	"DrawBeforePlayer": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+    "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Hair"
+    },
+    "StartingPosition": {
+      "X":0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 6
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+  },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 170
+      },
+      {
+        "Frame": 1,
+        "Duration": 170
+      },
+      {
+        "Frame": 2,
+        "Duration": 170
+      },
+      {
+        "Frame": 3,
+        "Duration": 170
+      },
+      {
+        "Frame": 0,
+        "Duration": 170
+      },
+      {
+        "Frame": 1,
+        "Duration": 170
+      },
+      {
+        "Frame": 2,
+        "Duration": 170
+      },
+      {
+        "Frame": 3,
+        "Duration": 170
+      }
+	  ]
+},
+  "LeftHat": {
+	"Flipped": true,
+	"DrawBeforeHair": true,
+	"DrawBeforePlayer": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+    "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Hair"
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 6
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+  },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 170
+      },
+      {
+        "Frame": 1,
+        "Duration": 170
+      },
+      {
+        "Frame": 2,
+        "Duration": 170
+      },
+      {
+        "Frame": 3,
+        "Duration": 170
+      },
+      {
+        "Frame": 0,
+        "Duration": 170
+      },
+      {
+        "Frame": 1,
+        "Duration": 170
+      },
+      {
+        "Frame": 2,
+        "Duration": 170
+      },
+      {
+        "Frame": 3,
+        "Duration": 170
+      }
+	  ]
+}
+}

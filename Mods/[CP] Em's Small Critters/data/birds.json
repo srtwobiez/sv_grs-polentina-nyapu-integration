@@ -1,0 +1,123 @@
+{
+	"Changes": [
+			{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Bluejay1.png",
+		"ToArea": { "X": 160, "Y": 128, "Width": 160, "Height": 32 },
+		"When":{ "Birds":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Bluejay2.png",
+		"ToArea": { "X": 0, "Y": 160, "Width": 128, "Height": 32 },
+		"When":{ "Birds":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Cardinal1.png",
+		"ToArea": { "X": 160, "Y": 416, "Width": 160, "Height": 32 },
+		"When":{ "Birds":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Cardinal2.png",
+		"ToArea": { "X": 0, "Y": 448, "Width": 128, "Height": 32 },
+		"When":{ "Birds":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Crow1.png",
+		"ToArea": { "X": 128, "Y": 32, "Width": 192, "Height": 32 },
+		"When":{ "Crow":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Crow2.png",
+		"ToArea": { "X": 0, "Y": 64, "Width": 160, "Height": 32 },
+		"When":{ "Crow":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Dove1.png",
+		"ToArea": { "X": 160, "Y": 544, "Width": 160, "Height": 32 },
+		"When":{ "Dove":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Dove2.png",
+		"ToArea": { "X": 0, "Y": 576, "Width": 128, "Height": 32 },
+		"When":{ "Dove":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/CursorDove.png",
+		"ToArea": { "X": 388, "Y": 1894, "Width": 144, "Height": 22 },
+		"When":{ "Dove":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Canary1.png",
+		"ToArea": { "X": 160, "Y": 384, "Width": 160, "Height": 32 },
+		"When":{ "Birds":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Canary2.png",
+		"ToArea": { "X": 0, "Y": 416, "Width": 128, "Height": 32 },
+		"When":{ "Birds":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Sparrow1.png",
+		"ToArea": { "X": 160, "Y": 512, "Width": 160, "Height": 32 },
+		"When":{ "Birds":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Sparrow2.png",
+		"ToArea": { "X": 0, "Y": 544, "Width": 128, "Height": 32 },
+		"When":{ "Birds":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Robin1.png",
+		"ToArea": { "X": 160, "Y": 64, "Width": 160, "Height": 32 },
+		"When":{ "Birds":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Robin2.png",
+		"ToArea": { "X": 0, "Y": 96, "Width": 128, "Height": 32 },
+		"When":{ "Birds":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Robin3.png",
+		"ToArea": { "X": 48, "Y": 335, "Width": 80, "Height": 16 },
+		"When":{ "Birds":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/WoodPecker.png",
+		"ToArea": { "X": 0, "Y": 256, "Width": 80, "Height": 16 },
+		"When":{ "Birds":"true"}
+		}
+	]
+}

@@ -1,0 +1,83 @@
+{
+  "Name": "Tunnelers Jersey",
+  "FrontShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 27, 61, 37 ],
+		[ 91, 173, 64 ],
+		[ 154, 235, 30 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 27, 61, 37 ],
+		[ 91, 173, 64 ],
+		[ 154, 235, 30 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 27, 61, 37 ],
+		[ 91, 173, 64 ],
+		[ 154, 235, 30 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 27, 61, 37 ],
+		[ 91, 173, 64 ],
+		[ 154, 235, 30 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

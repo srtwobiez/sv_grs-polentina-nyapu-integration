@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.0" orientation="orthogonal" renderorder="right-down" width="16" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="21" nextobjectid="55">
+ <editorsettings>
+  <export target="ArchaeologyHouse_SVE" format="tmx"/>
+ </editorsettings>
+ <properties>
+  <property name="DayTiles" value="Front 14 1 256 Front 14 2 288 Front 22 1 256 Front 22 2 288 Front 28 1 256 Front 28 2 288 Front 30 1 256 Front 30 2 288 Front 32 1 256 Front 32 2 288 Front 34 1 256 Front 34 2 288 Front 36 1 256 Front 36 2 288 Back 14 4 671 Back 14 5 703 Back 22 4 671 Back 22 5 703 Back 28 4 671 Back 28 5 703 Back 30 4 671 Back 32 4 671 Back 34 4 671 Back 36 4 671"/>
+  <property name="Music" value="libraryTheme"/>
+  <property name="NightTiles" value="Front 14 1 1253 Front 14 2 1285 Front 22 1 1253 Front 22 2 1285 Front 28 1 1253 Front 28 2 1285 Front 30 1 1253 Front 30 2 1285 Front 32 1 1253 Front 32 2 1285 Front 34 1 1253 Front 34 2 1285 Front 36 1 1253 Front 36 2 1285 Back 14 4 575 Back 14 5 607 Back 22 4 575 Back 22 5 607 Back 28 4 575 Back 28 5 607 Back 30 4 575 Back 32 4 575 Back 34 4 575 Back 36 4 575"/>
+  <property name="Warp" value="3 15 Town 101 90 5 5 Custom_GunthersRoom 4 6"/>
+ </properties>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2241" name="zVanillaWallsAndFloors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="VanillaWallsAndFloors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="2801" name="zVanillaFurniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="VanillaFurniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="5777" name="zspring_z_extras" tilewidth="16" tileheight="16" tilecount="6400" columns="25">
+  <image source="spring_z_extras.png" width="400" height="4096"/>
+ </tileset>
+ <tileset firstgid="12177" name="untitled tile sheet2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2" width="512" height="656"/>
+ </tileset>
+ <tileset firstgid="13489" name="ArchHouse_back" tilewidth="16" tileheight="16" tilecount="21" columns="7">
+  <image source="ArchHouse_back" width="112" height="48"/>
+ </tileset>
+ <tileset firstgid="13510" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="../TileSheets/furniture.png" width="512" height="1488"/>
+ </tileset>
+ <layer id="1" name="Back" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMOI7qB4NcIM4DYntGCI3MBtHI4vlY9PcCcTxQTR8S3YcmBmP3Y9G/FojXEYnXo+mvY2JgqAfiBiLpeUBsxYrQP58JgheQQEci6Qfx9wPxARLoSqj+Y8YQTKr9MP3PjCGYVPth7geB6wzk278Xism1H6Yf2ex9JNjvSAFGTn/kgoHWDwCJ0GZH
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Back2" width="16" height="20">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztyzsOQEAYReF/I9iCYroJtqayFL1nPOO5MKeYlggVmZt83T0idn9ZpkRyFChRoVb3+4Zviw49Boymd7SIC0+f9xPfGQtWbNhNH9CFiC76J0t8id/06cve7ts7AMjCFcg=
+  </data>
+ </layer>
+ <objectgroup id="4" name="Back2"/>
+ <layer id="5" name="Buildings" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMOI7qhwMlFlS5CjZM9S/R1ID0NwLxBCCeSCSeBMStaPo3APFGIvEmLPq7WRkYrgDdWwR03zUgfR3Kvgmkm5kZGC4wMTBcAuLtQPYlLPpB4AtQ7Vcg/gbE34H4BxD/hIbBB6DeT0wQ9kImVP3kxEErErsCiNcwkqe/G4hnYJEXY4X4H4bFWbHr3wHFyKCQBVUvDBezYOrHBiYC1U3CgicTqZ8Q+MiCCHNHCjADw+DKf+QAAN+8Pa0=
+  </data>
+ </layer>
+ <objectgroup id="6" name="Buildings"/>
+ <layer id="7" name="Buildings2" width="16" height="20">
+  <properties>
+   <property name="Draw" value="Buildings"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFwwVsNGFg2ATEm4F4CxBvBeJtJqSZsRNJ/R4S9Y6CUTDUAACdNgdL
+  </data>
+ </layer>
+ <objectgroup id="8" name="Buildings2"/>
+ <layer id="9" name="Front" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxzZKAMpFKov3WQ6HcCYm8k7IzGR8YuQOyIpD8RiLOwmF3BhmAb2TAwGNtA2DkMiHDD5/4ZSPqDgHqDbXC7P5uVgWELUP1WIN4GxNuBeAcQ74SasYGJgWETE279MHAVyc4bSOzHQL1NzJj6D+NxPzEAFM7MjAwMPYzkm3GFFVMskAUYZkg4mIV48wJxqCXFDFqCi0jueMzA0PAMSJOCnwPxC6j+gc5/LwgroSkAAKL+K5g=
+  </data>
+ </layer>
+ <objectgroup id="10" name="Front"/>
+ <layer id="11" name="Front2" width="16" height="20">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIKRCQAFAAAB
+  </data>
+ </layer>
+ <objectgroup id="12" name="Front2"/>
+ <layer id="13" name="Paths" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowABONHokQ7IDQd0faPhOTgBAGe4AC4=
+  </data>
+ </layer>
+ <objectgroup id="14" name="Paths"/>
+ <layer id="15" name="AlwaysFront" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AU0BNsZBloF4wCGAAAHQcAtg==
+  </data>
+ </layer>
+ <objectgroup id="16" name="AlwaysFront"/>
+ <layer id="17" name="AlwaysFront2" width="16" height="20">
+  <properties>
+   <property name="Draw" value="AlwaysFront"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIKRCQAFAAAB
+  </data>
+ </layer>
+ <objectgroup id="18" name="AlwaysFront2"/>
+ <layer id="19" name="AlwaysFront3" width="16" height="20">
+  <properties>
+   <property name="Draw" value="AlwaysFront"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzty7ERgCAQRNHNGMVCoP8GVAy0BIVArcRfwkUEzv2Zl+1Knve/QpYGjIiYsv07J2nBioINO45k+5/sLlQ03HjwGv9evz7RZg6X
+  </data>
+ </layer>
+ <objectgroup id="20" name="AlwaysFront3"/>
+</map>

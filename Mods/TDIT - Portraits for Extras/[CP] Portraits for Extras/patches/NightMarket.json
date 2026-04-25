@@ -1,0 +1,87 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","BeachNightMarket_GiftGiverClosed"],
+					"Value": "Portraits/DesertTrader_Default Strings/DolphINaF.ExtraPortraits:Name.Merchant {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","BeachNightMarket_GiftGiverQuestion"],
+					"Value": "Portraits/DesertTrader_Default Strings/DolphINaF.ExtraPortraits:Name.Merchant {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","BeachNightMarket_GiftGiverEnjoy"],
+					"Value": "Portraits/DesertTrader_Default Strings/DolphINaF.ExtraPortraits:Name.Merchant {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","BeachNightMarket_PainterClosed"],
+					"Value": "Portraits/PainterLupini_Default Strings/DolphINaF.ExtraPortraits:Name.Lupini {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","BeachNightMarket_PainterQuestion"],
+					"Value": "Portraits/PainterLupini_Default Strings/DolphINaF.ExtraPortraits:Name.Lupini {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","BeachNightMarket_PainterSold"],
+					"Value": "Portraits/PainterLupini_Default Strings/DolphINaF.ExtraPortraits:Name.Lupini {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Submarine_SubmergeQuestion"],
+					"Value": "{{Captain}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Submarine_AscendQuestion"],
+					"Value": "{{Captain}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Submarine_Done"],
+					"Value": "{{Captain}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				}					
+			]
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries","BeachNightMarket_WarperQuestion"],
+					"Value": "$1",
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","BeachNightMarket_WarperQuestion"],
+					"Value": "Portraits/ShroudedFigure_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+			],
+			"When": {
+				"Season": "Winter",
+				"Day": "15, 16, 17"
+			}
+		},			
+	],
+}

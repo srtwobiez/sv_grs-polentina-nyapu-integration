@@ -1,0 +1,172 @@
+{
+  "Changes": [
+    // ===== MAPS LOADING =====
+    // With furniture
+    {
+      "LogName": "JJ Load map (normal: with furniture)",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Maps/Custom_Solarium",
+      "FromFile": "assets/Solarium.tmx",
+      "When": {
+        "MapStyle": "Normal"
+      }
+    },
+    // Minimal tiles
+    {
+      "LogName": "JJ Load map (clean: minimal tiles)",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Maps/Custom_Solarium",
+      "FromFile": "assets/Solarium_Clean.tmx",
+      "When": {
+        "MapStyle": "Clean"
+      }
+    },
+    // ===== LOCATION DATA =====
+    // Display name and CreateOnLoad map path
+    {
+      "LogName": "JJ Location display name",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "Custom_Solarium": {
+          "DisplayName": "{{i18n:Location.Solarium}}",
+          "DefaultArrivalTile": { "X": 5, "Y": 15 },
+          "CanHaveGreenRainSpawns": false,
+          "MusicIgnoredInRain": true,
+          "CreateOnLoad": { "MapPath": "Maps/Custom_Solarium" }
+        }
+      }
+    },
+    // ===== SOLARIUM SEEDS SHOP + MAGAZINE VISUAL (after Caroline magazine event) =====
+    // 5,13: Buildings OpenShop, AlwaysFront magazine (townInterior index 675).
+    // Update OnLocationChange so the patch re-applies when entering Solarium (map may be cached before event seen).
+    {
+      "LogName": "JJ Shop and magazine",
+      "Action": "EditMap",
+      "Update": "OnLocationChange",
+      "Target": "Maps/Custom_Solarium",
+      "MapTiles": [
+        {
+          "Position": {"X": 5, "Y": 13},
+          "Layer": "Buildings",
+          "SetProperties": {"Action": "OpenShop {{ModId}}_SolariumSeeds"}
+        },
+        {
+          "Position": {"X": 5, "Y": 12},
+          "Layer": "AlwaysFront",
+          "SetTilesheet": "townInterior",
+          "SetIndex": 675
+        }
+      ],
+      "When": {
+        "HasSeenEvent": "{{ModId}}_CarolineMagazine"
+      }
+    },
+    // ===== SPA HATCH OVERLAY (config: Ladder or Lift) =====
+    // Overlay hatch tiles at 1,1; warp added when unlocked. Skipped when Prettier or BathHouseImprovements (compat in Compatibility.json).
+    {
+      "LogName": "JJ Spa hatch",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "FromFile": "assets/{{Lowercase:{{HatchStyle}}}}.tmx",
+      "PatchMode": "Overlay",
+      "ToArea": {"X": 1, "Y": 1, "Width": 1, "Height": 4},
+      "When": {
+        "HasMod |contains=Lou.PretBath": "false",
+        "HasMod |contains=sashasand.BHI": "false"
+      }
+    },
+    // NPC Warps
+    {
+      "LogName": "JJ NPCWarp BathHouse to Solarium",
+      "Action": "EditMap",
+      "Update": "OnLocationChange",
+      "Target": "Maps/BathHouse_Entry",
+      "MapProperties": {
+        "NPCWarp": "1 4 Custom_Solarium 5 16"
+      },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_EvelynKey",
+        "HasMod |contains=Lou.PretBath": "false",
+        "HasMod |contains=sashasand.BHI": "false"
+      }
+    },
+    {
+      "LogName": "JJ NPCWarp Solarium to BathHouse",
+      "Action": "EditMap",
+      "Update": "OnLocationChange",
+      "Target": "Maps/Custom_Solarium",
+      "MapProperties": {
+        "NPCWarp": "4 16 BathHouse_Entry 1 5"
+      },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_EvelynKey",
+        "HasMod |contains=Lou.PretBath": "false",
+        "HasMod |contains=sashasand.BHI": "false"
+      }
+    },
+    // NO KEY Message on hatch activation tiles (1,2)-(1,3) until unlock. Skipped when Prettier (2,x) or BHI (11,x); compat in Compatibility.json.
+    {
+      "LogName": "JJ Hatch Access, No Key (ladder)",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "MapTiles": [
+        {"Position": {"X": 1, "Y": 2}, "Layer": "Buildings", "SetProperties": {"Action": "Message \"SolariumHatchLocked\""}},
+        {"Position": {"X": 1, "Y": 3}, "Layer": "Buildings", "SetProperties": {"Action": "Message \"SolariumHatchLocked\""}}
+      ],
+      "Update": "OnLocationChange",
+      "When": {
+        "HatchStyle": "Ladder",
+        "HasMod |contains=Lou.PretBath": "false",
+        "HasMod |contains=sashasand.BHI": "false"
+      }
+    },
+    {
+      "LogName": "JJ Hatch Access, No Key (lift)",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "MapTiles": [
+        {"Position": {"X": 1, "Y": 2}, "Layer": "Buildings", "SetProperties": {"Action": "Message \"SolariumLiftLocked\""}},
+        {"Position": {"X": 1, "Y": 3}, "Layer": "Buildings", "SetProperties": {"Action": "Message \"SolariumLiftLocked\""}}
+      ],
+      "Update": "OnLocationChange",
+      "When": {
+        "HatchStyle": "Lift",
+        "HasMod |contains=Lou.PretBath": "false",
+        "HasMod |contains=sashasand.BHI": "false"
+      }
+    },
+    // HAS KEY Warp to Custom_Solarium 5 16 on activation tiles (1,2)-(1,3). Skipped when Prettier or BHI; compat in Compatibility.json.
+    {
+      "LogName": "JJ Hatch Access, Has Key",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "MapTiles": [
+        {"Position": {"X": 1, "Y": 2}, "Layer": "Buildings", "SetProperties": {"Action": "Warp 5 16 Custom_Solarium"}},
+        {"Position": {"X": 1, "Y": 3}, "Layer": "Buildings", "SetProperties": {"Action": "Warp 5 16 Custom_Solarium"}}
+      ],
+      "Update": "OnLocationChange",
+      "When": {
+        "HasSeenEvent": "{{ModId}}_EvelynKey",
+        "HasMod |contains=Lou.PretBath": "false",
+        "HasMod |contains=sashasand.BHI": "false"
+      }
+    },
+    // ===== EVELYN FLOWERS DROP BOX =====
+    // For special order donation
+    {
+      "LogName": "JJ Evelyn flowers drop box (Town)",
+      "Action": "EditMap",
+      "Target": "Maps/Town",
+      "MapTiles": [
+        {
+          "Position": {"X": 60, "Y": 63},
+          "Layer": "Buildings",
+          "SetProperties": {"Action": "DropBox {{ModId}}_EvelynFlowersBox"}
+        }
+      ]
+    }
+  ]
+}

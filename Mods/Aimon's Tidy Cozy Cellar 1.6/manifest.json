@@ -1,0 +1,33 @@
+{
+  "Name": "Aimon's Tidy Cozy Cellar",
+  "Author": "Aimon111",
+  "Version": "2.0.4",
+  "Description": "Makes your cellar maps look new and fresh towards more realistic layout.",
+  "UniqueID": "Aimon111.AimonsTidyCozyCellar",
+  "UpdateKeys": [ "Nexus:17814" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+  },
+"Dependencies": [
+		
+		{
+			"UniqueID": "Aimon111.RedesignedFarmHouseLayoutAlt",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Aimon111.RedisignedFarmHouseLayout",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Aimon111.AimonsTidyCozyFarmhouse",
+			"IsRequired": false,
+		},
+	
+		{
+			"UniqueID": "Badger.TinyFarmhouse",
+			"IsRequired": false,
+		},
+
+		],
+}
+

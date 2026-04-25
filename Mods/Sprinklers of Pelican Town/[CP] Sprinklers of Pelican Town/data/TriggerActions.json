@@ -1,0 +1,399 @@
+{
+  // ===== TRIGGER ACTIONS =====
+  "Changes": [
+    {
+      "LogName": "JJ Remove sprinkler journal quests when immersive Clint progression is disabled",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.RemoveImmersiveJournalQuests": {
+          "Id": "{{ModId}}.RemoveImmersiveJournalQuests",
+          "Trigger": "DayStarted",
+          "Condition": "ANY \"{{HasActiveQuest |contains=555001}}\" \"{{HasActiveQuest |contains=555002}}\" \"{{HasActiveQuest |contains={{ModId}}_QualityJournal}}\" \"{{HasActiveQuest |contains={{ModId}}_IridiumJournal}}\"",
+          "MarkActionApplied": false,
+          "Actions": [
+            "RemoveQuest 555001",
+            "RemoveQuest 555002",
+            "RemoveQuest {{ModId}}_QualityJournal",
+            "RemoveQuest {{ModId}}_IridiumJournal"
+          ]
+        }
+      },
+      "When": {
+        "ImmersiveProgression": "false"
+      }
+    },
+    {
+      "LogName": "JJ Pierre basic sprinklers mail (CC complete)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.PierreBasicSprinklersCCTrigger": {
+          "Id": "{{ModId}}.PierreBasicSprinklersCCTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Any 3, !PLAYER_HAS_MAIL Host {{ModId}}.PierreBasicSprinklersCC, !PLAYER_HAS_MAIL Host {{ModId}}.PierreBasicSprinklers",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.PierreBasicSprinklersCC Now"]
+        }
+      },
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "IsCommunityCenterComplete": "true",
+        "IsJojaMartComplete": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add Pierre Basic Sprinklers Mail Trigger (Normal)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.PierreBasicSprinklersTrigger": {
+          "Id": "{{ModId}}.PierreBasicSprinklersTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Any 3, !PLAYER_HAS_MAIL Host {{ModId}}.PierreBasicSprinklers, !PLAYER_HAS_MAIL Host {{ModId}}.PierreBasicSprinklersCC",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.PierreBasicSprinklers Now"]
+        }
+      },
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "IsCommunityCenterComplete": "false",
+        "IsJojaMartComplete": "false",
+        "DayOfWeek |contains=Monday": false
+      }
+    },
+    {
+      "LogName": "JJ Add Pierre Quality Sprinklers Mail Trigger (CC Complete)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.PierreQualitySprinklersCCTrigger": {
+          "Id": "{{ModId}}.PierreQualitySprinklersCCTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Any 7, !PLAYER_HAS_MAIL Host {{ModId}}.PierreQualitySprinklersCC, !PLAYER_HAS_MAIL Host {{ModId}}.PierreQualitySprinklers",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.PierreQualitySprinklersCC Now"]
+        }
+      },
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "IsCommunityCenterComplete": "true",
+        "IsJojaMartComplete": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add Pierre Quality Sprinklers Mail Trigger (Normal)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.PierreQualitySprinklersTrigger": {
+          "Id": "{{ModId}}.PierreQualitySprinklersTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Any 7, !PLAYER_HAS_MAIL Host {{ModId}}.PierreQualitySprinklers, !PLAYER_HAS_MAIL Host {{ModId}}.PierreQualitySprinklersCC",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.PierreQualitySprinklers Now"]
+        }
+      },
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "IsCommunityCenterComplete": "false",
+        "IsJojaMartComplete": "false",
+        "DayOfWeek |contains=Monday": false
+      }
+    },
+    {
+      "LogName": "JJ Add Pierre Iridium Sprinklers Mail Trigger (CC Complete)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.PierreIridiumSprinklersCCTrigger": {
+          "Id": "{{ModId}}.PierreIridiumSprinklersCCTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Any 10, !PLAYER_HAS_MAIL Host {{ModId}}.PierreIridiumSprinklersCC, !PLAYER_HAS_MAIL Host {{ModId}}.PierreIridiumSprinklers",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.PierreIridiumSprinklersCC Now"]
+        }
+      },
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "IsCommunityCenterComplete": "true",
+        "IsJojaMartComplete": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add Pierre Iridium Sprinklers Mail Trigger (Normal)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.PierreIridiumSprinklersTrigger": {
+          "Id": "{{ModId}}.PierreIridiumSprinklersTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Any 10, !PLAYER_HAS_MAIL Host {{ModId}}.PierreIridiumSprinklers, !PLAYER_HAS_MAIL Host {{ModId}}.PierreIridiumSprinklersCC",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.PierreIridiumSprinklers Now"]
+        }
+      },
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "IsCommunityCenterComplete": "false",
+        "IsJojaMartComplete": "false",
+        "DayOfWeek |contains=Monday": false
+      }
+    },
+
+    // ===== JOJAMART MAIL TRIGGERS =====
+    {
+      "LogName": "JJ Add JojaMart Basic Sprinklers Mail Trigger (JojaMart Complete)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.JojaBasicSprinklersCompleteTrigger": {
+          "Id": "{{ModId}}.JojaBasicSprinklersCompleteTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Any 2, !PLAYER_HAS_MAIL Host {{ModId}}.JojaBasicSprinklersComplete, !PLAYER_HAS_MAIL Host {{ModId}}.JojaBasicSprinklers",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.JojaBasicSprinklersComplete Now"]
+        }
+      },
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "IsJojaMartComplete": "true",
+        "IsCommunityCenterComplete": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add JojaMart Basic Sprinklers Mail Trigger (Normal)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.JojaBasicSprinklersTrigger": {
+          "Id": "{{ModId}}.JojaBasicSprinklersTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Any 2, !PLAYER_HAS_MAIL Host {{ModId}}.JojaBasicSprinklers, !PLAYER_HAS_MAIL Host {{ModId}}.JojaBasicSprinklersComplete",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.JojaBasicSprinklers Now"]
+        }
+      },
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "IsJojaMartComplete": "false",
+        "IsCommunityCenterComplete": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add JojaMart Quality Sprinklers Mail Trigger (JojaMart Complete)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.JojaQualitySprinklersCompleteTrigger": {
+          "Id": "{{ModId}}.JojaQualitySprinklersCompleteTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Any 6, !PLAYER_HAS_MAIL Host {{ModId}}.JojaQualitySprinklersComplete, !PLAYER_HAS_MAIL Host {{ModId}}.JojaQualitySprinklers",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.JojaQualitySprinklersComplete Now"]
+        }
+      },
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "IsJojaMartComplete": "true",
+        "IsCommunityCenterComplete": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add JojaMart Quality Sprinklers Mail Trigger (Normal)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.JojaQualitySprinklersTrigger": {
+          "Id": "{{ModId}}.JojaQualitySprinklersTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Any 6, !PLAYER_HAS_MAIL Host {{ModId}}.JojaQualitySprinklers, !PLAYER_HAS_MAIL Host {{ModId}}.JojaQualitySprinklersComplete",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.JojaQualitySprinklers Now"]
+        }
+      },
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "IsJojaMartComplete": "false",
+        "IsCommunityCenterComplete": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add JojaMart Iridium Sprinklers Mail Trigger (JojaMart Complete)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.JojaIridiumSprinklersCompleteTrigger": {
+          "Id": "{{ModId}}.JojaIridiumSprinklersCompleteTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Any 9, !PLAYER_HAS_MAIL Host {{ModId}}.JojaIridiumSprinklersComplete, !PLAYER_HAS_MAIL Host {{ModId}}.JojaIridiumSprinklers",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.JojaIridiumSprinklersComplete Now"]
+        }
+      },
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "IsJojaMartComplete": "true",
+        "IsCommunityCenterComplete": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add JojaMart Iridium Sprinklers Mail Trigger (Normal)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.JojaIridiumSprinklersTrigger": {
+          "Id": "{{ModId}}.JojaIridiumSprinklersTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Any 9, !PLAYER_HAS_MAIL Host {{ModId}}.JojaIridiumSprinklers, !PLAYER_HAS_MAIL Host {{ModId}}.JojaIridiumSprinklersComplete",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.JojaIridiumSprinklers Now"]
+        }
+      },
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "IsJojaMartComplete": "false",
+        "IsCommunityCenterComplete": "false"
+      }
+    },
+
+    // ===== QUEST SYSTEM TRIGGERS =====
+    {
+      "LogName": "JJ Add Quality Journal Request Trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.QualityJournalRequestTrigger": {
+          "Id": "{{ModId}}.QualityJournalRequestTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Current 6, !PLAYER_HAS_MAIL Current {{ModId}}.QualityJournalRequest",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail Current {{ModId}}.QualityJournalRequest Now"]
+        }
+      },
+      "When": {
+        "ImmersiveProgression": "true",
+        "Relationship:Clint": "Friendly"
+      }
+    },
+    {
+      "LogName": "JJ Add Quality Journal Complete Trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.QualityJournalCompleteTrigger": {
+          "Id": "{{ModId}}.QualityJournalCompleteTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "!PLAYER_HAS_MAIL Host {{ModId}}.QualityJournalComplete",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.QualityJournalComplete Now"]
+        }
+      },
+      "When": {
+        "ImmersiveProgression": "true",
+        "HasActiveQuest |contains={{ModId}}_QualityJournal": false,
+        "HasReadLetter": "{{ModId}}.QualityJournalRequest"
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Journal Request Trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.IridiumJournalRequestTrigger": {
+          "Id": "{{ModId}}.IridiumJournalRequestTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FARMING_LEVEL Current 9, !PLAYER_HAS_MAIL Current {{ModId}}.IridiumJournalRequest",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail Current {{ModId}}.IridiumJournalRequest Now"]
+        }
+      },
+      "When": {
+        "ImmersiveProgression": "true",
+        "HasReadLetter": "{{ModId}}.QualityJournalComplete"
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Journal Complete Trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.IridiumJournalCompleteTrigger": {
+          "Id": "{{ModId}}.IridiumJournalCompleteTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "!PLAYER_HAS_MAIL Host {{ModId}}.IridiumJournalComplete",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail All {{ModId}}.IridiumJournalComplete Now"]
+        }
+      },
+      "When": {
+        "ImmersiveProgression": "true",
+        "HasActiveQuest |contains={{ModId}}_IridiumJournal": false,
+        "HasReadLetter": "{{ModId}}.IridiumJournalRequest"
+      }
+    },
+    // ===== MIGRATE HARDCODED QUEST IDS TO QUALIFIED IDS =====
+    {
+      "LogName": "JJ Migrate Hardcoded Quest IDs to Qualified IDs",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.MigrateQuest.QualityJournal": {
+          "Id": "{{ModId}}.MigrateQuest.QualityJournal",
+          "Trigger": "DayStarted",
+          "Condition": "{{HasActiveQuest |contains=555001}}",
+          "Actions": [
+            "RemoveQuest 555001",
+            "AddQuest {{ModId}}_QualityJournal"
+          ]
+        },
+        "{{ModId}}.MigrateQuest.IridiumJournal": {
+          "Id": "{{ModId}}.MigrateQuest.IridiumJournal",
+          "Trigger": "DayStarted",
+          "Condition": "{{HasActiveQuest |contains=555002}}",
+          "Actions": [
+            "RemoveQuest 555002",
+            "AddQuest {{ModId}}_IridiumJournal"
+          ]
+        }
+      }
+    },
+    // ===== HOST MAIL REPAIR =====
+    {
+      "LogName": "JJ Repair host Quality Journal Complete mail when Any has it but Host does not",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}.RepairHostQualityJournalComplete": {
+          "Id": "{{ModId}}.RepairHostQualityJournalComplete",
+          "Trigger": "DayStarted",
+          "Condition": "!PLAYER_HAS_MAIL Host {{ModId}}.QualityJournalComplete, PLAYER_HAS_MAIL Any {{ModId}}.QualityJournalComplete",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail Host {{ModId}}.QualityJournalComplete received"]
+        },
+        "{{ModId}}.RepairHostIridiumJournalComplete": {
+          "Id": "{{ModId}}.RepairHostIridiumJournalComplete",
+          "Trigger": "DayStarted",
+          "Condition": "!PLAYER_HAS_MAIL Host {{ModId}}.IridiumJournalComplete, PLAYER_HAS_MAIL Any {{ModId}}.IridiumJournalComplete",
+          "MarkActionApplied": false,
+          "Actions": ["AddMail Host {{ModId}}.IridiumJournalComplete received"]
+        }
+      },
+      "When": {
+        "ImmersiveProgression": "true"
+      }
+    }
+  ]
+}

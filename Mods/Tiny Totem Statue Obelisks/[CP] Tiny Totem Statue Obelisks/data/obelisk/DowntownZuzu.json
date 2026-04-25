@@ -1,0 +1,49 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Data Downtown Zuzu Enabled",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "DTZ.DowntownZuzuCP_Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          },
+          "Texture": "Buildings\\Replacement_DTZ_Obelisk"
+        }
+      }
+    },
+    {
+      "LogName": "JJ Load Downtown Zuzu",
+      "Action": "Load",
+      "Target": "Buildings/Replacement_DTZ_Obelisk",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_downtown-zuzu.png"
+    },
+    {
+      "LogName": "JJ Decorations Downtown Zuzu Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Replacement_DTZ_Obelisk",
+      "FromFile": "assets/flowers/downtown-zuzu_{{DowntownZuzuFlowerColor}}.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Downtown Zuzu Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Replacement_DTZ_Obelisk",
+      "FromFile": "assets/moss/downtown-zuzu_moss.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

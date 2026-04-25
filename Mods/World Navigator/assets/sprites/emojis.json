@@ -1,0 +1,8 @@
+{
+    "Texture": "LooseSprites/emojis",
+    "Sprites": {
+        "Abigail": {
+            "SourceRect": "0, 99, 9, 9"
+        }
+    }
+}

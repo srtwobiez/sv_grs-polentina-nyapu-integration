@@ -1,0 +1,25 @@
+{
+	"Changes": [
+			{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Kinkajou.png",
+		"ToArea": { "X": 141, "Y": 304, "Width": 80, "Height": 32 },
+		"When":{ "GingerIsland":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Gorilla.png",
+		"ToArea": { "X": 0, "Y": 352, "Width": 224, "Height": 32 },
+		"When":{ "GingerIsland":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/LavaMonkies.png",
+		"ToArea": { "X": 0, "Y": 308, "Width": 144, "Height": 44 },
+		"When":{ "GingerIsland":"true"}
+		}
+	]
+}

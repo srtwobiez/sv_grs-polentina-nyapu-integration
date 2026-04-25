@@ -1,0 +1,208 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Mods/mistyspring.ItemExtensions/Resources",
+			"Entries": {
+				"{{ModId}}_LumiStone1": {
+					"Name": "Luminous Stone",
+					"Description":"Break apart to obtain luminous shards.",
+					"Texture": "Mods\\{{ModId}}\\Rocks",
+					"SpriteIndex": 0,
+					"Health": 8,
+					"EasyCalc": true,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"Debris": "(O){{ModPrefix}}LumiStoneShards",
+					"ItemDropped": "(O){{ModPrefix}}LumiShard",
+					"Tool": "Pickaxe",
+					"MinToolLevel": 2,
+					"Exp": 5,
+					"Skill": "mining",
+					"ExtraItems": [
+						{
+							"ItemId": "(O){{ModPrefix}}LumiRose", //rose
+							"Chance": 0.15 //15% of spawn
+						},
+						{
+							"ItemId": "(O)382", //coal
+							"Chance": 0.3
+						}
+					],
+					"Light": {
+						"Size": "1.2",
+						"Hex": "#e8ffea",
+						"Transparency": "0.7"
+					}
+				},
+				"{{ModId}}_LumiStone2": {
+					"Name": "Luminous Stone",
+					"Description":"Break apart to obtain luminous shards.",
+					"Texture": "Mods\\{{ModId}}\\Rocks",
+					"SpriteIndex": 1,
+					"Health": 8,
+					"EasyCalc": true,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"Debris": "(O){{ModPrefix}}LumiStoneShards",
+					"ItemDropped": "(O){{ModPrefix}}LumiShard",
+					"Tool": "Pickaxe",
+					"MinToolLevel": 2,
+					"Exp": 5,
+					"Skill": "mining",
+					"ExtraItems": [
+						{
+							"ItemId": "(O){{ModPrefix}}LumiRose", //rose
+							"Chance": 0.15 //15% of spawn
+						},
+						{
+							"ItemId": "(O)382", //coal
+							"Chance": 0.3
+						}
+					],
+					"Light": {
+						"Size": "1.2",
+						"Hex": "#e8ffea",
+						"Transparency": "0.7"
+					}
+				},
+				"{{ModId}}_LumiStone3": {
+					"Name": "Luminous Stone",
+					"Description":"Break apart to obtain luminous shards.",
+					"Texture": "Mods\\{{ModId}}\\Rocks",
+					"SpriteIndex": 2,
+					"Health": 8,
+					"EasyCalc": true,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"Debris": "(O){{ModPrefix}}LumiStoneShards",
+					"ItemDropped": "(O){{ModPrefix}}LumiShard",
+					"Tool": "Pickaxe",
+					"MinToolLevel": 2,
+					"Exp": 5,
+					"Skill": "mining",
+					"ExtraItems": [
+						{
+							"ItemId": "(O){{ModPrefix}}LumiRose", //rose
+							"Chance": 0.15 //15% of spawn
+						},
+						{
+							"ItemId": "(O)382", //coal
+							"Chance": 0.3
+						}
+					],
+					"Light": {
+						"Size": "1.2",
+						"Hex": "#e8ffea",
+						"Transparency": "0.7"
+					}
+				},
+				"{{ModId}}_UnderwaterCopper": {
+					"Name": "Copper",
+					"Texture": "Mods\\{{ModId}}\\Rocks",
+					"SpriteIndex": 10,
+					"Health": 4,
+					"EasyCalc": true,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"Debris": "stone",
+					"ItemDropped": "(O)378", //copper ore
+					"Tool": "Pickaxe",
+					"MinToolLevel": 0,
+					"Exp": 5,
+					"Skill": "mining",
+					"ExtraItems": [
+						{
+							"ItemId": "(O)382", //coal
+							"Chance": 0.1
+						}
+					]
+				},
+				"{{ModId}}_UnderwaterIron": {
+					"Name": "Iron",
+					"Texture": "Mods\\{{ModId}}\\Rocks",
+					"SpriteIndex": 11,
+					"Health": 4,
+					"EasyCalc": true,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"Debris": "stone",
+					"ItemDropped": "(O)380", //iron ore
+					"Tool": "Pickaxe",
+					"MinToolLevel": 0,
+					"Exp": 5,
+					"Skill": "mining",
+					"ExtraItems": [
+						{
+							"ItemId": "(O)382", //coal
+							"Chance": 0.1
+						}
+					]
+				},
+				"{{ModId}}_Stone1": {
+					"Name": "Stone",
+					"Texture": "Mods\\{{ModId}}\\Rocks",
+					"SpriteIndex": 12,
+					"Health": 1,
+					"EasyCalc": true,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"Debris": "stone",
+					"ItemDropped": "(O)390", //stone
+					"Tool": "Pickaxe",
+					"MinToolLevel": 0,
+					"Exp": 5,
+					"Skill": "mining",
+					"ExtraItems": [
+						{
+							"ItemId": "(O)382", //coal
+							"Chance": 0.05
+						}
+					]
+				},
+				"{{ModId}}_Stone2": {
+					"Name": "Stone",
+					"Texture": "Mods\\{{ModId}}\\Rocks",
+					"SpriteIndex": 13,
+					"Health": 1,
+					"EasyCalc": true,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"Debris": "stone",
+					"ItemDropped": "(O)390", //stone
+					"Tool": "Pickaxe",
+					"MinToolLevel": 0,
+					"Exp": 5,
+					"Skill": "mining",
+					"ExtraItems": [
+						{
+							"ItemId": "(O)382", //coal
+							"Chance": 0.05
+						}
+					]
+				},
+				"{{ModId}}_Stone3": {
+					"Name": "Stone",
+					"Texture": "Mods\\{{ModId}}\\Rocks",
+					"SpriteIndex": 14,
+					"Health": 1,
+					"EasyCalc": true,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"Debris": "stone",
+					"ItemDropped": "(O)390", //stone
+					"Tool": "Pickaxe",
+					"MinToolLevel": 0,
+					"Exp": 5,
+					"Skill": "mining",
+					"ExtraItems": [
+						{
+							"ItemId": "(O)382", //coal
+							"Chance": 0.05
+						}
+					]
+				}
+			}
+		}
+	]
+}

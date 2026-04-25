@@ -1,0 +1,379 @@
+{
+  // ===== COMPATIBILITY MODULE =====
+  // Optional integrations: NPCMapLocations, CJB Cheats Menu, Sprinklers of Pelican Town
+  "Changes": [
+    // ===== NPC MAP LOCATIONS (BOUHM.NPCMAPLOCATIONS) =====
+    // Show player at spa on world map when in Solarium
+    {
+      "LogName": "JJ Show player at spa on NPC map mods",
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+      "Entries": {
+        "Custom_Solarium": {
+          "MapVectors": [
+            {"TileX": 0, "TileY": 0, "MapX": 230, "MapY": 28},
+            {"TileX": 35, "TileY": 28, "MapX": 245, "MapY": 42}
+          ],
+          "MapTooltip": {
+            "X": 230,
+            "Y": 28,
+            "Width": 15,
+            "Height": 14,
+            "PrimaryText": "{{i18n:Location.Solarium}}"
+          }
+        }
+      },
+      "When": {
+        "HasMod": "Bouhm.NPCMapLocations"
+      }
+    },
+    // ===== CJB CHEATS MENU (CJBOK.CHEATSMENU) =====
+    // Add Solarium warp under Mountain section
+    {
+      "LogName": "JJ Add warp to CJB Cheats menu",
+      "Action": "EditData",
+      "Target": "Mods/CJBok.CheatsMenu/Warps",
+      "Entries": {
+        "{{ModId}}_Custom_Solarium": {
+          "Id": "{{ModId}}_Custom_Solarium",
+          "SectionId": "Mountain",
+          "DisplayName": "{{i18n:Location.Solarium}}",
+          "Location": "Custom_Solarium",
+          "Tile": "4, 15"
+        }
+      },
+      "When": {
+        "HasMod": "CJBok.CheatsMenu"
+      }
+    },
+    // ===== BATHHOUSE MAP COMPATIBILITY =====
+    // Remove Front at (1,3) and Buildings at (1,4) for vanilla-style custom BathHouse maps. Skip BHI (BathHouse_Entry1 uses different layout; use JJ BHI BathHouse Front layer compatibility at 11,x).
+    {
+      "LogName": "JJ BathHouse Front layer compatibility",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "MapTiles": [
+        {"Position": {"X": 1, "Y": 3}, "Layer": "Front", "Remove": true},
+        {"Position": {"X": 1, "Y": 4}, "Layer": "Buildings", "Remove": true}
+      ],
+      "When": {
+        "HasMod |contains=Lou.PretBath": "false",
+        "HasMod |contains=sashasand.BHI": "false"
+      }
+    },
+    // BathHouseImprovements (BathHouse_Entry1): remove Front (11,3) and Buildings (11,4) for hatch/plant clearance.
+    {
+      "LogName": "JJ BHI BathHouse Front layer compatibility",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "MapTiles": [
+        {"Position": {"X": 11, "Y": 3}, "Layer": "Front", "Remove": true},
+        {"Position": {"X": 11, "Y": 4}, "Layer": "Buildings", "Remove": true}
+      ],
+      "Update": "OnLocationChange",
+      "When": {
+        "HasMod": "sashasand.BHI",
+        "HasMod |contains=Lou.PretBath": "false"
+      }
+    },
+    // ===== PRETTIER BATHHOUSE (LOU.PRETBATH) =====
+    // Overlay ladder/lift TMX at (2,1), 1x4. (Previous MapTiles approach commented out below.)
+    {
+      "LogName": "JJ Prettier Bathhouse hatch (ladder)",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "Update": "OnLocationChange",
+      "FromFile": "assets/{{Lowercase:{{HatchStyle}}}}.tmx",
+      "PatchMode": "Overlay",
+      "ToArea": {"X": 2, "Y": 1, "Width": 1, "Height": 4},
+      "When": {
+        "HasMod": "Lou.PretBath",
+        "HatchStyle": "Ladder"
+      }
+    },
+    {
+      "LogName": "JJ Prettier Bathhouse hatch (lift)",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "Update": "OnLocationChange",
+      "FromFile": "assets/Prettier_{{Lowercase:{{HatchStyle}}}}.tmx",
+      "PatchMode": "Overlay",
+      "ToArea": {"X": 2, "Y": 1, "Width": 1, "Height": 4},
+      "When": {
+        "HasMod": "Lou.PretBath",
+        "HatchStyle": "Lift"
+      }
+    },
+    // Hatch access (2,2)-(2,3): No Key message / Has Key warp when Prettier moves hatch. (2,1) has no tile so omitted. Maps.json skips (1,1)-(1,3) when Prettier present.
+    {
+      "LogName": "JJ Prettier Bathhouse hatch access No Key (ladder)",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "MapTiles": [
+        {"Position": {"X": 2, "Y": 2}, "Layer": "Buildings", "SetProperties": {"Action": "Message \"SolariumHatchLocked\""}},
+        {"Position": {"X": 2, "Y": 3}, "Layer": "Buildings", "SetProperties": {"Action": "Message \"SolariumHatchLocked\""}}
+      ],
+      "Update": "OnLocationChange",
+      "When": {
+        "HasMod": "Lou.PretBath",
+        "HatchStyle": "Ladder"
+      }
+    },
+    {
+      "LogName": "JJ Prettier Bathhouse hatch access No Key (lift)",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "MapTiles": [
+        {"Position": {"X": 2, "Y": 2}, "Layer": "Buildings", "SetProperties": {"Action": "Message \"SolariumLiftLocked\""}},
+        {"Position": {"X": 2, "Y": 3}, "Layer": "Buildings", "SetProperties": {"Action": "Message \"SolariumLiftLocked\""}}
+      ],
+      "Update": "OnLocationChange",
+      "When": {
+        "HasMod": "Lou.PretBath",
+        "HatchStyle": "Lift"
+      }
+    },
+    {
+      "LogName": "JJ Prettier Bathhouse hatch access Has Key",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "MapTiles": [
+        {"Position": {"X": 2, "Y": 2}, "Layer": "Buildings", "SetProperties": {"Action": "Warp 5 16 Custom_Solarium"}},
+        {"Position": {"X": 2, "Y": 3}, "Layer": "Buildings", "SetProperties": {"Action": "Warp 5 16 Custom_Solarium"}}
+      ],
+      "Update": "OnLocationChange",
+      "When": {
+        "HasMod": "Lou.PretBath",
+        "HasSeenEvent": "{{ModId}}_EvelynKey"
+      }
+    },
+    // Warp out from Solarium when Prettier (hatch at 2,x): player lands at (2, 4), NPCs at (2, 5). Maps.json uses (1, 5) and is skipped when Prettier present.
+    {
+      "LogName": "JJ Player warp Solarium to BathHouse (Prettier)",
+      "Action": "EditMap",
+      "Update": "OnLocationChange",
+      "Target": "Maps/Custom_Solarium",
+      "MapTiles": [
+        {"Position": {"X": 4, "Y": 16}, "Layer": "Buildings", "SetProperties": {"Action": "Warp 2 4 BathHouse_Entry"}}
+      ],
+      "When": {
+        "HasMod": "Lou.PretBath",
+        "HasSeenEvent": "{{ModId}}_EvelynKey"
+      }
+    },    
+    {
+      "LogName": "JJ NPCWarp BathHouse to Solarium (Prettier)",
+      "Action": "EditMap",
+      "Update": "OnLocationChange",
+      "Target": "Maps/BathHouse_Entry",
+      "MapProperties": {
+        "NPCWarp": "2 4 Custom_Solarium 5 16"
+      },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_EvelynKey",
+        "HasMod": "Lou.PretBath"
+      }
+    },
+    {
+      "LogName": "JJ NPCWarp Solarium to BathHouse (Prettier)",
+      "Action": "EditMap",
+      "Update": "OnLocationChange",
+      "Target": "Maps/Custom_Solarium",
+      "MapProperties": {
+        "NPCWarp": "4 16 BathHouse_Entry 2 5"
+      },
+      "When": {
+        "HasMod": "Lou.PretBath",
+        "HasSeenEvent": "{{ModId}}_EvelynKey"
+      }
+    },
+    // ===== BATHHOUSE IMPROVEMENTS (SASHASAND.BHI) =====
+    // BathHouseImprovements loads BathHouse_Entry1; hatch overlay at (11,1) 1x4 (Front/Buildings clear at 11,3–11,4 is above).
+    // Hatch art: assets/ladder.tmx or lift.tmx (same as Maps.json). Prettier_*.tmx is Lou.PretBath only.
+    // Overlay always (no HasSeenEvent). Locked vs warp is MapTiles below.
+    {
+      "LogName": "JJ BHI Bathhouse hatch (ladder)",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "FromFile": "assets/{{Lowercase:{{HatchStyle}}}}.tmx",
+      "PatchMode": "Overlay",
+      "ToArea": {"X": 11, "Y": 1, "Width": 1, "Height": 4},
+      "When": {
+        "HasMod": "sashasand.BHI",
+        "HasMod |contains=Lou.PretBath": "false",
+        "HatchStyle": "Ladder"
+      }
+    },
+    {
+      "LogName": "JJ BHI Bathhouse hatch (lift)",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "FromFile": "assets/{{Lowercase:{{HatchStyle}}}}.tmx",
+      "PatchMode": "Overlay",
+      "ToArea": {"X": 11, "Y": 1, "Width": 1, "Height": 4},
+      "When": {
+        "HasMod": "sashasand.BHI",
+        "HasMod |contains=Lou.PretBath": "false",
+        "HatchStyle": "Lift"
+      }
+    },
+    {
+      "LogName": "JJ BHI Bathhouse hatch access No Key (ladder)",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "MapTiles": [
+        {"Position": {"X": 11, "Y": 2}, "Layer": "Buildings", "SetProperties": {"Action": "Message \"SolariumHatchLocked\""}},
+        {"Position": {"X": 11, "Y": 3}, "Layer": "Buildings", "SetProperties": {"Action": "Message \"SolariumHatchLocked\""}}
+      ],
+      "Update": "OnLocationChange",
+      "When": {
+        "HasMod": "sashasand.BHI",
+        "HasMod |contains=Lou.PretBath": "false",
+        "HatchStyle": "Ladder"
+      }
+    },
+    {
+      "LogName": "JJ BHI Bathhouse hatch access No Key (lift)",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "MapTiles": [
+        {"Position": {"X": 11, "Y": 2}, "Layer": "Buildings", "SetProperties": {"Action": "Message \"SolariumLiftLocked\""}},
+        {"Position": {"X": 11, "Y": 3}, "Layer": "Buildings", "SetProperties": {"Action": "Message \"SolariumLiftLocked\""}}
+      ],
+      "Update": "OnLocationChange",
+      "When": {
+        "HasMod": "sashasand.BHI",
+        "HasMod |contains=Lou.PretBath": "false",
+        "HatchStyle": "Lift"
+      }
+    },
+    {
+      "LogName": "JJ BHI Bathhouse hatch access Has Key",
+      "Action": "EditMap",
+      "Target": "Maps/BathHouse_Entry",
+      "MapTiles": [
+        {"Position": {"X": 11, "Y": 2}, "Layer": "Buildings", "SetProperties": {"Action": "Warp 5 16 Custom_Solarium"}},
+        {"Position": {"X": 11, "Y": 3}, "Layer": "Buildings", "SetProperties": {"Action": "Warp 5 16 Custom_Solarium"}}
+      ],
+      "Update": "OnLocationChange",
+      "When": {
+        "HasMod": "sashasand.BHI",
+        "HasMod |contains=Lou.PretBath": "false",
+        "HasSeenEvent": "{{ModId}}_EvelynKey"
+      }
+    },
+    {
+      "LogName": "JJ Player warp Solarium to BathHouse (BHI)",
+      "Action": "EditMap",
+      "Update": "OnLocationChange",
+      "Target": "Maps/Custom_Solarium",
+      "MapTiles": [
+        {"Position": {"X": 4, "Y": 16}, "Layer": "Buildings", "SetProperties": {"Action": "Warp 11 4 BathHouse_Entry"}}
+      ],
+      "When": {
+        "HasMod": "sashasand.BHI",
+        "HasMod |contains=Lou.PretBath": "false",
+        "HasSeenEvent": "{{ModId}}_EvelynKey"
+      }
+    },
+    {
+      "LogName": "JJ NPCWarp BathHouse to Solarium (BHI)",
+      "Action": "EditMap",
+      "Update": "OnLocationChange",
+      "Target": "Maps/BathHouse_Entry",
+      "MapProperties": {
+        "NPCWarp": "11 4 Custom_Solarium 5 16"
+      },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_EvelynKey",
+        "HasMod": "sashasand.BHI",
+        "HasMod |contains=Lou.PretBath": "false"
+      }
+    },
+    {
+      "LogName": "JJ NPCWarp Solarium to BathHouse (BHI)",
+      "Action": "EditMap",
+      "Update": "OnLocationChange",
+      "Target": "Maps/Custom_Solarium",
+      "MapProperties": {
+        "NPCWarp": "4 16 BathHouse_Entry 11 5"
+      },
+      "When": {
+        "HasMod": "sashasand.BHI",
+        "HasMod |contains=Lou.PretBath": "false",
+        "HasSeenEvent": "{{ModId}}_EvelynKey"
+      }
+    },
+    // ===== COLLING TOWN INTERIOR (COLLING.TOWNINTERIOR) =====
+    // Custom_Solarium back tiles: townInterior 2078 @ (10,10), 2106 @ (10,11)-(10,16).
+    {
+      "LogName": "JJ Colling Town Interior back tiles",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Solarium",
+      "MapTiles": [
+        {"Position": {"X": 10, "Y": 10}, "Layer": "Back", "SetTilesheet": "townInterior", "SetIndex": 2078},
+        {"Position": {"X": 10, "Y": 11}, "Layer": "Back", "SetTilesheet": "townInterior", "SetIndex": 2106},
+        {"Position": {"X": 10, "Y": 12}, "Layer": "Back", "SetTilesheet": "townInterior", "SetIndex": 2106},
+        {"Position": {"X": 10, "Y": 13}, "Layer": "Back", "SetTilesheet": "townInterior", "SetIndex": 2106},
+        {"Position": {"X": 10, "Y": 14}, "Layer": "Back", "SetTilesheet": "townInterior", "SetIndex": 2106},
+        {"Position": {"X": 10, "Y": 15}, "Layer": "Back", "SetTilesheet": "townInterior", "SetIndex": 2106},
+        {"Position": {"X": 10, "Y": 16}, "Layer": "Back", "SetTilesheet": "townInterior", "SetIndex": 2106}
+      ],
+      "When": {
+        "HasMod": "Colling.TownInterior"
+      }
+    },
+    // ===== SPRINKLERS OF PELICAN TOWN (JENNAJUFFUFFLES.SPRINKLERSOFPELICANTOWN) =====
+    // Add Basic/Quality/Iridium sprinklers to solarium shop (unlock by farming level 3/7/10)
+    {
+      "LogName": "JJ Sprinklers of Pelican Town in solarium shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": ["{{ModId}}_SolariumSeeds", "Items"],
+      "Entries": {
+        "{{ModId}}_Solarium_BasicSprinkler": {
+          "Id": "{{ModId}}_Solarium_BasicSprinkler",
+          "ItemId": "(O)599",
+          "Condition": "PLAYER_FARMING_LEVEL Current 3",
+          "Price": 600,
+          "IgnoreShopPriceModifiers": true
+        },
+        "{{ModId}}_Solarium_QualitySprinkler": {
+          "Id": "{{ModId}}_Solarium_QualitySprinkler",
+          "ItemId": "(O)621",
+          "Condition": "PLAYER_FARMING_LEVEL Current 7",
+          "Price": 3500,
+          "IgnoreShopPriceModifiers": true
+        },
+        "{{ModId}}_Solarium_IridiumSprinkler": {
+          "Id": "{{ModId}}_Solarium_IridiumSprinkler",
+          "ItemId": "(O)645",
+          "Condition": "PLAYER_FARMING_LEVEL Current 10",
+          "Price": 15000,
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "When": {
+        "HasMod": "JennaJuffuffles.SprinklersOfPelicanTown"
+      }
+    },
+    // ===== LIVING PORTRAITS (GALAXYROBOT.SeasonalPortraitBackgrounds) =====
+    // Includes backwards compatibility with Living Portraits mod.
+    // Use sunroom portrait background when in Solarium.
+    {
+      "LogName": "JJ Living Portraits sunroom background in Solarium",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "Update": "OnLocationChange",
+      "FromFile": "assets/compatibility/background_Sunroom_66x66.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 66, "Height": 66 },
+      "ToArea": { "X": 607, "Y": 418, "Width": 66, "Height": 66 },
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10000",
+      "When": {
+        "HasMod": "GalaxyRobot.LivingPortraits, GalaxyRobot.SeasonalPortraitBackgrounds",
+        "LocationName": "Custom_Solarium"
+      }
+    }
+  ]
+}

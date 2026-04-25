@@ -1,0 +1,584 @@
+{
+    "Changes": [
+        //Universal
+        {
+            "LogName": "Universal Love",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Love"
+                    ],
+                    "Value": "{{ModPrefix}}PearlNecklace GiEXredux_MagicIceCream",
+                    "Delimiter": " " // if the field isn't empty, add a space between the old & new text
+                }
+            ]
+        },
+        {
+            "LogName": "Diamond ring in Universal Like",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Like"
+                    ],
+                    "Value": "GiEXredux_DiamondRing",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Universal Dislike",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Dislike"
+                    ],
+                    "Value": "GiEXredux_FireEssence GiEXredux_LumiShard GiEXredux_DinoEgg_V GiEXredux_OstrichEgg_V GiEXredux_DuckEgg_V GiEXredux_Milk_V GiEXredux_GoatMilk_V GiEXredux_LargeMilk_V GiEXredux_LargeGoatMilk_V", //GiEXredux_StarDropSeeds
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Universal Hate",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Hate"
+                    ],
+                    "Value": "GiEXredux_SweetSauce GiEXredux_DuckMayo_V GiEXredux_DinoMayo_V GiEXredux_Cheese_V GiEXredux_GoatCheese_V GiEXredux_LavaSnail",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Universal Neutral",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Neutral"
+                    ],
+                    "Value": "GiEXredux_Wool_V GiEXredux_Yarn_V GiEXredux_Wool_G GiEXredux_Yarn_G GiEXredux_DuckFeather_V GiEXredux_DinoEgg_G",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Clint
+        {
+            "LogName": "Lumi shard in Clint neutral",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Clint",
+                        "9"
+                    ],
+                    "Value": "GiEXredux_LumiShard",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Demetrius
+        {
+            "LogName": "Demetrius Like",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Demetrius",
+                        "3"
+                    ],
+                    "Value": "GiEXredux_IceCream",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Dwarf
+        {
+            "LogName": "Dwarf neutral",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Dwarf",
+                        "9"
+                    ],
+                    "Value": "GiEXredux_FireEssence",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Elliott
+        {
+            "LogName": "Elliott like",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Elliott",
+                        "3"
+                    ],
+                    "Value": "GiEXredux_VampSquid GiEXredux_Squidworm",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Elliott dislike",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Elliott",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_DuckFeather_V GiEXredux_MushroomPizza",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Emily
+        {
+            "LogName": "Emily loves",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Emily",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_Wool_V GiEXredux_Yarn_V GiEXredux_Wool_G GiEXredux_Yarn_G",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Evelyn
+        {
+            "LogName": "Evelyn loves",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Evelyn",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_DiamondRing",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Gus
+        {
+            "LogName": "Gus loves",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Gus",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_DiamondRing",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Harvey
+        {
+            "LogName": "Harvey Like",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Harvey",
+                        "3"
+                    ],
+                    "Value": "GiEXredux_DuckFeather_V",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Harvey dislikes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Harvey",
+                        "5"
+                    ],
+                    "Value": "GiEXredux_Cheese_G GiEXredux_GoatCheese_G GiEXredux_MushroomPizza GiEXredux_IceCream",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Krobus
+        {
+            "LogName": "Void items in Krobus love",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Krobus",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_DuckMayo_V GiEXredux_DinoMayo_V GiEXredux_DinoEgg_V GiEXredux_OstrichEgg_V GiEXredux_DuckEgg_V GiEXredux_VoidShard GiEXredux_Wool_V GiEXredux_Yarn_V GiEXredux_DuckFeather_V GiEXredux_RabbitFoot_V",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Leah
+        {
+            "LogName": "Leah loves",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Leah",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_GoatCheese_G",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Leah hates",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Leah",
+                        "7"
+                    ],
+                    "Value": "GiEXredux_DinoEgg_V GiEXredux_OstrichEgg_V GiEXredux_DuckEgg_V GiEXredux_MushroomPizza",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Leo
+        {
+            "LogName": "Leo Love",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Leo",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_DuckFeather_V",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Leo likes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Leo",
+                        "3"
+                    ],
+                    "Value": "GiEXredux_LumiShard",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Marnie
+        {
+            "LogName": "Marnie loves",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Marnie",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_DiamondRing",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Maru
+        {
+            "LogName": "D. ring in Maru love",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Maru",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_DiamondRing",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Penny
+        {
+            "LogName": "Penny Dislike",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Penny",
+                        "5"
+                    ],
+                    "Value": "GiEXredux_DuckFeather_V GiEXredux_Wool_V GiEXredux_Yarn_V GiEXredux_Wool_G GiEXredux_Yarn_G",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Pierre
+        {
+            "LogName": "Pierre loves",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Pierre",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_MidnightCravings",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Robin
+        {
+            "LogName": "Robin loves",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Robin",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_GoatCheese_G",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Sam
+        {
+            "LogName": "Sam loves",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Sam",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_MushroomPizza",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Sandy
+        {
+            "LogName": "Sandy Like",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Sandy",
+                        "3"
+                    ],
+                    "Value": "GiEXredux_Wool_V GiEXredux_Yarn_V GiEXredux_Wool_G GiEXredux_Yarn_G",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Sebastian
+        {
+            "LogName": "Void eggs in Sebastian like",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Sebastian",
+                        "3"
+                    ],
+                    "Value": "GiEXredux_DinoEgg_V GiEXredux_OstrichEgg_V GiEXredux_DuckEgg_V",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Shane
+        {
+            "LogName": "Shane loves",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Shane",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_MushroomPizza",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Vincent
+        {
+            "LogName": "Lava snail in Vincent Like",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Vincent",
+                        "3"
+                    ],
+                    "Value": "GiEXredux_LavaSnail",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Willy
+        {
+            "LogName": "Lumi shard in Willy neutral",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Willy",
+                        "9"
+                    ],
+                    "Value": "GiEXredux_LumiShard",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Wizard
+        {
+            "LogName": "Fire essence + stardrop seeds in Wizard Love",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Wizard",
+                        "1"
+                    ],
+                    "Value": "GiEXredux_FireEssence GiEXredux_StarDropSeeds",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Void shard in Wizard Like",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Wizard",
+                        "3"
+                    ],
+                    "Value": "GiEXredux_VoidShard",
+                    "Delimiter": " "
+                }
+            ]
+        }
+    ]
+}

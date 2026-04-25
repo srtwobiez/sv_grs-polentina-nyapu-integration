@@ -1,0 +1,206 @@
+{
+  "Format": "2.8.1",
+  "ConfigSchema": {
+    "EnableMod": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.EnableMod.name}}",
+      "Description": "{{i18n:config.EnableMod.description}}",
+      "Section": "General"
+    },
+    "EnableWinterSnowOverlays": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.EnableWinterSnowOverlays.name}}",
+      "Description": "{{i18n:config.EnableWinterSnowOverlays.description}}",
+      "Section": "Sprinkler Appearance"
+    },
+    "BasicSprinklerStyle": {
+      "AllowValues": "default, aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+      "Default": "default",
+      "Name": "{{i18n:config.BasicSprinklerStyle.name}}",
+      "Description": "{{i18n:config.BasicSprinklerStyle.description}}",
+      "Section": "Sprinkler Appearance"
+    },
+    "QualitySprinklerStyle": {
+      "AllowValues": "default, aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+      "Default": "default",
+      "Name": "{{i18n:config.QualitySprinklerStyle.name}}",
+      "Description": "{{i18n:config.QualitySprinklerStyle.description}}",
+      "Section": "Sprinkler Appearance"
+    },
+    "QualitySprinklerDecoStyle": {
+      "AllowValues": "default, aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+      "Default": "default",
+      "Name": "{{i18n:config.QualitySprinklerDecoStyle.name}}",
+      "Description": "{{i18n:config.QualitySprinklerDecoStyle.description}}",
+      "Section": "Sprinkler Appearance"
+    },
+    "IridiumSprinklerStyle": {
+      "AllowValues": "default, aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+      "Default": "default",
+      "Name": "{{i18n:config.IridiumSprinklerStyle.name}}",
+      "Description": "{{i18n:config.IridiumSprinklerStyle.description}}",
+      "Section": "Sprinkler Appearance"
+    },
+    "IridiumSprinklerDecoStyle": {
+      "AllowValues": "default, aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+      "Default": "default",
+      "Name": "{{i18n:config.IridiumSprinklerDecoStyle.name}}",
+      "Description": "{{i18n:config.IridiumSprinklerDecoStyle.description}}",
+      "Section": "Sprinkler Appearance"
+    },
+    "PressureNozzleStyle": {
+      "AllowValues": "default, aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+      "Default": "default",
+      "Name": "{{i18n:config.PressureNozzleStyle.name}}",
+      "Description": "{{i18n:config.PressureNozzleStyle.description}}",
+      "Section": "Sprinkler Appearance"
+    },
+    "EnricherStyle": {
+      "AllowValues": "default, aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+      "Default": "default",
+      "Name": "{{i18n:config.EnricherStyle.name}}",
+      "Description": "{{i18n:config.EnricherStyle.description}}",
+      "Section": "Sprinkler Appearance"
+    },
+    "EnricherDecoStyle": {
+      "AllowValues": "default, aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+      "Default": "default",
+      "Name": "{{i18n:config.EnricherDecoStyle.name}}",
+      "Description": "{{i18n:config.EnricherDecoStyle.description}}",
+      "Section": "Sprinkler Appearance"
+    },
+    "EnableClintUpgrades": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.EnableClintUpgrades.name}}",
+      "Description": "{{i18n:config.EnableClintUpgrades.description}}",
+      "Section": "Upgrading Sprinklers"
+    },
+    "ImmersiveProgression": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.ImmersiveProgression.name}}",
+      "Description": "{{i18n:config.ImmersiveProgression.description}}",
+      "Section": "General"
+    },
+    "QualitySprinklerUpgradeCost": {
+      "Default": "3000",
+      "Min": 1,
+      "Max": 9999,
+      "Name": "{{i18n:config.QualitySprinklerUpgradeCost.name}}",
+      "Description": "{{i18n:config.QualitySprinklerUpgradeCost.description}}",
+      "Section": "Upgrading Sprinklers"
+    },
+    "IridiumSprinklerUpgradeCost": {
+      "Default": "12000",
+      "Min": 1,
+      "Max": 9999,
+      "Name": "{{i18n:config.IridiumSprinklerUpgradeCost.name}}",
+      "Description": "{{i18n:config.IridiumSprinklerUpgradeCost.description}}",
+      "Section": "Upgrading Sprinklers"
+    },
+    "PierreSellsSprinklers": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.PierreSellsSprinklers.name}}",
+      "Description": "{{i18n:config.PierreSellsSprinklers.description}}",
+      "Section": "Pierre's General Store"
+    },
+    "BasicSprinklerPrice": {
+      "Default": "600",
+      "Min": 1,
+      "Max": 9999,
+      "Name": "{{i18n:config.BasicSprinklerPrice.name}}",
+      "Description": "{{i18n:config.BasicSprinklerPrice.description}}",
+      "Section": "Pierre's General Store"
+    },
+    "QualitySprinklerPrice": {
+      "Default": "3500",
+      "Min": 1,
+      "Max": 9999,
+      "Name": "{{i18n:config.QualitySprinklerPrice.name}}",
+      "Description": "{{i18n:config.QualitySprinklerPrice.description}}",
+      "Section": "Pierre's General Store"
+    },
+    "IridiumSprinklerPrice": {
+      "Default": "15000",
+      "Min": 1,
+      "Max": 9999,
+      "Name": "{{i18n:config.IridiumSprinklerPrice.name}}",
+      "Description": "{{i18n:config.IridiumSprinklerPrice.description}}",
+      "Section": "Pierre's General Store"
+    },
+    // ===== JOJAMART CONFIGURATION =====
+    "JojaSellsSprinklers": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.JojaSellsSprinklers.name}}",
+      "Description": "{{i18n:config.JojaSellsSprinklers.description}}",
+      "Section": "JojaMart"
+    },
+    "JojaDiscount": {
+      "Default": 5,
+      "Min": 0,
+      "Max": 99,
+      "Name": "{{i18n:config.JojaDiscount.name}}",
+      "Description": "{{i18n:config.JojaDiscount.description}}",
+      "Section": "JojaMart"
+    },
+    "EnableQiShopRecipes": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.EnableQiShopRecipes.name}}",
+      "Description": "{{i18n:config.EnableQiShopRecipes.description}}",
+      "Section": "Qi's Walnut Room"
+    },
+    "PressureNozzleRecipeCost": {
+      "Default": "100",
+      "Min": 1,
+      "Max": 9999,
+      "Name": "{{i18n:config.PressureNozzleRecipeCost.name}}",
+      "Description": "{{i18n:config.PressureNozzleRecipeCost.description}}",
+      "Section": "Qi's Walnut Room"
+    },
+    "EnricherRecipeCost": {
+      "Default": "100",
+      "Min": 1,
+      "Max": 9999,
+      "Name": "{{i18n:config.EnricherRecipeCost.name}}",
+      "Description": "{{i18n:config.EnricherRecipeCost.description}}",
+      "Section": "Qi's Walnut Room"
+    },
+    "RemoveRecipesFromPerfection": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.RemoveRecipesFromPerfection.name}}",
+      "Description": "{{i18n:config.RemoveRecipesFromPerfection.description}}",
+      "Section": "Qi's Walnut Room"
+    }
+  },
+  // ===== DYNAMIC PRICE CALCULATION TOKENS =====
+  "DynamicTokens": [
+    {
+      "Name": "JojaBasicSprinklerPriceCalculated",
+      "Value": "{{Query:{{BasicSprinklerPrice}} * (100 - {{JojaDiscount}}) / 100}}"
+    },
+    {
+      "Name": "JojaQualitySprinklerPriceCalculated",
+      "Value": "{{Query:{{QualitySprinklerPrice}} * (100 - {{JojaDiscount}}) / 100}}"
+    },
+    {
+      "Name": "JojaIridiumSprinklerPriceCalculated",
+      "Value": "{{Query:{{IridiumSprinklerPrice}} * (100 - {{JojaDiscount}}) / 100}}"
+    }
+  ],
+  "Changes": [
+    { "LogName": "JJ Include CraftingRecipes", "Action": "Include", "FromFile": "data/CraftingRecipes.json", "When": { "EnableMod": "true", "HasFile:data/CraftingRecipes.json": true } },
+    { "LogName": "JJ Include Assets", "Action": "Include", "FromFile": "data/Assets.json", "When": { "EnableMod": "true", "HasFile:data/Assets.json": true } },
+    { "LogName": "JJ Include TriggerActions", "Action": "Include", "FromFile": "data/TriggerActions.json", "When": { "EnableMod": "true", "HasFile:data/TriggerActions.json": true } },
+    { "LogName": "JJ Include Shops", "Action": "Include", "FromFile": "data/Shops.json", "When": { "EnableMod": "true", "HasFile:data/Shops.json": true } },
+    { "LogName": "JJ Include Mail", "Action": "Include", "FromFile": "data/Mail.json", "When": { "EnableMod": "true", "HasFile:data/Mail.json": true } },
+    { "LogName": "JJ Include Quests", "Action": "Include", "FromFile": "data/Quests.json", "When": { "EnableMod": "true", "HasFile:data/Quests.json": true } },
+    { "LogName": "JJ Include Compatibility", "Action": "Include", "FromFile": "data/Compatibility.json", "When": { "EnableMod": "true", "HasMod": "rtrox.LineSprinklersRedux", "HasFile:data/Compatibility.json": true } }
+  ]
+}

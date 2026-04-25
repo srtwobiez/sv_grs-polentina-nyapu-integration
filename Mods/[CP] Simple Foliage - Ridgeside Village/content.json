@@ -1,0 +1,40 @@
+{
+   "Format": "2.0.0",
+   "DynamicTokens": [
+               {
+                  "Name": "Recolor",
+                  "Value": "Vanilla"
+               },
+               {
+                  "Name": "Recolor",
+                  "Value": "Earthy",
+                  "When": { "HasMod": "DaisyNiko.EarthyRecolour" }
+               },
+               {
+                  "Name": "Recolor",
+                  "Value": "Starblue",
+                  "When": { "HasMod": "Lita.StarblueValley" }
+               },
+               {
+                  "Name": "Recolor",
+                  "Value": "VPR",
+                  "When": { "HasMod": "grapeponta.VibrantPastoralRecolor" }
+               }
+   ],
+   "Changes": [
+   {
+      "LogName": "FruitTrees",
+      "Action": "EditImage",
+      "Target": "Mods\\Rafseazz.RSVCP\\Objects\\FruitTrees",
+      "FromFile": "assets/{{Recolor}}/FruitTrees.png"
+      },
+   {
+      "LogName": "Trees",
+      "Action": "EditImage",
+      "Update": "OnLocationChange",
+      "PatchMode": "Replace",
+      "Target": "Maps/spring_zridgeside",
+      "FromFile": "assets/{{Recolor}}/TileSheets/{{season}}_zridgeside.png",
+      },
+   ]
+}

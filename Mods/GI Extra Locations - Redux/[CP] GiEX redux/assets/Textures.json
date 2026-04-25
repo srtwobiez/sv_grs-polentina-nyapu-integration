@@ -1,0 +1,513 @@
+{
+    "Changes": [
+        /* BUNDLES */
+        {
+            "LogName": "Island note",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Textures/IslandNote",
+            "FromFile": "assets/Bundles/IslandNoteOnly.png"
+        },
+        {
+            "LogName":"Fishing",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/FishingBundle",
+            "FromFile":"assets/Bundles/Fishing_{{QuestDifficulty}}.png"
+        },
+        {
+            "LogName":"Mining",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/CookingBundle",
+            "FromFile":"assets/Bundles/Cooking_{{QuestDifficulty}}.png"
+        },
+        {
+            "LogName":"Farming",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/FarmingBundle",
+            "FromFile":"assets/Bundles/Farming_{{QuestDifficulty}}.png"
+        },
+        {
+            "LogName":"Cooking",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/MiningBundle",
+            "FromFile":"assets/Bundles/Mining_{{QuestDifficulty}}.png"
+        },
+        {
+            "LogName":"Combat",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/CombatBundle",
+            "FromFile":"assets/Bundles/Combat_{{QuestDifficulty}}.png"
+        },
+        // bundle statue textures
+        {
+            "LogName":"General statue",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/GeneralStatue",
+            "FromFile":"assets/Bundles/GeneralStatue.png"
+        },
+        {
+            "LogName":"Fishing statue",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/FishingStatue",
+            "FromFile":"assets/Bundles/FishingStatue.png"
+        },
+        {
+            "LogName":"Mining statue",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/CookingStatue",
+            "FromFile":"assets/Bundles/CookingStatue.png"
+        },
+        {
+            "LogName":"Farming statue",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/FarmingStatue",
+            "FromFile":"assets/Bundles/FarmingStatue.png"
+        },
+        {
+            "LogName":"Cooking statue",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/MiningStatue",
+            "FromFile":"assets/Bundles/MiningStatue.png"
+        },
+        {
+            "LogName":"Combat statue",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/CombatStatue",
+            "FromFile":"assets/Bundles/CombatStatue.png"
+        },
+        //aquarium
+        {
+            "LogName": "Aquarium note",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Textures/AquariumNote",
+            "FromFile": "assets/Bundles/AquariumNoteOnly.png"
+        },
+        {
+            "LogName":"Aquarium icon - freshwater",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/FreshwaterIcon",
+            "FromFile":"assets/Bundles/FreshwaterIcon.png"
+        },
+        {
+            "LogName":"Aquarium icon - ocean 1",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/OceanIcon1",
+            "FromFile":"assets/Bundles/Ocean1Icon.png"
+        },
+        {
+            "LogName":"Aquarium icon - ocean 2",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/OceanIcon2",
+            "FromFile":"assets/Bundles/Ocean2Icon.png"
+        },
+        {
+            "LogName":"Aquarium icon - pirate cove",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/PirateCoveIcon",
+            "FromFile":"assets/Bundles/PirateCoveIcon.png"
+        },
+        {
+            "LogName":"Aquarium icon - deep sea",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/DeepSeaIcon",
+            "FromFile":"assets/Bundles/DeepSeaIcon.png"
+        },
+        //aquarium statue textures
+        {
+            "LogName":"Aquarium statue",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/AquariumStatue",
+            "FromFile":"assets/Bundles/Aquarium_Base.png"
+        },
+        {
+            "LogName":"Aquarium statue - freshwater",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/FreshwaterStatue",
+            "FromFile":"assets/Bundles/Aquarium_Freshwater.png"
+        },
+        {
+            "LogName":"Aquarium statue - ocean 1",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/OceanStatue1",
+            "FromFile":"assets/Bundles/Aquarium_Ocean1.png"
+        },
+        {
+            "LogName":"Aquarium statue - ocean 2",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/OceanStatue2",
+            "FromFile":"assets/Bundles/Aquarium_Ocean2.png"
+        },
+        {
+            "LogName":"Aquarium statue - pirate cove",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/PirateCoveStatue",
+            "FromFile":"assets/Bundles/Aquarium_PirateCove.png"
+        },
+        {
+            "LogName":"Aquarium statue - deep sea",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/DeepSeaStatue",
+            "FromFile":"assets/Bundles/Aquarium_DeepSea.png"
+        },
+        /**/
+        {
+            "LogName": "Buff icons",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Textures/Buffs",
+            "FromFile": "assets/Other/BuffIcons.png"
+        },
+        {
+            "LogName": "Helmet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Textures/HelmetIcon",
+            "FromFile": "assets/Other/Helmet.png"
+        },
+        {
+            "LogName": "Helmet as item",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Textures/Helmet",
+            "FromFile": "assets/Other/diving_helmet.png"
+        },
+        {
+            "LogName": "Journal",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Textures/Journal",
+            "FromFile": "assets/Other/Journal.png"
+        },
+        {
+            "LogName": "Pink junimo",
+            "Action": "Load",
+            "Target": "Characters/GiEXPinkJunimo",
+            "FromFile": "assets/Monsters/junimo_pnk.png"
+        },
+        {
+            "LogName": "Yellow junimo",
+            "Action": "Load",
+            "Target": "Characters/GiEXYlwJunimo",
+            "FromFile": "assets/Monsters/junimo_ylw.png"
+        },
+        {
+            "LogName": "Green junimo",
+            "Action": "Load",
+            "Target": "Characters/GiEXGrnJunimo",
+            "FromFile": "assets/Monsters/junimo_grn.png"
+        },
+        {
+            "LogName": "Aqua junimo",
+            "Action": "Load",
+            "Target": "Characters/GiEXAquaJunimo",
+            "FromFile": "assets/Monsters/junimo_lb.png"
+        },
+        {
+            "LogName": "Underwater junimo",
+            "Action": "Load",
+            "Target": "Characters/GiEXSeaJunimo",
+            "FromFile": "assets/Monsters/junimo_uw.png"
+        },
+        //tilesheets
+        {
+            "LogName": "Tilesheets - objects",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Objects",
+            "FromFile": "assets/Other/Items.png"
+        },
+        {
+            "LogName": "Tilesheets - rocks",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Rocks",
+            "FromFile": "assets/Other/Rocks.png"
+        },
+        {
+            "LogName": "Tilesheets - Fish items",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/FishItems",
+            "FromFile": "assets/Other/FishIcons.png"
+        },
+        {
+            "LogName": "Tilesheets - Aquarium fish",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/AquariumFish",
+            "FromFile": "assets/Other/Fish.png"
+        },
+        {
+            "LogName":"Add animal produce",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/AnimalProduce",
+            "FromFile":"assets/Other/AnimalProduce.png"
+        },
+        {
+            "LogName":"Add recipes",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Artifacts",
+            "FromFile":"assets/Other/Artifacts.png"
+        },
+        {
+            "LogName":"Add artifacts",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Recipes",
+            "FromFile":"assets/Other/Recipes.png"
+        },
+        {
+            "LogName": "Items - snailfish patch",
+            "Action": "EditImage",
+            "Target": "Mods/{{ModId}}/FishItems",
+            "FromFile": "assets/Other/HadalSnailfish_replacement.png",
+            "PatchMode": "Replace",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 96,
+                "Y": 32,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Query: '{{LocationName}}' IN ('GiEX_Sea_West', 'GiEX_Sea_West2', 'GiEX_Sea_TritonHouse', 'GiEX_Sea_MermaidHouse')": true
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Items - necklace patch",
+            "Action": "EditImage",
+            "Target": "Mods/{{ModId}}/Artifacts",
+            "FromFile": "assets/Other/PearlNecklace_underwater.png",
+            "PatchMode": "Replace",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Query: '{{LocationName}}' IN ('GiEX_Sea_West', 'GiEX_Sea_West2', 'GiEX_Sea_TritonHouse', 'GiEX_Sea_MermaidHouse')": true
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Tilesheets - Localization (ja)",
+            "Action": "EditImage",
+            "Target": "Mods/{{ModId}}/AnimalProduce",
+            "FromFile": "assets/Other/Items_ja.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "Language": "ja"
+            }
+        },
+        {
+            "LogName": "Tilesheets - Localization (fr)",
+            "Action": "EditImage",
+            "Target": "Mods/{{ModId}}/AnimalProduce",
+            "FromFile": "assets/Other/Items_fr.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "Language": "fr"
+            }
+        },
+        {
+            "LogName": "Tilesheets - Localization (es,pt)",
+            "Action": "EditImage",
+            "Target": "Mods/{{ModId}}/AnimalProduce",
+            "FromFile": "assets/Other/Items_ro.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "Language": "es,pt"
+            }
+        },
+        //trophy
+        {
+            "Action": "Load",
+            "Target": "Mods\\{{ModId}}\\Textures\\Furniture",
+            "FromFile": "assets/Other/Furniture.png"
+        },
+        //tools
+        {
+            "Action": "Load",
+            "Target": "Mods\\{{ModId}}\\Textures\\Tools",
+            "FromFile": "assets/Other/Tools.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods\\{{ModId}}\\Textures\\LuminousRod",
+            "FromFile": "assets/Other/LuminousRod.png"
+        },
+        //weapon
+        {
+            "Action": "Load",
+            "Target": "Mods\\{{ModId}}\\Weapons",
+            "FromFile": "assets/Other/Weapons.png"
+        },
+        //monsters
+        {
+            "LogName": "LavaDragon",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Monsters/LavaDragon",
+            "FromFile": "assets/Monsters/LavaDragon.png"
+        },
+        {
+            "LogName": "StoneCrab",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Monsters/StoneCrab",
+            "FromFile": "assets/Monsters/StoneCrab.png"
+        },
+        {
+            "LogName": "PirateGhost",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Monsters/PirateGhost",
+            "FromFile": "assets/Monsters/PirateGhost.png"
+        },
+        {
+            "LogName": "LeafCrab",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Monsters/LeafCrab",
+            "FromFile": "assets/Monsters/LeafCrab.png"
+        },
+        {
+            "LogName": "Rock crab → Omni",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Monsters/OmniCrab",
+            "FromFile": "assets/Monsters/OmniCrab.png"
+        },
+        {
+            "LogName": "Lava crab → Radiation",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Monsters/RadioactiveCrab",
+            "FromFile": "assets/Monsters/RadiationCrab.png"
+        },
+        {
+            "LogName": "Normal crab",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Monsters/NormalCrab",
+            "FromFile": "assets/Monsters/NormalCrab.png"
+        },
+        {
+            "LogName": "AngryTigerSlime",
+            "Action": "Load",
+            "Target": "Characters/GiEXreduxMonsterSlime",
+            "FromFile": "assets/Monsters/AngrySlime.png"
+        },
+        //dirt textures
+        {
+            "LogName": "Dirt (lair)",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/Dirt_lair",
+            "FromFile":"assets/Tilesheets/{{compat}}/Dirt_lair.png"
+        },
+        {
+            "LogName": "Dirt (sea)",
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/Dirt_sea",
+            "FromFile":"assets/Tilesheets/{{compat}}/Dirt_underwater.png"
+        },
+        //artifact spot (worm)
+        {
+            "LogName": "Patch artifact in sea",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/Tilesheets/Artifactspot_sea.png",
+            "FromArea":{
+                "X":0,
+                "Y":0,
+                "Width":64,
+                "Height":16
+            },
+            "ToArea":{
+                "X":368,
+                "Y":32,
+                "Width":64,
+                "Height":16
+            },
+            "Update": "OnLocationChange",
+            "PatchMode": "Replace",
+            "When": {
+                "Query: '{{LocationName}}' IN ('GiEX_Sea_West', 'GiEX_Sea_West2')": true
+            }
+        },
+        {
+            "LogName": "Patch seed in sea",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors_1_6",
+            "FromFile": "assets/Tilesheets/Seedspot_sea.png",
+            "FromArea":{
+                "X":0,
+                "Y":0,
+                "Width":64,
+                "Height":16
+            },
+            "ToArea":{
+                "X":160,
+                "Y":0,
+                "Width":64,
+                "Height":16
+            },
+            "Update": "OnLocationChange",
+            "PatchMode": "Replace",
+            "When": {
+                "Query: '{{LocationName}}' IN ('GiEX_Sea_West', 'GiEX_Sea_SouthWest', 'GiEX_Sea_SouthEast')": true
+            }
+        },
+        //texture patches: lair
+        {
+            "LogName": "Patch bushes for lair - grass",
+            "Action": "EditImage",
+            "Target": "TerrainFeatures/grass",
+            "FromFile": "assets/Tilesheets/grass.png",
+            "Update": "OnLocationChange",
+            "PatchMode": "Overlay",
+            "When": {
+                "LocationName": "GiEX_ExtinctLair"
+            }
+        },
+        {
+            "LogName": "Patch bushes for lair",
+            "Action": "EditImage",
+            "Target": "TileSheets/bushes",
+            "FromFile": "assets/Tilesheets/bushes.png",
+            "Update": "OnLocationChange",
+            "PatchMode": "Overlay",
+            "When": {
+                "LocationName": "GiEX_ExtinctLair"
+            }
+        },
+        {
+            "LogName": "Patch bushes for lair - springobj leaves",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Tilesheets/springobjects.png",
+            "Update": "OnLocationChange",
+            "PatchMode": "Overlay",
+            "When": {
+                "LocationName": "GiEX_ExtinctLair"
+            }
+        },
+        //randomize fishy
+        {
+            "LogName": "Randomize fish sheet",
+            "Action": "EditImage",
+            "Target": "Maps/island_extras",
+            "FromFile": "assets/Tilesheets/fishes{{Random:1,2,3,4}}.png",
+            "PatchMode":"Overlay",
+            "When": {
+                "HasFlag": "GiEXbundle.fishing.done"
+            }
+        },
+        {
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/Cloudy_Ocean_BG",
+            "FromFile":"assets/Other/Cloudy_Ocean_BG_Custom.png"
+        },
+        {
+            "Action":"Load",
+            "Target":"Mods/{{ModId}}/Textures/Cloudy_Ocean_BG_Night",
+            "FromFile":"assets/Other/Cloudy_Ocean_BG_Night_Custom.png"
+        }
+    ]
+}

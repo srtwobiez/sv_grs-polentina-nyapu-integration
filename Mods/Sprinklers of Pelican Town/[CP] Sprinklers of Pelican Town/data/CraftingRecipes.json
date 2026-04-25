@@ -1,0 +1,31 @@
+{
+  // ===== CRAFTING RECIPES =====
+  "Changes": [
+    {
+      "LogName": "JJ Pressure Nozzle and Enricher recipes",
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "Pressure Nozzle": "910 1 857 1 787 1/Home/915/false/none/",
+        "Enricher": "910 1 725 1 851 1/Home/913/false/none/"
+      }
+    },
+    {
+      "LogName": "JJ Perfection exclusions for Pressure Nozzle and Enricher",
+      "Action": "EditData",
+      "Target": "rokugin.perfectionexclusions/recipes",
+      "Entries": {
+        "{{ModId}}_RecipeExclusions": {
+          "CraftingRecipes": [
+            "Pressure Nozzle",
+            "Enricher"
+          ]
+        }
+      },
+      "When": {
+        "RemoveRecipesFromPerfection": "true",
+        "HasMod": "rokugin.perfectionexclusions"
+      }
+    }
+  ]
+}

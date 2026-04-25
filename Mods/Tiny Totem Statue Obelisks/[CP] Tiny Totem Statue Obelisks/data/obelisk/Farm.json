@@ -1,0 +1,32 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Load Ginger Island",
+      "Action": "Load",
+      "Target": "Maps/Farm Obelisk",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_farm.png"
+    },
+    {
+      "LogName": "JJ Flower Overlay Ginger Island",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Maps/Farm Obelisk",
+      "FromFile": "assets/flowers/farm_{{FarmFlowerColor}}.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Moss Overlay Ginger Island",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Maps/Farm Obelisk",
+      "FromFile": "assets/moss/farm_moss.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

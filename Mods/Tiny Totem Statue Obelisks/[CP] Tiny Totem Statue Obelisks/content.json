@@ -1,0 +1,825 @@
+{
+  "Format": "2.8.1",
+  "ConfigSchema": {
+
+    "DecorationStyle": {
+      "AllowValues": "none, flowers, moss, both, seasonal",
+      "Default": "seasonal",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.DecorationStyle.name}}",
+      "Description": "{{i18n:config.DecorationStyle.description}}",
+      "Section": "Appearance"
+    },
+    "RecolorStyle": {
+      "AllowValues": "default, earthy",
+      "Default": "default",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.RecolorStyle.name}}",
+      "Description": "{{i18n:config.RecolorStyle.description}}",
+      "Section": "Appearance"
+    },
+    "FarmObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.FarmObeliskEnabled.name}}",
+      "Description": "{{i18n:config.FarmObeliskEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "EarthObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.EarthObeliskEnabled.name}}",
+      "Description": "{{i18n:config.EarthObeliskEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "WaterObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.WaterObeliskEnabled.name}}",
+      "Description": "{{i18n:config.WaterObeliskEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "DesertObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.DesertObeliskEnabled.name}}",
+      "Description": "{{i18n:config.DesertObeliskEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "IslandObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.IslandObeliskEnabled.name}}",
+      "Description": "{{i18n:config.IslandObeliskEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "RemoteObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.RemoteObeliskEnabled.name}}",
+      "Description": "{{i18n:config.RemoteObeliskEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "AuroraVineyardEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.AuroraVineyardEnabled.name}}",
+      "Description": "{{i18n:config.AuroraVineyardEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "DamObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.DamObeliskEnabled.name}}",
+      "Description": "{{i18n:config.DamObeliskEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "DowntownZuzuEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.DowntownZuzuEnabled.name}}",
+      "Description": "{{i18n:config.DowntownZuzuEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "EastScarpEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.EastScarpEnabled.name}}",
+      "Description": "{{i18n:config.EastScarpEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "MrQiObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.MrQiObeliskEnabled.name}}",
+      "Description": "{{i18n:config.MrQiObeliskEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "MountVapiusEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.MountVapiusEnabled.name}}",
+      "Description": "{{i18n:config.MountVapiusEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "RidgesideVillageEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.RidgesideVillageEnabled.name}}",
+      "Description": "{{i18n:config.RidgesideVillageEnabled.description}}",
+      "Section": "ObeliskVisibility"
+    },
+    "MiniObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.MiniObeliskEnabled.name}}",
+      "Description": "{{i18n:config.MiniObeliskEnabled.description}}",
+      "Section": "MiniObelisks"
+    },
+    "MiniObeliskStyle": {
+      "AllowValues": "signpost, statue",
+      "Default": "signpost",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.MiniObeliskStyle.name}}",
+      "Description": "{{i18n:config.MiniObeliskStyle.description}}",
+      "Section": "MiniObelisks"
+    },
+    "RemoteWarpLocation": {
+      "AllowValues": "default, custom",
+      "Default": "default",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.RemoteWarpLocation.name}}",
+      "Description": "{{i18n:config.RemoteWarpLocation.description}}",
+      "Section": "Remote"
+    },
+    "CustomFarmX": {
+      "Default": 48,
+      "AllowBlank": false,
+      "Name": "{{i18n:config.CustomFarmX.name}}",
+      "Description": "{{i18n:config.CustomFarmX.description}}",
+      "Section": "Remote"
+    },
+    "CustomFarmY": {
+      "Default": 7,
+      "AllowBlank": false,
+      "Name": "{{i18n:config.CustomFarmY.name}}",
+      "Description": "{{i18n:config.CustomFarmY.description}}",
+      "Section": "Remote"
+    },
+    "MrQiStatueStyle": {
+      "AllowValues": "seasonal, iridium",
+      "Default": "seasonal",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.MrQiStatueStyle.name}}",
+      "Description": "{{i18n:config.MrQiStatueStyle.description}}",
+      "Section": "MrQi"
+    },
+    "FarmFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.FarmFlowerColor.name}}",
+      "Description": "{{i18n:config.FarmFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "EarthFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.EarthFlowerColor.name}}",
+      "Description": "{{i18n:config.EarthFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "WaterFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.WaterFlowerColor.name}}",
+      "Description": "{{i18n:config.WaterFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "DesertFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.DesertFlowerColor.name}}",
+      "Description": "{{i18n:config.DesertFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "IslandFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.IslandFlowerColor.name}}",
+      "Description": "{{i18n:config.IslandFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "RemoteFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.RemoteFlowerColor.name}}",
+      "Description": "{{i18n:config.RemoteFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "AuroraVineyardFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.AuroraVineyardFlowerColor.name}}",
+      "Description": "{{i18n:config.AuroraVineyardFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "DamFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.DamFlowerColor.name}}",
+      "Description": "{{i18n:config.DamFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "DowntownZuzuFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.DowntownZuzuFlowerColor.name}}",
+      "Description": "{{i18n:config.DowntownZuzuFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "EastScarpFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.EastScarpFlowerColor.name}}",
+      "Description": "{{i18n:config.EastScarpFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "MrQiFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.MrQiFlowerColor.name}}",
+      "Description": "{{i18n:config.MrQiFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "MountVapiusFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.MountVapiusFlowerColor.name}}",
+      "Description": "{{i18n:config.MountVapiusFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "RidgesideVillageFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.RidgesideVillageFlowerColor.name}}",
+      "Description": "{{i18n:config.RidgesideVillageFlowerColor.description}}",
+      "Section": "FlowerColors"
+    },
+    "MiniObeliskFlowerColor": {
+      "AllowValues": "pink, blue, yellow, purple, white",
+      "Default": "pink",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.MiniObeliskFlowerColor.name}}",
+      "Description": "{{i18n:config.MiniObeliskFlowerColor.description}}",
+      "Section": "FlowerColors"
+    }
+  },
+  "DynamicTokens": [
+    {
+      "Name": "FlowersEnabled",
+      "Value": "true",
+      "When": {
+        "DecorationStyle": "flowers"
+      }
+    },
+    {
+      "Name": "FlowersEnabled",
+      "Value": "true",
+      "When": {
+        "DecorationStyle": "both"
+      }
+    },
+    {
+      "Name": "FlowersEnabled",
+      "Value": "true",
+      "When": {
+        "DecorationStyle": "seasonal",
+        "Season": "spring"
+      }
+    },
+    {
+      "Name": "FlowersEnabled",
+      "Value": "false",
+      "When": {
+        "DecorationStyle": "none"
+      }
+    },
+    {
+      "Name": "FlowersEnabled",
+      "Value": "false",
+      "When": {
+        "DecorationStyle": "moss"
+      }
+    },
+    {
+      "Name": "FlowersEnabled",
+      "Value": "false",
+      "When": {
+        "DecorationStyle": "seasonal",
+        "Season": "summer, fall, winter"
+      }
+    },
+    {
+      "Name": "MossEnabled",
+      "Value": "true",
+      "When": {
+        "DecorationStyle": "moss"
+      }
+    },
+    {
+      "Name": "MossEnabled",
+      "Value": "true",
+      "When": {
+        "DecorationStyle": "both"
+      }
+    },
+    {
+      "Name": "MossEnabled",
+      "Value": "true",
+      "When": {
+        "DecorationStyle": "seasonal",
+        "Season": "summer"
+      }
+    },
+    {
+      "Name": "MossEnabled",
+      "Value": "false",
+      "When": {
+        "DecorationStyle": "none"
+      }
+    },
+    {
+      "Name": "MossEnabled",
+      "Value": "false",
+      "When": {
+        "DecorationStyle": "flowers"
+      }
+    },
+    {
+      "Name": "MossEnabled",
+      "Value": "false",
+      "When": {
+        "DecorationStyle": "seasonal",
+        "Season": "spring, fall, winter"
+      }
+    },
+    {
+      "Name": "MiniObeliskStyleToken",
+      "Value": "signpost",
+      "When": {
+        "MiniObeliskStyle": "signpost"
+      }
+    },
+    {
+      "Name": "MiniObeliskStyleToken",
+      "Value": "statue",
+      "When": {
+        "MiniObeliskStyle": "statue"
+      }
+    },
+    {
+      "Name": "FarmTypeGroup",
+      "Value": "standard",
+      "When": {
+        "FarmType |contains=Standard,Forest,Hilltop,Riverland,Wilderness": "true"
+      }
+    },
+    {
+      "Name": "FarmTypeGroup",
+      "Value": "special",
+      "When": {
+        "FarmType |contains=Beach,FourCorners,MeadowlandsFarm": "true"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": "{{CustomFarmX}}",
+      "When": {
+        "RemoteWarpLocation": "custom"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": "{{CustomFarmY}}",
+      "When": {
+        "RemoteWarpLocation": "custom"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType |contains=Standard,Forest,Hilltop,Riverland,Wilderness": "true",
+        "HasMod |contains=flashshifter.immersivefarm2remastered,flashshifter.GrandpasFarm,Lnh.MiNiFarm": "false",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType |contains=Standard,Forest,Hilltop,Riverland,Wilderness": "true",
+        "HasMod |contains=flashshifter.immersivefarm2remastered,flashshifter.GrandpasFarm,Lnh.MiNiFarm": "false",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": "48",
+      "When": {
+        "FarmType": "FourCorners",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 39,
+      "When": {
+        "FarmType": "FourCorners",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 82,
+      "When": {
+        "FarmType": "Beach",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 71,
+      "When": {
+        "FarmType": "Beach",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 71,
+      "When": {
+        "FarmType": "MeadowlandsFarm",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 6,
+      "When": {
+        "FarmType": "MeadowlandsFarm",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 100,
+      "When": {
+        "FarmType": "Standard",
+        "HasMod |contains=flashshifter.GrandpasFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 49,
+      "When": {
+        "FarmType": "Standard",
+        "HasMod |contains=flashshifter.GrandpasFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 112,
+      "When": {
+        "FarmType": "FrontierFarm",
+        "HasMod |contains=flashshifter.FrontierFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 4,
+      "When": {
+        "FarmType": "FrontierFarm",
+        "HasMod |contains=flashshifter.FrontierFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType": "Standard",
+        "HasMod |contains=flashshifter.immersivefarm2remastered": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType": "Standard",
+        "HasMod |contains=flashshifter.immersivefarm2remastered": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 22,
+      "When": {
+        "FarmType": "Standard",
+        "HasMod |contains=Lnh.MiNiFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 2,
+      "When": {
+        "FarmType": "Standard",
+        "HasMod |contains=Lnh.MiNiFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType": "Personal_FarmV1",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType": "Personal_FarmV1",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType": "Personal_FarmV2",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType": "Personal_FarmV2",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType": "Personal_FarmV3",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType": "Personal_FarmV3",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType": "A_TK.FarmProjectForaging/WaFF",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType": "A_TK.FarmProjectForaging/WaFF",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 35,
+      "When": {
+        "FarmType |contains=DaisyNiko.ZenithFarm.CFL/Zenith Farm,Zenith Farm,ZenithFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 16,
+      "When": {
+        "FarmType |contains=DaisyNiko.ZenithFarm.CFL/Zenith Farm,Zenith Farm,ZenithFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RecolorPrefix",
+      "Value": "default",
+      "When": {
+        "RecolorStyle": "default"
+      }
+    },
+    {
+      "Name": "RecolorPrefix",
+      "Value": "earthy",
+      "When": {
+        "RecolorStyle": "earthy"
+      }
+    }
+  ],
+  "Changes": [
+    {
+      "LogName": "JJ Include Earth Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/Earth.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "EarthObeliskEnabled": "true",
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "LogName": "JJ Include Desert Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/Desert.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "DesertObeliskEnabled": "true",
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "LogName": "JJ Include Water Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/Water.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "WaterObeliskEnabled": "true",
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "LogName": "JJ Include Dam Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/Dam.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "DamObeliskEnabled": "true",
+        "HasMod |contains=Tikamin557.dam": "true",
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "LogName": "JJ Include Island Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/Island.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "IslandObeliskEnabled": "true",
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "LogName": "JJ Include Ginger Island Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/Farm.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "FarmObeliskEnabled": "true",
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "LogName": "JJ Include Remote Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/Remote.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "RemoteObeliskEnabled": "true",
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "LogName": "JJ Include East Scarp Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/EastScarp.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "EastScarpEnabled": "true",
+        "HasMod |contains=LemurKat.EastScarpe.CP, Lemurkat.EastScarp": "true",
+        "Season": "{{Season}}"  // added to ensure this is not loaded until after a save is selected
+      }
+    },
+    {
+      "LogName": "JJ Include Ridgeside Village Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/RidgesideVillage.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "RidgesideVillageEnabled": "true",
+        "HasMod |contains=Rafseazz.RSVCP": "true",
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "LogName": "JJ Include Mount Vapius Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/MountVapius.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "MountVapiusEnabled": "true",
+        "HasMod |contains=Lumisteria.MtVapius": "true",
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "LogName": "JJ Include Aurora Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/Aurora.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "AuroraVineyardEnabled": "true",
+        "HasMod |contains=jennajuffuffles.vineyardtravelpackage": "true",
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "LogName": "JJ Include Downtown Zuzu Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/DowntownZuzu.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "DowntownZuzuEnabled": "true",
+        "HasMod |contains=DTZ.DowntownZuzuCP": "true",
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "LogName": "JJ Include Mr Qi Obelisk",
+      "Action": "Include",
+      "FromFile": "data/obelisk/MrQi.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "MrQiObeliskEnabled": "true",
+        "HasMod |contains=AngelOfStars.Mrqifriendable": "true",
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "LogName": "JJ Include Decoration Obelisk",
+      "Action": "Include",
+      "FromFile": "data/Decoration.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "EastScarpEnabled": "true",
+        "HasMod |contains=LemurKat.EastScarpe.CP, Lemurkat.EastScarp": "true",
+        "Season": "{{Season}}" // added to ensure this is not loaded until after a save is selected
+      }
+    },
+    {
+      "LogName": "JJ Include Mini Obelisk",
+      "Action": "Include",
+      "FromFile": "data/miniobelisk/{{MiniObeliskStyleToken}}_MiniObelisk.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "MiniObeliskEnabled": "true",
+        "MiniObeliskStyle": "signpost, statue",
+        "Season": "{{Season}}"
+      }
+    }
+  ]
+}

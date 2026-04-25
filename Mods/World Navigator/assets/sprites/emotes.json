@@ -1,0 +1,8 @@
+{
+    "Texture": "TileSheets/emotes",
+    "Sprites": {
+        "ThreeDots": {
+            "SourceRect": "48, 160, 16, 16"
+        }
+    }
+}

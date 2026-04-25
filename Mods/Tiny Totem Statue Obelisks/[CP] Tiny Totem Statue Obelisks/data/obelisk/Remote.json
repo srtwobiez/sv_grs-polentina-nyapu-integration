@@ -1,0 +1,89 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Data Remote",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Entries": {
+        "Remote Obelisk": {
+          "Name": "{{i18n:remote.obelisk.name}}",
+          "Description": "{{i18n:remote.obelisk.desc}}{{FarmName}}.",
+          "Texture": "Buildings\\Remote_Obelisk",
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": "1",
+            "Y": "1"
+          },
+          "Builder": "Wizard",
+          "BuildDays": 0,
+          "BuildCost": 500000,
+          "BuildMaterials": [
+            {
+              "ItemId": "(O)337",
+              "Amount": 5
+            },
+            {
+              "ItemId": "(O)24",
+              "Amount": 15
+            },
+            {
+              "ItemId": "(O)417",
+              "Amount": 10
+            }
+          ],
+          "MagicalConstruction": true,
+          "DefaultAction": "ObeliskWarp Farm {{RemoteX}} {{RemoteY}} false"
+        }
+      },
+      "When": {
+        "RemoteObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Load Remote",
+      "Action": "Load",
+      "Target": "Buildings/Remote_Obelisk",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_remote.png",
+      "When": {
+        "RemoteObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Remote Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Remote_Obelisk",
+      "FromFile": "assets/flowers/remote_{{RemoteFlowerColor}}.png",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "RemoteObeliskEnabled": "true",
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Remote Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Remote_Obelisk",
+      "FromFile": "assets/moss/remote_moss.png",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "RemoteObeliskEnabled": "true",
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

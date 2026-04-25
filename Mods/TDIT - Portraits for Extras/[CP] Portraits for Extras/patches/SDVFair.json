@@ -1,0 +1,256 @@
+{
+	"Changes":[
+		{
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "MapTiles": [
+                {
+                    "Position": {"X": 29, "Y": 64},
+                    "Layer": "Buildings",
+                    "SetProperties": {"Action": "Message \"XtraPortrait.SDVFair.Simon\""}
+                },
+                {
+                    "Position": {"X": 22, "Y": 77},
+                    "Layer": "Buildings",
+                    "SetProperties": {"Action": "Message \"XtraPortrait.SDVFair.Clown\""}
+                },				
+			],			
+        },
+		{
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "MapTiles": [
+                {
+                    "Position": {"X": 32, "Y": 63},
+                    "Layer": "Buildings",
+                    "SetProperties": {"Action": "Message \"XtraPortrait.SDVFair.Simon\""}
+                },
+                {
+                    "Position": {"X": 35, "Y": 77},
+                    "Layer": "Buildings",
+                    "SetProperties": {"Action": "Message \"XtraPortrait.SDVFair.Clown\""}
+                },				
+			],			
+        },
+		{
+            "Action": "EditMap",
+            "Target": "Maps/Town-SVE-Fair",
+            "MapTiles": [
+                {
+                    "Position": {"X": 29, "Y": 64},
+                    "Layer": "Buildings",
+                    "SetProperties": {"Action": "Message \"XtraPortrait.SDVFair.Simon\""}
+                },
+			],
+			"When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,}
+        },
+		{
+            "Action": "EditMap",
+            "Target": "Maps/Town-SVE-Fair2",
+            "MapTiles": [
+                {
+                    "Position": {"X": 32, "Y": 63},
+                    "Layer": "Buildings",
+                    "SetProperties": {"Action": "Message \"XtraPortrait.SDVFair.Simon\""}
+                },
+			],
+			"When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,}
+        },
+		{
+            "Action": "EditMap",
+            "Target": "Maps/Town-SVE-Fair_Joja",
+            "MapTiles": [
+                {
+                    "Position": {"X": 29, "Y": 64},
+                    "Layer": "Buildings",
+                    "SetProperties": {"Action": "Message \"XtraPortrait.SDVFair.Simon\""}
+                },
+			],
+			"When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,}
+        },
+		{
+            "Action": "EditMap",
+            "Target": "Maps/Town-SVE-Fair_Joja2",
+            "MapTiles": [
+                {
+                    "Position": {"X": 32, "Y": 63},
+                    "Layer": "Buildings",
+                    "SetProperties": {"Action": "Message \"XtraPortrait.SDVFair.Simon\""}
+                },
+			],
+			"When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,}
+        },
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Priority": "Late + 50",
+			"Entries": {
+				"XtraPortrait.SDVFair.Simon": "Portraits/Child_Default Strings/DolphINaF.ExtraPortraits:Name.Simon🐬{{i18n:SDVFair.Simon}}$1",
+				"XtraPortrait.SDVFair.Clown": "Portraits/Clown_Default Strings/DolphINaF.ExtraPortraits:Name.Clown🐬{{i18n:SDVFair.Clown}}",
+			},			
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Town-Fair.1"],
+					"Value": "Portraits/RedCapGuy_Default {{Terrence}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Town-Fair.1"],
+					"Value": "$2",
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Town-Fair.2"],
+					"Value": "Portraits/Strongman_Default Strings/DolphINaF.ExtraPortraits:Name.Strongman {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},						
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Town-Fair.4"],
+					"Value": "Portraits/PurpleHairLady_Default {{Amber}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},						
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Town-Fair.5"],
+					"Value": "Portraits/Mother_Default {{Laura}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},						
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Town-Fair.6"],
+					"Value": "Portraits/CraneMan_Default {{Duke}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+			]
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Town-Fair.3"],
+					"Value": "Portraits/Clown_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},						
+			],
+			"When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,}			
+		},			
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1691"],
+					"Value": "Portraits/Welwick_Default Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Event.cs.1691"],
+					"Value": "$1",
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1694"],
+					"Value": "Portraits/Welwick_Default Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Event.cs.1694"],
+					"Value": "$1",
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1695"],
+					"Value": "Portraits/Welwick_Default Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Event.cs.1695"],
+					"Value": "$1",
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1810"],
+					"Value": "Portraits/Welwick_Default Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1811"],
+					"Value": "Portraits/Welwick_Default Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1813"],
+					"Value": "Portraits/Welwick_Default Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1818"],
+					"Value": "Portraits/Welwick_Default Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1820"],
+					"Value": "Portraits/Welwick_Default Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1821"],
+					"Value": "Portraits/Welwick_Default Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1825"],
+					"Value": "Portraits/Welwick_Default Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1652"],
+					"Value": "Portraits/Gervig91.StardewAquariumCP_SnackVendor Strings/DolphINaF.ExtraPortraits:Name.TopHat",
+					"Delimiter": "🐬"
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1659"],
+					"Value": "Portraits/StarSeller_Default Strings/DolphINaF.ExtraPortraits:Name.StarSeller",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1666"],
+					"Value": "Portraits/SlingshotLady_Default Strings/DolphINaF.ExtraPortraits:Name.SlingshotLady",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Event.cs.1681"],
+					"Value": "Portraits/FishingFair_Default Strings/DolphINaF.ExtraPortraits:Name.FishingFair",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","StrengthGame.cs.11660"],
+					"Value": "Portraits/Strongman_Default Strings/DolphINaF.ExtraPortraits:Name.Strongman",
+					"Delimiter": "🐬"
+				},					
+			]
+		},		
+	],
+}

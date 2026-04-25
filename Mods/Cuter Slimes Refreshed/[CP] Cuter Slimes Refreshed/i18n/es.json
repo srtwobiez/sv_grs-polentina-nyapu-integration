@@ -1,0 +1,6 @@
+{
+  "config.Mode.name": "Transparencia de Babas",
+  "config.Mode.description": "Elige cómo quieres que se vean tus babas. Gelatinosas son semitransparentes; Brillosas son completamente opacas.",
+  "config.Mode.values.jelly": "Gelatinosas",
+  "config.Mode.values.glossy": "Brillosas"
+}

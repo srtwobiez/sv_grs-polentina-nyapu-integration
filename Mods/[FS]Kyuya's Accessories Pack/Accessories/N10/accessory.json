@@ -1,0 +1,67 @@
+{
+  "Name": "N10",
+  "FrontAccessory": {
+    "DisableGrayscale": true,
+	"HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Hair"
+    },
+	"StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 3
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 32
+    }
+  },
+  "RightAccessory": {
+    "DisableGrayscale": true,
+	"HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Hair"
+    },
+	"StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 3
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 32
+    }
+  },
+  "LeftAccessory": {
+   "DisableGrayscale": true,
+	"HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+    "Flipped": true,
+	"DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Hair"
+    },
+	"StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 3
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 32
+    }
+  }
+}

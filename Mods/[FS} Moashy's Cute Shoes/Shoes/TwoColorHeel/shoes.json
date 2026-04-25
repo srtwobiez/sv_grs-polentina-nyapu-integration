@@ -1,0 +1,972 @@
+{
+  "Name": "Two Color Heels",
+  "FrontShoes": {
+    "ColorMaskLayers": [
+      {
+        "Name": "Shoe Body",
+        "Values": [
+          [ 195, 195, 208 ],
+          [70, 70, 87],
+          [ 156, 156, 168 ],
+          [ 58, 58, 74 ],
+          [49, 49, 64],
+          [41, 41, 50],
+          [127, 127, 141]
+        ]
+      },
+      {
+        "Name": "Heel",
+        "Values": [
+          [105, 105, 105],
+          [123, 123, 123]
+        ]
+      }
+    ],
+    "DisableSkinGrayscale": true,
+    "SkinToneMasks": {
+      "LightTone": [ 249, 174, 137 ],
+      "MediumTone": [ 224, 107, 101 ],
+      "DarkTone": [ 107, 0, 58 ]
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": -20
+    },
+    "ShoesSize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          }
+        ]
+      }
+    ],
+    "MovementAnimation": [
+      {
+        "Frame": 1,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 5,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 4,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      }
+    ]
+  },
+  "BackShoes": {
+    "ColorMaskLayers": [
+      {
+        "Name": "Shoe Body",
+        "Values": [
+          [ 195, 195, 208 ],
+          [70, 70, 87],
+          [ 156, 156, 168 ],
+          [ 58, 58, 74 ],
+          [49, 49, 64],
+          [41, 41, 50],
+          [127, 127, 141]
+        ]
+      },
+      {
+        "Name": "Heel",
+        "Values": [
+          [105, 105, 105],
+          [123, 123, 123]
+        ]
+      }
+    ],
+    "DisableSkinGrayscale": true,
+    "SkinToneMasks": {
+      "LightTone": [ 249, 174, 137 ],
+      "MediumTone": [ 224, 107, 101 ],
+      "DarkTone": [ 107, 0, 58 ]
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": -20
+    },
+    "ShoesSize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "AppearanceSyncing": [
+      {
+        "TargetAppearanceType": "Pants",
+        "AnimationType": "Moving"
+      }
+    ],
+    "IdleAnimation": [
+      {
+        "Frame": 6,
+        "Duration": 1000,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "Duration": 100,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          }
+        ]
+      }
+    ],
+    "MovementAnimation": [
+      {
+        "Frame": 6,
+        "Duration": 1000,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 4,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      }
+    ]
+  },
+  "RightShoes": {
+    "ColorMaskLayers": [
+      {
+        "Name": "Shoe Body",
+        "Values": [
+          [ 195, 195, 208 ],
+          [70, 70, 87],
+          [ 156, 156, 168 ],
+          [ 58, 58, 74 ],
+          [49, 49, 64],
+          [41, 41, 50],
+          [127, 127, 141]
+        ]
+      },
+      {
+        "Name": "Heel",
+        "Values": [
+          [105, 105, 105],
+          [123, 123, 123]
+        ]
+      }
+    ],
+    "DisableSkinGrayscale": true,
+    "SkinToneMasks": {
+      "LightTone": [ 249, 174, 137 ],
+      "MediumTone": [ 224, 107, 101 ],
+      "DarkTone": [ 107, 0, 58 ]
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": -20
+    },
+    "ShoesSize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "AppearanceSyncing": [
+      {
+        "TargetAppearanceType": "Pants",
+        "AnimationType": "Moving"
+      }
+    ],
+    "IdleAnimation": [
+      {
+        "Frame": 7,
+        "Duration": 1000,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 8,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsSitting",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "Duration": 100,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsSitting",
+            "Value": false
+          }
+        ]
+      }
+    ],
+    "MovementAnimation": [
+      {
+        "Frame": 7,
+        "Duration": 1000,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 4,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 5,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 6,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      }
+    ]
+  },
+  "LeftShoes": {
+    "ColorMaskLayers": [
+      {
+        "Name": "Shoe Body",
+        "Values": [
+          [ 195, 195, 208 ],
+          [70, 70, 87],
+          [ 156, 156, 168 ],
+          [ 58, 58, 74 ],
+          [49, 49, 64],
+          [41, 41, 50],
+          [127, 127, 141]
+        ]
+      },
+      {
+        "Name": "Heel",
+        "Values": [
+          [105, 105, 105],
+          [123, 123, 123]
+        ]
+      }
+    ],
+    "DisableSkinGrayscale": true,
+    "SkinToneMasks": {
+      "LightTone": [ 249, 174, 137 ],
+      "MediumTone": [ 224, 107, 101 ],
+      "DarkTone": [ 107, 0, 58 ]
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 48
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": -20
+    },
+    "ShoesSize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "AppearanceSyncing": [
+      {
+        "TargetAppearanceType": "Pants",
+        "AnimationType": "Moving"
+      }
+    ],
+    "IdleAnimation": [
+      {
+        "Frame": 7,
+        "Duration": 1000,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 8,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsSitting",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "Duration": 100,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsSitting",
+            "Value": false
+          }
+        ]
+      }
+    ],
+    "MovementAnimation": [
+      {
+        "Frame": 7,
+        "Duration": 1000,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": false
+          },
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 4,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 5,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 6,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": false
+          },
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      }
+    ]
+  }
+}

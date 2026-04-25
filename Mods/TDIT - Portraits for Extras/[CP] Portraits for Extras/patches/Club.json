@@ -1,0 +1,134 @@
+{
+	"Changes":[
+        {
+			"LogName": "Club Default",
+            "Action": "EditMap",
+            "Target": "Maps/Club",
+            "MapTiles": [
+                {
+                    "Position": {"X": 1, "Y": 7},
+                    "Layer": "Buildings",
+                    "SetProperties": {"Action": "Message \"XtraPortrait.Club.Lady\""}
+                },
+			],
+			"When": {
+				"HasMod |contains=uglynt.town.interiors": false,
+			}			
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Priority": "Late + 50",
+			"Entries": {
+				"XtraPortrait.Club.Lady": "Portraits/PurpleHairLady_Default {{Amber}}🐬{{i18n:Club.Lady}}",
+				"Renciel.Casino8": "Portraits/DealerFemale_Default Strings/DolphINaF.ExtraPortraits:Name.DealerFemale🐬{{i18n:Club.DealerTwin}}",
+			},			
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Club.1"],
+					"Value": "Portraits/Welwick_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Club.1"],
+					"Value": "$3",
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Club.2"],
+					"Value": "Portraits/CraneMan_Default {{Duke}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				}				
+			]
+		},		
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Priority": "Late + 50",	
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Renciel.Casino1"],
+					"Value": "Portraits/PurpleHairLady_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},					
+			],
+			"When": {
+				"HasMod |contains=uglynt.town.interiors": true,
+			}	
+		},				
+		{
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Priority": "Late + 50",				
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Club_CalicoJack"],
+					"Value": "Portraits/DealerMale_Default Strings/DolphINaF.ExtraPortraits:Name.DealerMale",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Club_CalicoJack_NotEnoughCoins"],
+					"Value": "Portraits/DealerMale_Default Strings/DolphINaF.ExtraPortraits:Name.DealerMale",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Club_CalicoJack_HS"],
+					"Value": "Portraits/DealerFemale_Default Strings/DolphINaF.ExtraPortraits:Name.DealerFemale",
+					"Delimiter": "🐬"
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Club_CalicoJackHS_NotEnoughCoins"],
+					"Value": "Portraits/DealerFemale_Default Strings/DolphINaF.ExtraPortraits:Name.DealerFemale",
+					"Delimiter": "🐬"
+				}					
+			]
+		},		
+		{
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Priority": "Late + 50",				
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Club_ClubSeller"],
+					"Value": "Portraits/CornerGuy_Default {{Luca}}",
+					"Delimiter": "🐬"
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Club_ClubSeller_NotEnoughMoney"],
+					"Value": "Portraits/CornerGuy_Default {{Luca}}",
+					"Delimiter": "🐬"
+				},								
+			],
+			"When": {"HasMod |contains=DolphINaF.JinuCasino": false}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Priority": "Late + 50",				
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Club_ClubSeller"],
+					"Value": "🎣 DolphINaF.Jinu {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Club_ClubSeller_NotEnoughMoney"],
+					"Value": "🎣 DolphINaF.Jinu {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},								
+			],
+			"When": {"HasMod |contains=DolphINaF.JinuCasino": true}
+		},			
+	],
+}

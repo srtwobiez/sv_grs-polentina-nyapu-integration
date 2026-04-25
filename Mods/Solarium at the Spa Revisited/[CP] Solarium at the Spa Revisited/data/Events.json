@@ -1,0 +1,85 @@
+{
+  "Changes": [
+    // ===== INITIALIZE CUSTOM_SOLARIUM EVENT DATA =====
+    // Required before EditData on Data/Events/Custom_Solarium
+    {
+      "LogName": "JJ Initialize Custom_Solarium event data",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Data/Events/Custom_Solarium",
+      "FromFile": "data/Blank.json"
+    },
+    // ===== EVELYN KEY EVENT (SOLARIUM UNLOCK) - SPECIAL ORDER PATH =====
+    // UnlockPath=SpecialOrder: after completing Evelyn's seasonal flowers order and opening the reward mail.
+    {
+      "LogName": "JJ Evelyn gives key (Special Order path)",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "{{ModId}}_EvelynKey/LocalMail {{ModId}}_EvelynFlowersReward/!SawEvent {{ModId}}_EvelynKey/Weather sunny": "continue/64 15/farmer 64 16 2 Evelyn 64 18 0/AddConversationTopic {{ModId}}_HasSolariumKey 1/skippable/pause 300/speak Evelyn \"{{i18n:Events.EvelynKey.1}}\"/emote farmer 20/pause 60/speak Evelyn \"{{i18n:Events.EvelynKey.2}}\"/playSound getNewSpecialItem/message \"{{i18n:Events.EvelynKey.GotKey}}\"/playSound coin/playMusic echos/faceDirection Evelyn 3/pause 100/faceDirection Evelyn 2/emote Evelyn 40/pause 500/speak Evelyn \"{{i18n:Events.EvelynKey.3}}\"/pause 300/faceDirection Evelyn 3/faceDirection Evelyn 0/speak Evelyn \"{{i18n:Events.EvelynKey.4}}\"/message \"{{i18n:Events.EvelynKey.SolariumAccess}}\"/pause 1500/end"
+      },
+      "When": {
+        "UnlockPath": "SpecialOrder"
+      }
+    },
+    // ===== EVELYN KEY EVENT - CC / JOJA + 8 HEARTS PATH =====
+    // UnlockPath=CCOrJoja: Community Center or Joja complete + 8 hearts Evelyn. Special Order still available but does not trigger unlock.
+    {
+      "LogName": "JJ Evelyn gives key (CC/Joja + 8 hearts path)",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "{{ModId}}_EvelynKey/CommunityCenterOrWarehouseDone/Friendship Evelyn 2000/!SawEvent {{ModId}}_EvelynKey/Weather sunny": "continue/64 15/farmer 64 16 2 Evelyn 64 18 0/AddConversationTopic {{ModId}}_HasSolariumKey 1/skippable/pause 300/speak Evelyn \"{{i18n:Events.EvelynKey.1}}\"/emote farmer 20/pause 60/speak Evelyn \"{{i18n:Events.EvelynKey.2}}\"/playSound getNewSpecialItem/message \"{{i18n:Events.EvelynKey.GotKey}}\"/playSound coin/playMusic echos/faceDirection Evelyn 3/pause 100/faceDirection Evelyn 2/emote Evelyn 40/pause 500/speak Evelyn \"{{i18n:Events.EvelynKey.3}}\"/pause 300/faceDirection Evelyn 3/faceDirection Evelyn 0/speak Evelyn \"{{i18n:Events.EvelynKey.4}}\"/message \"{{i18n:Events.EvelynKey.SolariumAccess}}\"/pause 1500/end"
+      },
+      "When": {
+        "UnlockPath": "CCOrJoja"
+      }
+    },
+    // ===== EVELYN KEY EVENT - IMMEDIATELY UNLOCKED PATH =====
+    // UnlockPath=FriendshipOnly: first sunny day on Farm (6am–7pm), Evelyn visits and gives the key. Requires 8+ hearts. Triggers when player is on Farm (e.g. exit house or re-enter from elsewhere).
+    {
+      "LogName": "JJ Evelyn gives key (Friendship Only path)",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "{{ModId}}_EvelynKey/!SawEvent {{ModId}}_EvelynKey/Friendship Evelyn 2000/Time 600 1900/Weather sunny": "continue/64 15/farmer 64 16 2 Evelyn 64 18 0/AddConversationTopic {{ModId}}_HasSolariumKey 1/skippable/pause 300/speak Evelyn \"{{i18n:Events.EvelynKey.1}}\"/emote farmer 20/pause 60/speak Evelyn \"{{i18n:Events.EvelynKey.2}}\"/playSound getNewSpecialItem/message \"{{i18n:Events.EvelynKey.GotKey}}\"/playSound coin/playMusic echos/faceDirection Evelyn 3/pause 100/faceDirection Evelyn 2/emote Evelyn 40/pause 500/speak Evelyn \"{{i18n:Events.EvelynKey.3}}\"/pause 300/faceDirection Evelyn 3/faceDirection Evelyn 0/speak Evelyn \"{{i18n:Events.EvelynKey.4}}\"/message \"{{i18n:Events.EvelynKey.SolariumAccess}}\"/pause 1500/end"
+      },
+      "When": {
+        "UnlockPath": "FriendshipOnly"
+      }
+    },
+    // ===== CAROLINE MAGAZINE EVENT =====
+    // Gated: Friendship Pierre 2000 + Caroline 2000 (8 hearts both), SawEvent EvelynKey, SawEvent RobinSolarium. Caroline: Evelyn handed solarium to you; visit; Pierre suggested magazine; unlocks the magazine shop.
+    {
+      "LogName": "JJ Caroline magazine (CarolineMagazine)",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "{{ModId}}_CarolineMagazine/Friendship Pierre 2000 Caroline 2000/SawEvent {{ModId}}_EvelynKey/SawEvent {{ModId}}_RobinSolarium/Weather sunny": "continue/64 15/farmer 64 16 2 Caroline 63 18 2 Pierre 63 18 2/addConversationTopic {{ModId}}_Magazine 4/skippable/move Pierre 1 0 0/pause 300/speak Caroline \"{{i18n:Events.CarolineMagazine.1}}\"/emote farmer 32/pause 400/speak Caroline \"{{i18n:{{CarolineMagazine2Key}}}}\"/faceDirection Caroline 1/pause 200/speak Caroline \"{{i18n:{{CarolineMagazine3Key}}}}\"/pause 200/speak Pierre \"{{i18n:Events.CarolineMagazine.4}}\"/faceDirection Caroline 0/pause 300/speak Caroline \"{{i18n:Events.CarolineMagazine.5}}\"/textAboveHead Pierre \"{{i18n:Events.CarolineMagazine.6}}\"/pause 1500/end"
+      }
+    },
+    // ===== ROBIN FIRST ENTRY =====
+    // Uses {{HatchStyle}} (Ladder/Lift) for i18n keys 1 and 2. advancedMove farmer → noise → door → Robin → dialogue; farmer laugh; Robin walk + .3 + heart; Robin to 10,11; .4/.5 + exit; fade.
+    {
+      "LogName": "JJ Robin first entry",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_Solarium",
+      "Entries": {
+        "{{ModId}}_RobinSolarium/SawEvent {{ModId}}_EvelynKey/!SawEvent {{ModId}}_RobinSolarium": "continue/7 14/farmer 5 16 0 Robin -100 -100 0/addConversationTopic {{ModId}}_SolariumUnlocked 1/skippable/advancedMove farmer false 2 0 1 400 0 -2 4 400/pause 2800/playSound clank/pause 300/faceDirection farmer 3/pause 400/emote farmer 8/pause 1000/playSound hoeHit/pause 100/playSound hammer/pause 120/playSound thudStep/pause 100/playSound hammer/pause 150/playSound metal_tap/pause 100/playSound hoeHit/pause 100/playSound hammer/pause 120/playSound thudStep/pause 100/playSound hoeHit/pause 100/jump farmer/pause 500/playSound hoeHit/pause 100/emote farmer 16/pause 1000/pause 100/playSound hammer/pause 200/playSound doorCreak/pause 200/warp Robin 4 16/pause 100/emote Robin 16/pause 400/advancedMove Robin false 0 -1 4 300/pause 600/faceDirection Robin 1/pause 600/speak Robin \"{{i18n:Events.RobinSolarium.1{{HatchStyle}}}}\"/pause 400/emote farmer 8/pause 400/speak Robin \"{{i18n:Events.RobinSolarium.2{{HatchStyle}}}}\"/faceDirection farmer 2 true/animate farmer false true 200 102 103/pause 100/advancedMove Robin false 6 0 1 500/pause 1000/faceDirection farmer 1/pause 600/textAboveHead Robin \"{{i18n:Events.RobinSolarium.3}}\"/pause 2500/emote Robin 32/pause 400/advancedMove Robin false 0 -4 4 500/pause 3400/faceDirection Robin 1/pause 1200/faceDirection Robin 2/pause 400/speak Robin \"{{i18n:Events.RobinSolarium.4}}\"/pause 800/emote farmer 20/pause 400/speak Robin \"{{i18n:Events.RobinSolarium.5}}\"/pause 400/advancedMove Robin false 0 4 2 300 -6 0 3 300 0 1 2 300/globalFade/viewport -1000 -1000/end"
+      }
+    },
+    // ===== LINUS NEW SHELTER EVENT =====
+    // Plays in Custom_Solarium when Linus visits (fall/winter only; his schedule sends him there then). Requires Robin's event seen.
+    {
+      "LogName": "JJ Linus new shelter event (LinusNewShelter)",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_Solarium",
+      "Entries": {
+        "{{ModId}}_LinusNewShelter/NpcVisibleHere Linus/Season fall winter/SawEvent {{ModId}}_RobinSolarium": "continue/7 14/farmer 5 16 0 Linus 5 12 2/skippable/pause 500/emote Linus 16/speak Linus \"{{i18n:Events.LinusNewShelter.1}}\"/pause 500/emote farmer 32/pause 300/end"
+      },
+      "When": {
+        "AdjustLinussSchedule": true
+      }
+    }
+  ]
+}

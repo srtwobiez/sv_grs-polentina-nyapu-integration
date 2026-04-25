@@ -1,0 +1,83 @@
+{
+  "Name": "Classy Top (fem)",
+  "FrontShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 40, 1, 9 ],
+		[ 112, 3, 27 ],
+		[ 165, 4, 39 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 40, 1, 9 ],
+		[ 112, 3, 27 ],
+		[ 165, 4, 39 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 40, 1, 9 ],
+		[ 112, 3, 27 ],
+		[ 165, 4, 39 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 40, 1, 9 ],
+		[ 112, 3, 27 ],
+		[ 165, 4, 39 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

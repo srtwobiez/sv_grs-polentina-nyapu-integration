@@ -1,0 +1,307 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema":{
+	"Animal Produce":{
+	"AllowValues": "true, false",
+	"Default": "true"
+		},
+	"Rabbit":{
+	"AllowValues": "Palomino, Rex, English, Alaska, Beveren, Tan, Dutch, Lop, Angora",
+	"Default": "Palomino"
+		},
+	"RabbitFoot":{
+	"AllowValues": "Brown, Gold",
+	"Default": "Brown"
+		},
+	"WhiteChicken":{
+	"AllowValues": "White, Brown, Orpington, Lakenveld, Maran, Hen, Silkie, Void, Blue, Golden",
+	"Default": "White"
+		},
+	"BrownChicken":{
+	"AllowValues": "White, Brown, Orpington, Lakenveld, Maran, Hen, Silkie, Void, Blue, Golden",
+	"Default": "Brown"
+		},
+	"VoidChicken":{
+	"AllowValues": "White, Brown, Orpington, Lakenveld, Maran, Hen, Silkie, Void, Blue, Golden",
+	"Default": "Void"
+		},
+	"BlueChicken":{
+	"AllowValues": "White, Brown, Orpington, Lakenveld, Maran, Hen, Silkie, Void, Blue, Golden",
+	"Default": "Blue"
+		},
+	"GoldChicken":{
+	"AllowValues": "White, Brown, Orpington, Lakenveld, Maran, Hen, Silkie, Void, Blue, Golden",
+	"Default": "Golden"
+		},
+	"Sheep":{
+	"AllowValues": "WhiteWelsh, BrownWelsh, Suffolk, Balwen, Dutch, Coburg, Zwartbles, Hampshire, Gute",
+	"Default": "WhiteWelsh"
+		},
+	"Wool":{
+	"AllowValues": "Spot, Brown, Grey, Beige, Black, Fox, White",
+	"Default": "White"
+		},
+	"BrownCow":{
+	"AllowValues": "Hereford, Holstein, Jersey, Guernsey, BlueRoan, Highland, HighlandRed, Bison, Buffalo, MuskOx, Yak",
+	"Default": "Guernsey"
+		},
+	"WhiteCow":{
+	"AllowValues": "Hereford, Holstein, Jersey, Guernsey, BlueRoan, Highland, HighlandRed, Bison, Buffalo, MuskOx, Yak",
+	"Default": "Holstein"
+		},
+	"Duck":{
+	"AllowValues": "Mallard, Call, Wood, Pintail, Campbell, Appleyard, Swedish, Saxony, Muscovy, Mandarin",
+	"Default": "Mallard"
+		},
+	"Goat":{
+	"AllowValues": "Saanen, Alpine, Cheviot, Bagot, Boer, Guernsey, Toggerburg, Sable, Cape",
+	"Default": "Saanen"
+		},
+	"Pig":{
+	"AllowValues": "Yorkshire, Wattle, Oxford, Juliana, Hampshire, Hog, Tamworth, Berkshire, Landrace",
+	"Default": "Yorkshire"
+		},
+	"Ostrich":{
+	"AllowValues": "OstrichMale, OstrichFemale, Emu, Rhea, WhiteRhea, Moa, Cassowary",
+	"Default": "OstrichMale"
+		},
+	"Dino":{
+	"AllowValues": "Parasaur, Triceratops, Spino, Tyranno, Bronto, Ankylo, Stego",
+	"Default": "Triceratops"
+		}
+	},
+	"Changes": [
+	
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyRabbit",
+		"FromFile": "assets/rabbit/{{Rabbit}}Baby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Rabbit",
+		"FromFile": "assets/rabbit/{{Rabbit}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/rabbit/RabbitIcon.png",
+		"ToArea": {"X": 64, "Y": 464,"Width": 33, "Height": 17}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Springobjects",
+		"FromFile": "assets/rabbit/{{RabbitFoot}}RabbitFoot.png",
+		"ToArea": { "X": 224, "Y": 288, "Width": 16, "Height": 16 },
+		"When":{ "Animal Produce":"true"}
+	},
+	
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyWhite Chicken",
+		"FromFile": "assets/chicken/{{WhiteChicken}}Baby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/White Chicken",
+		"FromFile": "assets/chicken/{{WhiteChicken}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyBrown Chicken",
+		"FromFile": "assets/chicken/{{BrownChicken}}Baby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Brown Chicken",
+		"FromFile": "assets/chicken/{{BrownChicken}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyVoid Chicken",
+		"FromFile": "assets/chicken/{{VoidChicken}}Baby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Void Chicken",
+		"FromFile": "assets/chicken/{{VoidChicken}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyBlue Chicken",
+		"FromFile": "assets/chicken/{{BlueChicken}}Baby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Blue Chicken",
+		"FromFile": "assets/chicken/{{BlueChicken}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyGolden Chicken",
+		"FromFile": "assets/chicken/{{GoldChicken}}Baby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Golden Chicken",
+		"FromFile": "assets/chicken/{{GoldChicken}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/chicken/ChickenIcon.png",
+		"ToArea": {"X": 0, "Y": 448,"Width": 33, "Height": 17}
+	},
+	
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabySheep",
+		"FromFile": "assets/sheep/{{Sheep}}Lamb.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Sheep",
+		"FromFile": "assets/sheep/{{Sheep}}Sheep.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/ShearedSheep",
+		"FromFile": "assets/sheep/{{Sheep}}Sheared.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/sheep/{{Sheep}}Icon.png",
+		"ToArea": {"X": 32, "Y": 464,"Width": 33, "Height": 17}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Springobjects",
+		"FromFile": "assets/sheep/{{Wool}}Wool.png",
+		"ToArea": { "X": 128, "Y": 288, "Width": 16, "Height": 16 },
+		"When":{ "Animal Produce":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Springobjects",
+		"FromFile": "assets/sheep/{{Wool}}Cloth.png",
+		"ToArea": { "X": 320, "Y": 272, "Width": 16, "Height": 16 },
+		"When":{ "Animal Produce":"true"}
+	},
+	
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyBrown Cow",
+		"FromFile": "assets/cow/{{BrownCow}}Calf.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Brown Cow",
+		"FromFile": "assets/cow/{{BrownCow}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyWhite Cow",
+		"FromFile": "assets/cow/{{WhiteCow}}Calf.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/White Cow",
+		"FromFile": "assets/cow/{{WhiteCow}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/cow/{{WhiteCow}}Icon.png",
+		"ToArea": {"X": 32, "Y": 448,"Width": 33, "Height": 17}
+	},
+	
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyGoat",
+		"FromFile": "assets/goat/{{Goat}}Baby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Goat",
+		"FromFile": "assets/goat/{{Goat}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/goat/{{Goat}}Icon.png",
+		"ToArea": {"X": 64, "Y": 448,"Width": 33, "Height": 17}
+	},
+	
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Duck",
+		"FromFile": "assets/duck/{{Duck}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/duck/{{Duck}}Feather.png",
+		"ToArea": { "X": 192, "Y": 288, "Width": 16, "Height": 16 },
+		"When":{ "Animal Produce":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/duck/{{Duck}}Icon.png",
+		"ToArea": {"X": 0, "Y": 464,"Width": 33, "Height": 17}
+	},
+	{
+		"Action": "Load",
+		"Target": "{{ModId}}/BabyDuck",
+		"FromFile": "assets/duck/{{Duck}}Baby.png"
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Fields": {
+		"Duck": {
+		"BabyTexture": "{{ModId}}/BabyDuck"
+	}}},
+	
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyPig",
+		"FromFile": "assets/pig/{{Pig}}Baby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Pig",
+		"FromFile": "assets/pig/{{Pig}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/pig/{{Pig}}Icon.png",
+		"ToArea": {"X": 0, "Y": 480,"Width": 33, "Height": 17}
+	},
+	
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyOstrich",
+		"FromFile": "assets/ostrich/{{Ostrich}}Baby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Ostrich",
+		"FromFile": "assets/ostrich/{{Ostrich}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/ostrich/{{Ostrich}}Icon.png",
+		"ToArea": {"X": 32, "Y": 480,"Width": 33, "Height": 17}
+	},
+	
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Dinosaur",
+		"FromFile": "assets/dino/{{Dino}}.png"
+		}
+	]
+}

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Luny's Witch Hats",
+  "Author": "Luny",
+  "Version": "1.1.0",
+  "Description": "Adds a few witch hats to Fashion Sense",
+  "UniqueID": "Luny.WitchHats",
+  "UpdateKeys": [""],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+	"MinimumVersion": "6.6.0"
+  }
+}

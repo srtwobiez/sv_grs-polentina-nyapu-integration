@@ -1,0 +1,45 @@
+{
+  "Format": "2.8.1",
+  "ConfigSchema": {
+    "ForceMinBarn": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "RestartRequired",
+      "Name": "{{i18n:config.ForceMinBarn.name}}",
+      "Description": "{{i18n:config.ForceMinBarn.description}}"
+    },
+    "ForceMinCoop": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "RestartRequired",
+      "Name": "{{i18n:config.ForceMinCoop.name}}",
+      "Description": "{{i18n:config.ForceMinCoop.description}}"
+    },
+    "ForceMinShed": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "RestartRequired",
+      "Name": "{{i18n:config.ForceMinShed.name}}",
+      "Description": "{{i18n:config.ForceMinShed.description}}"
+    },
+    "ForceMinVanillaBigShed": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "RestartRequired",
+      "Name": "{{i18n:config.ForceMinVanillaBigShed.name}}",
+      "Description": "{{i18n:config.ForceMinVanillaBigShed.description}}"
+    },
+    "EnableBuildingUpgrades": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Name": "{{i18n:config.EnableBuildingUpgrades.name}}",
+      "Description": "{{i18n:config.EnableBuildingUpgrades.description}}"
+    }
+  },
+  "Changes": [
+    { "LogName": "JJ Include SVE Premium Barn", "Action": "Include", "FromFile": "data/sve-premium-barn.json" },
+    { "LogName": "JJ Include SVE Winery", "Action": "Include", "FromFile": "data/sve-winery.json" },
+    { "LogName": "JJ Include SVE Premium Coop", "Action": "Include", "FromFile": "data/sve-premium-coop.json" },
+    { "LogName": "JJ Include Vanilla Big Shed Min Texture", "Action": "Include", "FromFile": "data/vanilla-big-shed-min-texture.json" }
+  ]
+}

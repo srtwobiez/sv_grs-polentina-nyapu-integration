@@ -1,0 +1,190 @@
+{
+    // CONFIG OPTIONS
+        "config.Seed Packet Variant.name": "Variante pacchetti semi",
+        "config.Seed Packet Variant.description": "Imposta la variante pacchetti semi per tutte le immagini dei semi.\nGuarda le immagini sulla pagina della Mod per un riferimento visivo.",
+        "config.Seed Packet Variant.values.(1) Sensible Sleeves": "(1) Sensible Sleeves",
+        "config.Seed Packet Variant.values.(2) Seasonal Sleeves": "(2) Seasonal Sleeves",
+        "config.Seed Packet Variant.values.(3) Sensible Satchels": "(3) Sensible Satchels",
+        "config.Seed Packet Variant.values.(4) Seasonal Satchels": "(4) Seasonal Satchels",
+        "config.Seed Packet Variant.values.(5) Sensible Stashes": "(5) Sensible Stashes",
+        "config.Seed Packet Variant.values.(6) Seasonal Stashes": "(6) Seasonal Stashes",
+
+        "config.Sapling Sack Color.name": "Colore sacco per alberello",
+        "config.Sapling Sack Color.description": "Imposta il colore del sacco per tutte le immagini degli alberelli.\nGuarda le immagini sulla pagina della Mod per un riferimento visivo.",
+        "config.Sapling Sack Color.values.(1) Cloud": "(1) Cloud",
+        "config.Sapling Sack Color.values.(2) Cream": "(2) Cream",
+        "config.Sapling Sack Color.values.(3) Chest": "(3) Chest",
+        "config.Sapling Sack Color.values.(4) Crypt": "(4) Crypt",
+
+    // GLOBAL TOGGLES
+        "config.= Disable Entire Mod.name": "= Disabilita l'intero mod",
+        "config.= Disable Entire Mod.description": "Attiva/Disattiva lo stato della intera mod.",
+        "config.= Disable Entire Mod.values.true": "Abilitato",
+        "config.= Disable Entire Mod.values.false": "Disabilitato",
+
+        "config.Seed Sprites.name": "Cambia i semi",
+        "config.Seed Sprites.description": "Attiva/Disattiva la modifica dei semi.",
+        "config.Seed Sprites.values.Enabled": "Abilitato",
+        "config.Seed Sprites.values.Disabled": "Disabilitato",
+    
+        "config.Sapling Sprites.name": "Cambia gli alberelli",
+        "config.Sapling Sprites.description": "Attiva/Disattiva la modifica degli alberelli.",
+        "config.Sapling Sprites.values.Enabled": "Abilitato",
+        "config.Sapling Sprites.values.Disabled": "Disabilitato",
+
+        "config.Bush Sprites.name": "Cambia i cespugli",
+        "config.Bush Sprites.description": "Attiva/Disattiva la modifica dei cespugli.",
+        "config.Bush Sprites.values.Enabled": "Abilitato",
+        "config.Bush Sprites.values.Disabled": "Disabilitato",
+
+        "config.Trellis Sprites.name": "Cambia i graticci",
+        "config.Trellis Sprites.description": "Attiva/Disattiva la modifica dei graticci.",
+        "config.Trellis Sprites.values.Enabled": "Abilitato",
+        "config.Trellis Sprites.values.Disabled": "Disabilitato",
+
+        "config.Tea Sapling Sprites.name": "Cambia le piante del tè",
+        "config.Tea Sapling Sprites.description": "Attiva/Disattiva la modifica delle piante del tè.",
+        "config.Tea Sapling Sprites.values.Enabled": "Abilitato",
+        "config.Tea Sapling Sprites.values.Disabled": "Disabilitato",
+
+        "config.Mixed Seed Sprites.name": "Cambia i mix di semi",
+        "config.Mixed Seed Sprites.description": "Attiva/Disattiva la modifica dei mix di semi.",
+        "config.Mixed Seed Sprites.values.Enabled": "Abilitato",
+        "config.Mixed Seed Sprites.values.Disabled": "Disabilitato",
+
+    // MOD SECTION TOGGLES
+        "config.(A) Vanilla.name": "(A) Vanilla",
+        "config.(A) Vanilla.description": "Attiva/Disattiva tutte le modifiche sul gioco base.",
+        "config.(A) Vanilla.values.true": "Abilitato",
+        "config.(A) Vanilla.values.false": "Disabilitato",
+
+        "config.(B) Stardew Valley Expanded.name": "(B) Stardew Valley Expanded",
+        "config.(B) Stardew Valley Expanded.description": "Attiva/Disattiva tutte le modifiche su Stardew Valley Expanded.",
+        "config.(B) Stardew Valley Expanded.values.true": "Abilitato",
+        "config.(B) Stardew Valley Expanded.values.false": "Disabilitato",
+
+        "config.(C) East Scarp.name": "(C) East Scarp",
+        "config.(C) East Scarp.description": "Attiva/Disattiva tutte le modifiche su East Scarp.",
+        "config.(C) East Scarp.values.true": "Abilitato",
+        "config.(C) East Scarp.values.false": "Disabilitato",
+
+        "config.(D) Visit Mount Vapius.name": "(D) Visit Mount Vapius",
+        "config.(D) Visit Mount Vapius.description": "Attiva/Disattiva tutte le modifiche su Visit Mount Vapius.",
+        "config.(D) Visit Mount Vapius.values.true": "Abilitato",
+        "config.(D) Visit Mount Vapius.values.false": "Disabilitato",
+
+        "config.(E) Serene Meadow.name": "(E) Serene Meadow",
+        "config.(E) Serene Meadow.description": "Attiva/Disattiva tutte le modifiche su Serene Meadow.",
+        "config.(E) Serene Meadow.values.true": "Abilitato",
+        "config.(E) Serene Meadow.values.false": "Disabilitato",
+
+        "config.(F) Growable Forage.name": "(F) Growable Forage",
+        "config.(F) Growable Forage.description": "Attiva/Disattiva tutte le modifiche su Growable Forage.",
+        "config.(F) Growable Forage.values.true": "Abilitato",
+        "config.(F) Growable Forage.values.false": "Disabilitato",
+
+        "config.(G) Cornucopia Crops.name": "(G) Cornucopia Crops",
+        "config.(G) Cornucopia Crops.description": "Attiva/Disattiva tutte le modifiche su Cornucopia Crops.",
+        "config.(G) Cornucopia Crops.values.true": "Abilitato",
+        "config.(G) Cornucopia Crops.values.false": "Disabilitato",
+
+        "config.(H) Cornucopia Herbs.name": "(H) Cornucopia Herbs",
+        "config.(H) Cornucopia Herbs.description": "Attiva/Disattiva tutte le modifiche su Cornucopia Herbs.",
+        "config.(H) Cornucopia Herbs.values.true": "Abilitato",
+        "config.(H) Cornucopia Herbs.values.false": "Disabilitato",
+
+        "config.(I) Cornucopia Flowers.name": "(I) Cornucopia Flowers",
+        "config.(I) Cornucopia Flowers.description": "Attiva/Disattiva tutte le modifiche su Cornucopia Flowers.",
+        "config.(I) Cornucopia Flowers.values.true": "Abilitato",
+        "config.(I) Cornucopia Flowers.values.false": "Disabilitato",
+
+        "config.(J) Ilucie Winter Crops.name": "(J) Ilucie Winter Crops",
+        "config.(J) Ilucie Winter Crops.description": "Attiva/Disattiva tutte le modifiche su Ilucie Winter Crops.",
+        "config.(J) Ilucie Winter Crops.values.true": "Abilitato",
+        "config.(J) Ilucie Winter Crops.values.false": "Disabilitato",
+
+        "config.(K) Flower Garden 2.name": "(K) Flower Garden 2",
+        "config.(K) Flower Garden 2.description": "Attiva/Disattiva tutte le modifiche su Flower Garden 2.",
+        "config.(K) Flower Garden 2.values.true": "Abilitato",
+        "config.(K) Flower Garden 2.values.false": "Disabilitato",
+
+        "config.(L) Grapes of Ferngill.name": "(L) Grapes of Ferngill",
+        "config.(L) Grapes of Ferngill.description": "Attiva/Disattiva tutte le modifiche su Grapes of Ferngill.",
+        "config.(L) Grapes of Ferngill.values.true": "Abilitato",
+        "config.(L) Grapes of Ferngill.values.false": "Disabilitato",
+
+        "config.(M) Atelier Goods Forager.name": "(M) Atelier Goods Forager",
+        "config.(M) Atelier Goods Forager.description": "Attiva/Disattiva tutte le modifiche su Atelier Goods Forager.",
+        "config.(M) Atelier Goods Forager.values.true": "Abilitato",
+        "config.(M) Atelier Goods Forager.values.false": "Disabilitato",
+
+        "config.(N) Garden Variety Mixed Seeds.name": "(N) Garden Variety Mixed Seeds",
+        "config.(N) Garden Variety Mixed Seeds.description": "Attiva/Disattiva tutte le modifiche su Garden Variety Mixed Seeds.",
+        "config.(N) Garden Variety Mixed Seeds.values.true": "Abilitato",
+        "config.(N) Garden Variety Mixed Seeds.values.false": "Disabilitato",
+
+        "config.(O) Forage of Ferngill.name": "(O) Forage of Ferngill",
+        "config.(O) Forage of Ferngill.description": "Attiva/Disattiva tutte le modifiche su Forage of Ferngill.",
+        "config.(O) Forage of Ferngill.values.true": "Abilitato",
+        "config.(O) Forage of Ferngill.values.false": "Disabilitato",
+
+        "config.(P) Grains Overhull.name": "(P) Grains Overhull",
+        "config.(P) Grains Overhull.description": "Attiva/Disattiva tutte le modifiche su Grains Overhull.",
+        "config.(P) Grains Overhull.values.true": "Abilitato",
+        "config.(P) Grains Overhull.values.false": "Disabilitato",
+
+        "config.(Q) Bonster Crops Combined.name": "(Q) Bonster Crops Combined",
+        "config.(Q) Bonster Crops Combined.description": "Attiva/Disattiva tutte le modifiche su Bonster Crops Combined.",
+        "config.(Q) Bonster Crops Combined.values.true": "Abilitato",
+        "config.(Q) Bonster Crops Combined.values.false": "Disabilitato",
+
+        "config.(R) Uncle Iroh Tea.name": "(R) Uncle Iroh Tea",
+        "config.(R) Uncle Iroh Tea.description": "Attiva/Disattiva tutte le modifiche su Uncle Iroh Tea.",
+        "config.(R) Uncle Iroh Tea.values.true": "Abilitato",
+        "config.(R) Uncle Iroh Tea.values.false": "Disabilitato",
+
+        "config.(S) Polyamory Sweet.name": "(S) Polyamory Sweet",
+        "config.(S) Polyamory Sweet.description": "Attiva/Disattiva tutte le modifiche su Polyamory Sweet.",
+        "config.(S) Polyamory Sweet.values.true": "Abilitato",
+        "config.(S) Polyamory Sweet.values.false": "Disabilitato",
+
+        "config.(T) Ore Crops.name": "(T) Ore Crops",
+        "config.(T) Ore Crops.description": "Attiva/Disattiva tutte le modifiche su Ore Crops.",
+        "config.(T) Ore Crops.values.true": "Abilitato",
+        "config.(T) Ore Crops.values.false": "Disabilitato",
+
+        "config.(U) Tahla Crops.name": "(U) Tahla Crops",
+        "config.(U) Tahla Crops.description": "Attiva/Disattiva tutte le modifiche su Tahla Crops.",
+        "config.(U) Tahla Crops.values.true": "Abilitato",
+        "config.(U) Tahla Crops.values.false": "Disabilitato",
+    
+        "config.(V) Mildkewy Food Starter.name": "(V) Mildkewy Food Starter",
+        "config.(V) Mildkewy Food Starter.description": "Attiva/Disattiva tutte le modifiche su Mildkewy Food Starter.",
+        "config.(V) Mildkewy Food Starter.values.true": "Abilitato",
+        "config.(V) Mildkewy Food Starter.values.false": "Disabilitato",
+    
+        "config.(W) Tobacco and Hemp.name": "(W) Tobacco and Hemp",
+        "config.(W) Tobacco and Hemp.description": "Attiva/Disattiva tutte le modifiche su Tobacco and Hemp.",
+        "config.(W) Tobacco and Hemp.values.true": "Abilitato",
+        "config.(W) Tobacco and Hemp.values.false": "Disabilitato",
+    
+        "config.(X) Ridgeside Village.name": "(X) Ridgeside Village",
+        "config.(X) Ridgeside Village.description": "Attiva/Disattiva tutte le modifiche su Ridgeside Village.",
+        "config.(X) Ridgeside Village.values.true": "Abilitato",
+        "config.(X) Ridgeside Village.values.false": "Disabilitato",
+    
+        "config.(Y) Adventurer Guild Expanded.name": "(Y) Adventurer Guild Expanded",
+        "config.(Y) Adventurer Guild Expanded.description": "Attiva/Disattiva tutte le modifiche su Adventurer Guild Expanded.",
+        "config.(Y) Adventurer Guild Expanded.values.true": "Abilitato",
+        "config.(Y) Adventurer Guild Expanded.values.false": "Disabilitato",
+    
+        "config.(Z) Distant Lands.name": "(Z) Distant Lands",
+        "config.(Z) Distant Lands.description": "Attiva/Disattiva tutte le modifiche su Distant Lands.",
+        "config.(Z) Distant Lands.values.true": "Abilitato",
+        "config.(Z) Distant Lands.values.false": "Disabilitato",
+
+        "config.(A²) Magical Crops.name": "(A²) Magical Crops",
+        "config.(A²) Magical Crops.description": "Attiva/Disattiva tutte le modifiche su Magical Crops.",
+        "config.(A²) Magical Crops.values.true": "Abilitato",
+        "config.(A²) Magical Crops.values.false": "Disabilitato"
+}

@@ -1,0 +1,52 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Krobus", "Appearance"],
+			"Entries": {
+				"DolphINaF.ExtraPortraits_Krobus.Origin": {
+					"Id": "DolphINaF.ExtraPortraits_Krobus.Origin",
+					"Portrait": "Portraits/Krobus",
+					"Sprite": "Characters/Krobus",
+					"Condition": "IS_EVENT 520702",
+					"Precedence": -1100
+				},
+					
+			}
+		},		
+		{
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Town_mgThiefMessage"],
+					"Value": "Portraits/ShadowGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},						
+			],	
+			"When": {"HasMod |contains=Luny.PreciousKrobus": false,}
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Town_mgThiefMessage"],
+					"Value": "Portraits/Krobus @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Town_mgThiefMessage"],
+					"Value": "$2",
+				},				
+			],	
+			"When": {"HasMod": "Luny.PreciousKrobus",}
+		},			
+	],
+}

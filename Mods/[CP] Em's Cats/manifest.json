@@ -1,0 +1,11 @@
+{
+    "Name": "Em's Cats",
+    "Author": "RivalRabbit",
+    "Version": "1.0",
+    "Description": "Fifteen cat colour options.",
+    "UniqueID": "RivalRabbit.EmsCatsCP",
+	"UpdateKeys": [ "Nexus:37201" ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

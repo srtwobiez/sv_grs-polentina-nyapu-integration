@@ -1,0 +1,6 @@
+{
+    //has breakfast, goes fishing, chills by the fire, goes south and then home
+    "default":"700 GiEX_Hut 2 6 0/800 GiEX_Hut 8 7 2/1000 GiEX_SouthWest 11 20 2 javigiex_fishing/1300 GiEX_SouthWest 9 9 2/1400 GiEX_SouthWest 8 16 1 javigiex_floor/1700 IslandSouth 7 9/2000 GiEX_Hut 2 6 0/2100 GiEX_Hut 7 5 1 javigiex_sleep",
+    //stays home fixing things. also, goes check on leo. then comes back
+    "rain":"700 GiEX_Hut 2 6 0/830 GiEX_SouthWest 9 9 2/1000 GiEX_Hut 8 7 2/1100 GiEX_Hut 2 7 2/1200 GiEX_Hut 8 6 1 javigiex_woodwork/1400 GiEX_Hut 2 6 0/a1710 IslandHut 6 7 0/1740 IslandHut 8 8 1/1800 GiEX_Hut 2 7 2/2100 GiEX_Hut 7 5 1 javigiex_sleep"
+}

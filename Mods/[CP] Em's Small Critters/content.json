@@ -1,0 +1,80 @@
+{
+	"Format": "2.0.0",
+		"ConfigSchema": {
+	"Birds": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"Parrots": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"Owl": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"Crow": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"Dove": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"Rabbits": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"Squirrel": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"Opossum": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"Beach": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"Frogs": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"Butterflies": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+			}
+		 },
+	"Changes": [
+		{
+		"Action": "Include",
+		"FromFile": "data/butterflies.json"
+		},
+		{
+		"Action": "Include",
+		"FromFile": "data/birds.json"
+		},
+		{
+		"Action": "Include",
+		"FromFile": "data/parrots.json"
+		},
+		{
+		"Action": "Include",
+		"FromFile": "data/rodents.json"
+		},
+		{
+		"Action": "Include",
+		"FromFile": "data/beach.json"
+		},
+		{
+		"Action": "Include",
+		"FromFile": "data/other.json"
+		},
+		{
+		"Action": "Include",
+		"FromFile": "data/sve.json",
+		"When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" }
+		}
+	]
+}

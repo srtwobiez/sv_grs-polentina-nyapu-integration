@@ -1,0 +1,96 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema":{
+        "Dog":{
+        "AllowValues": "Aussie, Beagle, Bernard, Bernese, Borzoi, Bulldog, BullTerrier, Chow, Collie, Dachshund, Dalmatian, German, Golden, Greyhound, Husky, Irish, JackRussel, Pom, Pug, Pyrenees, RoughCollie, Sharpei, Shiba, Spaniel",
+        "Default": "Golden"
+      },
+      "Dog1":{
+        "AllowValues": "Aussie, Beagle, Bernard, Bernese, Borzoi, Bulldog, BullTerrier, Chow, Collie, Dachshund, Dalmatian, German, Golden, Greyhound, Husky, Irish, JackRussel, Pom, Pug, Pyrenees, RoughCollie, Sharpei, Shiba, Spaniel",
+        "Default": "German"
+      },
+      "Dog2":{
+        "AllowValues": "Aussie, Beagle, Bernard, Bernese, Borzoi, Bulldog, BullTerrier, ChowChow, Collie, Dachshund, Dalmatian, German, Golden, Greyhound, Husky, Irish, JackRussel, Pom, Pug, Pyrenees, RoughCollie, Sharpei, Shiba, Spaniel",
+        "Default": "Beagle"
+      },
+      "Dog3":{
+        "AllowValues": "Aussie, Beagle, Bernard, Bernese, Borzoi, Bulldog, BullTerrier, Chow, Collie, Dachshund, Dalmatian, German, Golden, Greyhound, Husky, Irish, JackRussel, Pom, Pug, Pyrenees, RoughCollie, Sharpei, Shiba, Spaniel",
+        "Default": "Bernese"
+      },
+      "Dog4":{
+        "AllowValues": "Aussie, Beagle, Bernard, Bernese, Borzoi, Bulldog, BullTerrier, Chow, Collie, Dachshund, Dalmatian, German, Golden, Greyhound, Husky, Irish, JackRussel, Pom, Pug, Pyrenees, RoughCollie, Sharpei, Shiba, Spaniel",
+        "Default": "Collie"
+      },
+      "Dog5":{
+        "AllowValues": "Aussie, Beagle, Bernard, Bernese, Borzoi, Bulldog, BullTerrier, Chow, Collie, Dachshund, Dalmatian, German, Golden, Greyhound, Husky, Irish, JackRussel, Pom, Pug, Pyrenees, RoughCollie, Sharpei, Shiba, Spaniel",
+        "Default": "Greyhound"
+            }
+        },
+   "Changes": [
+	{
+         "Action": "EditImage",
+         "Target": "Animals/dog",
+         "FromFile": "assets/{{Dog}}.png"
+	},
+	{
+         "Action": "EditImage",
+         "Target": "Animals/dog1",
+         "FromFile": "assets/{{Dog1}}.png"
+	},
+	{
+         "Action": "EditImage",
+         "Target": "Animals/dog2",
+         "FromFile": "assets/{{Dog2}}.png"
+	},
+	{
+         "Action": "EditImage",
+         "Target": "Animals/dog3",
+         "FromFile": "assets/{{Dog3}}.png"
+	},
+	{
+         "Action": "EditImage",
+         "Target": "Animals/dog4",
+         "FromFile": "assets/{{Dog4}}.png"
+	},
+	{
+         "Action": "EditImage",
+         "Target": "Animals/dog5",
+         "FromFile": "assets/{{Dog5}}.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/{{Dog}}Icon.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+		"ToArea": {"X": 208, "Y": 208,"Width": 16, "Height": 16}
+		},
+		{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/{{Dog1}}Icon.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+		"ToArea": {"X": 224, "Y": 208,"Width": 16, "Height": 16}
+		},
+		{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/{{Dog2}}Icon.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+		"ToArea": {"X": 240, "Y": 208,"Width": 16, "Height": 16}
+		},
+		{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors_1_6",
+		"FromFile": "assets/{{Dog3}}Icon.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+		"ToArea": {"X": 272, "Y": 365,"Width": 16, "Height": 16}
+		},
+		{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors_1_6",
+		"FromFile": "assets/{{Dog4}}Icon.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+		"ToArea": {"X": 272, "Y": 381,"Width": 16, "Height": 16}
+      }
+   ]
+}

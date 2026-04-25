@@ -1,0 +1,28 @@
+{
+  "Name": "Solarium at the Spa Revisited",
+  "Author": "JennaJuffuffles",
+  "Previous Authors": "BBR, ferngull",
+  "Version": "1.0.7",
+  "Description": "Adds a sun-filled solarium above the spa. Surely someone in Pelican Town has the key?",
+  "UniqueID": "jennajuffuffles.SpaSolariumRevisited",
+  "MinimumApiVersion": "4.1.10",
+  "UpdateKeys": ["Nexus:42636"],
+  "LoadAfter": ["sashasand.BHI"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "2.8.1"
+  },
+  "Dependencies": [
+    {"UniqueID": "grapeponta.VibrantPastoralRecolor", "IsRequired": false},
+    {"UniqueID": "DaisyNiko.EarthyRecolour", "IsRequired": false},
+    {"UniqueID": "Lita.StarblueValleyUnofficial", "IsRequired": false},
+    {"UniqueID": "Bouhm.NPCMapLocations", "IsRequired": false},
+    {"UniqueID": "CJBok.CheatsMenu", "IsRequired": false},
+    {"UniqueID": "JennaJuffuffles.SprinklersOfPelicanTown", "IsRequired": false},
+    {"UniqueID": "Lou.PretBath", "IsRequired": false},
+    {"UniqueID": "sashasand.BHI", "IsRequired": false},
+    {"UniqueID": "KaileyAllen.Cleanbathhouse", "IsRequired": false},
+    {"UniqueID": "Sandman53.hotspring", "IsRequired": false},
+    {"UniqueID": "uglynt.town.interiors", "IsRequired": false}
+  ]
+}

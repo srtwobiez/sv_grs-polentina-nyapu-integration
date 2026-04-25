@@ -1,0 +1,12 @@
+{
+  // ===== MAIL MODULE =====
+  // Evelyn flowers reward mail (sent when special order is completed)
+  "Changes": [
+    {
+      "LogName": "JJ Evelyn flowers reward mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": { "{{ModId}}_EvelynFlowersReward": "{{i18n:Mail.EvelynFlowersReward}}%item id (O)MixedFlowerSeeds 100 %%[#]{{i18n:Mail.EvelynFlowersReward.Title}}" }
+    }
+  ]
+}

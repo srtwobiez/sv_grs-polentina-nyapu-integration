@@ -1,0 +1,111 @@
+{
+"Name": "Dyeable Globby Shirt Dark",
+  "FrontShirt": {
+    "ColorMasks": [
+	  [ 188, 188, 188 ],
+	  [ 153, 153, 153 ],
+	  [ 84, 84, 84 ],
+	  [ 44, 44, 45 ],
+      [ 26, 26, 27 ],
+	  [ 5, 5, 6 ]
+    ],
+    "SleeveColors": [
+      [ 5, 5, 6 ],
+      [ 26, 26, 27 ],
+      [ 84, 84, 84 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+    "ColorMasks": [
+	  [ 188, 188, 188 ],
+	  [ 153, 153, 153 ],
+	  [ 84, 84, 84 ],
+	  [ 44, 44, 45 ],
+      [ 26, 26, 27 ],
+	  [ 5, 5, 6 ]
+    ],
+    "SleeveColors": [
+      [ 5, 5, 6 ],
+      [ 26, 26, 27 ],
+      [ 84, 84, 84 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+    "ColorMasks": [
+	  [ 188, 188, 188 ],
+	  [ 153, 153, 153 ],
+	  [ 84, 84, 84 ],
+	  [ 44, 44, 45 ],
+      [ 26, 26, 27 ],
+	  [ 5, 5, 6 ]
+    ],
+    "SleeveColors": [
+      [ 5, 5, 6 ],
+      [ 26, 26, 27 ],
+      [ 84, 84, 84 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+    "ColorMasks": [
+	  [ 188, 188, 188 ],
+	  [ 153, 153, 153 ],
+	  [ 84, 84, 84 ],
+	  [ 44, 44, 45 ],
+      [ 26, 26, 27 ],
+	  [ 5, 5, 6 ]
+    ],
+    "SleeveColors": [
+      [ 5, 5, 6 ],
+      [ 26, 26, 27 ],
+      [ 84, 84, 84 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

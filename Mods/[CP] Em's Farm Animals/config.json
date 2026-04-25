@@ -1,0 +1,19 @@
+{
+  "Animal Produce": "true",
+  "Rabbit": "Palomino",
+  "RabbitFoot": "Brown",
+  "WhiteChicken": "White",
+  "BrownChicken": "Brown",
+  "VoidChicken": "Void",
+  "BlueChicken": "Blue",
+  "GoldChicken": "Golden",
+  "Sheep": "WhiteWelsh",
+  "Wool": "White",
+  "BrownCow": "Guernsey",
+  "WhiteCow": "Holstein",
+  "Duck": "Mallard",
+  "Goat": "Saanen",
+  "Pig": "Yorkshire",
+  "Ostrich": "OstrichMale",
+  "Dino": "Triceratops"
+}

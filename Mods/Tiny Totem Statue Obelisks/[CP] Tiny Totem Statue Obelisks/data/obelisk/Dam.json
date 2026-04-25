@@ -1,0 +1,55 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Data Dam",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "Tikamin557.dam_DamObelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          },
+          "Texture": "Buildings\\Replacement_Dam_Obelisk",
+          "SourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 16,
+            "Height": 32
+          } // Necessary for this obelisk in particular due to original obelisk's configuration
+        }
+      }
+    },
+    {
+      "LogName": "JJ Load Dam",
+      "Action": "Load",
+      "Target": "Buildings/Replacement_Dam_Obelisk",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_dam.png"
+    },
+    {
+      "LogName": "JJ Decorations Dam Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Replacement_Dam_Obelisk",
+      "FromFile": "assets/flowers/dam_{{DamFlowerColor}}.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Dam Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Replacement_Dam_Obelisk",
+      "FromFile": "assets/moss/dam_moss.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

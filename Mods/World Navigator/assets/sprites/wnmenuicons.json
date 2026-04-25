@@ -1,0 +1,19 @@
+{
+    "Sprites": {
+        "MagnifyingGlass": {
+            "SourceRect": "0, 0, 16, 16"
+        },
+        "Star": {
+            "SourceRect": "16, 0, 16, 16"
+        },
+        "Gear": {
+            "SourceRect": "32, 0, 16, 16"
+        },
+        "Exclamation": {
+            "SourceRect": "48, 0, 16, 16"
+        },
+        "Question": {
+            "SourceRect": "64, 0, 16, 16"
+        }
+    }
+}

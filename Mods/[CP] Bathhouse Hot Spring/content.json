@@ -1,0 +1,235 @@
+{
+	"Format": "2.0.0",
+	"DynamicTokens": [
+		{
+			"Name": "recolor",
+			"Value": "Vanilla",
+		},
+		
+		// Vibrant Pastoral
+		{
+			"Name": "recolor",
+			"Value": "vpr",
+			"When": {
+				"Tileset": "Vibrant Pastoral",
+				"HasMod |contains= grapeponta.VanillaInteriors, grapeponta.VibrantPastoralRecolor": "true"
+			},
+		},
+		{
+			"Name": "recolor",
+			"Value": "vpr",
+			"When": {
+				"Tileset": "Auto",
+				"HasMod |contains= grapeponta.VanillaInteriors, grapeponta.VibrantPastoralRecolor": "true"
+			},
+		},
+		
+		// Starblue
+		{
+			"Name": "recolor",
+			"Value": "starblue",
+			"When": {
+				"Tileset": "Starblue",
+				"HasMod |contains= Lita.StarblueValley, Lita.StarblueValleyUnofficial": "true"
+			},
+		},
+		{
+			"Name": "recolor",
+			"Value": "starblue",
+			"When": {
+				"Tileset": "Auto",
+				"HasMod |contains= Lita.StarblueValley, Lita.StarblueValleyUnofficial": "true"
+			},
+		},
+		
+		// Earthy
+		{
+			"Name": "recolor",
+			"Value": "earthy",
+			"When": {
+				"Tileset": "Earthy",
+				"HasMod |contains= DaisyNiko.EarthyInteriors, DaisyNiko.EarthyRecolour": "true"
+			},
+		},
+		{
+			"Name": "recolor",
+			"Value": "earthy",
+			"When": {
+				"Tileset": "Auto",
+				"HasMod |contains= DaisyNiko.EarthyInteriors, DaisyNiko.EarthyRecolour": "true"
+			},
+		},
+	],
+	"ConfigSchema": {
+		"Tileset": {
+			"AllowValues": "Auto, Vanilla, Vibrant Pastoral, Earthy, Starblue",
+			"Default": "Auto"
+		},
+		"Visible Workout": {
+			"AllowValues": "true, false",
+			"Default": "false"
+		},
+		"Bathhouse Music": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Gender Neutral": {
+			"AllowValues": "true, false",
+			"Default": "false"
+		}
+	},
+	"Changes": [
+		// Custom Music
+		{
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+			"When": { "Bathhouse Music": "true" },
+			"Entries": {
+				"Bathhouse_Hotspring": {
+					"Id": "Bathhouse_Hotspring",
+					"Category": "Ambient",
+					"FilePaths": [
+						"{{AbsoluteFilePath: assets/Sounds/hotspring_water.wav}}",
+					],
+					"Looped": true,
+					"StreamedVorbis": true
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [ "BathHouse_Entry", "Music" ],
+			"When": { "Bathhouse Music": "true" },
+			"Entries": {
+				"Bathhouse_Hotspring": {
+					"ID": "Bathhouse_Hotspring_Music",
+					"Track": "Bathhouse_Hotspring"
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [ "BathHouse_MensLocker", "Music" ],
+			"When": { "Bathhouse Music": "true" },
+			"Entries": {
+				"Bathhouse_Hotspring": {
+					"ID": "Bathhouse_Hotspring_Music",
+					"Track": "Bathhouse_Hotspring"
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [ "BathHouse_WomensLocker", "Music" ],
+			"When": { "Bathhouse Music": "true" },
+			"Entries": {
+				"Bathhouse_Hotspring": {
+					"ID": "Bathhouse_Hotspring_Music",
+					"Track": "Bathhouse_Hotspring"
+				}
+			}
+		},
+		
+		// New Maps and Tileset
+		{
+			"LogName": "Hot Spring Tilesheet",
+			"Action": "Load",
+			"Target": "Maps/z_bathhouse_tiles",
+			"FromFile": "assets/TileSheets/z_bathhouse_tiles.png",
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/BathHouse_MensLocker",
+			"FromFile": "assets/{{target}}.tbin",
+			"PatchMode": "Replace",
+			"MapProperties": { "Warp": null },
+			"AddWarps": [
+				"3 28 BathHouse_Entry 7 4",
+				"15 28 BathHouse_Pool 21 1"
+			],
+			"When": { "Visible Workout": "false" },
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/BathHouse_MensLocker",
+			"FromFile": "assets/{{target}}_AW.tbin",
+			"PatchMode": "Replace",
+			"MapProperties": { "Warp": null },
+			"AddWarps": [
+				"3 28 BathHouse_Entry 7 4",
+				"15 28 BathHouse_Pool 21 1"
+			],
+			"When": { "Visible Workout": "true" },
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/BathHouse_WomensLocker",
+			"FromFile": "assets/{{target}}.tbin",
+			"PatchMode": "Replace",
+			"MapProperties": { "Warp": null },
+			"AddWarps": [
+				"13 28 BathHouse_Entry 2 4",
+				"2 28 BathHouse_Pool 6 1"
+			],
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/BathHouse_Entry",
+			"FromFile": "assets/{{target}}.tbin",
+			"PatchMode": "Replace",
+			"When": { "Gender Neutral": "false" },
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/BathHouse_Pool",
+			"FromFile": "assets/{{target}}.tbin",
+			"PatchMode": "Replace",
+			"AddWarps": [
+				"5 0 BathHouse_WomensLocker 2 27",
+				"6 0 BathHouse_WomensLocker 2 27",
+				"7 0 BathHouse_WomensLocker 2 27",
+				"20 0 BathHouse_MensLocker 15 27",
+				"21 0 BathHouse_MensLocker 15 27",
+				"22 0 BathHouse_MensLocker 15 27"
+			],
+			"When": { "Gender Neutral": "false" },
+		},
+		
+		// Gender Nuetral Compatibility	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/BathHouse_Entry",
+			"FromFile": "assets/{{target}}_GN.tbin",
+			"PatchMode": "Replace",
+			"When": { "Gender Neutral": "true" },
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/BathHouse_Pool",
+			"FromFile": "assets/{{target}}_GN.tbin",
+			"PatchMode": "Replace",
+			"AddWarps": [
+				"5 0 BathHouse_WomensLocker 2 27",
+				"6 0 BathHouse_WomensLocker 2 27",
+				"7 0 BathHouse_WomensLocker 2 27",
+				"20 0 BathHouse_MensLocker 15 27",
+				"21 0 BathHouse_MensLocker 15 27",
+				"22 0 BathHouse_MensLocker 15 27"
+			],
+			"When": { "Gender Neutral": "true" },
+		},
+		
+		// Recolor
+		{
+			"LogName": "Hot Spring - Vibrant Pastoral",
+			"Action": "EditImage",
+			"Target": "Maps/z_bathhouse_tiles",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/TileSheets/z_bathhouse_tiles_{{recolor}}.png",
+			"When": { "HasFile:{{FromFile}}": true }
+		}
+	]
+}

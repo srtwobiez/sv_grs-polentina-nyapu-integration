@@ -1,0 +1,92 @@
+{
+"Name": "Dyeable Bikini Top",
+  "FrontShirt": {
+    "ColorMasks": [
+	  [ 255, 253, 252 ],
+      [ 234, 234, 234 ],
+	  [ 181, 175, 159 ],
+	  [ 131, 128, 114 ],
+	  [ 104, 100, 84 ],
+      [ 71, 68, 57 ]
+    ],
+
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+    "ColorMasks": [
+	  [ 255, 253, 252 ],
+      [ 234, 234, 234 ],
+	  [ 181, 175, 159 ],
+	  [ 131, 128, 114 ],
+	  [ 104, 100, 84 ],
+      [ 71, 68, 57 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+    "ColorMasks": [
+	  [ 255, 253, 252 ],
+      [ 234, 234, 234 ],
+	  [ 181, 175, 159 ],
+	  [ 131, 128, 114 ],
+	  [ 104, 100, 84 ],
+      [ 71, 68, 57 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+    "ColorMasks": [
+	  [ 255, 253, 252 ],
+      [ 234, 234, 234 ],
+	  [ 181, 175, 159 ],
+	  [ 131, 128, 114 ],
+	  [ 104, 100, 84 ],
+      [ 71, 68, 57 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

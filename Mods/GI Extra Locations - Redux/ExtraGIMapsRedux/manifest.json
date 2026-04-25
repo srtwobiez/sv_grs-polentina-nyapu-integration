@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Ginger Island Extra Locations - redux",
+  "Author": "mistyspring",
+  "Version": "1.5.1",
+  "Description": "Adds content that requires C#.",
+  "UniqueID": "mistyspring.GiEXredux.code",
+  "EntryDll": "ExtraGIMapsRedux.dll",
+  "MinimumApiVersion": "4.4.0",
+  "UpdateKeys": ["nexus:-1"],
+  "Dependencies": [
+    { "UniqueID": "Pathoschild.ContentPatcher", "IsRequired": true},
+    { "UniqueID": "spacechase0.SpaceCore", "IsRequired":  true }
+  ]
+}

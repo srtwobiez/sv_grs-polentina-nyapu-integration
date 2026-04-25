@@ -1,0 +1,490 @@
+{
+  // ===== LINE SPRINKLERS INTEGRATION MODULE =====
+  "Changes": [
+    // ===== PIERRE'S GENERAL STORE - LINE SPRINKLER SALES =====
+    {
+      "LogName": "JJ Add Basic Line Sprinklers to Pierre's General Store (Immersive)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_BasicLineSprinkler": {
+          "Id": "{{ModId}}.BasicLine",
+          "ItemId": "rtrox.LineSprinklersRedux_LineSprinkler",
+          "Price": "{{BasicSprinklerPrice}}"
+        }
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}.BasicLine", "AfterId": "{{ModId}}.Basic" }
+      ],
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "HasMod": "rtrox.LineSprinklersRedux",
+        "HasFlag: hostPlayer |contains= {{ModId}}.PierreBasicSprinklers, {{ModId}}.PierreBasicSprinklersCC": true
+      }
+    },
+    {
+      "LogName": "JJ Add Basic Line Sprinklers to Pierre's General Store (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_BasicLineSprinkler": {
+          "Id": "{{ModId}}.BasicLine",
+          "ItemId": "rtrox.LineSprinklersRedux_LineSprinkler",
+          "Price": "{{BasicSprinklerPrice}}"
+        }
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}.BasicLine", "AfterId": "{{ModId}}.Basic" }
+      ],
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "false",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Add Quality Line Sprinklers to Pierre's General Store (Immersive)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_QualityLineSprinkler": {
+          "Id": "{{ModId}}.QualityLine",
+          "ItemId": "rtrox.LineSprinklersRedux_QualityLineSprinkler",
+          "Price": "{{QualitySprinklerPrice}}",
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}.QualityLine", "AfterId": "{{ModId}}.Quality" }
+      ],
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "HasMod": "rtrox.LineSprinklersRedux",
+        "HasFlag: hostPlayer |contains= {{ModId}}.PierreQualitySprinklers, {{ModId}}.PierreQualitySprinklersCC": true
+      }
+    },
+    {
+      "LogName": "JJ Add Quality Line Sprinklers to Pierre's General Store (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_QualityLineSprinkler": {
+          "Id": "{{ModId}}.QualityLine",
+          "ItemId": "rtrox.LineSprinklersRedux_QualityLineSprinkler",
+          "Price": "{{QualitySprinklerPrice}}",
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}.QualityLine", "AfterId": "{{ModId}}.Quality" }
+      ],
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "false",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Line Sprinklers to Pierre's General Store (Immersive)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_IridiumLineSprinkler": {
+          "Id": "{{ModId}}.IridiumLine",
+          "ItemId": "rtrox.LineSprinklersRedux_IridiumLineSprinkler",
+          "Price": "{{IridiumSprinklerPrice}}",
+          "IgnoreShopPriceModifiers": true,
+          "Stock": "{{Year}}"
+        }
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}.IridiumLine", "AfterId": "{{ModId}}.Iridium" }
+      ],
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "HasMod": "rtrox.LineSprinklersRedux",
+        "HasFlag: hostPlayer |contains= {{ModId}}.PierreIridiumSprinklers, {{ModId}}.PierreIridiumSprinklersCC": true
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Line Sprinklers to Pierre's General Store (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_IridiumLineSprinkler": {
+          "Id": "{{ModId}}.IridiumLine",
+          "ItemId": "rtrox.LineSprinklersRedux_IridiumLineSprinkler",
+          "Price": "{{IridiumSprinklerPrice}}",
+          "IgnoreShopPriceModifiers": true,
+          "Stock": "{{Year}}"
+        }
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}.IridiumLine", "AfterId": "{{ModId}}.Iridium" }
+      ],
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "false",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+        
+    // ===== JOJAMART - LINE SPRINKLER SALES =====
+    {
+      "LogName": "JJ Add Basic Line Sprinklers to JojaMart (Immersive)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Joja", "Items" ],
+      "Entries": {
+        "JojaMart_BasicLineSprinkler": {
+          "Id": "JojaMart.BasicLine",
+          "ItemId": "rtrox.LineSprinklersRedux_LineSprinkler",
+          "Price": "{{JojaBasicSprinklerPriceCalculated}}",
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "MoveEntries": [
+        { "Id": "JojaMart.BasicLine", "AfterId": "JojaMart.Basic" }
+      ],
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "HasMod": "rtrox.LineSprinklersRedux",
+        "HasFlag: hostPlayer |contains= {{ModId}}.JojaBasicSprinklers, {{ModId}}.JojaBasicSprinklersComplete": true
+      }
+    },
+    {
+      "LogName": "JJ Add Basic Line Sprinklers to JojaMart (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Joja", "Items" ],
+      "Entries": {
+        "JojaMart_BasicLineSprinkler": {
+          "Id": "JojaMart.BasicLine",
+          "ItemId": "rtrox.LineSprinklersRedux_LineSprinkler",
+          "Price": "{{JojaBasicSprinklerPriceCalculated}}",
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "MoveEntries": [
+        { "Id": "JojaMart.BasicLine", "AfterId": "JojaMart.Basic" }
+      ],
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "false",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Add Quality Line Sprinklers to JojaMart (Immersive)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Joja", "Items" ],
+      "Entries": {
+        "JojaMart_QualityLineSprinkler": {
+          "Id": "JojaMart.QualityLine",
+          "ItemId": "rtrox.LineSprinklersRedux_QualityLineSprinkler",
+          "Price": "{{JojaQualitySprinklerPriceCalculated}}",
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "MoveEntries": [
+        { "Id": "JojaMart.QualityLine", "AfterId": "JojaMart.Quality" }
+      ],
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "HasMod": "rtrox.LineSprinklersRedux",
+        "HasFlag: hostPlayer |contains= {{ModId}}.JojaQualitySprinklers, {{ModId}}.JojaQualitySprinklersComplete": true
+      }
+    },
+    {
+      "LogName": "JJ Add Quality Line Sprinklers to JojaMart (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Joja", "Items" ],
+      "Entries": {
+        "JojaMart_QualityLineSprinkler": {
+          "Id": "JojaMart.QualityLine",
+          "ItemId": "rtrox.LineSprinklersRedux_QualityLineSprinkler",
+          "Price": "{{JojaQualitySprinklerPriceCalculated}}",
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "MoveEntries": [
+        { "Id": "JojaMart.QualityLine", "AfterId": "JojaMart.Quality" }
+      ],
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "false",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Line Sprinklers to JojaMart (Immersive)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Joja", "Items" ],
+      "Entries": {
+        "JojaMart_IridiumLineSprinkler": {
+          "Id": "JojaMart.IridiumLine",
+          "ItemId": "rtrox.LineSprinklersRedux_IridiumLineSprinkler",
+          "Price": "{{JojaIridiumSprinklerPriceCalculated}}",
+          "IgnoreShopPriceModifiers": true,
+          "Stock": "{{Year}}"
+        }
+      },
+      "MoveEntries": [
+        { "Id": "JojaMart.IridiumLine", "AfterId": "JojaMart.Iridium" }
+      ],
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "HasMod": "rtrox.LineSprinklersRedux",
+        "HasFlag: hostPlayer |contains= {{ModId}}.JojaIridiumSprinklers, {{ModId}}.JojaIridiumSprinklersComplete": true
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Line Sprinklers to JojaMart (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Joja", "Items" ],
+      "Entries": {
+        "JojaMart_IridiumLineSprinkler": {
+          "Id": "JojaMart.IridiumLine",
+          "ItemId": "rtrox.LineSprinklersRedux_IridiumLineSprinkler",
+          "Price": "{{JojaIridiumSprinklerPriceCalculated}}",
+          "IgnoreShopPriceModifiers": true,
+          "Stock": "{{Year}}"
+        }
+      },
+      "MoveEntries": [
+        { "Id": "JojaMart.IridiumLine", "AfterId": "JojaMart.Iridium" }
+      ],
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "false",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+        
+    // ===== CLINT'S BLACKSMITH SHOP - LINE SPRINKLER UPGRADES =====
+    {
+      "LogName": "JJ Add Quality Line Sprinkler Upgrade to Clint's Shop (Quest)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Blacksmith", "Items" ],
+      "Entries": {
+        "{{ModId}}.QualityLineSprinklerUpgrade": {
+          "Id": "{{ModId}}.QualityLineSprinklerUpgrade",
+          "ItemId": "rtrox.LineSprinklersRedux_QualityLineSprinkler",
+          "Price": "{{QualitySprinklerUpgradeCost}}",
+          "TradeItemId": "rtrox.LineSprinklersRedux_LineSprinkler",
+          "TradeItemAmount": 1,
+          "Condition": "PLAYER_HAS_MAIL Host {{ModId}}.QualityJournalComplete"
+        }
+      },
+      "When": {
+        "EnableClintUpgrades": "true",
+        "ImmersiveProgression": "true",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Add Quality Line Sprinkler Upgrade to Clint's Shop (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Blacksmith", "Items" ],
+      "Entries": {
+        "{{ModId}}.QualityLineSprinklerUpgrade": {
+          "Id": "{{ModId}}.QualityLineSprinklerUpgrade",
+          "ItemId": "rtrox.LineSprinklersRedux_QualityLineSprinkler",
+          "Price": "{{QualitySprinklerUpgradeCost}}",
+          "TradeItemId": "rtrox.LineSprinklersRedux_LineSprinkler",
+          "TradeItemAmount": 1
+        }
+      },
+      "When": {
+        "EnableClintUpgrades": "true",
+        "ImmersiveProgression": "false",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Line Sprinkler Upgrade to Clint's Shop (Quest)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Blacksmith", "Items" ],
+      "Entries": {
+        "{{ModId}}.IridiumLineSprinklerUpgrade": {
+          "Id": "{{ModId}}.IridiumLineSprinklerUpgrade",
+          "ItemId": "rtrox.LineSprinklersRedux_IridiumLineSprinkler",
+          "Price": "{{IridiumSprinklerUpgradeCost}}",
+          "TradeItemId": "rtrox.LineSprinklersRedux_QualityLineSprinkler",
+          "TradeItemAmount": 1,
+          "Condition": "PLAYER_HAS_MAIL Host {{ModId}}.IridiumJournalComplete"
+        }
+      },
+      "When": {
+        "EnableClintUpgrades": "true",
+        "ImmersiveProgression": "true",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Line Sprinkler Upgrade to Clint's Shop (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Blacksmith", "Items" ],
+      "Entries": {
+        "{{ModId}}.IridiumLineSprinklerUpgrade": {
+          "Id": "{{ModId}}.IridiumLineSprinklerUpgrade",
+          "ItemId": "rtrox.LineSprinklersRedux_IridiumLineSprinkler",
+          "Price": "{{IridiumSprinklerUpgradeCost}}",
+          "TradeItemId": "rtrox.LineSprinklersRedux_QualityLineSprinkler",
+          "TradeItemAmount": 1
+        }
+      },
+      "When": {
+        "EnableClintUpgrades": "true",
+        "ImmersiveProgression": "false",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+        
+    // ===== LINE SPRINKLER VISUAL ASSETS =====
+    {
+      "LogName": "JJ Basic Line Sprinkler Visual Assets",
+      "Action": "EditImage",
+      "Target": "Mods/rtrox.LineSprinklersRedux/Objects",
+      "FromFile": "assets/spritesheets/{{BasicSprinklerStyle}}.png",
+      "FromArea": { "X": 16, "Y": 16, "Width": 64, "Height": 16 },
+      "ToArea": { "X": 0, "Y": 16, "Width": 64, "Height": 16 },
+      "When": { 
+        "BasicSprinklerStyle": "aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Quality Line Sprinkler Visual Assets",
+      "Action": "EditImage", 
+      "Target": "Mods/rtrox.LineSprinklersRedux/Objects",
+      "FromFile": "assets/spritesheets/{{QualitySprinklerStyle}}.png",
+      "FromArea": { "X": 0, "Y": 32, "Width": 64, "Height": 16 },
+      "ToArea": { "X": 0, "Y": 48, "Width": 64, "Height": 16 },
+      "When": { 
+        "QualitySprinklerStyle": "aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Iridium Line Sprinkler Visual Assets",
+      "Action": "EditImage",
+      "Target": "Mods/rtrox.LineSprinklersRedux/Objects", 
+      "FromFile": "assets/spritesheets/{{IridiumSprinklerStyle}}.png",
+      "FromArea": { "X": 64, "Y": 32, "Width": 64, "Height": 16 },
+      "ToArea": { "X": 0, "Y": 80, "Width": 64, "Height": 16 },
+      "When": { 
+        "IridiumSprinklerStyle": "aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+        
+    // ===== LINE SPRINKLER DECORATIVE OVERLAYS =====
+    {
+      "LogName": "JJ Quality Line Sprinkler Decorative Overlay",
+      "Action": "EditImage",
+      "Target": "Mods/rtrox.LineSprinklersRedux/Objects",
+      "FromFile": "assets/spritesheets/{{QualitySprinklerDecoStyle}}.png",
+      "FromArea": { "X": 0, "Y": 48, "Width": 64, "Height": 16 },
+      "ToArea": { "X": 0, "Y": 48, "Width": 64, "Height": 16 },
+      "PatchMode": "Overlay",
+      "Priority": "Default + 1",
+      "When": { 
+        "QualitySprinklerDecoStyle": "aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Iridium Line Sprinkler Decorative Overlay",
+      "Action": "EditImage",
+      "Target": "Mods/rtrox.LineSprinklersRedux/Objects",
+      "FromFile": "assets/spritesheets/{{IridiumSprinklerDecoStyle}}.png",
+      "FromArea": { "X": 64, "Y": 48, "Width": 64, "Height": 16 },
+      "ToArea": { "X": 0, "Y": 80, "Width": 64, "Height": 16 },
+      "PatchMode": "Overlay",
+      "Priority": "Default + 1",
+      "When": { 
+        "IridiumSprinklerDecoStyle": "aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+        
+    // ===== PRESSURE NOZZLE DIRECTION OVERLAYS =====
+    {
+      "LogName": "JJ Pressure Nozzle Right Overlay",
+      "Action": "EditImage",
+      "Target": "Mods/rtrox.LineSprinklersRedux/Overlays",
+      "FromFile": "assets/spritesheets/{{PressureNozzleStyle}}.png",
+      "FromArea": { "X": 0, "Y": 64, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+      "PatchMode": "Overlay",
+      "Priority": "Default + 1",
+      "When": { 
+        "PressureNozzleStyle": "aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Pressure Nozzle Down Overlay",
+      "Action": "EditImage",
+      "Target": "Mods/rtrox.LineSprinklersRedux/Overlays",
+      "FromFile": "assets/spritesheets/{{PressureNozzleStyle}}.png",
+      "FromArea": { "X": 16, "Y": 64, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 16, "Y": 0, "Width": 16, "Height": 16 },
+      "PatchMode": "Overlay",
+      "Priority": "Default + 1",
+      "When": { 
+        "PressureNozzleStyle": "aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Pressure Nozzle Left Overlay",
+      "Action": "EditImage",
+      "Target": "Mods/rtrox.LineSprinklersRedux/Overlays",
+      "FromFile": "assets/spritesheets/{{PressureNozzleStyle}}.png",
+      "FromArea": { "X": 32, "Y": 64, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 32, "Y": 0, "Width": 16, "Height": 16 },
+      "PatchMode": "Overlay",
+      "Priority": "Default + 1",
+      "When": { 
+        "PressureNozzleStyle": "aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    },
+    {
+      "LogName": "JJ Pressure Nozzle Up Overlay",
+      "Action": "EditImage",
+      "Target": "Mods/rtrox.LineSprinklersRedux/Overlays",
+      "FromFile": "assets/spritesheets/{{PressureNozzleStyle}}.png",
+      "FromArea": { "X": 48, "Y": 64, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 48, "Y": 0, "Width": 16, "Height": 16 },
+      "PatchMode": "Overlay",
+      "Priority": "Default + 1",
+      "When": { 
+        "PressureNozzleStyle": "aged, ancient, barn, blueberry, brushed, bug, cabbage, chill, copper, crocus, frozen, garlic, ghost, gold, grimace, ice, iridium, iron, kale, lavender, melon, mermaid, plum, prism, radioactive, salmon, spangle, tulip",
+        "HasMod": "rtrox.LineSprinklersRedux"
+      }
+    }
+  ]
+}

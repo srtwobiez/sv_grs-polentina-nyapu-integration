@@ -1,0 +1,52 @@
+{
+	"Changes": [
+	
+	
+		{
+			"LogName": "Abigail's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Abigail, Portraits/Abigail_Beach, Portraits/Abigail_Winter, Portraits/Abigail_Summer, Portraits/Abigail_Fall, Portraits/Abigail_Winter_Outdoor, Portraits/Abigail_Winter_Indoor, Portraits/Abigail_FlowerDance, Portraits/Abigail_SpiritsEve, Portraits/Abigail_EggF, Portraits/Abigail_Fair, Portraits/Abigail_Jellies, Portraits/Abigail_Luau, Portraits/Abigail_Winter_WinterStar",
+			"FromFile": "assets/Portraits/Abigail/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Abigail's Sprite Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/Abigail_Summer, Characters/Abigail_Winter_Outdoor, Characters/Abigail_Winter_Indoor",
+			"FromFile": "assets/Characters/Abigail/{{TargetWithoutPath}}.png"
+		},		
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Abigail Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Abigail", "Appearance"],
+			"Fields": {
+				"Poltergeister.SeasonalCuteCharacters.AbigailSpring": {
+					"Portrait": "Portraits/Abigail",
+				},				
+				"Poltergeister.SeasonalCuteCharacters.AbigailIceFestival": {
+					"Portrait": "Portraits/Abigail_Winter",
+				},	
+			},
+		},	
+// MISCELLANEOUS		
+		{
+            "LogName": "Abigail Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Portraits/Abigail, Characters/Abigail",
+            "FromFile": "assets/{{TargetPathOnly}}/Abigail/Abigail_Winter_Outdoor.png",
+			"When": {"Season": "winter"}
+        },	
+		{
+            "LogName": "Abigail Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Portraits/Abigail, Characters/Abigail",
+            "FromFile": "assets/{{TargetPathOnly}}Characters/Abigail/Abigail_Summer.png",
+			"When": {"Season": "summer"}
+        },				
+	]
+}

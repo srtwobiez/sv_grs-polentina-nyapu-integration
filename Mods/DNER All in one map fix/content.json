@@ -1,0 +1,425 @@
+{
+    "Format": "2.0",
+    "Changes": [
+        //GINGER
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_island",
+            "FromFile": "WorldMaps/ginger.png",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart"
+		},
+        //SVE main
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map",
+            "FromFile": "WorldMaps/SVE/spring_SVE.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 0, "Width": 300, "Height": 424 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Summer",
+            "FromFile": "WorldMaps/SVE/summer_SVE.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 0, "Width": 300, "Height": 424 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Fall",
+            "FromFile": "WorldMaps/SVE/fall_SVE.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 0, "Width": 300, "Height": 424 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Winter",
+            "FromFile": "WorldMaps/SVE/winter_SVE.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 0, "Width": 300, "Height": 424 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        //SVE meadowlands
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Farm_ranching_map",
+            "FromFile": "WorldMaps/SVE/spring_Meadow.png",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Farm_ranching_map_Summer",
+            "FromFile": "WorldMaps/SVE/summer_Meadow.png",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Farm_ranching_map_Fall",
+            "FromFile": "WorldMaps/SVE/fall_Meadow.png",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Farm_ranching_map_Winter",
+            "FromFile": "WorldMaps/SVE/winter_Meadow.png",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        //SVE joja
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map",
+            "FromFile": "WorldMaps/SVE/spring_Joja.png",
+			"ToArea": { "X": 84, "Y": 14, "Width": 189, "Height": 117 },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "FlashShifter.SVECode",
+				"HasSeenEvent": "5553210"
+			}
+		},
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Summer",
+            "FromFile": "WorldMaps/SVE/summer_Joja.png",
+			"ToArea": { "X": 84, "Y": 14, "Width": 189, "Height": 117 },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "FlashShifter.SVECode",
+				"HasSeenEvent": "5553210"
+			}
+		},
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Fall",
+            "FromFile": "WorldMaps/SVE/fall_Joja.png",
+			"ToArea": { "X": 84, "Y": 14, "Width": 189, "Height": 117 },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "FlashShifter.SVECode",
+				"HasSeenEvent": "5553210"
+			}
+		},
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Winter",
+            "FromFile": "WorldMaps/SVE/winter_Joja.png",
+			"ToArea": { "X": 84, "Y": 14, "Width": 189, "Height": 117 },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "FlashShifter.SVECode",
+				"HasSeenEvent": "5553210"
+			}
+		},
+        //SVE badlands
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/CrimsonBadlands",
+            "FromFile": "WorldMaps/SVE/Badlands.png",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Galdora_CrimsonBadlands",
+            "FromFile": "WorldMaps/SVE/GaldoraBadlands.png",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        //SVE highlands
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/{{Season}}_Highlands",
+            "FromFile": "WorldMaps/SVE/{{Season}}_Highlands.png",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "FlashShifter.SVECode"
+			}
+		},
+        //SVE grampleton
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/{{Season}}_GrampletonSuburbs",
+            "FromFile": "WorldMaps/SVE/{{Season}}_GrampletonSub.png",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "FlashShifter.SVECode"
+			}
+		},
+        //SVE fable
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/FableReef",
+            "FromFile": "WorldMaps/SVE/Fable.png",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "FlashShifter.SVECode"
+			}
+		},
+        //GRAMPLETON
+        {
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/{{Season}}_Grampletonfields",
+			"FromFile": "WorldMaps/SVE-G/{{Season}}_Grampleton.png",
+			"Patchmode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "flashshifter.GrampletonFields"
+			}
+		},
+        //IF2R
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map",
+            "FromFile": "WorldMaps/SVE-IF2R/spring_IF2R_map.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 43, "Width": 142, "Height": 61 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "flashshifter.immersivefarm2remastered",
+                "FarmType": "Standard"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Summer",
+            "FromFile": "WorldMaps/SVE-IF2R/summer_IF2R_map.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 43, "Width": 142, "Height": 61 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "flashshifter.immersivefarm2remastered",
+                "FarmType": "Standard"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Fall",
+            "FromFile": "WorldMaps/SVE-IF2R/fall_IF2R_map.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 43, "Width": 142, "Height": 61 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "flashshifter.immersivefarm2remastered",
+                "FarmType": "Standard"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Winter",
+            "FromFile": "WorldMaps/SVE-IF2R/winter_IF2R_map.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 43, "Width": 142, "Height": 61 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "flashshifter.immersivefarm2remastered",
+                "FarmType": "Standard"
+            }
+        },
+        //GF
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map",
+            "FromFile": "WorldMaps/SVE-GF/spring_gf_map.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 43, "Width": 142, "Height": 61 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "flashshifter.GrandpasFarm",
+                "FarmType": "Standard"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Summer",
+            "FromFile": "WorldMaps/SVE-GF/summer_gf_map.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 43, "Width": 142, "Height": 61 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "flashshifter.GrandpasFarm",
+                "FarmType": "Standard"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Fall",
+            "FromFile": "WorldMaps/SVE-GF/fall_gf_map.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 43, "Width": 142, "Height": 61 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "flashshifter.GrandpasFarm",
+                "FarmType": "Standard"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Winter",
+            "FromFile": "WorldMaps/SVE-GF/winter_gf_map.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 43, "Width": 142, "Height": 61 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "flashshifter.GrandpasFarm",
+                "FarmType": "Standard"
+            }
+        },
+        //FRONTIER
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map",
+            "FromFile": "WorldMaps/SVE-F/spring_Frontier.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 44, "Width": 137, "Height": 60 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "flashshifter.FrontierFarm",
+                "FarmType": "FrontierFarm"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Summer",
+            "FromFile": "WorldMaps/SVE-F/summer_Frontier.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 44, "Width": 137, "Height": 60 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "flashshifter.FrontierFarm",
+                "FarmType": "FrontierFarm"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Fall",
+            "FromFile": "WorldMaps/SVE-F/fall_Frontier.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 44, "Width": 137, "Height": 60 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "flashshifter.FrontierFarm",
+                "FarmType": "FrontierFarm"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_Winter",
+            "FromFile": "WorldMaps/SVE-F/winter_Frontier.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 44, "Width": 137, "Height": 60 },
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasMod": "flashshifter.FrontierFarm",
+                "FarmType": "FrontierFarm"
+            }
+        },
+        //ES
+        {
+			"Action": "EditImage",
+			"Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+			"FromFile": "WorldMaps/ES/{{season}}_ES_SVE.png",
+			"PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "LemurKat.EastScarpe.CP",
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+        {
+			"Action": "EditImage",
+			"Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+			"FromFile": "WorldMaps/ES/{{season}}_ES.png",
+			"PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "LemurKat.EastScarpe.CP",
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+        //RSV
+        {
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVIcon",
+			"FromFile": "WorldMaps/RSV/RSVIcon_{{season}}.png",
+			"PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP"
+			}
+		},
+        {
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVWorldMap",
+			"FromFile": "WorldMaps/RSV/RSV_{{season}}.png",
+			"PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP"
+			}
+		},
+        //DZ
+        {
+			"Action": "EditImage",
+			"Target": "LooseSprites/ZuzuMap",
+			"FromFile": "WorldMaps/DZ/DZ_{{season}}.png",
+			"PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP"
+			}
+		},
+        {
+			"Action": "EditImage",
+			"Target": "LooseSprites/KahunaMap",
+			"FromFile": "WorldMaps/DZ/Kahuna.png",
+			"PatchMode": "Overlay",
+            "Update": "OnLocationChange, OnDayStart",
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP"
+			}
+		}
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "Bigger On The Inside",
+  "Author": "JennaJuffuffles",
+  "Version": "1.0.0",
+  "Description": "Vanilla-style exteriors for SVE premium buildings, plus you can upgrade without changing the footprint.",
+  "UniqueID": "JennaJuffuffles.BiggerOnTheInside.CP",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "2.8.1"
+  },
+  "UpdateKeys": ["Nexus:43940"],
+  "Dependencies": [
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+      "IsRequired": true
+    }
+  ]
+}

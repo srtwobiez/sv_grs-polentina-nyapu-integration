@@ -1,0 +1,21 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "mushymato.PortraitsForAll",
+  "Name": "PortraitsForAll",
+  "Author": "mushymato",
+  "Version": "1.2.3",
+  "Description": "Portraits for all message boxes.",
+  "MinimumApiVersion": "4.3.2",
+  "MinimumGameVersion": "1.6.15",
+  "EntryDll": "PortraitsForAll.dll",
+  "UpdateKeys": [
+    "GitHub:Mushymato/PortraitsForAll"
+  ]
+}

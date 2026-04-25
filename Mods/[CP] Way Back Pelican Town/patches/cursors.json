@@ -1,0 +1,227 @@
+{
+  "Changes": [
+    // ========== cursors beach ==========
+  {
+    "LogName": "WBPT Elliotts Boat",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 461, "Y": 1843, "Width": 64, "Height": 51 },
+    "ToArea": { "X": 461, "Y": 1843, "Width": 64, "Height": 51 }
+  },
+    // ========== cursors bus stop ==========
+  {
+    "LogName": "WBPT Bus Broken",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/2_{{season}}_Cursors.png",
+    "FromArea": { "X": 288, "Y": 1247, "Width": 128, "Height": 64 },
+    "ToArea": { "X": 288, "Y": 1247, "Width": 128, "Height": 64 },
+    "When": { "BusChanged": true }
+  },
+  {
+    "LogName": "WBPT Bus Fixed",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 288, "Y": 1247, "Width": 128, "Height": 64 },
+    "ToArea": { "X": 288, "Y": 1247, "Width": 128, "Height": 64 },
+    "When": { "HasFlag: anyPlayer |contains=ccVault, jojaVault": true, "BusChanged": true }
+  },
+  {
+    "LogName": "WBPT Bus Anim Broken",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/2_{{season}}_Cursors.png",
+    "FromArea": { "X": 288, "Y": 1311, "Width": 96, "Height": 38 },
+    "ToArea": { "X": 288, "Y": 1311, "Width": 96, "Height": 38 },
+    "When": { "BusChanged": true }
+  },
+  {
+    "LogName": "WBPT Bus Anim Fixed",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 288, "Y": 1311, "Width": 96, "Height": 38 },
+    "ToArea": { "X": 288, "Y": 1311, "Width": 96, "Height": 38 },
+    "When": { "HasFlag: anyPlayer |contains=ccVault, jojaVault": true, "BusChanged": true }
+  },
+  {
+    "LogName": "WBPT Bus Pam",
+    "Action": "EditImage",
+    "PatchMode": "Overlay",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 384, "Y": 1311, "Width": 15, "Height": 19 },
+    "ToArea": { "X": 384, "Y": 1311, "Width": 15, "Height": 19 },
+    "When": { "BusChanged": true }
+  },
+    // ========== cursors cindersap ==========
+  {
+    "LogName": "WBPT Mouse Open",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 605, "Y": 1958, "Width": 58, "Height": 31 },
+    "ToArea": { "X": 605, "Y": 1958, "Width": 58, "Height": 31 }
+  },
+  {
+    "LogName": "WBPT Traveling Merchant Cart",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 142, "Y": 1382, "Width": 109, "Height": 70 },
+    "ToArea": { "X": 142, "Y": 1382, "Width": 109, "Height": 70 }
+  },
+  {
+    "LogName": "WBPT Traveling Merchant Boar And Anim",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 51, "Y": 1421, "Width": 91, "Height": 28 },
+    "ToArea": { "X": 51, "Y": 1421, "Width": 91, "Height": 28 }
+  },
+  {
+    "LogName": "WBPT Merchants Barrels",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 72, "Y": 1961, "Width": 113, "Height": 23 },
+    "ToArea": { "X": 72, "Y": 1961, "Width": 113, "Height": 23 }
+  },
+    // ========== cursors mountain ==========
+  {
+    "LogName": "WBPT Sebastians Bike",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 276, "Y": 1843, "Width": 48, "Height": 42 },
+    "ToArea": { "X": 276, "Y": 1843, "Width": 48, "Height": 42 }
+  },
+    // ========== cursors town ==========
+  {
+    "LogName": "WBPT Wedding Arches Base",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/base/wedding arch/{{WeddingArchOption}}.png",
+    "FromArea": { "X": 0, "Y": 0, "Width": 111, "Height": 79 },
+    "ToArea": { "X": 527, "Y": 1196, "Width": 111, "Height": 79 },
+    "When": { "WeddingArchOption |contains=1, 2, 3, 4": true }
+  },
+  {
+    "LogName": "WBPT Wedding Arches Recolor",
+    "Action": "EditImage",
+    "PatchMode": "Overlay",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/wedding arch/{{WeddingArchOption}}_{{season}}.png",
+    "FromArea": { "X": 0, "Y": 0, "Width": 111, "Height": 79 },
+    "ToArea": { "X": 527, "Y": 1196, "Width": 111, "Height": 79 },
+    "When": { "WeddingArchOption |contains=1, 2, 3": true }
+  },
+  {
+    "LogName": "WBPT Wheel Minigame",
+    "Action": "EditImage",
+    "PatchMode": "Overlay",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/base/Cursors.png",
+    "FromArea": { "X": 0, "Y": 0, "Width": 168, "Height": 112 },
+    "ToArea": { "X": 120, "Y": 1184, "Width": 168, "Height": 112 }
+  },
+  {
+    "LogName": "WBPT Pipe Anim Voiding",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 304, "Y": 256, "Width": 20, "Height": 18 },
+    "ToArea": { "X": 304, "Y": 256, "Width": 20, "Height": 18 }
+  },
+  {
+    "LogName": "WBPT Pipe Anim Voiding 2",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 643, "Y": 1305, "Width": 20, "Height": 18 },
+    "ToArea": { "X": 643, "Y": 1305, "Width": 20, "Height": 18 }
+  },
+  {
+    "LogName": "WBPT Furnace Doors Voiding",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 302, "Y": 1946, "Width": 15, "Height": 16 },
+    "ToArea": { "X": 302, "Y": 1946, "Width": 15, "Height": 16 }
+  },
+  {
+    "LogName": "WBPT Joja Mart Community Center",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/2_{{season}}_Town.png",
+    "FromArea": { "X": 201, "Y": 699, "Width": 174, "Height": 101 },
+    "ToArea": { "X": 424, "Y": 1275, "Width": 174, "Height": 101 },
+    "When": { "HasFlag: anyPlayer |contains=jojaMember": true }
+  },
+  {
+    "LogName": "WBPT Joja Mart Community Center Winter Roof",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/2_{{season}}_Town.png",
+    "FromArea": { "X": 201, "Y": 699, "Width": 174, "Height": 25 },
+    "ToArea": { "X": 66, "Y": 1678, "Width": 174, "Height": 25 },
+    "When": { "HasFlag: anyPlayer |contains=jojaMember": true, "Season": "winter" }
+  },
+  {
+    "LogName": "WBPT Dusty Shadow",
+    "Action": "EditImage",
+    "PatchMode": "Overlay",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_Cursors.png",
+    "FromArea": { "X": 324, "Y": 1916, "Width": 72, "Height": 40 },
+    "ToArea": { "X": 324, "Y": 1916, "Width": 72, "Height": 40 }
+  },
+    // ========== cursors 2 ==========
+  {
+    "LogName": "WBPT Bus Front",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors2",
+    "FromFile": "assets/base/{{season}}_Cursors2.png",
+    "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 41 },
+    "ToArea": { "X": 0, "Y": 0, "Width": 21, "Height": 41 },
+    "When": { "season |contains=spring, summer, fall": true, "BusChanged": true }
+  },
+  {
+    "LogName": "WBPT Bus Front Winter",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors2",
+    "FromFile": "assets/{{recolor}}/winter_Cursors2.png",
+    "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 41 },
+    "ToArea": { "X": 0, "Y": 0, "Width": 21, "Height": 41 },
+    "When": { "Season": "winter", "BusChanged": true }
+  },
+  {
+    "LogName": "WBPT Trashcans",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors2",
+    "FromFile": "assets/base/{{season}}_Cursors2.png",
+    "FromArea": { "X": 21, "Y": 0, "Width": 68, "Height": 31 },
+    "ToArea": { "X": 21, "Y": 0, "Width": 68, "Height": 31 },
+    "When": { "season |contains=spring, summer, fall": true }
+  },
+  {
+    "LogName": "WBPT Trashcans",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors2",
+    "FromFile": "assets/{{recolor}}/winter_Cursors2.png",
+    "FromArea": { "X": 21, "Y": 0, "Width": 68, "Height": 31 },
+    "ToArea": { "X": 21, "Y": 0, "Width": 68, "Height": 31 },
+    "When": { "Season": "winter" }
+  },
+  {
+    "LogName": "WBPT Turtles",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors2",
+    "FromFile": "assets/base/summer_Cursors2.png",
+    "FromArea": { "X": 152, "Y": 94, "Width": 104, "Height": 53 },
+    "ToArea": { "X": 152, "Y": 94, "Width": 104, "Height": 53 }
+  }
+  ]
+}

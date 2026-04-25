@@ -1,0 +1,64 @@
+{
+    "Name": "Chloe_Halloween_hair3",
+    "FrontHair": {
+        "DisableGrayscale": false,
+        "StartingPosition": {
+            "X": 0,
+            "Y": 0
+        },
+        "HeadPosition": {
+            "X": 3,
+            "Y": 0
+        },
+        "HairSize": {
+            "Width": 22,
+            "Length": 32
+        }
+    },
+    "RightHair": {
+        "DisableGrayscale": false,
+        "StartingPosition": {
+            "X": 0,
+            "Y": 32
+        },
+        "HeadPosition": {
+            "X": 3,
+            "Y": 1
+        },
+        "HairSize": {
+            "Width": 22,
+            "Length": 32
+        }
+    },
+    "LeftHair": {
+        "Flipped": true,
+        "DisableGrayscale": false,
+        "StartingPosition": {
+            "X": 0,
+            "Y": 32
+        },
+        "HeadPosition": {
+            "X": 3,
+            "Y": 1
+        },
+        "HairSize": {
+            "Width": 22,
+            "Length": 32
+        }
+    },
+    "BackHair": {
+        "DisableGrayscale": false,
+        "StartingPosition": {
+            "X": 0,
+            "Y": 64
+        },
+        "HeadPosition": {
+            "X": 3,
+            "Y": -1
+        },
+        "HairSize": {
+            "Width": 22,
+            "Length": 32
+        }
+    }
+}

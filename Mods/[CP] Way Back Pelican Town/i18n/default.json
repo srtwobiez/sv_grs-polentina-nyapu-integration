@@ -1,0 +1,62 @@
+{
+	"config.section.Recolor.name": "Recolor",
+	"config.section.Recolor.description": "Options for recolor and fall foliage color.",
+	"config.section.Options.name": "Options",
+	"config.section.Options.description": "Map and festival options.",
+	
+	// Translation note: Original entries were numeric only. Changed to use the text from description alongside numeric values that still match the visual references for clarity.
+	"config.SetFallColor.name": "Fall color",
+	"config.SetFallColor.description": "Fall color for paths.",
+	"config.SetFallColor.values.Green": "Green (1)",
+	"config.SetFallColor.values.Orange": "Orange (2)",
+
+	// Translation note: This key was 'Overwrite' in the original mod
+	"config.RecolorOverride.name": "Recolor override",
+	"config.RecolorOverride.description": "Auto detects your recolor mod, or pick a palette to use.",
+	"config.RecolorOverride.values.Auto": "Auto",
+	"config.RecolorOverride.values.Vanilla": "Vanilla",
+	"config.RecolorOverride.values.DNEarthyRecolour": "DNEarthyRecolour",
+	"config.RecolorOverride.values.Eemie": "Eemie",
+	"config.RecolorOverride.values.FoliageRedone": "Foliage Redone",
+	"config.RecolorOverride.values.Starblue": "Starblue",
+	"config.RecolorOverride.values.VibrantPastoral": "Vibrant Pastoral",
+	"config.RecolorOverride.values.WittilyNamed": "Wittily Named",
+
+	"config.PlaygroundOption.name": "Playground",
+	"config.PlaygroundOption.description": "Retexture of the playground area next to CC.",
+	"config.PlaygroundOption.values.playground": "Playground",
+	"config.PlaygroundOption.values.clothesline with well": "Clothesline with well",
+
+	"config.FencesOption.name": "Fences",
+	"config.FencesOption.description": "Retexture of the static map fences.",
+	"config.FencesOption.values.stone": "Stone",
+	"config.FencesOption.values.wood": "Wood",
+
+	"config.SetLuauMusicPlayer.name": "Luau music",
+	"config.SetLuauMusicPlayer.description": "Luau music style.",
+	"config.SetLuauMusicPlayer.values.record player": "Record player (1)",
+	"config.SetLuauMusicPlayer.values.junimos drummers": "Junimos drummers (2)",
+
+	"config.SetWeddingArchOption.name": "Wedding arch",
+	"config.SetWeddingArchOption.description": "Wedding arch style.",
+	"config.SetWeddingArchOption.values.cottagecore": "Cottagecore (1)",
+	"config.SetWeddingArchOption.values.sunflowers": "Sunflowers (2)",
+	"config.SetWeddingArchOption.values.curtain": "Curtain (3)",
+	"config.SetWeddingArchOption.values.boho": "Boho (4)",
+	"config.SetWeddingArchOption.values.off": "Off",
+
+	"config.GrangeDisplayDecor.name": "Grange display decor",
+	"config.GrangeDisplayDecor.description": "Additional decor on your SDV Fair grange display.",
+
+	"config.JojaChanged.name": "Joja",
+	"config.JojaChanged.description": "Disable if you don't want Joja to look like the castle.",
+
+	"config.BusChanged.name": "Bus",
+	"config.BusChanged.description": "Disable if you don't want the bus retextured.",
+
+	"config.TrashCanHat.name": "Trash can hat",
+	"config.TrashCanHat.description": "Retexture the trash can hat.",
+
+	"config.TotemsEnabled.name": "Totem statues",
+	"config.TotemsEnabled.description": "Disable if you don't want totem statues to be retextures"
+}

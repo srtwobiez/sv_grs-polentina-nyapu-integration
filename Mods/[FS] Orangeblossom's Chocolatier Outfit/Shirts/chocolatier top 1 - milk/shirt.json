@@ -1,0 +1,79 @@
+{
+  "Name": "Chocolatier Top 1 - Milk",
+  "FrontShirt": {
+    "SleeveColors": [
+      [ 102, 50, 23 ],
+	  [ 122, 63, 30 ],
+	  [ 173, 97, 52 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+    "SleeveColors": [
+      [ 102, 50, 23 ],
+	  [ 122, 63, 30 ],
+	  [ 173, 97, 52 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+    "SleeveColors": [
+       [ 102, 50, 23 ],
+	  [ 122, 63, 30 ],
+	  [ 173, 97, 52 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+    "SleeveColors": [
+      [ 102, 50, 23 ],
+	  [ 122, 63, 30 ],
+	  [ 173, 97, 52 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

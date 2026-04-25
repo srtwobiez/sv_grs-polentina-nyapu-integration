@@ -1,0 +1,19 @@
+{
+  "Name": "Cuter Slimes Refreshed",
+  "Author": "Amaryn & JennaJuffuffles",
+  "Version": "1.2.5",
+  "MinimumApiVersion": "4.1.10",
+  "Description": "A reskin of the slimes, refreshed for SDV 1.6.",
+  "UniqueID": "jennajuffuffles.CuterSlimesRefreshed",
+  "UpdateKeys": ["Nexus:21889"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "2.8.1"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "mushymato.MonsterVariety",
+      "IsRequired": false
+    }
+  ]
+}

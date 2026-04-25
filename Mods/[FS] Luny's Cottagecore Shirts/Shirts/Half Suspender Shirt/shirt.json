@@ -1,0 +1,123 @@
+{
+"Name": "Half Suspender Shirt",
+  "FrontShirt": {
+        "ColorMaskLayers": [
+      {
+        "Name": "Shirt",
+        "Values": [
+                      [ 125, 125, 125 ],
+                      [ 183, 183, 183 ],
+                      [ 246, 246, 246 ],
+        ]
+      },
+      {
+        "Name": "Suspenders",
+        "Values": [
+                      [ 217, 217, 217 ]
+        ]
+      }
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 10,
+      "Length": 11
+    }
+  },
+  "RightShirt": {
+        "ColorMaskLayers": [
+      {
+        "Name": "Shirt",
+        "Values": [
+                      [ 125, 125, 125 ],
+                      [ 183, 183, 183 ],
+                      [ 246, 246, 246 ],
+        ]
+      },
+      {
+        "Name": "Suspenders",
+        "Values": [
+                      [ 217, 217, 217 ]
+        ]
+      }
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 11
+    },
+    "BodyPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 10,
+      "Length": 11
+    }
+  },
+  "LeftShirt": {
+        "ColorMaskLayers": [
+      {
+        "Name": "Shirt",
+        "Values": [
+                      [ 125, 125, 125 ],
+                      [ 183, 183, 183 ],
+                      [ 246, 246, 246 ],
+        ]
+      },
+      {
+        "Name": "Suspenders",
+        "Values": [
+                      [ 217, 217, 217 ]
+        ]
+      }
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 22
+    },
+    "BodyPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 10,
+      "Length": 11
+    }
+  },
+  "BackShirt": {
+        "ColorMaskLayers": [
+      {
+        "Name": "Shirt",
+        "Values": [
+                      [ 125, 125, 125 ],
+                      [ 183, 183, 183 ],
+                      [ 246, 246, 246 ],
+        ]
+      },
+      {
+        "Name": "Suspenders",
+        "Values": [
+                      [ 217, 217, 217 ]
+        ]
+      }
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 33
+    },
+    "BodyPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 10,
+      "Length": 12
+    }
+  }
+}

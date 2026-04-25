@@ -1,0 +1,76 @@
+{
+	"Name": "Hats.prom.B",
+	"FrontHat": {
+		"DisableGrayscale": true,
+                "DrawOrderOverride":  { 
+                "Preposition":"After",   
+                "AppearanceType":"hair"},  
+		"StartingPosition": {
+			"X": 0,
+			"Y": 0
+		},
+		"HeadPosition": {
+			"X": 6,
+			"Y": -6
+		},
+		"HatSize": {
+			"Width": 32,
+			"Length": 32
+		}
+	},
+	"RightHat": {
+		"DisableGrayscale": true,
+                "DrawOrderOverride":  { 
+                                "Preposition":"After",   
+                                "AppearanceType":"hair"},
+		"StartingPosition": {
+			"X": 0,
+			"Y": 32
+		},
+		"HeadPosition": {
+			"X": 6,
+			"Y": 11
+		},
+		"HatSize": {
+			"Width": 32,
+			"Length": 32
+		}
+	},
+	"LeftHat": {
+		"DisableGrayscale": true,
+                "DrawOrderOverride":  { 
+                                "Preposition":"After",   
+                                "AppearanceType":"hair"},
+                                "Flipped": true,
+		"StartingPosition": {
+			"X": 0,
+			"Y": 32
+		},
+		"HeadPosition": {
+			"X": 6,
+			"Y": 11
+		},
+		"HatSize": {
+			"Width": 32,
+			"Length": 32
+		}
+	},
+	"BackHat": {
+		"DisableGrayscale": true,
+                "DrawOrderOverride":  { 
+                "Preposition":"After",   
+                "AppearanceType":"hair"},  
+		"StartingPosition": {
+			"X": 0,
+			"Y": 64
+		},
+		"HeadPosition": {
+			"X": 6,
+			"Y": 10
+		},
+		"HatSize": {
+			"Width": 32,
+			"Length": 32
+		}
+	}
+}

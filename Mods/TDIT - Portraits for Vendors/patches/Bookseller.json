@@ -1,0 +1,52 @@
+{
+	"Changes":[
+		{
+			"LogName": "Bookseller",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/Bookseller_Default"},
+		},
+		{
+			"LogName": "Bookseller Trade",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "BooksellerTrade", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/Bookseller_Default"},
+		},
+		{
+			"LogName": "Bookseller",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/Bookseller_DefaultWinter"},
+			"When": {
+				"Season": "winter",
+				"BooksellerWinter": true,
+			}	
+		},
+		{
+			"LogName": "Bookseller Trade",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "BooksellerTrade", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/Bookseller_DefaultWinter"},
+			"When": {
+				"Season": "winter",
+				"BooksellerWinter": true,
+			}	
+		},		
+		{	"LogName": "Bookseller Winter",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors_1_6",
+			"FromFile": "assets/LooseSprites/Bookseller_DefaultWinter.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 55, "Y": 475, "Width": 139, "Height": 36 },
+			"Priority": "Late",
+			"When": {
+				"Season": "winter",
+				"BooksellerWinter": true,
+			}	
+        },			
+	],
+}

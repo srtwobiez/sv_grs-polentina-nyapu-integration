@@ -1,0 +1,378 @@
+{
+  // ===== SHOP DATA =====
+  "Changes": [
+    // Clint's Blacksmith sprinkler upgrades
+    {
+      "LogName": "JJ Add Quality Sprinkler Upgrade to Clint's Shop (Quest)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Blacksmith", "Items" ],
+      "Entries": {
+        "{{ModId}}.QualitySprinklerUpgrade": {
+          "Id": "{{ModId}}.QualitySprinklerUpgrade",
+          "ItemId": "(O)621",
+          "Price": "{{QualitySprinklerUpgradeCost}}",
+          "TradeItemId": "(O)599",
+          "TradeItemAmount": 1,
+          "Condition": "PLAYER_HAS_MAIL Host {{ModId}}.QualityJournalComplete"
+        }
+      },
+      "When": {
+        "EnableClintUpgrades": "true",
+        "ImmersiveProgression": "true"
+      }
+    },
+    {
+      "LogName": "JJ Add Quality Sprinkler Upgrade to Clint's Shop (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Blacksmith", "Items" ],
+      "Entries": {
+        "{{ModId}}.QualitySprinklerUpgrade": {
+          "Id": "{{ModId}}.QualitySprinklerUpgrade",
+          "ItemId": "(O)621",
+          "Price": "{{QualitySprinklerUpgradeCost}}",
+          "TradeItemId": "(O)599",
+          "TradeItemAmount": 1
+        }
+      },
+      "When": {
+        "EnableClintUpgrades": "true",
+        "ImmersiveProgression": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Sprinkler Upgrade to Clint's Shop (Quest)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Blacksmith", "Items" ],
+      "Entries": {
+        "{{ModId}}.IridiumSprinklerUpgrade": {
+          "Id": "{{ModId}}.IridiumSprinklerUpgrade",
+          "ItemId": "(O)645",
+          "Price": "{{IridiumSprinklerUpgradeCost}}",
+          "TradeItemId": "(O)621",
+          "TradeItemAmount": 1,
+          "Condition": "PLAYER_HAS_MAIL Host {{ModId}}.IridiumJournalComplete"
+        }
+      },
+      "When": {
+        "EnableClintUpgrades": "true",
+        "ImmersiveProgression": "true"
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Sprinkler Upgrade to Clint's Shop (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Blacksmith", "Items" ],
+      "Entries": {
+        "{{ModId}}.IridiumSprinklerUpgrade": {
+          "Id": "{{ModId}}.IridiumSprinklerUpgrade",
+          "ItemId": "(O)645",
+          "Price": "{{IridiumSprinklerUpgradeCost}}",
+          "TradeItemId": "(O)621",
+          "TradeItemAmount": 1
+        }
+      },
+      "When": {
+        "EnableClintUpgrades": "true",
+        "ImmersiveProgression": "false"
+      }
+    },
+
+    // ===== QI'S WALNUT ROOM SHOP =====
+    {
+      "LogName": "JJ Add Recipes to Qi's Walnut Room Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "QiGemShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_PressureNozzleRecipe": {
+          "Id": "{{ModId}}_PressureNozzleRecipe",
+          "ItemId": "(O)915",
+          "TradeItemId": "(O)858",
+          "TradeItemAmount": "{{PressureNozzleRecipeCost}}",
+          "Price": -1,
+          "Condition": "!PLAYER_HAS_CRAFTING_RECIPE Current Pressure Nozzle",
+          "IsRecipe": true
+        },
+        "{{ModId}}_EnricherRecipe": {
+          "Id": "{{ModId}}_EnricherRecipe",
+          "ItemId": "(O)913",
+          "TradeItemId": "(O)858",
+          "TradeItemAmount": "{{EnricherRecipeCost}}",
+          "Price": -1,
+          "Condition": "!PLAYER_HAS_CRAFTING_RECIPE Current Enricher",
+          "IsRecipe": true
+        }
+      },
+      "When": {
+        "EnableQiShopRecipes": "true"
+      }
+    },
+
+    // ===== PIERRE'S GENERAL STORE - SPRINKLER SALES =====
+    {
+      "LogName": "JJ Add Basic Sprinklers to Pierre's General Store (Immersive)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_BasicSprinkler": {
+          "Id": "{{ModId}}.Basic",
+          "ItemId": "(O)599",
+          "Price": "{{BasicSprinklerPrice}}",
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}.Basic", "BeforeId": "297" }
+      ],
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "HasFlag: hostPlayer |contains= {{ModId}}.PierreBasicSprinklers, {{ModId}}.PierreBasicSprinklersCC": true
+      }
+    },
+    {
+      "LogName": "JJ Add Basic Sprinklers to Pierre's General Store (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_BasicSprinkler": {
+          "Id": "{{ModId}}.Basic",
+          "ItemId": "(O)599",
+          "Price": "{{BasicSprinklerPrice}}"
+        }
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}.Basic", "BeforeId": "297" }
+      ],
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add Quality Sprinklers to Pierre's General Store (Immersive)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_QualitySprinkler": {
+          "Id": "{{ModId}}.Quality",
+          "ItemId": "(O)621",
+          "Price": "{{QualitySprinklerPrice}}",
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}.Quality", "AfterId": "599" }
+      ],
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "HasFlag: hostPlayer |contains= {{ModId}}.PierreQualitySprinklers, {{ModId}}.PierreQualitySprinklersCC": true
+      }
+    },
+    {
+      "LogName": "JJ Add Quality Sprinklers to Pierre's General Store (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_QualitySprinkler": {
+          "Id": "{{ModId}}.Quality",
+          "ItemId": "(O)621",
+          "Price": "{{QualitySprinklerPrice}}"
+        }
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}.Quality", "AfterId": "599" }
+      ],
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Sprinklers to Pierre's General Store (Immersive)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_IridiumSprinkler": {
+          "Id": "{{ModId}}.Iridium",
+          "ItemId": "(O)645",
+          "Price": "{{IridiumSprinklerPrice}}",
+          "IgnoreShopPriceModifiers": true,
+          "Stock": "{{Year}}"
+        }
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}.Iridium", "AfterId": "621" }
+      ],
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "HasFlag: hostPlayer |contains= {{ModId}}.PierreIridiumSprinklers, {{ModId}}.PierreIridiumSprinklersCC": true
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Sprinklers to Pierre's General Store (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "{{ModId}}_IridiumSprinkler": {
+          "Id": "{{ModId}}.Iridium",
+          "ItemId": "(O)645",
+          "Price": "{{IridiumSprinklerPrice}}",
+          "Stock": "{{Year}}"
+        }
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}.Iridium", "AfterId": "621" }
+      ],
+      "When": {
+        "PierreSellsSprinklers": "true",
+        "ImmersiveProgression": "false"
+      }
+    },
+
+    // ===== JOJAMART - SPRINKLER SALES =====
+    {
+      "LogName": "JJ Add Basic Sprinklers to JojaMart (Immersive)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Joja", "Items" ],
+      "Entries": {
+        "JojaMart_BasicSprinkler": {
+          "Id": "JojaMart.Basic",
+          "ItemId": "(O)599",
+          "Price": "{{JojaBasicSprinklerPriceCalculated}}",
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "MoveEntries": [
+        { "Id": "JojaMart.Basic", "BeforeId": "297" }
+      ],
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "HasFlag: hostPlayer |contains= {{ModId}}.JojaBasicSprinklers, {{ModId}}.JojaBasicSprinklersComplete": true
+      }
+    },
+    {
+      "LogName": "JJ Add Basic Sprinklers to JojaMart (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Joja", "Items" ],
+      "Entries": {
+        "JojaMart_BasicSprinkler": {
+          "Id": "JojaMart.Basic",
+          "ItemId": "(O)599",
+          "Price": "{{JojaBasicSprinklerPriceCalculated}}",
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "MoveEntries": [
+        { "Id": "JojaMart.Basic", "BeforeId": "297" }
+      ],
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add Quality Sprinklers to JojaMart (Immersive)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Joja", "Items" ],
+      "Entries": {
+        "JojaMart_QualitySprinkler": {
+          "Id": "JojaMart.Quality",
+          "ItemId": "(O)621",
+          "Price": "{{JojaQualitySprinklerPriceCalculated}}",
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "MoveEntries": [
+        { "Id": "JojaMart.Quality", "AfterId": "599" }
+      ],
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "HasFlag: hostPlayer |contains= {{ModId}}.JojaQualitySprinklers, {{ModId}}.JojaQualitySprinklersComplete": true
+      }
+    },
+    {
+      "LogName": "JJ Add Quality Sprinklers to JojaMart (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Joja", "Items" ],
+      "Entries": {
+        "JojaMart_QualitySprinkler": {
+          "Id": "JojaMart.Quality",
+          "ItemId": "(O)621",
+          "Price": "{{JojaQualitySprinklerPriceCalculated}}",
+          "IgnoreShopPriceModifiers": true
+        }
+      },
+      "MoveEntries": [
+        { "Id": "JojaMart.Quality", "AfterId": "599" }
+      ],
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "false"
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Sprinklers to JojaMart (Immersive)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Joja", "Items" ],
+      "Entries": {
+        "JojaMart_IridiumSprinkler": {
+          "Id": "JojaMart.Iridium",
+          "ItemId": "(O)645",
+          "Price": "{{JojaIridiumSprinklerPriceCalculated}}",
+          "IgnoreShopPriceModifiers": true,
+          "Stock": "{{Year}}"
+        }
+      },
+      "MoveEntries": [
+        { "Id": "JojaMart.Iridium", "AfterId": "621" }
+      ],
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "true",
+        "HasFlag: hostPlayer |contains= {{ModId}}.JojaIridiumSprinklers, {{ModId}}.JojaIridiumSprinklersComplete": true
+      }
+    },
+    {
+      "LogName": "JJ Add Iridium Sprinklers to JojaMart (Automatic)",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Joja", "Items" ],
+      "Entries": {
+        "JojaMart_IridiumSprinkler": {
+          "Id": "JojaMart.Iridium",
+          "ItemId": "(O)645",
+          "Price": "{{JojaIridiumSprinklerPriceCalculated}}",
+          "IgnoreShopPriceModifiers": true,
+          "Stock": "{{Year}}"
+        }
+      },
+      "MoveEntries": [
+        { "Id": "JojaMart.Iridium", "AfterId": "621" }
+      ],
+      "When": {
+        "JojaSellsSprinklers": "true",
+        "ImmersiveProgression": "false"
+      }
+    }
+  ]
+}

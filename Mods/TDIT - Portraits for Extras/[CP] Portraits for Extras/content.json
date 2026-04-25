@@ -1,0 +1,530 @@
+ {
+    "Format": "2.7.0",
+	"DynamicTokens":[		
+		{
+			"Name": "CMCTMarinerGhost",
+			"Value": "{{Spiderbuttons.CMCT/Config: SchrodingersKit.GhostlyMariner,Color}}",
+			"When": {
+				"HasMod |contains=SchrodingersKit.GhostlyMariner": true,
+				"HasMod |contains=Spiderbuttons.CMCT": true,
+			}
+		},	
+		{
+			"Name": "Mariner",
+			"Value": "Default"
+		},		
+		{
+			"Name": "Mariner",
+			"Value": "GhostBlue",
+			"When": {"HasMod |contains=SchrodingersKit.GhostlyMariner": true},		
+		},
+		{
+			"Name": "Mariner",
+			"Value": "GhostGrey",
+			"When": {"CMCTMarinerGhost": "gray"}
+		},
+		{
+			"Name": "TVQoS",
+			"Value": "QoS"
+		},		
+		{
+			"Name": "TVQoS",
+			"Value": "GlamChef",
+			"When": {"HasMod |contains=Airyn.GlamKitchen": true},		
+		},		
+		{
+			"Name": "ESConcession",
+			"Value": "Juliet_theater",
+			"When": {
+				"HasMod |contains=Lemurkat.EastScarpNPCs": true,
+				"HasFlag |contains=ccMovieTheaterJoja": false
+				}
+		},
+		{
+			"Name": "ESConcession",
+			"Value": "MovieConcessionCC_Kevin",
+			"When": {
+				"HasMod |contains=Lemurkat.EastScarpNPCs": true,	
+				"DayOfWeek": "Friday, Saturday, Sunday",
+				"HasFlag |contains=ccMovieTheaterJoja": false
+				}
+		},	
+		{
+			"Name": "ESConcession",
+			"Value": "MovieConcessionCC_Kevin",
+			"When": {
+				"HasMod |contains=Lemurkat.EastScarpNPCs": true,	
+				"DayOfWeek": "Tuesday, Thursday",
+				"spouse": "Juliet",
+				"HasFlag |contains=ccMovieTheaterJoja": false
+				}
+		},	
+		{
+			"Name": "ESConcession",
+			"Value": "MovieConcessionCC_Kevin",
+			"When": {
+				"HasMod |contains=Lemurkat.EastScarpNPCs": true,	
+				"Weather": "rain",
+				"HasFlag |contains=ccMovieTheaterJoja": false
+				}
+		},	
+		{
+			"Name": "SVEConcession",
+			"Value": "Claire",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,	
+				"HasFlag": "ccMovieTheater",
+				"HasSeenEvent": "191393"
+			}
+		},		
+		{
+			"Name": "SVEConcession",
+			"Value": "Martin",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,	
+				"DayOfWeek": "Tuesday, Saturday",
+				"HasFlag": "ccMovieTheater",
+				"HasSeenEvent": "191393"
+			}
+		},	
+		{
+			"Name": "SVEConcession",
+			"Value": "Martin",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,	
+				"Spouse": "Claire",
+				"DayOfWeek": "Friday",
+				"HasFlag": "ccMovieTheater",
+				"HasSeenEvent": "191393"
+			}
+		},
+		{
+			"Name": "SVEConcession",
+			"Value": "Martin",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,	
+				"Spouse": "Claire",
+				"Weather": "Rain, Storm",
+				"HasFlag": "ccMovieTheater",
+				"HasSeenEvent": "191393"
+			}
+		},	
+		{
+			"Name": "SVEConcession",
+			"Value": "Martin",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,	
+				"HasSeenEvent |contains=191393": true,
+				"HasSeenEvent |contains=3219873": true,
+				"HasFlag": "ccMovieTheater",
+				"Day": "22"
+			}
+		},	
+		{
+			"Name": "Duke",
+			"Value": "@",
+		},	
+		{
+			"Name": "Duke",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Shades",
+			"When": {"DisplayName": "Consistent",}
+		},			
+		{
+			"Name": "Duke",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Duke",
+			"When": {"DisplayName": "Named",}
+		},		
+		{
+			"Name": "Amber",
+			"Value": "@",
+		},
+		{
+			"Name": "Amber",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.VioletLady",
+			"When": {"DisplayName": "Consistent",}
+		},			
+		{
+			"Name": "Amber",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Amber",
+			"When": {"DisplayName": "Named",}
+		},		
+		{
+			"Name": "Luca",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.CornerGuy",
+		},		
+		{
+			"Name": "Luca",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Luca",
+			"When": {"DisplayName": "Named",}
+		},		
+		{
+			"Name": "Terrence",
+			"Value": "@",
+		},	
+		{
+			"Name": "Terrence",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.RedCap",
+			"When": {"DisplayName": "Consistent",}
+		},			
+		{
+			"Name": "Terrence",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Terrence",
+			"When": {"DisplayName": "Named",}
+		},		
+		{
+			"Name": "Laura",
+			"Value": "@",
+		},	
+		{
+			"Name": "Laura",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Mother",
+			"When": {"DisplayName": "Consistent",}
+		},			
+		{
+			"Name": "Laura",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Laura",
+			"When": {"DisplayName": "Named",}
+		},		
+		{
+			"Name": "Aaron",
+			"Value": "@",
+		},		
+		{
+			"Name": "Aaron",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Aaron",
+			"When": {"DisplayName": "Named",}
+		},		
+		{
+			"Name": "Mark",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.ConcessionMale",
+		},	
+		{
+			"Name": "Mark",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.PartTimerMale",
+			"When": {"DisplayName": "Consistent",}
+		},			
+		{
+			"Name": "Mark",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Mark",
+			"When": {"DisplayName": "Named",}
+		},		
+		{
+			"Name": "Claire",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.ConcessionFemale",
+		},
+		
+		{
+			"Name": "Claire",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.PartTimerFemale",
+			"When": {"DisplayName": "Consistent",}
+		},			
+		{
+			"Name": "Claire",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Claire",
+			"When": {"DisplayName": "Named",}
+		},		
+		{
+			"Name": "Captain",
+			"Value": "Portraits/Curator @",
+		},
+		
+		{
+			"Name": "Captain",
+			"Value": "🎣 Curator",
+			"When": {
+				"DisplayName |contains=Original": false,
+				"HasMod": "Gervig91.StardewAquariumCP"
+			}
+		},							
+	],
+	"ConfigSchema":
+		{			
+			"Events":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},				
+			"Raccoon":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},
+			"Gourmand":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},				
+			"OldMariner":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},				
+			"Theater":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},
+			"Club":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},
+			"Pirates":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},				
+			"DesertFestival":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},
+			"NightMarket":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},	
+			"TroutDerby":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},	
+			"SquidFest":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},					
+			"SDVFair":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},				
+//			"Television":
+//				{
+//					"AllowValues": "true, false",
+//					"Default": true,
+//					"Section": "PortraitEnable",
+//				},	
+			"Phone":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},	
+			"ShadowGuy":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "PortraitEnable",
+				},					
+			"DisplayName":
+				{
+					"AllowValues": "Original, Consistent, Named",
+					"Default": "Named",
+					"Section": "Misc",
+				},				
+		},
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Portraits/Welwick_Default, Portraits/OldMariner_Default, Portraits/OldMariner_GhostBlue, Portraits/OldMariner_GhostGrey, Portraits/DesertFood_Default, Portraits/ShadyGuy_Default, Portraits/CactusMan_Default, Portraits/DesertTrader_RacerGuy, Portraits/DesertTrader_Scholar, Portraits/EggShop_Default, Portraits/CraneMan_Default, Portraits/PurpleHairLady_Default, Portraits/robot, Portraits/LeahEx, Portraits/Marcello, Portraits/Mother_Default, Portraits/Child_Default, Portraits/RedCapGuy_Default, Portraits/Strongman_Default, Portraits/SlingshotLady_Default, Portraits/StarSeller_Default, Portraits/FishingFair_Default, Portraits/Clown_Default, Portraits/CornerGuy_Default, Portraits/ConcessionMan_Default, Portraits/MovieConcessionCC_Default, Portraits/MovieConcessionCC_Kevin, Portraits/MovieConcessionJoja_Default, Portraits/Gourmand_Default, Portraits/DesertTrader_Default, Portraits/ShroudedFigure_Default, Portraits/PainterLupini_Default, Portraits/ShadowGuy_Default, Portraits/Raccoon_Default, Portraits/DefaultMouse, Portraits/Television_GlamChef, Portraits/DealerMale_Default, Portraits/DealerFemale_Default, Portraits/Bartender_Default, Portraits/DrunkPirate_Default, Portraits/GrimPirate_Default, Portraits/GlassesPirate_Default, Portraits/Blackgull_Default, Portraits/DartMan_Default, Portraits/SquidChef_Default, Portraits/MasterFisher_Default, Portraits/Curator",
+            "FromFile": "assets/{{Target}}.png",
+			"Priority": "Low"
+        },	
+        {
+            "Action": "Load",
+            "Target": "Portraits/Gervig91.StardewAquariumCP_SnackVendor",
+            "FromFile": "assets/Portraits/TopHat.png",
+			"Priority": "Low"
+        },		
+		{
+			"LogName": "Strings Load",
+			"Action": "Load",
+			"Target": "Strings/DolphINaF.ExtraPortraits",
+			"FromFile": "patches/blank.json",
+		},
+		{
+			"LogName": "Strings",
+			"Action": "EditData",
+			"Target": "Strings/DolphINaF.ExtraPortraits",
+			"Entries": {
+				"Name.LeahEx": "{{i18n:Name.LeahEx}}",
+				"Name.robot": "{{i18n:Name.robot}}",
+				"Name.Marcello": "{{i18n:Name.Marcello}}",
+				"Name.Lupini": "{{i18n:Name.Lupini}}",   
+				"Name.Simon": "{{i18n:Name.Simon}}",  
+				"Name.QoS": "{{i18n:Name.QoS}}",
+				"Name.GlamChef": "{{i18n:Name.GlamChef}}",
+				"Name.Clown": "{{i18n:Name.Clown}}",
+				"Name.EggShop": "{{i18n:Name.EggShop}}",
+				"Name.RacerGuy": "{{i18n:Name.RacerGuy}}",
+				"Name.Merchant": "{{i18n:Name.Merchant}}",
+				"Name.HatMouse": "{{i18n:Name.HatMouse}}",
+				"Name.DealerMale": "{{i18n:Name.DealerMale}}",
+				"Name.DealerFemale": "{{i18n:Name.DealerFemale}}",
+				"Name.ConcessionFemale": "{{i18n:Name.ConcessionFemale}}",
+				"Name.ConcessionMale": "{{i18n:Name.ConcessionMale}}", 
+				"Name.PartTimerFemale": "{{i18n:Name.PartTimerFemale}}",
+				"Name.PartTimerMale": "{{i18n:Name.PartTimerMale}}",   
+				"Name.CornerGuy": "{{i18n:Name.CornerGuy}}", 
+				"Name.Strongman": "{{i18n:Name.Strongman}}", 
+				"Name.SlingshotLady": "{{i18n:Name.SlingshotLady}}", 
+				"Name.StarSeller": "{{i18n:Name.StarSeller}}", 
+				"Name.FishingFair": "{{i18n:Name.FishingFair}}", 				
+				"Name.Bartender": "{{i18n:Name.Bartender}}",  
+				"Name.DrunkPirate": "{{i18n:Name.DrunkPirate}}",
+				"Name.GlassesPirate": "{{i18n:Name.GlassesPirate}}",
+				"Name.GrimPirate": "{{i18n:Name.GrimPirate}}",
+				"Name.Blackgull": "{{i18n:Name.Blackgull}}",
+				"Name.DartMan": "{{i18n:Name.DartMan}}",
+				"Name.MasterFisher": "{{i18n:Name.MasterFisher}}",
+				"Name.Shades": "{{i18n:Name.Shades}}",
+				"Name.VioletLady": "{{i18n:Name.VioletLady}}",
+				"Name.RedCap": "{{i18n:Name.RedCap}}",
+				"Name.Mother": "{{i18n:Name.Mother}}",
+				"Name.Claire": "{{i18n:Name.Claire}}",
+				"Name.Mark": "{{i18n:Name.Mark}}",
+				"Name.Duke": "{{i18n:Name.Duke}}",
+				"Name.Amber": "{{i18n:Name.Amber}}",
+				"Name.Luca": "{{i18n:Name.Luca}}",
+				"Name.Terrence": "{{i18n:Name.Terrence}}",
+				"Name.Laura": "{{i18n:Name.Laura}}",
+				"Name.Aaron": "{{i18n:Name.Aaron}}",
+				"Name.Juliet_theater": "{{i18n:Name.Juliet_theater}}",
+				"Name.MovieConcessionCC_Kevin": "{{i18n:Name.MovieConcessionCC_Kevin}}",  
+				"Name.TopHat": "{{i18n:Name.TopHat}}",
+				"Name.Submariner": "{{i18n:Name.Submariner}}",
+				"Event.Kel.01": "{{i18n:Event.Kel.01}}",
+				"Event.Kel.02": "{{i18n:Event.Kel.02}}",
+				"Event.Kel.03": "{{i18n:Event.Kel.03}}",
+				"Event.Kel.04": "{{i18n:Event.Kel.04}}",
+				"Event.Kel.05": "{{i18n:Event.Kel.05}}",
+				"Event.Kel.06": "{{i18n:Event.Kel.06}}",
+				"Event.Kel.07": "{{i18n:Event.Kel.07}}",
+				"Event.Kel.08": "{{i18n:Event.Kel.08}}",
+				"Event.Kel.09": "{{i18n:Event.Kel.09}}",
+				"Event.Kel.10": "{{i18n:Event.Kel.10}}",				
+				"Event.Marcello.01": "{{i18n:Event.Marcello.01}}",
+				"Event.Marcello.02": "{{i18n:Event.Marcello.02}}",
+				"Event.Marcello.03": "{{i18n:Event.Marcello.03}}",
+				"Event.MarILDA.01": "{{i18n:Event.MarILDA.01}}",
+				"Event.MarILDA.02": "{{i18n:Event.MarILDA.02}}",
+				"Event.MarILDA.03": "{{i18n:Event.MarILDA.03}}",
+				"Event.MarILDA.04": "{{i18n:Event.MarILDA.04}}",
+				"Event.MarILDA.05": "{{i18n:Event.MarILDA.05}}",
+				"Event.MarILDA.06": "{{i18n:Event.MarILDA.06}}",
+				"Event.MarILDA.07": "{{i18n:Event.MarILDA.07}}",
+				"Event.MarILDA.08": "{{i18n:Event.MarILDA.08}}",
+			}
+		},				
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/LeahEx",
+			"FromFile": "assets/Portraits/LeahExMale.png",
+			"When": {"PlayerGender": "Male",}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/LeahEx",
+			"FromFile": "assets/Portraits/LeahExAndro.png",
+			"When": {"HasMod": "Orpheus.AndrogynousKel",}
+		},		
+		{
+			"Action": "Include",
+			"FromFile": "patches/Events.json",
+			"When": {"Events": true}
+		},				
+		{
+			"Action": "Include",
+			"FromFile": "patches/Raccoon.json",
+			"When": {"Raccoon": true}
+		},	
+		{
+			"Action": "Include",
+			"FromFile": "patches/Gourmand.json",
+			"When": {"Gourmand": true}
+		},		
+		{
+			"Action": "Include",
+			"FromFile": "patches/OldMariner.json",
+			"When": {"OldMariner": true}
+		},	
+		{
+			"Action": "Include",
+			"FromFile": "patches/Club.json",
+			"When": {"Club": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/SDVFair.json",
+			"When": {"SDVFair": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/Theater.json",
+			"When": {"Theater": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/DesertFestival.json",
+			"When": {"DesertFestival": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/NightMarket.json",
+			"When": {"NightMarket": true}
+		},	
+		{
+			"Action": "Include",
+			"FromFile": "patches/TroutDerby.json",
+			"When": {"SquidFest": true}
+		},				
+		{
+			"Action": "Include",
+			"FromFile": "patches/SquidFest.json",
+			"When": {"SquidFest": true}
+		},		
+		{
+			"Action": "Include",
+			"FromFile": "patches/Pirates.json",
+			"When": {"Pirates": true}
+		},	
+		{
+			"Action": "Include",
+			"FromFile": "patches/Compatibility/GlamKitchen.json",
+			"When": {"HasMod |contains=Airyn.GlamKitchen": true},		
+		},	
+		{
+			"Action": "Include",
+			"FromFile": "patches/Phone.json",
+			"When": {"Phone": true}
+		},		
+		{
+			"Action": "Include",
+			"FromFile": "patches/ShadowGuy.json",
+			"When": {"ShadowGuy": true}
+		},			
+		{
+			"Action": "Include",
+			"FromFile": "patches/Compatibility/Aquarium.json",
+			"When": {"HasMod": "Gervig91.StardewAquariumCP"}
+		},		
+		{
+			"Action": "Include",
+			"FromFile": "patches/Compatibility/Biscuit.json",
+			"When": {"HasMod": "thatotterthing.Biscuit"}
+		},				
+	]
+}

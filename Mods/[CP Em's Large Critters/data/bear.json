@@ -1,0 +1,10 @@
+{
+	"Changes": [
+			{
+		"Action": "EditImage",
+		"Target": "Characters/Bear",
+		"FromFile": "assets/Bear.png",
+		"When":{ "Bear":"true"}
+		}
+	]
+}

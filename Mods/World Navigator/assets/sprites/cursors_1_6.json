@@ -1,0 +1,14 @@
+{
+    "Texture": "LooseSprites/Cursors_1_6",
+    "Sprites": {
+        "EmptyStar": {
+            "SourceRect": "363, 298, 11, 11"
+        },
+        "FilledStar": {
+            "SourceRect": "374, 298, 11, 11"
+        },
+        "Checkmark": {
+            "SourceRect": "297, 229, 9, 8"
+        }
+    }
+}

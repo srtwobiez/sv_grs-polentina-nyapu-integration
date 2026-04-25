@@ -1,0 +1,55 @@
+{
+  "Name": "Chloe_Pumpkinbag",
+  "FrontAccessory": {
+  "DrawBeforeHair": true,
+  "DisableGrayscale": true,
+  "HideWhileSwimming": true,
+  "HideWhileWearingBathingSuit": true,
+  "HideLegs": true,    
+  "DrawOrderOverride":{
+  "Preposition":"After",
+  "AppearanceType": "Sleeves"
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 1,
+      "Y": 3
+    },
+    "AccessorySize": {
+      "Width": 20,
+      "Length": 30
+    }
+  },
+  "RightAccessory": {
+    "StartingPosition": {
+      "X": 0,
+      "Y": 30
+    },
+    "HeadPosition": {
+      "X": 2,
+      "Y": 4
+    },
+    "AccessorySize": {
+      "Width": 20,
+      "Length": 30
+    }
+  },
+  "LeftAccessory": {
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 30
+    },
+    "HeadPosition": {
+      "X": 3,
+      "Y": 4
+    },
+    "AccessorySize": {
+      "Width": 20,
+      "Length": 30
+    }  
+  }
+}

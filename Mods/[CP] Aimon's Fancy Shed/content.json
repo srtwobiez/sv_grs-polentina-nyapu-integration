@@ -1,0 +1,163 @@
+{
+   "Format": "2.0.0",
+   
+   "ConfigSchema": {
+   
+		"Recolor": { 
+		"AllowValues": "Vanilla, RusticCountryTown (Dark), RusticCountryTown (White), VibrantPastoral, Starblue, Earthy",
+		"Default": "Vanilla",
+		},
+		
+		"Allow Casks in Sheds": { 
+		"AllowValues": "true, false",
+		"Default": "false",
+		},
+		
+		
+		"Small Shed Redesign": { 
+		"AllowValues": "true, false",
+		"Default": "true",
+		},
+		
+		"Big Shed Redesign": { 
+		"AllowValues": "true, false",
+		"Default": "true",
+		},
+		
+	},
+		
+	
+
+
+    "Changes": [
+	
+	//furnitureshifhtfix
+	
+	
+	 {
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+            "TargetField": [ "Big Shed", "IndoorItemMoves" ], 
+			"When": { "Big Shed Redesign": "true" },
+    "Entries": 
+	{
+		"AimonShed2":
+      {
+                            
+                                "Id": "AimonShed2",
+								
+                                "Source": { "X": 1, "Y": 6},
+                                "Destination": { "X": 1, "Y": 10 },
+                                "Size": { "X": 13, "Y": 10 },
+
+                              
+            },
+			
+        },
+ },
+	{
+		
+		"Action": "EditMap",
+		"Target": "Maps/Shed",
+		"MapProperties": { "ViewFollowPlayer":"t" },
+		"When": { "Small Shed Redesign": "true" },
+	
+		},
+		{
+		
+		"Action": "EditMap",
+		"Target": "Maps/Shed, Maps/Shed2",
+		"MapProperties": { "AmbientNightLight":"170 170 30" },
+		
+	
+		},
+	
+		{
+		"Action": "Load",
+        "Target": "Maps/Shed",
+		"FromFile": "assets/Shed.tmx",
+		"When": { "Small Shed Redesign": "true" },
+			
+			
+        },
+		{
+		"Action": "Load",
+        "Target": "Maps/Shed2",
+		"FromFile": "assets/Shed2.tmx",
+		"When": { "Big Shed Redesign": "true" },
+			
+			
+        },
+	
+	
+		//RECOLORS
+		
+		{
+            "Action": "Load",
+            "Target": "Maps/z_redesighnedshedtiles",
+            "FromFile": "assets/Tilesheets/z_redesighnedshedtiles.png",
+
+        },
+		{
+            "Action": "EditImage",
+			"PatchMode": "Replace",
+            "Target": "Maps/z_redesighnedshedtiles",
+            "FromFile": "assets/Tilesheets/z_redesighnedshedtiles.png",
+			"When": { "Recolor": "Vanilla" },
+
+        },
+		{
+            "Action": "EditImage",
+			"PatchMode": "Replace",
+			
+            "Target": "Maps/z_redesighnedshedtiles",
+            "FromFile": "assets/Tilesheets/rktidark.png",
+			"When": { "Recolor": "RusticCountryTown (Dark)" },
+        },
+		{
+              "Action": "EditImage",
+			"PatchMode": "Replace",
+            "Target": "Maps/z_redesighnedshedtiles",
+            "FromFile": "assets/Tilesheets/rktiwhite.png",
+			"When": { "Recolor": "RusticCountryTown (White)" },
+        },
+		{
+              "Action": "EditImage",
+			"PatchMode": "Replace",
+            "Target": "Maps/z_redesighnedshedtiles",
+            "FromFile": "assets/Tilesheets/vpr.png",
+			"When": { "Recolor": "VibrantPastoral" },
+        },
+		{
+              "Action": "EditImage",
+			"PatchMode": "Replace",
+            "Target": "Maps/z_redesighnedshedtiles",
+            "FromFile": "assets/Tilesheets/starblue.png",
+			"When": { "Recolor": "Starblue" },
+        },
+		{
+              "Action": "EditImage",
+			"PatchMode": "Replace",
+            "Target": "Maps/z_redesighnedshedtiles",
+            "FromFile": "assets/Tilesheets/earthy.png",
+			"When": { "Recolor": "Earthy" },
+        },
+
+
+//casks 
+		
+		
+	{
+      "Action": "EditMap",
+      "Target": "Maps/Shed, Maps/Shed2",
+      "MapProperties": {
+                "CanCaskHere": "t"
+            },
+	  "When": {  "Allow Casks in Sheds": "true", },
+		}
+
+	]
+}
+	
+
+  

@@ -1,0 +1,44 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Alex's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Alex, Portraits/Alex_Beach, Portraits/Alex_Spring, Portraits/Alex_Summer, Portraits/Alex_Winter_Outdoor, Portraits/Alex_Winter_Indoor, Portraits/Alex_FlowerDance, Portraits/Alex_SpiritsEve, Portraits/Alex_EggF, Portraits/Alex_Fair, Portraits/Alex_Jellies, Portraits/Alex_Luau, Portraits/Alex_Winter_IceF, Portraits/Alex_Winter_WinterStar",
+			"FromFile": "assets/Portraits/Alex/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Alex's Sprite Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/Alex_Spring, Characters/Alex_FlowerDance, Characters/Alex_SpiritsEve, Characters/Alex_Luau",
+			"FromFile": "assets/Characters/Alex/{{TargetWithoutPath}}.png"
+		},			
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Alex Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Alex", "Appearance"],
+			"Fields": {
+				
+				"Poltergeister.SeasonalCuteCharacters.AlexFall": {
+					"Portrait": "Portraits/Alex",
+				},	
+			},
+		},
+// MISCELLANEOUS		
+		{
+            "LogName": "Alex Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Alex",
+            "FromFile": "assets/Characters/Alex/Alex_Spring.png",
+			"When": {"Season": "spring"}
+        },			
+	]
+}

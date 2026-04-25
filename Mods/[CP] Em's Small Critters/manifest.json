@@ -1,0 +1,11 @@
+{
+	"Name": "Em's Small Critters",
+	"Author": "RivalRabbit",
+	"Version": "1.5",
+	"Description": "Retexture of all small wild critters.",
+	"UniqueID": "Ems.SmallCritters",
+	"UpdateKeys": [ "Nexus:39616" ],
+   	"ContentPackFor": {
+      		"UniqueID": "Pathoschild.ContentPatcher"
+   			}
+}

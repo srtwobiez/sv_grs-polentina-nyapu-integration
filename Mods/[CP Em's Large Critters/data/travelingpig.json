@@ -1,0 +1,46 @@
+{
+	"Changes": [
+			{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/CartPig.png",
+		"ToArea": { "X": 50, "Y": 1423, "Width": 92, "Height": 27 },
+		"When":{ "TravelingPig":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Festivals",
+		"FromFile": "assets/WinterPig.png",
+		"ToArea": { "X": 266, "Y": 487, "Width": 86, "Height": 25 },
+		"When":{ "TravelingPig":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/desert_festival_tilesheet",
+		"FromFile": "assets/DesertPig1.png",
+		"ToArea": { "X": 272, "Y": 368, "Width": 32, "Height": 32 },
+		"When":{ "TravelingPig":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/desert_festival_tilesheet",
+		"FromFile": "assets/DesertPig2.png",
+		"ToArea": { "X": 384, "Y": 368, "Width": 32, "Height": 32 },
+		"When":{ "TravelingPig":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/night_market_tilesheet_objects",
+		"FromFile": "assets/NightPig1.png",
+		"ToArea": { "X": 544, "Y": 61, "Width": 32, "Height": 35 },
+		"When":{ "TravelingPig":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/night_market_tilesheet_objects",
+		"FromFile": "assets/NightPig2.png",
+		"ToArea": { "X": 704, "Y": 61, "Width": 32, "Height": 35 },
+		"When":{ "TravelingPig":"true"}
+		}
+	]
+}

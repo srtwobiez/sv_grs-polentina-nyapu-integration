@@ -1,0 +1,112 @@
+{
+  "Name": "N37",
+  "FrontHat": {
+    "HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"DisableGrayscale": false,
+	"ColorMasks": [
+      [ 214, 203, 205 ],
+	  [ 177, 159, 165 ]
+    ],
+	"StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -4
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 16
+    }
+  },
+  "RightHat": {
+    "HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"DisableGrayscale": false,
+	"ColorMasks": [
+      [ 214, 203, 205 ],
+	  [ 177, 159, 165 ],
+	  [ 195, 181, 183 ],
+	  [ 230, 223, 222 ],
+	  [ 184, 166, 172 ],
+	  [ 194, 177, 186 ],
+	  [ 159, 144, 155 ]
+	  ],
+	"StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -4
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 17
+    }
+  },
+  "LeftHat": {
+	"HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"DisableGrayscale": false,
+	"ColorMasks": [
+      [ 214, 203, 205 ],
+	  [ 177, 159, 165 ],
+	  [ 195, 181, 183 ],
+	  [ 230, 223, 222 ],
+	  [ 184, 166, 172 ],
+	  [ 194, 177, 186 ],
+	  [ 159, 144, 155 ]
+	  ],
+	"Flipped": true,
+	"StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": -4,
+      "Y": -4
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 17
+    }
+  },
+  "BackHat": {
+    "HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"DisableGrayscale": false,
+	"ColorMasks": [
+      [ 214, 203, 205 ],
+	  [ 177, 159, 165 ],
+	  [ 195, 181, 183 ],
+	  [ 230, 223, 222 ],
+	  [ 184, 166, 172 ],
+	  [ 194, 177, 186 ],
+	  [ 159, 144, 155 ],
+	  [ 184, 167, 173 ],
+	  [ 201, 188, 188 ],
+	  [ 225, 214, 221 ],
+	  [ 212, 200, 210 ],
+	  [ 161, 145, 154 ],
+	  [ 189, 173, 181 ],
+	  [ 200, 188, 188 ],
+	  [ 225, 213, 220 ],
+	  [ 159, 143, 155 ]
+	  ],
+	"StartingPosition": {
+      "X": 0,
+      "Y": 33
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -4
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 18
+    }
+  }
+}

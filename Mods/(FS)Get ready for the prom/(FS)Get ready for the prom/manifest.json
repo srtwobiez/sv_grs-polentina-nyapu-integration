@@ -1,0 +1,12 @@
+{
+  "Name": "[FS]Get ready for the prom.",
+  "Author": "cocumit",
+  "Version": "2.0",
+  "Description": "none",
+  "UniqueID": "cocumit.pastoral.prom.FS",
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "3.0.1"
+  }
+}

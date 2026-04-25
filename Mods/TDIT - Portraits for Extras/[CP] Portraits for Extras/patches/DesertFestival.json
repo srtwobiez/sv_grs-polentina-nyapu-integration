@@ -1,0 +1,328 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Strings/1_6_Strings",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Closed"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Collected"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Intro_1"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Intro_2"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Intro_3"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Question"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_No"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Yes_Intro"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Yes_Full"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Yes_1"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Yes_2"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Yes_3"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Yes_4"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","CactusMan_Yes_5"],
+					"Value": "Portraits/CactusMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Cook_ChoseSauce"],
+					"Value": "Portraits/DesertFood_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Cook_Introd"],
+					"Value": "Portraits/DesertFood_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Cook_Intro_Yes"],
+					"Value": "Portraits/DesertFood_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Cook_Done"],
+					"Value": "Portraits/DesertFood_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Cook_Intro_No"],
+					"Value": "Portraits/DesertFood_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Race_Closed"],
+					"Value": "Portraits/DesertTrader_RacerGuy Strings/DolphINaF.ExtraPortraits:Name.RacerGuy {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Race_Question"],
+					"Value": "Portraits/DesertTrader_RacerGuy Strings/DolphINaF.ExtraPortraits:Name.RacerGuy {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Race_Guess_Made"],
+					"Value": "Portraits/DesertTrader_RacerGuy Strings/DolphINaF.ExtraPortraits:Name.RacerGuy {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Race_Guess_Already_Made"],
+					"Value": "Portraits/DesertTrader_RacerGuy Strings/DolphINaF.ExtraPortraits:Name.RacerGuy {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Race_Collect_Prize_Special"],
+					"Value": "Portraits/DesertTrader_RacerGuy Strings/DolphINaF.ExtraPortraits:Name.RacerGuy {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Race_Collect_Prize"],
+					"Value": "Portraits/DesertTrader_RacerGuy Strings/DolphINaF.ExtraPortraits:Name.RacerGuy {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Race_Late_Guess"],
+					"Value": "Portraits/DesertTrader_RacerGuy Strings/DolphINaF.ExtraPortraits:Name.RacerGuy {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Race_Ongoing"],
+					"Value": "Portraits/DesertTrader_RacerGuy Strings/DolphINaF.ExtraPortraits:Name.RacerGuy {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Race_Ended"],
+					"Value": "Portraits/DesertTrader_RacerGuy Strings/DolphINaF.ExtraPortraits:Name.RacerGuy {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Scholar_Closed"],
+					"Value": "Portraits/DesertTrader_Scholar @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Scholar_Intro"],
+					"Value": "Portraits/DesertTrader_Scholar @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Scholar_Intro2"],
+					"Value": "Portraits/DesertTrader_Scholar @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Scholar_Correct"],
+					"Value": "Portraits/DesertTrader_Scholar @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Scholar_Win"],
+					"Value": "Portraits/DesertTrader_Scholar @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Scholar_Wrong"],
+					"Value": "Portraits/DesertTrader_Scholar @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Scholar_Failed"],
+					"Value": "Portraits/DesertTrader_Scholar @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Scholar_DoneThisYear"],
+					"Value": "Portraits/DesertTrader_Scholar @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy_2nd"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy_Closed"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy_Ended"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy_Ongoing"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy_Late"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy_Intro"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy_Intro_2"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy_Intro_3"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy_NoEgg"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy_Selected_1"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy_Selected_2"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Shady_Guy_Selected_3"],
+					"Value": "Portraits/ShadyGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","EggShop_Closed"],
+					"Value": "Portraits/EggShop_Default Strings/DolphINaF.ExtraPortraits:Name.EggShop",
+					"Delimiter": "🐬"
+				},			
+			]
+		},			
+		{
+			"Action": "EditData",
+			"Target": "Strings/1_6_Strings",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","BeachNightMarket_WarperQuestion"],
+					"Value": "Portraits/ShroudedFigure_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+			],
+			"When": {
+				"Season": "Spring, Fall",
+				"Day": "8, 9, 10, 15, 16, 17"
+			}
+		},					
+	],
+}

@@ -1,0 +1,1905 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "GiEX_ExtinctLair": {
+                    "DisplayName": "{{i18n:locations.ExtinctLair}}",
+                    "DefaultArrivalTile": {
+                        "X": 10,
+                        "Y": 56
+                    },
+                    "ExcludeFromNpcPathfinding": true,
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 1.0,
+                            "ApplyGenerousEnchantment": true,
+                            "Id": "Cinder shard - 100%",
+                            "ItemId": "(O)848",
+                            "Precedence": -1000
+                        },
+                        {
+                            "Chance": 0.9,
+                            "ApplyGenerousEnchantment": true,
+                            "Id": "Cinder shard - 90%",
+                            "ItemId": "(O)848",
+                            "Precedence": -1000
+                        },
+                        {
+                            "Chance": 0.7,
+                            "ApplyGenerousEnchantment": true,
+                            "Id": "Cinder shard - 70%",
+                            "ItemId": "(O)848",
+                            "Precedence": -1000
+                        },
+                        {
+                            "Chance": 0.5,
+                            "ApplyGenerousEnchantment": true,
+                            "Id": "Cinder shard - 50%",
+                            "ItemId": "(O)848",
+                            "Precedence": -1000
+                        },
+                        {
+                            "Chance": 0.3,
+                            "ApplyGenerousEnchantment": true,
+                            "Id": "Bone piece - 30%",
+                            "ItemId": "(O)881",
+                            "Precedence": -1000
+                        },
+                        {
+                            "Chance": 0.1,
+                            "ApplyGenerousEnchantment": true,
+                            "Id": "Island totem - 10%",
+                            "ItemId": "(O)886",
+                            "Precedence": -1000
+                        }
+                    ],
+                    "Forage": [
+                        {
+                            "Chance": 1,
+                            "Id": "Bone fragment",
+                            "ItemId": "(O)881",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                            "Precedence": -1000
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Id": "Dragon Tooth - 70%",
+                            "ItemId": "(O)852",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                            "Precedence": -1000
+                        }
+                    ],
+                    "FishAreas": {
+                        "Default": {
+                            "DisplayName": null,
+                            "Position": null,
+                            "CrabPotFishTypes": [
+                                "GiEXredux_lava"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        }
+                    },
+                    "Fish": [
+                        {
+                            "Chance": 0.6,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Skeletonfish",
+                            "ItemId": "(O)GiEXredux_Skeletonfish"
+                        },
+                        {
+                            "Chance": 0.1,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Dragonfish",
+                            "ItemId": "(O)GiEXredux_Dragonfish",
+                            "Precedence": -100
+                        },
+                        {
+                            "Chance": 0.9,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Cinderfish",
+                            "ItemId": "(O)GiEXredux_Cinderfish"
+                        },
+                        {
+                            "Chance": 0.5,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Omnifish",
+                            "ItemId": "(O)GiEXredux_Omnifish"
+                        }
+                    ],
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_ExtinctLair",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandLocation"
+                    },
+                    "Music": [],
+                    "MusicDefault": "GiEX.LairMusic"
+                },
+                "GiEX_SunkenShip": {
+                    "DisplayName": "{{i18n:locations.SunkenShip}}",
+                    "DefaultArrivalTile": {
+                        "X": 17,
+                        "Y": 32
+                    },
+                    "ExcludeFromNpcPathfinding": true,
+                    "Forage": [
+                        {
+                            "Chance": 0.9,
+                            "Id": "Seaweed",
+                            "ItemId": "(O)152",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Id": "Clam",
+                            "ItemId": "(O)372",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Id": "Coral",
+                            "ItemId": "(O)393",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.3,
+                            "Id": "Sea Urchin",
+                            "ItemId": "(O)397",
+                            "MaxStack": 2
+                        }
+                    ],
+                    "Fish": [
+                        {
+                            "Chance": 0.1,
+                            "MinDistanceFromShore": 1,
+                            "Precedence": -10,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Deep clam",
+                            "ItemId": "(O)GiEXredux_DeepClam"
+                        },
+                        {
+                            "Chance": 0.6,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Pirate fish",
+                            "ItemId": "(O)GiEXredux_Piratefish"
+                        },
+                        {
+                            "Chance":0.3,
+                            "MinDistanceFromShore": 1,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Ghost fish",
+                            "ItemId":"(O)156"
+                        }
+                    ],
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_Ship",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandLocation"
+                    },
+                    "Music": [],
+                    "MusicDefault": null
+                },
+                "GiEX_HiddenShipRoom": {
+                    "DisplayName": "{{i18n:locations.SunkenShip}}",
+                    "DefaultArrivalTile": {
+                        "X": 5,
+                        "Y": 5
+                    },
+                    "ExcludeFromNpcPathfinding": true,
+                    "Forage": [
+                        {
+                            "Chance": 0.9,
+                            "Id": "Seaweed",
+                            "ItemId": "(O)152",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Id": "Driftwood",
+                            "ItemId": "(O)169",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Id": "Coral",
+                            "ItemId": "(O)393",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.3,
+                            "Id": "Sea Urchin",
+                            "ItemId": "(O)397",
+                            "MaxStack": 2
+                        }
+                    ],
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_Ship_Interior",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandLocation"
+                    },
+                    "Music": [],
+                    "MusicDefault": null
+                },
+                "GiEX_ForestQuarry": {
+                    "DisplayName": "{{i18n:locations.QuarryForest}}",
+                    "DefaultArrivalTile": {
+                        "X": 21,
+                        "Y": 26
+                    },
+                    "ExcludeFromNpcPathfinding": true,
+                    "Forage": [
+                        {
+                            "Chance": 0.4,
+                            "Id": "(O)851", //Magma Cap
+                            "ItemId": "(O)851",
+                            "MinStack": 1,
+                            "MaxStack": 3
+                        }
+                    ],
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_ForestQuarry",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandLocation"
+                    },
+                    "Music": [],
+                    "MusicDefault": null
+                },
+                "GiEX_QuarryPond": {
+                    "DisplayName": "{{i18n:locations.QuarryPond}}",
+                    "DefaultArrivalTile": {
+                        "X": 11,
+                        "Y": 23
+                    },
+                    "ExcludeFromNpcPathfinding": false,
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_QuarryPond",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandLocation"
+                    },
+                    "Music": [],
+                    "MusicDefault": null,
+                    "Fish":[
+                        {
+                            "Chance": 0.3,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Eggfish",
+                            "ItemId": "(O)GiEXredux_Eggfish"
+                        },
+                        {
+                            "Chance": 0.4,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Cocofish",
+                            "ItemId": "(O)GiEXredux_Cocofish"
+                        },
+                        {
+                            "Chance": 0.5,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Parrotfish",
+                            "ItemId": "(O)GiEXredux_Parrotfish"
+                        },
+                        {
+                            "Chance": 0.6,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Ostrichfish",
+                            "ItemId": "(O)GiEXredux_Ostrichfish"
+                        }
+                    ]
+                },
+                "GiEX_NorthWest": {
+                    "DisplayName": "{{i18n:locations.NorthWest}}",
+                    "DefaultArrivalTile": {
+                        "X": 41,
+                        "Y": 15
+                    },
+                    "ExcludeFromNpcPathfinding": true,
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_NorthWest",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandLocation"
+                    },
+                    "Music": [],
+                    "MusicDefault": null
+                },
+                "GiEX_TempleOutside": {
+                    "DisplayName": "{{i18n:locations.TempleOutside}}",
+                    "DefaultArrivalTile": {
+                        "X": 20,
+                        "Y": 23
+                    },
+                    "ExcludeFromNpcPathfinding": false,
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_Island_TempleOutside",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandForestLocation"
+                    },
+                    "Music": [],
+                    "MusicDefault": "jungle_ambience"
+                },
+                "GiEX_Temple": {
+                    "DisplayName": "{{i18n:locations.Temple}}",
+                    "DefaultArrivalTile": {
+                        "X": 29,
+                        "Y": 23
+                    },
+                    "ExcludeFromNpcPathfinding": false,
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_Island_Temple",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandForestLocation"
+                    },
+                    "Fish": [
+                        {
+                          "Chance": 0.1,
+                          "Season": null,
+                          "FishAreaId": null,
+                          "BobberPosition": null,
+                          "PlayerPosition": null,
+                          "MinFishingLevel": 0,
+                          "MinDistanceFromShore": 0,
+                          "MaxDistanceFromShore": -1,
+                          "ApplyDailyLuck": false,
+                          "CuriosityLureBuff": -1.0,
+                          "SpecificBaitBuff": 0.0,
+                          "SpecificBaitMultiplier": 1.66,
+                          "CatchLimit": -1,
+                          "CanUseTrainingRod": null,
+                          "IsBossFish": false,
+                          "SetFlagOnCatch": null,
+                          "RequireMagicBait": false,
+                          "Precedence": -10,
+                          "IgnoreFishDataRequirements": true,
+                          "CanBeInherited": true,
+                          "ChanceModifiers": null,
+                          "ChanceModifierMode": "Stack",
+                          "ChanceBoostPerLuckLevel": 0.0,
+                          "UseFishCaughtSeededRandom": false,
+                          "Condition": "PLAYER_HAS_MAIL Current islandNorthCaveOpened",
+                          "Id": "Snake Skull",
+                          "ItemId": "(O)825",
+                          "RandomItemId": null,
+                          "MaxItems": null,
+                          "MinStack": -1,
+                          "MaxStack": -1,
+                          "Quality": -1,
+                          "ObjectInternalName": null,
+                          "ObjectDisplayName": null,
+                          "ObjectColor": null,
+                          "ToolUpgradeLevel": -1,
+                          "IsRecipe": false,
+                          "StackModifiers": null,
+                          "StackModifierMode": "Stack",
+                          "QualityModifiers": null,
+                          "QualityModifierMode": "Stack",
+                          "ModData": null,
+                          "PerItemCondition": null
+                        },
+                        {
+                          "Chance": 1.0,
+                          "Season": null,
+                          "FishAreaId": null, //"Freshwater",
+                          "BobberPosition": null,
+                          "PlayerPosition": null,
+                          "MinFishingLevel": 0,
+                          "MinDistanceFromShore": 0,
+                          "MaxDistanceFromShore": -1,
+                          "ApplyDailyLuck": false,
+                          "CuriosityLureBuff": -1.0,
+                          "SpecificBaitBuff": 0.0,
+                          "SpecificBaitMultiplier": 1.66,
+                          "CatchLimit": -1,
+                          "CanUseTrainingRod": null,
+                          "IsBossFish": false,
+                          "SetFlagOnCatch": null,
+                          "RequireMagicBait": false,
+                          "Precedence": 0,
+                          "IgnoreFishDataRequirements": false,
+                          "CanBeInherited": true,
+                          "ChanceModifiers": null,
+                          "ChanceModifierMode": "Stack",
+                          "ChanceBoostPerLuckLevel": 0.0,
+                          "UseFishCaughtSeededRandom": false,
+                          "Condition": null,
+                          "Id": "Tilapia",
+                          "ItemId": "(O)701",
+                          "RandomItemId": null,
+                          "MaxItems": null,
+                          "MinStack": -1,
+                          "MaxStack": -1,
+                          "Quality": -1,
+                          "ObjectInternalName": null,
+                          "ObjectDisplayName": null,
+                          "ObjectColor": null,
+                          "ToolUpgradeLevel": -1,
+                          "IsRecipe": false,
+                          "StackModifiers": null,
+                          "StackModifierMode": "Stack",
+                          "QualityModifiers": null,
+                          "QualityModifierMode": "Stack",
+                          "ModData": null,
+                          "PerItemCondition": null
+                        },
+                        {
+                          "Chance": 1.0,
+                          "Season": null,
+                          "FishAreaId": null, //"Freshwater",
+                          "BobberPosition": null,
+                          "PlayerPosition": null,
+                          "MinFishingLevel": 0,
+                          "MinDistanceFromShore": 0,
+                          "MaxDistanceFromShore": -1,
+                          "ApplyDailyLuck": false,
+                          "CuriosityLureBuff": -1.0,
+                          "SpecificBaitBuff": 0.0,
+                          "SpecificBaitMultiplier": 1.66,
+                          "CatchLimit": -1,
+                          "CanUseTrainingRod": null,
+                          "IsBossFish": false,
+                          "SetFlagOnCatch": null,
+                          "RequireMagicBait": false,
+                          "Precedence": 0,
+                          "IgnoreFishDataRequirements": false,
+                          "CanBeInherited": true,
+                          "ChanceModifiers": null,
+                          "ChanceModifierMode": "Stack",
+                          "ChanceBoostPerLuckLevel": 0.0,
+                          "UseFishCaughtSeededRandom": false,
+                          "Condition": null,
+                          "Id": "Blue Discus",
+                          "ItemId": "(O)838",
+                          "RandomItemId": null,
+                          "MaxItems": null,
+                          "MinStack": -1,
+                          "MaxStack": -1,
+                          "Quality": -1,
+                          "ObjectInternalName": null,
+                          "ObjectDisplayName": null,
+                          "ObjectColor": null,
+                          "ToolUpgradeLevel": -1,
+                          "IsRecipe": false,
+                          "StackModifiers": null,
+                          "StackModifierMode": "Stack",
+                          "QualityModifiers": null,
+                          "QualityModifierMode": "Stack",
+                          "ModData": null,
+                          "PerItemCondition": null
+                        },
+                        /*
+                        {
+                          "Chance": 1.0,
+                          "Season": null,
+                          "FishAreaId": null, //"Freshwater",
+                          "BobberPosition": null,
+                          "PlayerPosition": null,
+                          "MinFishingLevel": 0,
+                          "MinDistanceFromShore": 0,
+                          "MaxDistanceFromShore": -1,
+                          "ApplyDailyLuck": false,
+                          "CuriosityLureBuff": -1.0,
+                          "SpecificBaitBuff": 0.0,
+                          "SpecificBaitMultiplier": 1.66,
+                          "CatchLimit": -1,
+                          "CanUseTrainingRod": null,
+                          "IsBossFish": false,
+                          "SetFlagOnCatch": null,
+                          "RequireMagicBait": false,
+                          "Precedence": 0,
+                          "IgnoreFishDataRequirements": false,
+                          "CanBeInherited": true,
+                          "ChanceModifiers": null,
+                          "ChanceModifierMode": "Stack",
+                          "ChanceBoostPerLuckLevel": 0.0,
+                          "UseFishCaughtSeededRandom": false,
+                          "Condition": null,
+                          "Id": "Midnight Carp",
+                          "ItemId": "(O)269",
+                          "RandomItemId": null,
+                          "MaxItems": null,
+                          "MinStack": -1,
+                          "MaxStack": -1,
+                          "Quality": -1,
+                          "ObjectInternalName": null,
+                          "ObjectDisplayName": null,
+                          "ObjectColor": null,
+                          "ToolUpgradeLevel": -1,
+                          "IsRecipe": false,
+                          "StackModifiers": null,
+                          "StackModifierMode": "Stack",
+                          "QualityModifiers": null,
+                          "QualityModifierMode": "Stack",
+                          "ModData": null,
+                          "PerItemCondition": null
+                        },
+                        */
+                        {
+                          "Chance": 0.1,
+                          "Season": null,
+                          "FishAreaId": null, //"Freshwater",
+                          "BobberPosition": null,
+                          "PlayerPosition": null,
+                          "MinFishingLevel": 0,
+                          "MinDistanceFromShore": 0,
+                          "MaxDistanceFromShore": -1,
+                          "ApplyDailyLuck": false,
+                          "CuriosityLureBuff": -1.0,
+                          "SpecificBaitBuff": 0.0,
+                          "SpecificBaitMultiplier": 1.66,
+                          "CatchLimit": -1,
+                          "CanUseTrainingRod": null,
+                          "IsBossFish": false,
+                          "SetFlagOnCatch": null,
+                          "RequireMagicBait": false,
+                          "Precedence": 0,
+                          "IgnoreFishDataRequirements": true,
+                          "CanBeInherited": true,
+                          "ChanceModifiers": null,
+                          "ChanceModifierMode": "Stack",
+                          "ChanceBoostPerLuckLevel": 0.05,
+                          "UseFishCaughtSeededRandom": true,
+                          "Condition": null,
+                          "Id": "(O)RiverJelly",
+                          "ItemId": "(O)RiverJelly",
+                          "RandomItemId": null,
+                          "MaxItems": null,
+                          "MinStack": -1,
+                          "MaxStack": -1,
+                          "Quality": -1,
+                          "ObjectInternalName": null,
+                          "ObjectDisplayName": null,
+                          "ObjectColor": null,
+                          "ToolUpgradeLevel": -1,
+                          "IsRecipe": false,
+                          "StackModifiers": null,
+                          "StackModifierMode": "Stack",
+                          "QualityModifiers": null,
+                          "QualityModifierMode": "Stack",
+                          "ModData": null,
+                          "PerItemCondition": null
+                        }
+                      ],
+                    "Music": [],
+                    "MusicDefault": "mermaidSong"
+                },
+                "GiEX_SouthWest": {
+                    "DisplayName": "{{i18n:locations.IslandSW}}",
+                    "DefaultArrivalTile": {
+                        "X": 14,
+                        "Y": 17
+                    },
+                    "ExcludeFromNpcPathfinding": false,
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.05,
+                            "Id": "PirateHook",
+                            "ItemId": "(O)GiEXredux_PirateHook",
+                            "MinStack": 1,
+                            "MaxStack": 3
+                        },
+                        {
+                            "Chance": 0.3,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": 0,
+                            "ContinueOnDrop": false,
+                            "Id": "OldBottle",
+                            "ItemId": "(O)GiEXredux_OldBottle",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "RustyWheel",
+                            "ItemId": "(O)GiEXredux_RustyWheel",
+                            "MinStack": 1,
+                            "MaxStack": 3
+                        },
+                        {
+                            "Chance": 0.3,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": 0,
+                            "ContinueOnDrop": false,
+                            "Id": "AncientKey",
+                            "ItemId": "(O)GiEXredux_AncientKey",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        }
+                    ],
+                    "FishAreas": {
+                        "Ocean": {
+                            "Position": {
+                                "X": 0,
+                                "Y": 26,
+                                "Width": 45,
+                                "Height": 9
+                            },
+                            "CrabPotFishTypes": [
+                                "ocean"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        }
+                    },
+                    "Fish": [
+                        {
+                            "Chance": 0.6,
+                            "MinDistanceFromShore": 1,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Parrotfish",
+                            "ItemId": "(O)GiEXredux_Parrotfish"
+                        },
+                        {
+                            "Chance": 0.7,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": false,
+                            "Id": "Cocofish",
+                            "ItemId": "(O)GiEXredux_Cocofish"
+                        },
+                        {
+                            "Chance": 0.5,
+                            "fishAreaId": "Ocean",
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": false,
+                            "Id": "Super cucumber",
+                            "ItemId": "(O)155"
+                        },
+                        {
+                            "Chance": 0.7,
+                            "fishAreaId": "Ocean",
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": false,
+                            "Id": "Tuna",
+                            "ItemId": "(O)130"
+                        },
+                        {
+                            "Chance": 0.9,
+                            "fishAreaId": "Ocean",
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": false,
+                            "Id": "Pufferfish",
+                            "ItemId": "(O)128"
+                        },
+                        {
+                            "Chance": 0.9,
+                            "fishAreaId": "Ocean",
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": false,
+                            "Id": "Flounder",
+                            "ItemId": "(O)267"
+                        },
+                        {
+                            "Chance": 0.7,
+                            "fishAreaId": "Ocean",
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": false,
+                            "Id": "Lionfish",
+                            "ItemId": "(O)837"
+                        }
+                    ],
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_IslandSW",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandLocation"
+                    },
+                    "Music": [],
+                    "MusicDefault": "ocean"
+                },
+                "GiEX_Hut": {
+                    "DisplayName": "{{i18n:locations.Hut}}",
+                    "DefaultArrivalTile": {
+                        "X": 5,
+                        "Y": 8
+                    },
+                    "ExcludeFromNpcPathfinding": false,
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_SouthWestHut",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandLocation"
+                    },
+                    "Music": [],
+                    "MusicDefault": "moonlightJellies"
+                },
+                "GiEX_Sea_West": {
+                    "DisplayName": "{{i18n:locations.Sea_West}}",
+                    "DefaultArrivalTile": {
+                        "X": 15,
+                        "Y": 9
+                    },
+                    "ExcludeFromNpcPathfinding": true,
+                    "Forage": [
+                        {
+                            "Chance": 0.9,
+                            "Id": "Seaweed",
+                            "ItemId": "(O)152",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Id": "Clam",
+                            "ItemId": "(O)372",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Id": "Coral",
+                            "ItemId": "(O)393",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.3,
+                            "Id": "Sea Urchin",
+                            "ItemId": "(O)397",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "Pearl",
+                            "ItemId": "(O)797",
+                            "MaxStack": 1
+                        },
+                        {
+                            "Chance": 0.05,
+                            "Id": "Treasure Chest",
+                            "ItemId": "(O)166",
+                            "MaxStack": 1
+                        }
+                    ],
+                    //"MinDailyForageSpawn":2,
+                    //"MaxDailyForageSpawn":6,
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.15,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -530,
+                            "ContinueOnDrop": false,
+                            "Id": "PearlNecklace",
+                            "ItemId": "(O)GiEXredux_PearlNecklace",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 0.4,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -515,
+                            "ContinueOnDrop": false,
+                            "Id": "Fossil",
+                            "ItemId": "(O)GiEXredux_Fossil1",
+                            "MinStack": 1,
+                            "MaxStack": 2,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 0.6,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -510,
+                            "ContinueOnDrop": false,
+                            "Id": "AncientTablet",
+                            "ItemId": "(O)GiEXredux_AncientTablet",
+                            "MinStack": 1,
+                            "MaxStack": 2,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 0.8,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -505,
+                            "ContinueOnDrop": false,
+                            "Id": "WaterOrb",
+                            "ItemId": "(O)GiEXredux_WaterOrb",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 1,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -500,
+                            "ContinueOnDrop": false,
+                            "Id": "FishFlute",
+                            "ItemId": "(O)GiEXredux_FishFlute",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 0.2,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -530,
+                            "ContinueOnDrop": false,
+                            "Id": "PearlNecklace",
+                            "ItemId": "(O)GiEXredux_PearlNecklace",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 0.4,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -520,
+                            "ContinueOnDrop": false,
+                            "Id": "Fossil2",
+                            "ItemId": "(O)GiEXredux_Fossil2",
+                            "MinStack": 1,
+                            "MaxStack": 2,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 0.7,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -510,
+                            "ContinueOnDrop": false,
+                            "Id": "OldBottle",
+                            "ItemId": "(O)GiEXredux_OldBottle",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 1,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -500,
+                            "ContinueOnDrop": false,
+                            "Id": "StrangeScale",
+                            "ItemId": "(O)GiEXredux_StrangeScale",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        }
+                    ],
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_Sea_West",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandForestLocation"
+                    },
+                    "Music": [],
+                    "MusicDefault": "submarine_song"
+                },
+                "GiEX_Sea_West2": {
+                    "DisplayName": "{{i18n:locations.Sea_West}}",
+                    "DefaultArrivalTile": {
+                        "X": 15,
+                        "Y": 4
+                    },
+                    "ExcludeFromNpcPathfinding": true,
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.2,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -520,
+                            "ContinueOnDrop": false,
+                            "Id": "GoldWatch",
+                            "ItemId": "(O)GiEXredux_GoldWatch",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 0.4,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -515,
+                            "ContinueOnDrop": false,
+                            "Id": "StrangeScale",
+                            "ItemId": "(O)GiEXredux_StrangeScale",
+                            "MinStack": 1,
+                            "MaxStack": 2,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 0.6,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -510,
+                            "ContinueOnDrop": false,
+                            "Id": "PirateHook",
+                            "ItemId": "(O)GiEXredux_PirateHook",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 0.8,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -505,
+                            "ContinueOnDrop": false,
+                            "Id": "Compass",
+                            "ItemId": "(O)GiEXredux_Compass",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Chance": 1,
+                            "ApplyGenerousEnchantment": true,
+                            "OneDebrisPerDrop": true,
+                            "Precedence": -500,
+                            "ContinueOnDrop": false,
+                            "Id": "AncientKey",
+                            "ItemId": "(O)GiEXredux_AncientKey",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        }
+                    ],
+                    "Forage": [
+                        {
+                            "Chance": 0.1,
+                            "Id": "LumiShard",
+                            "ItemId": "(O)GiEXredux_LumiShard",
+                            "MaxStack": 3
+                        },
+                        {
+                            "Chance": 0.9,
+                            "Id": "Seaweed",
+                            "ItemId": "(O)152",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Id": "Clam",
+                            "ItemId": "(O)372",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Id": "Coral",
+                            "ItemId": "(O)393",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.3,
+                            "Id": "Sea Urchin",
+                            "ItemId": "(O)397",
+                            "MaxStack": 2
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "Pearl",
+                            "ItemId": "(O)797",
+                            "MaxStack": 1
+                        },
+                        {
+                            "Chance": 0.05,
+                            "Id": "Treasure Chest",
+                            "ItemId": "(O)166",
+                            "MaxStack": 1
+                        }
+                    ],
+                    //"MinDailyForageSpawn":2,
+                    //"MaxDailyForageSpawn":6,
+                    "FishAreas": {
+                        "Default": {
+                            "DisplayName": null,
+                            "Position": null,
+                            "CrabPotFishTypes": [
+                                "GiEXredux_deepsea"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        }
+                    },
+                    "Fish": [
+                        {
+                            "Chance": 0.05,
+                            "MinDistanceFromShore": 1,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Deep clam",
+                            "ItemId": "(O)GiEXredux_DeepClam",
+                            "Precedence": -1000
+                        },
+                        {
+                            "Chance": 0.15,
+                            "MinDistanceFromShore": 1,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Void shard",
+                            "ItemId": "(O)GiEXredux_VoidShard",
+                            "Precedence": -100
+                        },
+                        {
+                            "Chance": 0.2,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Toothfish",
+                            "ItemId": "(O)GiEXredux_Toothfish"
+                        },
+                        {
+                            "Chance": 0.3,
+                            "MinDistanceFromShore": 2,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "VampSquid",
+                            "ItemId": "(O)GiEXredux_VampSquid"
+                        },
+                        {
+                            "Chance": 0.4,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "CosmicJelly",
+                            "ItemId": "(O)GiEXredux_CosmicJelly"
+                        },
+                        {
+                            "Chance": 0.4,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "CombJelly",
+                            "ItemId": "(O)GiEXredux_CombJelly"
+                        },
+                        {
+                            "Chance": 0.5,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Whalefish",
+                            "ItemId": "(O)GiEXredux_Whalefish"
+                        },
+                        {
+                            "Chance": 0.6,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "CuskEel",
+                            "ItemId": "(O)GiEXredux_CuskEel"
+                        },
+                        {
+                            "Chance": 0.6,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Lizardfish",
+                            "ItemId": "(O)GiEXredux_Lizardfish"
+                        },
+                        {
+                            "Chance": 0.1,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Piratefish",
+                            "ItemId": "(O)GiEXredux_Piratefish",
+                            "Precedence": -1000
+                        },
+                        {
+                            "Chance": 0.2,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Hadalfish",
+                            "ItemId": "(O)GiEXredux_Hadalfish",
+                            "Precedence": -10
+                        },
+                        {
+                            "Chance": 0.3,
+                            "MinDistanceFromShore": 2,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "AtollaJellyfish",
+                            "ItemId": "(O)GiEXredux_AtollaJellyfish"
+                        },
+                        {
+                            "Chance": 0.6,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Facelessfish",
+                            "ItemId": "(O)GiEXredux_Facelessfish"
+                        },
+                        {
+                            "Chance": 0.7,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "SeaPig",
+                            "ItemId": "(O)GiEXredux_SeaPig"
+                        },
+                        {
+                            "Chance": 0.8,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Grenadier",
+                            "ItemId": "(O)GiEXredux_Grenadier"
+                        }/*,
+                        {
+                            "Chance": 0.7,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "Skeletonfish",
+                            "ItemId": "(O)GiEXredux_Skeletonfish",
+                            "Precedence": -1000
+                        },
+                        {
+                            "Chance": 0.7,
+                            "MinDistanceFromShore": 0,
+                            "IgnoreFishDataRequirements": true,
+                            "Id": "(O)800", //blobfish
+                            "ItemId": "(O)800",
+                            "Precedence": -1000
+                        },*/
+                    ],
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_Sea_West2",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandForestLocation"
+                    },
+                    "Music": [],
+                    "MusicDefault": "submarine_song"
+                },
+                "GiEX_Sea_MermaidHouse": {
+                    "DisplayName": "{{i18n:locations.MermaidHouse}}",
+                    "DefaultArrivalTile": {
+                        "X": 4,
+                        "Y": 9
+                    },
+                    "ExcludeFromNpcPathfinding": true,
+                    "ArtifactSpots": [],
+                    "Forage": [],
+                    "FishAreas": {},
+                    "Fish": [],
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_Sea_MermaidHouse1",
+                        "AlwaysActive": false
+                    },
+                    "Music": [],
+                    "MusicDefault": "submarine_song"
+                },
+                "GiEX_Sea_TritonHouse": {
+                    "DisplayName": "{{i18n:locations.TritonHouse}}",
+                    "DefaultArrivalTile": {
+                        "X": 4,
+                        "Y": 10
+                    },
+                    "ExcludeFromNpcPathfinding": true,
+                    "ArtifactSpots": [],
+                    "Forage": [],
+                    "FishAreas": {},
+                    "Fish": [],
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_Sea_TritonHouse",
+                        "AlwaysActive": false
+                    },
+                    "Music": [],
+                    "MusicDefault": "submarine_song"
+                },
+                "GiEX_Aquarium": {
+                    "DisplayName": "{{i18n:locations.Aquarium}}",
+                    "DefaultArrivalTile": {
+                        "X": 1,
+                        "Y": 13
+                    },
+                    "ExcludeFromNpcPathfinding": false,
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/GiEX_Aquarium",
+                        "AlwaysActive": false,
+                        "Type": "StardewValley.Locations.IslandLocation"
+                    },
+                    "Fish": [
+                        {
+                          "Chance": 0.1,
+                          "Season": null,
+                          "FishAreaId": null,
+                          "BobberPosition": null,
+                          "PlayerPosition": null,
+                          "MinFishingLevel": 0,
+                          "MinDistanceFromShore": 0,
+                          "MaxDistanceFromShore": -1,
+                          "ApplyDailyLuck": false,
+                          "CuriosityLureBuff": -1.0,
+                          "SpecificBaitBuff": 0.0,
+                          "SpecificBaitMultiplier": 1.66,
+                          "CatchLimit": -1,
+                          "CanUseTrainingRod": null,
+                          "IsBossFish": false,
+                          "SetFlagOnCatch": null,
+                          "RequireMagicBait": false,
+                          "Precedence": -30,
+                          "IgnoreFishDataRequirements": true,
+                          "CanBeInherited": true,
+                          "ChanceModifiers": null,
+                          "ChanceModifierMode": "Stack",
+                          "ChanceBoostPerLuckLevel": 0.0,
+                          "UseFishCaughtSeededRandom": false,
+                          "Condition": "IS_ISLAND_NORTH_BRIDGE_FIXED",
+                          "Id": "Fossilized Spine",
+                          "ItemId": "(O)821",
+                          "RandomItemId": null,
+                          "MaxItems": null,
+                          "MinStack": -1,
+                          "MaxStack": -1,
+                          "Quality": -1,
+                          "ObjectInternalName": null,
+                          "ObjectDisplayName": null,
+                          "ObjectColor": null,
+                          "ToolUpgradeLevel": -1,
+                          "IsRecipe": false,
+                          "StackModifiers": null,
+                          "StackModifierMode": "Stack",
+                          "QualityModifiers": null,
+                          "QualityModifierMode": "Stack",
+                          "ModData": null,
+                          "PerItemCondition": null
+                        },
+                        {
+                          "Chance": 1.0,
+                          "Season": null,
+                          "FishAreaId": null,
+                          "BobberPosition": null,
+                          "PlayerPosition": null,
+                          "MinFishingLevel": 0,
+                          "MinDistanceFromShore": 0,
+                          "MaxDistanceFromShore": -1,
+                          "ApplyDailyLuck": false,
+                          "CuriosityLureBuff": -1.0,
+                          "SpecificBaitBuff": 0.0,
+                          "SpecificBaitMultiplier": 1.66,
+                          "CatchLimit": -1,
+                          "CanUseTrainingRod": null,
+                          "IsBossFish": false,
+                          "SetFlagOnCatch": null,
+                          "RequireMagicBait": false,
+                          "Precedence": 0,
+                          "IgnoreFishDataRequirements": false,
+                          "CanBeInherited": true,
+                          "ChanceModifiers": null,
+                          "ChanceModifierMode": "Stack",
+                          "ChanceBoostPerLuckLevel": 0.0,
+                          "UseFishCaughtSeededRandom": false,
+                          "Condition": null,
+                          "Id": "Tilapia",
+                          "ItemId": "(O)701",
+                          "RandomItemId": null,
+                          "MaxItems": null,
+                          "MinStack": -1,
+                          "MaxStack": -1,
+                          "Quality": -1,
+                          "ObjectInternalName": null,
+                          "ObjectDisplayName": null,
+                          "ObjectColor": null,
+                          "ToolUpgradeLevel": -1,
+                          "IsRecipe": false,
+                          "StackModifiers": null,
+                          "StackModifierMode": "Stack",
+                          "QualityModifiers": null,
+                          "QualityModifierMode": "Stack",
+                          "ModData": null,
+                          "PerItemCondition": null
+                        },
+                        {
+                          "Chance": 1.0,
+                          "Season": null,
+                          "FishAreaId": null,
+                          "BobberPosition": null,
+                          "PlayerPosition": null,
+                          "MinFishingLevel": 0,
+                          "MinDistanceFromShore": 0,
+                          "MaxDistanceFromShore": -1,
+                          "ApplyDailyLuck": false,
+                          "CuriosityLureBuff": -1.0,
+                          "SpecificBaitBuff": 0.0,
+                          "SpecificBaitMultiplier": 1.66,
+                          "CatchLimit": -1,
+                          "CanUseTrainingRod": null,
+                          "IsBossFish": false,
+                          "SetFlagOnCatch": null,
+                          "RequireMagicBait": false,
+                          "Precedence": 0,
+                          "IgnoreFishDataRequirements": false,
+                          "CanBeInherited": true,
+                          "ChanceModifiers": null,
+                          "ChanceModifierMode": "Stack",
+                          "ChanceBoostPerLuckLevel": 0.0,
+                          "UseFishCaughtSeededRandom": false,
+                          "Condition": null,
+                          "Id": "Blue Discus",
+                          "ItemId": "(O)838",
+                          "RandomItemId": null,
+                          "MaxItems": null,
+                          "MinStack": -1,
+                          "MaxStack": -1,
+                          "Quality": -1,
+                          "ObjectInternalName": null,
+                          "ObjectDisplayName": null,
+                          "ObjectColor": null,
+                          "ToolUpgradeLevel": -1,
+                          "IsRecipe": false,
+                          "StackModifiers": null,
+                          "StackModifierMode": "Stack",
+                          "QualityModifiers": null,
+                          "QualityModifierMode": "Stack",
+                          "ModData": null,
+                          "PerItemCondition": null
+                        },
+                        {
+                          "Chance": 1.0,
+                          "Season": null,
+                          "FishAreaId": null,
+                          "BobberPosition": null,
+                          "PlayerPosition": null,
+                          "MinFishingLevel": 0,
+                          "MinDistanceFromShore": 0,
+                          "MaxDistanceFromShore": -1,
+                          "ApplyDailyLuck": false,
+                          "CuriosityLureBuff": -1.0,
+                          "SpecificBaitBuff": 0.0,
+                          "SpecificBaitMultiplier": 1.66,
+                          "CatchLimit": -1,
+                          "CanUseTrainingRod": null,
+                          "IsBossFish": false,
+                          "SetFlagOnCatch": null,
+                          "RequireMagicBait": false,
+                          "Precedence": 0,
+                          "IgnoreFishDataRequirements": false,
+                          "CanBeInherited": true,
+                          "ChanceModifiers": null,
+                          "ChanceModifierMode": "Stack",
+                          "ChanceBoostPerLuckLevel": 0.0,
+                          "UseFishCaughtSeededRandom": false,
+                          "Condition": null,
+                          "Id": "Midnight Carp",
+                          "ItemId": "(O)269",
+                          "RandomItemId": null,
+                          "MaxItems": null,
+                          "MinStack": -1,
+                          "MaxStack": -1,
+                          "Quality": -1,
+                          "ObjectInternalName": null,
+                          "ObjectDisplayName": null,
+                          "ObjectColor": null,
+                          "ToolUpgradeLevel": -1,
+                          "IsRecipe": false,
+                          "StackModifiers": null,
+                          "StackModifierMode": "Stack",
+                          "QualityModifiers": null,
+                          "QualityModifierMode": "Stack",
+                          "ModData": null,
+                          "PerItemCondition": null
+                        },
+                        {
+                          "Chance": 0.1,
+                          "Season": null,
+                          "FishAreaId": null,
+                          "BobberPosition": null,
+                          "PlayerPosition": null,
+                          "MinFishingLevel": 0,
+                          "MinDistanceFromShore": 0,
+                          "MaxDistanceFromShore": -1,
+                          "ApplyDailyLuck": false,
+                          "CuriosityLureBuff": -1.0,
+                          "SpecificBaitBuff": 0.0,
+                          "SpecificBaitMultiplier": 1.66,
+                          "CatchLimit": -1,
+                          "CanUseTrainingRod": null,
+                          "IsBossFish": false,
+                          "SetFlagOnCatch": null,
+                          "RequireMagicBait": false,
+                          "Precedence": 0,
+                          "IgnoreFishDataRequirements": true,
+                          "CanBeInherited": true,
+                          "ChanceModifiers": null,
+                          "ChanceModifierMode": "Stack",
+                          "ChanceBoostPerLuckLevel": 0.05,
+                          "UseFishCaughtSeededRandom": true,
+                          "Condition": null,
+                          "Id": "(O)RiverJelly",
+                          "ItemId": "(O)RiverJelly",
+                          "RandomItemId": null,
+                          "MaxItems": null,
+                          "MinStack": -1,
+                          "MaxStack": -1,
+                          "Quality": -1,
+                          "ObjectInternalName": null,
+                          "ObjectDisplayName": null,
+                          "ObjectColor": null,
+                          "ToolUpgradeLevel": -1,
+                          "IsRecipe": false,
+                          "StackModifiers": null,
+                          "StackModifierMode": "Stack",
+                          "QualityModifiers": null,
+                          "QualityModifierMode": "Stack",
+                          "ModData": null,
+                          "PerItemCondition": null
+                        }
+                      ],
+                    "Music": [],
+                    "MusicDefault": null
+                }
+            }
+        },
+        {
+            "LogName": "Make trashier if no cleanbeach",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [
+                "GiEX_Sea_West2",
+                "FishAreas"
+            ],
+            "Entries": {
+                "Default": {
+                    "DisplayName": null,
+                    "Position": null,
+                    "CrabPotFishTypes": [
+                        "GiEXredux_deepsea"
+                    ],
+                    "CrabPotJunkChance": 0.7
+                }
+            },
+            "When": {
+                "HasFlag |contains=GiEX.CleanedBeach": false
+            }
+        },
+        {
+            "LogName": "Add artif. spot",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [
+                "IslandSouth",
+                "ArtifactSpots"
+            ],
+            "Entries": {
+                "OldBottle": {
+                    "Chance": 0.15,
+                    "ApplyGenerousEnchantment": false,
+                    "OneDebrisPerDrop": true,
+                    "Precedence": -1000,
+                    "ContinueOnDrop": false,
+                    "Condition": "PLAYER_HAS_MAIL Current GiEXbundle.fishing.done",
+                    "Id": "{{ModId}} Old Bottle",
+                    "ItemId": "(O){{ModPrefix}}OldBottle",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack"
+                }
+            }
+        },
+        {
+            "LogName": "Add artif. spot",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [
+                "IslandWest",
+                "ArtifactSpots"
+            ],
+            "Entries": {
+                "FishFlute": {
+                    "Chance": 0.15,
+                    "ApplyGenerousEnchantment": false,
+                    "OneDebrisPerDrop": true,
+                    "Precedence": -1000,
+                    "ContinueOnDrop": false,
+                    "Condition": "PLAYER_HAS_MAIL Current GiEXbundle.fishing.done",
+                    "Id": "{{ModId}}_FishFlute",
+                    "ItemId": "(O){{ModPrefix}}FishFlute",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack"
+                }
+            }
+        },
+        {
+            "LogName": "Add artif. spot",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [
+                "IslandSouthEast",
+                "ArtifactSpots"
+            ],
+            "Entries": {
+                "OldBottle": {
+                    "Chance": 0.15,
+                    "ApplyGenerousEnchantment": false,
+                    "OneDebrisPerDrop": true,
+                    "Precedence": -1000,
+                    "ContinueOnDrop": false,
+                    "Condition": "PLAYER_HAS_MAIL Current GiEXbundle.fishing.done",
+                    "Id": "{{ModId}} Pirate hook",
+                    "ItemId": "(O){{ModPrefix}}PirateHook",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack"
+                }
+            }
+        },
+        {
+            "LogName": "Show in map",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [
+                "GingerIsland",
+                "MapAreas"
+            ],
+            "Entries": {
+                /*"GiEX_EastHill": {
+                    "Id": "GiEX_EastHill",
+                    "Condition": null,
+                    "PixelArea": {
+                        "X": 208,
+                        "Y": 110,
+                        "Width": 40,
+                        "Height": 25
+                    },
+                    "WorldPositions": [
+                        {
+                            "Id": "Hill",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_EastHill",
+                            "LocationNames": [],
+                            "TileArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 0,
+                                "Height": 0
+                            }
+                        }
+                    ]
+                },*/
+                "GiEX_ExtinctLair": {
+                    "Id": "GiEX_ExtinctLair",
+                    "Condition": null,
+                    "PixelArea": {
+                        "X": 150,
+                        "Y": 40,
+                        "Width": 20,
+                        "Height": 16
+                    },
+                    "ScrollText": null,
+                    "WorldPositions": [
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_ExtinctLair",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_ExtinctLair",
+                            "LocationNames": [],
+                            "TileArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 0,
+                                "Height": 0
+                            },
+                            "ExtendedTileArea": null,
+                            "MapPixelArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 0,
+                                "Height": 0
+                            },
+                            "ScrollText": null
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "GiEX_NW": {
+                    "Id": "GiEX_NW",
+                    "Condition": null,
+                    "PixelArea": {
+                        "X": 45,
+                        "Y": 40,
+                        "Width": 90,
+                        "Height": 46
+                    },
+                    "ScrollText": null,
+                    "WorldPositions": [
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_ForestQuarry",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_ForestQuarry",
+                            "LocationNames": [],
+                            "TileArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 0,
+                                "Height": 0
+                            },
+                            "ExtendedTileArea": null,
+                            "MapPixelArea": {
+                                "X": 72,
+                                "Y": 48,
+                                "Width": 30,
+                                "Height": 20
+                            },
+                            "ScrollText": null
+                        },
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_QuarryPond",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_QuarryPond",
+                            "LocationNames": [],
+                            "TileArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 0,
+                                "Height": 0
+                            },
+                            "ExtendedTileArea": null,
+                            "MapPixelArea": {
+                                "X": 102,
+                                "Y": 48,
+                                "Width": 32,
+                                "Height": 24
+                            },
+                            "ScrollText": null
+                        },
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_NorthWest",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_NorthWest",
+                            "LocationNames": [],
+                            "TileArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 0,
+                                "Height": 0
+                            },
+                            "ExtendedTileArea": null,
+                            "MapPixelArea": {
+                                "X": 48,
+                                "Y": 68,
+                                "Width": 30,
+                                "Height": 18
+                            },
+                            "ScrollText": null
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "GiEX_SW": {
+                    "Id": "GiEX_SW",
+                    "Condition": null,
+                    "PixelArea": {
+                        "X": 121,
+                        "Y": 114,
+                        "Width": 27,
+                        "Height": 23
+                    },
+                    "ScrollText": null,
+                    "WorldPositions": [
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_SouthWest",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_SouthWest",
+                            "ExtendedTileArea": null,
+                            "MapPixelArea": {
+                                "X": 135,
+                                "Y": 125,
+                                "Width": 13,
+                                "Height": 12
+                            },
+                            "ScrollText": null
+                        },
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_Hut",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_Hut",
+                            "MapPixelArea": {
+                                "X": 135,
+                                "Y": 125,
+                                "Width": 13,
+                                "Height": 12
+                            },
+                            "ScrollText": null
+                        },
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_Clearance",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_Clearance",
+                            "LocationNames": [],
+                            "ExtendedTileArea": null,
+                            "MapPixelArea": {
+                                "X": 121,
+                                "Y": 114,
+                                "Width": 24,
+                                "Height": 11
+                            },
+                            "ScrollText": null
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "GiEX_SunkenShip": {
+                    "Id": "GiEX_SunkenShip",
+                    "Condition": null,
+                    "PixelArea": {
+                        "X": 81,
+                        "Y": 145,
+                        "Width": 17,
+                        "Height": 9
+                    },
+                    "ScrollText": null,
+                    "WorldPositions": [
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_SunkenShip",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_SunkenShip",
+                            "MapPixelArea": {
+                                "X": 81,
+                                "Y": 145,
+                                "Width": 17,
+                                "Height": 9
+                            }
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "GiEX_Sea": {
+                    "Id": "GiEX_Sea",
+                    "Condition": null,
+                    "PixelArea": {
+                        "X": 80,
+                        "Y": 152,
+                        "Width": 36,
+                        "Height": 30
+                    },
+                    "ScrollText": null,
+                    "WorldPositions": [
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_Sea_West",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_Sea_West",
+                            "MapPixelArea": {
+                                "X": 80,
+                                "Y": 152,
+                                "Width": 18,
+                                "Height": 10
+                            },
+                            "ScrollText": null
+                        },
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_Sea_West2",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_Sea_West2",
+                            "MapPixelArea": {
+                                "X": 80,
+                                "Y": 162,
+                                "Width": 18,
+                                "Height": 10
+                            },
+                            "ScrollText": null
+                        },
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_Sea_MermaidHouse",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_Sea_MermaidHouse",
+                            "MapPixelArea": {
+                                "X": 80,
+                                "Y": 165,
+                                "Width": 9,
+                                "Height": 5
+                            },
+                            "ScrollText": null
+                        },
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_Sea_TritonHouse",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_Sea_TritonHouse",
+                            "MapPixelArea": {
+                                "X": 88,
+                                "Y": 165,
+                                "Width": 9,
+                                "Height": 5
+                            },
+                            "ScrollText": null
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "GiEX_Temple": {
+                    "Id": "GiEX_Temple",
+                    "Condition": null,
+                    "PixelArea": {
+                        "X": 203,
+                        "Y": 85,
+                        "Width": 15,
+                        "Height": 15
+                    },
+                    "ScrollText": null,
+                    "WorldPositions": [
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_TempleOutside",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_TempleOutside",
+                            "MapPixelArea": {
+                                "X": 203,
+                                "Y": 93,
+                                "Width": 15,
+                                "Height": 8
+                            },
+                            "ScrollText": null
+                        },
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_Temple",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_Temple",
+                            "MapPixelArea": {
+                                "X": 203,
+                                "Y": 85,
+                                "Width": 15,
+                                "Height": 8
+                            },
+                            "ScrollText": null
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "GiEX_Aquarium": {
+                    "Id": "GiEX_Aquarium",
+                    "Condition": null,
+                    "PixelArea": {
+                        "X": 178,
+                        "Y": 74,
+                        "Width": 8,
+                        "Height": 8
+                    },
+                    "ScrollText": null,
+                    "WorldPositions": [
+                        {
+                            "ScrollTextZones": [],
+                            "Id": "GiEX_Aquarium",
+                            "LocationContext": null,
+                            "LocationName": "GiEX_Aquarium",
+                            "MapPixelArea": {
+                                "X": 178,
+                                "Y": 74,
+                                "Width": 8,
+                                "Height": 8
+                            },
+                            "ScrollText": null
+                        }
+                    ],
+                    "CustomFields": {}
+                }
+            }
+        }
+        /*    
+        {
+            "Action":"EditData",
+            "Target":"",
+            "TargetField": [
+              ""
+            ],
+            "FromFile":"",
+            "When":{
+              "":""
+            }
+        }
+        */
+    ]
+}

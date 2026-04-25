@@ -1,0 +1,83 @@
+{
+  "Name": "Red Hoodie",
+  "FrontShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 63, 13, 0 ],
+		[ 139, 0, 14 ],
+		[ 194, 0, 36 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 63, 13, 0 ],
+		[ 139, 0, 14 ],
+		[ 194, 0, 36 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 63, 13, 0 ],
+		[ 139, 0, 14 ],
+		[ 194, 0, 36 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+	"DisableGrayscale": true,
+	"SleeveColors": [
+		[ 63, 13, 0 ],
+		[ 139, 0, 14 ],
+		[ 194, 0, 36 ],
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

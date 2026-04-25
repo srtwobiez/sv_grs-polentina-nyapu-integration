@@ -1,0 +1,16 @@
+{
+  "Format": "2.8.1",
+  "ConfigSchema": {
+    "Mode": {
+      "AllowValues": "jelly, glossy",
+      "Default": "jelly",
+      "AllowBlank": false,
+      "Name": "{{i18n:config.Mode.name}}",
+      "Description": "{{i18n:config.Mode.description}}"
+    }
+  },
+  "Changes": [
+    {"LogName": "JJ Include Monsters (no MV)", "Action": "Include", "FromFile": "data/Monsters.json", "When": {"HasMod |contains=mushymato.MonsterVariety": "false"}},
+    {"LogName": "JJ Include Monster Variety", "Action": "Include", "FromFile": "data/MonsterVariety.json", "When": {"HasMod": "mushymato.MonsterVariety"}}
+  ]
+}

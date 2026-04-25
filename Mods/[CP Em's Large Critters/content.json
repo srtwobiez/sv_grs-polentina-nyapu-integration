@@ -1,0 +1,56 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+	"TitleBird": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"GingerIsland": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"TravelingPig": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"Bear": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"DesertTraderCamel": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+	"MapColour": {
+		"AllowValues": "Vanilla, Earthy, Starblue, Vibrant",
+            	"Default": "Vanilla"
+			}
+		 },
+	"Changes": [
+		{
+		"Action": "Include",
+		"FromFile": "data/travelingpig.json"
+		},
+		{
+		"Action": "Include",
+		"FromFile": "data/island.json"
+		},
+		{
+		"Action": "Include",
+		"FromFile": "data/titlebird.json"
+		},
+		{
+		"Action": "Include",
+		"FromFile": "data/desert.json"
+		},
+		{
+		"Action": "Include",
+		"FromFile": "data/bear.json"
+		},
+		{
+		"Action": "Include",
+		"FromFile": "data/sve.json",
+		"When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" }
+		}
+	]
+}

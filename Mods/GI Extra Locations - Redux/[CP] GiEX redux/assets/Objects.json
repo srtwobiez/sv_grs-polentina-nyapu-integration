@@ -1,0 +1,3083 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "{{ModPrefix}}FlameSword": {
+                    "Name": "FlameSword",
+                    "DisplayName": "{{i18n: FlameSword.Name}}",
+                    "Description": "{{i18n: FlameSword.Description}}",
+                    "Texture": "Mods\\{{ModId}}\\Weapons",
+                    "SpriteIndex": 0,
+                    "MinDamage": 70,
+                    "MaxDamage": 88,
+                    "Knockback": 1.2,
+                    "Projectiles": [
+                        {
+                            "Id": "Fireball",
+                            "Damage": 15,
+                            "FireSound": "fireball",
+                            "MinAngleOffset": "0",
+                            "MaxAngleOffset": "2",
+                            "SpriteIndex": 10
+                        }
+                    ]
+                },
+                "{{ModPrefix}}EctoplasmWand": {
+                    "Name": "EctoplasmWand",
+                    "DisplayName": "{{i18n:Wand}} ([LocalizedText Strings\\Objects:Ectoplasm_Name])",
+                    "Description": "{{i18n: EctoplasmWand.Description}}",
+                    "Type": 1,
+                    "Texture": "Mods\\{{ModId}}\\Weapons",
+                    "SpriteIndex": 1,
+                    "MinDamage": 5,
+                    "MaxDamage": 10,
+                    "Knockback": 0.7,
+                    "Projectiles": [
+                        {
+                            "Id": "Ectoplasm",
+                            "Damage": 75,
+                            "Bounces": 3,
+                            "BounceSound": "slime",
+                            "TailLength": 3,
+                            "MinAngleOffset": "0",
+                            "MaxAngleOffset": "2",
+                            "SpriteIndex": 10,
+                            "Item": {
+                                "Id": "Default",
+                                "ItemId": "(O)875"
+                            }
+                        }
+                    ]
+                },
+                "{{ModPrefix}}InkWand": {
+                    "Name": "InkWand",
+                    "DisplayName": "{{i18n: PaintBrush.Name}}",
+                    "Description": "{{i18n: PaintBrush.Description}}",
+                    "Type": 1,
+                    "Texture": "Mods\\{{ModId}}\\Weapons",
+                    "SpriteIndex": 2,
+                    "MinDamage": 5,
+                    "MaxDamage": 10,
+                    "Knockback": 0.7,
+                    "Projectiles": [
+                        {
+                            "Id": "Ink",
+                            "Damage": 75,
+                            "CollisionSound": "slime",
+                            "TailLength": 2,
+                            "MinAngleOffset": "0",
+                            "MaxAngleOffset": "1",
+                            "SpriteIndex": 2
+                        }
+                    ]
+                }
+            }
+        },
+        /* MUSEUM REWARDS */
+        {
+            "LogName": "Add museum data",
+            "Action": "EditData",
+            "Target": "Data/MuseumRewards",
+            "Entries": {
+                //Gives a pearl as reward when donating omniscient clam.
+                "{{ModId}}_ClamPearl": {
+                    "TargetContextTags": [
+                        {
+                            "Tag": "item_giexredux_deepclam",
+                            "Count": 1
+                        }
+                    ],
+                    "RewardItemId": "(O)797",
+                    "RewardItemCount": 1,
+                    "FlagOnCompletion": true
+                },
+                "{{ModId}}_6ModItems": {
+                    "TargetContextTags": [
+                        {
+                            "Tag": "mod_{{ModId}}",
+                            "Count": 6
+                        }
+                    ],
+                    "RewardItemId": "(O){{ModPrefix}}SeaPlate",
+                    "RewardItemCount": 2,
+                    "FlagOnCompletion": true
+                }
+            }
+        },
+        /* FURNITURE */
+        //trophy
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModPrefix}}IslandTrophy": "Island Trophy/decor/1 3/1 1/1/0/-1/{{i18n:IslandTrophy_Name}}/0/Mods\\{{ModId}}\\Textures\\Furniture/true"
+            }
+        },
+        /* TOOLS*/
+        //tool data
+        {
+            "Action": "EditData",
+            "Target": "Data/Tools",
+            "Entries": {
+                "{{ModPrefix}}LumiRod": {
+                    "ClassName": "FishingRod",
+                    "Name": "Luminous Rod",
+                    "SalePrice": 20000,
+                    "DisplayName": "{{i18n: LumiRod.Name}}",
+                    "Description": "[LocalizedText Strings\\Tools:FishingRod_Description]",
+                    "Texture": "Mods\\{{ModId}}\\Textures\\LuminousRod",
+                    "SpriteIndex": 10,
+                    "MenuSpriteIndex": 0,
+                    "UpgradeLevel": 3,
+                    "ConventionalUpgradeFrom": null,
+                    "UpgradeFrom": null,
+                    "CanBeLostOnDeath": false,
+                    "SetProperties": null,
+                    "ModData": null,
+                    "CustomFields": null
+                },
+                "{{ModPrefix}}VoidDust": {
+                    "ClassName": "ExtraGIMapsRedux.Additions.Tools.MagicDust",
+                    "Name": "VoidDust",
+                    "SalePrice": 3000,
+                    "DisplayName": "{{i18n: VoidDust.Name}}",
+                    "Description": "{{i18n: VoidDust.Description}}",
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "SpriteIndex": 0,
+                    "MenuSpriteIndex": 3,
+                    "UpgradeLevel": 0,
+                    "ApplyUpgradeLevelToDisplayName": false,
+                    "ConventionalUpgradeFrom": null,
+                    "UpgradeFrom": null,
+                    "CanBeLostOnDeath": false,
+                    "SetProperties": {
+                        "InstantUse": true
+                    },
+                    "ModData": {
+                        "Type": "Void"
+                    }
+                },
+                "{{ModPrefix}}PurifyDust": {
+                    "ClassName": "ExtraGIMapsRedux.Additions.Tools.MagicDust",
+                    "Name": "PurifyDust",
+                    "SalePrice": 3000,
+                    "DisplayName": "{{i18n: PurifyDust.Name}}",
+                    "Description": "{{i18n: PurifyDust.Description}}",
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "SpriteIndex": 0,
+                    "MenuSpriteIndex": 4,
+                    "UpgradeLevel": 0,
+                    "ApplyUpgradeLevelToDisplayName": false,
+                    "ConventionalUpgradeFrom": null,
+                    "UpgradeFrom": null,
+                    "CanBeLostOnDeath": false,
+                    "SetProperties": {
+                        "InstantUse": true
+                    },
+                    "ModData": {
+                        "Type": "Purify"
+                    }
+                },
+                "{{ModPrefix}}GoldDust": {
+                    "ClassName": "ExtraGIMapsRedux.Additions.Tools.MagicDust",
+                    "Name": "GoldDust",
+                    "SalePrice": 3000,
+                    "DisplayName": "{{i18n: GoldDust.Name}}",
+                    "Description": "{{i18n: GoldDust.Description}}",
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "SpriteIndex": 0,
+                    "MenuSpriteIndex": 5,
+                    "UpgradeLevel": 0,
+                    "ApplyUpgradeLevelToDisplayName": false,
+                    "ConventionalUpgradeFrom": null,
+                    "UpgradeFrom": null,
+                    "CanBeLostOnDeath": false,
+                    "SetProperties": {
+                        "InstantUse": true
+                    },
+                    "ModData": {
+                        "Type": "Gold"
+                    }
+                },
+                "{{ModPrefix}}HugeBanana": {
+                    "ClassName": "ExtraGIMapsRedux.Additions.Tools.HugeFruit",
+                    "Name": "HugeBanana",
+                    "SalePrice": 1500,
+                    "DisplayName": "{{i18n: HugeBanana.Name}}",
+                    "Description": "{{i18n: HugeFruit.Description}}",
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "SpriteIndex": 6,
+                    "MenuSpriteIndex": 6,
+                    "UpgradeLevel": 0,
+                    "ApplyUpgradeLevelToDisplayName": false,
+                    "ConventionalUpgradeFrom": null,
+                    "UpgradeFrom": null,
+                    "CanBeLostOnDeath": true,
+                    "SetProperties": {
+                        "InstantUse": true
+                    },
+                    "ModData": {
+                        "Type": "Banana"
+                    }
+                },
+                "{{ModPrefix}}HugeCoconut": {
+                    "ClassName": "ExtraGIMapsRedux.Additions.Tools.HugeFruit",
+                    "Name": "HugeCoconut",
+                    "SalePrice": 1500,
+                    "DisplayName": "{{i18n: HugeCoconut.Name}}",
+                    "Description": "{{i18n: HugeFruit.Description}}",
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "SpriteIndex": 7,
+                    "MenuSpriteIndex": 7,
+                    "UpgradeLevel": 0,
+                    "ApplyUpgradeLevelToDisplayName": false,
+                    "ConventionalUpgradeFrom": null,
+                    "UpgradeFrom": null,
+                    "CanBeLostOnDeath": true,
+                    "SetProperties": {
+                        "InstantUse": true
+                    },
+                    "ModData": {
+                        "Type": "Coconut"
+                    }
+                },
+                "{{ModPrefix}}HugeMango": {
+                    "ClassName": "ExtraGIMapsRedux.Additions.Tools.HugeFruit",
+                    "Name": "HugeMango",
+                    "SalePrice": 1500,
+                    "DisplayName": "{{i18n: HugeMango.Name}}",
+                    "Description": "{{i18n: HugeFruit.Description}}",
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "SpriteIndex": 8,
+                    "MenuSpriteIndex": 8,
+                    "UpgradeLevel": 0,
+                    "ApplyUpgradeLevelToDisplayName": false,
+                    "ConventionalUpgradeFrom": null,
+                    "UpgradeFrom": null,
+                    "CanBeLostOnDeath": true,
+                    "SetProperties": {
+                        "InstantUse": true
+                    },
+                    "ModData": {
+                        "Type": "Mango"
+                    }
+                },
+                "{{ModPrefix}}RevivalDust": {
+                    "ClassName": "ExtraGIMapsRedux.Additions.Tools.CropDust",
+                    "Name": "Revival Dust",
+                    "SalePrice": 3000,
+                    "DisplayName": "{{i18n: RevivalDust.Name}}",
+                    "Description": "{{i18n: RevivalDust.Description}}",
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "SpriteIndex": 0,
+                    "MenuSpriteIndex": 10,
+                    "UpgradeLevel": 0,
+                    "ApplyUpgradeLevelToDisplayName": false,
+                    "ConventionalUpgradeFrom": null,
+                    "UpgradeFrom": null,
+                    "CanBeLostOnDeath": false,
+                    "SetProperties": {
+                        "InstantUse": true
+                    },
+                    "ModData": {
+                        "Type": "Revival"
+                    }
+                },
+                "{{ModPrefix}}GrowDust": {
+                    "ClassName": "ExtraGIMapsRedux.Additions.Tools.CropDust",
+                    "Name": "Grow Dust",
+                    "SalePrice": 3000,
+                    "DisplayName": "{{i18n: GrowDust.Name}}",
+                    "Description": "{{i18n: GrowDust.Description}}",
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "SpriteIndex": 0,
+                    "MenuSpriteIndex": 11,
+                    "UpgradeLevel": 0,
+                    "ApplyUpgradeLevelToDisplayName": false,
+                    "ConventionalUpgradeFrom": null,
+                    "UpgradeFrom": null,
+                    "CanBeLostOnDeath": false,
+                    "SetProperties": {
+                        "InstantUse": true
+                    },
+                    "ModData": {
+                        "Type": "Grow"
+                    }
+                }
+            }
+        },
+        /* OBJECTS */
+        //obj data
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                /* items */
+                "{{ModPrefix}}FireRing": {
+                    "Name": "FireRing",
+                    "Price": 450,
+                    "Edibility": -300,
+                    "Type": "Ring",
+                    "Category": -96,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: FireRing.Name}}",
+                    "Description": "{{i18n: FireRing.Description}}",
+                    "SpriteIndex": 0,
+                    "Texture": "Mods\\{{ModId}}\\Objects",
+                    "ContextTags": [
+                        "color_red",
+                        "ring_item",
+                        "prevent_loss_on_death"
+                    ]
+                },
+                "{{ModPrefix}}StarDropSeeds": {
+                    "Name": "StarDropSeeds",
+                    "Price": 450,
+                    "Edibility": -300,
+                    "Type": "Crafting",
+                    "Category": -8,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: StarDropSeeds.Name}}",
+                    "Description": "{{i18n: StarDropSeeds.Description}}",
+                    "SpriteIndex": 1,
+                    "Texture": "Mods\\{{ModId}}\\Objects",
+                    "ContextTags": [
+                        "color_pink",
+                        "not_placeable",
+                        "prevent_loss_on_death"
+                    ]
+                },
+                "{{ModPrefix}}FireEssence": {
+                    "Name": "FireEssence",
+                    "Price": 50,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -28,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: FireEssence.Name}}",
+                    "Description": "{{i18n: FireEssence.Description}}",
+                    "SpriteIndex": 2,
+                    "Texture": "Mods\\{{ModId}}\\Objects",
+                    "ContextTags": [
+                        "color_red",
+                        "dye_strong"
+                    ]
+                },
+                "{{ModPrefix}}LumiStoneShards": {
+                    "Name": "LumiStone shards",
+                    "Price": 0,
+                    "Edibility": -300,
+                    "IsLamp": true,
+                    "Type": "Litter",
+                    "Category": -999,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "LumiStone shards",
+                    "Description": "Shards of luminous stone.",
+                    "SpriteIndex": 3,
+                    "Texture": "Mods\\{{ModId}}\\Rocks",
+                    "ContextTags": [
+                        "light_source"
+                    ]
+                },
+                "{{ModPrefix}}VoidShard": {
+                    "Name": "VoidShard",
+                    "Price": 300,
+                    "Edibility": -300,
+                    "Type": "Mineral",
+                    "Category": -2,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: VoidShard.Name}}",
+                    "Description": "{{i18n: VoidShard.Description}}",
+                    "SpriteIndex": 3,
+                    "Texture": "Mods\\{{ModId}}\\Objects",
+                    "ContextTags": [
+                        "color_black",
+                        "ore_item",
+                        "fish_nonfish",
+                        "crystalarium_banned"
+                    ]
+                },
+                "{{ModPrefix}}LumiShard": {
+                    "Name": "LumiShard",
+                    "Price": 150,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -15,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: LumiShard.Name}}",
+                    "Description": "{{i18n: LumiShard.Description}}",
+                    "SpriteIndex": 4,
+                    "Texture": "Mods\\{{ModId}}\\Objects",
+                    "ContextTags": [
+                        "ore_item",
+                        "color_cyan"
+                    ]
+                },
+                "{{ModPrefix}}LumiBait": {
+                    "Name": "LumiBait",
+                    "Price": 15,
+                    "Edibility": -300,
+                    "Type": "Bait",
+                    "Category": -21,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: LumiBait.Name}}",
+                    "Description": "{{i18n: LumiBait.Description}}",
+                    "SpriteIndex": 5,
+                    "Texture": "Mods\\{{ModId}}\\Objects",
+                    "ContextTags": [
+                        "color_cyan"
+                    ]
+                },
+                "{{ModPrefix}}LumiTackle": {
+                    "Name": "LumiTackle",
+                    "DisplayName": "{{i18n: LumiTackle.Name}}",
+                    "Description": "{{i18n: LumiTackle.Description}}",
+                    "Price": 400,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -22,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "SpriteIndex": 6,
+                    "Texture": "Mods\\{{ModId}}\\Objects",
+                    "ContextTags": [
+                        "color_cyan"
+                    ]
+                },
+                /* cooking */
+                "{{ModPrefix}}ShrimpMangoSalad": {
+                    "Name": "Shrimp Mango Salad",
+                    "Price": 450,
+                    "Edibility": 50,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: ShrimpMangoSalad.Name}}",
+                    "Description": "{{i18n: ShrimpMangoSalad.Description}}",
+                    "SpriteIndex": 4,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "food_seafood"
+                    ]
+                },
+                "{{ModPrefix}}CoconutCheesecakeBars": {
+                    "Name": "Coconut Cheesecake Bars",
+                    "Price": 450,
+                    "Edibility": 30,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: CoconutCheesecakeBars.Name}}",
+                    "Description": "{{i18n: CoconutCheesecakeBars.Description}}",
+                    "SpriteIndex": 5,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "food_bakery",
+                        "food_sweet"
+                    ]
+                },
+                "{{ModPrefix}}GingerbreadMan": {
+                    "Name": "Gingerbread Man",
+                    "Price": 450,
+                    "Edibility": 36,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: GingerbreadMan.Name}}",
+                    "Description": "{{i18n: GingerbreadMan.Description}}",
+                    "SpriteIndex": 6,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "food_bakery",
+                        "food_sweet"
+                    ]
+                },
+                "{{ModPrefix}}StardropCake": {
+                    "Name": "Stardrop Cake",
+                    "Price": 450,
+                    "Edibility": 60,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: StardropCake.Name}}",
+                    "Description": "{{i18n: StardropCake.Description}}",
+                    "SpriteIndex": 7,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "food_bakery"
+                    ],
+                    "Buffs": [
+                        {
+                            "Id": "{{ModId}}/Resistant",
+                            "BuffId": "{{ModId}}/Resistant",
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": null,
+                            "CustomFields": null
+                        }
+                    ]
+                },
+                "{{ModPrefix}}CoconutPineappleSpritz": {
+                    "Name": "Coconut-Pineapple Spritz",
+                    "Price": 450,
+                    "Edibility": 25,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: CoconutPineappleSpritz.Name}}",
+                    "Description": "{{i18n: CoconutPineappleSpritz.Description}}",
+                    "SpriteIndex": 8,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                          "Id": "Tipsy",
+                          "BuffId": "17",
+                          "IconTexture": null,
+                          "IconSpriteIndex": 0,
+                          "Duration": 0,
+                          "IsDebuff": false,
+                          "GlowColor": null,
+                          "CustomAttributes": null,
+                          "CustomFields": null
+                        }
+                      ],
+                    "ContextTags": [
+                        "alcohol_item",
+                        "color_yellow"
+                    ]
+                },
+                "{{ModPrefix}}FriedCoconutShrimp": {
+                    "Name": "Fried Coconut Shrimp",
+                    "Price": 450,
+                    "Edibility": 50,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: FriedCoconutShrimp.Name}}",
+                    "Description": "{{i18n: FriedCoconutShrimp.Description}}",
+                    "SpriteIndex": 9,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "food_sweet"
+                    ]
+                },
+                "{{ModPrefix}}SweetSauce": {
+                    "Name": "Sweet Sauce",
+                    "Price": 450,
+                    "Edibility": 80,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: SweetSauce.Name}}",
+                    "Description": "{{i18n: SweetSauce.Description}}",
+                    "SpriteIndex": 10,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                          "Id": "{{ModId}}/Charmer",
+                          "BuffId": "{{ModId}}/Charmer",
+                          "IsDebuff": false,
+                          "GlowColor": null,
+                          "CustomAttributes": null,
+                          "CustomFields": null
+                        }
+                      ],
+                    "ContextTags": [
+                        "food_sweet",
+                        "drink_item"
+                    ]
+                },
+                "{{ModPrefix}}MagicIceCream": {
+                    "Name": "Magic Ice Cream",
+                    "Price": 450,
+                    "Edibility": 200,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: MagicIceCream.Name}}",
+                    "Description": "{{i18n: MagicIceCream.Description}}",
+                    "SpriteIndex": 11,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 720,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0,
+                                "fishingLevel": 0,
+                                "MiningLevel": 2,
+                                "LuckLevel": 5,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 2,
+                                "Defense": 5,
+                                "Attack": 5
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "food_sweet",
+                        "prevent_loss_on_death"
+                    ]
+                },
+                "{{ModPrefix}}MangoMilk": {
+                    "Name": "Mango Milk",
+                    "Price": 450,
+                    "Edibility": 50,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: MangoMilk.Name}}",
+                    "Description": "{{i18n: MangoMilk.Description}}",
+                    "SpriteIndex": 12,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "food_sweet",
+                        "drink_item"
+                    ]
+                },
+                "{{ModPrefix}}AncientJuice": {
+                    "Name": "Ancient Juice",
+                    "Price": 2000,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: AncientJuice.Name}}",
+                    "Description": "{{i18n: AncientJuice.Description}}",
+                    "SpriteIndex": 13,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "color_cyan",
+                        "drink_item",
+                        "juice_item",
+                        "food_sweet"
+                    ]
+                },
+                "{{ModPrefix}}AncientCobbler": {
+                    "Name": "Ancient Cobbler",
+                    "Price": 1500,
+                    "Edibility": 70,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: AncientCobbler.Name}}",
+                    "Description": "{{i18n: AncientCobbler.Description}}",
+                    "SpriteIndex": 14,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "color_cyan",
+                        "food_bakery",
+                        "food_sweet"
+                    ]
+                },
+                "{{ModPrefix}}PineappleCoconutCake": {
+                    "Name": "Pineapple Coconut Cake",
+                    "Price": 1200,
+                    "Edibility": 30,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: PineappleCoconutCake.Name}}",
+                    "Description": "{{i18n: PineappleCoconutCake.Description}}",
+                    "SpriteIndex": 15,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "food_bakery",
+                        "food_sweet"
+                    ]
+                },
+                "{{ModPrefix}}SeaPlate": {
+                    "Name": "SeaPlate",
+                    "Price": 400,
+                    "Edibility": 50,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: SeaPlate.Name}}",
+                    "Description": "{{i18n: SeaPlate.Description}}",
+                    "SpriteIndex": 16,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "food_seafood"
+                    ]
+                },
+                "{{ModPrefix}}TilapiaWithMangoSalsa": {
+                    "Name": "Tilapia With Mango Salsa",
+                    "Price": 450,
+                    "Edibility": 40,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: TilapiaWithMangoSalsa.Name}}",
+                    "Description": "{{i18n: TilapiaWithMangoSalsa.Description}}",
+                    "SpriteIndex": 17,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "food_seafood"
+                    ]
+                },
+                "{{ModPrefix}}CoconutCurryFishStew": {
+                    "Name": "Coconut Curry Fish Stew",
+                    "Price": 450,
+                    "Edibility": 90,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: CoconutCurryFishStew.Name}}",
+                    "Description": "{{i18n: CoconutCurryFishStew.Description}}",
+                    "SpriteIndex": 18,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "food_seafood"
+                    ]
+                },
+                "{{ModPrefix}}EggRolls": {
+                    "Name": "Egg Rolls",
+                    "Price": 450,
+                    "Edibility": 50,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: EggRolls.Name}}",
+                    "Description": "{{i18n: EggRolls.Description}}",
+                    "SpriteIndex": 19,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                    ]
+                },
+                "{{ModPrefix}}MushroomPizza": {
+                    "Name": "MushroomPizza",
+                    "Price": 450,
+                    "Edibility": 90,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: MushroomPizza.Name}}",
+                    "Description": "{{i18n: MushroomPizza.Description}}",
+                    "SpriteIndex": 20,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "color_red",
+                        "food_party"
+                    ]
+                },
+                "{{ModPrefix}}SalmonWithMangoCitrusSalsa": {
+                    "Name": "Salmon with Mango-Citrus Salsa",
+                    "Price": 450,
+                    "Edibility": 50,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: SalmonWithMangoCitrusSalsa.Name}}",
+                    "Description": "{{i18n: SalmonWithMangoCitrusSalsa.Description}}",
+                    "SpriteIndex": 21,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "ContextTags": [
+                        "food_seafood",
+                        "color_brown"
+                    ]
+                },
+                "{{ModPrefix}}OmniBurger": {
+                    "Name": "OmniBurger",
+                    "Price": 500,
+                    "Edibility": 50,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true, //"{{mistyspring.GiEXredux.code/ExcludeCooking}}",
+                    "DisplayName": "{{i18n: OmniBurger.Name}}",
+                    "Description": "{{i18n: OmniBurger.Description}}",
+                    "SpriteIndex": 22,
+                    "Texture": "Mods\\{{ModId}}\\Recipes",
+                    "Buff": {
+                        "Duration": 100, //in seconds
+                        "IsDebuff": false,
+                        "CustomAttributes": {
+                            "FarmingLevel": 0,
+                            "fishingLevel": 0,
+                            "MiningLevel": 1,
+                            "LuckLevel": 0,
+                            "ForagingLevel": 0,
+                            "MaxStamina": 0,
+                            "MagneticRadius": 0,
+                            "Speed": 0,
+                            "Defense": 1,
+                            "Attack": 0
+                        }
+                    },
+                    "ContextTags": [
+                        "color_brown",
+                        "food_seafood"
+                    ]
+                },
+                // arch
+                "{{ModPrefix}}PearlNecklace": {
+                    "Name": "PearlNecklace",
+                    "Price": 4000,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: PearlNecklace.Name}}",
+                    "Description": "{{i18n: PearlNecklace.Description}}",
+                    "SpriteIndex": 0,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white",
+                        "override_arch_taste"
+                    ]
+                },
+                "{{ModPrefix}}AncientKey": {
+                    "Name": "AncientKey",
+                    "Price": 25,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: AncientKey.Name}}",
+                    "Description": "{{i18n: AncientKey.Description}}",
+                    "SpriteIndex": 1,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_brown"
+                    ]
+                },
+                "{{ModPrefix}}OldBottle": {
+                    "Name": "OldBottle",
+                    "Price": 7,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: OldBottle.Name}}",
+                    "Description": "{{i18n: OldBottle.Description}}",
+                    "SpriteIndex": 2,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white"
+                    ]
+                },
+                "{{ModPrefix}}Fossil1": {
+                    "Name": "Fossil 1",
+                    "Price": 60,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Fossil.Name}}",
+                    "Description": "{{i18n: Fossil.Description}}",
+                    "SpriteIndex": 3,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white"
+                    ]
+                },
+                "{{ModPrefix}}GoldWatch": {
+                    "Name": "GoldWatch",
+                    "Price": 450,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: GoldWatch.Name}}",
+                    "Description": "{{i18n: GoldWatch.Description}}",
+                    "SpriteIndex": 4,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white"
+                    ]
+                },
+                "{{ModPrefix}}Fossil2": {
+                    "Name": "Fossil2",
+                    "Price": 60,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Fossil.Name}}",
+                    "Description": "{{i18n: Fossil.Description}}",
+                    "SpriteIndex": 5,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white",
+                        "override_arch_taste"
+                    ]
+                },
+                "{{ModPrefix}}FishFlute": {
+                    "Name": "FishFlute",
+                    "Price": 70,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: FishFlute.Name}}",
+                    "Description": "{{i18n: FishFlute.Description}}",
+                    "SpriteIndex": 6,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white"
+                    ]
+                },
+                "{{ModPrefix}}LumiRose": {
+                    "Name": "LumiRose",
+                    "Price": 300,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: LumiRose.Name}}",
+                    "Description": "{{i18n: LumiRose.Description}}",
+                    "SpriteIndex": 7,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white",
+                        "crystalarium_banned"
+                    ]
+                },
+                "{{ModPrefix}}DeepClam": {
+                    "Name": "DeepClam",
+                    "Price": 2000,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: DeepClam.Name}}",
+                    "Description": "{{i18n: DeepClam.Description}}",
+                    "SpriteIndex": 8,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_black",
+                        "not_giftable"
+                    ]
+                },
+                "{{ModPrefix}}Compass": {
+                    "Name": "Compass",
+                    "Price": 25,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Compass.Name}}",
+                    "Description": "{{i18n: Compass.Description}}",
+                    "SpriteIndex": 9,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white"
+                    ]
+                },
+                "{{ModPrefix}}AncientTablet": {
+                    "Name": "AncientTablet",
+                    "Price": 150,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: AncientTablet.Name}}",
+                    "Description": "{{i18n: AncientTablet.Description}}",
+                    "SpriteIndex": 10,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white"
+                    ]
+                },
+                "{{ModPrefix}}StrangeScale": {
+                    "Name": "StrangeScale",
+                    "Price": 45,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: StrangeScale.Name}}",
+                    "Description": "{{i18n: StrangeScale.Description}}",
+                    "SpriteIndex": 11,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_purple"
+                    ]
+                },
+                "{{ModPrefix}}WaterOrb": {
+                    "Name": "WaterOrb",
+                    "Price": 20,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: WaterOrb.Name}}",
+                    "Description": "{{i18n: WaterOrb.Description}}",
+                    "SpriteIndex": 12,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_cyan"
+                    ]
+                },
+                "{{ModPrefix}}PirateHook": {
+                    "Name": "PirateHook",
+                    "Price": 50,
+                    "Edibility": -300,
+                    "Type": "Arch",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: PirateHook.Name}}",
+                    "Description": "{{i18n: PirateHook.Description}}",
+                    "SpriteIndex": 13,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_grey",
+                        "color_gray"
+                    ]
+                },
+                //monster loot
+                "{{ModPrefix}}LavaDragonEgg": {
+                    "Name": "LavaDragonEgg",
+                    "DisplayName": "{{i18n: LavaDragonEgg.Name}}",
+                    "Description": "{{i18n: LavaDragonEgg.Description}}",
+                    "Price": 300,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -28,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "SpriteIndex": 14,
+                    "Texture": "Mods\\{{ModId}}\\Artifacts",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_black",
+                        "color_orange"
+                    ]
+                }
+            }
+        },
+        //animal produce
+        //fruit
+        {
+            "LogName":"Banana milk",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}Milk_B": {
+                    "Name": "Milk_B",
+                    "Price": 250,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: Milk_B.Name}}",
+                    "Description": "[LocalizedText Strings\\Objects:Milk_Description]",
+                    "SpriteIndex": 0,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_yellow",
+                        "drink_item",
+                        "milk_item",
+                        "cow_milk_item"
+                    ]
+                },
+                "{{ModPrefix}}LargeMilk_B": {
+                    "Name": "LargeMilk_B",
+                    "Price": 350,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: LargeMilk_B.Name}}",
+                    "Description": "[LocalizedText Strings\\Objects:LargeMilk_Description]",
+                    "SpriteIndex": 3,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_yellow",
+                        "drink_item",
+                        "milk_item",
+                        "cow_milk_item",
+                        "large_milk_item"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/BananaCow": true
+            }
+        },
+        {
+            "LogName":"Coconut milk",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}Milk_C": {
+                    "Name": "Milk_C",
+                    "Price": 250,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: Milk_C.Name}}",
+                    "Description": "[LocalizedText Strings\\Objects:Milk_Description]",
+                    "SpriteIndex": 1,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_brown",
+                        "drink_item",
+                        "milk_item",
+                        "cow_milk_item"
+                    ]
+                },
+                "{{ModPrefix}}LargeMilk_C": {
+                    "Name": "LargeMilk_C",
+                    "Price": 350,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: LargeMilk_C.Name}}",
+                    "Description": "[LocalizedText Strings\\Objects:LargeMilk_Description]",
+                    "SpriteIndex": 4,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_brown",
+                        "drink_item",
+                        "milk_item",
+                        "cow_milk_item",
+                        "large_milk_item"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/CoconutCow": true
+            }
+        },
+        {
+            "LogName":"Mango milk",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}Milk_M": {
+                    "Name": "Milk_M",
+                    "Price": 250,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: Milk_M.Name}}",
+                    "Description": "[LocalizedText Strings\\Objects:Milk_Description]",
+                    "SpriteIndex": 2,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_orange",
+                        "drink_item",
+                        "milk_item",
+                        "cow_milk_item"
+                    ]
+                },
+                "{{ModPrefix}}LargeMilk_M": {
+                    "Name": "LargeMilk_M",
+                    "Price": 350,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: LargeMilk_M.Name}}",
+                    "Description": "[LocalizedText Strings\\Objects:LargeMilk_Description]",
+                    "SpriteIndex": 5,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_orange",
+                        "drink_item",
+                        "milk_item",
+                        "cow_milk_item",
+                        "large_milk_item"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/MangoCow": true
+            }
+        },
+        //gold
+        {
+            "LogName":"Gold milk",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}Milk_G": {
+                    "Name": "Milk_G",
+                    "Price": 250,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: Milk_G.Name}}",
+                    "Description": "{{i18n: Milk_G.Description}}",
+                    "SpriteIndex": 8,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_gold",
+                        "drink_item",
+                        "milk_item",
+                        "cow_milk_item"
+                    ]
+                },
+                "{{ModPrefix}}LargeMilk_G": {
+                    "Name": "LargeMilk_G",
+                    "Price": 350,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: LargeMilk_G.Name}}",
+                    "Description": "{{i18n: LargeMilk_G.Description}}",
+                    "SpriteIndex": 10,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_gold",
+                        "drink_item",
+                        "milk_item",
+                        "cow_milk_item",
+                        "large_milk_item"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/GoldenCow": true
+            }
+        },
+        {
+            "LogName":"Gold goat milk",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}GoatMilk_G": {
+                    "Name": "GoatMilk_G",
+                    "Price": 400,
+                    "Edibility": 35,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: GoatMilk_G.Name}}",
+                    "Description": "{{i18n: GoatMilk_G.Description}}",
+                    "SpriteIndex": 9,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_gold",
+                        "drink_item",
+                        "milk_item",
+                        "goat_milk_item"
+                    ]
+                },
+                "{{ModPrefix}}LargeGoatMilk_G": {
+                    "Name": "LargeGoatMilk_G",
+                    "Price": 650,
+                    "Edibility": 45,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: LargeGoatMilk_G.Name}}",
+                    "Description": "{{i18n: LargeGoatMilk_G.Description}}",
+                    "SpriteIndex": 11,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_gold",
+                        "drink_item",
+                        "milk_item",
+                        "goat_milk_item",
+                        "large_milk_item"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/GoldenGoat": true
+            }
+        },
+        {
+            "LogName":"Gold wool and yarn",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}Wool_G": {
+                    "Name": "Wool_G",
+                    "Price": 450,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -18,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: Wool_G.Name}}",
+                    "Description": "{{i18n: Wool_G.Description}}",
+                    "SpriteIndex": 12,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_gold"
+                    ]
+                },
+                "{{ModPrefix}}Yarn_G": {
+                    "Name": "Yarn_G",
+                    "Price": 1000,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -26,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: Yarn_G.Name}}",
+                    "Description": "{{i18n: Yarn_G.Description}}",
+                    "SpriteIndex": 13,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_gold"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/GoldenSheep": true
+            }
+        },
+        {
+            "LogName":"Gold duck egg",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}DuckEgg_G": {
+                    "Name": "DuckEgg_G",
+                    "Price": 200,
+                    "Edibility": 30,
+                    "Type": "Basic",
+                    "Category": -5,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: DuckEgg_G.Name}}",
+                    "Description": "{{i18n: DuckEgg_G.Description}}",
+                    "SpriteIndex": 14,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_gold",
+                        "egg_item"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/GoldenDuck": true
+            }
+        },
+        {
+            "LogName":"Gold ostrich egg",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}OstrichEgg_G": {
+                    "Name": "OstrichEgg_G",
+                    "Price": 1250,
+                    "Edibility": 30,
+                    "Type": "Basic",
+                    "Category": -5,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: OstrichEgg_G.Name}}",
+                    "Description": "{{i18n: OstrichEgg_G.Description}}",
+                    "SpriteIndex": 15,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_gold",
+                        "egg_item"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/GoldenOstrich": true
+            }
+        },
+        {
+            "LogName":"Gold dino egg",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}DinoEgg_G": {
+                    "Name": "DinoEgg_G",
+                    "Price": 800,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -5,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: DinoEgg_G.Name}}",
+                    "Description": "{{i18n: DinoEgg_G.Description}}",
+                    "SpriteIndex": 16,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_gold",
+                        "egg_item"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/GoldenDinosaur": true
+            }
+        },
+        //iridium
+        {
+            "LogName":"Iridium egg",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}IridiumEgg": {
+                    "Name": "IridiumEgg",
+                    "Price": 450,
+                    "Edibility": 20,
+                    "Type": "Basic",
+                    "Category": -5,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: IridiumEgg.Name}}",
+                    "Description": "{{i18n: IridiumEgg.Description}}",
+                    "SpriteIndex": 17,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_iridium",
+                        "egg_item"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/IridiumChicken": true
+            }
+        },
+        //void
+        {
+            "LogName":"Void milk",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}Milk_V": {
+                    "Name": "Milk_V",
+                    "Price": 150,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: Milk_V.Name}}",
+                    "Description": "{{i18n: Milk_V.Description}}",
+                    "SpriteIndex": 24,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black",
+                        "drink_item",
+                        "milk_item",
+                        "cow_milk_item"
+                    ]
+                },
+                "{{ModPrefix}}LargeMilk_V": {
+                    "Name": "LargeMilk_V",
+                    "Price": 215,
+                    "Edibility": 25,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: LargeMilk_V.Name}}",
+                    "Description": "{{i18n: LargeMilk_V.Description}}",
+                    "SpriteIndex": 26,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black",
+                        "drink_item",
+                        "milk_item",
+                        "large_milk_item",
+                        "cow_milk_item"
+                    ]
+                },
+                "{{ModPrefix}}Cheese_V": {
+                    "Name": "Cheese_V",
+                    "Price": 250,
+                    "Edibility": 55,
+                    "Type": "Basic",
+                    "Category": -26,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: Cheese_V.Name}}",
+                    "Description": "{{i18n: Cheese_V.Description}}",
+                    "SpriteIndex": 28,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/VoidCow": true
+            }
+        },
+        {
+            "LogName":"Void goat milk",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}GoatMilk_V": {
+                    "Name": "GoatMilk_V",
+                    "Price": 250,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: GoatMilk_V.Name}}",
+                    "Description": "{{i18n: GoatMilk_V.Description}}",
+                    "SpriteIndex": 25,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black",
+                        "drink_item",
+                        "milk_item",
+                        "goat_milk_item"
+                    ]
+                },
+                "{{ModPrefix}}LargeGoatMilk_V": {
+                    "Name": "LargeGoatMilk_V",
+                    "Price": 400,
+                    "Edibility": 40,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "Category": -6,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: LargeGoatMilk_V.Name}}",
+                    "Description": "{{i18n: LargeGoatMilk_V.Description}}",
+                    "SpriteIndex": 27,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black",
+                        "drink_item",
+                        "milk_item",
+                        "large_milk_item",
+                        "goat_milk_item"
+                    ]
+                },
+                "{{ModPrefix}}GoatCheese_V": {
+                    "Name": "GoatCheese_V",
+                    "Price": 420,
+                    "Edibility": 55,
+                    "Type": "Basic",
+                    "Category": -26,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: GoatCheese_V.Name}}",
+                    "Description": "{{i18n: GoatCheese_V.Description}}",
+                    "SpriteIndex": 29,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/VoidGoat": true
+            }
+        },
+        {
+            "LogName":"Void wool and yarn",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}Wool_V": {
+                    "Name": "Wool_V",
+                    "Price": 365,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -18,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: Wool_V.Name}}",
+                    "Description": "{{i18n: Wool_V.Description}}",
+                    "SpriteIndex": 30,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black"
+                    ]
+                },
+                "{{ModPrefix}}Yarn_V": {
+                    "Name": "Yarn_V",
+                    "Price": 500,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -26,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: Yarn_V.Name}}",
+                    "Description": "{{i18n: Yarn_V.Description}}",
+                    "SpriteIndex": 31,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/VoidSheep": true
+            }
+        },
+        {
+            "LogName":"Void duck egg, mayo, and feather",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}DuckEgg_V": {
+                    "Name": "DuckEgg_V",
+                    "Price": 150,
+                    "Edibility": 20,
+                    "Type": "Basic",
+                    "Category": -5,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: DuckEgg_V.Name}}",
+                    "Description": "{{i18n: DuckEgg_V.Description}}",
+                    "SpriteIndex": 32,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black",
+                        "egg_item"
+                    ]
+                },
+                "{{ModPrefix}}DuckMayo_V": {
+                    "Name": "DuckMayo_V",
+                    "Price": 500,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -26,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: DuckMayo_V.Name}}",
+                    "Description": "{{i18n: DuckMayo_V.Description}}",
+                    "SpriteIndex": 35,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black",
+                        "mayo_item"
+                    ]
+                },
+                "{{ModPrefix}}DuckFeather_V": {
+                    "Name": "DuckFeather_V",
+                    "Price": 280,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -18,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "[LocalizedText Strings\\Objects:DuckFeather_Name]",
+                    "Description": "[LocalizedText Strings\\Objects:DuckFeather_Description]",
+                    "SpriteIndex": 38,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black",
+                        "item_duck_feather"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/VoidDuck": true
+            }
+        },
+        {
+            "LogName":"Void ostrich egg",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}OstrichEgg_V": {
+                    "Name": "OstrichEgg_V",
+                    "Price": 800,
+                    "Edibility": 30,
+                    "Type": "Basic",
+                    "Category": -5,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: OstrichEgg_V.Name}}",
+                    "Description": "{{i18n: OstrichEgg_V.Description}}",
+                    "SpriteIndex": 33,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black",
+                        "egg_item"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/VoidOstrich": true
+            }
+        },
+        {
+            "LogName":"Void dino egg and mayo",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}DinoEgg_V": {
+                    "Name": "DinoEgg_V",
+                    "Price": 600,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -5,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: DinoEgg_V.Name}}",
+                    "Description": "{{i18n: DinoEgg_V.Description}}",
+                    "SpriteIndex": 34,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black",
+                        "egg_item"
+                    ]
+                },
+                "{{ModPrefix}}DinoMayo_V": {
+                    "Name": "DinoMayo_V",
+                    "Price": 1000,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -26,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "{{i18n: DinoMayo_V.Name}}",
+                    "Description": "{{i18n: DinoMayo_V.Description}}",
+                    "SpriteIndex": 36,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black",
+                        "mayo_item"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/VoidDinosaur": true
+            }
+        },
+        {
+            "LogName":"Void rabbit foot",
+            "Action":"EditData",
+            "Target":"Data/Objects",
+            "Entries":{
+                "{{ModPrefix}}RabbitFoot_V": {
+                    "Name": "RabbitFoot_V",
+                    "Price": 600,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": -18,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{mistyspring.GiEXredux.code/ExcludeAnimalProduce}}",
+                    "DisplayName": "[LocalizedText Strings\\Objects:RabbitsFoot_Name]",
+                    "Description": "[LocalizedText Strings\\Objects:RabbitsFoot_Description]",
+                    "SpriteIndex": 37,
+                    "Texture": "Mods\\{{ModId}}\\AnimalProduce",
+                    "ContextTags": [
+                        "color_black"
+                    ]
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/VoidRabbit": true
+            }
+        },
+        //fish objects' data
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModPrefix}}Dragonfish": {
+                    "Name": "Dragonfish",
+                    "Price": 260,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Dragonfish.Name}}",
+                    "Description": "{{i18n: Dragonfish.Description}}",
+                    "SpriteIndex": 2,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_iridium",
+                        "fish_semi_rare",
+                        "fish_mines",
+                        "fish_summer",
+                        "fish_talk_rude"
+                    ]
+                },
+                "{{ModPrefix}}Cinderfish": {
+                    "Name": "Cinderfish",
+                    "Price": 250,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Cinderfish.Name}}",
+                    "Description": "{{i18n: Cinderfish.Description}}",
+                    "SpriteIndex": 3,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_pink",
+                        "fish_semi_rare",
+                        "fish_mines",
+                        "fish_summer"
+                    ]
+                },
+                "{{ModPrefix}}Omnifish": {
+                    "Name": "Omnifish",
+                    "Price": 240,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Omnifish.Name}}",
+                    "Description": "{{i18n: Omnifish.Description}}",
+                    "SpriteIndex": 4,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_dark_blue",
+                        "color_grey",
+                        "fish_semi_rare",
+                        "fish_mines",
+                        "fish_summer",
+                        "fish_talk_stiff"
+                    ]
+                },
+                "{{ModPrefix}}Viperfish": {
+                    "Name": "{{ModPrefix}}Viperfish",
+                    "Price": 200,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Viperfish.Name}}",
+                    "Description": "{{i18n: Viperfish.Description}}",
+                    "SpriteIndex": 5,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_black",
+                        "fish_semi_rare",
+                        "fish_summer"
+                    ]
+                },
+                "{{ModPrefix}}Cocofish": {
+                    "Name": "Cocofish",
+                    "Price": 230,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Cocofish.Name}}",
+                    "Description": "{{i18n: Cocofish.Description}}",
+                    "SpriteIndex": 6,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_brown",
+                        "fish_semi_rare",
+                        "fish_river",
+                        "fish_summer"
+                    ]
+                },
+                "{{ModPrefix}}SeaAngel": {
+                    "Name": "SeaAngel",
+                    "Price": 220,
+                    "Edibility": 15,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: SeaAngel.Name}}",
+                    "Description": "{{i18n: SeaAngel.Description}}",
+                    "SpriteIndex": 7,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_orange",
+                        "fish_semi_rare",
+                        "fish_summer"
+                    ]
+                },
+                "{{ModPrefix}}Skeletonfish": {
+                    "Name": "Skeletonfish",
+                    "Price": 190,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Skeletonfish.Name}}",
+                    "Description": "{{i18n: Skeletonfish.Description}}",
+                    "SpriteIndex": 8,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white",
+                        "fish_semi_rare",
+                        "fish_mines",
+                        "fish_summer",
+                        "fish_talk_stiff"
+                    ]
+                },
+                "{{ModPrefix}}SeaPig": {
+                    "Name": "SeaPig",
+                    "Price": 490,
+                    "Edibility": 15,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: SeaPig.Name}}",
+                    "Description": "{{i18n: SeaPig.Description}}",
+                    "SpriteIndex": 9,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_pale_violet_red",
+                        "fish_semi_rare",
+                        "fish_ocean",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}AtollaJellyfish": {
+                    "Name": "AtollaJellyfish",
+                    "Price": 530,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: AtollaJellyfish.Name}}",
+                    "Description": "{{i18n: AtollaJellyfish.Description}}",
+                    "SpriteIndex": 10,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_red",
+                        "fish_semi_rare",
+                        "fish_ocean",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}Facelessfish": {
+                    "Name": "Facelessfish",
+                    "Price": 310,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Facelessfish.Name}}",
+                    "Description": "{{i18n: Facelessfish.Description}}",
+                    "SpriteIndex": 11,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_grey",
+                        "color_gray",
+                        "fish_semi_rare",
+                        "fish_ocean",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}AbyssalSpiderfish": {
+                    "Name": "AbyssalSpiderfish",
+                    "Price": 300,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: AbyssalSpiderfish.Name}}",
+                    "Description": "{{i18n: AbyssalSpiderfish.Description}}",
+                    "SpriteIndex": 12,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_brown",
+                        "fish_semi_rare",
+                        "fish_ocean",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}Piratefish": {
+                    "Name": "Piratefish",
+                    "Price": 300,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Piratefish.Name}}",
+                    "Description": "{{i18n: Piratefish.Description}}",
+                    "SpriteIndex": 13,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_cyan",
+                        "fish_semi_rare",
+                        "fish_summer",
+                        "fish_talk_rude"
+                    ]
+                },
+                "{{ModPrefix}}VampSquid": {
+                    "Name": "VampSquid",
+                    "Price": 450,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: VampSquid.Name}}",
+                    "Description": "{{i18n: VampSquid.Description}}",
+                    "SpriteIndex": 14,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_pale_violet_red",
+                        "fish_semi_rare",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}Toothfish": {
+                    //Patagonian Toothfish
+                    "Name": "Toothfish",
+                    "Price": 450,
+                    "Edibility": 15,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Toothfish.Name}}",
+                    "Description": "{{i18n: Toothfish.Description}}",
+                    "SpriteIndex": 15,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_black",
+                        "fish_semi_rare",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}CombJelly": {
+                    "Name": "CombJelly",
+                    "Price": 510,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: CombJelly.Name}}",
+                    "Description": "{{i18n: CombJelly.Description}}",
+                    "SpriteIndex": 16,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_aquamarine",
+                        "fish_semi_rare",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}Lizardfish": {
+                    "Name": "Lizardfish",
+                    "Price": 380,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Lizardfish.Name}}",
+                    "Description": "{{i18n: Lizardfish.Description}}",
+                    "SpriteIndex": 17,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_dark_purple",
+                        "fish_semi_rare",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}CuskEel": {
+                    "Name": "CuskEel",
+                    "Price": 360,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: CuskEel.Name}}",
+                    "Description": "{{i18n: CuskEel.Description}}",
+                    "SpriteIndex": 18,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_dark_red", //_poppyseed",
+                        "fish_semi_rare",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}Grenadier": {
+                    "Name": "Grenadier",
+                    "Price": 350,
+                    "Edibility": 18,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Grenadier.Name}}",
+                    "Description": "{{i18n: Grenadier.Description}}",
+                    "SpriteIndex": 19,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_grey",
+                        "color_gray",
+                        "fish_semi_rare",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}Whalefish": {
+                    //Flabby Whalefish
+                    "Name": "Whalefish",
+                    "Price": 440,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Whalefish.Name}}",
+                    "Description": "{{i18n: Whalefish.Description}}",
+                    "SpriteIndex": 20,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_red",
+                        "fish_semi_rare",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}CosmicJelly": {
+                    //Cosmic Jellyfish
+                    "Name": "CosmicJelly",
+                    "Price": 460,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: CosmicJelly.Name}}",
+                    "Description": "{{i18n: CosmicJelly.Description}}",
+                    "SpriteIndex": 21,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white",
+                        "fish_semi_rare",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}Hadalfish": {
+                    "Name": "Hadalfish",
+                    "Price": 500,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Hadalfish.Name}}",
+                    "Description": "{{i18n: Hadalfish.Description}}",
+                    "SpriteIndex": 22,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_pale_violet_red",
+                        "fish_semi_rare",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                //crab pot fishes
+                "{{ModPrefix}}Squidworm": {
+                    "Name": "Squidworm",
+                    "Price": 450,
+                    "Edibility": 15,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Squidworm.Name}}",
+                    "Description": "{{i18n: Squidworm.Description}}",
+                    "SpriteIndex": 23,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_orange",
+                        "fish_semi_rare",
+                        "fish_crab_pot",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                //there's text on 23, 24 and 25, skipped
+                "{{ModPrefix}}LavaSnail": {
+                    "Name": "LavaSnail",
+                    "Price": 400,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: LavaSnail.Name}}",
+                    "Description": "{{i18n: LavaSnail.Description}}",
+                    "SpriteIndex": 26,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_red",
+                        "color_purple",
+                        "fish_semi_rare",
+                        "fish_crab_pot",
+                        "fish_summer"
+                    ]
+                },
+                "{{ModPrefix}}BritStar": {
+                    "Name": "BritStar",
+                    "Price": 350,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: BritStar.Name}}",
+                    "Description": "{{i18n: BritStar.Description}}",
+                    "SpriteIndex": 27,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_orange",
+                        "fish_semi_rare",
+                        "fish_crab_pot",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}Amphipoda": {
+                    "Name": "Amphipoda",
+                    "Price": 320,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Amphipoda.Name}}",
+                    "Description": "{{i18n: Amphipoda.Description}}",
+                    "SpriteIndex": 28,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white",
+                        "fish_semi_rare",
+                        "fish_crab_pot",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}Chiton": {
+                    "Name": "Chiton",
+                    "Price": 210,
+                    "Edibility": 15,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Chiton.Name}}",
+                    "Description": "{{i18n: Chiton.Description}}",
+                    "SpriteIndex": 29,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_brown",
+                        "fish_semi_rare",
+                        "fish_crab_pot",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}Caridea": {
+                    "Name": "Caridea",
+                    "Price": 250,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: Caridea.Name}}",
+                    "Description": "{{i18n: Caridea.Description}}",
+                    "SpriteIndex": 30,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_orange",
+                        "fish_semi_rare",
+                        "fish_crab_pot",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                },
+                "{{ModPrefix}}HarpSponge": {
+                    //Harp Sponge
+                    "Name": "HarpSponge",
+                    "Price": 350,
+                    "Edibility": -300,
+                    "Type": "fish",
+                    "Category": -4,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{mistyspring.GiEXredux.code/ExcludeFishes}}",
+                    "ExcludeFromShippingCollection": true,
+                    "DisplayName": "{{i18n: HarpSponge.Name}}",
+                    "Description": "{{i18n: HarpSponge.Description}}",
+                    "SpriteIndex": 31,
+                    "Texture": "Mods\\{{ModId}}\\FishItems",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_white",
+                        "fish_semi_rare",
+                        "fish_crab_pot",
+                        "fish_summer",
+                        "fish_pond_ignore"
+                    ]
+                }
+            }
+        },
+        //placeholder items
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModPrefix}}VoidPlaceholder": {
+                    "Name": "VoidPlaceholder",
+                    "DisplayName": "{{i18n: VoidDust.Name}}",
+                    "Description": "{{i18n: VoidDust.Description}}",
+                    "Price": 1,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "SpriteIndex": 3,
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_black"
+                    ]
+                },
+                "{{ModPrefix}}PurifyPlaceholder": {
+                    "Name": "PurifyPlaceholder",
+                    "DisplayName": "{{i18n: PurifyDust.Name}}",
+                    "Description": "{{i18n: PurifyDust.Description}}",
+                    "Price": 1,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "SpriteIndex": 4,
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_cyan"
+                    ]
+                },
+                "{{ModPrefix}}GoldPlaceholder": {
+                    "Name": "GoldPlaceholder",
+                    "DisplayName": "{{i18n: GoldDust.Name}}",
+                    "Description": "{{i18n: GoldDust.Description}}",
+                    "Price": 1,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "SpriteIndex": 5,
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_gold"
+                    ]
+                },
+                "{{ModPrefix}}RevivalPlaceholder": {
+                    "Name": "Revival Placeholder",
+                    "DisplayName": "{{i18n: RevivalDust.Name}}",
+                    "Description": "{{i18n: RevivalDust.Description}}",
+                    "Price": 1,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "SpriteIndex": 10,
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_green"
+                    ]
+                },
+                "{{ModPrefix}}GrowPlaceholder": {
+                    "Name": "Grow Placeholder",
+                    "DisplayName": "{{i18n: GrowDust.Name}}",
+                    "Description": "{{i18n: GrowDust.Description}}",
+                    "Price": 1,
+                    "Edibility": -300,
+                    "Type": "Basic",
+                    "Category": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "SpriteIndex": 11,
+                    "Texture": "Mods\\{{ModId}}\\Textures\\Tools",
+                    "ContextTags": [
+                        "mod_{{ModId}}",
+                        "color_green"
+                    ]
+                }
+            }
+        },
+        /* RECIPES */
+        // these are overriden by spacecore, but we still leave the values up
+        {
+            "LogName": "Recipes: Objects",
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                /* Island mining bundle */
+                //5 gold bar, 50 fire essence → 1 ring
+                "{{ModPrefix}}FireRing": "336 3 {{ModPrefix}}FireEssence 10/Field/{{ModPrefix}}FireRing/false/l 0/{{i18n: FireRing.Name}}",
+                /* Bought */
+                "{{ModPrefix}}PurifyPlaceholder": "{{ModPrefix}}LumiShard 25 {{ModPrefix}}StarDropSeeds 1/Field/{{ModPrefix}}PurifyDust/false/l 0/{{i18n: PurifyDust.Name}}",
+                //50 gold ore, 25 cinder shard
+                "{{ModPrefix}}GoldPlaceholder": "384 30 848 20/Field/{{ModPrefix}}GoldDust/T/l 0/{{i18n: GoldDust.Name}}",
+                //7 void 10 shadow essence
+                "{{ModPrefix}}VoidPlaceholder": "{{ModPrefix}}VoidShard 2 769 10/Field/{{ModPrefix}}VoidDust/T/l 0/{{i18n: VoidDust.Name}}",
+                //5 clay 20 fiber and 1 purple mushroom
+                "{{ModPrefix}}RevivalPlaceholder": "330 5 771 20 422 1/Field/{{ModPrefix}}RevivalDust/T/l 0/{{i18n: RevivalDust.Name}}",
+                "{{ModPrefix}}GrowPlaceholder": "330 5 771 20 595 1/Field/{{ModPrefix}}RevivalDust/T/l 0/{{i18n: RevivalDust.Name}}",
+                /* Island fishing bundle */
+                //20 bait
+                "{{ModPrefix}}LumiBait": "685 20 {{ModPrefix}}LumiShard 5/Field/{{ModPrefix}}LumiBait 25/false/l 0/{{i18n: LumiBait.Name}}",
+                //2 iron bar, 10 lumishard 
+                "{{ModPrefix}}LumiTackle": "335 2 {{ModPrefix}}LumiShard 10/Field/{{ModPrefix}}LumiTackle/false/l 0/{{i18n: LumiTackle.Name}}"
+            }
+        },
+        {
+            "LogName": "Recipes - easy",
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModPrefix}}FireRing": "336 2 {{ModPrefix}}FireEssence 5/Field/{{ModPrefix}}FireRing/false/l 0/{{i18n: FireRing.Name}}",
+                "{{ModPrefix}}PurifyPlaceholder": "{{ModPrefix}}LumiShard 10 {{ModPrefix}}StarDropSeeds 1/Field/{{ModPrefix}}PurifyDust/T/l 0/{{i18n: PurifyDust.Name}}",
+                //24 gold ore, 12 cinder shard
+                "{{ModPrefix}}GoldPlaceholder": "384 25 848 15/Field/{{ModPrefix}}GoldDust/T/l 0/{{i18n: GoldDust.Name}}",
+                //5 void 6 shadow essence
+                "{{ModPrefix}}VoidPlaceholder": "{{ModPrefix}}VoidShard 1 769 5/Field/{{ModPrefix}}VoidDust/T/l 0/{{i18n: VoidDust.Name}}",
+                //5 clay 20 fiber and 1 purple mushroom
+                "{{ModPrefix}}RevivalPlaceholder": "330 3 771 10 422 1/Field/{{ModPrefix}}RevivalDust/T/l 0/{{i18n: RevivalDust.Name}}",
+                "{{ModPrefix}}GrowPlaceholder": "330 3 771 10 595 1/Field/{{ModPrefix}}RevivalDust/T/l 0/{{i18n: RevivalDust.Name}}"
+            },
+            "When": {
+                "Difficulty": "easy"
+            }
+        },
+        {
+            "LogName": "Recipes - hard",
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModPrefix}}FireRing": "336 4 {{ModPrefix}}FireEssence 20/Field/{{ModPrefix}}FireRing/false/l 0/{{i18n: FireRing.Name}}",
+                "{{ModPrefix}}PurifyPlaceholder": "{{ModPrefix}}LumiShard 30 {{ModPrefix}}StarDropSeeds 2/Field/{{ModPrefix}}PurifyDust/T/l 0/{{i18n: PurifyDust.Name}}",
+                //24 gold ore, 12 cinder shard
+                "{{ModPrefix}}GoldPlaceholder": "384 35 848 25/Field/{{ModPrefix}}GoldDust/T/l 0/{{i18n: GoldDust.Name}}",
+                //5 void 6 shadow essence
+                "{{ModPrefix}}VoidPlaceholder": "{{ModPrefix}}VoidShard 4 769 15/Field/{{ModPrefix}}VoidDust/T/l 0/{{i18n: VoidDust.Name}}",
+                //5 clay 20 fiber and 1 purple mushroom
+                "{{ModPrefix}}RevivalPlaceholder": "330 10 771 30 422 2/Field/{{ModPrefix}}RevivalDust/T/l 0/{{i18n: RevivalDust.Name}}",
+                "{{ModPrefix}}GrowPlaceholder": "330 10 771 30 595 1/Field/{{ModPrefix}}RevivalDust/T/l 0/{{i18n: RevivalDust.Name}}"
+            },
+            "When": {
+                "Difficulty": "hard"
+            }
+        },
+        //actual recipes
+        {
+            "LogName": "Recipe override",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/CraftingRecipeOverrides",
+            "Entries": {
+                "{{ModPrefix}}VoidPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}VoidDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O){{ModPrefix}}VoidShard",
+                            "Amount": 2
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)769",
+                            "Amount": 10
+                        }
+                    ]
+                },
+                "{{ModPrefix}}PurifyPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}PurifyDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O){{ModPrefix}}LumiShard",
+                            "Amount": 25
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O){{ModPrefix}}StarDropSeeds",
+                            "Amount": 1
+                        }
+                    ]
+                },
+                "{{ModPrefix}}GoldPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}GoldDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)384",
+                            "Amount": 30
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)848",
+                            "Amount": 20
+                        }
+                    ]
+                },
+                "{{ModPrefix}}RevivalPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}RevivalDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)330",
+                            "Amount": 5
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 20
+                        },
+                        {
+                            "Type": "Item",
+                            "Value":"(O)422",
+                            "Amount": 1
+                        }
+                    ]
+                },
+                "{{ModPrefix}}GrowPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}GrowDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)330",
+                            "Amount": 5
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 20
+                        },
+                        {
+                            "Type": "Item",
+                            "Value":"(O)595",
+                            "Amount": 1
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Recipe override - easy",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/CraftingRecipeOverrides",
+            "Entries": {
+                "{{ModPrefix}}VoidPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}VoidDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O){{ModPrefix}}VoidShard",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)769",
+                            "Amount": 5
+                        }
+                    ]
+                },
+                "{{ModPrefix}}PurifyPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}PurifyDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O){{ModPrefix}}LumiShard",
+                            "Amount": 10
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O){{ModPrefix}}StarDropSeeds",
+                            "Amount": 1
+                        }
+                    ]
+                },
+                "{{ModPrefix}}GoldPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}GoldDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)384",
+                            "Amount": 25
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)848",
+                            "Amount": 15
+                        }
+                    ]
+                },
+                "{{ModPrefix}}RevivalPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}RevivalDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)330",
+                            "Amount": 3
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 10
+                        },
+                        {
+                            "Type": "Item",
+                            "Value":"(O)422",
+                            "Amount": 1
+                        }
+                    ]
+                },
+                "{{ModPrefix}}GrowPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}GrowDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)330",
+                            "Amount": 3
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 10
+                        },
+                        {
+                            "Type": "Item",
+                            "Value":"(O)595",
+                            "Amount": 1
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "Difficulty": "easy"
+            }
+        },
+        {
+            "LogName": "Recipe override",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/CraftingRecipeOverrides",
+            "Entries": {
+                "{{ModPrefix}}VoidPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}VoidDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O){{ModPrefix}}VoidShard",
+                            "Amount": 4
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)769",
+                            "Amount": 15
+                        }
+                    ]
+                },
+                "{{ModPrefix}}PurifyPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}PurifyDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O){{ModPrefix}}LumiShard",
+                            "Amount": 30
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O){{ModPrefix}}StarDropSeeds",
+                            "Amount": 2
+                        }
+                    ]
+                },
+                "{{ModPrefix}}GoldPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}GoldDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)384",
+                            "Amount": 35
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)848",
+                            "Amount": 25
+                        }
+                    ]
+                },
+                "{{ModPrefix}}RevivalPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}RevivalDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)330",
+                            "Amount": 10
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 30
+                        },
+                        {
+                            "Type": "Item",
+                            "Value":"(O)422",
+                            "Amount": 2
+                        }
+                    ]
+                },
+                "{{ModPrefix}}GrowPlaceholder": {
+                    "ProductQualifiedId": "(T){{ModPrefix}}GrowDust",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)330",
+                            "Amount": 10
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 30
+                        },
+                        {
+                            "Type": "Item",
+                            "Value":"(O)595",
+                            "Amount": 2
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "Difficulty": "hard"
+            }
+        },
+        //recipe - food
+        {
+            "LogName": "Recipes: Cuisine",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                //3 shrimp - 1 mango - 1 ginger - 1 honey
+                "{{ModPrefix}}ShrimpMangoSalad": "720 3 834 1 829 1 340 1/Field/{{ModPrefix}}ShrimpMangoSalad/l 0",
+                //1 sugar - 3 eggs (any) - 1 coconut - 1 wheat
+                "{{ModPrefix}}CoconutCheesecakeBars": "245 1 -5 3 88 1 246 1/Field/{{ModPrefix}}CoconutCheesecakeBars/l 0",
+                //1 sugar - 1 ginger - 1 wheat - 1 egg
+                "{{ModPrefix}}GingerbreadMan": "245 1 829 1 246 1 -5 1/Field/{{ModPrefix}}GingerbreadMan/f Evelyn 1250",
+                //1 StarDropSeeds - 1 wheat flour - 2 sugar - 2 eggs
+                "{{ModPrefix}}StardropCake": "{{ModPrefix}}StarDropSeeds 1 246 1 245 2 -5 2/Field/{{ModPrefix}}StardropCake/l 0",
+                //1 coconut - 1 pineapple - 1 sugar
+                "{{ModPrefix}}CoconutPineappleSpritz": "88 1 832 1 245 1/Field/{{ModPrefix}}CoconutPineappleSpritz/l 0",
+                // 1 bread - 1 coconut - 2 eggs - 3 shrimp - 1 mayo
+                "{{ModPrefix}}FriedCoconutShrimp": "216 1 88 1 -5 2 720 3 306 1/Field/{{ModPrefix}}FriedCoconutShrimp/l 0",
+                "{{ModPrefix}}SweetSauce": "417 2 245 1/Field/{{ModPrefix}}SweetSauce/l 0",
+                "{{ModPrefix}}MagicIceCream": "74 3 -6 1 245 1/Field/{{ModPrefix}}MagicIceCream/l 0",
+                "{{ModPrefix}}MangoMilk": "834 1 -6 1/Field/{{ModPrefix}}MangoMilk/l 0",
+                "{{ModPrefix}}AncientJuice": "454 3 245 1/Field/{{ModPrefix}}AncientJuice/l 0",
+                "{{ModPrefix}}AncientCobbler": "454 5 245 1 928 1/Field/{{ModPrefix}}AncientCobbler/l 0",
+                //1 flour - 1 pineapple - 1 coconut - 1 egg
+                "{{ModPrefix}}PineappleCoconutCake": "246 1 832 1 88 1 -5 1/Field/{{ModPrefix}}PineappleCoconutCake/l 0",
+                //1 Rainbow Trout - 2 chanterelle - 1 garlic - 1 oil - 1 bread
+                "{{ModPrefix}}SeaPlate": "138 1 281 2 248 1 247 1 216 1/Field/{{ModPrefix}}SeaPlate/l 0",
+                //1 sugar - 1 tilapia - 2 mangoes - 1 pepper - 1 oil
+                "{{ModPrefix}}TilapiaWithMangoSalsa": "245 1 701 1 834 2 260 1 247 1/Field/{{ModPrefix}}TilapiaWithMangoSalsa/l 0",
+                //1 coconut - 1 tilapia - 1 tomato - 1 garlic - 1 ginger
+                "{{ModPrefix}}CoconutCurryFishStew": "88 1 701 1 256 1 248 1 829 1/Field/{{ModPrefix}}CoconutCurryFishStew/l 0",
+                //1 ginger - 1 pineapple - 1 oil - 1 egg
+                "{{ModPrefix}}EggRolls": "829 1 832 1 247 -5 1/Field/{{ModPrefix}}EggRolls/l 0",
+                "{{ModPrefix}}MushroomPizza": "281 1 422 1 256 2 246 2/Field/{{ModPrefix}}MushroomPizza/l 0",
+                //1 orange - 1 salmon - 1 mango
+                "{{ModPrefix}}SalmonWithMangoCitrusSalsa": "635 1 139 1 834 1/Field/{{ModPrefix}}SalmonWithMangoCitrusSalsa/l 0",
+                "{{ModPrefix}}OmniBurger": "{{ModPrefix}}Omnifish 1 216 1/Field/{{ModPrefix}}OmniBurger/l 0"
+                //"{{ModPrefix}}VeggieSoup": "188 1 250 1 248 1 192 1/Field/{{ModPrefix}}VeggieSoup/l 0"
+            }
+        },
+        //itembehavior
+        {
+            "Action": "EditData",
+            "Target": "mistyspring.itemextensions/MenuActions",
+            "Entries": {
+                "(T){{ModPrefix}}VoidDust": [
+                    //174, 176, 180, 182 - egg IDs
+                    {
+                        "TargetID": "(O)174",
+                        "RemoveAmount": 1,
+                        "ReplaceBy": "(O)305", //void egg
+                        "RetainAmount": true,
+                        "RetainQuality": true,
+                        //"AddContextTags": "i.AddContextTags",
+                        //"RemoveContextTags": "i.RemoveContextTags",
+                        //"AddProperties": "i.AddProperties",
+                        //"QualityChange": "i.QualityChange",
+                        //"PriceChange": "i.PriceChange",
+                        //"TextureIndex": "i.TextureIndex",
+                        "PlaySound": "shadowpeep",
+                        //"TriggerActionID": "i.TriggerActionID",
+                        "Conditions": "PLAYER_HAS_MET Current Krobus"
+                    },
+                    {
+                        "TargetID": "(O)176",
+                        "RemoveAmount": 1,
+                        "ReplaceBy": "(O)305",
+                        "RetainAmount": true,
+                        "RetainQuality": true,
+                        "PlaySound": "shadowpeep",
+                        "Conditions": "PLAYER_HAS_MET Current Krobus"
+                    },
+                    {
+                        "TargetID": "(O)180",
+                        "RemoveAmount": 1,
+                        "ReplaceBy": "(O)305",
+                        "RetainAmount": true,
+                        "RetainQuality": true,
+                        "PlaySound": "shadowpeep",
+                        "Conditions": "PLAYER_HAS_MET Current Krobus"
+                    },
+                    {
+                        "TargetID": "(O)182",
+                        "RemoveAmount": 1,
+                        "ReplaceBy": "(O)305",
+                        "RetainAmount": true,
+                        "RetainQuality": true,
+                        "PlaySound": "shadowpeep",
+                        "Conditions": "PLAYER_HAS_MET Current Krobus"
+                    }
+                ],
+                "(T){{ModPrefix}}GoldDust": [
+                    //174, 176, 180, 182 - egg IDs
+                    {
+                        "TargetID": "(O)174",
+                        "RemoveAmount": 1,
+                        "ReplaceBy": "(O)928", //golden egg
+                        "RetainAmount": true,
+                        "RetainQuality": true,
+                        "PlaySound": "discoverMineral",
+                        "Conditions": "PLAYER_HAS_MAIL Current Farm_Eternal"
+                    },
+                    {
+                        "TargetID": "(O)176",
+                        "RemoveAmount": 1,
+                        "ReplaceBy": "(O)928",
+                        "RetainAmount": true,
+                        "RetainQuality": true,
+                        "PlaySound": "discoverMineral",
+                        "Conditions": "PLAYER_HAS_MAIL Current Farm_Eternal"
+                    },
+                    {
+                        "TargetID": "(O)180",
+                        "RemoveAmount": 1,
+                        "ReplaceBy": "(O)928",
+                        "RetainAmount": true,
+                        "RetainQuality": true,
+                        "PlaySound": "discoverMineral",
+                        "Conditions": "PLAYER_HAS_MAIL Current Farm_Eternal"
+                    },
+                    {
+                        "TargetID": "(O)182",
+                        "RemoveAmount": 1,
+                        "ReplaceBy": "(O)928",
+                        "RetainAmount": true,
+                        "RetainQuality": true,
+                        "PlaySound": "discoverMineral",
+                        "Conditions": "PLAYER_HAS_MAIL Current Farm_Eternal"
+                    }
+                ],
+                "(T){{ModPrefix}}RevivalDust": [
+                    //747, 748 - rotten plant IDs
+                    {
+                        "TargetID": "(O)747",
+                        "RemoveAmount": 1,
+                        "ReplaceBy": "(O)746", //jack-o-lantern
+                        "RetainAmount": true,
+                        "RetainQuality": true,
+                        "PlaySound": "fairy_heal"
+                    },
+                    {
+                        "TargetID": "(O)748",
+                        "RemoveAmount": 1,
+                        "ReplaceBy": "(O)746",
+                        "RetainAmount": true,
+                        "RetainQuality": true,
+                        "PlaySound": "fairy_heal"
+                    }
+                ]
+            },
+            "When":{
+                "HasMod":"mistyspring.itemextensions"
+            }
+        }
+    ]
+}

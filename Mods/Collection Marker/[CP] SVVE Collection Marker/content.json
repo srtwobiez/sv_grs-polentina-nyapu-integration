@@ -1,0 +1,34 @@
+{
+    "Format": "2.8.1",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Mods/jennajuffuffles.StardewValleyVERYConfigured.SVVE/SVVE",
+            "FromFile": "assets/svve.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/DazUki.UIInfoSuite2Alt/CustomIcons",
+            "Update": "OnLocationChange",
+            "Entries": {
+                "jennajuffuffles.StardewValleyVERYConfigured.SVVE.AlwaysOn": {
+                    "Texture": "Mods/jennajuffuffles.StardewValleyVERYConfigured.SVVE/SVVE",
+                    "SourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 20,
+                        "Height": 20
+                    },
+                    "HoverText": "{{i18n:svve-string}}"
+                }
+            },
+            "When": {
+                "Day": "1",
+                "Season": "Spring",
+                "Year": "1",
+                "LocationName": "FarmHouse",
+                "Time": "{{range:600,800}}"
+            }
+        }
+    ]
+}

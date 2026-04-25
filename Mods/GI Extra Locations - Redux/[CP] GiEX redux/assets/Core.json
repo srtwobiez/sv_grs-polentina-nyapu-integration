@@ -1,0 +1,249 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Mods/mistyspring.mistycore/Locations/Critters",
+            "Entries": {
+                "GiEX_Sea_West": {
+                    "{{ModId}}_Crab1": {
+                        "X": 28,
+                        "Y": 19,
+                        "Critter": "CrabCritter"
+                    },
+                    "{{ModId}}_Crab2": {
+                        "X": 25,
+                        "Y": 20,
+                        "Critter": "CrabCritter"
+                    }
+                },
+                "GiEX_Sea_West2": {
+                    "{{ModId}}_Crab1": {
+                        "X": 28,
+                        "Y": 1,
+                        "Critter": "CrabCritter"
+                    },
+                    "{{ModId}}_Crab2": {
+                        "X": 25,
+                        "Y": 2,
+                        "Critter": "CrabCritter"
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/mistyspring.mistycore/Locations/Backgrounds",
+            "Entries": {
+                "GiEX_Sea_West": {
+                    "TexturePath": "LooseSprites/Cloudy_Ocean_BG_Night",
+                    "Speed": 4,
+                    "HorizontalParallax": true
+                },
+                "GiEX_SunkenShip": {
+                    "TexturePath": "Mods/{{ModId}}/Textures/Cloudy_Ocean_BG",
+                    "NightTexturePath": "Mods/{{ModId}}/Textures/Cloudy_Ocean_BG_Night",
+                    "Speed": 4,
+                    "HorizontalParallax": true
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/mistyspring.mistycore/Locations/HoeDirt",
+            "Entries": {
+                "GiEX_Sea_West": "Mods/{{ModId}}/Textures/Dirt_sea",
+                "GiEX_Sea_West2": "Mods/{{ModId}}/Textures/Dirt_sea",
+                "GiEX_ExtinctLair": "Mods/{{ModId}}/Textures/Dirt_lair"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/mistyspring.mistycore/Locations/FishingOverrides",
+            "Entries": {
+                "GiEX_Sea_West2": {
+                    "MissingRod": [
+                        "GiEXredux_LumiRod" //requires a custom rod to fish here
+                    ],
+                    "MissingTackle": [
+                        "GiEXredux_LumiTackle" //OR requires a custom tackle to fish here
+                    ],
+                    "MissingBait": [
+                        "GiEXredux_LumiBait" //OR requires a custom bait to fish here
+                    ],
+                    "PossibleOverrides": [ //if you're not using the custom [rod/tackle/bait], you will get these items instead
+                        "168",
+                        "169",
+                        "170",
+                        "171",
+                        "172"
+                    ],
+                    "Message": "{{i18n: NeedsSpecialBait}}"
+                }
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Mods/mistyspring.mistycore/TileActions/AddItem",
+            "Entries":{
+                "GiEX_NarwhalStatue":{
+                    "Condition": "mistyspring.mistycore_PLAYER_ACTIVE_ITEM (O)GiEXredux_LumiShard 99",
+                    "FlagToSet":"GiEX.NarwhalStatue",
+                    "PlaySound": "parry",
+                    "Items": [
+                        {
+                            "QualifiedItemId": "(T)GiEXredux_LumiRod"
+                        }
+                    ],
+                    "TileChanges": [
+                        {
+                            "Layer": "Buildings",
+                            "X": 3,
+                            "Y": 3,
+                            "Index": 81,
+                            "TileSheetId": "deep_sea"
+                        },
+                        {
+                            "Layer": "Buildings",
+                            "X": 4,
+                            "Y": 3,
+                            "Index": 82,
+                            "TileSheetId": "deep_sea"
+                        },
+                        {
+                            "Layer": "Buildings",
+                            "X": 3,
+                            "Y": 4,
+                            "Index": 115,
+                            "TileSheetId": "deep_sea"
+                        },
+                        {
+                            "Layer": "Buildings",
+                            "X": 4,
+                            "Y": 4,
+                            "Index": 116,
+                            "TileSheetId": "deep_sea"
+                        }
+                    ],
+                    "TriggerActions": [
+                        "RemoveItem (O)GiEXredux_LumiShard 99"
+                    ],
+                    "MessageToShowIfConditionsFail": "{{i18n: MapStrings.LooksSuspicious}}",
+                    "IsLetter": false,
+                    "MessageToShowIfAlreadyReceived": null,
+                    "IsLetterReceived": false
+                },
+                "GiEX_FireRing":{
+                    "FlagToSet":"GiEX.GotFireRing",
+                    "PlaySound": "parry",
+                    "Items": [
+                        {
+                            "QualifiedItemId": "(O)GiEXredux_FireRing",
+                            "IsRecipe": true
+                        },
+                        {
+                            "QualifiedItemId": "(O)GiEXredux_FireRing",
+                            "IsRecipe": false
+                        }
+                    ],
+                    "TileChanges": [
+                        {
+                            "Layer": "Buildings",
+                            "X": 38,
+                            "Y": 23,
+                            "Index": 26,
+                            "TileSheetId": "mine_custom"
+                        },
+                        {
+                            "Layer": "Front",
+                            "X": 38,
+                            "Y": 22,
+                            "Index":10,
+                            "TileSheetId": "mine_custom"
+                        },
+                        {
+                            "Layer": "Front",
+                            "X": 39,
+                            "Y": 22,
+                            "Index": 11,
+                            "TileSheetId": "mine_custom"
+                        }
+                    ]
+                },
+                "GiEX_TreasureChest":{
+                    "FlagToSet":"GiEX.GotTreasureChest",
+                    "PlaySound": "barrelBreak",
+                    "Items": [
+                        {
+                            "QualifiedItemId": "(O)166"
+                        }
+                    ],
+                    "TileChanges": [
+                        {
+                            "Layer": "Buildings",
+                            "X": 4,
+                            "Y": 4,
+                            "Index": 5632,
+                            "TileSheetId": "giex_pirates_tilesheet"
+                        },
+                        {
+                            "Layer": "Buildings",
+                            "X": 5,
+                            "Y": 4,
+                            "Index": 5633,
+                            "TileSheetId": "giex_pirates_tilesheet"
+                        },
+                        {
+                            "Layer": "Front",
+                            "X": 4,
+                            "Y": 3,
+                            "Index":5538,
+                            "TileSheetId": "giex_pirates_tilesheet",
+                            "Condition": "TIME 0600 1950"
+                        },
+                        {
+                            "Layer": "Front",
+                            "X": 5,
+                            "Y": 3,
+                            "Index": 5539,
+                            "TileSheetId": "giex_pirates_tilesheet",
+                            "Condition": "TIME 0600 1950"
+                        },
+                        {
+                            "Layer": "Front",
+                            "X": 4,
+                            "Y": 3,
+                            "Index":5531,
+                            "TileSheetId": "giex_pirates_tilesheet",
+                            "Condition": "ANY \"TIME 2000 2600\", \"WEATHER Here Rain\""
+                        },
+                        {
+                            "Layer": "Front",
+                            "X": 5,
+                            "Y": 3,
+                            "Index": 5532,
+                            "TileSheetId": "giex_pirates_tilesheet",
+                            "Condition": "ANY \"TIME 2000 2600\", \"WEATHER Here Rain\""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Mods/mistyspring.mistycore/TileActions/ConditionalMove",
+            "Entries":{
+                "GiEX_HiddenShipRoom": {
+                    "Condition": "PLAYER_HAS_ITEM Current (O){{ModPrefix}}AncientKey",
+                    "MessageToShowIfConditionsFail": "{{i18n:NeedsKey}}",
+                    "TriggerActions": [ "RemoveItem (O){{ModPrefix}}AncientKey" ],
+                    "MessageAfterSuccess":"{{i18n:OpenDoor}}"
+                },
+                "GiEX_Sea_West": {
+                    "Condition": "PLAYER_HAS_MAIL Current GiEXbundle.fishing.done Received",
+                    "MessageToShowIfConditionsFail": "{{i18n: NeedsHelmet}}",
+                    "TriggerActions": [ "mistyspring.mistycore_PlaySound {{ModId}}_Splash" ]
+                }
+            }
+        }
+    ]
+}

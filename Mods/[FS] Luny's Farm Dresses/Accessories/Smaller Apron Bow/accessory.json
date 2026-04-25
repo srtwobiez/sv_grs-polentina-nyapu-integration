@@ -1,0 +1,112 @@
+{
+  "Name": "Smaller Apron Bow",
+
+  "BackAccessory": {
+	"DrawBeforeHair": false,
+	"DrawBeforePlayer": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 40
+    },
+    "HeadPosition": {
+      "X": 2,
+      "Y": -8
+    },
+    "AccessorySize": {
+      "Width": 20,
+      "Length": 20
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 130
+      },
+      {
+        "Frame": 1,
+        "Duration": 130
+      },
+      {
+        "Frame": 0,
+        "Duration": 130
+      },
+      {
+        "Frame": 1,
+        "Duration": 130
+      }
+	  ]
+},
+  "RightAccessory": {
+	"DrawBeforeHair": false,
+	"DrawBeforePlayer": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+    "StartingPosition": {
+      "X":0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -10
+    },
+    "AccessorySize": {
+      "Width": 20,
+      "Length": 20
+  },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      },
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      }
+	  ]
+},
+  "LeftAccessory": {
+	"DrawBeforeHair": false,
+	"DrawBeforePlayer": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 20
+    },
+    "HeadPosition": {
+      "X": 4,
+      "Y": -10
+    },
+    "AccessorySize": {
+      "Width": 20,
+      "Length": 20
+  },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      },
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      }
+	  ]
+}
+}

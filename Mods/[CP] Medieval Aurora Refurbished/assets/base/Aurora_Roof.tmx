@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="11" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="1">
+ <tileset firstgid="1" name="zForestWest_Shadow" tilewidth="16" tileheight="16" tilecount="24336" columns="156">
+  <image source="ForestWest_Shadow.png" width="2496" height="2496"/>
+ </tileset>
+ <tileset firstgid="24337" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="24373" name="spring_beach" tilewidth="16" tileheight="16" tilecount="527" columns="17">
+  <image source="spring_beach.png" width="272" height="496"/>
+ </tileset>
+ <tileset firstgid="24900" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="26875" name="spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="spring_town.png" width="512" height="1152"/>
+ </tileset>
+ <tileset firstgid="29179" name="spring_z_extras" tilewidth="16" tileheight="16" tilecount="6400" columns="25">
+  <image source="spring_z_extras.png" width="400" height="4096"/>
+ </tileset>
+ <layer id="2" name="Front" width="11" height="6">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="1" name="AlwaysFront" width="11" height="6">
+  <data encoding="csv">
+34218,34219,34220,34221,34222,34223,34224,34225,34226,34227,34228,
+34243,34244,34245,34246,34247,34248,34249,34250,34251,34252,34253,
+34268,34269,34270,34271,34272,34273,34274,34275,34276,34277,34278,
+34293,34294,34295,34296,34297,34298,34299,34300,34301,34302,34303,
+34318,34319,34320,34321,34322,34323,34324,34325,34326,34327,34328,
+34343,34344,34345,34346,34347,34348,34349,34350,34351,34352,34353
+</data>
+ </layer>
+</map>

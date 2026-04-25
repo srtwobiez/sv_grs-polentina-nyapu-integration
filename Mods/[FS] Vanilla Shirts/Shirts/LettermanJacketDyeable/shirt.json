@@ -1,0 +1,103 @@
+{
+"Name": "Dyeable Letterman Jacket",
+  "FrontShirt": {
+    "ColorMasks": [
+      [ 251, 251, 251 ],
+      [ 196, 186, 172 ],
+	  [ 137, 129, 125 ],
+	  [ 94, 89, 86 ]
+    ],
+    "SleeveColors": [
+	  [ 94, 89, 86 ],
+	  [ 135, 94, 83 ], 
+      [ 251, 251, 250 ]	  
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+    "ColorMasks": [
+      [ 251, 251, 251 ],
+      [ 196, 186, 172 ],
+	  [ 137, 129, 125 ],
+	  [ 94, 89, 86 ]
+    ],
+    "SleeveColors": [
+	  [ 94, 89, 86 ],
+	  [ 135, 94, 83 ], 
+      [ 251, 251, 250 ]	   
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+    "ColorMasks": [
+      [ 251, 251, 251 ],
+      [ 196, 186, 172 ],
+	  [ 137, 129, 125 ],
+	  [ 94, 89, 86 ]
+    ],
+    "SleeveColors": [
+	  [ 94, 89, 86 ],
+	  [ 135, 94, 83 ], 
+      [ 251, 251, 250 ]	   
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+    "ColorMasks": [
+      [ 251, 251, 251 ],
+      [ 196, 186, 172 ],
+	  [ 137, 129, 125 ],
+	  [ 94, 89, 86 ]
+    ],
+    "SleeveColors": [
+	  [ 94, 89, 86 ],
+	  [ 135, 94, 83 ], 
+      [ 251, 251, 250 ]	   
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

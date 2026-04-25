@@ -1,0 +1,11 @@
+{
+    "Name": "Em's Dogs",
+    "Author": "RivalRabbit",
+    "Version": "1.2",
+    "Description": "24 dog types.",
+    "UniqueID": "RivalRabbit.EmsDogsCP",
+	"UpdateKeys": [ "Nexus:38357" ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

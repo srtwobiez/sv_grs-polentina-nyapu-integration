@@ -1,0 +1,11 @@
+{
+	"Changes": [
+			{
+		"Action": "EditImage",
+		"Target": "Minigames/TitleButtons",
+		"FromFile": "assets/TitleBird{{Random: 01, 02, 03}}.png",
+		"ToArea": { "X": 296, "Y": 227, "Width": 104, "Height": 21 },
+		"When":{ "TitleBird":"true"}
+		}
+	]
+}

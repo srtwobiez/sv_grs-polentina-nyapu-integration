@@ -1,0 +1,47 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Data Desert",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Desert Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          }
+        }
+      }
+    },
+    {
+      "LogName": "JJ Load Desert",
+      "Action": "Load",
+      "Target": "Buildings/Desert Obelisk",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_desert.png"
+    },
+    {
+      "LogName": "JJ Decorations Desert Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Desert Obelisk",
+      "FromFile": "assets/flowers/desert_{{DesertFlowerColor}}.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Desert Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Desert Obelisk",
+      "FromFile": "assets/moss/desert_moss.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

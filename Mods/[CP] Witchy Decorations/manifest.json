@@ -1,0 +1,19 @@
+{
+    "Name": "Witchy Decorations for Content Patcher",
+    "Author": "jenf1",
+    "Version": "1.0.0",
+    "UniqueID": "jenf1.ManaKirelWitchyDecorations",
+    "MinimumApiVersion": "4.0.0",
+    "Description": "Witchy Decorations by ManaKirel converted to Content Patcher.",
+	"UpdateKeys": [ "Nexus:23106" ],
+     "ContentPackFor": {
+         "UniqueID": "Pathoschild.ContentPatcher",
+         "MinimumVersion": "2.0.0"
+    },
+    "Dependencies": [
+    {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "MinimumVersion": "2.0.0"
+    }
+  ]
+}

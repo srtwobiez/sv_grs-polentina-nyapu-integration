@@ -1,0 +1,266 @@
+{
+  
+// 1.6.0 update Lines for Hat Mouse and Friends. Everyone besides Wizard and Hamster speak in rather broken language. 
+  "HatMouse.Beanie": "Yo tengo sombrero para cada cabeza. ¿Entendido, poke?",
+//The Hamster is a reference to Bijou from Hamtaro. She is from France in the English version (and apparently from Russia in the French version)
+  "HatMouse.Hamster": "¡Bonjour! ¿Busca un sombrero chic hoy? Um... ¿poke?",
+  "HatMouse.Bow": "¿Quieres moño? ¿Moño para el pelo? ¿Quizás moño en el sombrero?",
+  "HatMouse.Dipper": "Resolver misterios, vender sombreros, todo en un día de poke.",
+  "HatMouse.Flower": "¡Te haré lucir bonita con el sombrero correcto, poke!",
+  "HatMouse.Goggles": "¡Todo héroe necesita gafas, poke!",
+  "HatMouse.Headband": "¿Quieres diadema? ¡Je, no está a la venta, pinchar!",
+  "HatMouse.Link": "-hace gestos animados-",
+//Mouse Marlon's line is a reference to the real Marlon's own shop line in the Adventurer's Guild
+  "HatMouse.Marlon": "¿En el mercado buscando un sombrero nuevo, poke?",
+  "HatMouse.Post": "No hay correo hoy, así que vendo sombreros, poke.",
+  "HatMouse.Red": "-te mira en silencio-",
+  "HatMouse.Sailor": "Ayer navegar, hoy vender sombreros, mañana quizás pescar.",
+//Strawhat Mouse's line is a reference to Luffy from One Piece's catchphrase "I'm gonna be King of the Pirates"
+  "HatMouse.Strawhat": "¡Compra sombreros, pinchar! ¡Voy a ser el Rey de los Sombreros!",
+//This is a reference to the Wizard's introduction. The name is a Rasmodeus+Mouse wordplay
+  "HatMouse.Wizard": "Soy Rasmouseus... Buscador de las verdades arcanas.", 
+ 
+// Lines for the Casino Vendor, highly disapproving of the farmer being there
+  "CasinoVendor1.Default": "Oh, eres tú. ¿Aquí para ver escaparates, supongo?",
+  "CasinoVendor2.Default": "¿Te das cuenta de que tu oro no tiene valor aquí, verdad?",
+  "CasinoVendor3.Default": "Solíamos ser más exigentes sobre quién recibe una Tarjeta del Club.",
+  "CasinoVendor4.Default": "Todos los artículos están a la venta... Siempre y cuando te los ganes.",
+  
+// 1.6.0 update Lines for the alternate Casino Vendor, short and blunt. The second line is a wordplay referring to his blue skin and blue = sad. If you can't find similar wordplay in the language you're translating, maybe you can change it to just "Why am I blue? I don't know what you're talking about."
+  "CasinoVendor1.Bouncer": "¿Te parezco familiar? Estás equivocado.",
+  "CasinoVendor2.Bouncer": "¿Por qué soy azul? Estás equivocado. En realidad, soy bastante feliz.",
+  "CasinoVendor3.Bouncer": "¿Tienes una Tarjeta del Club? Tienes permitido entrar.",
+  "CasinoVendor4.Bouncer": "Todos los artículos se pueden comprar con Monedas Qi.",
+  
+// 1.6.0 update Lines for the alternate Casino Vendor, friendly.
+  "CasinoVendor1.Green": "Bienvenido a las Excentricidades Quintesenciales de Qi. Todavía estamos trabajando en el nombre.",
+  "CasinoVendor2.Green": "Espero que estés disfrutando de tu tiempo en el casino.",
+  "CasinoVendor3.Green": "El jefe está muy contento de tener un nuevo jugad-- cliente valioso.",
+  "CasinoVendor4.Green": "Simplemente intercambia tus Monedas Qi aquí. ¿Dónde más las gastarías?",
+  
+// Line for the Traveling Merchant during Festival of Ice
+  "TravelerIce": "¡Ah, el telón de fondo perfecto para algunos de mis hallazgos más raros! Solo por hoy, amigo.",
+  
+// Lines for the Raccoon. "Bobo" is what she calls you.
+  "Raccoon1": "Tenemos semillas, bobo.",
+  "Raccoon2": "¿Quieres algunas semillas, bobo?",
+  "Raccoon3": "No tienes estas semillas, tal vez.",
+  
+// 1.7.0 update Lines for the Crow. Just crow sounds.
+  "Crow1": "¡Caw-caw!",
+  "Crow2": "¡Crrrk... caw!",
+  "Crow3": "¡Caawww!",
+  "Crow4": "¡Caw-caw-caw!",  
+  "Crow5": "Crawwk...",
+  
+// 1.9.0 Lines for the Joja Cashier, friendly but canned. "Join us and thrive" calls to JojaMart's slogan "Join us. Thrive".
+  "JojaCashier1.Default": "¡Bienvenido a JojaMart! ¿Cómo está hoy?",
+  "JojaCashier2.Default": "¡Recuerde, como miembro de JojaMart, obtiene más por menos!",
+  "JojaCashier3.Default": "¡Únase a nosotros y prospere con nuestras ofertas especiales para artículos selectos!",  
+  
+// 1.9.0 update special lines for Joja cashier rotations.
+  "JojaCashier1.Daena": "¡Hola! ¡Bienvenido a JojaMart!",
+  "JojaCashier2.Daena": "¡Espero que tu día vaya genial! Terminemos con esto, ¿sí?",
+  "JojaCashier3.Daena": "¡Únete a nosotros! ¡Prospera! O al menos no te vayas con las manos vacías.",
+  "JojaCashier_JojaDay.Daena": "¡Es el Día de Joja! Eso significa descuentos del 20 por ciento en semillas.",  
+  "JojaCashier1.Naufal": "Um... ¡Bienvenido a JojaMart! Espero que esté teniendo un buen día.",
+  "JojaCashier2.Naufal": "¿Está listo para pagar? ¡Sin prisa, tómese su tiempo!",
+  "JojaCashier3.Naufal": "Queremos que, eh, ¡se una a nosotros y prospere! Ah, de todos modos, ¡hágamelo saber si necesita algo!",  
+ 
+// 1.9.0 update Special lines for various Cashier NPCs
+  "JojaCashier.Juliet": "Tenemos todos los elementos esenciales... y algunas cosas dudosas en el pasillo C.",
+  "JojaCashier_JojaDay.Juliet": "¡Qué suerte! Es el Día de Joja, y todas las semillas tienen un 20 por ciento de descuento.",
+  "JojaCashier.Jessie": "Qué bueno verte, querido. Estoy aquí si necesitas ayuda.",
+  "JojaCashier.Shane": "¿Qué necesitas?",
+  
+// Line for the Star Token Exchanger at the Stardew Valley Fair
+  "StarToken": "¡Hola! ¡Intercambia tus fichas estelares aquí para conseguir el mejor botín que la Feria tiene para ofrecer!",
+  
+//1.6.0 update Lines for the Scholar who stands in for the Desert Trader
+  "DesertTrader4_male.Scholar": "Ah, parece que le agradas al camello, amigo. Una criatura sabia, de hecho.",
+  "DesertTrader4_female.Scholar": "Ah, parece que le agradas al camello, amigo. Una criatura sabia, de hecho.",
+  "DesertTrader3.Scholar": "De donde vengo, su moneda es como arena en el viento. ¿Qué tesoro puede ofrecer en su lugar?",
+  "DesertTrader2.Scholar": "Cada artefacto tiene una historia, al igual que usted.",
+  "DesertTrader1.Scholar": "¡Ah, un compañero buscador de conocimiento y bienes! ¿Le interesa intercambiar?",
+  
+//1.6.0 update Lines for the Announcer who stands in for the Desert Trader
+  "DesertTrader4_male.RacerGuy": "¡Parece que le agradas al camello! ¡Esa es una señal fantástica!",
+  "DesertTrader4_female.RacerGuy": "¡Parece que le agradas al camello! ¡Esa es una señal fantástica!",
+  "DesertTrader3.RacerGuy": "Su moneda no funcionará aquí, pero ¿tiene algo emocionante para intercambiar?",
+  "DesertTrader2.RacerGuy": "¡Adelante y sea testigo de maravillas!",
+  "DesertTrader1.RacerGuy": "¡Bienvenido, viajero! ¿Listo para hacer un intercambio?",
+  
+// Lines for Pierre at various festivals
+  "PierreJellyfish": "¡Artículos raros que brillan como una medusa a la luz de la luna! ¡No se lo pierda!",
+  "PierreEgg": "¡Artículos exclusivos a la venta! ¡Consígalos antes de que termine el día o se los perderá!",
+  "PierreFeast": "¡Delicias festivas para calentar sus vacaciones! ¡Tome las suyas mientras duren!",
+  "PierreFlower": "¡Hermosas flores para encantar a su pareja de baile! ¡Recójalas antes del último baile!",
+  "PierreLuau": "¡Decoraciones exóticas para hacer de la Granja {FarmName} la comidilla del pueblo! ¡Tómelas mientras pueda!",
+  "PierreSpirit": "¡Decoraciones espeluznantes para construir el granero más aterrador! ¡Consígalas antes de que desaparezcan!",
+ 
+// 1.7.0 Update Lines for the clinic.
+  "MaruClinic": "Un sorbo rápido de uno de estos lo devolverá a toda velocidad en poco tiempo.",
+  "HarveyClinic": "¡Ah, bienvenido! Me alegra ver que se está cuidando.",
+  
+// Alex  
+  "AlexIceCream": "¿Qué tal un helado para combatir el calor?",
+  
+//1.9.0 Rotation Concession lines
+  "Concessions1.Daena": "¿Dulces? ¿Bebidas? ¡Yo te cubro!",
+  "Concessions2.Daena": "Te vas a arrepentir de no comprar un bocadillo a mitad de la película. Solo digo.",
+  "Concessions3.Daena": "Tu invitado parece hambriento. Vamos, sé amable. ¡Consíguele algo bueno!",
+  "Concession.Daena": "¡Bienvenido al puesto de bocadillos! ¿Quieres comprar algo sabroso para tu invitado?",
+  "ConcessionAlone.Daena": "Rodando solo, ¿eh? Si traes un invitado, ¡puedes pedirle un bocadillo! Hace que la noche de cine sea mucho mejor, créeme.",
+  "ConcessionPurchased.Daena": "Así que quieres el {0}, ¿verdad? ¡Lo dejaremos en el asiento de {1} una vez que comience la película!",
+  "ConcessionAfterMovie.Daena": "¡La película terminó! ¿Estuvo buena? Si no, ¡al menos los bocadillos sí!",
+  "Concessions1.Naufal": "¡Oh, también tenemos algunas bebidas si tiene sed!",
+  "Concessions2.Naufal": "¡Un buen bocadillo hace que la película sea aún mejor!",
+  "Concessions3.Naufal": "Tu invitado parece que podría tener hambre... ¿tal vez un pequeño capricho?",  
+  "Concession.Naufal": "Oh, um... ¡bienvenido! ¿Le gustaría un bocadillo para su invitado?",
+  "ConcessionAlone.Naufal": "¡Oh! Solo para que lo sepa, si viene con un invitado, puede pedirle un bocadillo. ¡Es una buena manera de hacer que la película sea aún más especial!",
+  "ConcessionPurchased.Naufal": "Usted ordenó el {0}, ¿verdad? ¡Nos aseguraremos de que {1} lo reciba una vez que comience la película!",
+  "ConcessionAfterMovie.Naufal": "¿Qué tal estuvo la película? Um, ¡espero que se haya divertido!",
+  
+// 1.9.0 Rotation Movie Ticket Lines
+  "BoxOffice.Default": "¿Tienes un amigo al que quieras invitar? Simplemente pásale un boleto y boom, ¡noche de cine!",
+  "BoxOffice.Naufal": "Si lo desea, ¡puede darle uno a un amigo e invitarlo a unirse a usted!",  
+ 
+//1.9.0 Central Station cameo
+  "CentralStation.Merchant": "Comerciante",  
+  "CentralStation.SailorCat": "Gato marinero",    
+  "CentralStation.Naufal.1": "Oh, um... hola. Lo siento, pensé que era mi gerente de turno por un segundo.",
+  "CentralStation.Naufal.2": "Hago muchos trabajos a tiempo parcial... Es bueno ayudar, pero, eh, a veces olvido a cuál voy.",
+  "CentralStation.Naufal.3": "La gente siempre me dice que debería tomarme un descanso, pero... me gusta mantenerme ocupado. Me hace sentir útil.",
+  "CentralStation.Daena.1": "¿Alguna vez has trabajado en atención al cliente en un lugar como este? Se siente como una batalla campal.",
+  "CentralStation.Daena.2": "¿Trabajo a tiempo parcial? Más bien supervivencia a tiempo parcial. Un minuto estás volteando hamburguesas, al siguiente estás lidiando con turistas.",
+  "CentralStation.Daena.3": "Mi horario es un desastre, pero bueno, puedo ver todo tipo de cosas raras.",
+  "CentralStation.Daena.4": "Como ese flamenco. ¿¡Por qué hay un flamenco!?",    
+  "CentralStation.Mark.1": "Otro trabajo, otro turno... Hombre, solo quiero estar en la cama.",
+  "CentralStation.Mark.2": "¿Alguna vez tienes un día en el que te levantas cansado, trabajas cansado y luego llegas a casa aún más cansado? Sí. Así son todos los días.",
+  "CentralStation.Merchant.1": "No hay mercancías hoy, viajero. Solo quizás un momento de descanso antes del próximo viaje.",
+  "CentralStation.Merchant.2": "Extraño, ¿no es así? Un lugar tan lleno de gente, pero nadie se queda por mucho tiempo. Todos estamos de paso.", 
+  "CentralStation.SailorCat.1": "Duermo la siesta en rollos de cuerda. Los bancos del tren no se curvan bien. No son cómodos para un gato, ¿sabes?",
+  "CentralStation.SailorCat.2": "En el mar, todo te mece para dormir. Aquí, solo hay ruido y pies.",   
+ 
+// Descriptions for Generic Mod Config Menu
+  "config.Raccoon.name": "Mapache",
+  "config.Raccoon.description": "Habilita el retrato para el comerciante mapache desbloqueable en el Bosque Tizón.",
+  
+//1.7.0 update  
+  "config.Crow.name": "Cuervo",
+  "config.Crow.description": "Habilita el retrato para el comerciante cuervo de artículos perdidos en el Bosque Secreto.",
+
+//1.10.0 update
+  "config.VolcanoDwarf.name": "Enano del volcán",  
+  "config.VolcanoDwarf.description": "Habilita el retrato para el comerciante enano que se encuentra en el piso 5 de la Mazmorra del Volcán.",  
+  
+  "config.StarToken.name": "Intercambiador de fichas estelares",
+  "config.StarToken.description": "Habilita el retrato para el intercambiador de fichas estelares en la Feria del Valle Stardew.",
+  
+  "config.MagicBoat.name": "Vendedor mágico",
+  "config.MagicBoat.description": "Habilita el retrato para el vendedor mágico en el Mercado Nocturno.",
+  
+  "config.EggShop.name": "Comerciante de huevos",
+  "config.EggShop.description": "Habilita el retrato para el comerciante de huevos de Calico en el Festival del Desierto.",  
+ 
+//1.4.0 update  
+  "config.OldMariner.name": "Viejo marinero",
+  "config.OldMariner.description": "Habilita el retrato para el Viejo Marinero.", 
+  
+  "config.PierreFestival.name": "Pierre en los festivales",
+  "config.PierreFestival.description": "Habilita los retratos para el puesto de Pierre durante todos los festivales.",
+
+// 1.10.0 update
+  "config.section.Traveling.name": "Comerciante ambulante",
+  "config.section.Traveling.description": "El comerciante ambulante que aparece los viernes y domingos en el Bosque Tizón.",  
+  "config.Traveler.name": "Habilitar retrato",
+  "config.TravelerWinter.name": "Ropa de invierno",  
+
+// 1.10.0 update  
+  "config.section.Book.name": "Librero",
+  "config.section.Book.description": "El librero que visita la ciudad dos veces por temporada.",  
+  "config.Bookseller.name": "Habilitar retrato",
+  "config.BooksellerWinter.name": "Ropa de invierno",  
+ 
+// 1.6.0 update
+  "config.section.Desert.name": "Comerciante del desierto",
+  "config.DesertTrader.name": "Habilitar retrato",
+  "config.DesertShift.name": "Aleatorizar turno",
+  "config.DesertShift.description": "Hace que el comerciante rote diariamente.",
+ 
+// 1.6.0 update
+  "config.section.Club.name": "Vendedor del casino",
+  "config.section.Club.description": "El intercambiador de monedas Qi en el casino oculto del desierto.",
+  "config.Casino.name": "Habilitar retrato",
+  "config.CasinoShift.name": "Aleatorizar turno",
+  "config.CasinoShift.description": "Hace que el vendedor rote diariamente.",
+ 
+// 1.6.0 update
+  "config.section.Island.name": "Comerciante de la isla",
+  "config.section.Island.description": "Comerciante de aves desbloqueable en Isla Jengibre.",
+  "config.IslandTrader.name": "Habilitar retrato",
+  "config.BirdShift.name": "Aleatorizar turno",
+  "config.BirdShift.description": "Hace que el comerciante rote diariamente.",
+  
+  "config.section.JojaMart.name": "Cajero de JojaMart",
+  
+  "config.JojaCashier.name": "Habilitar retrato", 
+ 
+//1.6.0 update  
+  "config.JojaShift.name": "Turno programado",
+  "config.JojaShift.description": "Hace que el cajero rote diariamente.",
+  
+  "config.section.Theater.name": "Personal del teatro",
+  
+  "config.MovieTicket.name": "Empleado de la taquilla",
+  "config.MovieTicket.description": "Habilita el retrato para el empleado de la taquilla del cine.",
+  
+  "config.MovieConcession.name": "Encargado de la concesión",
+  "config.MovieConcession.description": "Habilita el retrato para el encargado del puesto de concesión del cine.",
+ 
+//1.6.0 update  
+  "config.MovieShift.name": "Turno programado",
+  "config.MovieShift.description": "Hace que el personal del teatro rote posiciones diariamente. Solo para el empleado de la taquilla si usa SVE.",
+ 
+//1.5.0 update
+  "config.section.HouseMouse.name": "Ratón del sombrero",
+  "config.section.HouseMouse.description": "El ratón del sombrero en la casa remota en el Bosque Tizón.",
+  "config.HatMouse.name": "Habilitar retrato",
+ 
+//1.5.0 update  
+  "config.WildflourMouse.name": "Ratón del sombrero de Wildflour",
+  "config.WildflourMouse.description": "Utiliza el estilo como se ve en 'Ferngill Fashion Festival'. Solo funciona si está instalado.",
+ 
+//1.5.0 update
+  "config.section.NightMarketDecor.name": "Vendedor de decoración",
+  "config.section.NightMarketDecor.description": "El vendedor de decoración en el bote azul en el Mercado Nocturno.",
+  "config.DecorBoat.name": "Habilitar retrato", 
+ 
+//1.5.0 update  
+  "config.CatPipe.name": "Pipa de gato",
+  "config.CatPipe.description": "Solo funciona con 'Night Market Cat Boat' instalado. Hace que el gato fume una pipa.",
+  
+//1.9.0 update  
+  "config.section.Misc.name": "Misceláneo",
+  "config.CentralStation.name": "Cameos de la Estación Central",
+  "config.CentralStation.description": "Permite que algunos vendedores aparezcan en 'Estación Central' si está instalado.",
+  
+//1.10.0 update
+
+  "config.PStyle.name": "Estilo del retrato",
+  "config.PStyle.description": "'Automático' intentará seleccionar un estilo basándose en los mods de retratos que tengas instalados.",  
+  "config.PStyle.values.Auto": "Automático",
+  "config.PStyle.values.Default": "Predeterminado",
+  "config.PStyle.values.Nyapu": "Nyapu", 
+
+  "Original.Naufal": "Dependiente",
+  "Original.Daena": "Dependienta",
+  "Consistent.Naufal": "Empleado",
+  "Consistent.Daena": "Empleada",    
+  "Named.Mark": "Mark",
+  "Named.Naufal": "Naufal",
+  "Named.Daena": "Daena",  
+    
+  
+
+}

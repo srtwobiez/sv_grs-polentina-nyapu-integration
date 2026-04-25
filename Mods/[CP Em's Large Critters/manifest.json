@@ -1,0 +1,11 @@
+{
+	"Name": "Em's Large Critters",
+	"Author": "RivalRabbit",
+	"Version": "1.5",
+	"Description": "Retexture of all large wild critters.",
+	"UniqueID": "Ems.LargeCritters",
+	"UpdateKeys": [ "Nexus:39616" ],
+   	"ContentPackFor": {
+      		"UniqueID": "Pathoschild.ContentPatcher"
+   			}
+}

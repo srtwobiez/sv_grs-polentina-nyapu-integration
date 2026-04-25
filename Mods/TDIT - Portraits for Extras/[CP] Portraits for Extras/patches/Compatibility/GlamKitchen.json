@@ -1,0 +1,17 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Priority": "Late + 50",			
+			"TextOperations": [			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13127"],
+					"Value": "Portraits/Television_GlamChef Strings/DolphINaF.ExtraPortraits:Name.GlamChef",
+					"Delimiter": "🐬"
+				},			
+			]
+		},			
+	],
+}

@@ -1,0 +1,158 @@
+{
+	"Changes": [
+			{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly0.png",
+		"ToArea": { "X": 0, "Y": 128, "Width": 48, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly1.png",
+		"ToArea": { "X": 0, "Y": 144, "Width": 48, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly2.png",
+		"ToArea": { "X": 48, "Y": 128, "Width": 48, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly3.png",
+		"ToArea": { "X": 272, "Y": 304, "Width": 48, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly4.png",
+		"ToArea": { "X": 224, "Y": 304, "Width": 48, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly5.png",
+		"ToArea": { "X": 48, "Y": 144, "Width": 48, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly6.png",
+		"ToArea": { "X": 96, "Y": 128, "Width": 48, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly7.png",
+		"ToArea": { "X": 64, "Y": 288, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly8.png",
+		"ToArea": { "X": 128, "Y": 288, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly9.png",
+		"ToArea": { "X": 96, "Y": 144, "Width": 48, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly10.png",
+		"ToArea": { "X": 192, "Y": 336, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly11.png",
+		"ToArea": { "X": 128, "Y": 336, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly12.png",
+		"ToArea": { "X": 64, "Y": 384, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly13.png",
+		"ToArea": { "X": 0, "Y": 384, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly14.png",
+		"ToArea": { "X": 128, "Y": 96, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly15.png",
+		"ToArea": { "X": 128, "Y": 112, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly16.png",
+		"ToArea": { "X": 256, "Y": 96, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly17.png",
+		"ToArea": { "X": 256, "Y": 112, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly18.png",
+		"ToArea": { "X": 192, "Y": 96, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly19.png",
+		"ToArea": { "X": 256, "Y": 288, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly20.png",
+		"ToArea": { "X": 192, "Y": 112, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Butterfly21.png",
+		"ToArea": { "X": 192, "Y": 288, "Width": 64, "Height": 16 },
+		"When":{ "Butterflies":"true"}
+		}
+	]
+}

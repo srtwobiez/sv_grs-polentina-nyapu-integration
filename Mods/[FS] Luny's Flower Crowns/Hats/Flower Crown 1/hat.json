@@ -1,0 +1,142 @@
+{
+  "Name": "Luny's Flower Crown",
+  "FrontHat": {
+    "DisableGrayscale": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+        "ColorMaskLayers": [
+      {
+        "Name": "Flowers",
+        "Values": [
+                      [ 238, 238, 238 ],
+                      [ 248, 248, 248 ]
+        ]
+      },
+    {
+        "Name": "Leaves",
+        "Values": [
+                     [ 148, 148, 148 ],
+                     [ 180, 180, 180 ],
+                     [ 217, 217, 217 ]
+        ]
+      }
+     ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 32
+    }
+  },
+  "RightHat": {
+    "HideHair": false,
+    "DisableGrayscale": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+        "ColorMaskLayers": [
+      {
+        "Name": "Flowers",
+        "Values": [
+                      [ 238, 238, 238 ],
+                      [ 248, 248, 248 ]
+        ]
+      },
+    {
+        "Name": "Leaves",
+        "Values": [
+                     [ 148, 148, 148 ],
+                     [ 180, 180, 180 ],
+                     [ 217, 217, 217 ]
+        ]
+      }
+     ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -2
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 32
+    }
+  },
+   "LeftHat": {
+    "HideHair": false,
+    "DisableGrayscale": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+        "ColorMaskLayers": [
+      {
+        "Name": "Flowers",
+        "Values": [
+                      [ 238, 238, 238 ],
+                      [ 248, 248, 248 ]
+        ]
+      },
+    {
+        "Name": "Leaves",
+        "Values": [
+                     [ 148, 148, 148 ],
+                     [ 180, 180, 180 ],
+                     [ 217, 217, 217 ]
+        ]
+      }
+     ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -2
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 32
+    }
+  },
+  "BackHat": {
+    "HideHair": false,
+    "DisableGrayscale": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+        "ColorMaskLayers": [
+      {
+        "Name": "Flowers",
+        "Values": [
+                      [ 238, 238, 238 ],
+                      [ 248, 248, 248 ]
+        ]
+      },
+    {
+        "Name": "Leaves",
+        "Values": [
+                     [ 148, 148, 148 ],
+                     [ 180, 180, 180 ],
+                     [ 217, 217, 217 ]
+        ]
+      }
+     ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 96
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 32
+    }
+  }
+}

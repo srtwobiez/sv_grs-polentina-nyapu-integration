@@ -1,0 +1,59 @@
+{
+"Name": "Casual Button-up Shirt",
+  "FrontShirt": {
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 10,
+      "Length": 11
+    }
+  },
+  "RightShirt": {
+    "StartingPosition": {
+      "X": 0,
+      "Y": 11
+    },
+    "BodyPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 10,
+      "Length": 11
+    }
+  },
+  "LeftShirt": {
+    "StartingPosition": {
+      "X": 0,
+      "Y": 22
+    },
+    "BodyPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 10,
+      "Length": 11
+    }
+  },
+  "BackShirt": {
+    "StartingPosition": {
+      "X": 0,
+      "Y": 33
+    },
+    "BodyPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 10,
+      "Length": 12
+    }
+  }
+}

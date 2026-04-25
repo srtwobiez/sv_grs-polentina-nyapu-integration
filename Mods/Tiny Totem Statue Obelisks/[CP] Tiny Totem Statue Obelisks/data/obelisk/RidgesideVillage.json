@@ -1,0 +1,50 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Data Ridgeside Village Enabled",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "RSV_Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          },
+          "Texture": "Buildings\\Replacement_RSV Obelisk",
+          "Name": "{{i18n:obelisk.RidgesideVillage.name}}"
+        }
+      }
+    },
+    {
+      "LogName": "JJ Load Ridgeside Village",
+      "Action": "Load",
+      "Target": "Buildings/Replacement_RSV Obelisk",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_rsv.png"
+    },
+    {
+      "LogName": "JJ Decorations Ridgeside Village Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Replacement_RSV Obelisk",
+      "FromFile": "assets/flowers/rsv_{{RidgesideVillageFlowerColor}}.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Ridgeside Village Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Replacement_RSV Obelisk",
+      "FromFile": "assets/moss/rsv_moss.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "Name": "[FS] Vanilla Pants and Skirts",
+    "Author": "violetlizabet",
+    "Version": "1.1.0",
+    "Description": "Adds the vanilla pants and skirts items as FS pants, for ease of use with other FS outfits.",
+    "UniqueID": "violetlizabet.FS.VanillaPantsSkirts",
+    "UpdateKeys": ["Nexus:14154"],
+    "ContentPackFor": {
+        "UniqueID": "PeacefulEnd.FashionSense",
+        "MinimumVersion": "4.11.2"
+    }
+}

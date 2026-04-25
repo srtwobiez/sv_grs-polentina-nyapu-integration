@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.0" orientation="orthogonal" renderorder="right-down" width="3" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="17">
+ <properties>
+  <property name="LocationContext" value="Island"/>
+  <property name="Music" value="ocean"/>
+  <property name="NPCWarp" value="44 23 IslandSouth 0 36 44 24 IslandSouth 0 36 44 25 IslandSouth 0 37 44 26 IslandSouth 0 38 30 0 GiEX_Clearance 30 28 30 8 GiEX_Hut 6 4 30 12 GiEX_Hut 6 4"/>
+  <property name="Outdoors" value="T"/>
+  <property name="SeasonOverride" value="summer"/>
+  <property name="Summer_Objects" value="372 394"/>
+  <property name="Warp" value="44 23 IslandSouth 1 36 44 24 IslandSouth 1 36 44 25 IslandSouth 1 37 44 26 IslandSouth 1 38 30 0 GiEX_Clearance 30 28 30 8 GiEX_Hut 6 4"/>
+ </properties>
+ <tileset firstgid="1" name="z_island_extras" tilewidth="16" tileheight="16" tilecount="216" columns="18">
+  <image source="giex_island_extras.png" width="288" height="192"/>
+ </tileset>
+ <layer id="3" name="Buildings" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAO9IBYC4i1gRgABEgAhA==
+  </data>
+ </layer>
+ <layer id="5" name="Front" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAAGSCWAGJJBlQAAAY0AE4=
+  </data>
+ </layer>
+ <layer id="11" name="AlwaysFront" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjZWBgYANidgbcAAACXAAT
+  </data>
+ </layer>
+</map>

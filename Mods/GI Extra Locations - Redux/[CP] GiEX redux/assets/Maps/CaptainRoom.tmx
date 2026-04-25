@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="7" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
+ <properties>
+  <property name="DayTiles" value="Buildings 2 3 1628 Buildings 3 3 1629 Back 2 2 1596 Back 3 2 1597 Back 2 1 1564 Back 3 1 1565"/>
+  <property name="LocationContext" value="Island"/>
+  <property name="NightTiles" value="Buildings 2 3 1624 Buildings 3 3 1625 Back 2 2 1592 Back 3 2 1593 Back 2 1 1560 Back 3 1 1561"/>
+  <property name="SeasonOverride" value="summer"/>
+  <property name="TreatAsOutdoors" value="T"/>
+  <property name="Warp" value="-1 5 IslandWest 59 92 -1 6 IslandWest 59 92 6 5 GiEX_SunkenShip 16 31"/>
+  <property name="forceLoadObjects" value="T"/>
+ </properties>
+ <tileset firstgid="1" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2080" columns="32">
+  <image source="island_tilesheet_1" width="512" height="1040"/>
+ </tileset>
+ <layer id="1" name="Back" width="7" height="8">
+  <data encoding="csv">
+1595,1596,1597,1598,1599,1600,0,
+1627,1628,1629,1630,1631,1632,0,
+1659,1660,1661,1662,1663,2147485307,0,
+1691,1692,1693,1694,1695,1696,0,
+1723,1724,1725,1726,1727,1728,0,
+1755,1756,1757,1758,1756,2147485403,0,
+1788,1788,1789,1790,1791,1792,0,
+1820,1820,1820,1820,1820,1820,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="7" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+1659,0,0,0,0,2147485307,0,
+1691,1692,1693,1694,1695,2147485339,0,
+1723,0,0,0,0,2147485371,0,
+0,0,0,0,0,0,1820,
+1787,0,0,0,0,2147485435,0,
+1820,1820,1820,1820,1820,1820,0
+</data>
+ </layer>
+ <layer id="3" name="Front" width="7" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+1821,0,0,0,0,0,0,
+1821,0,0,0,0,0,0,
+1787,1852,1853,1854,1855,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Paths" width="7" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,9,9,0,0,0,
+0,0,34,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="7" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+</map>

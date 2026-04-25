@@ -1,0 +1,341 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionMan"],
+					"Value": "Portraits/ConcessionMan_Default {{Aaron}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionMan2"],
+					"Value": "Portraits/ConcessionMan_Default {{Aaron}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_PurpleHairLady"],
+					"Value": "Portraits/PurpleHairLady_Default {{Amber}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_PurpleHairLady"],
+					"Value": "$1",
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_RedCapGuy"],
+					"Value": "Portraits/RedCapGuy_Default {{Terrence}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_RedCapGuy2"],
+					"Value": "Portraits/RedCapGuy_Default {{Terrence}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Mother"],
+					"Value": "Portraits/Mother_Default {{Laura}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_Mother"],
+					"Value": "$1",
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Mother2"],
+					"Value": "Portraits/Mother_Default {{Laura}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_Mother2"],
+					"Value": "$1",
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Child"],
+					"Value": "Portraits/Child_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_Child"],
+					"Value": "$2",
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Child2"],
+					"Value": "Portraits/Child_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_Child2"],
+					"Value": "$2",
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_CraneMan"],
+					"Value": "Portraits/CraneMan_Default {{Duke}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_CraneMan"],
+					"Value": "$1",
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_CraneMan2"],
+					"Value": "Portraits/CraneMan_Default {{Duke}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_CraneMan2"],
+					"Value": "$1",
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ShortsMan"],
+					"Value": "Portraits/CornerGuy_Default {{Luca}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_ShortsMan"],
+					"Value": "$1",
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ShortsMan2"],
+					"Value": "Portraits/CornerGuy_Default {{Luca}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_ShortsMan2"],
+					"Value": "$1",
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Welwick"],
+					"Value": "Portraits/Welwick_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_Welwick"],
+					"Value": "$2",
+				},						
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Welwick2"],
+					"Value": "Portraits/Welwick_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_Welwick2"],
+					"Value": "$2",
+				},								
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Marcello"],
+					"Value": "Portraits/Marcello @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},								
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Marcello2"],
+					"Value": "Portraits/Marcello @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},								
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Governor"],
+					"Value": "Portraits/Governor @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},								
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Governor2"],
+					"Value": "Portraits/Governor @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},								
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Lupini"],
+					"Value": "Portraits/PainterLupini_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_Lupini"],
+					"Value": "$1",
+				},							
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Lupini2"],
+					"Value": "Portraits/PainterLupini_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MovieTheater_Lupini2"],
+					"Value": "$1",
+				},	
+			]			
+		},			
+		{
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Concession"],
+					"Value": "Portraits/MovieConcessionCC_Default {{Claire}}",
+					"Delimiter": "🐬"
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionAlone"],
+					"Value": "Portraits/MovieConcessionCC_Default {{Claire}}",
+					"Delimiter": "🐬"
+				},							
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionPurchased"],
+					"Value": "Portraits/MovieConcessionCC_Default {{Claire}}",
+					"Delimiter": "🐬"
+				},						
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionAfterMovie"],
+					"Value": "Portraits/MovieConcessionCC_Default {{Claire}}",
+					"Delimiter": "🐬"
+				},									
+			],
+			"When": {
+				"HasMod |contains=Lemurkat.EastScarpNPCs": false,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,	
+				"HasFlag |contains=ccMovieTheaterJoja": false
+			} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Concession"],
+					"Value": "Portraits/{{ESConcession}} Strings/DolphINaF.ExtraPortraits:Name.{{ESConcession}}",
+					"Delimiter": "🐬"
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionAlone"],
+					"Value": "Portraits/{{ESConcession}} Strings/DolphINaF.ExtraPortraits:Name.{{ESConcession}}",
+					"Delimiter": "🐬"
+				},							
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionPurchased"],
+					"Value": "Portraits/{{ESConcession}} Strings/DolphINaF.ExtraPortraits:Name.{{ESConcession}}",
+					"Delimiter": "🐬"
+				},						
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionAfterMovie"],
+					"Value": "Portraits/{{ESConcession}} Strings/DolphINaF.ExtraPortraits:Name.{{ESConcession}}",
+					"Delimiter": "🐬"
+				},									
+			],
+			"When": {
+				"HasMod |contains=Lemurkat.EastScarpNPCs": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,	
+				"HasFlag |contains=ccMovieTheaterJoja": false
+			}			
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Concession"],
+					"Value": "🎣 {{SVEConcession}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionAlone"],
+					"Value": "🎣 {{SVEConcession}}",
+					"Delimiter": "🐬"
+				},							
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionPurchased"],
+					"Value": "🎣 {{SVEConcession}}",
+					"Delimiter": "🐬"
+				},						
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionAfterMovie"],
+					"Value": "🎣 {{SVEConcession}}",
+					"Delimiter": "🐬"
+				},									
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,	
+				"HasFlag |contains=ccMovieTheaterJoja": false
+			}		
+		},			
+		{
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_Concession"],
+					"Value": "Portraits/MovieConcessionJoja_Default {{Mark}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionAlone"],
+					"Value": "Portraits/MovieConcessionJoja_Default {{Mark}}",
+					"Delimiter": "🐬"
+				},							
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionPurchased"],
+					"Value": "Portraits/MovieConcessionJoja_Default {{Mark}}",
+					"Delimiter": "🐬"
+				},						
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","MovieTheater_ConcessionAfterMovie"],
+					"Value": "Portraits/MovieConcessionJoja_Default {{Mark}}",
+					"Delimiter": "🐬"
+				},									
+			],
+			"When": {"HasFlag |contains=ccMovieTheaterJoja": true,} 
+		},		
+	],
+}

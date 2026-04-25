@@ -1,0 +1,76 @@
+{
+  "Name": "Accessory.prom.A",
+  "FrontAccessory": {
+    "DisableGrayscale": true,
+ "DrawOrderOverride":  { 
+    "Preposition":"After",   
+    "AppearanceType":"sleeves"},  
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 8,
+      "Y": -9
+    },
+    "AccessorySize": {
+      "Width": 32,
+      "Length": 32
+    }
+  },
+  "RightAccessory": {
+    "DisableGrayscale": true, 
+ "DrawOrderOverride":  { 
+    "Preposition":"After",   
+    "AppearanceType":"sleeves"},
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 10,
+      "Y": -9
+    },
+    "AccessorySize": {
+      "Width": 32,
+      "Length": 32
+    }
+  },
+  "LeftAccessory": {
+    "DisableGrayscale": true, 
+   "DrawOrderOverride":  { 
+    "Preposition":"After",   
+    "AppearanceType":"sleeves"},
+	"Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 4,
+      "Y": -9
+    },
+    "AccessorySize": {
+      "Width": 32,
+      "Length": 32
+    }
+  },
+  "BackAccessory": {
+    "DisableGrayscale": true,  
+     "DrawOrderOverride":  { 
+    "Preposition":"After",   
+    "AppearanceType":"sleeves"},
+    "StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": 8,
+      "Y": -9
+    },
+    "AccessorySize": {
+      "Width": 32,
+      "Length": 32
+    }
+  }
+}

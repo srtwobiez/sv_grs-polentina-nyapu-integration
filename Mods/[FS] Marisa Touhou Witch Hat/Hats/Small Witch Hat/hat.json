@@ -1,0 +1,126 @@
+{
+  "Name": "Small Witch Hat",
+  "FrontHat": {
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 6,
+      "Y": 9
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 32
+    },
+     "MovementAnimation": [
+       {
+        "Frame": 0,
+        "Duration": 100
+      },
+	  {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 2,
+        "Duration": 100
+      },
+
+
+    ]
+	
+},
+  "RightHat": {
+    "HideHair": false,
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 33
+    },
+    "HeadPosition": {
+      "X": 9,
+      "Y": 11
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 32
+    },
+	"RequireAnimationToFinish": false,
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 2,
+        "Duration": 100
+      },
+	  ]
+  },
+   "LeftHat": {
+    "HideHair": false,
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 65
+    },
+    "HeadPosition": {
+      "X": 3,
+      "Y": 11
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 32
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 2,
+        "Duration": 100
+      },
+	  ]
+  },
+  "BackHat": {
+    "HideHair": false,
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 97
+    },
+    "HeadPosition": {
+      "X": 7,
+      "Y": 10
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 32
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 2,
+        "Duration": 100
+      },
+	  ]
+}
+}

@@ -1,0 +1,737 @@
+{
+    "Changes": [
+        {
+            "LogName": "Produce - cheese - goat (gold)",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)16",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_Milk1": {
+                    "Id": "{{ModId}}_Milk1",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_GoatMilk_G",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "GoatMilkToCheese",
+                            "Id": "{{ModId}}_GoatMilk_To_Cheese",
+                            "ItemId": "(O)426",
+                            "CopyQuality": false,
+                            "MinStack": 2,
+                            "PriceModifierMode": "Stack"
+                        }
+                    ],
+                    "MinutesUntilReady": 200,
+                    "RecalculateOnCollect": false
+                },
+                "{{ModId}}_Milk2": {
+                    "Id": "{{ModId}}_Milk2",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_LargeGoatMilk_G",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "LGoatMilkToCheese_G",
+                            "Id": "{{ModId}}_GoatMilk_To_Cheese",
+                            "ItemId": "(O)426",
+                            "CopyQuality": false,
+                            "MinStack": 2,
+                            "PriceModifierMode": "Stack",
+                            "Quality": 2
+                        }
+                    ],
+                    "MinutesUntilReady": 200,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Milk1",
+                    "ToPosition": "Top"
+                },
+                {
+                    "ID": "{{ModId}}_Milk2",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When": {
+                "mistyspring.GiEXredux.code/GoldenGoat": true
+            }
+        },
+        {
+            "LogName": "Produce - cheese - cow (gold)",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)16",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_Milk3": {
+                    "Id": "{{ModId}}_Milk3",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_Milk_G",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "MilkToCheese_G",
+                            "Id": "{{ModId}}_Cheese_G",
+                            "ItemId": "(O)424",
+                            "MinStack": 2,
+                            "PriceModifierMode": "Stack"
+                        }
+                    ],
+                    "MinutesUntilReady": 200,
+                    "RecalculateOnCollect": false
+                },
+                "{{ModId}}_Milk4": {
+                    "Id": "{{ModId}}_Milk4",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_LargeMilk_G",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "LargeMilkToCheese_G",
+                            "Id": "{{ModId}}_Cheese_G",
+                            "ItemId": "(O)424",
+                            "Quality": 2,
+                            "MinStack": 2,
+                            "PriceModifierMode": "Stack"
+                        }
+                    ],
+                    "MinutesUntilReady": 200,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Milk3",
+                    "ToPosition": "Top"
+                },
+                {
+                    "ID": "{{ModId}}_Milk4",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/GoldenCow": true
+            }
+        },
+        {
+            "LogName": "Produce - cheese - goat (void)",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)16",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_Milk5": {
+                    "Id": "{{ModId}}_Milk5",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_GoatMilk_V",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "GoatMilkToCheese_V",
+                            "Id": "{{ModId}}_GoatCheese_V",
+                            "ItemId": "(O)GiEXredux_GoatCheese_V"
+                        }
+                    ],
+                    "MinutesUntilReady": 200,
+                    "RecalculateOnCollect": false
+                },
+                "{{ModId}}_Milk6": {
+                    "Id": "{{ModId}}_Milk6",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_LargeGoatMilk_V",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "LargeGoatMilkToCheese_V",
+                            "Id": "{{ModId}}_GoatCheese_V",
+                            "ItemId": "(O)GiEXredux_GoatCheese_V",
+                            "Quality": 2
+                        }
+                    ],
+                    "MinutesUntilReady": 200,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Milk5",
+                    "ToPosition": "Top"
+                },
+                {
+                    "ID": "{{ModId}}_Milk6",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/VoidGoat": true
+            }
+        },
+        {
+            "LogName": "Produce - cheese - cow (void)",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)16",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_Milk7": {
+                    "Id": "{{ModId}}_Milk7",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_Milk_V",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "MilkToCheese_V",
+                            "Id": "{{ModId}}_Cheese_V",
+                            "ItemId": "(O)GiEXredux_Cheese_V"
+                        }
+                    ],
+                    "MinutesUntilReady": 200,
+                    "RecalculateOnCollect": false
+                },
+                "{{ModId}}_Milk8": {
+                    "Id": "{{ModId}}_Milk8",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_LargeMilk_V",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "LargeMilkToCheese_V",
+                            "Id": "{{ModId}}_Cheese_V",
+                            "ItemId": "(O)GiEXredux_Cheese_V",
+                            "Quality": 2
+                        }
+                    ],
+                    "MinutesUntilReady": 200,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Milk7",
+                    "ToPosition": "Top"
+                },
+                {
+                    "ID": "{{ModId}}_Milk8",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/VoidCow": true
+            }
+        },
+        {
+            "LogName": "Produce - loom - gold",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)17",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_Wool1": {
+                    "Id": "{{ModId}}_Wool1",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_Wool_G",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "WoolToYarn_G",
+                            "Id": "{{ModId}}_Yarn_G",
+                            "ItemId": "(O)GiEXredux_Yarn_G",
+                            "StackModifiers": [
+                                {
+                                    "Id": "DoubleQuality",
+                                    "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.1\" \"ITEM_QUALITY Input 2 2, RANDOM 0.25\" \"ITEM_QUALITY Input 4 4, RANDOM 0.5\"",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 480,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Wool1",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/GoldenSheep":true
+            }
+        },
+        {
+            "LogName": "Produce - loom - void",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)17",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_Wool2": {
+                    "Id": "{{ModId}}_Wool2",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_Wool_V",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "WoolToYarn_V",
+                            "Id": "{{ModId}}_Yarn_V",
+                            "ItemId": "(O)GiEXredux_Yarn_V",
+                            "StackModifiers": [
+                                {
+                                    "Id": "DoubleQuality",
+                                    "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.1\" \"ITEM_QUALITY Input 2 2, RANDOM 0.25\" \"ITEM_QUALITY Input 4 4, RANDOM 0.5\"",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 480,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Wool2",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/VoidSheep": true
+            }
+        },
+        {
+            "LogName": "Produce - Egg machine - dinosaur (gold)",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_DinoEgg_G": {
+                    "Id": "{{ModId}}_DinoEgg_G",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_DinoEgg_G",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "DinoEggToMayo_G",
+                            "Id": "(O)807",
+                            "ItemId": "(O)807",
+                            "MinStack": 3,
+                            "Quality": 2
+                        }
+                    ],
+                    "MinutesUntilReady": 180,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_DinoEgg_G",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/GoldenDinosaur":true
+            }
+        },
+        {
+            "LogName": "Produce - Egg machine - duck (gold)",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_DuckEgg_G": {
+                    "Id": "{{ModId}}_DuckEgg_G",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_DuckEgg_G",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "DuckEggToMayo_G",
+                            "Id": "(O)307",
+                            "ItemId": "(O)307",
+                            "MinStack": 3,
+                            "MaxStack": -1,
+                            "Quality": 2
+                        }
+                    ],
+                    "MinutesUntilReady": 180,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_DuckEgg_G",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/GoldenDuck":true
+            }
+        },
+        {
+            "LogName": "Produce - Egg machine - ostrich (gold)",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_OstrichEgg_G": {
+                    "Id": "{{ModId}}_OstrichEgg_G",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_OstrichEgg_G",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "OstrichEggToMayo_G",
+                            "Id": "(O)306",
+                            "ItemId": "(O)306",
+                            "MinStack": 10,
+                            "MaxStack": -1,
+                            "Quality": 2
+                        }
+                    ],
+                    "MinutesUntilReady": 180,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_OstrichEgg_G",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/GoldenOstrich":true
+            }
+        },
+        {
+            "LogName": "Produce - Egg machine - dinosaur (void)",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_DinoEgg_V": {
+                    "Id": "{{ModId}}_DinoEgg_V",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_DinoEgg_V",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "DinoEggToMayo_V",
+                            "Id": "(O)GiEXredux_DinoMayo_V",
+                            "ItemId": "(O)GiEXredux_DinoMayo_V"
+                        }
+                    ],
+                    "MinutesUntilReady": 180,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_DinoEgg_V",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/VoidDinosaur":true
+            }
+        },
+        {
+            "LogName": "Produce - Egg machine - duck (void)",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_DuckEgg_V": {
+                    "Id": "{{ModId}}_DuckEgg_V",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_DuckEgg_V",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "DuckEggToMayo_V",
+                            "Id": "(O)GiEXredux_DuckMayo_V",
+                            "ItemId": "(O)GiEXredux_DuckMayo_V",
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        }
+                    ],
+                    "MinutesUntilReady": 180,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_DuckEgg_V",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/VoidDuck":true
+            }
+        },
+        {
+            "LogName": "Produce - Egg machine - ostrich (void)",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_OstrichEgg_V": {
+                    "Id": "{{ModId}}_OstrichEgg_V",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_OstrichEgg_V",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Name": "OstrichEggToMayo_V",
+                            "Id": "(O)308",
+                            "ItemId": "(O)308",
+                            "MinStack": 10,
+                            "MaxStack": -1
+                        }
+                    ],
+                    "MinutesUntilReady": 180,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_OstrichEgg_V",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/VoidOstrich":true
+            }
+        },
+        {
+            "LogName": "Iridium Egg",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_IridiumEgg": {
+                    "Id": "{{ModId}}_IridiumEgg",
+                    "Triggers": [
+                        {
+                            "Id": "ItemPlacedInMachine",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "{{ModPrefix}}IridiumEgg",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": false,
+                    "OutputItem": [
+                        {
+                            "CopyQuality": false,
+                            "PriceModifierMode": "Stack",
+                            "Id": "Mayo",
+                            "ItemId": "(O)306",
+                            "MinStack": 4,
+                            "MaxStack": 7,
+                            "Quality": 2,
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        }
+                    ],
+                    "MinutesUntilReady": 180,
+                    "InvalidCountMessage": null,
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_IridiumEgg",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When": {
+                "mistyspring.GiEXredux.code/IridiumChicken": true
+            }
+        },
+        {
+            "LogName": "Produce - cask - void cow",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)163",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_Cheese_V": {
+                    "Id": "{{ModId}}_Cheese_V",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_Cheese_V",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "CustomData": {
+                                "AgingMultiplier": "4"
+                            },
+                            "OutputMethod": "StardewValley.Objects.Cask.OutputCask",
+                            "Name": "Cask_Cheese_V",
+                            "Id": "???"
+                        }
+                    ],
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Cheese_V",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/VoidCow":true
+            }
+        },
+        {
+            "LogName": "Produce - cask - void goat",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)163",
+                "OutputRules"
+            ],
+            "Entries": {
+                "{{ModId}}_GoatCheese_V": {
+                    "Id": "{{ModId}}_GoatCheese_V",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "GiEXredux_GoatCheese_V",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "CustomData": {
+                                "AgingMultiplier": "4"
+                            },
+                            "OutputMethod": "StardewValley.Objects.Cask.OutputCask",
+                            "Name": "Cask_GoatCheese_V",
+                            "Id": "???"
+                        }
+                    ],
+                    "RecalculateOnCollect": false
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_GoatCheese_V",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When":{
+                "mistyspring.GiEXredux.code/VoidGoat":true
+            }
+        }
+    ]
+}

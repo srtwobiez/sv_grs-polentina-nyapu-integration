@@ -1,0 +1,25 @@
+{
+	"Changes": [
+			{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Crab.png",
+		"ToArea": { "X": 0, "Y": 272, "Width": 54, "Height": 36 },
+		"When":{ "Beach":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Seagull1.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 320, "Height": 32 },
+		"When":{ "Beach":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "TileSheets/critters",
+		"FromFile": "assets/Seagull2.png",
+		"ToArea": { "X": 0, "Y": 32, "Width": 128, "Height": 32 },
+		"When":{ "Beach":"true"}
+		}
+	]
+}

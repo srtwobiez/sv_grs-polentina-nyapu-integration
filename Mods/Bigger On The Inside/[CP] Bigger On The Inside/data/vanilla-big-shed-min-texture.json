@@ -1,0 +1,24 @@
+{
+  "Changes": [
+    // ===== VANILLA BIG SHED BASIC EXTERIOR =====
+    // ForceMinVanillaBigShed true uses Shed skin on vanilla Big Shed. You still upgrade from Shed.
+    {
+      "LogName": "JJ Vanilla Big Shed basic exterior",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "Big Shed": {
+          "Texture": "Buildings\\Shed",
+          "Size": { "X": 7, "Y": 3 },
+          "SourceRect": { "X": 0, "Y": 0, "Width": 0, "Height": 0 },
+          "BuildMenuDrawOffset": { "X": 0, "Y": 0 },
+          "UpgradeSignTile": "4.8125, 2",
+          "UpgradeSignHeight": 20.0,
+          "HumanDoor": { "X": 3, "Y": 2 }
+        }
+      },
+      "When": { "ForceMinVanillaBigShed": "true" }
+    }
+  ]
+}

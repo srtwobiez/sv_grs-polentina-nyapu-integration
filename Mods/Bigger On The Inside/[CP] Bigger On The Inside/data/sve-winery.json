@@ -1,0 +1,94 @@
+{
+  "Changes": [
+    // ===== SVE WINERY BIG SHED EXTERIOR =====
+    // Use Big Shed skin. Runs when ForceMinShed is false.
+    // With upgrades includes BuildingToUpgrade.
+    {
+      "LogName": "JJ SVE Winery Big Shed upgrade path",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_Winery": {
+          "BuildingToUpgrade": "Big Shed",
+          "Texture": "Buildings\\Big Shed",
+          "Size": { "X": 7, "Y": 3 },
+          "SourceRect": { "X": 0, "Y": 0, "Width": 0, "Height": 0 },
+          "BuildMenuDrawOffset": { "X": 0, "Y": 0 },
+          "UpgradeSignTile": "4.8125, 2",
+          "UpgradeSignHeight": 20.0,
+          "HumanDoor": { "X": 3, "Y": 2 },
+          "IndoorMap": "SVE_Winery",
+          "IndoorMapType": "StardewValley.GameLocation"
+        }
+      },
+      "When": { "ForceMinShed": "false", "EnableBuildingUpgrades": "true" }
+    },
+    // Without upgrades omits BuildingToUpgrade.
+    {
+      "LogName": "JJ SVE Winery Big Shed standalone",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_Winery": {
+          "Texture": "Buildings\\Big Shed",
+          "Size": { "X": 7, "Y": 3 },
+          "SourceRect": { "X": 0, "Y": 0, "Width": 0, "Height": 0 },
+          "BuildMenuDrawOffset": { "X": 0, "Y": 0 },
+          "UpgradeSignTile": "4.8125, 2",
+          "UpgradeSignHeight": 20.0,
+          "HumanDoor": { "X": 3, "Y": 2 },
+          "IndoorMap": "SVE_Winery",
+          "IndoorMapType": "StardewValley.GameLocation"
+        }
+      },
+      "When": { "ForceMinShed": "false", "EnableBuildingUpgrades": "false" }
+    },
+    // ===== SVE WINERY BASIC SHED EXTERIOR =====
+    // Use small Shed skin but keep upgrade path to Big Shed. Runs when ForceMinShed is true.
+    // With upgrades includes BuildingToUpgrade.
+    {
+      "LogName": "JJ SVE Winery basic Shed upgrade path",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_Winery": {
+          "BuildingToUpgrade": "Big Shed",
+          "Texture": "Buildings\\Shed",
+          "Size": { "X": 7, "Y": 3 },
+          "SourceRect": { "X": 0, "Y": 0, "Width": 0, "Height": 0 },
+          "BuildMenuDrawOffset": { "X": 0, "Y": 0 },
+          "UpgradeSignTile": "4.8125, 2",
+          "UpgradeSignHeight": 20.0,
+          "HumanDoor": { "X": 3, "Y": 2 },
+          "IndoorMap": "SVE_Winery",
+          "IndoorMapType": "StardewValley.GameLocation"
+        }
+      },
+      "When": { "ForceMinShed": "true", "EnableBuildingUpgrades": "true" }
+    },
+    // Without upgrades omits BuildingToUpgrade.
+    {
+      "LogName": "JJ SVE Winery basic Shed standalone",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_Winery": {
+          "Texture": "Buildings\\Shed",
+          "Size": { "X": 7, "Y": 3 },
+          "SourceRect": { "X": 0, "Y": 0, "Width": 0, "Height": 0 },
+          "BuildMenuDrawOffset": { "X": 0, "Y": 0 },
+          "UpgradeSignTile": "4.8125, 2",
+          "UpgradeSignHeight": 20.0,
+          "HumanDoor": { "X": 3, "Y": 2 },
+          "IndoorMap": "SVE_Winery",
+          "IndoorMapType": "StardewValley.GameLocation"
+        }
+      },
+      "When": { "ForceMinShed": "true", "EnableBuildingUpgrades": "false" }
+    }
+  ]
+}

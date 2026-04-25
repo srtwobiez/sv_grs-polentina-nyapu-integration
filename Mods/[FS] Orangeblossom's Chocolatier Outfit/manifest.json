@@ -1,0 +1,13 @@
+{
+  "Name": "[FS] Orangeblossom's Chocolatier Outfit",
+  "Author": "orangeblossom",
+  "Version": "1.0.0",
+  "Description": "Chocolatier Outfit",
+  "UniqueID": "ob7.chocovalleyOutfit",
+  "UpdateKeys": [ "Nexus:26021" ],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "5.8.1"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "Name": "N36",
+  "FrontAccessory": {
+    "DisableGrayscale": true,
+	"HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"Scale": 2,
+	"DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Sleeves"
+    },
+	"StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 16,
+      "Y": 37
+    },
+    "AccessorySize": {
+      "Width": 64,
+      "Length": 48
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 180
+      },
+      {
+        "Frame": 1,
+        "Duration": 180
+      },
+      {
+        "Frame": 2,
+        "Duration": 180
+      },
+      {
+        "Frame": 3,
+        "Duration": 180
+      },
+      {
+        "Frame": 4,
+        "Duration": 180
+      },
+      {
+        "Frame": 5,
+        "Duration": 180
+      }
+    ]
+  },
+  "RightAccessory": {
+    "DisableGrayscale": true,
+	"HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"Scale": 2,
+	"DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Sleeves"
+    },
+	"StartingPosition": {
+      "X": 0,
+      "Y": 48
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 37
+    },
+    "AccessorySize": {
+      "Width": 48,
+      "Length": 48
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 180
+      },
+      {
+        "Frame": 1,
+        "Duration": 180
+      },
+      {
+        "Frame": 2,
+        "Duration": 180
+      },
+      {
+        "Frame": 3,
+        "Duration": 180
+      },
+      {
+        "Frame": 4,
+        "Duration": 180
+      },
+      {
+        "Frame": 5,
+        "Duration": 180
+      }
+    ]
+  },
+  "LeftAccessory": {
+    "DisableGrayscale": true,
+	"HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"Scale": 2,
+	"DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Sleeves"
+    },
+	"StartingPosition": {
+      "X": 0,
+      "Y": 96
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 37
+    },
+    "AccessorySize": {
+      "Width": 32,
+      "Length": 48
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 180
+      },
+      {
+        "Frame": 1,
+        "Duration": 180
+      },
+      {
+        "Frame": 2,
+        "Duration": 180
+      },
+      {
+        "Frame": 3,
+        "Duration": 180
+      },
+      {
+        "Frame": 4,
+        "Duration": 180
+      },
+      {
+        "Frame": 5,
+        "Duration": 180
+      }
+    ]
+  },
+   "BackAccessory": {
+    "DisableGrayscale": true,
+	"HideWhileSwimming": true,
+	"HideWhileWearingBathingSuit": true,
+	"Scale": 2,
+	"DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Player"
+    },
+	"StartingPosition": {
+      "X": 0,
+      "Y": 144
+    },
+    "HeadPosition": {
+      "X": 16,
+      "Y": 37
+    },
+    "AccessorySize": {
+      "Width": 64,
+      "Length": 48
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 180
+      },
+      {
+        "Frame": 1,
+        "Duration": 180
+      },
+      {
+        "Frame": 2,
+        "Duration": 180
+      },
+      {
+        "Frame": 3,
+        "Duration": 180
+      },
+      {
+        "Frame": 4,
+        "Duration": 180
+      },
+      {
+        "Frame": 5,
+        "Duration": 180
+      }
+    ]
+  }
+}

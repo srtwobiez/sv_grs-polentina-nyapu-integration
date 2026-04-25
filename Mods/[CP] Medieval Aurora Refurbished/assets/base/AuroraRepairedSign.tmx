@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="3" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
+ <tileset firstgid="1" name="zForestWest_Shadow" tilewidth="16" tileheight="16" tilecount="0" columns="156">
+  <image source="ForestWest_Shadow.png" width="2496" height="2496"/>
+ </tileset>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="0" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="1" name="spring_beach" tilewidth="16" tileheight="16" tilecount="0" columns="17">
+  <image source="spring_beach.png" width="272" height="496"/>
+ </tileset>
+ <tileset firstgid="1" name="outdoors" tilewidth="16" tileheight="16" tilecount="0" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="1" name="spring_town" tilewidth="16" tileheight="16" tilecount="0" columns="32">
+  <image source="spring_town.png" width="512" height="1152"/>
+ </tileset>
+ <tileset firstgid="1" name="spring_z_extras" tilewidth="16" tileheight="16" tilecount="6400" columns="25">
+  <image source="spring_z_extras.png" width="400" height="4096"/>
+ </tileset>
+ <layer id="3" name="Buildings" width="3" height="3">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+5181,5182,5183
+</data>
+ </layer>
+ <layer id="2" name="Front" width="3" height="3">
+  <data encoding="csv">
+5131,5132,5133,
+5156,5157,5158,
+0,0,0
+</data>
+ </layer>
+</map>

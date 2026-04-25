@@ -1,0 +1,152 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Priority": "Late + 50",			
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13128"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13130"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13132"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13133"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13134"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13135"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13191"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "TV.cs.13191"],
+					"Value": "$5",
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13192"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "TV.cs.13192"],
+					"Value": "$5",
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13193"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "TV.cs.13193"],
+					"Value": "$4",
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13195"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "TV.cs.13195"],
+					"Value": "$4",
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13197"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "TV.cs.13197"],
+					"Value": "$1",
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13198"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "TV.cs.13198"],
+					"Value": "$1",
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13199"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "TV.cs.13199"],
+					"Value": "$2",
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13200"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "TV.cs.13200"],
+					"Value": "$3",
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13201"],
+					"Value": "Portraits/Television_Welwick Strings/NPCNames:Welwick",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "TV.cs.13201"],
+					"Value": "$3",
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","TV.cs.13127"],
+					"Value": "Portraits/Television_{{TVQoS}} Strings/DolphINaF.ExtraPortraits:Name.{{TVQoS}}",
+					"Delimiter": "🐬"
+				},			
+			]
+		},			
+	],
+}

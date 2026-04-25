@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Luny's Farm Dresses",
+  "Author": "Luny",
+  "Version": "2.1",
+  "Description": "Adds cottagecore themed clothes to Fashion Sense",
+  "UniqueID": "Luny.FarmDresses",
+  "UpdateKeys": ["Nexus:23925"],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+	"MinimumVersion": "6.6.0"
+  }
+}

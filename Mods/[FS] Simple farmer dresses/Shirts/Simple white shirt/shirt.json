@@ -1,0 +1,83 @@
+{
+  "Name": "Simple white shirt",
+  "FrontShirt": {
+    "DisableGrayscale": true,
+      "SleeveColors": [
+      [ 144, 131, 174 ],
+      [ 195, 183, 224 ],
+      [ 235, 226, 255 ]
+    ],   
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 2,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 12,
+      "Length": 7
+    }
+  },
+  "RightShirt": {
+    "DisableGrayscale": true,
+      "SleeveColors": [
+      [ 144, 131, 174 ],
+      [ 235, 226, 255 ],
+      [ 235, 226, 255 ]
+    ],   
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 2,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 12,
+      "Length": 7
+    }
+  },
+  "LeftShirt": {
+    "DisableGrayscale": true,
+      "SleeveColors": [
+      [ 144, 131, 174 ],
+      [ 235, 226, 255 ],
+      [ 235, 226, 255 ]
+    ],   
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 2,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 12,
+      "Length": 7
+    }
+  },
+  "BackShirt": {
+    "DisableGrayscale": true,
+      "SleeveColors": [
+      [ 144, 131, 174 ],
+      [ 235, 226, 255 ],
+      [ 235, 226, 255 ]
+    ],   
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 2,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 12,
+      "Length": 8
+    }
+  }
+}

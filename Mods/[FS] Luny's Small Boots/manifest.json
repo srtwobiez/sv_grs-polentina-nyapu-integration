@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Luny's Small Boots",
+  "Author": "Luny",
+  "Version": "1.2.5",
+  "Description": "Gives you small shoes",
+  "UniqueID": "Luny.SmallBoots",
+  "UpdateKeys": ["Nexus:31744"],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+	"MinimumVersion": "6.6.0"
+  }
+}

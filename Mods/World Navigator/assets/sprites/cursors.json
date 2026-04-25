@@ -1,0 +1,58 @@
+{
+    "Texture": "LooseSprites/Cursors",
+    "Sprites": {
+        "MagnifyingGlass": {
+            "SourceRect": "80, 0, 13, 13"
+        },
+        "GreenCheck": {
+            "SourceRect": "237, 426, 7, 7"
+        },
+        "RightArrow": {
+            "SourceRect": "12, 204, 44, 40"
+        },
+        "LeftArrow": {
+            "SourceRect": "8, 268, 44, 40"
+        },
+        "UpArrow": {
+            "SourceRect": "76, 72, 40, 44"
+        },
+        "DownArrow": {
+            "SourceRect": "12, 76, 40, 44"
+        },
+        "QuestExclamation": {
+            "SourceRect": "383, 495, 11, 12"
+        },
+        "FilledHeart": {
+            "SourceRect": "211, 427, 7, 7"
+        },
+        "EmptyHeart": {
+            "SourceRect": "218, 427, 7, 7"
+        },
+        "CaretRight": {
+            "SourceRect": "448, 96, 32, 32"
+        },
+        "DestinationIndicator": {
+            "SourceRect": "232, 346, 9, 9"
+        },
+        "Cancel": {
+            "SourceRect": "192, 256, 64, 64"
+        },
+        "DialogueBox": {
+            "SourceRect": "603, 414, 74, 74"
+        },
+        "Hourglass": {
+            "SourceRect": "16, 0, 10, 15"
+        },
+        "RedX": {
+            "SourceRect": "269, 471, 14, 15"
+        },
+        "Error": {
+            "SourceRect": "322, 498, 12, 12"
+        },
+        "QuestRectangle": {
+            "SourceRect": "384, 396, 15, 15",
+            "FixedEdges": "5, 5, 5, 5",
+            "Scale": 4
+        }
+    }
+}

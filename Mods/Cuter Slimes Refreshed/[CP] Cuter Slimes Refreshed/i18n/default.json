@@ -1,0 +1,6 @@
+{
+  "config.Mode.name": "Slime Transparency",
+  "config.Mode.description": "Choose how you want your slimes to look. Jelly is semi-transparent; Glossy is fully opaque.",
+  "config.Mode.values.jelly": "Jelly",
+  "config.Mode.values.glossy": "Glossy"
+}

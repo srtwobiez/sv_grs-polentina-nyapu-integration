@@ -1,0 +1,1171 @@
+{
+    "Changes": [
+        //note: it's intentional for hugefruits to be worth 3 normal fruits and always have a max stock of 3
+        {
+            "LogName": "CustomShop - normal",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "{{ModPrefix}}IslandAnimalShop": {
+                    "Currency": 0,
+                    "StackSizeVisibility": null,
+                    "OpenSound": null,
+                    "PurchaseSound": null,
+                    "PurchaseRepeatSound": null,
+                    "PriceModifiers": null,
+                    "PriceModifierMode": "Stack",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "",
+                            "Dialogues": [
+                                {
+                                    "Id": "RareHardMode",
+                                    "Condition": "PLAYER_STAT Current hardModeMonstersKilled 51, !DAY_OF_MONTH 28, SYNCED_RANDOM day island_trader_dialogue_secret 0.2",
+                                    "Dialogue": "[LocalizedText Strings\\StringsFromCSFiles:IslandTraderSecret]",
+                                    "RandomDialogue": null
+                                },
+                                {
+                                    "Id": "RareMale",
+                                    "Condition": "PLAYER_GENDER Current Male, SYNCED_RANDOM day island_trader_dialogue 0.2",
+                                    "Dialogue": null,
+                                    "RandomDialogue": [
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader3]",
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader4_male]"
+                                    ]
+                                },
+                                {
+                                    "Id": "RareFemale",
+                                    "Condition": "PLAYER_GENDER Current Female, SYNCED_RANDOM day island_trader_dialogue 0.2",
+                                    "Dialogue": null,
+                                    "RandomDialogue": [
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader3]",
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader4_female]"
+                                    ]
+                                },
+                                {
+                                    "Id": "Default",
+                                    "Condition": null,
+                                    "Dialogue": null,
+                                    "RandomDialogue": [
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader1]",
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader2]"
+                                    ]
+                                }
+                            ],
+                            "RandomizeDialogueOnOpen": true,
+                            "Id": "AnyOrNone",
+                            "Name": "AnyOrNone"
+                        }
+                    ],
+                    "VisualTheme": null,
+                    "SalableItemTags": [
+                        "category_milk",
+                        "category_egg",
+                        "category_sell_at_pierres_and_marnies",
+                        "category_artisan_goods"
+                    ],
+                    "Items": [
+                        //recipes
+                        {
+                            "Price": 300000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Gold(recipe)",
+                            "ItemId": "{{ModPrefix}}GoldPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack",
+                            "Condition": "ANY \"!{{Perfectionist}}\" \"PLAYER_HAS_MAIL Current Farm_Eternal\""
+                        },
+                        {
+                            "Price": 150000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Void(recipe)",
+                            "ItemId": "{{ModPrefix}}VoidPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 75000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Purify(recipe)",
+                            "ItemId": "{{ModPrefix}}PurifyPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 10000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Revive(recipe)",
+                            "ItemId": "{{ModPrefix}}RevivalPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 10000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Grow(recipe)",
+                            "ItemId": "{{ModPrefix}}GrowPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //dusts
+                        {
+                            "Price": 100000,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Gold",
+                            "ItemId": "{{ModPrefix}}GoldDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack",
+                            "Condition": "ANY \"!{{Perfectionist}}\" \"PLAYER_HAS_MAIL Current Farm_Eternal\""
+                        },
+                        {
+                            "Price": 50000,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Dust:Void",
+                            "ItemId": "{{ModPrefix}}VoidDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 25000,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Dust:Purify",
+                            "ItemId": "{{ModPrefix}}PurifyDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //(huge) fruits
+                        {
+                            "TradeItemId": "(O)91",
+                            "TradeItemAmount": 3,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.6, ANY \"DAY_OF_WEEK Mon\" \"DAY_OF_WEEK Tue\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Banana (trade)",
+                            "ItemId": "{{ModPrefix}}HugeBanana",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 1500,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "ANY \"DAY_OF_WEEK Mon\" \"DAY_OF_WEEK Tue\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Banana (cash)",
+                            "ItemId": "{{ModPrefix}}HugeBanana",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "TradeItemId": "(O)88",
+                            "TradeItemAmount": 3,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.6, ANY \"DAY_OF_WEEK Wed\" \"DAY_OF_WEEK Thu\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Coconut (trade)",
+                            "ItemId": "{{ModPrefix}}HugeCoconut",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 1500,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "ANY \"DAY_OF_WEEK Wed\" \"DAY_OF_WEEK Thu\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Coconut (cash)",
+                            "ItemId": "{{ModPrefix}}HugeCoconut",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "TradeItemId": "(O)834",
+                            "TradeItemAmount": 3,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.6, ANY \"DAY_OF_WEEK Fri\" \"DAY_OF_WEEK Sat\" \"DAY_OF_WEEK Sun\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Mango (trade)",
+                            "ItemId": "{{ModPrefix}}HugeMango",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 1500,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "ANY \"DAY_OF_WEEK Fri\" \"DAY_OF_WEEK Sat\" \"DAY_OF_WEEK Sun\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Mango (cash)",
+                            "ItemId": "{{ModPrefix}}HugeMango",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //dusts part 2
+                        {
+                            "Price": 5000,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Revival",
+                            "ItemId": "{{ModPrefix}}RevivalDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 5000,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Dust:Grow",
+                            "ItemId": "{{ModPrefix}}GrowDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //seeds
+                        {
+                            "TradeItemId": "(O)417",
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": true,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "DAY_OF_WEEK Friday",
+                            "Id": "StardropSeeds",
+                            "ItemId": "{{ModPrefix}}StarDropSeeds",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //other (just to make up space)
+                        {
+                            "Price": 40,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.3",
+                            "Id": "Hay",
+                            "ItemId": "178",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 40,
+                            "AvailableStockLimit": "Global",
+                            "AvailableStock": 5,
+                            "AvoidRepeat": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.4",
+                            "Id": "Egg",
+                            "RandomItemId": [
+                                "(O)176",
+                                "(O)180"
+                            ],
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "TradeItemId": "(BC)165",
+                            "TradeItemAmount": 2,
+                            "AvailableStockLimit": "Global",
+                            "AvailableStock": 2,
+                            "AvoidRepeat": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.1",
+                            "Id": "Auto-petter (trade)",
+                            "ItemId": "(BC)272",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        }
+                    ],
+                    "CustomFields": {}
+                }
+            }
+        },
+        {
+            "LogName": "CustomShop - normal - iridium egg",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "{{ModPrefix}}IslandAnimalShop",
+                "Items"
+            ],
+            "Entries": {
+                "IridiumEgg40Percent": {
+                    "TradeItemId": "(O)928",
+                    "TradeItemAmount": 3,
+                    "Price": -1,
+                    "AvailableStockLimit": "Global",
+                    "AvoidRepeat": false,
+                    "IgnoreShopPriceModifiers": true,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "DAY_OF_MONTH 28, RANDOM 0.4",
+                    "Id": "IridiumEgg 40%",
+                    "ItemId": "{{ModPrefix}}IridiumEgg",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack"
+                },
+                "IridiumEgg200k": {
+                    "Price": 200000,
+                    "AvailableStockLimit": "Global",
+                    "AvoidRepeat": false,
+                    "IgnoreShopPriceModifiers": true,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "DAY_OF_MONTH 28",
+                    "Id": "IridiumEgg 60%",
+                    "ItemId": "{{ModPrefix}}IridiumEgg",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack"
+                }
+            },
+            "When":{
+                "mistyspring.GiEXredux.code/IridiumChicken": true
+            }
+        },
+        {
+            "LogName": "CustomShop - easy",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "{{ModPrefix}}IslandAnimalShop": {
+                    "Currency": 0,
+                    "StackSizeVisibility": null,
+                    "OpenSound": null,
+                    "PurchaseSound": null,
+                    "PurchaseRepeatSound": null,
+                    "PriceModifiers": null,
+                    "PriceModifierMode": "Stack",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "",
+                            "Dialogues": [
+                                {
+                                    "Id": "RareHardMode",
+                                    "Condition": "PLAYER_STAT Current hardModeMonstersKilled 51, !DAY_OF_MONTH 28, SYNCED_RANDOM day island_trader_dialogue_secret 0.2",
+                                    "Dialogue": "[LocalizedText Strings\\StringsFromCSFiles:IslandTraderSecret]",
+                                    "RandomDialogue": null
+                                },
+                                {
+                                    "Id": "RareMale",
+                                    "Condition": "PLAYER_GENDER Current Male, SYNCED_RANDOM day island_trader_dialogue 0.2",
+                                    "Dialogue": null,
+                                    "RandomDialogue": [
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader3]",
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader4_male]"
+                                    ]
+                                },
+                                {
+                                    "Id": "RareFemale",
+                                    "Condition": "PLAYER_GENDER Current Female, SYNCED_RANDOM day island_trader_dialogue 0.2",
+                                    "Dialogue": null,
+                                    "RandomDialogue": [
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader3]",
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader4_female]"
+                                    ]
+                                },
+                                {
+                                    "Id": "Default",
+                                    "Condition": null,
+                                    "Dialogue": null,
+                                    "RandomDialogue": [
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader1]",
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader2]"
+                                    ]
+                                }
+                            ],
+                            "RandomizeDialogueOnOpen": true,
+                            "Id": "AnyOrNone",
+                            "Name": "AnyOrNone"
+                        }
+                    ],
+                    "VisualTheme": null,
+                    "SalableItemTags": [
+                        "category_milk",
+                        "category_egg",
+                        "category_sell_at_pierres_and_marnies",
+                        "category_artisan_goods"
+                    ],
+                    "Items": [
+                        //recipes
+                        {
+                            "Price": 150000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Gold(recipe)",
+                            "ItemId": "{{ModPrefix}}GoldPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack",
+                            "Condition": "ANY \"!{{Perfectionist}}\" \"PLAYER_HAS_MAIL Current Farm_Eternal\""
+                        },
+                        {
+                            "Price": 75000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Void(recipe)",
+                            "ItemId": "{{ModPrefix}}VoidPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 50000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Purify(recipe)",
+                            "ItemId": "{{ModPrefix}}PurifyPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 5000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Revive(recipe)",
+                            "ItemId": "{{ModPrefix}}RevivalPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 5000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Grow(recipe)",
+                            "ItemId": "{{ModPrefix}}GrowPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //dusts
+                        {
+                            "Price": 50000,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Gold",
+                            "ItemId": "{{ModPrefix}}GoldDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack",
+                            "Condition": "ANY \"!{{Perfectionist}}\" \"PLAYER_HAS_MAIL Current Farm_Eternal\""
+                        },
+                        {
+                            "Price": 25000,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Dust:Void",
+                            "ItemId": "{{ModPrefix}}VoidDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 12500,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Dust:Purify",
+                            "ItemId": "{{ModPrefix}}PurifyDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //(huge) fruits
+                        {
+                            "TradeItemId": "(O)91",
+                            "TradeItemAmount": 3,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.6, ANY \"DAY_OF_WEEK Mon\" \"DAY_OF_WEEK Tue\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Banana (trade)",
+                            "ItemId": "{{ModPrefix}}HugeBanana",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 1500,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "ANY \"DAY_OF_WEEK Mon\" \"DAY_OF_WEEK Tue\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Banana (cash)",
+                            "ItemId": "{{ModPrefix}}HugeBanana",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "TradeItemId": "(O)88",
+                            "TradeItemAmount": 3,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.6, ANY \"DAY_OF_WEEK Wed\" \"DAY_OF_WEEK Thu\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Coconut (trade)",
+                            "ItemId": "{{ModPrefix}}HugeCoconut",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 1500,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "ANY \"DAY_OF_WEEK Wed\" \"DAY_OF_WEEK Thu\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Coconut (cash)",
+                            "ItemId": "{{ModPrefix}}HugeCoconut",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "TradeItemId": "(O)834",
+                            "TradeItemAmount": 3,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.6, ANY \"DAY_OF_WEEK Fri\" \"DAY_OF_WEEK Sat\" \"DAY_OF_WEEK Sun\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Mango (trade)",
+                            "ItemId": "{{ModPrefix}}HugeMango",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 1500,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "ANY \"DAY_OF_WEEK Fri\" \"DAY_OF_WEEK Sat\" \"DAY_OF_WEEK Sun\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Mango (cash)",
+                            "ItemId": "{{ModPrefix}}HugeMango",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //dusts part 2
+                        {
+                            "Price": 2500,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Revival",
+                            "ItemId": "{{ModPrefix}}RevivalDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 2500,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Dust:Grow",
+                            "ItemId": "{{ModPrefix}}GrowDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //seeds
+                        {
+                            "TradeItemId": "(O)417",
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": true,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "DAY_OF_WEEK Friday",
+                            "Id": "StardropSeeds",
+                            "ItemId": "{{ModPrefix}}StarDropSeeds",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //other
+                        {
+                            "Price": 40,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.3",
+                            "Id": "Hay",
+                            "ItemId": "178",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 40,
+                            "AvailableStockLimit": "Global",
+                            "AvailableStock": 5,
+                            "AvoidRepeat": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.4",
+                            "Id": "Egg",
+                            "RandomItemId": [
+                                "(O)176",
+                                "(O)180"
+                            ],
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "TradeItemId": "(BC)165",
+                            "TradeItemAmount": 1,
+                            "AvailableStockLimit": "Global",
+                            "AvailableStock": 3,
+                            "AvoidRepeat": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.1",
+                            "Id": "Auto-petter (trade)",
+                            "ItemId": "(BC)272",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        }
+                    ],
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "ShopDifficulty": "easy"
+            }
+        },
+        {
+            "LogName": "CustomShop - easy - iridium egg",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "{{ModPrefix}}IslandAnimalShop",
+                "Items"
+            ],
+            "Entries": {
+                "IridiumEgg40Percent": {
+                    "TradeItemId": "(O)928",
+                    "TradeItemAmount": 2,
+                    "Price": -1,
+                    "AvailableStockLimit": "Global",
+                    "AvoidRepeat": true,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "DAY_OF_MONTH 28, RANDOM 0.4",
+                    "Id": "IridiumEgg 40%",
+                    "ItemId": "{{ModPrefix}}IridiumEgg",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack"
+                },
+                "IridiumEgg100k": {
+                    "Price": 100000,
+                    "AvailableStockLimit": "Global",
+                    "AvoidRepeat": false,
+                    "IgnoreShopPriceModifiers": true,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "DAY_OF_MONTH 28, RANDOM 0.6",
+                    "Id": "IridiumEgg 60%",
+                    "ItemId": "{{ModPrefix}}IridiumEgg",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack"
+                }
+            },
+            "When":{
+                "ShopDifficulty": "easy",
+                "mistyspring.GiEXredux.code/IridiumChicken": true
+            }
+        },
+        {
+            "LogName": "CustomShop - hard",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "{{ModPrefix}}IslandAnimalShop": {
+                    "Currency": 0,
+                    "StackSizeVisibility": null,
+                    "OpenSound": null,
+                    "PurchaseSound": null,
+                    "PurchaseRepeatSound": null,
+                    "PriceModifiers": null,
+                    "PriceModifierMode": "Stack",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "",
+                            "Dialogues": [
+                                {
+                                    "Id": "RareHardMode",
+                                    "Condition": "PLAYER_STAT Current hardModeMonstersKilled 51, !DAY_OF_MONTH 28, SYNCED_RANDOM day island_trader_dialogue_secret 0.2",
+                                    "Dialogue": "[LocalizedText Strings\\StringsFromCSFiles:IslandTraderSecret]",
+                                    "RandomDialogue": null
+                                },
+                                {
+                                    "Id": "RareMale",
+                                    "Condition": "PLAYER_GENDER Current Male, SYNCED_RANDOM day island_trader_dialogue 0.2",
+                                    "Dialogue": null,
+                                    "RandomDialogue": [
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader3]",
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader4_male]"
+                                    ]
+                                },
+                                {
+                                    "Id": "RareFemale",
+                                    "Condition": "PLAYER_GENDER Current Female, SYNCED_RANDOM day island_trader_dialogue 0.2",
+                                    "Dialogue": null,
+                                    "RandomDialogue": [
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader3]",
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader4_female]"
+                                    ]
+                                },
+                                {
+                                    "Id": "Default",
+                                    "Condition": null,
+                                    "Dialogue": null,
+                                    "RandomDialogue": [
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader1]",
+                                        "[LocalizedText Strings\\StringsFromCSFiles:IslandTrader2]"
+                                    ]
+                                }
+                            ],
+                            "RandomizeDialogueOnOpen": true,
+                            "Id": "AnyOrNone",
+                            "Name": "AnyOrNone"
+                        }
+                    ],
+                    "VisualTheme": null,
+                    "SalableItemTags": [
+                        "category_milk",
+                        "category_egg",
+                        "category_sell_at_pierres_and_marnies",
+                        "category_artisan_goods"
+                    ],
+                    "Items": [
+                        //recipes
+                        {
+                            "Price": 500000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Gold(recipe)",
+                            "ItemId": "{{ModPrefix}}GoldPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack",
+                            "Condition": "ANY \"!{{Perfectionist}}\" \"PLAYER_HAS_MAIL Current Farm_Eternal\""
+                        },
+                        {
+                            "Price": 150000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Void(recipe)",
+                            "ItemId": "{{ModPrefix}}VoidPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 100000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Purify(recipe)",
+                            "ItemId": "{{ModPrefix}}PurifyPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 15000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Revive(recipe)",
+                            "ItemId": "{{ModPrefix}}RevivalPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 15000,
+                            "AvailableStockLimit": "Player",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Grow(recipe)",
+                            "ItemId": "{{ModPrefix}}GrowPlaceholder",
+                            "IsRecipe": true,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //dusts
+                        {
+                            "Price": 200000,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Gold",
+                            "ItemId": "{{ModPrefix}}GoldDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack",
+                            "Condition": "ANY \"!{{Perfectionist}}\" \"PLAYER_HAS_MAIL Current Farm_Eternal\""
+                        },
+                        {
+                            "Price": 100000,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Dust:Void",
+                            "ItemId": "{{ModPrefix}}VoidDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 50000,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Dust:Purify",
+                            "ItemId": "{{ModPrefix}}PurifyDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //(huge) fruits
+                        {
+                            "TradeItemId": "(O)91",
+                            "TradeItemAmount": 3,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.6, ANY \"DAY_OF_WEEK Mon\" \"DAY_OF_WEEK Tue\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Banana (trade)",
+                            "ItemId": "{{ModPrefix}}HugeBanana",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 3000,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "ANY \"DAY_OF_WEEK Mon\" \"DAY_OF_WEEK Tue\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Banana (cash)",
+                            "ItemId": "{{ModPrefix}}HugeBanana",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "TradeItemId": "(O)88",
+                            "TradeItemAmount": 3,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.6, ANY \"DAY_OF_WEEK Wed\" \"DAY_OF_WEEK Thu\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Coconut (trade)",
+                            "ItemId": "{{ModPrefix}}HugeCoconut",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 3000,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "ANY \"DAY_OF_WEEK Wed\" \"DAY_OF_WEEK Thu\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Coconut (cash)",
+                            "ItemId": "{{ModPrefix}}HugeCoconut",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "TradeItemId": "(O)834",
+                            "TradeItemAmount": 3,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.6, ANY \"DAY_OF_WEEK Fri\" \"DAY_OF_WEEK Sat\" \"DAY_OF_WEEK Sun\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Mango (trade)",
+                            "ItemId": "{{ModPrefix}}HugeMango",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 3000,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "ANY \"DAY_OF_WEEK Fri\" \"DAY_OF_WEEK Sat\" \"DAY_OF_WEEK Sun\"",
+                            "AvoidRepeat": true,
+                            "Id": "Fruit:Mango (cash)",
+                            "ItemId": "{{ModPrefix}}HugeMango",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //dusts part 2
+                        {
+                            "Price": 7500,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Id": "Dust:Revival",
+                            "ItemId": "{{ModPrefix}}RevivalDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 7500,
+                            "AvailableStockLimit": "Global",
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Dust:Grow",
+                            "ItemId": "{{ModPrefix}}GrowDust",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //seeds
+                        {
+                            "TradeItemId": "(O)417",
+                            "TradeItemAmount": 2,
+                            "Price": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": true,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "DAY_OF_WEEK Friday",
+                            "Id": "StardropSeeds",
+                            "ItemId": "{{ModPrefix}}StarDropSeeds",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        //other
+                        {
+                            "Price": 40,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.3",
+                            "Id": "Hay",
+                            "ItemId": "178",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "Price": 40,
+                            "AvailableStockLimit": "Global",
+                            "AvailableStock": 5,
+                            "AvoidRepeat": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.4",
+                            "Id": "Egg",
+                            "RandomItemId": [
+                                "(O)176",
+                                "(O)180"
+                            ],
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        },
+                        {
+                            "TradeItemId": "(BC)165",
+                            "TradeItemAmount": 3,
+                            "AvailableStockLimit": "Global",
+                            "AvailableStock": 1,
+                            "AvoidRepeat": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "RANDOM 0.1",
+                            "Id": "Auto-petter (trade)",
+                            "ItemId": "(BC)272",
+                            "IsRecipe": false,
+                            "StackModifierMode": "Stack",
+                            "QualityModifierMode": "Stack"
+                        }
+                    ],
+                    "CustomFields": {}
+                }
+            },
+            "When": {
+                "ShopDifficulty": "hard"
+            }
+        },
+        {
+            "LogName": "CustomShop - hard - iridium egg",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "{{ModPrefix}}IslandAnimalShop",
+                "Items"
+            ],
+            "Entries": {
+                "IridiumEgg40Percent": {
+                    "TradeItemId": "(O)928",
+                    "TradeItemAmount": 10,
+                    "Price": -1,
+                    "AvailableStockLimit": "Global",
+                    "AvoidRepeat": true,
+                    "IgnoreShopPriceModifiers": true,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "DAY_OF_MONTH 28, RANDOM 0.4",
+                    "Id": "IridiumEgg 40%",
+                    "ItemId": "{{ModPrefix}}IridiumEgg",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack"
+                },
+                "IridiumEgg300k": {
+                    "Price": 300000,
+                    "AvailableStockLimit": "Global",
+                    "AvoidRepeat": true,
+                    "IgnoreShopPriceModifiers": true,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "DAY_OF_MONTH 28, RANDOM 0.6",
+                    "Id": "IridiumEgg 60%",
+                    "ItemId": "{{ModPrefix}}IridiumEgg",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack"
+                }
+            },
+            "When":{
+                "ShopDifficulty": "hard",
+                "mistyspring.GiEXredux.code/IridiumChicken": true
+            }
+        }
+    ]
+}

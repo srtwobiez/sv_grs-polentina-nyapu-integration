@@ -1,0 +1,97 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Beach_Mariner_PlayerMarried"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Beach_Mariner_PlayerHasItem"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Beach_Mariner_PlayerNotUpgradedHouse"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Beach_Mariner_PlayerBuyItem_Question"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Beach_Mariner_PlayerNoRelationship"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+			]
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Mods/FlyingTNT.Swim/i18n",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SwimMod_Mariner_Questions"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SwimMod_Mariner_Questions_Old"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SwimMod_Mariner_Questions_No"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SwimMod_Mariner_Questions_No_Old"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SwimMod_Mariner_Answer_N"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SwimMod_Mariner_Answer_S"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SwimMod_Mariner_Wrong_Today"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SwimMod_Mariner_Completed"],
+					"Value": "Portraits/OldMariner_{{Mariner}} @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+			],
+			"When": {"HasMod": "FlyingTNT.SwimDiveMaps"},
+		},				
+	],
+}

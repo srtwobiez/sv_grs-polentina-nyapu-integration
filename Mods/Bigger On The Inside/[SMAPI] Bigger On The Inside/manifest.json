@@ -1,0 +1,21 @@
+{
+  "Name": "Bigger On The Inside (SMAPI)",
+  "Author": "JennaJuffuffles",
+  "Version": "1.0.0",
+  "Description": "Unpatches SVE Premium Barn exterior door on right-side so the building matches vanilla Deluxe Barn layout.",
+  "UniqueID": "JennaJuffuffles.BiggerOnTheInside.SMAPI",
+  "EntryDll": "BiggerOnTheInsideSMAPI.dll",
+  "MinimumApiVersion": "4.0.0",
+  "LoadAfter": ["FlashShifter.SVECode"],
+  "UpdateKeys": ["Nexus:43940"],
+  "Dependencies": [
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "FlashShifter.SVECode",
+      "IsRequired": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+    "Texture": "LooseSprites/Cursors2",
+    "Sprites": {
+        "GiftIcon": {
+            "SourceRect": "167, 175, 12, 11"
+        },
+        "TalkedIcon": {
+            "SourceRect": "181, 175, 12, 11"
+        }
+    }
+}

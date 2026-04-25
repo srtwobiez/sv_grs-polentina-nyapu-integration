@@ -1,0 +1,40 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Decorations Farm Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Maps/{{Season}}_outdoorsTileSheet",
+      "FromFile": "assets/flowers/remote_{{RemoteFlowerColor}}.png",
+      "ToArea": {
+        "X": 159,
+        "Y": 512,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "FlowersEnabled": "true",
+        "HasFile:assets/flowers/remote_{{RemoteFlowerColor}}.png": true
+      }
+    },
+    {
+      "LogName": "JJ Decorations Farm Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Maps/{{Season}}_outdoorsTileSheet",
+      "FromFile": "assets/moss/remote_moss.png",
+      "ToArea": {
+        "X": 159,
+        "Y": 512,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "MossEnabled": "true",
+        "HasFile:assets/moss/remote_moss.png": true
+      }
+    }
+  ]
+}

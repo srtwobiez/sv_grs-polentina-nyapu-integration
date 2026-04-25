@@ -1,0 +1,41 @@
+{
+  "Changes": [
+    // ===== VANILLA SLIME LOADS (no Monster Variety) =====
+    {
+      "LogName": "JJ Load Green Slime",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Green Slime",
+      "FromFile": "assets/{{Mode}}/GreenSlime/texture_0.png",
+      "When": {
+        "HasFile:assets/{{Mode}}/GreenSlime/texture_0.png": true
+      }
+    },
+    {
+      "LogName": "JJ Load Green Slime Dangerous",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Green Slime_dangerous",
+      "FromFile": "assets/{{Mode}}/GreenSlime_dangerous/texture_0.png",
+      "When": {
+        "HasFile:assets/{{Mode}}/GreenSlime_dangerous/texture_0.png": true
+      }
+    },
+    {
+      "LogName": "JJ Load Big Slime",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Big Slime",
+      "FromFile": "assets/{{Mode}}/BigSlime/texture_0.png",
+      "When": {
+        "HasFile:assets/{{Mode}}/BigSlime/texture_0.png": true
+      }
+    },
+    {
+      "LogName": "JJ Load Tiger Slime",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Tiger Slime",
+      "FromFile": "assets/{{Mode}}/TigerSlime/texture_0.png",
+      "When": {
+        "HasFile:assets/{{Mode}}/TigerSlime/texture_0.png": true
+      }
+    }
+  ]
+}

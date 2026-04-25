@@ -1,0 +1,159 @@
+{
+"Name": "Dyeable Neat Bow Shirt",
+  "FrontShirt": {
+    "ColorMaskLayers": [
+	  {
+		"Name": "Shirt Color",
+		"Values": [
+		  [ 234, 234, 234 ],
+		  [ 181, 175, 159 ],
+		  [ 114, 110, 100 ],
+		  [ 56, 56, 56 ]
+		 ]
+	  },
+	  {
+		"Name": "Bow Color",
+		"Values": [
+		  [ 248, 248, 248 ],
+		  [ 180, 175, 159 ],
+		  [ 113, 110, 100 ],
+		  [ 55, 55, 55 ]
+		 ]
+	  }
+	],
+    "SleeveColors": [
+      [ 56, 56, 56 ],
+      [ 114, 110, 100 ],
+      [ 181, 175, 159 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+    "ColorMaskLayers": [
+	  {
+		"Name": "Shirt Color",
+		"Values": [
+		  [ 234, 234, 234 ],
+		  [ 181, 175, 159 ],
+		  [ 114, 110, 100 ],
+		  [ 56, 56, 56 ]
+		 ]
+	  },
+	  {
+		"Name": "Bow Color",
+		"Values": [
+		  [ 248, 248, 248 ],
+		  [ 180, 175, 159 ],
+		  [ 113, 110, 100 ],
+		  [ 55, 55, 55 ]
+		]
+	  }
+	],
+    "SleeveColors": [
+      [ 56, 56, 56 ],
+      [ 114, 110, 100 ],
+      [ 181, 175, 159 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+    "ColorMaskLayers": [
+	  {
+		"Name": "Shirt Color",
+		"Values": [
+		  [ 234, 234, 234 ],
+		  [ 181, 175, 159 ],
+		  [ 114, 110, 100 ],
+		  [ 56, 56, 56 ]
+		 ]
+	  },
+	  {
+		"Name": "Bow Color",
+		"Values": [
+		  [ 248, 248, 248 ],
+		  [ 180, 175, 159 ],
+		  [ 113, 110, 100 ],
+		  [ 55, 55, 55 ]
+		 ]
+	  }
+	],
+    "SleeveColors": [
+      [ 56, 56, 56 ],
+      [ 114, 110, 100 ],
+      [ 181, 175, 159 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+    "ColorMaskLayers": [
+	  {
+		"Name": "Shirt Color",
+		"Values": [
+		  [ 234, 234, 234 ],
+		  [ 181, 175, 159 ],
+		  [ 114, 110, 100 ],
+		  [ 56, 56, 56 ]
+		 ]
+	  },
+	  {
+		"Name": "Bow Color",
+		"Values": [
+		  [ 248, 248, 248 ],
+		  [ 180, 175, 159 ],
+		  [ 113, 110, 100 ],
+		  [ 55, 55, 55 ]
+		 ]
+	  }
+	],
+    "SleeveColors": [
+      [ 56, 56, 56 ],
+      [ 114, 110, 100 ],
+      [ 181, 175, 159 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "Name": "Headscarf",
+
+  //FRONT
+  "FrontHat": {
+    "ColorMasks": [
+      [ 255, 255, 255 ],
+      [ 222, 222, 222 ],
+      [ 199, 199, 199 ],
+      [ 168, 168, 168 ],
+      [ 133, 133, 133 ],
+      [ 189, 189, 189 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    }
+  },
+
+  //RIGHT
+  "RightHat": {
+    "ColorMasks": [
+      [ 255, 255, 255 ],
+      [ 222, 222, 222 ],
+      [ 199, 199, 199 ],
+      [ 168, 168, 168 ],
+      [ 133, 133, 133 ],
+      [ 189, 189, 189 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 20
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    }
+  }, 
+
+  //LEFT
+    "LeftHat": {
+      "ColorMasks": [
+        [ 255, 255, 255 ],
+        [ 222, 222, 222 ],
+        [ 199, 199, 199 ],
+        [ 168, 168, 168 ],
+        [ 133, 133, 133 ],
+        [ 189, 189, 189 ]
+      ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 40
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    }
+  },
+
+  //BACK
+  "BackHat": {
+    "ColorMasks": [
+      [ 255, 255, 255 ],
+      [ 222, 222, 222 ],
+      [ 199, 199, 199 ],
+      [ 168, 168, 168 ],
+      [ 133, 133, 133 ],
+      [ 189, 189, 189 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 60
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    }
+  }
+}

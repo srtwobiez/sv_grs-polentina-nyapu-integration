@@ -1,0 +1,575 @@
+{
+  "Changes": [
+    // ========== map edits ==========
+  {
+  "LogName": "WBPT Lewis Gardenbed And Saloon Roof Fix",
+  "Action": "EditMap",
+  "Target": "Maps/Town, Maps/Town-EggFestival, Maps/Town-EggFestival2, Maps/Town-Christmas, Maps/Town-Christmas2, Maps/Town-Fair, Maps/Town-Fair2, Maps/Town-Halloween, Maps/Town-Halloween2",
+  "MapTiles": 
+  	[
+            {
+               "Position": { "X": 57, "Y": 86 },
+               "Layer": "Back",
+  	   "SetTilesheet": "Landscape",
+               "SetIndex": "375",
+            },
+  	{
+               "Position": { "X": 57, "Y": 85 },
+               "Layer": "Back",
+  	   "SetTilesheet": "Landscape",
+               "SetIndex": "376",
+            },
+            {
+               "Position": { "X": 60, "Y": 86 },
+               "Layer": "Back",
+  	   "SetTilesheet": "Landscape",
+               "SetIndex": "376",
+            },
+            {
+               "Position": { "X": 61, "Y": 86 },
+               "Layer": "Back",
+  	   "SetTilesheet": "Landscape",
+               "SetIndex": "376",
+            },
+            {
+               "Position": { "X": 61, "Y": 86 },
+               "Layer": "Buildings",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "763",
+            },
+            {
+               "Position": { "X": 62, "Y": 86 },
+               "Layer": "Back",
+  	   "SetTilesheet": "Landscape",
+               "SetIndex": "376",
+            },
+            {
+               "Position": { "X": 62, "Y": 86 },
+               "Layer": "Buildings",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "764",
+            },
+            {
+               "Position": { "X": 62, "Y": 86 },
+               "Layer": "Front",
+  	   "SetTilesheet": "Landscape",
+               "SetIndex": "257",
+            },
+            {
+               "Position": { "X": 63, "Y": 86 },
+               "Layer": "Back",
+  	   "SetTilesheet": "Landscape",
+               "SetIndex": "376",
+            },
+            {
+               "Position": { "X": 63, "Y": 86 },
+               "Layer": "Buildings",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "765",
+            },
+            {
+               "Position": { "X": 63, "Y": 86 },
+               "Layer": "Front",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "885",
+            },
+            {
+               "Position": { "X": 64, "Y": 86 },
+               "Layer": "Back",
+  	   "SetTilesheet": "Landscape",
+               "SetIndex": "403",
+            },
+            {
+               "Position": { "X": 64, "Y": 85 },
+               "Layer": "Back",
+  	   "SetTilesheet": "Landscape",
+               "SetIndex": "328",
+            },
+            {
+               "Position": { "X": 40, "Y": 64 },
+               "Layer": "Front",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "399",
+            },
+  	],
+  },
+  {
+  "LogName": "WBPT Fence And Shadow Fix Main",
+  "Action": "EditMap",
+  "Target": "Maps/Town, Maps/Town-EggFestival, Maps/Town-Christmas, Maps/Town-Fair, Maps/Town-Halloween",
+  "MapTiles": 
+  	[
+            {
+               "Position": { "X": 108, "Y": 84 },
+               "Layer": "Buildings",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "834",
+            },
+            {
+               "Position": { "X": 7, "Y": 88 },
+               "Layer": "Buildings",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "836",
+            },
+            {
+               "Position": { "X": 67, "Y": 77 },
+               "Layer": "Buildings",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "898",
+            },
+            {
+               "Position": { "X": 67, "Y": 77 },
+               "Layer": "Front",
+  	   "Remove": true,
+            },
+            {
+               "Position": { "X": 67, "Y": 86 },
+               "Layer": "Front",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "804",
+            },
+            {
+               "Position": { "X": 67, "Y": 87 },
+               "Layer": "Front",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "866",
+            },
+            {
+               "Position": { "X": 67, "Y": 88 },
+               "Layer": "Buildings",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "866",
+            },
+            {
+               "Position": { "X": 61, "Y": 19 },
+               "Layer": "Buildings",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "836",
+            },
+            {
+               "Position": { "X": 61, "Y": 18 },
+               "Layer": "Front",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "804",
+            },
+            {
+               "Position": { "X": 105, "Y": 89 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+            {
+               "Position": { "X": 106, "Y": 89 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+  	],
+  },
+  {
+  "LogName": "WBPT Fence And Shadow Fix Back3",
+  "Action": "EditMap",
+  "Target": "Maps/Town, Maps/Town-EggFestival, Maps/Town-Christmas, Maps/Town-Fair, Maps/Town-Halloween",
+  "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false },
+  "MapTiles": 
+  	[
+            {
+               "Position": { "X": 54, "Y": 20 },
+               "Layer": "Back3",
+               "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+            {
+               "Position": { "X": 105, "Y": 90 },
+               "Layer": "Back3",
+               "Remove": true,
+            },
+            {
+               "Position": { "X": 106, "Y": 90 },
+               "Layer": "Back3",
+               "Remove": true,
+            },
+            {
+               "Position": { "X": 90, "Y": 52 },
+               "Layer": "Back3",
+               "Remove": true,
+            },
+            {
+               "Position": { "X": 101, "Y": 52 },
+               "Layer": "Back3",
+               "Remove": true,
+            }
+  	],
+  },
+  {
+  "LogName": "WBPT Fence And Joja Fix Main",
+  "Action": "EditMap",
+  "Target": "Maps/Town, Maps/Town-EggFestival, Maps/Town-Christmas, Maps/Town-Fair, Maps/Town-Halloween",
+  "MapTiles": 
+  	[
+            {
+               "Position": { "X": 39, "Y": 98 },
+               "Layer": "Front",
+  	   "Remove": true,
+            },
+            {
+               "Position": { "X": 33, "Y": 99 },
+               "Layer": "Buildings",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "836",
+            },
+  	],
+  },
+  {
+  "LogName": "WBPT Fence And Joja Fix Back3",
+  "Action": "EditMap",
+  "Target": "Maps/Town, Maps/Town-EggFestival, Maps/Town-Christmas, Maps/Town-Fair, Maps/Town-Halloween",
+  "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false },
+  "MapTiles": 
+  	[
+            {
+               "Position": { "X": 84, "Y": 49 },
+               "Layer": "Back3",
+               "Remove": true,
+            },
+            {
+               "Position": { "X": 85, "Y": 49 },
+               "Layer": "Back3",
+               "Remove": true,
+            },
+            {
+               "Position": { "X": 86, "Y": 49 },
+               "Layer": "Back3",
+               "Remove": true,
+            },
+            {
+               "Position": { "X": 87, "Y": 49 },
+               "Layer": "Back3",
+               "Remove": true,
+            }
+  	],
+  },
+  {
+  "LogName": "WBPT Beach Bridge Fix",
+  "Action": "EditMap",
+  "Target": "Maps/Town, Maps/Town-EggFestival, Maps/Town-EggFestival2, Maps/Town-Christmas, Maps/Town-Christmas2, Maps/Town-Fair, Maps/Town-Fair2, Maps/Town-Halloween, Maps/Town-Halloween2",
+  "MapTiles": 
+  	[
+            {
+               "Position": { "X": 52, "Y": 101 },
+               "Layer": "Front",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "938",
+            },
+            {
+               "Position": { "X": 56, "Y": 101 },
+               "Layer": "Front",
+  	   "SetTilesheet": "Town",
+               "SetIndex": "938",
+            },
+  	],
+  },
+  {
+  "LogName": "WBPT Mountain Shadow Fix",
+  "Action": "EditMap",
+  "Target": "Maps/Mountain",
+  "MapTiles": 
+  	[
+            {
+               "Position": { "X": 7, "Y": 20 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+            {
+               "Position": { "X": 10, "Y": 25 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+            {
+               "Position": { "X": 11, "Y": 25 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+            {
+               "Position": { "X": 12, "Y": 25 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+            {
+               "Position": { "X": 13, "Y": 25 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+            {
+               "Position": { "X": 14, "Y": 25 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+            {
+               "Position": { "X": 15, "Y": 25 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+            {
+               "Position": { "X": 17, "Y": 25 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+            {
+               "Position": { "X": 18, "Y": 25 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+            {
+               "Position": { "X": 19, "Y": 25 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+  	],
+  },
+  {
+  "LogName": "WBPT Forest Shadow Fix Back2",
+  "Action": "EditMap",
+  "Target": "Maps/Forest",
+  "MapTiles": 
+  	[
+            {
+               "Position": { "X": 6, "Y": 26 },
+               "Layer": "Back2",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "95",
+            },
+  	],
+  },
+  {
+  "LogName": "WBPT Forest Shadow Fix Back3",
+  "Action": "EditMap",
+  "Target": "Maps/Forest",
+  "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false },
+  "MapTiles": 
+  	[
+            {
+               "Position": { "X": 102, "Y": 33 },
+               "Layer": "Back3",
+  	   "Remove": true,
+            },
+            {
+               "Position": { "X": 105, "Y": 33 },
+               "Layer": "Back3",
+  	   "Remove": true,
+            },
+            {
+               "Position": { "X": 89, "Y": 16 },
+               "Layer": "Back3",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "9",
+            },
+            {
+               "Position": { "X": 90, "Y": 16 },
+               "Layer": "Back3",
+  	   "SetTilesheet": "v16_Shadows",
+               "SetIndex": "9",
+            },
+  	],
+  },
+  {
+  "LogName": "WBPT Railroad Bin Shadow Fix",
+  "Action": "EditMap",
+  "Target": "Maps/Railroad",
+  "MapTiles": 
+  	[
+            {
+               "Position": { "X": 27, "Y": 35 },
+               "Layer": "Back",
+  	   "SetTilesheet": "untitled tile sheet",
+               "SetIndex": "537",
+            },
+            {
+               "Position": { "X": 28, "Y": 35 },
+               "Layer": "Back",
+  	   "SetTilesheet": "untitled tile sheet",
+               "SetIndex": "537",
+            },
+            {
+               "Position": { "X": 27, "Y": 36 },
+               "Layer": "Back",
+  	   "SetTilesheet": "untitled tile sheet",
+               "SetIndex": "537",
+            },
+  	],
+  },
+  {
+  "LogName": "WBPT Bath House Map Patch",
+  "Action": "EditMap",
+  	"PatchMode": "ReplaceByLayer",
+  "Target": "Maps/Railroad",
+  "FromFile": "assets/base/Railroad.tbin",
+  	"ToArea": { "X": 13, "Y": 46, "Width": 9, "Height": 12 },
+  },
+  {
+  "LogName": "WBPT Hat Mouse House Map Patch",
+  "Action": "EditMap",
+  	"PatchMode": "ReplaceByLayer",
+  "Target": "Maps/Forest",
+  "FromFile": "assets/base/Forest.tbin",
+  	"ToArea": { "X": 30, "Y": 93, "Width": 7, "Height": 4 }
+  },
+    // ========== cc progress changes ==========
+  {
+  "LogName": "WBPT Community Center Boiler Room",
+  "Action": "EditImage",
+  "Target": "Maps/{{season}}_town",
+  "FromFile": "assets/{{recolor}}/2_{{season}}_town.png",
+  	"FromArea": { "X": 128, "Y": 640, "Width": 64, "Height": 112 },
+  	"ToArea": { "X": 128, "Y": 640, "Width": 64, "Height": 112 },
+  	"When": { "HasFlag: anyPlayer |contains=ccBoilerRoom": true },
+  },
+  {
+  "LogName": "WBPT Community Center Pantry",
+  "Action": "EditImage",
+  "Target": "Maps/{{season}}_town",
+  "FromFile": "assets/{{recolor}}/2_{{season}}_town.png",
+  	"FromArea": { "X": 0, "Y": 640, "Width": 64, "Height": 112 },
+  	"ToArea": { "X": 0, "Y": 640, "Width": 64, "Height": 112 },
+  	"When": { "HasFlag: anyPlayer |contains=ccPantry": true },
+  },
+  {
+  "LogName": "WBPT Community Center Crafts Room",
+  "Action": "EditImage",
+  "Target": "Maps/{{season}}_town",
+  "FromFile": "assets/{{recolor}}/2_{{season}}_town.png",
+  	"FromArea": { "X": 0, "Y": 752, "Width": 64, "Height": 48 },
+  	"ToArea": { "X": 0, "Y": 752, "Width": 64, "Height": 48 },
+  	"When": { "HasFlag: anyPlayer |contains=ccCraftsRoom": true },
+  },
+  {
+  "LogName": "WBPT Community Center Vault",
+  "Action": "EditImage",
+  "Target": "Maps/{{season}}_town",
+  "FromFile": "assets/{{recolor}}/2_{{season}}_town.png",
+  	"FromArea": { "X": 128, "Y": 752, "Width": 64, "Height": 48 },
+  	"ToArea": { "X": 128, "Y": 752, "Width": 64, "Height": 48 },
+  	"When": { "HasFlag: anyPlayer |contains=ccVault": true },
+  },
+  {
+  "LogName": "WBPT Community Center Fish Tank",
+  "Action": "EditImage",
+  "Target": "Maps/{{season}}_town",
+  "FromFile": "assets/{{recolor}}/2_{{season}}_town.png",
+  	"FromArea": { "X": 64, "Y": 640, "Width": 64, "Height": 112 },
+  	"ToArea": { "X": 64, "Y": 640, "Width": 64, "Height": 112 },
+  	"When": { "HasFlag: anyPlayer |contains=ccFishTank": true },
+  },
+  {
+  "LogName": "WBPT Community Center Bulletin",
+  "Action": "EditImage",
+  "Target": "Maps/{{season}}_town",
+  "FromFile": "assets/{{recolor}}/2_{{season}}_town.png",
+  	"FromArea": { "X": 64, "Y": 752, "Width": 64, "Height": 48 },
+  	"ToArea": { "X": 64, "Y": 752, "Width": 64, "Height": 48 },
+  	"When": { "HasFlag: anyPlayer |contains=ccBulletin": true }
+  },
+    // ========== playground clothesline ==========
+  {
+  "LogName": "WBPT Horse",
+  "Action": "EditImage",
+  "Target": "Maps/{{season}}_town",
+  "FromFile": "assets/{{recolor}}/2_{{season}}_town.png",
+  	"FromArea": { "X": 160, "Y": 528, "Width": 32, "Height": 32 },
+  	"ToArea": { "X": 160, "Y": 528, "Width": 32, "Height": 32},
+"When": { "PlaygroundOption": "clothesline with well" },
+  	},
+  {
+  "LogName": "WBPT Main 1",
+  "Action": "EditImage",
+  "Target": "Maps/{{season}}_town",
+  "FromFile": "assets/{{recolor}}/2_{{season}}_town.png",
+  	"FromArea": { "X": 112, "Y": 560, "Width": 144, "Height": 80 },
+"ToArea": { "X": 112, "Y": 560, "Width": 144, "Height": 80 },
+  	"When": { "PlaygroundOption": "clothesline with well" },
+  	},
+  {
+  	"LogName": "WBPT Main 2",
+  "Action": "EditImage",
+  "Target": "Maps/{{season}}_town",
+  "FromFile": "assets/{{recolor}}/2_{{season}}_town.png",
+  	"FromArea": { "X": 256, "Y": 592, "Width": 16, "Height": 48 },
+  	"ToArea": { "X": 256, "Y": 592, "Width": 16, "Height": 48 },
+  	"When": { "PlaygroundOption": "clothesline with well" }
+  },
+    // ========== voiding joja mailbox garden ==========
+  {
+    "LogName": "WBPT Voiding Joja Shadow",
+    "Action": "EditImage",
+    "Target": "Maps/{{season}}_town",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_town.png",
+    "FromArea": { "X": 16, "Y": 624, "Width": 16, "Height": 16 },
+    "ToArea": { "X": 16, "Y": 624, "Width": 16, "Height": 16 },
+    "When": { "JojaChanged": true }
+  },
+  {
+    "LogName": "WBPT Mailbox Yeet",
+    "Action": "EditImage",
+    "Target": "Maps/{{season}}_town",
+    "FromFile": "assets/{{recolor}}/1_{{season}}_outdoorsTileSheet.png",
+    "FromArea": { "X": 80, "Y": 1232, "Width": 16, "Height": 32 },
+    "ToArea": { "X": 144, "Y": 0, "Width": 16, "Height": 32 },
+    "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false }
+  },
+  {
+    "LogName": "WBPT Garden Flowers In Non-SVE",
+    "Action": "EditImage",
+    "PatchMode": "Overlay",
+    "Target": "Maps/{{season}}_town",
+    "FromFile": "assets/{{recolor}}/2_{{season}}_town.png",
+    "FromArea": { "X": 64, "Y": 128, "Width": 48, "Height": 32 },
+    "ToArea": { "X": 64, "Y": 128, "Width": 48, "Height": 32 },
+    "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false }
+  },
+    // ========== chair tiles ==========
+  {
+    "LogName": "WBPT Tables",
+    "Action": "EditImage",
+    "Target": "TileSheets/ChairTiles",
+    "FromFile": "assets/base/ChairTiles.png",
+    "FromArea": { "X": 0, "Y": 64, "Width": 192, "Height": 32 },
+    "ToArea": { "X": 0, "Y": 64, "Width": 192, "Height": 32 }
+  },
+  {
+    "LogName": "WBPT Tables Winter",
+    "Action": "EditImage",
+    "Target": "TileSheets/ChairTiles",
+    "FromFile": "assets/{{recolor}}/ChairTiles.png",
+    "FromArea": { "X": 0, "Y": 64, "Width": 192, "Height": 32 },
+    "ToArea": { "X": 0, "Y": 64, "Width": 192, "Height": 32 },
+    "When": { "Season": "winter" }
+  },
+  {
+    "LogName": "WBPT Bench Sides",
+    "Action": "EditImage",
+    "Target": "TileSheets/ChairTiles",
+    "FromFile": "assets/base/ChairTiles.png",
+    "FromArea": { "X": 0, "Y": 16, "Width": 128, "Height": 16 },
+    "ToArea": { "X": 0, "Y": 16, "Width": 128, "Height": 16 }
+  },
+  {
+    "LogName": "WBPT Bench Sides Winter",
+    "Action": "EditImage",
+    "Target": "TileSheets/ChairTiles",
+    "FromFile": "assets/{{recolor}}/ChairTiles.png",
+    "FromArea": { "X": 0, "Y": 16, "Width": 128, "Height": 16 },
+    "ToArea": { "X": 0, "Y": 16, "Width": 128, "Height": 16 },
+    "When": { "Season": "winter" }
+  }
+  ]
+}

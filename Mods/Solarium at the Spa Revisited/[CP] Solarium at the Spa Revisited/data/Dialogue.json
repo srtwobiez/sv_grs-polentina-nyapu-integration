@@ -1,0 +1,34 @@
+{
+  // ===== DIALOGUE MODULE =====
+  // Conversation topic SolariumUnlocked (given in Robin's event). Topic dialogue for Evelyn, Caroline, Lewis.
+  "Changes": [
+    // ===== SOLARIUM UNLOCKED TOPIC DIALOGUE =====
+    {
+      "LogName": "JJ Evelyn conversation topic (SolariumUnlocked)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Evelyn",
+      "Entries": { "{{ModId}}_SolariumUnlocked": "{{i18n:Dialogue.SolariumUnlocked.Evelyn}}" },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_EvelynKey"
+      }
+    },
+    {
+      "LogName": "JJ Caroline conversation topic (SolariumUnlocked)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caroline",
+      "Entries": { "{{ModId}}_SolariumUnlocked": "{{i18n:Dialogue.SolariumUnlocked.Caroline}}" },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_RobinSolarium"
+      }
+    },
+    {
+      "LogName": "JJ Lewis conversation topic (SolariumUnlocked)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Lewis",
+      "Entries": { "{{ModId}}_SolariumUnlocked": "{{i18n:Dialogue.SolariumUnlocked.Lewis}}" },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_RobinSolarium"
+      }
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+    // CONFIG OPTIONS
+        "config.Seed Packet Variant.name": "Wariant Pakietu Nasionek",
+        "config.Seed Packet Variant.description": "Ustaw wariant pakietu dla wszystkich Sprite'ów nasion.\nOdniesienia znajdziesz w grafikach na stronie modyfikacji.",
+        "config.Seed Packet Variant.values.(1) Sensible Sleeves": "(1) Sensible Sleeves",
+        "config.Seed Packet Variant.values.(2) Seasonal Sleeves": "(2) Seasonal Sleeves",
+        "config.Seed Packet Variant.values.(3) Sensible Satchels": "(3) Sensible Satchels",
+        "config.Seed Packet Variant.values.(4) Seasonal Satchels": "(4) Seasonal Satchels",
+        "config.Seed Packet Variant.values.(5) Sensible Stashes": "(5) Sensible Stashes",
+        "config.Seed Packet Variant.values.(6) Seasonal Stashes": "(6) Seasonal Stashes",
+
+        "config.Sapling Sack Color.name": "Kolor worka sadzonkowego",
+        "config.Sapling Sack Color.description": "Ustaw kolor worka dla wszystkich Sprite'ów sadzonek.\nOdniesienia znajdziesz w grafikach na stronie modyfikacji.",
+        "config.Sapling Sack Color.values.(1) Cloud": "(1) Cloud",
+        "config.Sapling Sack Color.values.(2) Cream": "(2) Cream",
+        "config.Sapling Sack Color.values.(3) Chest": "(3) Chest",
+        "config.Sapling Sack Color.values.(4) Crypt": "(4) Crypt",
+
+    // GLOBAL TOGGLES
+        "config.= Disable Entire Mod.name": "= Wyłącz cały mod",
+        "config.= Disable Entire Mod.description": "Aktywuj/Dezaktywuj wyłącz cały mod.",
+        "config.= Disable Entire Mod.values.true": "Aktywuj",
+        "config.= Disable Entire Mod.values.false": "Dezaktywuj",
+
+        "config.Seed Sprites.name": "Aktywacja Sprite'ów Nasion",
+        "config.Seed Sprites.description": "Sprawdź status ładowania Sprite'ów Nasion.",
+        "config.Seed Sprites.values.Enabled": "Aktywuj",
+        "config.Seed Sprites.values.Disabled": "Dezaktywuj",
+    
+        "config.Sapling Sprites.name": "Aktywacja Sprite'ów Sadzonek",
+        "config.Sapling Sprites.description": "Sprawdź status ładowania Sprite'ów Sadzonek.",
+        "config.Sapling Sprites.values.Enabled": "Aktywuj",
+        "config.Sapling Sprites.values.Disabled": "Dezaktywuj",
+
+        "config.Bush Sprites.name": "Aktywacja Sprite'ów Krzaków",
+        "config.Bush Sprites.description": "Sprawdź status ładowania Sprite'ów Krzaków.",
+        "config.Bush Sprites.values.Enabled": "Aktywuj",
+        "config.Bush Sprites.values.Disabled": "Dezaktywuj",
+
+        "config.Trellis Sprites.name": "Aktywacja Sprite'ów Treliaża",
+        "config.Trellis Sprites.description": "Sprawdź status ładowania Sprite'ów Treliaża.",
+        "config.Trellis Sprites.values.Enabled": "Aktywuj",
+        "config.Trellis Sprites.values.Disabled": "Dezaktywuj",
+
+        "config.Tea Sapling Sprites.name": "Aktywacja Sprite'ów Herbaty",
+        "config.Tea Sapling Sprites.description": "Sprawdź status ładowania Sprite'ów Herbaty.",
+        "config.Tea Sapling Sprites.values.Enabled": "Aktywuj",
+        "config.Tea Sapling Sprites.values.Disabled": "Dezaktywuj",
+
+        "config.Mixed Seed Sprites.name": "Aktywacja Sprite'ów nasion mieszanych",
+        "config.Mixed Seed Sprites.description": "Sprawdź status ładowania Sprite'ów nasion mieszanych.",
+        "config.Mixed Seed Sprites.values.Enabled": "Aktywuj",
+        "config.Mixed Seed Sprites.values.Disabled": "Dezaktywuj",
+
+    // MOD SECTION TOGGLES
+        "config.(A) Vanilla.name": "(A) Vanilla",
+        "config.(A) Vanilla.description": "Aktywacja Sprite'ów pochodzących z gry podstawowej.",
+        "config.(A) Vanilla.values.true": "Aktywuj",
+        "config.(A) Vanilla.values.false": "Dezaktywuj",
+
+        "config.(B) Stardew Valley Expanded.name": "(B) Stardew Valley Expanded",
+        "config.(B) Stardew Valley Expanded.description": "Aktywacja Sprite'ów pochodzących z Stardew Valley Expanded.",
+        "config.(B) Stardew Valley Expanded.values.true": "Aktywuj",
+        "config.(B) Stardew Valley Expanded.values.false": "Dezaktywuj",
+
+        "config.(C) East Scarp.name": "(C) East Scarp",
+        "config.(C) East Scarp.description": "Aktywacja Sprite'ów pochodzących z East Scarp.",
+        "config.(C) East Scarp.values.true": "Aktywuj",
+        "config.(C) East Scarp.values.false": "Dezaktywuj",
+
+        "config.(D) Visit Mount Vapius.name": "(D) Visit Mount Vapius",
+        "config.(D) Visit Mount Vapius.description": "Aktywacja Sprite'ów pochodzących z Visit Mount Vapius.",
+        "config.(D) Visit Mount Vapius.values.true": "Aktywuj",
+        "config.(D) Visit Mount Vapius.values.false": "Dezaktywuj",
+
+        "config.(E) Serene Meadow.name": "(E) Serene Meadow",
+        "config.(E) Serene Meadow.description": "Aktywacja Sprite'ów pochodzących z Serene Meadow.",
+        "config.(E) Serene Meadow.values.true": "Aktywuj",
+        "config.(E) Serene Meadow.values.false": "Dezaktywuj",
+
+        "config.(F) Growable Forage.name": "(F) Growable Forage",
+        "config.(F) Growable Forage.description": "Aktywacja Sprite'ów pochodzących z Growable Forage.",
+        "config.(F) Growable Forage.values.true": "Aktywuj",
+        "config.(F) Growable Forage.values.false": "Dezaktywuj",
+
+        "config.(G) Cornucopia Crops.name": "(G) Cornucopia Crops",
+        "config.(G) Cornucopia Crops.description": "Aktywacja Sprite'ów pochodzących z Cornucopia Crops.",
+        "config.(G) Cornucopia Crops.values.true": "Aktywuj",
+        "config.(G) Cornucopia Crops.values.false": "Dezaktywuj",
+
+        "config.(H) Cornucopia Herbs.name": "(H) Cornucopia Herbs",
+        "config.(H) Cornucopia Herbs.description": "Aktywacja Sprite'ów pochodzących z Cornucopia Herbs.",
+        "config.(H) Cornucopia Herbs.values.true": "Aktywuj",
+        "config.(H) Cornucopia Herbs.values.false": "Dezaktywuj",
+
+        "config.(I) Cornucopia Flowers.name": "(I) Cornucopia Flowers",
+        "config.(I) Cornucopia Flowers.description": "Aktywacja Sprite'ów pochodzących z Cornucopia Flowers.",
+        "config.(I) Cornucopia Flowers.values.true": "Aktywuj",
+        "config.(I) Cornucopia Flowers.values.false": "Dezaktywuj",
+
+        "config.(J) Ilucie Winter Crops.name": "(J) Ilucie Winter Crops",
+        "config.(J) Ilucie Winter Crops.description": "Aktywacja Sprite'ów pochodzących z Ilucie Winter Crops.",
+        "config.(J) Ilucie Winter Crops.values.true": "Aktywuj",
+        "config.(J) Ilucie Winter Crops.values.false": "Dezaktywuj",
+
+        "config.(K) Flower Garden 2.name": "(K) Flower Garden 2",
+        "config.(K) Flower Garden 2.description": "Aktywacja Sprite'ów pochodzących z Flower Garden 2.",
+        "config.(K) Flower Garden 2.values.true": "Aktywuj",
+        "config.(K) Flower Garden 2.values.false": "Dezaktywuj",
+
+        "config.(L) Grapes of Ferngill.name": "(L) Grapes of Ferngill",
+        "config.(L) Grapes of Ferngill.description": "Aktywacja Sprite'ów pochodzących z Grapes of Ferngill.",
+        "config.(L) Grapes of Ferngill.values.true": "Aktywuj",
+        "config.(L) Grapes of Ferngill.values.false": "Dezaktywuj",
+
+        "config.(M) Atelier Goods Forager.name": "(M) Atelier Goods Forager",
+        "config.(M) Atelier Goods Forager.description": "Aktywacja Sprite'ów pochodzących z Atelier Goods Forager.",
+        "config.(M) Atelier Goods Forager.values.true": "Aktywuj",
+        "config.(M) Atelier Goods Forager.values.false": "Dezaktywuj",
+
+        "config.(N) Garden Variety Mixed Seeds.name": "(N) Garden Variety Mixed Seeds",
+        "config.(N) Garden Variety Mixed Seeds.description": "Aktywacja Sprite'ów pochodzących z Garden Variety Mixed Seeds.",
+        "config.(N) Garden Variety Mixed Seeds.values.true": "Aktywuj",
+        "config.(N) Garden Variety Mixed Seeds.values.false": "Dezaktywuj",
+
+        "config.(O) Forage of Ferngill.name": "(O) Forage of Ferngill",
+        "config.(O) Forage of Ferngill.description": "Aktywacja Sprite'ów pochodzących z Forage of Ferngill.",
+        "config.(O) Forage of Ferngill.values.true": "Aktywuj",
+        "config.(O) Forage of Ferngill.values.false": "Dezaktywuj",
+
+        "config.(P) Grains Overhull.name": "(P) Grains Overhull",
+        "config.(P) Grains Overhull.description": "Aktywacja Sprite'ów pochodzących z Grains Overhull.",
+        "config.(P) Grains Overhull.values.true": "Aktywuj",
+        "config.(P) Grains Overhull.values.false": "Dezaktywuj",
+
+        "config.(Q) Bonster Crops Combined.name": "(Q) Bonster Crops Combined",
+        "config.(Q) Bonster Crops Combined.description": "Aktywacja Sprite'ów pochodzących z Bonster Crops Combined.",
+        "config.(Q) Bonster Crops Combined.values.true": "Aktywuj",
+        "config.(Q) Bonster Crops Combined.values.false": "Dezaktywuj",
+
+        "config.(R) Uncle Iroh Tea.name": "(R) Uncle Iroh Tea",
+        "config.(R) Uncle Iroh Tea.description": "Aktywacja Sprite'ów pochodzących z Uncle Iroh Tea.",
+        "config.(R) Uncle Iroh Tea.values.true": "Aktywuj",
+        "config.(R) Uncle Iroh Tea.values.false": "Dezaktywuj",
+
+        "config.(S) Polyamory Sweet.name": "(S) Polyamory Sweet",
+        "config.(S) Polyamory Sweet.description": "Aktywacja Sprite'ów pochodzących z Polyamory Sweet.",
+        "config.(S) Polyamory Sweet.values.true": "Aktywuj",
+        "config.(S) Polyamory Sweet.values.false": "Dezaktywuj",
+
+        "config.(T) Ore Crops.name": "(T) Ore Crops",
+        "config.(T) Ore Crops.description": "Aktywacja Sprite'ów pochodzących z Ore Crops.",
+        "config.(T) Ore Crops.values.true": "Aktywuj",
+        "config.(T) Ore Crops.values.false": "Dezaktywuj",
+
+        "config.(U) Tahla Crops.name": "(U) Tahla Crops",
+        "config.(U) Tahla Crops.description": "Aktywacja Sprite'ów pochodzących z Tahla Crops.",
+        "config.(U) Tahla Crops.values.true": "Aktywuj",
+        "config.(U) Tahla Crops.values.false": "Dezaktywuj",
+
+        "config.(V) Mildkewy Food Starter.name": "(V) Mildkewy Food Starter",
+        "config.(V) Mildkewy Food Starter.description": "Aktywacja Sprite'ów pochodzących z Mildkewy Food Starter.",
+        "config.(V) Mildkewy Food Starter.values.true": "Aktywuj",
+        "config.(V) Mildkewy Food Starter.values.false": "Dezaktywuj",
+
+        "config.(W) Tobacco and Hemp.name": "(W) Tobacco and Hemp",
+        "config.(W) Tobacco and Hemp.description": "Aktywacja Sprite'ów pochodzących z Tobacco and Hemp.",
+        "config.(W) Tobacco and Hemp.values.true": "Aktywuj",
+        "config.(W) Tobacco and Hemp.values.false": "Dezaktywuj",
+
+        "config.(X) Ridgeside Village.name": "(X) Ridgeside Village",
+        "config.(X) Ridgeside Village.description": "Aktywacja Sprite'ów pochodzących z Ridgeside Village.",
+        "config.(X) Ridgeside Village.values.true": "Aktywuj",
+        "config.(X) Ridgeside Village.values.false": "Dezaktywuj",
+
+        "config.(Y) Adventurer Guild Expanded.name": "(Y) Adventurer Guild Expanded",
+        "config.(Y) Adventurer Guild Expanded.description": "Aktywacja Sprite'ów pochodzących z Adventurer Guild Expanded.",
+        "config.(Y) Adventurer Guild Expanded.values.true": "Aktywuj",
+        "config.(Y) Adventurer Guild Expanded.values.false": "Dezaktywuj",
+
+        "config.(Z) Distant Lands.name": "(Z) Distant Lands",
+        "config.(Z) Distant Lands.description": "Aktywacja Sprite'ów pochodzących z Distant Lands.",
+        "config.(Z) Distant Lands.values.true": "Aktywuj",
+        "config.(Z) Distant Lands.values.false": "Dezaktywuj",
+
+        "config.(A²) Magical Crops.name": "(A²) Magical Crops",
+        "config.(A²) Magical Crops.description": "Aktywacja Sprite'ów pochodzących z Magical Crops.",
+        "config.(A²) Magical Crops.values.true": "Aktywuj",
+        "config.(A²) Magical Crops.values.false": "Dezaktywuj"
+}

@@ -1,0 +1,12 @@
+{
+  "Name": "Witchy Rustic Looks",
+  "Author": "Alexilyn",
+  "Version": "1.0.0",
+  "Description": "Some victorian and rustic Witch looks for Fashion Sence",
+  "UniqueID": "Alexilyn.WitchyRusticLooks",
+  "UpdateKeys": [ "Nexus:15140" ],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "3.0.3"
+  }
+}

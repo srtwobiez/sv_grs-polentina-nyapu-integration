@@ -1,0 +1,61 @@
+{
+  "Changes": [
+    // ===== REMOVE LEGACY SOLARIUM MAIL FROM COLLECTION =====
+    // Clears old blank/flag mails so they disappear from mail collection for existing players.
+    {
+      "LogName": "JJ Remove legacy solarium mail",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_RemoveLegacySolariumMail": {
+          "Id": "{{ModId}}_RemoveLegacySolariumMail",
+          "Trigger": "DayStarted",
+          "Condition": "ANY \"PLAYER_HAS_MAIL Current {{ModId}}_CarolineSolariumScheduleReady\" \"PLAYER_HAS_MAIL Current {{ModId}}_LinusSolariumScheduleReady\" \"PLAYER_HAS_MAIL Current {{ModId}}_HasSolariumKey\"",
+          "Actions": [
+            "RemoveMail Current {{ModId}}_CarolineSolariumScheduleReady all",
+            "RemoveMail Current {{ModId}}_LinusSolariumScheduleReady all",
+            "RemoveMail Current {{ModId}}_HasSolariumKey all"
+          ]
+        }
+      }
+    },
+    // ===== PATHFINDING =====
+    // Links BathHouse_Entry ladder to Custom_Solarium for pathfinding
+    {
+      "LogName": "JJ Pathfinding",
+      "Action": "EditData",
+      "Target": "Data/Pathfinding",
+      "Entries": { "BathHouse_Entry": "Custom_Solarium" },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_EvelynKey"
+      }
+    },
+    // ===== LINUS SCHEDULES =====
+    // Adds solarium visit to Linus (fall and winter).
+    {
+      "LogName": "JJ Linus schedules (Solarium visit)",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Linus",
+      "Entries": {
+        "fall": "700 Mountain 25 5 1/740 Mountain 28 9 1/900 Custom_Solarium 5 12 2 \"Strings\\schedules\\Linus:fall.000\"/1400 Mountain 44 18 1/1800 Tent 2 2 2",
+        "winter": "1100 Mountain 28 9 1/1400 Custom_Solarium 5 12 2 \"Strings\\schedules\\Linus:winter.000\"/1800 Tent 2 2 2"
+      },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_RobinSolarium",
+        "AdjustLinussSchedule": true
+      }
+    },
+    // ===== CAROLINE SCHEDULE =====
+    // Wednesday solarium visit (Sunroom then Town then Solarium).
+    {
+      "LogName": "JJ Caroline Wednesday (Solarium visit)",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Caroline",
+      "Entries": { "Wed": "800 SeedShop 37 6 3/1000 Sunroom 5 7 1/1200 Town 23 27 1/1400 Custom_Solarium 7 12 3 \"Strings\\schedules\\Caroline:Wed.000\"/1700 SeedShop 25 18 2 square_9_9/2100 SeedShop 25 4 1 caroline_sleep" },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_CarolineMagazine",
+        "AdjustCarolineSchedule": true
+      }
+    }
+  ]
+}

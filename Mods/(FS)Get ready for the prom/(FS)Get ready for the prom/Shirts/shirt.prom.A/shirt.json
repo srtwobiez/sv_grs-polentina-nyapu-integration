@@ -1,0 +1,64 @@
+{
+  "Name": "shirt.prom.A",
+  "FrontShirt": {
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 12,
+      "Y": 4
+    },
+    "ShirtSize": {
+      "Width": 32,
+      "Length": 32
+    }
+  },
+  "RightShirt": {
+    "DisableGrayscale": true, 
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "BodyPosition": {
+      "X": 13,
+      "Y": 4
+    },
+    "ShirtSize": {
+      "Width": 32,
+      "Length": 32
+    }
+  },
+  "LeftShirt": {
+    "DisableGrayscale": true, 
+	"Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "BodyPosition": {
+      "X": 11,
+      "Y": 4
+    },
+    "ShirtSize": {
+      "Width": 32,
+      "Length": 32
+    }
+  },
+  "BackShirt": {
+    "DisableGrayscale": true,  
+    "StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "BodyPosition": {
+      "X": 12,
+      "Y": 4
+    },
+    "ShirtSize": {
+      "Width": 32,
+      "Length": 32
+    }
+  }
+}

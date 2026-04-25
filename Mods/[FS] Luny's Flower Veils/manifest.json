@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Luny's Flower Veils",
+  "Author": "Luny",
+  "Version": "1.3",
+  "Description": "Adds a flower veil with several variations to Fashion Sense",
+  "UniqueID": "Luny.FlowerVeils",
+  "UpdateKeys": ["Nexus:28270"],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+	"MinimumVersion": "6.6.0"
+  }
+}

@@ -1,0 +1,658 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}.JaviVisibility": {
+                    "ID": "{{ModID}}.JaviVisibility",
+                    "Trigger": "DayStarted",
+                    "Condition": "!PLAYER_HAS_SEEN_EVENT Any GiEX_JaviIntro, {{SpawnConditions}}, !PLAYER_HAS_SEEN_EVENT Any GiEX_Javi_12h_badEnding",
+                    "Actions": [
+                        "SetNpcInvisible JaviGiex 1",
+                        "MarkActionApplied All {{ModID}}.JaviVisibilityReset false"
+                    ],
+                    "MarkActionApplied": false 
+                },
+                "{{ModId}}.JaviMail4Hearts": {
+                   "Id": "{{ModId}}_JaviMail4Hearts",
+                   "Trigger": "DayStarted",
+                   "Condition": "PLAYER_HEARTS Current JaviGiex 4, PLAYER_HAS_SEEN_EVENT Current GiEX_Javi_2h",
+                   "Actions": [
+                      "AddMail Current {{ModId}}_Javi4Hearts now"
+                   ]
+                },
+                "{{ModId}}.JaviMail10Hearts": {
+                   "Id": "{{ModId}}_JaviMail10Hearts",
+                   "Trigger": "DayStarted",
+                   "Condition": "PLAYER_HEARTS Current JaviGiex 10, PLAYER_HAS_SEEN_EVENT Current GiEX_Javi_8h",
+                   "Actions": [
+                      "AddMail Current {{ModId}}_Javi10Hearts now"
+                   ]
+                }
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Data/Mail",
+            "Entries":{
+                "{{ModId}}_Javi4Hearts": "@,^^{{i18n:JaviMail4Hearts}}",
+                "{{ModId}}_Javi10Hearts": "@,^^{{i18n:JaviMail10Hearts}}"
+            }
+        },
+        //Giex stands for ginger island extra (locations), it's not his surname
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "JaviGiex": {
+                    "DisplayName": "{{i18n: Javi}}",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 21,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    //"Gender": "null", canonically nonbinary
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Neutral",
+                    "IsDarkSkinned": true,
+                    "CanBeRomanced": false,
+                    "CanSocialize": "TRUE",
+                    "CanReceiveGifts": true,
+                    //"LoveInterest": "null",
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "UnknownUntilMet",
+                    "CanVisitIslandCondition": "FALSE",
+                    "ExcludeFromIntroductionsQuest": true,
+                    "ExcludeFromPerfectionScore": false,
+                    "EndSlideShow": "TrailingGroup",
+                    "FriendsAndFamily": {
+                        "Leo": "",
+                        "Birdie": ""
+                    },
+                    "UnlockConditions": "{{SpawnConditions}}", //
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "GiEX_Hut",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 5
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Breather": true,
+                    "HiddenProfileEmoteSound": null,
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": -1,
+                    "HiddenProfileEmoteFrameCount": 1,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "FestivalVanillaActorIndex": -1,
+                    "CustomFields": {},
+                    "Appearance": [
+                        {
+                            "Id": "Rainy",
+                            "Indoors": false,
+                            "Condition": "WEATHER GiEX_SouthWest Rain", //Any \"WEATHER GiEX_SouthWest Rain\", \"WEATHER GiEX_SouthWest Storm\"
+                            "Portrait": "Portraits/JaviGiex_rainy",
+                            "Sprite": "Characters/JaviGiex_rainy"
+                        },
+                        {
+                            "Id": "Indoors",
+                            "Indoors": true,
+                            "Portrait": "Portraits/JaviGiex",
+                            "Sprite": "Characters/JaviGiex"
+                        },
+                        {
+                            "Id": "Default",
+                            "Portrait": "Portraits/JaviGiex",
+                            "Sprite": "Characters/JaviGiex"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Gift taste",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                /* Loved: Beer, wine, mead, ginger ale, piña colada, curiosity lure, lumi tackle, meat
+                 * Liked: dressed spinner, barbed hook, quality bobber, truffle, seafoam pudding
+                 * Disliked: bait
+                 * Hated: red mushroom, ancient sword, anchor, rusty wheel, pirate hook
+                 * Neutral: sweet pea, daffodil, crocus, pearl, fish, (other) tackle
+                 */
+                "JaviGiex": "{{i18n: Javi_lovedgift}}$1/GiEXredux_LumiTackle 346 348 459 903 873 856 -14/{{i18n: Javi_likedgift}}/687 691 877 430 265/{{i18n: Javi_dislikedgift}}/-21/{{i18n: Javi_hatedgift}}/420 109 117 GiEXredux_RustyWheel GiEXredux_PirateHook/{{i18n: Javi_neutralgift}}/402 18 418 797 -4 -22 GiEXredux_PearlNecklace -2/" //-21 bait, -19 fertilizer, -14 meat, -6 milk, -4 fish, -2 gem, 109 rusty sword, 117 ship thing, 856 curiosity lure. 402 sweet pea 18 daffodil 418 crocus. 90 340 247 432 cactus, wild honey, oil, truffle oil
+                //beer, wine, mead, pale ale, ginger ale, piña colada; "346 348 459 303 903 873"
+            }
+        },
+        /* sprites */
+        //pirate
+        {
+            "LogName":"Pirate character",
+            "Action":"Load",
+            "Target":"Characters/SurvivorPirateGiex",
+            "FromFile":"assets/NPC/Trader_pirate_character.png"
+        },
+        {
+            "LogName":"Pirate portrait",
+            "Action":"Load",
+            "Target":"Portraits/SurvivorPirateGiex",
+            "FromFile":"assets/NPC/Trader_Pirate.png"
+        },
+        //Basic
+        {
+            "LogName": "Walk tiles",
+            "Action": "Load",
+            "Target": "Characters/JaviGiex, Characters/JaviGiex_indoors, Characters/JaviGiex_rainy",
+            "FromFile": "assets/NPC/Character/Character{{Bowlegs}}.png"
+        },
+        {
+            "LogName": "Walk tiles",
+            "Action": "Load",
+            "Target": "Characters/JaviGiex_Younger",
+            "FromFile": "assets/NPC/Character/Character-pirate_flashback.png"
+        },
+        {
+            "LogName": "Portrait",
+            "Action": "Load",
+            "Target": "Portraits/JaviGiex, Portraits/JaviGiex_indoors, Portraits/JaviGiex_rainy",
+            "FromFile": "assets/NPC/Portrait_{{PortraitStyle}}/Portrait.png"
+        },
+        {
+            "LogName": "Portrait- younger base(s)",
+            "Action": "Load",
+            "Target": "Portraits/JaviGiex_Younger, Portraits/JaviGiex_Quartermaster, Portraits/JaviGiex_Stranded, Portraits/JaviGiex_Stranded2",
+            "FromFile": "assets/NPC/Portrait_{{PortraitStyle}}/Portrait_Young_base.png"
+        },
+        //Younger version(s)
+        {
+            "LogName": "Portrait- younger QM",
+            "Action": "EditImage",
+            "Target": "Portraits/JaviGiex_Quartermaster",
+            "PatchMode":"Overlay",
+            "FromFile": "assets/NPC/Portrait_{{PortraitStyle}}/Portrait_Young_quartermaster.png"
+        },
+        {
+            "LogName": "Portrait- younger stranded",
+            "Action": "EditImage",
+            "Target": "Portraits/JaviGiex_Stranded2",
+            "PatchMode":"Overlay",
+            "FromFile": "assets/NPC/Portrait_{{PortraitStyle}}/Portrait_Young_longhair.png"
+        },
+        {
+            "LogName": "Portrait",
+            "Action": "Load",
+            "Target": "Portraits/JaviGiex_Book",
+            "FromFile": "assets/NPC/Journal.png"
+        },
+        //HDPortrait compat
+        {
+            "LogName": "HD portraits",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/JaviGiex",
+            "Entries": {
+                "Size": 256,
+                "Portrait": "Portraits/JaviGiex"
+            },
+            "When": {
+                "HasMod": "tlitookilakin.HDPortraits",
+                "PortraitStyle": "SHIE"
+            }
+        },
+        {
+            "LogName": "HD portraits - rain day",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/JaviGiex",
+            "Entries": {
+                "Size": 256,
+                "Portrait": "Portraits/JaviGiex_rainy"
+            },
+            "When": {
+                "Weather: island": "Rain,Storm",
+                "HasMod": "tlitookilakin.HDPortraits",
+                "PortraitStyle": "SHIE"
+            },
+            "Update": "OnLocationChange"
+        },
+        // Clothes - Portrait
+        {
+            "LogName": "Umbrella",
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "Portraits/JaviGiex_rainy",
+            "FromFile": "assets/NPC/Portrait_{{PortraitStyle}}/Leaf.png"
+        },
+        {
+            "LogName": "Twigs", //50% to have them on a given day
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "Portraits/JaviGiex, Portraits/JaviGiex_rainy",
+            "FromFile": "assets/NPC/Portrait_{{PortraitStyle}}/Branches.png",
+            "When": {
+                "Query: {{Random:1,2}} = 2": true
+            }
+        },
+        // Clothes - character
+        {
+            "LogName": "Umbrella",
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "Characters/JaviGiex_rainy",
+            "FromFile": "assets/NPC/Character/LeafUmbrella.png"
+        },
+        /* Schedule  and dialogue */
+        {
+            "LogName": "Schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/JaviGiex",
+            "FromFile": "assets/NPC/schedule.json"
+        },
+        //dialogue
+        {
+            "LogName": "Add dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/JaviGiex",
+            "Entries": {
+                "default": "{{i18n:dots}}",
+                "GiEX_Clearance": "{{i18n:Dialogue.Clearance}}",
+                "GiEX_SouthWest": "{{i18n:Dialogue.HiddenBeach}}$1",
+                "Mon": "{{i18n:Dialogue.BlueDiscus}}",
+                "Tue": "{{i18n:Dialogue.Dwarves}}",
+                "Wed": "{{i18n:Dialogue.Farm}}",
+                "Thu": "{{i18n:Dialogue.Crops}}",
+                "Fri": "{{i18n:Dialogue.GingerIsland}}$5",
+                "Sat": "{{i18n:Dialogue.OtherIslands}}",
+                "Sun": "{{i18n:Dialogue.Fishing}}",
+                "AcceptGift_category_tackle": "{{i18n:Gift.tackle}}",
+                "AcceptGift_category_gem": "{{i18n:Gift.gem}}",
+                "AcceptGift_category_minerals": "{{i18n:Gift.mineral}}",
+                "AcceptGift_category_fish": "{{i18n:Gift.fish}}",
+                "AcceptGift_category_meat": "{{i18n:Gift.meat}}",
+                "AcceptGift_(O)856": "{{i18n:Gift.curiosity_lure}}",
+                "AcceptGift_(O)432": "{{i18n:Gift.truffle_oil}}",
+                "AcceptGift_(O)340": "{{i18n:Gift.honey}}",
+                "GiEX_Javi_10H_tellTruth":"{{i18n:Javi10h.GoodEnding.ConversationTopic}}"
+            }
+        },
+        {
+            "LogName": "Add dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/JaviGiex",
+            "Entries": {
+                "AcceptGift_category_gem": "{{i18n:Gift.gemOrMineral}}",
+                "AcceptGift_category_minerals": "{{i18n:Gift.gemOrMineral}}"
+            },
+            "When":{
+                "HasSeenEvent":"GiEX_Javi_8h"
+            }
+        },
+        {
+            "LogName": "Post 4h",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/JaviGiex",
+            "Entries":{
+                "8_*": "{{i18n: Dialogue.Alone}}",
+                "9_*": "{{i18n: Dialogue.Volcano}}",
+                "10_*": "{{i18n: Dialogue.Volcano2}}",
+                "11_*": "{{i18n: Dialogue.Caldera}}"
+            },
+            "When":{
+                "HasSeenEvent":"GiEX_Javi_4h"
+            }
+        },
+        {
+            "LogName": "Post leo departure",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/JaviGiex",
+            "Entries":{
+                "12_*": "{{i18n: Dialogue.LeoGone1}}#$b#{{i18n: Dialogue.LeoGone2}}#$b#{{i18n: Dialogue.LeoGone3}}"
+            },
+            "When":{
+                "HasSeenEvent": "6497428"
+            }
+        },
+        {
+            "LogName": "Post 8h",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/JaviGiex",
+            "Entries": {
+                "13_*": "{{i18n:Dialogue.Journal}}",
+                "14_*": "{{i18n:Dialogue.Gender}}",
+                "15_*": "{{i18n:Dialogue.Softspot}}",
+                "16_*": "{{i18n:Dialogue.Haircut}}",
+                "17_*": "{{i18n:Dialogue.Boredom}}",
+                "18_*": "{{i18n:Dialogue.Boredom2}}",
+                "19_*": "{{i18n:Dialogue.Parrot}}",
+                "20_*": "{{i18n:Dialogue.Parrot2}}",
+                "21_*": "{{i18n:Dialogue.Quartermaster}}",
+                "22_*": "{{i18n:Dialogue.HisFin}}",
+                "23_*": "{{i18n:Dialogue.Before}}",
+                "24_*": "{{i18n:Dialogue.Sailor}}",
+                "25_*": "{{i18n:Dialogue.Gender2}}",
+                "26_*": "{{i18n:Dialogue.Crew}}",
+                "27_*": "{{i18n:Dialogue.Crew2}}",
+                "28_*": "{{i18n:Dialogue.Rumours}}"
+            },
+            "When": {
+                "HasSeenEvent": "GiEX_Javi_10h"
+            }
+        },
+        {
+            "LogName": "Post 12h",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/JaviGiex",
+            "Entries": {
+                "Mon": "{{i18n: Dialogue.Mon_12h}}",
+                "Tue": "{{i18n: Dialogue.Tue_12h}}",
+                "Wed": "{{i18n: Dialogue.Wed_12h}}",
+                "Thu": "{{i18n: Dialogue.Thu_12h}}",
+                "Sat": "{{i18n:Dialogue.Sat_12h}}",
+                "Sun": "{{i18n:Dialogue.Sun_12h}}",
+                "28_*": "{{i18n:Dialogue.Crew3}}"
+            },
+            "When": {
+                "HasSeenEvent": "GiEX_Javi_12h"
+            }
+        },
+        //schedule patches
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/JaviGiex",
+            "Entries": {
+                "Mon": "0 IslandNorth 38 26 2 \"Strings\\schedules\\JaviGiex:Volcano\"/1000 IslandNorth 35 73 0/1300 IslandSouth 12 33 2/1500 GiEX_Hut 8 7 2/1700 GiEX_Hut 2 6 0/1900 GiEX_SouthWest 8 16 2 Javi_floor/2100 GiEX_Hut 7 5 1 Javi_sleep"
+            },
+            "When": {
+                "HasFlag": "Island_UpgradeTrader"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/JaviGiex",
+            "Entries": {
+                "Wed": "700 GiEX_Hut 2 6 0/800 GiEX_Hut 8 7 2/900 IslandNorth 39 78 2/1000 GiEX_QuarryPond 10 26 2/1300 GiEX_QuarryPond 15 21 0/1400 GiEX_QuarryPond 6 17 1 Javi_floor/a2000 GiEX_Hut 2 6 0/2100 GiEX_Hut 7 5 1 Javi_sleep"
+            },
+            "When": {
+                "HasFlag": "Island_UpgradeBridge"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/JaviGiex",
+            "Entries": {
+                "Fri": "700 GiEX_Hut 2 6 0/800 GiEX_Hut 8 7 2/900 GiEX_SouthWest 14 19 2/1000 IslandWest 59 83 2/1200 IslandWest 77 85 2/1500 IslandWest 49 90 2/1700 GiEX_SouthWest 9 9 2/1900 GiEX_SouthWest 8 16 1 Javi_floor/2100 GiEX_Hut 7 5 1 Javi_sleep"
+            },
+            "When": {
+                "HasFlag": "GiEX_CleanedBeach"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/JaviGiex",
+            "Entries": {
+                "Sun": "700 GiEX_Hut 2 6 0/800 GiEX_Hut 8 7 2/1000 GiEX_SouthWest 11 20 2 Javi_fishing/1300 GiEX_SouthWest 9 9 2/1400 GiEX_SouthWest 8 16 1 Javi_floor/1700 GiEX_Temple 19 40 0 \"Strings\\schedules\\JaviGiex:Temple\"/1900 GiEX_Temple 20 31 2/2100 GiEX_Hut 7 5 1 Javi_sleep"
+            },
+            "When": {
+                "HasSeenEvent": "GiEX_finishedBundles"
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Strings/schedules/JaviGiex",
+            "Entries":{
+                "Temple":"{{i18n:ScheduleStrings.Temple}}",
+                "Volcano":"{{i18n:ScheduleStrings.Volcano}}"
+            }
+        },
+        //animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "javigiex_fishing": "0/16 16 17 17 18 18 19 19/0",
+                "javigiex_floor": "0 0 18 18 19 19/22/19 19 18 18 0 0", // start/loop/end 
+                "javigiex_harvest": "0 0 18 18 19 19/20 20 20 20 21 21 21 21/19 19 18 18 0 0",
+                "javigiex_rest": "17/17/17",
+                "javigiex_savingbounty": "8/16/8",
+                "javigiex_sleep": "17/17/17",
+                "javigiex_woodwork": "0 0 18 18 19 19/22 22 23 23 24 24 25 25 24 24 23 23 22 22 22 22/19 19 18 18 0 0"
+            }
+        },
+        /* movie reactions
+         * options: comedy   , horror, family ,classic, documentary, action, art
+         *********************************************
+         * Javi:  like  ,   neutral, neutral,dislike,neutral     , like  , neutral 
+         *********************************************
+         * figure this out properly before coding it.
+         */
+        {
+            "Action": "EditData",
+            "Target": "Data/MoviesReactions",
+            "Entries": {
+                "JaviGiex": {
+                    "NPCName": "JaviGiex",
+                    "Reactions": [
+                        {
+                            "Tag": "action",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": null,
+                            "ID": "reaction_0"
+                        },
+                        {
+                            "Tag": "comedy",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": null,
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "classic",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": null,
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "normal",
+                            "Whitelist": [],
+                            "SpecialResponses": null,
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "love",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "emote JaviGiex 16",
+                                    "Text": "{{i18n:LovedMovie.Before}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/jump JaviGiex/pause 500/message \"{{i18n:LovedMovie.During.Script}}\"",
+                                    "Text": "{{i18n:LovedMovie.During}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:LovedMovie.After}}"
+                                }
+                            },
+                            "ID": "reaction_4"
+                        },
+                        {
+                            "Tag": "like",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:LikedMovie.Before}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:LikedMovie.After}}$h"
+                                }
+                            },
+                            "ID": "reaction_5"
+                        },
+                        {
+                            "Tag": "normal",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:NormalMovie.Before}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:NormalMovie.After}}"
+                                }
+                            },
+                            "ID": "reaction_6"
+                        },
+                        {
+                            "Tag": "dislike",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:DislikedMovie.Before}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/emote JaviGiex 24/pause 500/message \"{{i18n:DislikedMovie.During.Script}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:DislikedMovie.After}}$6"
+                                }
+                            },
+                            "ID": "reaction_7"
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasSeenEvent": "GiEX_Javi_2h"
+            }
+        },
+        // movie snack tastes
+        {
+            "Action": "EditData",
+            "Target": "Data\\ConcessionTastes",
+            "Entries": {
+                "JaviGiex": {
+                    "Name": "JaviGiex",
+                    "LovedTags": [
+                        "Black Licorice",
+                        "Jasmine Tea",
+                        "Stardrop Sorbet"
+                    ],
+                    "LikedTags": [
+                        "Sour"
+                    ],
+                    "DislikedTags": [
+                        "Sweet",
+                        "Candy",
+                        "Joja",
+                        "Rock Candy",
+                        "Jawbreaker"
+                    ]
+                }
+            },
+            "When": {
+                "HasSeenEvent": "GiEX_Javi_2h"
+            }
+        },
+        //journal
+        {
+            "LogName": "Add journal entries",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/Strings/Journal",
+            "Entries": {
+                "0": "$empty",
+                "1": "{{i18n: Javi4h.read.0}}\n\n{{i18n: Javi4h.read.1}}\n\n{{i18n: Javi4h.read.1_cont}}",
+                "2": "{{i18n:dots}}",
+                "3": "{{i18n: Javi4h.read.3}}\n\n{{i18n: Javi4h.read.3_cont}}",
+                "4": "{{i18n: dots}}",
+                "5":"{{i18n: Journal.5}}",
+                "6": "{{i18n:Journal.6}}",
+                "7": "{{i18n:Journal.7}}",
+                "8": "{{i18n: Journal.8}}",
+                "9": "{{i18n:Journal.9}}",
+                "10": "{{i18n: Journal.10}}",
+                "11":"{{i18n: dots}}",
+                "12": "{{i18n: Javi6h.17}}\n\n{{i18n: Journal.12B}}",
+                "13":"{{i18n: Journal.13}}",
+                "14": "{{i18n:Javi6h.21.cont}}\n\n{{i18n:Javi6h.23}}",
+                "15":"{{i18n: Javi8h.1}} {{i18n:Javi8h.2}}\n\n{{i18n: Javi8h.3}}\n\n{{i18n: Javi8h.4}}",
+                "16": "{{i18n:Javi8h.5}} {{i18n:Javi8h.6}}\n\n{{i18n:Journal.16C}}",
+                "17":"{{i18n:Javi8h.8}} {{i18n:Javi8h.9}}\n\n{{i18n: Javi8h.11}}\n\n{{i18n:Javi8h.12}}",
+                "18": "{{i18n:dots}}",
+                "19": "{{i18n: Journal.19A}}\n\n{{i18n: Journal.19B}}",
+                "20": "{{i18n:dots}}",
+                "21": "{{i18n: Journal.21A}}\n\n{{i18n: Journal.21B}}\n{{i18n: Journal.21C}}",
+                "22": "{{i18n: Journal.22A}}\n\n{{i18n: Journal.22B}}",
+                "23":"{{i18n: Journal.23}}",
+                "24":"{{i18n: dots}}",
+                "25": "{{i18n: Journal.25A}}\n\n{{i18n: Journal.25B}}\n\n{{i18n: Journal.25C}}"
+            }
+        },
+        {
+            "LogName": "Add journal entries - extra",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/Strings/Journal",
+            "Entries": {
+                "26": "{{i18n: dots}}",
+                "27": "{{i18n: Journal.27A | player={{PlayerName}}}}"
+            },
+            "When":{
+                "HasSeenEvent":"GiEX_Javi_8h"
+            }
+        },
+        {
+            "LogName": "Add journal entries - branching ('hide' route)",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/Strings/Journal",
+            "Entries": {
+                "28": "{{i18n: dots}}",
+                "29": "{{i18n: Journal.29A.badend}}\n{{i18n: Journal.29B.badend}}\n\n{{i18n: Journal.29C.badend}}"
+            },
+            "When":{
+                "HasSeenEvent":"GiEX_Javi_10h",
+                "HasFlag":"GiEX_Javi_badEndingFlag"
+            }
+        },
+        {
+            "LogName": "Add journal entries - branching ('truth' route)",
+            "Action": "EditData",
+            "Target": "Mods/{{ModId}}/Strings/Journal",
+            "Entries": {
+                "28": "{{i18n: dots}}",
+                "29": "{{i18n: Journal.29A.truth}}\n\n{{i18n: Journal.29B.truth}}\n\n{{i18n: Journal.29C.truth}}"
+            },
+            "When":{
+                "HasSeenEvent":"GiEX_Javi_goodEnding"
+            }
+        }
+    ]
+}

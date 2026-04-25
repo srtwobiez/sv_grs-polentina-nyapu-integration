@@ -1,0 +1,2525 @@
+{
+  "ForageSpawnEnabled": true,
+  "LargeObjectSpawnEnabled": false,
+  "OreSpawnEnabled": true,
+  "MonsterSpawnEnabled": true,
+  "Forage_Spawn_Settings": {
+    "Areas": [
+      {
+        "SpringItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "Dragon Tooth",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "Bone Fragment",
+            "SpawnWeight": 4
+          },
+          {
+            "Category": "Object",
+            "Name": "Fire Quartz",
+            "SpawnWeight": 2
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "Dragon Tooth",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "Bone Fragment",
+            "SpawnWeight": 4
+          },
+          {
+            "Category": "Object",
+            "Name": "Fire Quartz",
+            "SpawnWeight": 2
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "Dragon Tooth",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "Bone Fragment",
+            "SpawnWeight": 4
+          },
+          {
+            "Category": "Object",
+            "Name": "Fire Quartz",
+            "SpawnWeight": 2
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "Dragon Tooth",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "Bone Fragment",
+            "SpawnWeight": 4
+          },
+          {
+            "Category": "Object",
+            "Name": "Fire Quartz",
+            "SpawnWeight": 2
+          }
+        ],
+        "UniqueAreaID": "GiEX_ExtinctLair foraging",
+        "MapName": "GiEX_ExtinctLair",
+        "MinimumSpawnsPerDay": 4,
+        "MaximumSpawnsPerDay": 9,
+        "IncludeTerrainTypes": [
+          "Spawnable"
+        ],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "32,38/43,44",
+          "46,39/50,40"
+        ],
+        "ExcludeCoordinates": [
+          "32,38/33,38",
+          "36,40/38,41"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 4,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.mining.done"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_LumiStone1",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_LumiStone2",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_LumiStone3",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_UnderwaterCopper",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_UnderwaterIron",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_Stone1",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_Stone2",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_Stone3",
+            "SpawnWeight": 1
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_LumiStone1",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_LumiStone2",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_LumiStone3",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_UnderwaterCopper",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_UnderwaterIron",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_Stone1",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_Stone2",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_Stone3",
+            "SpawnWeight": 1
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_LumiStone1",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_LumiStone2",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_LumiStone3",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_UnderwaterCopper",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_UnderwaterIron",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_Stone1",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_Stone2",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_Stone3",
+            "SpawnWeight": 1
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_LumiStone1",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_LumiStone2",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_LumiStone3",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_UnderwaterCopper",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_UnderwaterIron",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_Stone1",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_Stone2",
+            "SpawnWeight": 1
+          },
+          {
+            "Category": "Object",
+            "Name": "mistyspring.GiEXredux_Stone3",
+            "SpawnWeight": 1
+          }
+        ],
+        "UniqueAreaID": "GiEX_Sea_West2 ores",
+        "MapName": "GiEX_Sea_West2",
+        "MinimumSpawnsPerDay": 3,
+        "MaximumSpawnsPerDay": 6,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "4,7/10,9",
+          "8,5/18,6",
+          "11,7/25,8",
+          "18,9/25,9"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "SpringItemIndex": [
+          "Artifact Spot"
+        ],
+        "SummerItemIndex": [
+          "Artifact Spot"
+        ],
+        "FallItemIndex": [
+          "Artifact Spot"
+        ],
+        "WinterItemIndex": [
+          "Artifact Spot"
+        ],
+        "UniqueAreaID": "GiEX_Sea_West digging",
+        "MapName": "GiEX_Sea_West",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Water",
+          "Stone"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "SpringItemIndex": [
+          "Artifact Spot"
+        ],
+        "SummerItemIndex": [
+          "Artifact Spot"
+        ],
+        "FallItemIndex": [
+          "Artifact Spot"
+        ],
+        "WinterItemIndex": [
+          "Artifact Spot"
+        ],
+        "UniqueAreaID": "GiEX_Sea_West2 digging",
+        "MapName": "GiEX_Sea_West2",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Water",
+          "Stone"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 0
+      }
+    ],
+    "PercentExtraSpawnsPerForagingLevel": 2,
+    "SpringItemIndex": [
+      16,
+      20,
+      22,
+      257
+    ],
+    "SummerItemIndex": [
+      396,
+      398,
+      402,
+      404
+    ],
+    "FallItemIndex": [
+      281,
+      404,
+      420,
+      422
+    ],
+    "WinterItemIndex": [],
+    "CustomTileIndex": []
+  },
+  "Large_Object_Spawn_Settings": {
+    "Areas": [],
+    "CustomTileIndex": []
+  },
+  "Ore_Spawn_Settings": {
+    "Areas": [
+      {
+        "MiningLevelRequired": {
+          "OmniGeode": 3,
+          "Iridium": 5,
+          "Radioactive": 10,
+          "Fossil": 0,
+          "Stone": 0
+        },
+        "StartingSpawnChance": {
+          "OmniGeode": 5,
+          "Iridium": 10,
+          "Radioactive": 2,
+          "Fossil": 15,
+          "Stone": 48,
+          "Geode": 0,
+          "FrozenGeode": 0,
+          "MagmaGeode": 0,
+          "Gem": 0,
+          "Copper": 0,
+          "Iron": 0,
+          "Gold": 10,
+          "Mystic": 0,
+          "Diamond": 0,
+          "Ruby": 5,
+          "Jade": 0,
+          "Amethyst": 0,
+          "Topaz": 5,
+          "Emerald": 0,
+          "Aquamarine": 0,
+          "Mussel": 0,
+          "Clay": 0,
+          "CinderShard": 0,
+          "Coal": 0
+        },
+        "LevelTenSpawnChance": {
+          "Stone": 25,
+          "Geode": 0,
+          "FrozenGeode": 0,
+          "MagmaGeode": 2,
+          "OmniGeode": 3,
+          "Gem": 5,
+          "Copper": 5,
+          "Iron": 10,
+          "Gold": 10,
+          "Iridium": 10,
+          "Mystic": 2,
+          "Radioactive": 5,
+          "Diamond": 2,
+          "Ruby": 2,
+          "Jade": 2,
+          "Amethyst": 2,
+          "Topaz": 0,
+          "Emerald": 0,
+          "Aquamarine": 0,
+          "Mussel": 0,
+          "Fossil": 10,
+          "Clay": 0,
+          "CinderShard": 0,
+          "Coal": 5
+        },
+        "UniqueAreaID": "GiEX_ForestQuarry ores",
+        "MapName": "GiEX_ForestQuarry",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 30,
+        "IncludeTerrainTypes": [
+          "Quarry"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Wood"
+        ],
+        "IncludeCoordinates": [
+          "12,26/22,27",
+          "13,7/34,21",
+          "35,9/42,18"
+        ],
+        "ExcludeCoordinates": [
+          "20,11/25,13",
+          "26,12/31,17",
+          "21,14/25,15"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 15,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasSeenEvent": "GiEX_bundle_start"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": {
+          "Stone": 60,
+          "Geode": 0,
+          "FrozenGeode": 0,
+          "MagmaGeode": 10,
+          "OmniGeode": 0,
+          "Gem": 0,
+          "Copper": 0,
+          "Iron": 0,
+          "Gold": 10,
+          "Iridium": 0,
+          "Mystic": 0,
+          "Radioactive": 0,
+          "Diamond": 0,
+          "Ruby": 5,
+          "Jade": 0,
+          "Amethyst": 0,
+          "Topaz": 5,
+          "Emerald": 0,
+          "Aquamarine": 0,
+          "Mussel": 0,
+          "Fossil": 10,
+          "Clay": 0,
+          "CinderShard": 0,
+          "Coal": 0
+        },
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "ExtLair ores",
+        "MapName": "GiEX_ExtinctLair",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 20,
+        "IncludeTerrainTypes": [
+          "Quarry"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "20,51/37,58"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.mining.done"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": {
+          "Stone": 25,
+          "Geode": 0,
+          "FrozenGeode": 0,
+          "MagmaGeode": 0,
+          "OmniGeode": 0,
+          "Gem": 5,
+          "Copper": 0,
+          "Iron": 0,
+          "Gold": 0,
+          "Iridium": 0,
+          "Mystic": 0,
+          "Radioactive": 0,
+          "Diamond": 0,
+          "Ruby": 0,
+          "Jade": 0,
+          "Amethyst": 0,
+          "Topaz": 0,
+          "Emerald": 0,
+          "Aquamarine": 0,
+          "Mussel": 0,
+          "Fossil": 10,
+          "Clay": 0,
+          "CinderShard": 60,
+          "Coal": 0
+        },
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "ExtLair cinder shards",
+        "MapName": "GiEX_ExtinctLair",
+        "MinimumSpawnsPerDay": 5,
+        "MaximumSpawnsPerDay": 15,
+        "IncludeTerrainTypes": [
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.mining.done"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 0
+      }
+    ],
+    "PercentExtraSpawnsPerMiningLevel": 0,
+    "MiningLevelRequired": {
+      "Stone": 0,
+      "Geode": 0,
+      "FrozenGeode": 5,
+      "MagmaGeode": 8,
+      "OmniGeode": 0,
+      "Gem": 6,
+      "Copper": 0,
+      "Iron": 4,
+      "Gold": 7,
+      "Iridium": 9,
+      "Mystic": 10,
+      "Radioactive": 0,
+      "Diamond": 6,
+      "Ruby": 6,
+      "Jade": 6,
+      "Amethyst": 6,
+      "Topaz": 6,
+      "Emerald": 6,
+      "Aquamarine": 6,
+      "Mussel": 0,
+      "Fossil": 0,
+      "Clay": 0,
+      "CinderShard": 0,
+      "Coal": 0
+    },
+    "StartingSpawnChance": {
+      "Stone": 30,
+      "Geode": 8,
+      "FrozenGeode": 4,
+      "MagmaGeode": 2,
+      "OmniGeode": 0,
+      "Gem": 5,
+      "Copper": 21,
+      "Iron": 15,
+      "Gold": 10,
+      "Iridium": 1,
+      "Mystic": 1,
+      "Radioactive": 0,
+      "Diamond": 0,
+      "Ruby": 0,
+      "Jade": 0,
+      "Amethyst": 0,
+      "Topaz": 0,
+      "Emerald": 0,
+      "Aquamarine": 0,
+      "Mussel": 0,
+      "Fossil": 0,
+      "Clay": 0,
+      "CinderShard": 0,
+      "Coal": 0
+    },
+    "LevelTenSpawnChance": {
+      "Stone": 30,
+      "Geode": 2,
+      "FrozenGeode": 2,
+      "MagmaGeode": 2,
+      "OmniGeode": 0,
+      "Gem": 5,
+      "Copper": 16,
+      "Iron": 13,
+      "Gold": 10,
+      "Iridium": 1,
+      "Mystic": 1,
+      "Radioactive": 0,
+      "Diamond": 0,
+      "Ruby": 0,
+      "Jade": 0,
+      "Amethyst": 0,
+      "Topaz": 0,
+      "Emerald": 0,
+      "Aquamarine": 0,
+      "Mussel": 0,
+      "Fossil": 0,
+      "Clay": 0,
+      "CinderShard": 0,
+      "Coal": 0
+    },
+    "CustomTileIndex": []
+  },
+  "Monster_Spawn_Settings": {
+    "Areas": [
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Tiger Slime",
+            "Settings": {
+              "HP": 300,
+              "EXP": 1,
+              "SpawnWeight": 7
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "HP": 200,
+              "EXP": 1,
+              "SpawnWeight": 1,
+              "Sprite": "Mods/mistyspring.GiEXredux/Monsters/OmniCrab",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "384",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "717",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "382",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "749",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "Lava Crab",
+            "Settings": {
+              "HP": 350,
+              "EXP": 1,
+              "SpawnWeight": 1,
+              "Sprite": "Mods/mistyspring.GiEXredux/Monsters/RadioactiveCrab",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "717",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 60
+                },
+                {
+                  "Category": "Object",
+                  "Name": "909",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "732",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "False Magma Cap",
+            "Settings": {
+              "HP": 220,
+              "EXP": 1,
+              "SpawnWeight": 3
+            }
+          },
+          {
+            "MonsterName": "Iridium Crab",
+            "Settings": {
+              "HP": 220,
+              "EXP": 1,
+              "SpawnWeight": 5
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_ForestQuarry easy config",
+        "MapName": "GiEX_ForestQuarry",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 30,
+        "IncludeTerrainTypes": [
+          "All"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 10,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.ALL",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "easy"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Ghost",
+            "Settings": {
+              "HP": 100,
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "ExtraGIMapsRedux.Additions.Monsters.PirateGhost",
+            "Settings": {
+              "HP": 200,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "242",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_PirateHook",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 20
+                },
+                {
+                  "Category": "Object",
+                  "Name": "881",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "582",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "117",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_OldBottle",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_AncientKey",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "166",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 1
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_SunkenShip monsters easy",
+        "MapName": "GiEX_SunkenShip",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 10,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "30,43/40,49"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasSeenEvent|contains=GiEX_Javi_goodEnding": "false",
+            "HasFlag": "Island_Turtle",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "easy"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Ghost",
+            "Settings": {
+              "HP": 100,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_GoldWatch",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 3
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "ExtraGIMapsRedux.Additions.Monsters.PirateGhost",
+            "Settings": {
+              "HP": 200,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "242",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_PirateHook",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 20
+                },
+                {
+                  "Category": "Object",
+                  "Name": "881",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "582",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "117",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_OldBottle",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_AncientKey",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "166",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 1
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_Sea_West monsters easy",
+        "MapName": "GiEX_Sea_West",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 10,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "8,10/22,19"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": "cavedrip"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.fishing.done",
+            "HasSeenEvent|contains=GiEX_Javi_goodEnding": "false",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "easy"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "HP": 50,
+              "Sprite": "Mods/mistyspring.GiEXredux/Monsters/NormalCrab",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "397",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "152",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "153",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "372",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "blue squid",
+            "Settings": {
+              "HP": 80,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "151",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_WaterOrb",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 3
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_Sea_West monsters easy - post 12h",
+        "MapName": "GiEX_Sea_West",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 8,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "8,10/22,19"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": "cavedrip"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.fishing.done",
+            "HasSeenEvent": "GiEX_Javi_goodEnding",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "easy"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Magma sprite",
+            "Settings": {
+              "HP": 250,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_FireEssence",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 40
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "Lava Bat",
+            "Settings": {
+              "HP": 70,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_FireEssence",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_ExtinctLair monsters - easy",
+        "MapName": "GiEX_ExtinctLair",
+        "MinimumSpawnsPerDay": 5,
+        "MaximumSpawnsPerDay": 10,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "31,40/40,59",
+          "19,51/30,58"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 3,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": "rockGolemSpawn"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.mining.done",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "easy"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Pepper Rex",
+            "Settings": {
+              "HP": 200,
+              "Sprite": "Mods/mistyspring.GiEXredux/Monsters/LavaDragon",
+              "ExtraLoot": false,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_LavaDragonEgg",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_ExtinctLair monsters - easy - dragons",
+        "MapName": "GiEX_ExtinctLair",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "31,40/40,59"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 3,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": "croak"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.mining.done",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "easy"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Tiger Slime",
+            "Settings": {
+              "HP": 500,
+              "EXP": 1,
+              "SpawnWeight": 7
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "HP": 300,
+              "EXP": 1,
+              "SpawnWeight": 1,
+              "Sprite": "Mods/mistyspring.GiEXredux/Monsters/OmniCrab",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "384",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "717",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "382",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "749",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "Lava Crab",
+            "Settings": {
+              "HP": 450,
+              "EXP": 1,
+              "SpawnWeight": 1,
+              "Sprite": "Mods/mistyspring.GiEXredux/Monsters/RadioactiveCrab",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "717",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 60
+                },
+                {
+                  "Category": "Object",
+                  "Name": "909",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "732",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "False Magma Cap",
+            "Settings": {
+              "HP": 350,
+              "EXP": 1,
+              "SpawnWeight": 3
+            }
+          },
+          {
+            "MonsterName": "Iridium Crab",
+            "Settings": {
+              "HP": 320,
+              "EXP": 1,
+              "SpawnWeight": 5
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_ForestQuarry normal config",
+        "MapName": "GiEX_ForestQuarry",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 30,
+        "IncludeTerrainTypes": [
+          "All"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 10,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.ALL",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "normal"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Ghost",
+            "Settings": {
+              "HP": 200,
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "ExtraGIMapsRedux.Additions.Monsters.PirateGhost",
+            "Settings": {
+              "HP": 400,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "242",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_PirateHook",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 20
+                },
+                {
+                  "Category": "Object",
+                  "Name": "881",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "582",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "117",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_OldBottle",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_AncientKey",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "166",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 1
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_SunkenShip monsters normal",
+        "MapName": "GiEX_SunkenShip",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 10,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "30,43/40,49"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasSeenEvent|contains=GiEX_Javi_goodEnding": "false",
+            "HasFlag": "Island_Turtle",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "normal"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Ghost",
+            "Settings": {
+              "HP": 200,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_GoldWatch",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 2
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "ExtraGIMapsRedux.Additions.Monsters.PirateGhost",
+            "Settings": {
+              "HP": 400,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "242",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_PirateHook",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 20
+                },
+                {
+                  "Category": "Object",
+                  "Name": "881",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "582",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "117",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_OldBottle",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_AncientKey",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "166",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 1
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_Sea_West monsters normal",
+        "MapName": "GiEX_Sea_West",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 15,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "8,10/22,19"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": "cavedrip"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.fishing.done",
+            "HasSeenEvent|contains=GiEX_Javi_goodEnding": "false",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "normal"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "HP": 80,
+              "Sprite": "Mods/mistyspring.GiEXredux/Monsters/NormalCrab",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "397",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "152",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "153",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "372",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "blue squid",
+            "Settings": {
+              "HP": 120,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "151",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_WaterOrb",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 3
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_Sea_West monsters normal - post 12h",
+        "MapName": "GiEX_Sea_West",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 10,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "8,10/22,19"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": "cavedrip"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasSeenEvent": "GiEX_Javi_goodEnding",
+            "HasFlag": "GiEXbundle.fishing.done",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "normal"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Magma sprite",
+            "Settings": {
+              "HP": 400,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_FireEssence",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "Lava Bat",
+            "Settings": {
+              "HP": 100,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_FireEssence",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 20
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_ExtinctLair monsters - normal",
+        "MapName": "GiEX_ExtinctLair",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 30,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "31,40/40,59",
+          "19,51/30,58"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 3,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": "rockGolemSpawn"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.mining.done",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "normal"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Pepper Rex",
+            "Settings": {
+              "HP": 300,
+              "Sprite": "Mods/mistyspring.GiEXredux/Monsters/LavaDragon",
+              "ExtraLoot": false,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_LavaDragonEgg",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_ExtinctLair monsters - normal - dragons",
+        "MapName": "GiEX_ExtinctLair",
+        "MinimumSpawnsPerDay": 7,
+        "MaximumSpawnsPerDay": 14,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "31,40/40,59"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2350,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 3,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": "croak"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.mining.done",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "normal"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Tiger Slime",
+            "Settings": {
+              "HP": 700,
+              "EXP": 1,
+              "SpawnWeight": 7
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "HP": 450,
+              "EXP": 1,
+              "SpawnWeight": 1,
+              "Sprite": "Mods/mistyspring.GiEXredux/Monsters/OmniCrab",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "384",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "717",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "382",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "749",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "Lava Crab",
+            "Settings": {
+              "HP": 550,
+              "EXP": 1,
+              "SpawnWeight": 1,
+              "Sprite": "Mods/mistyspring.GiEXredux/Monsters/RadioactiveCrab",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "717",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 60
+                },
+                {
+                  "Category": "Object",
+                  "Name": "909",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "732",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "False Magma Cap",
+            "Settings": {
+              "HP": 450,
+              "EXP": 1,
+              "SpawnWeight": 3
+            }
+          },
+          {
+            "MonsterName": "Iridium Crab",
+            "Settings": {
+              "HP": 470,
+              "EXP": 1,
+              "SpawnWeight": 5
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_ForestQuarry hard config",
+        "MapName": "GiEX_ForestQuarry",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 30,
+        "IncludeTerrainTypes": [
+          "All"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 10,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.ALL",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "hard"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Ghost",
+            "Settings": {
+              "HP": 300,
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "ExtraGIMapsRedux.Additions.Monsters.PirateGhost",
+            "Settings": {
+              "HP": 600,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "242",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_PirateHook",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 20
+                },
+                {
+                  "Category": "Object",
+                  "Name": "881",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "582",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "117",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_OldBottle",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_AncientKey",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "166",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 1
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_SunkenShip monsters hard",
+        "MapName": "GiEX_SunkenShip",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 10,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "30,43/40,49"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasSeenEvent|contains=GiEX_Javi_goodEnding": "false",
+            "HasFlag": "Island_Turtle",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "hard"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Ghost",
+            "Settings": {
+              "HP": 300,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_GoldWatch",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 1
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "ExtraGIMapsRedux.Additions.Monsters.PirateGhost",
+            "Settings": {
+              "HP": 600,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "242",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_PirateHook",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 20
+                },
+                {
+                  "Category": "Object",
+                  "Name": "881",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "582",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "117",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_OldBottle",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_AncientKey",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "166",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 1
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_Sea_West monsters hard",
+        "MapName": "GiEX_Sea_West",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 20,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "8,10/22,19"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": "cavedrip"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.fishing.done",
+            "HasSeenEvent|contains=GiEX_Javi_goodEnding": "false",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "hard"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "HP": 120,
+              "Sprite": "Mods/mistyspring.GiEXredux/Monsters/NormalCrab",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "397",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "152",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "153",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                },
+                {
+                  "Category": "Object",
+                  "Name": "372",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 30
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "blue squid",
+            "Settings": {
+              "HP": 150,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "151",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_WaterOrb",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 3
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_Sea_West monsters hard - post good ending",
+        "MapName": "GiEX_Sea_West",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 15,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "8,10/22,19"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": "cavedrip"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasSeenEvent": "GiEX_Javi_goodEnding",
+            "HasFlag": "GiEXbundle.fishing.done",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "hard"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Magma sprite",
+            "Settings": {
+              "HP": 600,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_FireEssence",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 20
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "Lava Bat",
+            "Settings": {
+              "HP": 150,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_FireEssence",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_ExtinctLair monsters - hard",
+        "MapName": "GiEX_ExtinctLair",
+        "MinimumSpawnsPerDay": 15,
+        "MaximumSpawnsPerDay": 35,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "31,40/40,59",
+          "19,51/30,58"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 3,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": "rockGolemSpawn"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.mining.done",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "hard"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Pepper Rex",
+            "Settings": {
+              "HP": 500,
+              "Sprite": "Mods/mistyspring.GiEXredux/Monsters/LavaDragon",
+              "ExtraLoot": false,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "GiEXredux_LavaDragonEgg",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "GiEX_ExtinctLair monsters - hard - dragons",
+        "MapName": "GiEX_ExtinctLair",
+        "MinimumSpawnsPerDay": 9,
+        "MaximumSpawnsPerDay": 18,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "31,40/40,59"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2350,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 3,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": "croak"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.GiEXredux.code",
+            "HasFlag": "GiEXbundle.mining.done",
+            "mistyspring.GiEXredux.code/MonsterDifficulty": "hard"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      }
+    ],
+    "CustomTileIndex": []
+  },
+  "QuarryTileIndex": [
+    556,
+    558,
+    583,
+    606,
+    607,
+    608,
+    630,
+    635,
+    636,
+    680,
+    681,
+    685
+  ],
+  "File_Conditions": {
+    "FarmTypes": [],
+    "FarmerNames": [],
+    "SaveFileNames": [],
+    "OtherMods": {
+      "mistyspring.GiEXredux.code": true
+    }
+  }
+}

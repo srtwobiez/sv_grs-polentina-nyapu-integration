@@ -1,0 +1,86 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema":{
+		"Camel":{
+		"AllowValues": "Bactrian, Mongolian, Wild, Dromedary",
+		"Default": "Bactrian"
+		},
+		"Bear": {
+		"AllowValues": "Black, Brown, Grizzly, Polar",
+		"Default": "Brown"
+		},
+		"Honey": {
+		"AllowValues": "HoneyJar, HoneyPot",
+		"Default": "HoneyJar"
+		},
+		"Goose":{
+		"AllowValues": "Embden, Greylag, Canada, Scania",
+		"Default": "Embden"
+		}
+	},
+	"Changes": [
+	//Camel
+	{
+		"Action": "EditImage",
+		"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Camel",
+		"FromFile": "assets/{{Camel}}Camel.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Camel_Icon",
+		"FromFile": "assets/EmsCamelIcon.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Camel Wool",
+		"FromFile": "assets/{{Camel}}Wool.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Yarn",
+		"FromFile": "assets/{{Camel}}Yarn.png"
+	},
+	//Bear
+	{
+		"Action": "EditImage",
+		"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Bear",
+		"FromFile": "assets/{{Bear}}Bear.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Bear_Icon",
+		"FromFile": "assets/EmsBearIcon.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Honey Jar",
+		"FromFile": "assets/{{Honey}}.png"
+	},
+	//Goose
+	{
+		"Action": "EditImage",
+		"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Goose",
+		"FromFile": "assets/{{Goose}}Goose.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Goose_Icon",
+		"FromFile": "assets/EmsGooseIcon.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Golden Goose Egg",
+		"FromFile": "assets/GoldenGooseEgg.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Goose Egg",
+		"FromFile": "assets/GooseEgg.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Goose Mayonnaise",
+		"FromFile": "assets/GooseMayo.png"
+		}
+	]
+}

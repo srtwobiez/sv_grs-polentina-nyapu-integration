@@ -1,0 +1,77 @@
+{
+	"Changes":[
+		{
+			"LogName": "Traveling Merchant",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Traveler", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/Traveler_Default"},
+		},
+		{
+			"LogName": "Traveling Merchant at Desert Festival",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Traveler", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/TravelerDesert_Default"},
+			"When": {
+				"Season": "Spring, Fall",
+				"Day": "8, 9, 10, 15, 16, 17"
+			}
+		},
+		{
+			"LogName": "Traveling Merchant at Ice Festival",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_FestivalOfIce_TravelingMerchant", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": "Portraits/TravelerIce_Default",
+			    "Dialogues": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": "{{i18n:TravelerIce}}",
+						"RandomDialogue": null
+					}
+				],
+			},
+		},
+		{
+			"LogName": "Traveling Merchant in Winter",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Traveler", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/TravelerIce_Default"},
+			"When": {
+				"Season": "winter",
+				"Day| contains=15, 16, 17": false,
+				"TravelerWinter": true,
+			}				
+		},		
+		{	"LogName": "Traveler Winter",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/TravelerIce_Default.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 194, "Y": 1413, "Width": 16, "Height": 15 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 15 },			
+			"Priority": "Late",
+			"When": {
+				"Season": "winter",
+				"TravelerWinter": true,
+				}	
+        },	
+		{	"LogName": "Traveler Winter 2",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/TravelerIce_Default.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 57, "Y": 1430, "Width": 40, "Height": 12 },
+			"FromArea": { "X": 16, "Y": 0, "Width": 40, "Height": 12 },			
+			"Priority": "Late",
+			"When": {
+				"Season": "winter",
+				"TravelerWinter": true,
+				}	
+        },			
+	],
+}

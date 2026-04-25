@@ -1,0 +1,76 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Data Friendable Mr Qi",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "AngelOfStars.Mrqifriendable_QiObelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          },
+          "Texture": "Buildings\\Replacement_MrQi_Obelisk"
+        }
+      },
+      "When": {
+        "HasMod |contains=AngelOfStars.Mrqifriendable": "true"
+      }
+    },
+    {
+      "LogName": "JJ Load Friendable Mr Qi (seasonal)",
+      "Action": "Load",
+      "Target": "Buildings/Replacement_MrQi_Obelisk",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_mrqi.png",
+      "When": {
+        "MrQiStatueStyle": "seasonal"
+      }
+    },
+    {
+      "LogName": "JJ Load Friendable Mr Qi (iridium)",
+      "Action": "Load",
+      "Target": "Buildings/Replacement_MrQi_Obelisk",
+      "FromFile": "assets/obelisk/{{RecolorPrefix}}_iridium_mrqi.png",
+      "When": {
+        "MrQiStatueStyle": "iridium"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Friendable Mr Qi Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Replacement_MrQi_Obelisk",
+      "FromFile": "assets/flowers/mrqi_{{MrQiFlowerColor}}.png",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Friendable Mr Qi Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Replacement_MrQi_Obelisk",
+      "FromFile": "assets/moss/mrqi_moss.png",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

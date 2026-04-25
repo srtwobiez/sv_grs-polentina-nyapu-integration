@@ -1,0 +1,13 @@
+﻿{
+ "Name": "[FS] Big Witch Hat Marisa Touhou",
+  "Author": "takdelife",
+  "Version": "2.0.0",
+  "Description": "Big Witch Hat Marisa Witch Hat",
+  "UniqueID": "takdelife.bigwitchhat",
+  "UpdateKeys": ["Nexus:39896"],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "2.5.0"
+  }
+}

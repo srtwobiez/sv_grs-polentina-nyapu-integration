@@ -1,0 +1,66 @@
+{
+  // ===== MAIL =====
+  "Changes": [
+    {
+      "LogName": "JJ Quality journal request mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}.QualityJournalRequest": "{{i18n:Mail.QualityJournalRequest}} %item quest {{ModId}}_QualityJournal true %%[#]{{i18n:Mail.QualityJournalRequest.Title}}"
+      }
+    },
+    {
+      "LogName": "JJ Quality journal complete mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}.QualityJournalComplete": "{{i18n:Mail.QualityJournalComplete}}[#]{{i18n:Mail.QualityJournalComplete.Title}}"
+      }
+    },
+    {
+      "LogName": "JJ Iridium journal request mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}.IridiumJournalRequest": "{{i18n:Mail.IridiumJournalRequest}} %item quest {{ModId}}_IridiumJournal true %%[#]{{i18n:Mail.IridiumJournalRequest.Title}}"
+      }
+    },
+    {
+      "LogName": "JJ Iridium journal complete mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}.IridiumJournalComplete": "{{i18n:Mail.IridiumJournalComplete}}[#]{{i18n:Mail.IridiumJournalComplete.Title}}"
+      }
+    },
+    {
+      "LogName": "JJ Pierre expansion mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}.PierreBasicSprinklersCC": "{{i18n:Mail.PierreBasicSprinklersCC}} %item id (O)599 1 %%[#]{{i18n:Mail.PierreBasicSprinklersCC.Title}}",
+        "{{ModId}}.PierreBasicSprinklers": "{{i18n:Mail.PierreBasicSprinklers}}[#]{{i18n:Mail.PierreBasicSprinklers.Title}}",
+        "{{ModId}}.PierreQualitySprinklersCC": "{{i18n:Mail.PierreQualitySprinklersCC}} %item id (O)621 1 %%[#]{{i18n:Mail.PierreQualitySprinklersCC.Title}}",
+        "{{ModId}}.PierreQualitySprinklers": "{{i18n:Mail.PierreQualitySprinklers}}[#]{{i18n:Mail.PierreQualitySprinklers.Title}}",
+        "{{ModId}}.PierreIridiumSprinklersCC": "{{i18n:Mail.PierreIridiumSprinklersCC}} %item id (O)645 1 %%[#]{{i18n:Mail.PierreIridiumSprinklersCC.Title}}",
+        "{{ModId}}.PierreIridiumSprinklers": "{{i18n:Mail.PierreIridiumSprinklers}}[#]{{i18n:Mail.PierreIridiumSprinklers.Title}}"
+      }
+    },
+    {
+      "LogName": "JJ JojaMart expansion mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}.JojaBasicSprinklersComplete": "{{i18n:Mail.JojaBasicSprinklersComplete}} %item id (O)599 1 %%[#]{{i18n:Mail.JojaBasicSprinklersComplete.Title}}",
+        "{{ModId}}.JojaBasicSprinklers": "{{i18n:Mail.JojaBasicSprinklers}}[#]{{i18n:Mail.JojaBasicSprinklers.Title}}",
+        "{{ModId}}.JojaQualitySprinklersComplete": "{{i18n:Mail.JojaQualitySprinklersComplete}} %item id (O)621 1 %%[#]{{i18n:Mail.JojaQualitySprinklersComplete.Title}}",
+        "{{ModId}}.JojaQualitySprinklers": "{{i18n:Mail.JojaQualitySprinklers}}[#]{{i18n:Mail.JojaQualitySprinklers.Title}}",
+        "{{ModId}}.JojaIridiumSprinklersComplete": "{{i18n:Mail.JojaIridiumSprinklersComplete}} %item id (O)645 1 %%[#]{{i18n:Mail.JojaIridiumSprinklersComplete.Title}}",
+        "{{ModId}}.JojaIridiumSprinklers": "{{i18n:Mail.JojaIridiumSprinklers}}[#]{{i18n:Mail.JojaIridiumSprinklers.Title}}"
+      },
+      "When": {
+        "IsCommunityCenterComplete": "false"
+      }
+    }
+  ]
+}

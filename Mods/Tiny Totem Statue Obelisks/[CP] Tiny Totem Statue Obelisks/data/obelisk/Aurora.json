@@ -1,0 +1,49 @@
+{
+  "Changes": [
+    {
+      "LogName": "JJ Data Aurora Enabled",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "Aurora Vineyard Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          },
+          "Texture": "Buildings\\Replacement_Aurora_Obelisk"
+        }
+      }
+    },
+    {
+      "LogName": "JJ Load Aurora",
+      "Action": "Load",
+      "Target": "Buildings/Replacement_Aurora_Obelisk",
+      "FromFile": "assets/obelisk/{{Season}}/{{RecolorPrefix}}_aurora.png"
+    },
+    {
+      "LogName": "JJ Decorations Aurora Flowers",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Replacement_Aurora_Obelisk",
+      "FromFile": "assets/flowers/aurora_{{AuroraVineyardFlowerColor}}.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "JJ Decorations Aurora Moss",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Replacement_Aurora_Obelisk",
+      "FromFile": "assets/moss/aurora_moss.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

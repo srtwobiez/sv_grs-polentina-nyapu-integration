@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.0" orientation="orthogonal" renderorder="right-down" width="1" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
+ <properties>
+  <property name="DayTiles" value="Buildings 2 3 1628 Buildings 3 3 1629 Back 2 2 1596 Back 3 2 1597 Back 2 1 1564 Back 3 1 1565"/>
+  <property name="LocationContext" value="Island"/>
+  <property name="NightTiles" value="Buildings 2 3 1624 Buildings 3 3 1625 Back 2 2 1592 Back 3 2 1593 Back 2 1 1560 Back 3 1 1561"/>
+  <property name="SeasonOverride" value="summer"/>
+  <property name="TreatAsOutdoors" value="T"/>
+  <property name="Warp" value="-1 5 IslandWest 59 92 -1 6 IslandWest 59 92 5 5 GiEX_ShipWreck 2 5"/>
+  <property name="forceLoadObjects" value="T"/>
+ </properties>
+ <tileset firstgid="1" name="z_springobjects" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="springobjects.png" width="384" height="624"/>
+ </tileset>
+ <layer id="5" name="Front" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJzrYWZgAAACPQCQ
+  </data>
+ </layer>
+</map>

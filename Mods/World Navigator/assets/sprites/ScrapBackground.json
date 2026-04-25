@@ -1,0 +1,9 @@
+{
+    "Sprites": {
+        "ScrapBackground": {
+            "SourceRect": "0, 0, 132, 176",
+            "FixedEdges": "7, 83, 20, 51",
+            "Scale": 4
+        }
+    }
+}

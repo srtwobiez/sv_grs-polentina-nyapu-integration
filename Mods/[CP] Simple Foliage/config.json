@@ -1,0 +1,15 @@
+{
+  "Trees": "true",
+  "MushTrees": "true",
+  "TileTrees": "true",
+  "TileBushes": "false",
+  "FruitTrees": "true",
+  "Bushes": "false",
+  "ManualRecolor": "Earthy",
+  "WinterLeaves": "true",
+  "AltBush": "false",
+  "BushFlowers": "false",
+  "VPRFallColor": "orange",
+  "StarbluePinkTrees": "false",
+  "StarblueWhiteTrees": "false"
+}

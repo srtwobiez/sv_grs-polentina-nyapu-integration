@@ -1,0 +1,253 @@
+{
+  "Name": "Flower Veil black",
+
+"FrontHat": {
+	"Flipped": false,
+	"DrawBeforeHair": false,
+	"DrawBeforePlayer": false,
+    "DisableGrayscale": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+        "ColorMaskLayers": [
+      {
+        "Name": "Flowers",
+        "Values": [
+                      [ 156, 156, 156 ],
+                      [ 236, 236, 236 ]
+        ]
+      }
+     ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -2
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 32
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      },
+      {
+        "Frame": 2,
+        "Duration": 150
+      },
+      {
+        "Frame": 3,
+        "Duration": 150
+      },
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      },
+      {
+        "Frame": 2,
+        "Duration": 150
+      },
+      {
+        "Frame": 3,
+        "Duration": 150
+      },
+	  ]
+},
+  "BackHat": {
+	"Flipped": false,
+	"DrawBeforeHair": true,
+	"DrawBeforePlayer": true,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+        "ColorMaskLayers": [
+      {
+        "Name": "Flowers",
+        "Values": [
+                      [ 156, 156, 156 ],
+                      [ 236, 236, 236 ]
+        ]
+      }
+     ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 96
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -4
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 32
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      },
+      {
+        "Frame": 2,
+        "Duration": 150
+      },
+      {
+        "Frame": 3,
+        "Duration": 150
+      },
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      },
+      {
+        "Frame": 2,
+        "Duration": 150
+      },
+      {
+        "Frame": 3,
+        "Duration": 150
+      },
+	  ]
+},
+  "RightHat": {
+	"Flipped": false,
+	"DrawBeforeHair": true,
+	"DrawBeforePlayer": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+        "ColorMaskLayers": [
+      {
+        "Name": "Flowers",
+        "Values": [
+                      [ 156, 156, 156 ],
+                      [ 236, 236, 236 ]
+        ]
+      }
+     ],
+    "StartingPosition": {
+      "X":0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 4,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 32
+  },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      },
+      {
+        "Frame": 2,
+        "Duration": 150
+      },
+      {
+        "Frame": 3,
+        "Duration": 150
+      },
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      },
+      {
+        "Frame": 2,
+        "Duration": 150
+      },
+      {
+        "Frame": 3,
+        "Duration": 150
+      },
+	  ]
+},
+  "LeftHat": {
+	"Flipped": false,
+	"DrawBeforeHair": true,
+	"DrawBeforePlayer": false,
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+        "ColorMaskLayers": [
+      {
+        "Name": "Flowers",
+        "Values": [
+                      [ 156, 156, 156 ],
+                      [ 236, 236, 236 ]
+        ]
+      }
+     ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": -4,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 32
+  },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      },
+      {
+        "Frame": 2,
+        "Duration": 150
+      },
+      {
+        "Frame": 3,
+        "Duration": 150
+      },
+      {
+        "Frame": 0,
+        "Duration": 150
+      },
+      {
+        "Frame": 1,
+        "Duration": 150
+      },
+      {
+        "Frame": 2,
+        "Duration": 150
+      },
+      {
+        "Frame": 3,
+        "Duration": 150
+      },
+	  ]
+}
+}

@@ -1,0 +1,79 @@
+{
+  // ===== SHOPS MODULE =====
+  // Pierre's magazine seed shop at the solarium (seasonal seeds, fruit trees, fertilizer)
+  "Changes": [
+    {
+      "LogName": "JJ Spa seeds shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "{{ModId}}_SolariumSeeds": {
+          "PriceModifiers": [
+            {
+              "Modification": "Multiply",
+              "Amount": 2
+            }
+          ],
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Portrait": "",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:{{PierresCatalogueKey}}}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {"Id": "{{ModId}}_Parsnip", "ItemId": "(O)472", "Condition": "SEASON Spring"},
+            {"Id": "{{ModId}}_Bean", "ItemId": "(O)473", "Condition": "SEASON Spring"},
+            {"Id": "{{ModId}}_Cauliflower", "ItemId": "(O)474", "Condition": "SEASON Spring"},
+            {"Id": "{{ModId}}_Potato", "ItemId": "(O)475", "Condition": "SEASON Spring"},
+            {"Id": "{{ModId}}_Tulip", "ItemId": "(O)427", "Condition": "SEASON Spring"},
+            {"Id": "{{ModId}}_Kale", "ItemId": "(O)477", "Condition": "SEASON Spring"},
+            {"Id": "{{ModId}}_Jazz", "ItemId": "(O)429", "Condition": "SEASON Spring"},
+            {"Id": "{{ModId}}_Garlic", "ItemId": "(O)476", "Condition": "SEASON Spring, YEAR 2 10"},
+            {"Id": "{{ModId}}_RiceShoot", "ItemId": "(O)273", "Condition": "SEASON Spring, YEAR 2 10"},
+            {"Id": "{{ModId}}_Melon", "ItemId": "(O)479", "Condition": "SEASON Summer"},
+            {"Id": "{{ModId}}_Tomato", "ItemId": "(O)480", "Condition": "SEASON Summer"},
+            {"Id": "{{ModId}}_Blueberry", "ItemId": "(O)481", "Condition": "SEASON Summer"},
+            {"Id": "{{ModId}}_Pepper", "ItemId": "(O)482", "Condition": "SEASON Summer"},
+            {"Id": "{{ModId}}_Wheat", "ItemId": "(O)483", "Condition": "SEASON Summer"},
+            {"Id": "{{ModId}}_Radish", "ItemId": "(O)484", "Condition": "SEASON Summer"},
+            {"Id": "{{ModId}}_Poppy", "ItemId": "(O)453", "Condition": "SEASON Summer"},
+            {"Id": "{{ModId}}_SummerSpangle", "ItemId": "(O)455", "Condition": "SEASON Summer"},
+            {"Id": "{{ModId}}_Hop", "ItemId": "(O)302", "Condition": "SEASON Summer"},
+            {"Id": "{{ModId}}_Corn", "ItemId": "(O)487", "Condition": "SEASON Summer"},
+            {"Id": "{{ModId}}_Sunflower", "ItemId": "(O)431", "Condition": "SEASON Summer"},
+            {"Id": "{{ModId}}_RedCabbage", "ItemId": "(O)485", "Condition": "SEASON Summer, YEAR 2 10"},
+            {"Id": "{{ModId}}_Eggplant", "ItemId": "(O)488", "Condition": "SEASON Fall"},
+            {"Id": "{{ModId}}_CornF", "ItemId": "(O)487", "Condition": "SEASON Fall"},
+            {"Id": "{{ModId}}_Pumpkin", "ItemId": "(O)490", "Condition": "SEASON Fall"},
+            {"Id": "{{ModId}}_BokChoy", "ItemId": "(O)491", "Condition": "SEASON Fall"},
+            {"Id": "{{ModId}}_Yam", "ItemId": "(O)492", "Condition": "SEASON Fall"},
+            {"Id": "{{ModId}}_Cranberry", "ItemId": "(O)493", "Condition": "SEASON Fall"},
+            {"Id": "{{ModId}}_SunflowerF", "ItemId": "(O)431", "Condition": "SEASON Fall"},
+            {"Id": "{{ModId}}_FairyRose", "ItemId": "(O)425", "Condition": "SEASON Fall"},
+            {"Id": "{{ModId}}_Amaranth", "ItemId": "(O)299", "Condition": "SEASON Fall"},
+            {"Id": "{{ModId}}_Grape", "ItemId": "(O)301", "Condition": "SEASON Fall"},
+            {"Id": "{{ModId}}_WheatF", "ItemId": "(O)483", "Condition": "SEASON Fall"},
+            {"Id": "{{ModId}}_Artichoke", "ItemId": "(O)489", "Condition": "SEASON Fall, YEAR 2 10"},
+            {"Id": "{{ModId}}_Cherry", "ItemId": "(O)628"},
+            {"Id": "{{ModId}}_Apricot", "ItemId": "(O)629"},
+            {"Id": "{{ModId}}_Orange", "ItemId": "(O)630"},
+            {"Id": "{{ModId}}_Peach", "ItemId": "(O)631"},
+            {"Id": "{{ModId}}_Pomegranate", "ItemId": "(O)633"},
+            {"Id": "{{ModId}}_Apple", "ItemId": "(O)632"},
+            {"Id": "{{ModId}}_BasicFertilizer", "ItemId": "(O)368"},
+            {"Id": "{{ModId}}_QualityFertilizer", "ItemId": "(O)369"},
+            {"Id": "{{ModId}}_BasicRetainingSoil", "ItemId": "(O)370"},
+            {"Id": "{{ModId}}_QualityRetainingSoil", "ItemId": "(O)371"},
+            {"Id": "{{ModId}}_SpeedGro", "ItemId": "(O)465"},
+            {"Id": "{{ModId}}_DeluxeSpeedGro", "ItemId": "(O)466"}
+          ]
+        }
+      }
+    }
+  ]
+}

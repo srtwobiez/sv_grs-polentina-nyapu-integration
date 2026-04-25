@@ -1,0 +1,50 @@
+{
+    "Name": "DNER All in one map fix",
+    "Author": "Xryzo11",
+    "Version": "1.5.0",
+    "Description": "This mod fixes the incorrect backgrounds on world maps from other mods.",
+    "UniqueID": "DNER.AIOmapfix",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": ["Nexus:29941"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "DaisyNiko.EarthyRecolour",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "flashshifter.immersivefarm2remastered",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "flashshifter.GrandpasFarm",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "flashshifter.GrampletonFields",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "flashshifter.FrontierFarm",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Rafseazz.RSVCP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "LemurKat.EastScarpe.CP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "DTZ.DowntownZuzuCP",
+            "IsRequired": false
+        }
+    ]
+}

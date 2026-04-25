@@ -1,0 +1,131 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates8"],
+					"Value": "Portraits/Bartender_Default Strings/DolphINaF.ExtraPortraits:Name.Bartender {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","PirateBartender_PirateClothes"],
+					"Value": "Portraits/Bartender_Default Strings/DolphINaF.ExtraPortraits:Name.Bartender {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","PirateBartender_PirateClothes_NoMore"],
+					"Value": "Portraits/Bartender_Default Strings/DolphINaF.ExtraPortraits:Name.Bartender {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates3"],
+					"Value": "Portraits/GlassesPirate_Default Strings/DolphINaF.ExtraPortraits:Name.GlassesPirate {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},					
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Pirates4"],
+					"Value": "$1",
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates4"],
+					"Value": "Portraits/Blackgull_Default Strings/DolphINaF.ExtraPortraits:Name.Blackgull {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Pirates5"],
+					"Value": "$1",
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates5"],
+					"Value": "Portraits/GrimPirate_Default Strings/DolphINaF.ExtraPortraits:Name.GrimPirate {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},			
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Pirates6"],
+					"Value": "{{i18n:closeparens}}",
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates6"],
+					"Value": "Portraits/DrunkPirate_Default Strings/DolphINaF.ExtraPortraits:Name.DrunkPirate 🐬{{i18n:openparens}}",
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates7_0"],
+					"Value": "Portraits/DartMan_Default Strings/DolphINaF.ExtraPortraits:Name.DartMan {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates7_1"],
+					"Value": "Portraits/DartMan_Default Strings/DolphINaF.ExtraPortraits:Name.DartMan {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates7_2"],
+					"Value": "Portraits/DartMan_Default Strings/DolphINaF.ExtraPortraits:Name.DartMan {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates7_3"],
+					"Value": "Portraits/DartMan_Default Strings/DolphINaF.ExtraPortraits:Name.DartMan {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Pirates7_Perfect"],
+					"Value": "$1",
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates7_Win_Perfect"],
+					"Value": "Portraits/DartMan_Default Strings/DolphINaF.ExtraPortraits:Name.DartMan {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Pirates7_Win"],
+					"Value": "$1",
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates7_Win"],
+					"Value": "Portraits/DartMan_Default Strings/DolphINaF.ExtraPortraits:Name.DartMan {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},						
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates7_WinPrize"],
+					"Value": "Portraits/DartMan_Default Strings/DolphINaF.ExtraPortraits:Name.DartMan {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates7_WinNoPrize"],
+					"Value": "Portraits/DartMan_Default Strings/DolphINaF.ExtraPortraits:Name.DartMan {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Pirates7_Lose"],
+					"Value": "Portraits/DartMan_Default Strings/DolphINaF.ExtraPortraits:Name.DartMan {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+			]
+		},			
+	],
+}

@@ -1,0 +1,129 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"Priority": "Late + 50",	
+			"TargetField": ["Gervig91.StardewAquariumCP_BeachShop","Owners","Closed"],
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","ClosedMessage"],
+					"Value": "Portraits/Gervig91.StardewAquariumCP_SnackVendor Strings/DolphINaF.ExtraPortraits:Name.TopHat",
+					"Delimiter": "🐬"
+				},				
+			]
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"Priority": "Late + 50",	
+			"TargetField": ["Gervig91.StardewAquariumCP_IceCreamShop","Owners"],
+			"Fields": {
+				"Default": {
+					"Portrait": "Portraits/Strongman_Default",
+				},
+			},
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Fields","Closed","ClosedMessage"],
+					"Value": "Portraits/Strongman_Default Strings/DolphINaF.ExtraPortraits:Name.Strongman",
+					"Delimiter": "🐬"
+				},				
+			]
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"Priority": "Late + 50",	
+			"TargetField": ["Gervig91.StardewAquariumCP_SubmarineShop","Owners","Closed"],
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","ClosedMessage"],
+					"Value": "Portraits/Gervig91.StardewAquariumCP_SubmarineVendor Strings/DolphINaF.ExtraPortraits:Name.Submariner",
+					"Delimiter": "🐬"
+				},				
+			]
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Priority": "Late + 50",		
+			"TextOperations": [	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_spring-npc.dialogue.7"],
+					"Value": "$2",
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_spring-npc.dialogue.7"],
+					"Value": "Portraits/RedCapGuy_Default {{Terrence}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_summer-npc.dialogue.8"],
+					"Value": "Portraits/Mother_Default {{Laura}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_summer-npc.dialogue.9"],
+					"Value": "{{i18n:closeparens}}$1",
+				},						
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_summer-npc.dialogue.9"],
+					"Value": "Portraits/Child_Default Strings/DolphINaF.ExtraPortraits:Name.Simon 🐬{{i18n:openparens}}",
+				},		
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_summer-npc.dialogue.10"],
+					"Value": "$2",
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_summer-npc.dialogue.10"],
+					"Value": "Portraits/RedCapGuy_Default {{Terrence}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_summer-npc.dialogue.17"],
+					"Value": "Portraits/Clown_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_summer-npc.dialogue.42"],
+					"Value": "Portraits/CraneMan_Default {{Duke}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_winter-npc.dialogue.5"],
+					"Value": "$1",
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_winter-npc.dialogue.5"],
+					"Value": "Portraits/Mother_Default {{Laura}} {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_winter-npc.dialogue.6"],
+					"Value": "{{i18n:closeparens}}",
+				},						
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Gervig91.StardewAquariumCP_winter-npc.dialogue.6"],
+					"Value": "Portraits/Child_Default Strings/DolphINaF.ExtraPortraits:Name.Simon 🐬{{i18n:openparens}}",
+				},			
+			]
+		},			
+	],
+}

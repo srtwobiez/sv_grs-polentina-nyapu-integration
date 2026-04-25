@@ -1,0 +1,712 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    /*
+"ConfigSchema": {
+        //CustomCart1 Settings
+        "Enablejibb.CustomCart1": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Section": "CustomCart1"
+        },
+        "CustomCart1.Name": {
+            "Default": "CustomCart1",
+            "Section": "CustomCart1"
+        },
+        "CustomCart1.Map": {
+            "Default": "",
+            "Section": "CustomCart1"
+        },
+        "CustomCart1Style": {
+            "AllowValues": "Cart, CartEntrance, CartEntranceNarrow, DesertEntrance, DesertEntranceNarrow",
+            "Default": "Cart",
+            "Section": "CustomCart1"
+        },
+        "CustomCart1X": {
+            "Default": 69,
+            "Section": "CustomCart1"
+        },
+        "CustomCart1Y": {
+            "Default": 15,
+            "Section": "CustomCart1"
+        },
+	},		
+    "DynamicTokens": [
+        //CustomCart1 Coordinates
+        {
+            "Name": "CustomCart1CoordinatesX",
+            "Value": "{{CustomCart1X}}",
+            "When": {
+                "Enablejibb.CustomCart1": "true"
+            }
+        },
+        {
+            "Name": "CustomCart1CoordinatesY",
+            "Value": "{{CustomCart1Y}}",
+            "When": {
+                "Enablejibb.CustomCart1": "true"
+            }
+        },
+        //CustomCart1 CartStyle
+        {
+            "Name": "CustomCart1CartStyle",
+            "Value": "{{CustomCart1Style}}",
+            "When": {
+                "Enablejibb.CustomCart1": "true"
+            }
+        },
+        {
+            "Name": "CustomCart1AssetXModifier",
+            "Value": 0,
+            "When": {
+                "CustomCart1Style": "Cart"
+            }
+        },
+        {
+            "Name": "CustomCart1AssetYModifier",
+            "Value": 0,
+            "When": {
+                "CustomCart1Style": "Cart"
+            }
+        },
+        {
+            "Name": "CustomCart1AssetXModifier",
+            "Value": 2,
+            "When": {
+                "CustomCart1Style": "CartEntrance"
+            }
+        },
+        {
+            "Name": "CustomCart1AssetYModifier",
+            "Value": 1,
+            "When": {
+                "CustomCart1Style": "CartEntrance"
+            }
+        },
+        {
+            "Name": "CustomCart1AssetXModifier",
+            "Value": 0,
+            "When": {
+                "CustomCart1Style": "CartEntranceNarrow"
+            }
+        },
+        {
+            "Name": "CustomCart1AssetYModifier",
+            "Value": 1,
+            "When": {
+                "CustomCart1Style": "CartEntranceNarrow"
+            }
+        },
+        {
+            "Name": "CustomCart1AssetXModifier",
+            "Value": 2,
+            "When": {
+                "CustomCart1Style": "DesertEntrance"
+            }
+        },
+        {
+            "Name": "CustomCart1AssetYModifier",
+            "Value": 2,
+            "When": {
+                "CustomCart1Style": "DesertEntrance"
+            }
+        },
+        {
+            "Name": "CustomCart1AssetXModifier",
+            "Value": 0,
+            "When": {
+                "CustomCart1Style": "DesertEntranceNarrow"
+            }
+        },
+        {
+            "Name": "CustomCart1AssetYModifier",
+            "Value": 2,
+            "When": {
+                "CustomCart1Style": "DesertEntranceNarrow"
+            }
+        },
+        {
+            "Name": "CustomCart1XTilePosition",
+            "Value": "{{Query:{{CustomCart1CoordinatesX}}}}",
+            "When": {
+                "CustomCart1Style": "Cart"
+            }
+        },
+        {
+            "Name": "CustomCart1YTilePosition",
+            "Value": "{{Query:{{CustomCart1CoordinatesY}}+1}}",
+            "When": {
+                "CustomCart1Style": "Cart"
+            }
+        },
+        {
+            "Name": "CustomCart1XTilePosition",
+            "Value": "{{Query:{{CustomCart1CoordinatesX}}+1}}",
+            "When": {
+                "CustomCart1Style": "CartEntrance"
+            }
+        },
+        {
+            "Name": "CustomCart1YTilePosition",
+            "Value": "{{Query:{{CustomCart1CoordinatesY}}+2}}",
+            "When": {
+                "CustomCart1Style": "CartEntrance"
+            }
+        },
+        {
+            "Name": "CustomCart1XTilePosition",
+            "Value": "{{Query:{{CustomCart1CoordinatesX}}}}",
+            "When": {
+                "CustomCart1Style": "CartEntranceNarrow"
+            }
+        },
+        {
+            "Name": "CustomCart1YTilePosition",
+            "Value": "{{Query:{{CustomCart1CoordinatesY}}+2}}",
+            "When": {
+                "CustomCart1Style": "CartEntranceNarrow"
+            }
+        },
+        {
+            "Name": "CustomCart1XTilePosition",
+            "Value": "{{Query:{{CustomCart1CoordinatesX}}+1}}",
+            "When": {
+                "CustomCart1Style": "DesertEntrance"
+            }
+        },
+        {
+            "Name": "CustomCart1YTilePosition",
+            "Value": "{{Query:{{CustomCart1CoordinatesY}}+3}}",
+            "When": {
+                "CustomCart1Style": "DesertEntrance"
+            }
+        },
+        {
+            "Name": "CustomCart1XTilePosition",
+            "Value": "{{Query:{{CustomCart1CoordinatesX}}}}",
+            "When": {
+                "CustomCart1Style": "DesertEntranceNarrow"
+            }
+        },
+        {
+            "Name": "CustomCart1YTilePosition",
+            "Value": "{{Query:{{CustomCart1CoordinatesY}}+3}}",
+            "When": {
+                "CustomCart1Style": "DesertEntranceNarrow"
+            }
+        },
+	],
+	*/
+    "Changes": [
+        //Add minecarts
+        //CustomCart1 Destination
+        {
+            "LogName": "jibb.CustomCart1.Destination",
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": ["Default", "Destinations"],
+            "Entries": {
+                "jibb.CustomCart1": {
+                    "Id": "jibb.CustomCart1",
+                    "TargetLocation": "{{CustomCart1.Map}}",
+                    "DisplayName": "{{CustomCart1.Name}}",
+                    "Price": "{{PriceToRide}}",
+                    "TargetTile": {
+                        "X": "{{Query: {{CustomCart1XTilePosition}}}}",
+                        "Y": "{{Query: {{CustomCart1YTilePosition}}+1}}"
+                    },
+                    "TargetDirection": "down"
+                }
+            },
+            "When": {"Enablejibb.CustomCart1": true}
+        },
+        //CustomCart1 map edits
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{CustomCart1.Map}}",
+            "FromFile": "assets/{{CustomCart1CartStyle}}.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": "{{Query:1+{{CustomCart1AssetXModifier}}}}",
+                "Height": "{{Query:2+{{CustomCart1AssetYModifier}}}}"
+            },
+            "ToArea": {
+                "X": "{{Query:{{CustomCart1CoordinatesX}}}}",
+                "Y": "{{Query:{{CustomCart1CoordinatesY}}}}",
+                "Width": "{{Query:1+{{CustomCart1AssetXModifier}}}}",
+                "Height": "{{Query:2+{{CustomCart1AssetYModifier}}}}"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": "{{Query:{{CustomCart1XTilePosition}}}}",
+                        "Y": "{{Query:{{CustomCart1YTilePosition}}}}"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default jibb.CustomCart1"
+                    }
+                }
+            ],
+            "PatchMode": "Overlay",
+            "Priority": "Late",
+            "When": {"Enablejibb.CustomCart1": true}
+        },
+        //CustomCart1 lighting
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{CustomCart1.Map}}",
+			"Priority": "Late",
+            "TextOperations": [
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "DayTiles"],
+                    "Value": "Buildings {{Query:{{CustomCart1CoordinatesX}}+2}} {{Query:{{CustomCart1CoordinatesY}}+1}} 510 Buildings2 {{Query:{{CustomCart1CoordinatesX}}+2}} {{Query:{{CustomCart1CoordinatesY}}+1}} 510",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "Light"],
+                    "Value": "{{Query:{{CustomCart1CoordinatesX}}+2}} {{Query:{{CustomCart1CoordinatesY}}+1}} 4",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "NightTiles"],
+                    "Value": "Buildings {{Query:{{CustomCart1CoordinatesX}}+2}} {{Query:{{CustomCart1CoordinatesY}}+1}} 507 Buildings2 {{Query:{{CustomCart1CoordinatesX}}+2}} {{Query:{{CustomCart1CoordinatesY}}+1}} 507",
+                    "Delimiter": " " 
+                },
+            ],
+            "When": {
+                "Enablejibb.CustomCart1": true,
+                "CustomCart1CartStyle": "CartEntrance",
+
+            },
+        },
+        //CustomCart2 Destination
+        {
+            "LogName": "jibb.CustomCart2.Destination",
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": ["Default", "Destinations"],
+            "Entries": {
+                "jibb.CustomCart2": {
+                    "Id": "jibb.CustomCart2",
+                    "TargetLocation": "{{CustomCart2.Map}}",
+                    "DisplayName": "{{CustomCart2.Name}}",
+                    "Price": "{{PriceToRide}}",
+                    "TargetTile": {
+                        "X": "{{Query: {{CustomCart2XTilePosition}}}}",
+                        "Y": "{{Query: {{CustomCart2YTilePosition}}+1}}"
+                    },
+                    "TargetDirection": "down"
+                }
+            },
+            "When": {"Enablejibb.CustomCart2": true}
+        },
+        //CustomCart2 map edits
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{CustomCart2.Map}}",
+            "FromFile": "assets/{{CustomCart2CartStyle}}.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": "{{Query:1+{{CustomCart2AssetXModifier}}}}",
+                "Height": "{{Query:2+{{CustomCart2AssetYModifier}}}}"
+            },
+            "ToArea": {
+                "X": "{{Query:{{CustomCart2CoordinatesX}}}}",
+                "Y": "{{Query:{{CustomCart2CoordinatesY}}}}",
+                "Width": "{{Query:1+{{CustomCart2AssetXModifier}}}}",
+                "Height": "{{Query:2+{{CustomCart2AssetYModifier}}}}"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": "{{Query:{{CustomCart2XTilePosition}}}}",
+                        "Y": "{{Query:{{CustomCart2YTilePosition}}}}"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default jibb.CustomCart2"
+                    }
+                }
+            ],
+            "PatchMode": "Overlay",
+            "Priority": "Late",
+            "When": {"Enablejibb.CustomCart2": true}
+        },
+        //CustomCart2 lighting
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{CustomCart2.Map}}",
+			"Priority": "Late",
+            "TextOperations": [
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "DayTiles"],
+                    "Value": "Buildings {{Query:{{CustomCart2CoordinatesX}}+2}} {{Query:{{CustomCart2CoordinatesY}}+1}} 510 Buildings2 {{Query:{{CustomCart2CoordinatesX}}+2}} {{Query:{{CustomCart2CoordinatesY}}+1}} 510",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "Light"],
+                    "Value": "{{Query:{{CustomCart2CoordinatesX}}+2}} {{Query:{{CustomCart2CoordinatesY}}+1}} 4",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "NightTiles"],
+                    "Value": "Buildings {{Query:{{CustomCart2CoordinatesX}}+2}} {{Query:{{CustomCart2CoordinatesY}}+1}} 507 Buildings2 {{Query:{{CustomCart2CoordinatesX}}+2}} {{Query:{{CustomCart2CoordinatesY}}+1}} 507",
+                    "Delimiter": " " 
+                },
+            ],
+            "When": {
+                "Enablejibb.CustomCart2": true,
+                "CustomCart2CartStyle": "CartEntrance",
+
+            },
+        },
+        //CustomCart3 Destination
+        {
+            "LogName": "jibb.CustomCart3.Destination",
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": ["Default", "Destinations"],
+            "Entries": {
+                "jibb.CustomCart3": {
+                    "Id": "jibb.CustomCart3",
+                    "TargetLocation": "{{CustomCart3.Map}}",
+                    "DisplayName": "{{CustomCart3.Name}}",
+                    "Price": "{{PriceToRide}}",
+                    "TargetTile": {
+                        "X": "{{Query: {{CustomCart3XTilePosition}}}}",
+                        "Y": "{{Query: {{CustomCart3YTilePosition}}+1}}"
+                    },
+                    "TargetDirection": "down"
+                }
+            },
+            "When": {"Enablejibb.CustomCart3": true}
+        },
+        //CustomCart3 map edits
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{CustomCart3.Map}}",
+            "FromFile": "assets/{{CustomCart3CartStyle}}.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": "{{Query:1+{{CustomCart3AssetXModifier}}}}",
+                "Height": "{{Query:2+{{CustomCart3AssetYModifier}}}}"
+            },
+            "ToArea": {
+                "X": "{{Query:{{CustomCart3CoordinatesX}}}}",
+                "Y": "{{Query:{{CustomCart3CoordinatesY}}}}",
+                "Width": "{{Query:1+{{CustomCart3AssetXModifier}}}}",
+                "Height": "{{Query:2+{{CustomCart3AssetYModifier}}}}"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": "{{Query:{{CustomCart3XTilePosition}}}}",
+                        "Y": "{{Query:{{CustomCart3YTilePosition}}}}"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default jibb.CustomCart3"
+                    }
+                }
+            ],
+            "PatchMode": "Overlay",
+            "Priority": "Late",
+            "When": {"Enablejibb.CustomCart3": true}
+        },
+        //CustomCart3 lighting
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{CustomCart3.Map}}",
+			"Priority": "Late",
+            "TextOperations": [
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "DayTiles"],
+                    "Value": "Buildings {{Query:{{CustomCart3CoordinatesX}}+2}} {{Query:{{CustomCart3CoordinatesY}}+1}} 510 Buildings2 {{Query:{{CustomCart3CoordinatesX}}+2}} {{Query:{{CustomCart3CoordinatesY}}+1}} 510",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "Light"],
+                    "Value": "{{Query:{{CustomCart3CoordinatesX}}+2}} {{Query:{{CustomCart3CoordinatesY}}+1}} 4",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "NightTiles"],
+                    "Value": "Buildings {{Query:{{CustomCart3CoordinatesX}}+2}} {{Query:{{CustomCart3CoordinatesY}}+1}} 507 Buildings2 {{Query:{{CustomCart3CoordinatesX}}+2}} {{Query:{{CustomCart3CoordinatesY}}+1}} 507",
+                    "Delimiter": " " 
+                },
+            ],
+            "When": {
+                "Enablejibb.CustomCart3": true,
+                "CustomCart3CartStyle": "CartEntrance",
+
+            },
+        },
+        //CustomCart4 Destination
+        {
+            "LogName": "jibb.CustomCart4.Destination",
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": ["Default", "Destinations"],
+            "Entries": {
+                "jibb.CustomCart4": {
+                    "Id": "jibb.CustomCart4",
+                    "TargetLocation": "{{CustomCart4.Map}}",
+                    "DisplayName": "{{CustomCart4.Name}}",
+                    "Price": "{{PriceToRide}}",
+                    "TargetTile": {
+                        "X": "{{Query: {{CustomCart4XTilePosition}}}}",
+                        "Y": "{{Query: {{CustomCart4YTilePosition}}+1}}"
+                    },
+                    "TargetDirection": "down"
+                }
+            },
+            "When": {"Enablejibb.CustomCart4": true}
+        },
+        //CustomCart4 map edits
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{CustomCart4.Map}}",
+            "FromFile": "assets/{{CustomCart4CartStyle}}.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": "{{Query:1+{{CustomCart4AssetXModifier}}}}",
+                "Height": "{{Query:2+{{CustomCart4AssetYModifier}}}}"
+            },
+            "ToArea": {
+                "X": "{{Query:{{CustomCart4CoordinatesX}}}}",
+                "Y": "{{Query:{{CustomCart4CoordinatesY}}}}",
+                "Width": "{{Query:1+{{CustomCart4AssetXModifier}}}}",
+                "Height": "{{Query:2+{{CustomCart4AssetYModifier}}}}"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": "{{Query:{{CustomCart4XTilePosition}}}}",
+                        "Y": "{{Query:{{CustomCart4YTilePosition}}}}"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default jibb.CustomCart4"
+                    }
+                }
+            ],
+            "PatchMode": "Overlay",
+            "Priority": "Late",
+            "When": {"Enablejibb.CustomCart4": true}
+        },
+        //CustomCart4 lighting
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{CustomCart4.Map}}",
+			"Priority": "Late",
+            "TextOperations": [
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "DayTiles"],
+                    "Value": "Buildings {{Query:{{CustomCart4CoordinatesX}}+2}} {{Query:{{CustomCart4CoordinatesY}}+1}} 510 Buildings2 {{Query:{{CustomCart4CoordinatesX}}+2}} {{Query:{{CustomCart4CoordinatesY}}+1}} 510",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "Light"],
+                    "Value": "{{Query:{{CustomCart4CoordinatesX}}+2}} {{Query:{{CustomCart4CoordinatesY}}+1}} 4",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "NightTiles"],
+                    "Value": "Buildings {{Query:{{CustomCart4CoordinatesX}}+2}} {{Query:{{CustomCart4CoordinatesY}}+1}} 507 Buildings2 {{Query:{{CustomCart4CoordinatesX}}+2}} {{Query:{{CustomCart4CoordinatesY}}+1}} 507",
+                    "Delimiter": " " 
+                },
+            ],
+            "When": {
+                "Enablejibb.CustomCart4": true,
+                "CustomCart4CartStyle": "CartEntrance",
+
+            },
+        },
+        //CustomCart5 Destination
+        {
+            "LogName": "jibb.CustomCart5.Destination",
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": ["Default", "Destinations"],
+            "Entries": {
+                "jibb.CustomCart5": {
+                    "Id": "jibb.CustomCart5",
+                    "TargetLocation": "{{CustomCart5.Map}}",
+                    "DisplayName": "{{CustomCart5.Name}}",
+                    "Price": "{{PriceToRide}}",
+                    "TargetTile": {
+                        "X": "{{Query: {{CustomCart5XTilePosition}}}}",
+                        "Y": "{{Query: {{CustomCart5YTilePosition}}+1}}"
+                    },
+                    "TargetDirection": "down"
+                }
+            },
+            "When": {"Enablejibb.CustomCart5": true}
+        },
+        //CustomCart5 map edits
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{CustomCart5.Map}}",
+            "FromFile": "assets/{{CustomCart5CartStyle}}.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": "{{Query:1+{{CustomCart5AssetXModifier}}}}",
+                "Height": "{{Query:2+{{CustomCart5AssetYModifier}}}}"
+            },
+            "ToArea": {
+                "X": "{{Query:{{CustomCart5CoordinatesX}}}}",
+                "Y": "{{Query:{{CustomCart5CoordinatesY}}}}",
+                "Width": "{{Query:1+{{CustomCart5AssetXModifier}}}}",
+                "Height": "{{Query:2+{{CustomCart5AssetYModifier}}}}"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": "{{Query:{{CustomCart5XTilePosition}}}}",
+                        "Y": "{{Query:{{CustomCart5YTilePosition}}}}"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default jibb.CustomCart5"
+                    }
+                }
+            ],
+            "PatchMode": "Overlay",
+            "Priority": "Late",
+            "When": {"Enablejibb.CustomCart5": true}
+        },
+        //CustomCart5 lighting
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{CustomCart5.Map}}",
+			"Priority": "Late",
+            "TextOperations": [
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "DayTiles"],
+                    "Value": "Buildings {{Query:{{CustomCart5CoordinatesX}}+2}} {{Query:{{CustomCart5CoordinatesY}}+1}} 510 Buildings2 {{Query:{{CustomCart5CoordinatesX}}+2}} {{Query:{{CustomCart5CoordinatesY}}+1}} 510",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "Light"],
+                    "Value": "{{Query:{{CustomCart5CoordinatesX}}+2}} {{Query:{{CustomCart5CoordinatesY}}+1}} 4",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "NightTiles"],
+                    "Value": "Buildings {{Query:{{CustomCart5CoordinatesX}}+2}} {{Query:{{CustomCart5CoordinatesY}}+1}} 507 Buildings2 {{Query:{{CustomCart5CoordinatesX}}+2}} {{Query:{{CustomCart5CoordinatesY}}+1}} 507",
+                    "Delimiter": " " 
+                },
+            ],
+            "When": {
+                "Enablejibb.CustomCart5": true,
+                "CustomCart5CartStyle": "CartEntrance",
+
+            },
+        },
+        //CustomCart6 Destination
+        {
+            "LogName": "jibb.CustomCart6.Destination",
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": ["Default", "Destinations"],
+            "Entries": {
+                "jibb.CustomCart6": {
+                    "Id": "jibb.CustomCart6",
+                    "TargetLocation": "{{CustomCart6.Map}}",
+                    "DisplayName": "{{CustomCart6.Name}}",
+                    "Price": "{{PriceToRide}}",
+                    "TargetTile": {
+                        "X": "{{Query: {{CustomCart6XTilePosition}}}}",
+                        "Y": "{{Query: {{CustomCart6YTilePosition}}+1}}"
+                    },
+                    "TargetDirection": "down"
+                }
+            },
+            "When": {"Enablejibb.CustomCart6": true}
+        },
+        //CustomCart6 map edits
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{CustomCart6.Map}}",
+            "FromFile": "assets/{{CustomCart6CartStyle}}.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": "{{Query:1+{{CustomCart6AssetXModifier}}}}",
+                "Height": "{{Query:2+{{CustomCart6AssetYModifier}}}}"
+            },
+            "ToArea": {
+                "X": "{{Query:{{CustomCart6CoordinatesX}}}}",
+                "Y": "{{Query:{{CustomCart6CoordinatesY}}}}",
+                "Width": "{{Query:1+{{CustomCart6AssetXModifier}}}}",
+                "Height": "{{Query:2+{{CustomCart6AssetYModifier}}}}"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": "{{Query:{{CustomCart6XTilePosition}}}}",
+                        "Y": "{{Query:{{CustomCart6YTilePosition}}}}"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default jibb.CustomCart6"
+                    }
+                }
+            ],
+            "PatchMode": "Overlay",
+            "Priority": "Late",
+            "When": {"Enablejibb.CustomCart6": true}
+        },
+        //CustomCart6 lighting
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{CustomCart6.Map}}",
+			"Priority": "Late",
+            "TextOperations": [
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "DayTiles"],
+                    "Value": "Buildings {{Query:{{CustomCart6CoordinatesX}}+2}} {{Query:{{CustomCart6CoordinatesY}}+1}} 510 Buildings2 {{Query:{{CustomCart6CoordinatesX}}+2}} {{Query:{{CustomCart6CoordinatesY}}+1}} 510",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "Light"],
+                    "Value": "{{Query:{{CustomCart6CoordinatesX}}+2}} {{Query:{{CustomCart6CoordinatesY}}+1}} 4",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "NightTiles"],
+                    "Value": "Buildings {{Query:{{CustomCart6CoordinatesX}}+2}} {{Query:{{CustomCart6CoordinatesY}}+1}} 507 Buildings2 {{Query:{{CustomCart6CoordinatesX}}+2}} {{Query:{{CustomCart6CoordinatesY}}+1}} 507",
+                    "Delimiter": " " 
+                },
+            ],
+            "When": {
+                "Enablejibb.CustomCart6": true,
+                "CustomCart6CartStyle": "CartEntrance",
+
+            },
+        },
+    ]
+}

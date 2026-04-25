@@ -1,0 +1,20 @@
+{
+	"Changes": [
+			{
+				"Action": "EditImage",
+                "PatchMode": "Replace",
+		"Target": "Maps/desert_festival_tilesheet",
+		"FromFile": "assets/{{MapColour}}FestivalTent.png",
+			"ToArea": { "X": 0, "Y": 426, "Width": 208, "Height": 86 },
+			"When":{ "DesertTraderCamel":"true"}
+	},
+	{
+		"Action": "EditImage",
+                "PatchMode": "Replace",
+		"Target": "LooseSprites/temporary_sprites_1",
+		"FromFile": "assets/{{MapColour}}DesertCamel.png",
+			"ToArea": { "X": 0, "Y": 513, "Width": 338, "Height": 127 },
+			"When":{ "DesertTraderCamel":"true"}
+		}
+	]
+}

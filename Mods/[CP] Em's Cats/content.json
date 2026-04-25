@@ -1,0 +1,96 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema":{
+        "OrangeCat":{
+        "AllowValues": "Tortie, Naked, Black, Blonde, White, Calico, Long, Tabby, ColorPoint, Grey, Orange, Purple, Tuxedo, Harlequin, NakedGrey",
+        "Default": "Orange",
+      },
+      "GreyCat":{
+        "AllowValues": "Tortie, Naked, Black, Blonde, White, Calico, Long, Tabby, ColorPoint, Grey, Orange, Purple, Tuxedo, Harlequin, NakedGrey",
+        "Default": "Grey",
+      },
+      "BlondeCat":{
+        "AllowValues": "Tortie, Naked, Black, Blonde, White, Calico, Long, Tabby, ColorPoint, Grey, Orange, Purple, Tuxedo, Harlequin, NakedGrey",
+        "Default": "Blonde",
+      },
+      "WhiteCat":{
+        "AllowValues": "Tortie, Naked, Black, Blonde, White, Calico, Long, Tabby, ColorPoint, Grey, Orange, Purple, Tuxedo, Harlequin, NakedGrey",
+        "Default": "White",
+      },
+      "BlackCat":{
+        "AllowValues": "Tortie, Naked, Black, Blonde, White, Calico, Long, Tabby, ColorPoint, Grey, Orange, Purple, Tuxedo, Harlequin, NakedGrey",
+        "Default": "Black",
+      },
+      "PurpleCat":{
+        "AllowValues": "Tortie, Naked, Black, Blonde, White, Calico, Long, Tabby, ColorPoint, Grey, Orange, Purple, Tuxedo, Harlequin, NakedGrey",
+        "Default": "Purple",
+            }
+        },
+   "Changes": [
+	{
+         "Action": "EditImage",
+         "Target": "Animals/cat",
+         "FromFile": "assets/{{OrangeCat}}.png",
+	},
+	{
+         "Action": "EditImage",
+         "Target": "Animals/cat1",
+         "FromFile": "assets/{{GreyCat}}.png",
+	},
+	{
+         "Action": "EditImage",
+         "Target": "Animals/cat2",
+         "FromFile": "assets/{{BlondeCat}}.png",
+	},
+	{
+         "Action": "EditImage",
+         "Target": "Animals/cat3",
+         "FromFile": "assets/{{WhiteCat}}.png",
+	},
+	{
+         "Action": "EditImage",
+         "Target": "Animals/cat4",
+         "FromFile": "assets/{{BlackCat}}.png",
+	},
+	{
+         "Action": "EditImage",
+         "Target": "Animals/cat5",
+         "FromFile": "assets/{{PurpleCat}}.png",
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/{{OrangeCat}}Icon.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+		"ToArea": {"X": 160, "Y": 208,"Width": 16, "Height": 16}
+		},
+		{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/{{GreyCat}}Icon.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+		"ToArea": {"X": 176, "Y": 208,"Width": 16, "Height": 16}
+		},
+		{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/{{BlondeCat}}Icon.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+		"ToArea": {"X": 192, "Y": 208,"Width": 16, "Height": 16}
+		},
+		{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors_1_6",
+		"FromFile": "assets/{{BlackCat}}Icon_1.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 13 },
+		"ToArea": {"X": 256, "Y": 368,"Width": 16, "Height": 13}
+		},
+		{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors_1_6",
+		"FromFile": "assets/{{WhiteCat}}Icon_1.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 13 },
+		"ToArea": {"X": 256, "Y": 384,"Width": 16, "Height": 13}
+      },
+   ]
+}

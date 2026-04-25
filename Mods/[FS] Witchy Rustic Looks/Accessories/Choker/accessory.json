@@ -1,0 +1,80 @@
+{
+  "Name": "Choker",
+
+	// FRONT
+  "FrontAccessory": {
+    "ColorMasks": [
+      [ 255, 255, 255 ],
+      [ 222, 222, 222 ],
+      [ 199, 199, 199 ],
+      [ 168, 168, 168 ],
+      [ 133, 133, 133 ],
+      [ 189, 189, 189 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    }
+  },
+
+	// RIGHT
+  "RightAccessory": {
+    "DrawAfterPlayer": true,
+    "DrawBeforeHair": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": -0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    }
+  },
+
+	// LEFT
+  "LeftAccessory": {
+    "DrawAfterPlayer": true,
+    "DrawBeforeHair": true,
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    }
+  },
+
+	// BACK
+  "BackAccessory": {
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": -0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    }
+  }
+}

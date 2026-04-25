@@ -1,0 +1,13 @@
+{
+   "Name": "Luny's Salon",
+   "Author": "Luny",
+   "Version": "1.3",
+   "Description": "Adds various custom hairstyles to FS",
+   "UpdateKeys": ["24746"],
+   "UniqueID": "Luny.Salon",
+	"ContentPackFor":
+	{
+		"UniqueID": "PeacefulEnd.FashionSense",
+		"MinimumVersion": "5.0.0"
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Data/IncomingPhoneCalls",
+			"Priority": "Late + 50",
+			"TargetField": ["5"],
+			"Entries": {
+				"FromPortrait": "Portraits/DefaultMouse",
+				"FromDisplayName": "[LocalizedText Strings/DolphINaF.ExtraPortraits:Name.HatMouse]",
+				"SimpleDialogueSplitBy": null,
+			},
+			"When": {"HasMod |contains=ichortower.HatMouseLacey": false}
+		},			
+		{
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Priority": "Late + 50",
+			"Entries": {
+				"Phone_Ring_HatMouse": "{{i18n:Phone.HatMouse}}",
+			},		
+			"When": {"HasMod |contains=ichortower.HatMouseLacey": false}		
+		},			
+	],
+}

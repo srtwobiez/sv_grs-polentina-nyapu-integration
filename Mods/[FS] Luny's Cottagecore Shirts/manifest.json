@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Luny's Cottagecore Shirts",
+  "Author": "Luny",
+  "Version": "1.0",
+  "Description": "Adds new shirt options to Fashion Sense",
+  "UniqueID": "Luny.CottagecoreShirts",
+  "UpdateKeys": ["Nexus:34104"],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+	"MinimumVersion": "6.6.0"
+  }
+}

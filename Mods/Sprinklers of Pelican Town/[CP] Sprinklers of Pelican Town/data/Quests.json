@@ -1,0 +1,27 @@
+{
+  // ===== QUESTS =====
+  "Changes": [
+    {
+      "LogName": "JJ Quality sprinkler research journal",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "{{ModId}}_QualityJournal": "ItemDelivery/{{i18n:Journal.QualitySprinklerResearch.Title}}/{{i18n:Journal.QualitySprinklerResearch.Description}}/{{i18n:Journal.QualitySprinklerResearch.Objective}}/Clint (O)338 1/-1/150/-1/false/{{i18n:Journal.QualitySprinklerResearch.Reaction}}"
+      },
+      "When": {
+        "ImmersiveProgression": "true"
+      }
+    },
+    {
+      "LogName": "JJ Iridium sprinkler research journal",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "{{ModId}}_IridiumJournal": "ItemDelivery/{{i18n:Journal.IridiumSprinklerResearch.Title}}/{{i18n:Journal.IridiumSprinklerResearch.Description}}/{{i18n:Journal.IridiumSprinklerResearch.Objective}}/Clint (O)787 1/-1/1500/-1/false/{{i18n:Journal.IridiumSprinklerResearch.Reaction}}"
+      },
+      "When": {
+        "ImmersiveProgression": "true"
+      }
+    }
+  ]
+}

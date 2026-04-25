@@ -1,0 +1,427 @@
+{
+    "Changes": [
+        /*{
+            "Action": "EditData",
+            "Target": "Strings\\Objects",
+            "Entries": {
+                "{{ModPrefix}}VoidDust_Name": "{{i18n: VoidDust.Name}}",
+                "{{ModPrefix}}VoidDust_Description": "{{i18n: VoidDust.Description}}",
+                "{{ModPrefix}}PurifyDust_Name": "{{i18n: PurifyDust.Name}}",
+                "{{ModPrefix}}PurifyDust_Description": "{{i18n: PurifyDust.Description}}",
+                "{{ModPrefix}}GoldDust_Name": "{{i18n: GoldDust.Name}}",
+                "{{ModPrefix}}GoldDust_Description": "{{i18n: GoldDust.Description}}",
+                "{{ModPrefix}}HugeBanana_Name": "{{i18n: HugeBanana.Name}}",
+                //"{{ModPrefix}}HugeBanana_Description": "{{i18n: HugeFruit.Description}}",
+                "{{ModPrefix}}HugeCoconut_Name": "{{i18n: HugeCoconut.Name}}",
+                //"{{ModPrefix}}HugeCoconut_Description": "{{i18n: HugeFruit.Description}}",
+                "{{ModPrefix}}HugeMango_Name": "{{i18n: HugeMango.Name}}",
+                //"{{ModPrefix}}HugeMango_Description": "{{i18n: HugeFruit.Description}}",
+                "{{ModPrefix}}HugeFruit_Description": "{{i18n: HugeFruit.Description}}",
+                "{{ModPrefix}}StarDropSeeds_Name": "{{i18n: StarDropSeeds.Name}}",
+                "{{ModPrefix}}StarDropSeeds_Description": "{{i18n: StarDropSeeds.Description}}",
+                "{{ModPrefix}}FireEssence_Name": "{{i18n: FireEssence.Name}}",
+                "{{ModPrefix}}FireEssence_Description": "{{i18n: FireEssence.Description}}",
+                "{{ModPrefix}}Milk_B_Name": "{{i18n: Milk_B.Name}}",
+                "{{ModPrefix}}LargeMilk_B_Name": "{{i18n: LargeMilk_B.Name}}",
+                "{{ModPrefix}}Milk_C_Name": "{{i18n: Milk_C.Name}}",
+                "{{ModPrefix}}LargeMilk_C_Name": "{{i18n: LargeMilk_C.Name}}",
+                "{{ModPrefix}}Milk_M_Name": "{{i18n: Milk_M.Name}}",
+                "{{ModPrefix}}LargeMilk_M_Name": "{{i18n: LargeMilk_M.Name}}",
+                "{{ModPrefix}}VoidShard_Name": "{{i18n: VoidShard.Name}}",
+                "{{ModPrefix}}VoidShard_Description": "{{i18n: VoidShard.Description}}",
+                "{{ModPrefix}}LumiShard_Name": "{{i18n: LumiShard.Name}}",
+                "{{ModPrefix}}LumiShard_Description": "{{i18n: LumiShard.Description}}",
+                "{{ModPrefix}}LumiBait_Name": "{{i18n: LumiBait.Name}}",
+                "{{ModPrefix}}LumiBait_Description": "{{i18n: LumiBait.Description}}",
+                "{{ModPrefix}}Milk_G_Name": "{{i18n: Milk_G.Name}}",
+                "{{ModPrefix}}Milk_G_Description": "{{i18n: Milk_G.Description}}",
+                "{{ModPrefix}}GoatMilk_G_Name": "{{i18n: GoatMilk_G.Name}}",
+                "{{ModPrefix}}GoatMilk_G_Description": "{{i18n: GoatMilk_G.Description}}",
+                "{{ModPrefix}}LargeMilk_G_Name": "{{i18n: LargeMilk_G.Name}}",
+                "{{ModPrefix}}LargeMilk_G_Description": "{{i18n: LargeMilk_G.Description}}",
+                "{{ModPrefix}}LargeGoatMilk_G_Name": "{{i18n: LargeGoatMilk_G.Name}}",
+                "{{ModPrefix}}LargeGoatMilk_G_Description": "{{i18n: LargeGoatMilk_G.Description}}",
+                "{{ModPrefix}}Cheese_G_Name": "{{i18n: Cheese_G.Name}}",
+                "{{ModPrefix}}Cheese_G_Description": "{{i18n: Cheese_G.Description}}",
+                "{{ModPrefix}}GoatCheese_G_Name": "{{i18n: GoatCheese_G.Name}}",
+                "{{ModPrefix}}GoatCheese_G_Description": "{{i18n: GoatCheese_G.Description}}",
+                "{{ModPrefix}}Wool_G_Name": "{{i18n: Wool_G.Name}}",
+                "{{ModPrefix}}Wool_G_Description": "{{i18n: Wool_G.Description}}",
+                "{{ModPrefix}}Yarn_G_Name": "{{i18n: Yarn_G.Name}}",
+                "{{ModPrefix}}Yarn_G_Description": "{{i18n: Yarn_G.Description}}",
+                "{{ModPrefix}}DinoEgg_G_Name": "{{i18n: DinoEgg_G.Name}}",
+                "{{ModPrefix}}DinoEgg_G_Description": "{{i18n: DinoEgg_G.Description}}",
+                "{{ModPrefix}}OstrichEgg_G_Name": "{{i18n: OstrichEgg_G.Name}}",
+                "{{ModPrefix}}OstrichEgg_G_Description": "{{i18n: OstrichEgg_G.Description}}",
+                "{{ModPrefix}}DuckEgg_G_Name": "{{i18n: DuckEgg_G.Name}}",
+                "{{ModPrefix}}DuckEgg_G_Description": "{{i18n: DuckEgg_G.Description}}",
+                "{{ModPrefix}}Milk_V_Name": "{{i18n: Milk_V.Name}}",
+                "{{ModPrefix}}Milk_V_Description": "{{i18n: Milk_V.Description}}",
+                "{{ModPrefix}}GoatMilk_V_Name": "{{i18n: GoatMilk_V.Name}}",
+                "{{ModPrefix}}GoatMilk_V_Description": "{{i18n: GoatMilk_V.Description}}",
+                "{{ModPrefix}}LargeMilk_V_Name": "{{i18n: LargeMilk_V.Name}}",
+                "{{ModPrefix}}LargeMilk_V_Description": "{{i18n: LargeMilk_V.Description}}",
+                "{{ModPrefix}}LargeGoatMilk_V_Name": "{{i18n: LargeGoatMilk_V.Name}}",
+                "{{ModPrefix}}LargeGoatMilk_V_Description": "{{i18n: LargeGoatMilk_V.Description}}",
+                "{{ModPrefix}}Cheese_V_Name": "{{i18n: Cheese_V.Name}}",
+                "{{ModPrefix}}Cheese_V_Description": "{{i18n: Cheese_V.Description}}",
+                "{{ModPrefix}}GoatCheese_V_Name": "{{i18n: GoatCheese_V.Name}}",
+                "{{ModPrefix}}GoatCheese_V_Description": "{{i18n: GoatCheese_V.Description}}",
+                "{{ModPrefix}}Wool_V_Name": "{{i18n: Wool_V.Name}}",
+                "{{ModPrefix}}Wool_V_Description": "{{i18n: Wool_V.Description}}",
+                "{{ModPrefix}}Yarn_V_Name": "{{i18n: Yarn_V.Name}}",
+                "{{ModPrefix}}Yarn_V_Description": "{{i18n: Yarn_V.Description}}",
+                "{{ModPrefix}}DuckMayo_V_Name": "{{i18n: DuckMayo_V.Name}}",
+                "{{ModPrefix}}DuckMayo_V_Description": "{{i18n: DuckMayo_V.Description}}",
+                "{{ModPrefix}}DinoMayo_V_Name": "{{i18n: DinoMayo_V.Name}}",
+                "{{ModPrefix}}DinoMayo_V_Description": "{{i18n: DinoMayo_V.Description}}",
+                "{{ModPrefix}}DinoEgg_V_Name": "{{i18n: DinoEgg_V.Name}}",
+                "{{ModPrefix}}DinoEgg_V_Description": "{{i18n: DinoEgg_V.Description}}",
+                "{{ModPrefix}}OstrichEgg_V_Name": "{{i18n: OstrichEgg_V.Name}}",
+                "{{ModPrefix}}OstrichEgg_V_Description": "{{i18n: OstrichEgg_V.Description}}",
+                "{{ModPrefix}}DuckEgg_V_Name": "{{i18n: DuckEgg_V.Name}}",
+                "{{ModPrefix}}DuckEgg_V_Description": "{{i18n: DuckEgg_V.Description}}",
+                "{{ModPrefix}}StrangeCake_Name": "{{i18n: StrangeCake.Name}}",
+                "{{ModPrefix}}StrangeCake_Description": "{{i18n: StrangeCake.Description}}",
+                "{{ModPrefix}}StrangeCakePiece_Name": "{{i18n: StrangeCakePiece.Name}}",
+                "{{ModPrefix}}StrangeCakePiece_Description": "{{i18n: StrangeCakePiece.Description}}",
+                "{{ModPrefix}}GingerbreadMan_Name": "{{i18n: GingerbreadMan.Name}}",
+                "{{ModPrefix}}GingerbreadMan_Description": "{{i18n: GingerbreadMan.Description}}",
+                "{{ModPrefix}}StardropCake_Name": "{{i18n: StardropCake.Name}}",
+                "{{ModPrefix}}StardropCake_Description": "{{i18n: StardropCake.Description}}",
+                "{{ModPrefix}}ChoppedAncientFruit_Name": "{{i18n: ChoppedAncientFruit.Name}}",
+                "{{ModPrefix}}ChoppedAncientFruit_Description": "{{i18n: ChoppedAncientFruit.Description}}",
+                "{{ModPrefix}}BerriesPlate_Name": "{{i18n: BerriesPlate.Name}}",
+                "{{ModPrefix}}BerriesPlate_Description": "{{i18n: BerriesPlate.Description}}",
+                "{{ModPrefix}}SweetSauce_Name": "{{i18n: SweetSauce.Name}}",
+                "{{ModPrefix}}SweetSauce_Description": "{{i18n: SweetSauce.Description}}",
+                "{{ModPrefix}}MagicIceCream_Name": "{{i18n: MagicIceCream.Name}}",
+                "{{ModPrefix}}MagicIceCream_Description": "{{i18n: MagicIceCream.Description}}",
+                "{{ModPrefix}}IceCream_Name": "{{i18n: IceCream.Name}}",
+                "{{ModPrefix}}IceCream_Description": "{{i18n: IceCream.Description}}",
+                "{{ModPrefix}}AncientJuice_Name": "{{i18n: AncientJuice.Name}}",
+                "{{ModPrefix}}AncientJuice_Description": "{{i18n: AncientJuice.Description}}",
+                "{{ModPrefix}}AncientCobbler_Name": "{{i18n: AncientCobbler.Name}}",
+                "{{ModPrefix}}AncientCobbler_Description": "{{i18n: AncientCobbler.Description}}",
+                "{{ModPrefix}}PoachedIridiumEggs_Name": "{{i18n: PoachedIridiumEggs.Name}}",
+                "{{ModPrefix}}PoachedIridiumEggs_Description": "{{i18n: PoachedIridiumEggs.Description}}",
+                "{{ModPrefix}}SeaPlate_Name": "{{i18n: SeaPlate.Name}}",
+                "{{ModPrefix}}SeaPlate_Description": "{{i18n: SeaPlate.Description}}",
+                "{{ModPrefix}}MidnightCravings_Name": "{{i18n: MidnightCravings.Name}}",
+                "{{ModPrefix}}MidnightCravings_Description": "{{i18n: MidnightCravings.Description}}",
+                "{{ModPrefix}}FruitSalad_Name": "{{i18n: FruitSalad.Name}}",
+                "{{ModPrefix}}FruitSalad_Description": "{{i18n: FruitSalad.Description}}",
+                "{{ModPrefix}}FishAndRice_Name": "{{i18n: FishAndRice.Name}}",
+                "{{ModPrefix}}FishAndRice_Description": "{{i18n: FishAndRice.Description}}",
+                "{{ModPrefix}}MushroomPizza_Name": "{{i18n: MushroomPizza.Name}}",
+                "{{ModPrefix}}MushroomPizza_Description": "{{i18n: MushroomPizza.Description}}",
+                "{{ModPrefix}}JellyBurger_Name": "{{i18n: JellyBurger.Name}}",
+                "{{ModPrefix}}JellyBurger_Description": "{{i18n: JellyBurger.Description}}",
+                "{{ModPrefix}}OmniBurger_Name": "{{i18n: OmniBurger.Name}}",
+                "{{ModPrefix}}OmniBurger_Description": "{{i18n: OmniBurger.Description}}",
+                "{{ModPrefix}}VeggieSoup_Name": "{{i18n: VeggieSoup.Name}}",
+                "{{ModPrefix}}VeggieSoup_Description": "{{i18n: VeggieSoup.Description}}",
+                "{{ModPrefix}}PearlNecklace_Name": "{{i18n: PearlNecklace.Name}}",
+                "{{ModPrefix}}PearlNecklace_Description": "{{i18n: PearlNecklace.Description}}",
+                "{{ModPrefix}}AncientCoin_Name": "{{i18n: AncientCoin.Name}}",
+                "{{ModPrefix}}AncientCoin_Description": "{{i18n: AncientCoin.Description}}",
+                "{{ModPrefix}}OldBottle_Name": "{{i18n: OldBottle.Name}}",
+                "{{ModPrefix}}OldBottle_Description": "{{i18n: OldBottle.Description}}",
+                "{{ModPrefix}}FishFossil_Name": "{{i18n: FishFossil.Name}}",
+                "{{ModPrefix}}FishFossil_Description": "{{i18n: FishFossil.Description}}",
+                "{{ModPrefix}}GoldWatch_Name": "{{i18n: GoldWatch.Name}}",
+                "{{ModPrefix}}GoldWatch_Description": "{{i18n: GoldWatch.Description}}",
+                "{{ModPrefix}}DiamondRing_Name": "{{i18n: DiamondRing.Name}}",
+                "{{ModPrefix}}DiamondRing_Description": "{{i18n: DiamondRing.Description}}",
+                "{{ModPrefix}}FishFlute_Name": "{{i18n: FishFlute.Name}}",
+                "{{ModPrefix}}FishFlute_Description": "{{i18n: FishFlute.Description}}",
+                "{{ModPrefix}}LumiRose_Name": "{{i18n: LumiRose.Name}}",
+                "{{ModPrefix}}LumiRose_Description": "{{i18n: LumiRose.Description}}",
+                "{{ModPrefix}}DeepClam_Name": "{{i18n: DeepClam.Name}}",
+                "{{ModPrefix}}DeepClam_Description": "{{i18n: DeepClam.Description}}",
+                "{{ModPrefix}}RustyWheel_Name": "{{i18n: RustyWheel.Name}}",
+                "{{ModPrefix}}RustyWheel_Description": "{{i18n: RustyWheel.Description}}",
+                "{{ModPrefix}}AncientTablet_Name": "{{i18n: AncientTablet.Name}}",
+                "{{ModPrefix}}AncientTablet_Description": "{{i18n: AncientTablet.Description}}",
+                "{{ModPrefix}}StrangeScale_Name": "{{i18n: StrangeScale.Name}}",
+                "{{ModPrefix}}StrangeScale_Description": "{{i18n: StrangeScale.Description}}",
+                "{{ModPrefix}}WaterOrb_Name": "{{i18n: WaterOrb.Name}}",
+                "{{ModPrefix}}WaterOrb_Description": "{{i18n: WaterOrb.Description}}",
+                "{{ModPrefix}}PirateHook_Name": "{{i18n: PirateHook.Name}}",
+                "{{ModPrefix}}PirateHook_Description": "{{i18n: PirateHook.Description}}",
+                "{{ModPrefix}}IslandTrophy_Name": "{{i18n: IslandTrophy.Name}}",
+                "{{ModPrefix}}IslandTrophy_Description": "{{i18n: IslandTrophy.Description}}",
+                "{{ModPrefix}}LumiTackle_Name": "{{i18n: LumiTackle.Name}}",
+                "{{ModPrefix}}LumiTackle_Description": "{{i18n: LumiTackle.Description}}",
+                "{{ModPrefix}}IridiumEgg_Name": "Iridium egg",
+                "{{ModPrefix}}IridiumEgg_Description": "A very rare and special egg with a solid iridium shell.",
+                "{{ModPrefix}}DragonFish_Name": "{{i18n: DragonFish.Name}}",
+                "{{ModPrefix}}DragonFish_Description": "{{i18n: DragonFish.Description}}",
+                "{{ModPrefix}}CinderFish_Name": "{{i18n: CinderFish.Name}}",
+                "{{ModPrefix}}CinderFish_Description": "{{i18n: CinderFish.Description}}",
+                "{{ModPrefix}}OmniFish_Name": "{{i18n: OmniFish.Name}}",
+                "{{ModPrefix}}OmniFish_Description": "{{i18n: OmniFish.Description}}",
+                "{{ModPrefix}}Viperfish_Name": "{{i18n: Viperfish.Name}}",
+                "{{ModPrefix}}Viperfish_Description": "{{i18n: Viperfish.Description}}",
+                "{{ModPrefix}}CocoFish_Name": "{{i18n: CocoFish.Name}}",
+                "{{ModPrefix}}CocoFish_Description": "{{i18n: CocoFish.Description}}",
+                "{{ModPrefix}}SeaAngel_Name": "{{i18n: SeaAngel.Name}}",
+                "{{ModPrefix}}SeaAngel_Description": "{{i18n: SeaAngel.Description}}",
+                "{{ModPrefix}}SkeletonFish_Name": "{{i18n: SkeletonFish.Name}}",
+                "{{ModPrefix}}SkeletonFish_Description": "{{i18n: SkeletonFish.Description}}",
+                "{{ModPrefix}}SeaPig_Name": "{{i18n: SeaPig.Name}}",
+                "{{ModPrefix}}SeaPig_Description": "{{i18n: SeaPig.Description}}",
+                "{{ModPrefix}}AtollaJellyfish_Name": "{{i18n: AtollaJellyfish.Name}}",
+                "{{ModPrefix}}AtollaJellyfish_Description": "{{i18n: AtollaJellyfish.Description}}",
+                "{{ModPrefix}}FacelessFish_Name": "{{i18n: FacelessFish.Name}}",
+                "{{ModPrefix}}FacelessFish_Description": "{{i18n: FacelessFish.Description}}",
+                "{{ModPrefix}}OstrichFish_Name": "{{i18n: OstrichFish.Name}}",
+                "{{ModPrefix}}OstrichFish_Description": "{{i18n: OstrichFish.Description}}",
+                "{{ModPrefix}}PirateFish_Name": "{{i18n: PirateFish.Name}}",
+                "{{ModPrefix}}PirateFish_Description": "{{i18n: PirateFish.Description}}",
+                "{{ModPrefix}}VampSquid_Name": "{{i18n: VampSquid.Name}}",
+                "{{ModPrefix}}VampSquid_Description": "{{i18n: VampSquid.Description}}",
+                "{{ModPrefix}}ToothFish_Name": "{{i18n: ToothFish.Name}}",
+                "{{ModPrefix}}ToothFish_Description": "{{i18n: ToothFish.Description}}",
+                "{{ModPrefix}}CombJelly_Name": "{{i18n: CombJelly.Name}}",
+                "{{ModPrefix}}CombJelly_Description": "{{i18n: CombJelly.Description}}",
+                "{{ModPrefix}}LizardFish_Name": "{{i18n: LizardFish.Name}}",
+                "{{ModPrefix}}LizardFish_Description": "{{i18n: LizardFish.Description}}",
+                "{{ModPrefix}}CuskEel_Name": "{{i18n: CuskEel.Name}}",
+                "{{ModPrefix}}CuskEel_Description": "{{i18n: CuskEel.Description}}",
+                "{{ModPrefix}}Grenadier_Name": "{{i18n: Grenadier.Name}}",
+                "{{ModPrefix}}Grenadier_Description": "{{i18n: Grenadier.Description}}",
+                "{{ModPrefix}}WhaleFish_Name": "{{i18n: WhaleFish.Name}}",
+                "{{ModPrefix}}WhaleFish_Description": "{{i18n: WhaleFish.Description}}",
+                "{{ModPrefix}}CosmicJelly_Name": "{{i18n: CosmicJelly.Name}}",
+                "{{ModPrefix}}CosmicJelly_Description": "{{i18n: CosmicJelly.Description}}",
+                "{{ModPrefix}}HadalFish_Name": "{{i18n: HadalFish.Name}}",
+                "{{ModPrefix}}HadalFish_Description": "{{i18n: HadalFish.Description}}",
+                "{{ModPrefix}}Squidworm_Name": "{{i18n: Squidworm.Name}}",
+                "{{ModPrefix}}Squidworm_Description": "{{i18n: Squidworm.Description}}",
+                "{{ModPrefix}}LavaSnail_Name": "{{i18n: LavaSnail.Name}}",
+                "{{ModPrefix}}LavaSnail_Description": "{{i18n: LavaSnail.Description}}",
+                "{{ModPrefix}}BritStar_Name": "{{i18n: BritStar.Name}}",
+                "{{ModPrefix}}BritStar_Description": "{{i18n: BritStar.Description}}",
+                "{{ModPrefix}}Amphipoda_Name": "{{i18n: Amphipoda.Name}}",
+                "{{ModPrefix}}Amphipoda_Description": "{{i18n: Amphipoda.Description}}",
+                "{{ModPrefix}}Chiton_Name": "{{i18n: Chiton.Name}}",
+                "{{ModPrefix}}Chiton_Description": "{{i18n: Chiton.Description}}",
+                "{{ModPrefix}}Caridea_Name": "{{i18n: Caridea.Name}}",
+                "{{ModPrefix}}Caridea_Description": "{{i18n: Caridea.Description}}",
+                "{{ModPrefix}}HarpSponge_Name": "{{i18n: HarpSponge.Name}}",
+                "{{ModPrefix}}HarpSponge_Description": "{{i18n: HarpSponge.Description}}",
+                "{{ModPrefix}}DrakeEgg_Name":"{{i18n:DrakeEgg.Name}}",
+                "{{ModPrefix}}DrakeEgg_Description":"{{i18n:DrakeEgg.Description}}",
+                "{{ModPrefix}}IslandScepter_Name":"{{i18n:IslandScepter.Name}}",
+                "{{ModPrefix}}IslandScepter_Description":"{{i18n:IslandScepter.Description}}",
+                //"_Name": "LumiStone",
+                //"_Description": "Break apart to obtain luminous shards.",
+                "{{ModPrefix}}FireRing_Name": "Fire Ring",
+                "{{ModPrefix}}FireRing_Description": "Makes you immune to fire."
+            }
+        },*/
+        {
+            "Action": "EditData",
+            "Target": "Strings\\Weapons",
+            "Entries": {
+                "{{ModPrefix}}FlameSword_Name": "{{i18n:FlameSword.Name}}",
+                "{{ModPrefix}}FlameSword_Description": "{{i18n:FlameSword.Description}}",
+                "Wand":"{{i18n:Wand}}",
+                "EctoplasmWand_Description":"{{i18n:EctoWand.Description}}",
+                "{{ModPrefix}}PaintBrush_Name":"{{i18n:PaintBrush.Name}}",
+                "{{ModPrefix}}PaintBrush_Description":"{{i18n:PaintBrush.Description}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings\\FarmAnimals",
+            "Entries": {
+                "{{ModPrefix}}Golden_Cow": "{{i18n:Golden_Cow}}",
+                "{{ModPrefix}}Golden_Goat": "{{i18n:Golden_Goat}}",
+                "{{ModPrefix}}Golden_Sheep": "{{i18n:Golden_Sheep}}",
+                "{{ModPrefix}}Golden_Ostrich": "{{i18n:Golden_Ostrich}}",
+                "{{ModPrefix}}Golden_Dinosaur": "{{i18n:Golden_Dinosaur}}",
+                "{{ModPrefix}}Void_Cow": "{{i18n:Void_Cow}}",
+                "{{ModPrefix}}Void_Goat": "{{i18n:Void_Goat}}",
+                "{{ModPrefix}}Void_Sheep": "{{i18n:Void_Sheep}}",
+                "{{ModPrefix}}Iridium_Chicken": "{{i18n:Iridium_Chicken}}",
+                "{{ModPrefix}}Void_Ostrich": "{{i18n:Void_Ostrich}}",
+                "{{ModPrefix}}Void_Dinosaur": "{{i18n:Void_Dinosaur}}",
+                "{{ModPrefix}}Void_Duck": "{{i18n: Void_Duck}}",
+                "{{ModPrefix}}Void_Rabbit": "{{i18n: Void_Rabbit}}",
+                "{{ModPrefix}}Mango_Cow": "{{i18n:Mango_Cow}}",
+                "{{ModPrefix}}Coconut_Cow": "{{i18n:Coconut_Cow}}",
+                "{{ModPrefix}}Banana_Cow": "{{i18n:Banana_Cow}}",
+                "FarmAnimals:{{ModPrefix}}MiniDrake":"{{i18n:MiniDrake}}"
+            }
+        },
+        /* translation */
+        // Manually translating: fire ring, iridium egg, and crab names   
+        //español
+        {
+            "LogName": "ES",
+            "Action": "EditData",
+            "Target": "Strings\\Objects",
+            "Entries": {
+                "{{ModPrefix}}FireRing_Name": "Anillo de fuego",
+                "{{ModPrefix}}FireRing_Description": "Te vuelve inmune al fuego.",
+                "{{ModPrefix}}IridiumEgg_Name": "Huevo de iridio",
+                "{{ModPrefix}}IridiumEgg_Description": "Un raro y especial huevo con una cáscara de iridio."
+            },
+            "When": {
+                "Language": "es"
+            }
+        },
+        //한국어 / 조선말
+        {
+            "LogName": "KO",
+            "Action": "EditData",
+            "Target": "Strings\\Objects",
+            "Entries": {
+                "{{ModPrefix}}FireRing_Name": "화염반지",
+                "{{ModPrefix}}FireRing_Description": "화염에게 받는 피해를 막아줍니다.",
+                "{{ModPrefix}}IridiumEgg_Name": "이리듐알",
+                "{{ModPrefix}}IridiumEgg_Description": "정말 희귀하고 특별한 순이리듐 껍데기의 알."
+            },
+            "When": {
+                "Language": "ko"
+            }
+        },
+        //日本語
+        {
+            "LogName": "JA",
+            "Action": "EditData",
+            "Target": "Strings\\Objects",
+            "Entries": {
+                "{{ModPrefix}}FireRing_Name": "火ノ指輪",
+                "{{ModPrefix}}FireRing_Description": "火から受けるダメージをふせぐ。",
+                "{{ModPrefix}}IridiumEgg_Name": "イリジウムのタマゴ",
+                "{{ModPrefix}}IridiumEgg_Description": "イリジウム色の殻を持つ、とても珍しい特別なタマゴ。"
+            },
+            "When": {
+                "Language": "ja"
+            }
+        },
+        //magyar nyelv
+        {
+            "LogName": "HU",
+            "Action": "EditData",
+            "Target": "Strings\\Objects",
+            "Entries": {
+                "{{ModPrefix}}FireRing_Name": "Tűz Gyűrű",
+                "{{ModPrefix}}FireRing_Description": "A tűzok nem sebeznek meg.",
+                "{{ModPrefix}}IridiumEgg_Name": "Irídium tojás",
+                "{{ModPrefix}}IridiumEgg_Description": "Egy nagyon ritka és különleges tojás kemény, irídium színű héjjal."
+            },
+            "When": {
+                "Language": "hu"
+            }
+        },
+        //português
+        {
+            "LogName": "PT",
+            "Action": "EditData",
+            "Target": "Strings\\Objects",
+            "Entries": {
+                "{{ModPrefix}}FireRing_Name": "Anel de fogo",
+                "{{ModPrefix}}FireRing_Description": "Protege contra danos da fogo.",
+                "{{ModPrefix}}IridiumEgg_Name": "Ovo Irídio",
+                "{{ModPrefix}}IridiumEgg_Description": "Um ovo muito raro e especial com uma casca de irídio maciço."
+            },
+            "When": {
+                "Language": "pt"
+            }
+        },
+        //italiano
+        {
+            "LogName": "IT",
+            "Action": "EditData",
+            "Target": "Strings\\Objects",
+            "Entries": {
+                "{{ModPrefix}}FireRing_Name": "Anello di fuoco",
+                "{{ModPrefix}}FireRing_Description": "Impedisce alle melme di fuoco.",
+                "{{ModPrefix}}IridiumEgg_Name": "Uovo di iridio",
+                "{{ModPrefix}}IridiumEgg_Description": "Un uovo molto raro e speciale con un guscio di iridio massiccio."
+            },
+            "When": {
+                "Language": "it"
+            }
+        },
+        //français
+        {
+            "LogName": "FR",
+            "Action": "EditData",
+            "Target": "Strings\\Objects",
+            "Entries": {
+                "{{ModPrefix}}FireRing_Name": "Bague de feu",
+                "{{ModPrefix}}FireRing_Description": "Empêche les dégàts causés par le Bague.",
+                "{{ModPrefix}}IridiumEgg_Name": "Oeuf en iridium",
+                "{{ModPrefix}}IridiumEgg_Description": "Un oeuf très rare et très spécial avec une coquille en iridium massif."
+            },
+            "When": {
+                "Language": "fr"
+            }
+        },
+        //deutsch
+        {
+            "LogName": "DE",
+            "Action": "EditData",
+            "Target": "Strings\\Objects",
+            "Entries": {
+                "{{ModPrefix}}FireRing_Name": "Feuer Ring",
+                "{{ModPrefix}}FireRing_Description": "Verhindert Schaden durch Feuer.",
+                "{{ModPrefix}}IridiumEgg_Name": "Iridium-Ei",
+                "{{ModPrefix}}IridiumEgg_Description": "Ein sehr seltenes und besonderes Ei mit einer massiven Iridium Schale."
+            },
+            "When": {
+                "Language": "de"
+            }
+        },
+        //türkçe
+        {
+            "LogName": "TR",
+            "Action": "EditData",
+            "Target": "Strings\\Objects",
+            "Entries": {
+                "{{ModPrefix}}FireRing_Name": "Ateş Yüzük",
+                "{{ModPrefix}}FireRing_Description": "Yangının hasar vermesini önler.",
+                "{{ModPrefix}}IridiumEgg_Name": "İridyum Yumurta",
+                "{{ModPrefix}}IridiumEgg_Description": "Ender bulunan özel bir yumurta."
+            },
+            "When": {
+                "Language": "tr"
+            }
+        },
+        //русский язык
+        {
+            "LogName": "RU",
+            "Action": "EditData",
+            "Target": "Strings\\Objects",
+            "Entries": {
+                "{{ModPrefix}}FireRing_Name": "Огненный Кольцо",
+                "{{ModPrefix}}FireRing_Description": "Блокирует урон от Огненный.",
+                "{{ModPrefix}}IridiumEgg_Name": "Иридиев яйцо",
+                "{{ModPrefix}}IridiumEgg_Description": "Крайне редкое и особенное яйцо с твердой иридиев скорлупой."
+            },
+            "When": {
+                "Language": "ru"
+            }
+        },
+        //汉语
+        {
+            "LogName": "ZH",
+            "Action": "EditData",
+            "Target": "Strings\\Objects",
+            "Entries": {
+                "{{ModPrefix}}FireRing_Name": "火灾戒指",
+                "{{ModPrefix}}FireRing_Description": "防止火灾的破坏。",
+                "{{ModPrefix}}IridiumEgg_Name": "铱蛋",
+                "{{ModPrefix}}IridiumEgg_Description": "非常独特、罕见的蛋，铱色的蛋壳非常坚固。"
+            },
+            "When": {
+                "Language": "zh"
+            }
+        }
+    ]
+}
