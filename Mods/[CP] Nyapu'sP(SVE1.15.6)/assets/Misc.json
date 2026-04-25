@@ -1,0 +1,165 @@
+{
+	"Changes": [
+	
+//Morris
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Morris",
+			"FromFile": "assets/MorrisTod.png",
+		},	
+//Claire
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Claire",
+			"FromFile": "assets/Claire_Joja.png",
+			"When": {"LocationName": "JojaMart"},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Claire's Theater Portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/Claire",
+			"FromFile": "assets/Claire_Theater.png",
+			"When": {
+				"Spouse |contains=Claire": false,
+				"DayOfWeek": "Monday, Wednesday, Thursday, Friday, Sunday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Claire's Theater Portrait 2",
+			"Action": "EditImage",
+			"Target": "Portraits/Claire",
+			"FromFile": "assets/Claire_Theater.png",
+			"When": {
+				"Spouse": "Claire",
+				"DayOfWeek": "Monday, Wednesday, Thursday, Sunday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Claire's 14-Hearts Event",
+			"Action": "EditImage",
+			"Target": "Portraits/Claire",
+			"FromFile": "assets/Claire.png",
+			"When": {
+				"Spouse |contains=Claire": true,
+				"LocationName": "MovieTheater",
+				"HasSeenEvent |contains=4269703": true,
+				"HasSeenEvent |contains=4269704": false,
+				"Time": "{{Range: 1600, 2000}}"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Theater Temp Claire",
+			"Action": "EditImage",
+			"Target": "Portraits/**Claire**",
+			"FromFile": "assets/Claire_Theater.png",  
+		},
+		
+//Martin
+		{
+			"LogName": "Martin's Joja Portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/Martin",
+			"FromFile": "assets/Martin_Joja.png",
+			"When": {"LocationName": "JojaMart"},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Martin's Theater Portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/Martin",
+			"FromFile": "assets/Martin_Theater.png",
+			"When": {
+				"Spouse |contains=Claire": false,
+				"DayOfWeek": "Tuesday, Saturday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater"
+			},
+				"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Martin's Theater Portrait 2",
+			"Action": "EditImage",
+			"Target": "Portraits/Martin",
+			"FromFile": "assets/Martin_Theater.png",
+			"When": {
+				"Spouse": "Claire",
+				"DayOfWeek": "Tuesday, Friday, Saturday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Martin's Theater Portrait 3",
+			"Action": "EditImage",
+			"Target": "Portraits/Martin",
+			"FromFile": "assets/Martin_Theater.png",
+			"When": {
+				"Spouse": "Claire",
+				"DayOfWeek": "Tuesday, Wednesday, Friday, Saturday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater",
+				"HasSeenEvent |contains=4269703": true
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Martin's Theater Portrait 4",
+			"Action": "EditImage",
+			"Target": "Portraits/Martin",
+			"FromFile": "assets/Portraits/Martin_Theater.png",
+			"When": {
+				"HasSeenEvent |contains=191393": true,
+				"HasSeenEvent |contains=3219873": true,
+				"LocationName": "MovieTheater",
+				"Day": "22" 
+			},
+			"Update": "OnLocationChange"
+		},		
+		{ 
+			"LogName": "Theater Temp Martin",
+			"Action": "EditImage",
+			"Target": "Portraits/**Martin**",
+			"FromFile": "assets/Martin_Theater.png"
+		},
+		
+//Scarlett
+		{
+			"LogName": "Fake Scarlett's portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/ScarlettFake",
+			"FromFile": "assets/Scarlett.png"
+		},
+		{
+			"LogName": "Fake Scarlett's winter portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/ScarlettFake_Winter",
+			"FromFile": "assets/Scarlett_Winter.png"
+		},
+		{
+			"LogName": "Scarlett's cosplay portraits",
+			"Action": "EditImage",
+			"Target": "Portraits/Scarlett",
+			"When": {"LocationName": "Custom_ZCCC_Entrance, Custom_ZCCC_FoodCourt, Custom_ZCCC_MainHall, Custom_ZCCC_Stage, Custom_ZCCC_VendorFloor, Custom_ZuzuCityStreet, Custom_Highway, Custom_ZCCC_Courtyard, BusStop"},
+			"Update": "OnLocationChange",
+			"FromFile": "assets/Scarlett_Cosplay.png"
+		},
+		
+//Sophia
+		{
+			"LogName": "Sophia's Makeup Portraits",
+			"Action": "EditImage",
+			"Target": "Portraits/Sophia, Portraits/Sophia_Winter",
+			"When": {"DayOfWeek": "Friday, Saturday, Sunday",},
+			"FromFile": "assets/{{TargetWithoutPath}}_Makeup.png",
+		},
+	]
+}

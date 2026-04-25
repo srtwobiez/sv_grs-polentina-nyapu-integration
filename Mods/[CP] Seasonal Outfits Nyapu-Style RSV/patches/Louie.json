@@ -1,0 +1,32 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Louie Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Louie_spring, Portraits/Louie_summer, Portraits/Louie_fall, Portraits/Louie_winter, Portraits/Louie_spring24, Portraits/Louie_fall27-1, Portraits/Louie_fall27-2, Portraits/Louie_rain, Portraits/Louie_Beach",
+            "FromFile": "assets/Portraits/Louie/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Louie Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Louie",
+            "FromFile": "assets/Portraits/Louie/Louie_spring.png"
+        },		
+		{
+			"LogName": "RSV Nyapu Edit - Louie Accessories",
+            "Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Louie_fall, Portraits/Louie_winter",
+			"FromFile": "assets/Portraits/Louie/Louie_acc.png",
+			"When": {
+				"IsOutdoors": true,
+				"HasValue:{{DayEvent}}": false,
+                "Query: {{Random:{{Range:1,10}}|key=LouieHat}} > 5": true,
+			},
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},
+    ]
+}

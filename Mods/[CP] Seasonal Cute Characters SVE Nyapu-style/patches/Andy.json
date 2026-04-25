@@ -1,0 +1,24 @@
+{
+	"Changes": [
+	
+		{
+			"LogName": "Andy's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Andy_Spring, Portraits/Andy_Summer, Portraits/Andy_Fall, Portraits/Andy_Winter_Outdoor, Portraits/Andy_Winter_Indoor, Portraits/Andy_Beach, Portraits/Andy_FlowerDance, Portraits/Andy_SpiritsEve",
+			"FromFile": "assets/Portraits/Andy/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Andy's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Andy",
+			"FromFile": "assets/Portraits/Andy/Andy_{{Season}}.png",
+		    "When": {"Season |contains=winter": false}
+		},	
+		{
+			"LogName": "Andy's Outfit Base Winter",
+			"Action": "EditImage",
+			"Target": "Portraits/Andy_Winter",
+			"FromFile": "assets/Portraits/Andy/Andy_Winter_Indoor.png"
+		},			
+	]
+}

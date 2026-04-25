@@ -1,0 +1,18 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Undreya",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Undreya_1, Portraits/Undreya_2",
+            "FromFile": "assets/Portraits/Undreya/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Undreya Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Undreya",
+            "FromFile": "assets/Portraits/Undreya/Undreya_2.png"
+        },		
+    ]
+}

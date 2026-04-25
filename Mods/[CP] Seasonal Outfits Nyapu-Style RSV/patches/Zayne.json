@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Zayne Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Zayne_spring, Portraits/Zayne_summer, Portraits/Zayne_fall, Portraits/Zayne_winter, Portraits/Zayne_spring24, Portraits/Zayne_fall27-1, Portraits/Zayne_fall27-2, Portraits/Zayne_rain, Portraits/Zayne_Beach",
+            "FromFile": "assets/Portraits/Zayne/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Zayne Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Zayne",
+            "FromFile": "assets/Portraits/Zayne/Zayne_spring.png"
+        },			
+		{
+			"LogName": "RSV Nyapu Edit - Zayne Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Zayne.png",
+			"When": {"Spouse": "Zayne"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+    ]
+}

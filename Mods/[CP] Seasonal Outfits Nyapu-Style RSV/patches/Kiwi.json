@@ -1,0 +1,62 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Kiwi Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Kiwi_spring, Portraits/Kiwi_summer, Portraits/Kiwi_fall, Portraits/Kiwi_winter, Portraits/Kiwi_fall27-1, Portraits/Kiwi_fall27-2",
+            "FromFile": "assets/Portraits/Kiwi/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Kiwi Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Kiwi, Portraits/Kiwi_Beach",
+            "FromFile": "assets/Portraits/Kiwi/Kiwi_default.png"
+        },		
+		{
+			"LogName": "Seasonal Farm Kiwi",
+			"Action": "EditData",
+			"Target": "{{PeacefulEnd.CustomCompanions/Companions:Rafseazz.RSVCC.FarmKiwi}}",
+			"Entries": {
+				"Companion": {
+					"InspectionDialogue": "{{i18n:FarmKiwi.{{Random: {{Range: 1,10}} }} }}",
+					"TileSheetPath": "Characters/Kiwi_{{season}}",
+					"PortraitSheetPath": "Portraits/Kiwi_{{season}}"
+				}
+			}
+		},
+		{
+			"LogName": "Farm Kiwi Random Jio Dialogue",
+			"Action": "EditData",
+			"Target": "{{PeacefulEnd.CustomCompanions/Companions:Rafseazz.RSVCC.FarmKiwi}}",
+			"When": {
+				"RandomNumber": 1,
+				"Spouse": "Jio",
+			},
+			"Entries": {
+				"Companion": {
+					"InspectionDialogue": "{{i18n:FarmKiwi.Jio.1}}",
+					"TileSheetPath": "Characters/Kiwi_{{season}}",
+					"PortraitSheetPath": "Portraits/Kiwi_{{season}}"					
+				}
+			}
+		},
+		{
+			"LogName": "Farm Kiwi Random Daia Dialogue",
+			"Action": "EditData",
+			"Target": "{{PeacefulEnd.CustomCompanions/Companions:Rafseazz.RSVCC.FarmKiwi}}",
+			"When": {
+				"RandomNumber": 1,
+				"Spouse": "Daia",
+			},
+			"Entries": {
+				"Companion": {
+					"InspectionDialogue": "{{i18n:FarmKiwi.Daia.1}}",
+					"TileSheetPath": "Characters/Kiwi_{{season}}",
+					"PortraitSheetPath": "Portraits/Kiwi_{{season}}"						
+				}
+			}
+		},			
+    ]
+}

@@ -1,0 +1,12 @@
+{
+	"Changes": [
+		{
+			"LogName": "Non-Seasonal Characters",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Acorn, Portraits/Althea, Portraits/Belinda, Portraits/Bliss, Portraits/Helen, Portraits/Lorraine, Portraits/Nadaline, Portraits/Pipo, Portraits/Raeriyala, Portraits/RelicSpirit, Portraits/Sari, Portraits/TreehouseGirl, Portraits/Zachary",
+			"FromFile": "assets/Portraits/Non-Seasonal/{{TargetWithoutPath}}.png",
+		},		
+
+	]
+}

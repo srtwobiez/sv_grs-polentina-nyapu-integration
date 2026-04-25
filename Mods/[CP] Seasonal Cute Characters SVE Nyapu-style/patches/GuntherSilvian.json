@@ -1,0 +1,34 @@
+{
+	"Changes": [
+	
+		{
+			"LogName": "Gunther's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Gunther_Spring, Portraits/Gunther_Summer, Portraits/Gunther_Fall, Portraits/Gunther_Winter, Portraits/Gunther_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/Gunther/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Gunther Silvian's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/GuntherSilvian_Spring, Portraits/GuntherSilvian_Summer, Portraits/GuntherSilvian_Fall, Portraits/GuntherSilvian_Winter, Portraits/GuntherSilvian_FlowerDance, Portraits/GuntherSilvian_SpiritsEve",
+			"FromFile": "assets/Portraits/GuntherSilvian/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Gunther's Outfit Spring",
+			"Action": "EditImage",
+			"Target": "Portraits/Gunther, Portraits/GuntherSilvian",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Spring.png",
+		},
+		{ 
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+			"FromFile": "assets/Characters/MovieTheater_Blank.png",
+			"ToArea": {"X": 208, "Y": 192, "Width": 16, "Height": 32},
+			"Update": "OnLocationChange",
+			"When": {
+				"LocationName": "MovieTheater",
+				"HasFile:{{FromFile}}": true,
+			}
+		},		
+	]
+}

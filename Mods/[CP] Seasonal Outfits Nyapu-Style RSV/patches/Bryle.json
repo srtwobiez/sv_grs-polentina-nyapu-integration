@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Bryle Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Bryle_spring, Portraits/Bryle_summer, Portraits/Bryle_fall, Portraits/Bryle_winter, Portraits/Bryle_spring24, Portraits/Bryle_fall27-1, Portraits/Bryle_fall27-2, Portraits/Bryle_rain,",
+            "FromFile": "assets/Portraits/Bryle/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Bryle Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Bryle",
+            "FromFile": "assets/Portraits/Bryle/Bryle_fall.png"
+        },		
+		{
+			"LogName": "RSV Nyapu Edit - Bryle Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Bryle.png",
+			"When": {"Spouse": "Bryle"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+    ]
+}

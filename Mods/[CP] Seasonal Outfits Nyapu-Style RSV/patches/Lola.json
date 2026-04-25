@@ -1,0 +1,18 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Lola Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Lola_spring, Portraits/Lola_summer, Portraits/Lola_fall, Portraits/Lola_winter, Portraits/Lola_spring24, Portraits/Lola_fall27-1, Portraits/Lola_fall27-2, Portraits/Lola_rain",
+            "FromFile": "assets/Portraits/Lola/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Lola Portrait Bases",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Lola, Portraits/Lola_Beach",
+            "FromFile": "assets/Portraits/Lola/Lola_spring.png"
+        },		
+    ]
+}

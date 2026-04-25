@@ -1,0 +1,59 @@
+{
+	"Changes": [
+	
+		{
+			"LogName": "Martin's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Martin_Spring, Portraits/Martin_Summer, Portraits/Martin_Fall, Portraits/Martin_Winter_Outdoor, Portraits/Martin_Winter_Indoor, Portraits/Martin_FlowerDance, Portraits/Martin_SpiritsEve, Portraits/Martin_Joja, Portraits/Martin_Theater",
+			"FromFile": "assets/{{TargetPathOnly}}/Martin/{{TargetWithoutPath}}.png"
+		},	
+		{
+			"LogName": "Martin's Outfits Sprite",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/Martin_FlowerDance",
+			"FromFile": "assets/Characters/Martin/Martin_FlowerDance.png"
+		},		
+		{
+			"LogName": "Martin's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Martin",
+			"FromFile": "assets/Portraits/Martin/Martin_{{Season}}.png",
+		    "When": {"Season |contains=winter": false}
+		},	
+		{
+			"LogName": "Martin's Outfit Base Winter",
+			"Action": "EditImage",
+			"Target": "Portraits/Martin_Winter",
+			"FromFile": "assets/Portraits/Martin/Martin_Winter_Outdoor.png"
+		},			
+		{ 
+			"LogName": "Theater Temp Martin",
+			"Action": "EditImage",
+			"Target": "Portraits/**Martin**",
+			"FromFile": "assets/Portraits/Martin/Martin_Theater.png"
+		},		
+		{
+			"LogName": "Martin Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Martin", "Appearance"],
+			"Entries": {
+				"Poltergeister.SeasonalCuteSpritesSVE.MartinTheater": {
+					"Id": "Poltergeister.SeasonalCuteSpritesSVE.MartinTheater",
+					"Condition": "!PLAYER_HAS_SEEN_EVENT Any 502261, LOCATION_NAME Target MovieTheater, ANY \"PLAYER_NPC_RELATIONSHIP Any Claire Married, DAY_OF_WEEK Tuesday Friday Saturday\" \"PLAYER_NPC_RELATIONSHIP Any Claire Married, DAY_OF_WEEK Tuesday Wednesday Friday Saturday, PLAYER_HAS_SEEN_EVENT Any 4269703\" \"!PLAYER_NPC_RELATIONSHIP Any Claire Married, DAY_OF_WEEK Tuesday Saturday\"",
+					"Sprite": "Characters/Martin_Theater",
+					"Portrait": "Portraits/Martin_Theater",
+					"Precedence": -1000,
+				},
+				"{{ModId}}.MartinTheater": {
+					"Id": "{{ModId}}.MartinTheater",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Any 191393, PLAYER_HAS_SEEN_EVENT Any 3219873, LOCATION_NAME Target MovieTheater, DAY_OF_MONTH 22",
+					"Sprite": "Characters/Martin_Theater",
+					"Portrait": "Portraits/Martin_Theater",
+					"Precedence": -1000,
+				},				
+			},
+		},
+	]
+}

@@ -1,0 +1,668 @@
+{
+	"Format": "2.0",
+	"ConfigSchema":
+	{
+
+		"BeardedIan": {
+			"AllowValues": "true, false",
+			"Default": false
+		},	
+		"NoGoateePhilip": {
+			"AllowValues": "true, false",
+			"Default": false
+		},		
+		"NyapuAguar":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuAlissa":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},		
+		"NyapuAnton":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuAriah":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuBert":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuBlair":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuBryle":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuCarmen":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuCorine":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},		
+		"NyapuDaia":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuEzekiel":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuFaye":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuFlor":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuFreddie":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuIrene":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuJeric":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuIan":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},		
+		"NyapuJio":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuJune":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuKeahi":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuKenneth":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuKiarra":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},		
+		"NyapuKimpoi":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuKiwi":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuLenny":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuLola":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuLorenzo":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuLouie":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuMaddie":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuMaive":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuMalaya":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuNaomi":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuOlga":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuPaula":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuPhilip":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuPika":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuRichard":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuSean":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},		
+		"NyapuShanice":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuShiro":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuSonny":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuTorts":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuTrinnie":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuUndreya":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuYsabelle":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},		
+		"NyapuYuuma":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuZayne":
+		{
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "NyapuPortraits",
+		},
+		"NyapuExtraNPCs": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "NyapuPortraits"
+        },		
+	},
+
+
+	"DynamicTokens":
+	[
+		{
+			"Name": "RandomNumber",
+			"Value": "{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}}"
+		},	
+		{
+			"Name": "JioMasked",
+			"Value": false
+		},
+		{
+			"Name": "JioMasked",
+			"Value": true,
+			"When":
+			{
+				"HasSeenEvent|contains=75160263": false
+			}
+		},
+		{
+			"Name": "JioMasked",
+			"Value": true,
+			"When":
+			{
+				"LocationName |contains=Custom_Ridgeside_Ridge, Custom_Ridgeside_RidgeForest, Custom_Ridgeside_RSVSpiritRealm, Custom_Ridgeside_RSVNinjaHouse, Custom_Ridgeside_RidgeFalls Temp": true
+			}
+		},
+		{
+			"Name": "JioMasked",
+			"Value": true,
+			"When":
+			{
+				"Hearts:Jio": "{{Range: 0,7}}"
+			}
+		},
+		{
+			"Name": "JioMasked",
+			"Value": true,
+			"When":
+			{
+				"Hearts:Jio": "{{Range: 8,10}}",
+				"Query: {{Random:{{Range:1,10}}|key=JioMask}}|contains= 4,5,6": false,
+			}
+		},
+		{
+			"Name": "JioMasked",
+			"Value": false,
+			"When":
+			{
+				"Relationship:Jio": "Married",
+				"LocationName |contains= Farm, FarmHouse, Summit": true
+			}
+		},
+		{
+			"Name": "IanBeard",
+			"Value": "Ian",
+		},	
+		{
+			"Name": "IanBeard",
+			"Value": "Ian/Beard",
+			"When": {"BeardedIan": true,}
+		},
+		{
+			"Name": "PhilipGoatee",
+			"Value": "Philip",
+		},	
+		{
+			"Name": "PhilipGoatee",
+			"Value": "Philip/NoGoatee",
+			"When": {"NoGoateePhilip": true,}
+		},		
+	],		
+
+	"Changes": [
+
+
+	{
+		"LogName": "Aguar Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Aguar.json",
+		"When": { "NyapuAguar": true }
+	},
+	{
+		"LogName": "Alissa Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Alissa.json",
+		"When": { "NyapuAlissa": true }
+	},
+	{
+		"LogName": "Anton Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Anton.json",
+		"When": { "NyapuAnton": true }
+	},
+	{
+		"LogName": "Ariah Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Ariah.json",
+		"When": { "NyapuAriah": true }
+	},
+	{
+		"LogName": "Bert Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Bert.json",
+		"When": { "NyapuBert": true }
+	},
+	{
+		"LogName": "Blair Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Blair.json",
+		"When": { "NyapuBlair": true }
+	},
+	{
+		"LogName": "Bryle Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Bryle.json",
+		"When": { "NyapuBryle": true }
+	},
+	{
+		"LogName": "Carmen Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Carmen.json",
+		"When": { "NyapuCarmen": true }
+	},
+	{
+		"LogName": "Corine Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Corine.json",
+		"When": { "NyapuCorine": true }
+	},
+	{
+		"LogName": "Daia Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Daia.json",
+		"When": { "NyapuDaia": true }
+	},
+	{
+		"LogName": "Ezekiel Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Ezekiel.json",
+		"When": { "NyapuEzekiel": true }
+	},
+	{
+		"LogName": "Faye Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Faye.json",
+		"When": { "NyapuFaye": true }
+	},
+	{
+		"LogName": "Flor Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Flor.json",
+		"When": { "NyapuFlor": true }
+	},
+	{
+		"LogName": "Freddie Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Freddie.json",
+		"When": { "NyapuFreddie": true }
+	},
+	{
+		"LogName": "Ian Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Ian.json",
+		"When": { "NyapuIan": true }
+	},
+	{
+		"LogName": "Irene Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Irene.json",
+		"When": { "NyapuIrene": true }
+	},
+	{
+		"LogName": "Jeric Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Jeric.json",
+		"When": { "NyapuJeric": true }
+	},
+	{
+		"LogName": "Jio Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Jio.json",
+		"When": { "NyapuJio": true }
+	},
+	{
+		"LogName": "June Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/June.json",
+		"When": { "NyapuJune": true }
+	},
+	{
+		"LogName": "Keahi Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Keahi.json",
+		"When": { "NyapuKeahi": true }
+	},
+	{
+		"LogName": "Kenneth Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Kenneth.json",
+		"When": { "NyapuKenneth": true }
+	},
+	{
+		"LogName": "Kiarra Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Kiarra.json",
+		"When": { "NyapuKiarra": true }
+	},
+	{
+		"LogName": "Kimpoi Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Kimpoi.json",
+		"When": { "NyapuKimpoi": true }
+	},
+	{
+		"LogName": "Kiwi Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Kiwi.json",
+		"When": { "NyapuKiwi": true }
+	},
+	{
+		"LogName": "Lenny Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Lenny.json",
+		"When": { "NyapuLenny": true }
+	},
+	{
+		"LogName": "Lola Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Lola.json",
+		"When": { "NyapuLola": true }
+	},
+	{
+		"LogName": "Lorenzo Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Lorenzo.json",
+		"When": { "NyapuLorenzo": true }
+	},
+	{
+		"LogName": "Louie Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Louie.json",
+		"When": { "NyapuLouie": true }
+	},
+	{
+		"LogName": "Maddie Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Maddie.json",
+		"When": { "NyapuMaddie": true }
+	},
+	{
+		"LogName": "Maive Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Maive.json",
+		"When": { "NyapuMaive": true }
+	},
+	{
+		"LogName": "Malaya Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Malaya.json",
+		"When": { "NyapuMalaya": true }
+	},
+	{
+		"LogName": "Naomi Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Naomi.json",
+		"When": { "NyapuNaomi": true }
+	},
+	{
+		"LogName": "Olga Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Olga.json",
+		"When": { "NyapuOlga": true }
+	},
+	{
+		"LogName": "Paula Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Paula.json",
+		"When": { "NyapuPaula": true }
+	},
+	{
+		"LogName": "Philip Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Philip.json",
+		"When": { "NyapuPhilip": true }
+	},
+	{
+		"LogName": "Pika Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Pika.json",
+		"When": { "NyapuPika": true }
+	},
+	{
+		"LogName": "Richard Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Richard.json",
+		"When": { "NyapuRichard": true }
+	},
+	{
+		"LogName": "Sean Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Sean.json",
+		"When": { "NyapuSean": true }
+	},
+	{
+		"LogName": "Shanice Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Shanice.json",
+		"When": { "NyapuShanice": true }
+	},
+	{
+		"LogName": "Shiro Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Shiro.json",
+		"When": { "NyapuShiro": true }
+	},
+	{
+		"LogName": "Sonny Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Sonny.json",
+		"When": { "NyapuSonny": true }
+	},
+	{
+		"LogName": "Torts Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Torts.json",
+		"When": { "NyapuTorts": true }
+	},
+	{
+		"LogName": "Trinnie Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Trinnie.json",
+		"When": { "NyapuTrinnie": true }
+	},
+	{
+		"LogName": "Undreya Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Undreya.json",
+		"When": { "NyapuUndreya": true }
+	},
+	{
+		"LogName": "Ysabelle Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Ysabelle.json",
+		"When": { "NyapuYsabelle": true }
+	},
+	{
+		"LogName": "Yuuma Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Yuuma.json",
+		"When": { "NyapuYuuma": true }
+	},
+	{
+		"LogName": "Zayne Seasonal Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Zayne.json",
+		"When": { "NyapuZayne": true }
+	},
+	{
+		"LogName": "Non-Seasonal NPCs Nyapu Include",
+		"Action": "Include",
+		"FromFile": "patches/Non-Seasonal.json",
+		"When": { "NyapuExtraNPCs": true }
+	},	
+]
+}

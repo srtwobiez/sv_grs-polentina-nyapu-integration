@@ -1,0 +1,42 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Blair Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Blair_spring, Portraits/Blair_summer, Portraits/Blair_fall, Portraits/Blair_winter, Portraits/Blair_spring24, Portraits/Blair_fall27-1, Portraits/Blair_fall27-2, Portraits/Blair_rain, Portraits/Blair_Beach",
+            "FromFile": "assets/Portraits/Blair/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Blair Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Blair",
+            "FromFile": "assets/Portraits/Blair/Blair_fall.png"
+        },		
+		
+		{
+			"LogName": "RSV Nyapu Edit - Blair Accessories",
+			"Action": "EditImage",
+			"Priority": "Late",			
+			"Target": "Portraits/Blair_rain",
+			"FromFile": "assets/Portraits/Blair/Blair_acc_rain.png",
+			"When": {
+				"Weather|contains=Rain, Storm, Snow": true,
+				"IsOutdoors": true,
+				"HasValue:{{DayEvent}}": false,
+			},
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},	
+		{
+			"LogName": "RSV Nyapu Edit - Blair Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Blair.png",
+			"When": {"Spouse": "Blair"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},
+    ]
+}

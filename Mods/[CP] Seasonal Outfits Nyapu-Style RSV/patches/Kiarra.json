@@ -1,0 +1,27 @@
+{
+	"Changes": [
+		{
+            "LogName": "RSV Nyapu Edit - Kiarra Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Kiarra_spring, Portraits/Kiarra_summer, Portraits/Kiarra_fall, Portraits/Kiarra_winter, Portraits/Kiarra_spring24, Portraits/Kiarra_fall27-1, Portraits/Kiarra_fall27-2, Portraits/Kiarra_rain, Portraits/Kiarra_Beach",
+            "FromFile": "assets/Portraits/Kiarra/{{TargetWithoutPath}}.png"
+        },
+		{
+            "LogName": "RSV Nyapu Edit - Kiarra Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Kiarra",
+            "FromFile": "assets/Portraits/Kiarra/Kiarra_spring.png"
+        },				
+		{
+			"LogName": "RSV Nyapu Edit - Kiarra Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Kiarra.png",
+			"When": {"Spouse": "Kiarra"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},		
+	]
+}

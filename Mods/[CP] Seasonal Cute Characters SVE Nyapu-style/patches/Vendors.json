@@ -1,0 +1,11 @@
+{
+	"Changes": [
+		{
+			"LogName": "SVE Shops",
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Alesia_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Camilla_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/GilShop, Mods/FlashShifter.StardewValleyExpandedCP/Isaac_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/MarlonShop, Mods/FlashShifter.StardewValleyExpandedCP/Axel_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Brooklyn_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Chloe_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Claire_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Jace_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Martin_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Zoey_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/BlueJunimo, Mods/FlashShifter.StardewValleyExpandedCP/GreyJunimo, Mods/FlashShifter.StardewValleyExpandedCP/OrangeJunimo, Mods/FlashShifter.StardewValleyExpandedCP/PurpleJunimo, Mods/FlashShifter.StardewValleyExpandedCP/RedJunimo, Mods/FlashShifter.StardewValleyExpandedCP/YellowJunimo, Mods/FlashShifter.StardewValleyExpandedCP/Bear_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/HighlandsDwarf_Vendor", 
+			"FromFile": "assets/Portraits/Vendors/{{TargetWithoutPath}}.png",
+		},
+				
+	]
+}	

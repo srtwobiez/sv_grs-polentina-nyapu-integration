@@ -1,0 +1,18 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Bert Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Bert_spring, Portraits/Bert_summer, Portraits/Bert_fall, Portraits/Bert_winter, Portraits/Bert_spring24, Portraits/Bert_fall27-1, Portraits/Bert_fall27-2, Portraits/Bert_rain, Portraits/Bert_Beach",
+            "FromFile": "assets/Portraits/Bert/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Bert Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Bert",
+            "FromFile": "assets/Portraits/Bert/Bert_fall.png"
+        },		
+    ]
+}

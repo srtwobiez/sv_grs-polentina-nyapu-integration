@@ -1,0 +1,18 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Malaya Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Malaya_spring, Portraits/Malaya_summer, Portraits/Malaya_fall, Portraits/Malaya_winter, Portraits/Malaya_spring24, Portraits/Malaya_fall27-1, Portraits/Malaya_fall27-2, Portraits/Malaya_rain, Portraits/Malaya_Beach",
+            "FromFile": "assets/Portraits/Malaya/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Malaya Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Malaya",
+            "FromFile": "assets/Portraits/Malaya/Malaya_summer.png"
+        },		
+    ]
+}

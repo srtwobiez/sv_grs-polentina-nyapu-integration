@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Paula Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Paula_spring, Portraits/Paula_summer, Portraits/Paula_fall, Portraits/Paula_winter, Portraits/Paula_spring24, Portraits/Paula_fall27-1, Portraits/Paula_fall27-2, Portraits/Paula_rain, Portraits/Paula_Beach",
+            "FromFile": "assets/Portraits/Paula/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Paula Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Paula",
+            "FromFile": "assets/Portraits/Paula/Paula_fall.png"
+        },			
+		{
+			"LogName": "RSV Nyapu Edit - Paula Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Paula.png",
+			"When": {"Spouse": "Paula"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+    ]
+}

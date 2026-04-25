@@ -1,0 +1,59 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Faye Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Faye_spring, Portraits/Faye_summer, Portraits/Faye_fall, Portraits/Faye_winter, Portraits/Faye_spring24, Portraits/Faye_fall27-1, Portraits/Faye_fall27-2, Portraits/Faye_rain, Portraits/Faye_Beach",
+            "FromFile": "assets/Portraits/Faye/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Faye Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Faye",
+            "FromFile": "assets/Portraits/Faye/Faye_spring.png"
+        },		
+			
+        {
+			"LogName": "RSV Nyapu Edit - Faye Accessories, Summer",
+            "Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Faye_summer",
+			"FromFile": "assets/Portraits/Faye/Faye_acc_summer.png",
+			"When": {
+                "Weather|contains = Rain, Storm": false,
+				"IsOutdoors": true,
+				"HasValue:{{DayEvent}}": false,
+				"Query: {{Random:{{Range:1,10}}|key=FayeHat}} > 5": true,
+			},
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},
+		
+		{
+			"LogName": "RSV Nyapu Edit - Faye Accessories, Winter",
+            "Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Faye_winter",
+			"FromFile": "assets/Portraits/Faye/Faye_acc_winter.png",
+			"When": {
+                "Weather|contains = Rain, Storm": false,
+				"IsOutdoors": true,
+				"HasValue:{{DayEvent}}": false,
+				"Query: {{Random:{{Range:1,10}}|key=FayeHat}} > 5": true,
+			},
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},	
+		{
+			"LogName": "RSV Nyapu Edit - Faye Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Faye.png",
+			"When": {"Spouse": "Faye"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},
+    ]
+}

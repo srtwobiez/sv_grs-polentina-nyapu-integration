@@ -1,0 +1,25 @@
+{
+	"Format": "2.3.0",	
+	"Changes": [
+	
+// NPCs
+		{
+			"LogName": "Nyapu SVE NPCs",
+			"Action": "EditImage",
+			"Target": "Portraits/Alesia, Portraits/Andy, Portraits/Andy_Beach, Portraits/Andy_Winter, Portraits/Apples, Portraits/ApplesSad, Portraits/Axel, Portraits/Brooklyn, Portraits/Camilla, Portraits/Chloe, Portraits/Claire, Portraits/Claire_Beach, Portraits/Claire_Winter, Portraits/Dusty, Portraits/GuntherSilvian, Portraits/SVE_Henchman, Portraits/HighlandsDwarf, Portraits/Isaac, Portraits/Jace, Portraits/Jadu, Portraits/Jolyne, Portraits/Junimo, Portraits/Lance, Portraits/Lance_Beach, Portraits/Lance_Winter, Portraits/MarlonFay, Portraits/MarlonFay_Winter, Portraits/Martin, Portraits/Martin_Winter, Portraits/Mermaid, Portraits/Morgan, Portraits/MorrisTod, Portraits/MorrisTod_Winter, Portraits/Olivia, Portraits/Olivia_Beach, Portraits/Olivia_Winter, Portraits/Peaches, Portraits/Scarlett, Portraits/Scarlett_Beach, Portraits/Scarlett_Winter, Portraits/Sophia, Portraits/Sophia_Beach, Portraits/Sophia_Winter, Portraits/Suki, Portraits/Suki_DesertFestival, Portraits/Suki_IceFestival, Portraits/Susan, Portraits/Susan_Beach, Portraits/Susan_Winter, Portraits/Victor, Portraits/Victor_Beach, Portraits/Victor_Winter, Portraits/Wizard, Portraits/Zoey",
+			"FromFile": "assets/{{TargetWithoutPath}}.png",
+		},
+		
+// Vendors		
+		{
+			"LogName": "Nyapu SVE Shops",
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Alesia_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Camilla_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/GilShop, Mods/FlashShifter.StardewValleyExpandedCP/Isaac_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/MarlonShop, Mods/FlashShifter.StardewValleyExpandedCP/Axel_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Brooklyn_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Chloe_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Claire_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Jace_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Martin_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/Zoey_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/BlueJunimo, Mods/FlashShifter.StardewValleyExpandedCP/GreyJunimo, Mods/FlashShifter.StardewValleyExpandedCP/OrangeJunimo, Mods/FlashShifter.StardewValleyExpandedCP/PurpleJunimo, Mods/FlashShifter.StardewValleyExpandedCP/RedJunimo, Mods/FlashShifter.StardewValleyExpandedCP/YellowJunimo, Mods/FlashShifter.StardewValleyExpandedCP/Bear_Vendor, Mods/FlashShifter.StardewValleyExpandedCP/HighlandsDwarf_Vendor", 
+			"FromFile": "assets/Shops/{{TargetWithoutPath}}.png",
+		},
+
+		{	"Action": "Include",
+			"FromFile": "assets/Misc.json"
+		}
+	]
+}

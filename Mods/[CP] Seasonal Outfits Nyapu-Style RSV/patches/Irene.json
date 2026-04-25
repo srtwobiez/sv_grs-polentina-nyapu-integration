@@ -1,0 +1,71 @@
+{
+	"Changes": [
+		{
+            "LogName": "RSV Nyapu Edit - Irene Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Irene_spring, Portraits/Irene_summer, Portraits/Irene_fall, Portraits/Irene_winter, Portraits/Irene_spring24, Portraits/Irene_fall27-1, Portraits/Irene_fall27-2, Portraits/Irene_rain, Portraits/Irene_Beach, Portraits/Irene_Chef",
+            "FromFile": "assets/Portraits/Irene/{{TargetWithoutPath}}.png"
+        },
+		{
+            "LogName": "RSV Nyapu Edit - Irene Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Irene",
+            "FromFile": "assets/Portraits/Irene/Irene_summer.png"
+        },		
+		
+		{
+			"LogName": "RSV Nyapu Edit - Irene Accessories",
+            "Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Irene_fall",
+			"FromFile": "assets/Portraits/Irene/Irene_acc_fall.png",
+			"When": {
+				"IsOutdoors": true,
+				"HasValue:{{DayEvent}}": false,
+				"Query: {{Random:{{Range:1,10}}|key=IreneHat}} > 5": true,
+			},
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},
+		{
+			"LogName": "RSV Nyapu Edit - Irene Umbrella",
+            "Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Irene_fall, Portraits/Irene_summer, Portraits/Irene_spring, Portraits/Irene_rain, Characters/Irene_fall, Characters/Irene_summer, Characters/Irene_spring, Characters/Irene_rain",
+			"FromFile": "assets/{{TargetPathOnly}}/Irene/Irene_acc_rain.png",
+			"When": {
+				"IsOutdoors": true,
+				"HasValue:{{DayEvent}}": false,
+				"Weather": "Rain, Storm, GreenRain"
+			},
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},	
+		{
+			"LogName": "RSV Nyapu Edit - Irene Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Irene.png",
+			"When": {"Spouse": "Irene"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+        {
+            "LogName": "RSV Seasonal Appearances - Irene",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [ "Irene", "Appearance" ],
+            "Entries": {
+				"Rafseazz.RSVSeasonalOutfits.IreneRain": {
+                    "Id": "Rafseazz.RSVSeasonalOutfits.IreneRain",
+                    "Portrait": "Portraits/Irene_rain",
+                    "Sprite": "Characters/Irene_rain",
+                    "Condition": "SEASON spring, WEATHER Target Rain Storm",
+                    "Precedence": -120
+                },
+            }
+        },		
+	]
+}
