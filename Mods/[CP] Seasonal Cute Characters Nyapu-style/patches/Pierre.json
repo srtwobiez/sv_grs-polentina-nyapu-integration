@@ -1,0 +1,28 @@
+{
+	"Changes": [
+
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Pierre's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Pierre, Portraits/Pierre_Beach, Portraits/Pierre_Summer, Portraits/Pierre_Fall, Portraits/Pierre_Winter_Outdoor, Portraits/Pierre_Winter_Indoor, Portraits/Pierre_FlowerDance, Portraits/Pierre_SpiritsEve",
+			"FromFile": "assets/Portraits/Pierre/{{TargetWithoutPath}}.png"
+		},			
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Pierre Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Pierre", "Appearance"],
+			"Fields": {
+				
+				"Poltergeister.SeasonalCuteCharacters.PierreSpring": {
+					"Portrait": "Portraits/Pierre",
+				},
+			},
+		},	
+	]
+}

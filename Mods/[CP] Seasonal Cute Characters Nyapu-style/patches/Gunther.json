@@ -1,0 +1,39 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Gunther's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Gunther, Portraits/Gunther_Summer, Portraits/Gunther_Fall, Portraits/Gunther_Winter, Portraits/Gunther_FlowerDance, Portraits/Gunther_SpiritsEve",
+			"FromFile": "assets/Portraits/Gunther/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Gunther Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Gunther", "Appearance"],
+			"Fields": {
+				
+				"Poltergeister.SeasonalCuteCharacters.GuntherSpring": {
+					"Portrait": "Portraits/Gunther",
+				},
+			},
+		},
+		
+// MISCELLANEOUS
+		{   
+			"LogName": "Gunther - Movie Theater",
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+            "FromFile": "assets/TileSheets/MovieTheater_TileSheet_{{Season}}.png",
+            "FromArea": { "X": 208, "Y": 192, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 208, "Y": 192, "Width": 16, "Height": 32 },
+		},
+	]
+}

@@ -1,0 +1,52 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Sandy's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Sandy, Portraits/Sandy_Spring, Portraits/Sandy_Summer, Portraits/Sandy_Fall, Portraits/Sandy_FlowerDance, Portraits/Sandy_SpiritsEve",
+			"FromFile": "assets/Portraits/Sandy/{{TargetWithoutPath}}.png"
+		},
+	
+		{
+			"LogName": "Sandy's Sprite Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/Sandy_Spring, Characters/Sandy_Fall, Characters/Sandy_FlowerDance",
+			"FromFile": "assets/Characters/Sandy/{{TargetWithoutPath}}.png"
+		},		
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Sandy Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Sandy", "Appearance"],
+			"Fields": {
+				
+				"Poltergeister.SeasonalCuteCharacters.SandyWinterIndoor": {
+					"Portrait": "Portraits/Sandy",
+				},
+			},
+		},		
+// MISCELLANEOUS		
+		{
+            "LogName": "Sandy Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Sandy",
+            "FromFile": "assets/Characters/Sandy/Sandy_Fall.png",
+			"When": {"Season": "fall"}
+        },	
+		{
+            "LogName": "Sandy Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Sandy",
+            "FromFile": "assets/Characters/Sandy/Sandy_Spring.png",
+			"When": {"Season": "spring"}
+        },		
+		
+	]
+}

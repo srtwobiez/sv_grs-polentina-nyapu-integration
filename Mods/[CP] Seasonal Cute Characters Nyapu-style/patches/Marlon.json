@@ -1,0 +1,33 @@
+{
+	"Changes": [
+
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Marlon's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Marlon_Spring, Portraits/Marlon_Summer, Portraits/Marlon_Fall, Portraits/Marlon_Winter, Portraits/Marlon_FlowerDance",
+			"FromFile": "assets/Portraits/Marlon/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Marlon's Sprite Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/Marlon_Spring, Characters/Marlon_Summer, Characters/Marlon_Fall, Characters/Marlon_FlowerDance",
+			"FromFile": "assets/Characters/Marlon/{{TargetWithoutPath}}.png"
+		},			
+		
+// MISCELLANEOUS		
+		{   
+			"LogName": "Marlon - Movie Theater",
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+            "FromFile": "assets/TileSheets/MovieTheater_TileSheet_{{Season}}.png",
+            "FromArea": { "X": 0, "Y": 192, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 192, "Width": 16, "Height": 32 },
+		},
+	]
+}

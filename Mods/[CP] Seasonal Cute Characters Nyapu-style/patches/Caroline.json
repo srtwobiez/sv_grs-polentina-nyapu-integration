@@ -1,0 +1,27 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Caroline's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Caroline, Portraits/Caroline_Beach, Portraits/Caroline_Summer, Portraits/Caroline_Fall, Portraits/Caroline_Winter_Outdoor, Portraits/Caroline_Winter_Indoor, Portraits/Caroline_FlowerDance, Portraits/Caroline_SpiritsEve, Portraits/Caroline_Aerobics",
+			"FromFile": "assets/Portraits/Caroline/{{TargetWithoutPath}}.png"
+		},
+
+		//APPEARANCE DATA 
+		{
+			"LogName": "Caroline Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Caroline", "Appearance"],
+			"Fields": {				
+				"Poltergeister.SeasonalCuteCharacters.CarolineSpring": {
+					"Portrait": "Portraits/Caroline",
+				},
+			},
+		},		
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		
+		{
+			"LogName": "Vincent's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Vincent, Portraits/Vincent_Beach, Portraits/Vincent_Summer, Portraits/Vincent_Fall, Portraits/Vincent_Winter_Outdoor, Portraits/Vincent_Winter_Indoor, Portraits/Vincent_FlowerDance, Portraits/Vincent_SpiritsEve",
+			"FromFile": "assets/Portraits/Vincent/{{TargetWithoutPath}}.png"
+		},
+
+		{
+			"LogName": "Vincent's Sprite Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/Vincent_FlowerDance",
+			"FromFile": "assets/Characters/Vincent/{{TargetWithoutPath}}.png"
+		},			
+
+		//APPEARANCE DATA 
+		{
+			"LogName": "Vincent Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Vincent", "Appearance"],
+			"Fields": {
+				
+				"Poltergeister.SeasonalCuteCharacters.VincentSpring": {
+					"Portrait": "Portraits/Vincent",
+				},
+			},
+		},
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Elliott's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Elliott, Portraits/Elliott_Winter, Portraits/Elliott_Beach, Portraits/Elliott_Spring, Portraits/Elliott_Summer, Portraits/Elliott_Winter_Outdoor, Portraits/Elliott_Winter_Indoor, Portraits/Elliott_FlowerDance, Portraits/Elliott_SpiritsEve, Portraits/Elliott_EggF, Portraits/Elliott_Fair, Portraits/Elliott_Jellies, Portraits/Elliott_Luau, Portraits/Elliott_Winter_IceF, Portraits/Elliott_Winter_WinterStar",
+			"FromFile": "assets/Portraits/Elliott/{{TargetWithoutPath}}.png"
+		},
+		
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Elliott Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Elliott", "Appearance"],
+			"Fields": {
+				
+				"Poltergeister.SeasonalCuteCharacters.ElliottFall": {
+					"Portrait": "Portraits/Elliott",
+				},
+
+				"Poltergeister.SeasonalCuteCharacters.ElliottIceFestival": {
+					"Portrait": "Portraits/Elliott_Winter",
+				},
+			},
+		},	
+	]
+}

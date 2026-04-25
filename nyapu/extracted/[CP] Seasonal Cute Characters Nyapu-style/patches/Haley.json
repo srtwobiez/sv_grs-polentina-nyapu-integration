@@ -1,0 +1,28 @@
+{
+	"Changes": [
+
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Haley's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Haley, Portraits/Haley_Beach, Portraits/Haley_Summer, Portraits/Haley_Fall, Portraits/Haley_Winter_Outdoor, Portraits/Haley_Winter_Indoor, Portraits/Haley_FlowerDance, Portraits/Haley_SpiritsEve, Portraits/Haley_EggF, Portraits/Haley_Fair, Portraits/Haley_Jellies, Portraits/Haley_Luau, Portraits/Haley_Winter_IceF, Portraits/Haley_Winter_WinterStar",
+			"FromFile": "assets/Portraits/Haley/{{TargetWithoutPath}}.png"
+		},		
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Haley Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Haley", "Appearance"],
+			"Fields": {
+	
+				"Poltergeister.SeasonalCuteCharacters.HaleySpring": {
+					"Portrait": "Portraits/Haley",
+				},
+			},
+		},	
+	]
+}

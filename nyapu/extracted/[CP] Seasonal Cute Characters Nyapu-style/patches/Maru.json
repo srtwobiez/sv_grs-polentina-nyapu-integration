@@ -1,0 +1,62 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Maru's Outfits",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Maru, Portraits/Maru_Winter, Portraits/Maru_Beach, Portraits/Maru_Hospital, Portraits/Maru_Summer, Portraits/Maru_Fall, Portraits/Maru_Winter_Outdoor, Portraits/Maru_Winter_Indoor, Portraits/Maru_FlowerDance, Portraits/Maru_SpiritsEve, Portraits/Maru_EggF, Portraits/Maru_Fair, Portraits/Maru_Jellies, Portraits/Maru_Luau, Portraits/Maru_Winter_WinterStar",
+			"FromFile": "assets/Portraits/Maru/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Maru's Sprite Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/Maru_Summer, Characters/Maru_Fall, Characters/Maru_Winter_Outdoor, Characters/Maru_Winter_Indoor",
+			"FromFile": "assets/Characters/Maru/{{TargetWithoutPath}}.png"
+		},					
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Maru Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Maru", "Appearance"],
+			"Fields": {
+				
+				"Poltergeister.SeasonalCuteCharacters.MaruSpring": {
+					"Portrait": "Portraits/Maru",
+				},
+					
+				"Poltergeister.SeasonalCuteCharacters.MaruIceFestival": {
+					"Portrait": "Portraits/Maru_Winter",
+				},			
+			},
+		},
+// MISCELLANEOUS		
+		{
+            "LogName": "Maru Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Maru",
+            "FromFile": "assets/Characters/Maru/Maru_Winter_Outdoor.png",
+			"When": {"Season": "winter"}
+        },	
+		{
+            "LogName": "Maru Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Maru",
+            "FromFile": "assets/Characters/Maru/Maru_Summer.png",
+			"When": {"Season": "summer"}
+        },	
+		{
+            "LogName": "Maru Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Maru",
+            "FromFile": "assets/Characters/Maru/Maru_Fall.png",
+			"When": {"Season": "fall"}
+        },			
+	]
+}

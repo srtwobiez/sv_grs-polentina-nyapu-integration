@@ -1,0 +1,36 @@
+{
+	"Changes": [
+		
+		{
+			"LogName": "Gil - Seasonal",
+			"Action": "EditImage",
+			"Priority": "Late +10",
+			"Target": "Portraits/Gil",
+			"FromFile": "assets/Portraits/Gil/Gil_{{season}}.png",
+		},
+
+//Normal Gil
+		{   
+			"LogName": "Gil - TownInterior",
+            "Action": "EditImage",
+			"Priority": "Late +10",
+			"PatchMode": "Overlay",
+            "Target": "Maps/townInterior",
+            "FromFile": "assets/TileSheets/townInterior_{{Season}}.png",
+            "FromArea": { "X": 181, "Y": 624, "Width": 64, "Height": 64 },
+            "ToArea": { "X": 181, "Y": 624, "Width": 64, "Height": 64 },
+		},
+		
+// MISCELLANEOUS
+		{
+			"LogName": "Gil - Movie Theater",
+            "Action": "EditImage",
+			"Priority": "Late +10",
+			"PatchMode": "Overlay",
+            "Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+            "FromFile": "assets/TileSheets/MovieTheater_TileSheet_{{Season}}.png",
+            "FromArea": { "X": 228, "Y": 217, "Width": 21,  "Height": 29 },
+            "ToArea": { "X": 228, "Y": 217, "Width": 21,  "Height": 29 },
+		},		
+	]
+}
