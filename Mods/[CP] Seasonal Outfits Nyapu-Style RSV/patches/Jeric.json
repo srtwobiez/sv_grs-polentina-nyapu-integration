@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Jeric Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Jeric_spring, Portraits/Jeric_summer, Portraits/Jeric_fall, Portraits/Jeric_winter, Portraits/Jeric_spring24, Portraits/Jeric_fall27-1, Portraits/Jeric_fall27-2, Portraits/Jeric_rain, Portraits/Jeric_Beach",
+            "FromFile": "assets/Portraits/Jeric/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Jeric Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Jeric",
+            "FromFile": "assets/Portraits/Jeric/Jeric_spring.png"
+        },	
+		{
+			"LogName": "RSV Nyapu Edit - Jeric Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Jeric.png",
+			"When": {"Spouse": "Jeric"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},
+	]
+}

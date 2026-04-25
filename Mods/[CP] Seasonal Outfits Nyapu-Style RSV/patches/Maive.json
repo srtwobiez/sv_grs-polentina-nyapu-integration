@@ -1,0 +1,32 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Maive Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Maive_spring, Portraits/Maive_summer, Portraits/Maive_fall, Portraits/Maive_winter, Portraits/Maive_spring24, Portraits/Maive_fall27-1, Portraits/Maive_fall27-2, Portraits/Maive_rain, Portraits/Maive_Beach",
+            "FromFile": "assets/Portraits/Maive/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Maive Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Maive",
+            "FromFile": "assets/Portraits/Maive/Maive_spring.png"
+        },		
+		{
+			"LogName": "RSV Nyapu Edit - Maive Accessories",
+            "Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Maive_summer",
+			"FromFile": "assets/Portraits/Maive/Maive_acc_summer.png",
+			"When": {
+				"IsOutdoors": true,
+				"HasValue:{{DayEvent}}": false,
+				"Query: {{Random:{{Range:1,10}}|key=MaiveHat}} > 5": true,
+			},
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},
+    ]
+}

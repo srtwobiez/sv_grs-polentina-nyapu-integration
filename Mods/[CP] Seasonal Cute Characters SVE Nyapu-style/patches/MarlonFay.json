@@ -1,0 +1,55 @@
+{
+	"Changes": [
+
+		{
+			"LogName": "Marlon's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Marlon_Spring, Portraits/Marlon_Summer, Portraits/Marlon_Fall, Portraits/Marlon_Winter",
+			"FromFile": "assets/Portraits/Marlon/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Marlon's Outfit Sprites",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/Marlon_Spring, Characters/Marlon_Summer, Characters/Marlon_Fall",
+			"FromFile": "assets/Characters/Marlon/{{TargetWithoutPath}}.png"
+		},		
+		{
+			"LogName": "Marlon Fay's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/MarlonFay_Spring, Portraits/MarlonFay_Summer, Portraits/MarlonFay_Fall, Portraits/MarlonFay_Winter, Portraits/MarlonFay_FlowerDance",
+			"FromFile": "assets/Portraits/MarlonFay/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Marlon Fay's Outfit Sprites",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/MarlonFay_FlowerDance, Characters/MarlonFay_Spring, Characters/MarlonFay_Summer, Characters/MarlonFay_Fall,",
+			"FromFile": "assets/Characters/MarlonFay/{{TargetWithoutPath}}.png"
+		},		
+		{
+			"LogName": "Marlon Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/MarlonFay, Portraits/Marlon",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+		},	
+		{ 
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+			"FromFile": "assets/Characters/MovieTheater_Blank.png",
+			"ToArea": {"X": 0, "Y": 192, "Width": 16, "Height": 32},
+			"Update": "OnLocationChange",
+			"When": {
+				"LocationName": "MovieTheater",
+				"HasFile:{{FromFile}}": true,
+			}
+		},	
+		{
+            "LogName": "MarlonFay Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/MarlonFay",
+            "FromFile": "assets/Characters/MarlonFay/{{TargetWithoutPath}}_{{Season}}.png",
+			"When": {"Season": "spring, summer, fall"}
+        },			
+	]
+}

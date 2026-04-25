@@ -1,0 +1,27 @@
+{
+	"Changes": [
+		{
+            "LogName": "RSV Nyapu Edit - Corine Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Corine_spring, Portraits/Corine_summer, Portraits/Corine_fall, Portraits/Corine_winter, Portraits/Corine_spring24, Portraits/Corine_fall27-1, Portraits/Corine_fall27-2, Portraits/Corine_spring13, Portraits/Corine_rain, Portraits/Corine_Beach, Portraits/Corine_Ninja",
+            "FromFile": "assets/Portraits/Corine/{{TargetWithoutPath}}.png"
+        },
+		{
+            "LogName": "RSV Nyapu Edit - Corine Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Corine",
+            "FromFile": "assets/Portraits/Corine/Corine_spring.png"
+        },		
+		{
+			"LogName": "RSV Nyapu Edit - Corine Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Corine.png",
+			"When": {"Spouse": "Corine"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+	]
+}

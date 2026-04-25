@@ -1,0 +1,18 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Yuuma Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Yuuma_spring, Portraits/Yuuma_summer, Portraits/Yuuma_fall, Portraits/Yuuma_winter, Portraits/Yuuma_spring24, Portraits/Yuuma_fall27-1, Portraits/Yuuma_fall27-2, Portraits/Yuuma_rain, Portraits/Yuuma_Beach",
+            "FromFile": "assets/Portraits/Yuuma/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Yuuma Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Yuuma",
+            "FromFile": "assets/Portraits/Yuuma/Yuuma_summer.png"
+        },		
+    ]
+}

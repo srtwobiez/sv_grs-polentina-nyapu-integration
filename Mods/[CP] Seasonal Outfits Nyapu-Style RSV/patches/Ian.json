@@ -1,0 +1,44 @@
+{
+	"Changes": [
+		{
+            "LogName": "RSV Nyapu Edit - Ian Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Ian_spring, Portraits/Ian_summer, Portraits/Ian_fall, Portraits/Ian_winter, Portraits/Ian_spring24, Portraits/Ian_fall27-1, Portraits/Ian_fall27-2, Characters/Ian_spring, Characters/Ian_summer, Characters/Ian_fall, Characters/Ian_winter, Characters/Ian_spring24, Characters/Ian_fall27-1, Characters/Ian_fall27-2, Portraits/Ian_rain, Characters/Ian_rain, Portraits/Ian_Beach, Characters/Ian_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/{{IanBeard}}/{{TargetWithoutPath}}.png",
+			"When": { "HasFile:{{FromFile}}": true, }
+        },
+		{
+            "LogName": "RSV Nyapu Edit - Ian Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Ian, Characters/Ian",
+            "FromFile": "assets/{{TargetPathOnly}}/{{IanBeard}}/Ian_fall.png",
+			"When": { "HasFile:{{FromFile}}": true, }
+        },			
+		{
+			"LogName": "RSV Nyapu Edit - Ian Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Ian.png",
+			"When": {
+				"Spouse": "Ian",
+				"BeardedIan": false
+			},
+			"Update": "OnLocationChange, OnTimeChange"
+		},
+		{
+			"LogName": "RSV Nyapu Edit - Ian Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Ian_Beard.png",
+			"When": {
+				"Spouse": "Ian",
+				"BeardedIan": true
+			},
+			"Update": "OnLocationChange, OnTimeChange"
+		},		
+	]
+}

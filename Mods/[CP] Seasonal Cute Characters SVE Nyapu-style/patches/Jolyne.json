@@ -1,0 +1,32 @@
+{
+	"Changes": [
+	
+		{
+			"LogName": "Jolyne's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Jolyne_Spring, Portraits/Jolyne_Summer, Portraits/Jolyne_Fall, Portraits/Jolyne_Winter",
+			"FromFile": "assets/Portraits/Jolyne/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Jolyne's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Jolyne",
+			"FromFile": "assets/Portraits/Jolyne/Jolyne_{{Season}}.png"
+		},		
+		{
+			"LogName": "Jolyne Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Jolyne", "Appearance"],
+			"Entries": {
+				"Poltergeister.SeasonalCuteSpritesSVE.JolyneWinter": {
+					"Id": "Poltergeister.SeasonalCuteSpritesSVE.JolyneWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Jolyne_Winter",
+					"Portrait": "Portraits/Jolyne_Winter",
+					"Precedence": -120,
+				},
+			},
+		},		
+	]
+}

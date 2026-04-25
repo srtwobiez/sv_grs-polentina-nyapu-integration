@@ -1,0 +1,25 @@
+{
+	"Name": "Seasonal Cute SVE Nyapu Portrait Retextures",
+	"Author": "Nyapu and AhCuteArt",
+	"Version": "3.2.0",
+	"Description": "Nyapu-style portrait replacement for Seasonal Cute Characters SVE.",
+	"UniqueID": "AhCuteArt.Nyapu_SeasonalCuteSVE",
+	"UpdateKeys": [ "Nexus:26601" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "Poltergeister.SeasonalCuteSpritesSVE",
+			"IsRequired": true
+		},
+		{   
+		    "UniqueID": "Nyapu.AllPortraits",
+			"IsRequired": false
+		},
+		{   
+		    "UniqueID": "Nyapu.Portraits",
+			"IsRequired": false
+		},		
+	]
+}

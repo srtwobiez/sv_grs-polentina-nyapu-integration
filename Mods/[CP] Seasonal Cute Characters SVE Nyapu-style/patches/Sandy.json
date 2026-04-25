@@ -1,0 +1,31 @@
+{
+	"Changes": [
+		
+		{
+			"LogName": "Sandy's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Sandy_Spring, Portraits/Sandy_Summer, Portraits/Sandy_Fall, Portraits/Sandy_Winter, Portraits/Sandy_FlowerDance, Portraits/Sandy_SpiritsEve",
+			"FromFile": "assets/Portraits/Sandy/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Sandy's Outfit Sprites",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/Sandy_Spring, Characters/Sandy_Fall, Characters/Sandy_FlowerDance",
+			"FromFile": "assets/Characters/Sandy/{{TargetWithoutPath}}.png",
+		},		
+		{
+			"LogName": "Sandy's Base Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Sandy",
+			"FromFile": "assets/Portraits/Sandy/Sandy_{{Season}}.png",
+		},		
+		{
+            "LogName": "Sandy Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Sandy",
+            "FromFile": "assets/Characters/Sandy/{{TargetWithoutPath}}_{{Season}}.png",
+			"When": {"Season": "spring, fall"}
+        },			
+	]
+}

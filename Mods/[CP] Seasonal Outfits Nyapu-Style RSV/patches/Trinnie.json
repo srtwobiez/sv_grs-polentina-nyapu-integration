@@ -1,0 +1,18 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Trinnie Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Trinnie_spring, Portraits/Trinnie_summer, Portraits/Trinnie_fall, Portraits/Trinnie_winter, Portraits/Trinnie_spring24, Portraits/Trinnie_fall27-1, Portraits/Trinnie_fall27-2, Portraits/Trinnie_rain, Portraits/Trinnie_Beach",
+            "FromFile": "assets/Portraits/Trinnie/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Trinnie Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Trinnie",
+            "FromFile": "assets/Portraits/Trinnie/Trinnie_fall.png"
+        },		
+    ]
+}

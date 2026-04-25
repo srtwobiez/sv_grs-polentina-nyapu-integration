@@ -1,0 +1,41 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Ezekiel Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Ezekiel_spring, Portraits/Ezekiel_summer, Portraits/Ezekiel_fall, Portraits/Ezekiel_winter, Portraits/Ezekiel_spring24, Portraits/Ezekiel_fall27-1, Portraits/Ezekiel_fall27-2, Portraits/Ezekiel_rain",
+            "FromFile": "assets/Portraits/Ezekiel/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Ezekiel Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Ezekiel, Portraits/Ezekiel_Beach",
+            "FromFile": "assets/Portraits/Ezekiel/Ezekiel_fall.png"
+        },		
+		
+		{
+			"LogName": "RSV Nyapu Edit - Ezekiel Accessories",
+            "Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Ezekiel_spring, Portraits/Ezekiel_summer, Portraits/Ezekiel_fall, Portraits/Ezekiel_winter, Portraits/Ezekiel_rain",
+			"FromFile": "assets/Portraits/Ezekiel/Ezekiel_acc.png",
+			"When":
+			{
+				"Query: '{{Weather|contains=Rain, Storm, Snow}}' = 'true' OR ({{Random:{{Range:1,10}}|key=EzekielHat}} > 5)": true,
+				"IsOutdoors": true,
+				"HasValue:{{DayEvent}}": false,
+			},
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},
+		{
+			"LogName": "RSV: Ezekiel's Photograph",
+			"Action": "EditImage",
+			"Priority": "Late",			
+			"Target": "Maps/EzekielPicFinal",
+			"FromFile": "assets/TileSheets/EzekielPicFinal.png"
+		},		
+    ]
+}

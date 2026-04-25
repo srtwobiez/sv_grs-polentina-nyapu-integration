@@ -1,0 +1,18 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Lenny Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Lenny_spring, Portraits/Lenny_summer, Portraits/Lenny_fall, Portraits/Lenny_winter, Portraits/Lenny_spring24, Portraits/Lenny_fall27-1, Portraits/Lenny_fall27-2, Portraits/Lenny_rain, Portraits/Lenny_Beach, Characters/Lenny_spring24",
+            "FromFile": "assets/{{TargetPathOnly}}/Lenny/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Lenny Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Lenny",
+            "FromFile": "assets/Portraits/Lenny/Lenny_spring.png"
+        },		
+    ]
+}

@@ -1,0 +1,44 @@
+{
+	"Changes": [
+	
+		{
+			"LogName": "Sophia's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Sophia_Spring, Portraits/Sophia_Summer, Portraits/Sophia_Fall, Portraits/Sophia_Winter_Outdoor, Portraits/Sophia_Winter_Indoor, Portraits/Sophia_FlowerDance, Portraits/Sophia_SpiritsEve, Portraits/Sophia_Spring_Makeup, Portraits/Sophia_Summer_Makeup, Portraits/Sophia_Fall_Makeup, Portraits/Sophia_Winter_Outdoor_Makeup, Portraits/Sophia_Winter_Indoor_Makeup, Portraits/Sophia_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Sophia/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Sophia's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Sophia",
+			"FromFile": "assets/Portraits/Sophia/Sophia_{{Season}}.png",
+		    "When": {"Season |contains=winter": false}
+		},	
+		{
+			"LogName": "Sophia's Outfit Base Winter",
+			"Action": "EditImage",
+			"Target": "Portraits/Sophia_Winter, Characters/Sophia_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/Sophia/Sophia_Winter_Outdoor.png"
+		},						
+		{
+            "LogName": "Sophia Older Overlay",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia, Portraits/Sophia_Spring, Portraits/Sophia_Fall, Portraits/Sophia_Summer Portraits/Sophia_Winter, Portraits/Sophia_Winter_Outdoor, Portraits/Sophia_Winter_Indoor, Portraits/Sophia_Beach, Portraits/Sophia_FlowerDance",
+            "FromFile": "assets/Portraits/Sophia/Sophia_Older_Overlay.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "OlderSophia": "true",
+            }
+        },
+        {
+            "LogName": "Sophia Older Overlay Makeup",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia_Spring_Makeup, Portraits/Sophia_Summer_Makeup, Portraits/Sophia_Fall_Makeup, Portraits/Sophia_Winter_Outdoor_Makeup, Portraits/Sophia_Winter_Indoor_Makeup, Portraits/Sophia_SpiritsEve",
+            "FromFile": "assets/Portraits/Sophia/Sophia_Older_MU_Overlay.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "OlderSophia": "true",
+            }
+        },				
+	]
+}

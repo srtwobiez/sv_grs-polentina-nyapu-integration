@@ -1,0 +1,39 @@
+{
+	"Changes": [
+	
+		{
+			"LogName": "Alesia's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Alesia_Spring, Portraits/Alesia_Summer, Portraits/Alesia_Fall, Portraits/Alesia_Winter, Portraits/Alesia_FlowerDance",
+			"FromFile": "assets/Portraits/Alesia/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Alesia's Outfits Sprite",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Characters/Alesia_FlowerDance",
+			"FromFile": "assets/Characters/Alesia/Alesia_FlowerDance.png"
+		},		
+		{
+			"LogName": "Alesia's Outfits Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Alesia",
+			"FromFile": "assets/Portraits/Alesia/Alesia_{{Season}}.png"
+		},		
+{
+			"LogName": "Alesia Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Alesia", "Appearance"],
+			"Entries": {
+				"Poltergeister.SeasonalCuteSpritesSVE.AlesiaWinter": {
+					"Id": "Poltergeister.SeasonalCuteSpritesSVE.AlesiaWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Alesia_Winter",
+					"Portrait": "Portraits/Alesia_Winter",
+					"Precedence": -120,
+				},
+			},
+		},		
+	]
+}

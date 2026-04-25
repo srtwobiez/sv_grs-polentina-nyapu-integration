@@ -1,0 +1,47 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Daia Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Daia_spring, Portraits/Daia_summer, Portraits/Daia_fall, Portraits/Daia_winter, Portraits/Daia_spring24, Portraits/Daia_fall27-1, Portraits/Daia_fall27-2, Portraits/Daia_ninja, Portraits/Daia_rain, Portraits/Daia_Beach, Portraits/Daia_Party",
+            "FromFile": "assets/Portraits/Daia/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Daia Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Daia",
+            "FromFile": "assets/Portraits/Daia/Daia_ninja.png"
+        },		
+		
+		{
+			"LogName": "RSV Daia Ninja Mask In Intro",
+            "Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Daia_ninja",
+			"FromFile": "assets/Portraits/Daia/Daia_mask.png",
+			"PatchMode": "Overlay",
+			"When":{"HasSeenEvent|contains=75160254": false}
+		},
+		
+		{
+			"LogName": "RSV Daia Work Outfit Mask",
+            "Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Daia_ninja",
+			"FromFile": "assets/Portraits/Daia/Daia_mask.png",
+			"When":{"Query: {{Random:{{Range:1,10}}|key=DaiaMask}}|contains= 6,9": true,},
+			"PatchMode": "Overlay"
+		},	
+		{
+			"LogName": "RSV Nyapu Edit - Daia Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Daia.png",
+			"When": {"Spouse": "Daia"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},
+    ]
+}

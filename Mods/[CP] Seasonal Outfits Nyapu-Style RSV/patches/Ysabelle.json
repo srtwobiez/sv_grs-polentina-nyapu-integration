@@ -1,0 +1,27 @@
+{
+	"Changes": [
+		{
+            "LogName": "RSV Nyapu Edit - Ysabelle Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Ysabelle_spring, Portraits/Ysabelle_summer, Portraits/Ysabelle_fall, Portraits/Ysabelle_winter, Portraits/Ysabelle_spring24, Portraits/Ysabelle_fall27-1, Portraits/Ysabelle_fall27-2,  Portraits/Ysabelle_spring13, Portraits/Ysabelle_rain, Portraits/Ysabelle_Beach, Portraits/Ysabelle_Ball",
+            "FromFile": "assets/Portraits/Ysabelle/{{TargetWithoutPath}}.png"
+        },
+		{
+            "LogName": "RSV Nyapu Edit - Ysabelle Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Ysabelle",
+            "FromFile": "assets/Portraits/Ysabelle/Ysabelle_summer.png"
+        },			
+		{
+			"LogName": "RSV Nyapu Edit - Ysabelle Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Ysabelle.png",
+			"When": {"Spouse": "Ysabelle"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+	]
+}

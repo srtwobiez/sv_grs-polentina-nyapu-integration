@@ -1,0 +1,32 @@
+{
+	"Changes": [
+	
+		{
+			"LogName": "Camilla's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Camilla_Spring, Portraits/Camilla_Summer, Portraits/Camilla_Fall, Portraits/Camilla_Winter",
+			"FromFile": "assets/Portraits/Camilla/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Camilla's Outfit Base",
+			"Action": "EditImage",
+			"Target": "Portraits/Camilla",
+			"FromFile": "assets/Portraits/Camilla/Camilla_Fall.png"
+		},
+		{
+			"LogName": "Camilla Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Camilla", "Appearance"],
+			"Entries": {
+				"Poltergeister.SeasonalCuteSpritesSVE.CamillaWinter": {
+					"Id": "Poltergeister.SeasonalCuteSpritesSVE.CamillaWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Camilla_Winter",
+					"Portrait": "Portraits/Camilla_Winter",
+					"Precedence": -120,
+				},
+			},
+		},		
+	]
+}

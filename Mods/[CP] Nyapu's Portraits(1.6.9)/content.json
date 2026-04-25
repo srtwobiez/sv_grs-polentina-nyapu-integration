@@ -1,0 +1,12 @@
+{
+  "Format": "2.4",
+  "Changes": [
+
+	{
+	   "Action": "EditImage",
+	   "Target": "Portraits/Abigail,Portraits/Abigail_Beach,Portraits/Abigail_Winter,Portraits/Alex,Portraits/Alex_Beach,Portraits/Alex_Winter,Portraits/Caroline,Portraits/Caroline_Beach,Portraits/Caroline_Winter,Portraits/Clint,Portraits/Clint_Beach,Portraits/Clint_Winter,Portraits/Demetrius,Portraits/Demetrius_Winter,Portraits/Dwarf,Portraits/Elliott,Portraits/Elliott_Beach,Portraits/Elliott_Winter,Portraits/Emily,Portraits/Emily_Beach,Portraits/Emily_Winter,Portraits/Evelyn,Portraits/Evelyn_Winter,Portraits/George,Portraits/George_Winter,Portraits/Gil,Portraits/Grandpa,Portraits/Gunther,Portraits/Gus,Portraits/Gus_Winter,Portraits/Haley,Portraits/Haley_Beach,Portraits/Haley_Winter,Portraits/Harvey,Portraits/Harvey_Beach,Portraits/Harvey_Winter,Portraits/Jas,Portraits/Jas_Winter,Portraits/Jodi,Portraits/Jodi_Beach,Portraits/Jodi_Winter,Portraits/Kent,Portraits/Kent_Winter,Portraits/Krobus,Portraits/Krobus_Trenchcoat,Portraits/Leah,Portraits/Leah_Beach,Portraits/Leah_Winter,Portraits/Lewis,Portraits/Lewis_Winter,Portraits/Linus,Portraits/Linus_Winter,Portraits/Marlon,Portraits/Marnie,Portraits/Marnie_Beach,Portraits/Marnie_Winter,Portraits/Maru,Portraits/Maru_Beach,Portraits/Maru_Hospital,Portraits/Maru_Winter,Portraits/Morris,Portraits/MrQi,Portraits/Pam,Portraits/Pam_Beach,Portraits/Pam_Winter,Portraits/Penny,Portraits/Penny_Beach,Portraits/Penny_Winter,Portraits/Pierre,Portraits/Pierre_Beach,Portraits/Pierre_Winter,Portraits/Robin,Portraits/Robin_Beach,Portraits/Robin_Winter,Portraits/Sam,Portraits/Sam_Beach,Portraits/Sam_Winter,Portraits/Sam_JojaMart,Portraits/Sandy,Portraits/Sebastian,Portraits/Sebastian_Beach,Portraits/Sebastian_Winter,Portraits/Shane,Portraits/Shane_Beach,Portraits/Shane_Winter,Portraits/Shane_JojaMart,Portraits/Vincent,Portraits/Vincent_Winter,Portraits/Willy,Portraits/Willy_Winter,Portraits/Wizard,Portraits/ParrotBoy,Portraits/ParrotBoy_Winter,Portraits/SafariGuy,Portraits/Birdie,Portraits/Henchman,Portraits/Bear,Portraits/Governor,Portraits/Bouncer,Portraits/Fizz,",
+	   "FromFile": "assets/{{TargetWithoutPath}}.png",
+	},
+
+  ]
+}

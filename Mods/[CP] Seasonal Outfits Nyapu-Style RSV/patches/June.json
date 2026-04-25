@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - June Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/June_spring, Portraits/June_summer, Portraits/June_fall, Portraits/June_winter, Portraits/June_spring24, Portraits/June_fall27-1, Portraits/June_fall27-2, Portraits/June_rain, Portraits/June_Beach",
+            "FromFile": "assets/Portraits/June/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - June Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/June",
+            "FromFile": "assets/Portraits/June/June_fall.png"
+        },		
+		{
+			"LogName": "RSV Nyapu Edit - June Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/June.png",
+			"When": {"Spouse": "June"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},			
+    ]
+}

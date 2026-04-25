@@ -1,0 +1,11 @@
+{
+	"Changes": [
+		{
+			"LogName": "Non-Seasonal Characters",
+			"Action": "EditImage",
+			"Target": "Portraits/Apples, Portraits/ApplesSad, Portraits/Axel, Portraits/Brooklyn, Portraits/Chloe, Portraits/Dusty, Portraits/HighlandsDwarf, Portraits/Jace, Portraits/Junimo, Portraits/Mermaid, Portraits/Peaches, Portraits/Suki, Portraits/Suki_IceFestival, Portraits/Suki_DesertFestival, Portraits/Zoey, Portraits/SVE_Henchman",
+			"FromFile": "assets/Portraits/Non-Seasonal/{{TargetWithoutPath}}.png",
+		},		
+
+	]
+}

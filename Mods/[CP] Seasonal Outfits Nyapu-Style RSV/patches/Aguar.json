@@ -1,0 +1,34 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Aguar Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Aguar_1, Portraits/Aguar_2, Portraits/Aguar_3, Portraits/Aguar_4, Portraits/Aguar_spring24, Portraits/Aguar_fall27-1, Portraits/Aguar_fall27-2, Portraits/Aguar_winter",
+            "FromFile": "assets/Portraits/Aguar/{{TargetWithoutPath}}.png"
+        },
+		
+        {
+            "LogName": "RSV Nyapu Edit - Aguar Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Aguar, Portraits/Aguar_Beach",
+            "FromFile": "assets/Portraits/Aguar/Aguar_2.png"
+        },		
+		
+		{
+			"LogName": "RSV Nyapu Edit - Aguar Accessories",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/Aguar_1, Portraits/Aguar_2, Portraits/Aguar_3, Portraits/Aguar_4",
+			"FromFile": "assets/Portraits/Aguar/Aguar_acc.png",
+			"When": {
+				"Query: '{{Weather|contains=Rain, Storm, Snow}}' = 'true' OR ({{Random:{{Range:1,10}}|key=AguarHat}} > 5)": true,
+				"IsOutdoors": true,
+				"HasValue:{{DayEvent}}": false,
+			},
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},
+    ]
+}

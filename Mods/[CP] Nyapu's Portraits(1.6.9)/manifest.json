@@ -1,0 +1,11 @@
+{
+   "Name": "Nyapu's Portraits inspired by Dong",
+   "Author": "Nyapu",
+   "Version": "1.6.9",
+   "Description": "Replaces residents portraits.",
+   "UniqueID": "Nyapu.Portraits",
+   "UpdateKeys": [ "Nexus:11491" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+	   }
+}

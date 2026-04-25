@@ -1,0 +1,30 @@
+{
+	
+  "config.OlderSophia.name": "Старше выглядящая София",
+  "config.section.NyapuPortraits.name": "Включить портрет в стиле Nyapu для:",
+  "config.NyapuAlesia.name": "Алесия",
+  "config.NyapuAndy.name": "Энди",
+  "config.NyapuCamilla.name": "Камилла",
+  "config.NyapuClaire.name": "Клэр",
+  "config.NyapuGunther.name": "Гюнтер Сильвиан",
+  "config.NyapuIsaac.name": "Исаак",
+  "config.NyapuJadu.name": "Джаду",
+  "config.NyapuJolyne.name": "Джолин",
+  "config.NyapuLance.name": "Ланс",
+  "config.NyapuMagnus.name": "Магнус Расмодиус",
+  "config.NyapuMarlon.name": "Марлон Фэй",
+  "config.NyapuMartin.name": "Мартин",
+  "config.NyapuMorgan.name": "Морган",
+  "config.NyapuMorris.name": "Моррис Тод",
+  "config.NyapuOlivia.name": "Оливия",
+  "config.NyapuSandy.name": "Сэнди",
+  "config.NyapuScarlett.name": "Скарлетт",
+  "config.NyapuSophia.name": "София",
+  "config.NyapuSusan.name": "Сьюзан",
+  "config.NyapuVictor.name": "Виктор",
+  "config.NyapuExtraNPCs.name": "Различные NPC",
+  "config.NyapuVendors.name": "Различные торговцы"
+  
+}
+
+

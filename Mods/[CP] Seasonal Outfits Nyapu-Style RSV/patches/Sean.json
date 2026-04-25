@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Sean Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Sean_spring, Portraits/Sean_summer, Portraits/Sean_fall, Portraits/Sean_winter, Portraits/Sean_spring24, Portraits/Sean_fall27-1, Portraits/Sean_fall27-2, Portraits/Sean_rain, Portraits/Sean_Beach",
+            "FromFile": "assets/Portraits/Sean/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Sean Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Sean",
+            "FromFile": "assets/Portraits/Sean/Sean_summer.png"
+        },			
+		{
+			"LogName": "RSV Nyapu Edit - Sean Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Sean.png",
+			"When": {"Spouse": "Sean"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+            "LogName": "RSV Nyapu Edit - Shiro Portraits",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Shiro_spring, Portraits/Shiro_summer, Portraits/Shiro_fall, Portraits/Shiro_winter, Portraits/Shiro_spring24, Portraits/Shiro_fall27-1, Portraits/Shiro_fall27-2, Portraits/Shiro_rain, Portraits/Shiro_Beach",
+            "FromFile": "assets/Portraits/Shiro/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "RSV Nyapu Edit - Shiro Portraits Base",
+            "Action": "EditImage",
+			"Priority": "Late",
+            "Target": "Portraits/Shiro",
+            "FromFile": "assets/Portraits/Shiro/Shiro_rain.png"
+        },			
+		{
+			"LogName": "RSV Nyapu Edit - Shiro Wedding Reception",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/Shiro.png",
+			"When": {"Spouse": "Shiro"},
+			"Update": "OnLocationChange, OnTimeChange"
+		},	
+    ]
+}
