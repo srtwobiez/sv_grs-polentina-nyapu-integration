@@ -1,0 +1,6 @@
+﻿_logs/
+*.log
+Thumbs.db
+desktop.ini
+vortex.deployment.json
+__folder_managed_by_vortex
