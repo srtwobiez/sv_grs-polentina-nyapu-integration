@@ -15,3 +15,17 @@ docs/diagnostico_actual_*/
 docs/emergency_compare_*/
 # Local old archives / staging
 nyapu/archives/Mods.rar
+# Runtime/generated mod data - do not track
+Mods/**/data/*_SaveData.save
+Mods/FarmTypeManager/data/Polentina_*.json
+Mods/BetterCrafting/savedata/
+Mods/SinZational Speedy Solutions/cache/
+Mods/**/desktop.ini
+Mods/**/*.vortex_backup
+# Runtime/generated mod data - do not track
+Mods/**/data/*_SaveData.save
+Mods/FarmTypeManager/data/Polentina_*.json
+Mods/BetterCrafting/savedata/
+Mods/SinZational Speedy Solutions/cache/
+Mods/**/desktop.ini
+Mods/**/*.vortex_backup
