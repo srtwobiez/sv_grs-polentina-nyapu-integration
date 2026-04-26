@@ -1,0 +1,730 @@
+{
+  "WeatherForYesterday": "Wind",
+  "LNOSCounter": {},
+  "ExistingObjectLocations": {},
+  "SavedObjects": [
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "11, 35",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "17, 37",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "14, 12",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "15, 12",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_Stone2",
+      "Tile": "8, 8",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_Stone2",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_Stone2",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_LumiStone2",
+      "Tile": "21, 8",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_LumiStone2",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_LumiStone2",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "24, 34",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "21, 38",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "11, 12",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "19, 16",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_UnderwaterIron",
+      "Tile": "16, 6",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_UnderwaterIron",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_UnderwaterIron",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "16, 33",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "9, 37",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "15, 16",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "11, 15",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_LumiStone2",
+      "Tile": "12, 6",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_LumiStone2",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_LumiStone2",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_Stone1",
+      "Tile": "9, 6",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_Stone1",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_Stone1",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "20, 34",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "12, 36",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "17, 12",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "20, 14",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_UnderwaterIron",
+      "Tile": "7, 8",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_UnderwaterIron",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_UnderwaterIron",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_Stone1",
+      "Tile": "18, 8",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_Stone1",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_Stone1",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "13, 35",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "14, 35",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "11, 16",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "15, 17",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_LumiStone1",
+      "Tile": "16, 7",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_LumiStone1",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_LumiStone1",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_Stone1",
+      "Tile": "10, 9",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_Stone1",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_Stone1",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "14, 37",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "20, 38",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "12, 12",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "13, 16",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_LumiStone2",
+      "Tile": "17, 7",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_LumiStone2",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_LumiStone2",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_Stone3",
+      "Tile": "5, 9",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_Stone3",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_Stone3",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "15, 36",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "23, 34",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "16, 12",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "15, 13",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_Stone2",
+      "Tile": "15, 5",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_Stone2",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_Stone2",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_Stone3",
+      "Tile": "18, 9",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_Stone3",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_Stone3",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "21, 36",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "11, 34",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "10, 14",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "12, 16",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_LumiStone2",
+      "Tile": "14, 8",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_LumiStone2",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_LumiStone2",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_UnderwaterIron",
+      "Tile": "8, 6",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_UnderwaterIron",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_UnderwaterIron",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "8, 35",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Artifact Spot",
+      "Tile": "19, 34",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "11, 13",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West",
+      "Name": "Artifact Spot",
+      "Tile": "12, 14",
+      "Type": "Forage",
+      "ID": "590",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_Stone2",
+      "Tile": "8, 9",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_Stone2",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_Stone2",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "GiEX_Sea_West2",
+      "Name": "Object:mistyspring.GiEXredux_LumiStone2",
+      "Tile": "8, 7",
+      "Type": "Forage",
+      "ID": "mistyspring.GiEXredux_LumiStone2",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "mistyspring.GiEXredux_LumiStone2",
+        "SpawnWeight": 1
+      },
+      "MonType": null
+    }
+  ]
+}

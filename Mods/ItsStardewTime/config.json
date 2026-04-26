@@ -37,7 +37,7 @@
   "Use24HourFormat": false,
   "DisplayVotePauseMessages": true,
   "TimeFlowChangeNotificationsMultiplayer": false,
-  "PauseMode": "Half",
+  "PauseMode": "All",
   "AnyCutscenePauses": true,
   "LockMonsters": false,
   "EnableVotePause": true,
