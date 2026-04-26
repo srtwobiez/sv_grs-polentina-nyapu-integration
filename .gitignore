@@ -10,3 +10,8 @@ nyapu_OLD_*/
 extract_from_D_Nyapu.bat
 extract_nyapu_archives.bat
 _logs/
+# Local diagnostic folders
+docs/diagnostico_actual_*/
+docs/emergency_compare_*/
+# Local old archives / staging
+nyapu/archives/Mods.rar
