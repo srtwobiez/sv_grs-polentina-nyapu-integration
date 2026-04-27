@@ -61,7 +61,7 @@
   "attempting_to_find_directions": "Attempting to find directions from {{start}} to {{destination}}...",
   "attempting_to_find_directions_coordinates": "Attempting to find directions from {{start}} to {{destination}} {{coordinates}}...",
   "current_location": "the current location",
-  "directions_from_to": "Indicaciones from {{start}} {{coordinateStart}} to {{destination}} {{coordinateEnd}}:",
+  "directions_from_to": "Indicaciones desde {{start}} {{coordinateStart}} hasta {{destination}} {{coordinateEnd}}:",
   "current_tile_is_not_reachable1": "Your current tile {{tile}} seems to be not walkable in typical gameplay.",
   "current_tile_is_not_reachable2": "If you think it should be considered walkable, please report this to the mod author.",
   "current_tile_is_not_reachable3": "You may move to another tile on the map and try again.",
