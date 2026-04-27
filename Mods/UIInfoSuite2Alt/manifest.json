@@ -11,5 +11,5 @@
     { "UniqueID": "Pathoschild.ContentPatcher", "IsRequired": false },
     { "UniqueID": "spacechase0.SpaceCore", "IsRequired": false }
   ],
-  "UpdateKeys": ["Nexus:43127", "GitHub:dazuki/UIInfoSuite2Alt"]
+  "UpdateKeys": ["Nexus:43127"]
 }
