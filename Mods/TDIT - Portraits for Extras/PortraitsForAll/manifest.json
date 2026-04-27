@@ -15,7 +15,5 @@
   "MinimumApiVersion": "4.3.2",
   "MinimumGameVersion": "1.6.15",
   "EntryDll": "PortraitsForAll.dll",
-  "UpdateKeys": [
-    "GitHub:Mushymato/PortraitsForAll"
-  ]
+  "UpdateKeys": []
 }
