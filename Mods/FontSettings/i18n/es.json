@@ -1,7 +1,7 @@
 {
-  "game-font-type.small-font": "Small Fuente",
-  "game-font-type.dialogue-font": "Medium Fuente",
-  "game-font-type.sprite-text": "Dialogue Fuente",
+  "game-font-type.small-font": "Fuente pequeña",
+  "game-font-type.dialogue-font": "Fuente mediana",
+  "game-font-type.sprite-text": "Fuente de diálogo",
   "options-page.font-header": "Fuente",
   "hud-message.success-set-font": "{{fontType}} set ok!",
   "hud-message.failed-set-font": "{{fontType}} set failed. See SMAPI console for details.",
