@@ -1,4 +1,4 @@
-﻿{
+{
    "Name": "Farm Type Manager (FTM)",
    "Author": "Esca",
    "Version": "1.26.1",
@@ -6,7 +6,7 @@
    "UniqueID": "Esca.FarmTypeManager",
    "EntryDll": "FarmTypeManager.dll",
    "MinimumApiVersion": "4.0.0",
-   "UpdateKeys": [ "Nexus:3231", "GitHub:Esca-MMC/FarmTypeManager", "ModDrop:598755" ],
+   "UpdateKeys": [ "Nexus:3231",  "ModDrop:598755" ],
   "Dependencies": [
     {
       "UniqueID": "Pathoschild.ContentPatcher",

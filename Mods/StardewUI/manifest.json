@@ -16,7 +16,6 @@
   "MinimumGameVersion": "1.6.15",
   "EntryDll": "StardewUI.dll",
   "UpdateKeys": [
-    "Nexus:43861",
-    "GitHub:Mushymato/StardewUI"
+    "Nexus:43861"
   ]
 }

@@ -5,9 +5,7 @@
   "Description": "Extra GI maps (redux). FTM content pack",
   "UniqueID": "mistyspring.GiEXreduxFTM",
   "MinimumApiVersion": "4.4.0",
-  "UpdateKeys": [
-    "nexus:-1@FTM"
-  ],
+  "UpdateKeys": [],
   "ContentPackFor": {
     "UniqueID": "Esca.FarmTypeManager"
   },

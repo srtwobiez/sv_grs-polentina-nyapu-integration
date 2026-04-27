@@ -27,7 +27,7 @@
     /*********
     ** Update Keys (Currently only on Nexus)
     *********/
-    "UpdateKeys": [ "Nexus:-1" ],
+    "UpdateKeys": [],
 
     /*********
     ** Framework Manifest ID

@@ -1,10 +1,10 @@
-﻿{
+{
 	"Name": "[MFM] Cannabis Kit",
 	"Author": "Project Populate Json Assets",
 	"Version": "1.0.0",
 	"Description": "Sends custom mail using Mail Framework Mod.",
 	"UniqueID": "CKLetters",
-	"UpdateKeys": [ "Nexus:-1" ],
+	"UpdateKeys": [],
 	"MinimumApiVersion": "3.6.0",
 	"Dependencies": [
 		{

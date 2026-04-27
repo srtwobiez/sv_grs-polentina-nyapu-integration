@@ -15,7 +15,6 @@
   "MinimumGameVersion": "1.6.15",
   "EntryDll": "TrinketTinker.dll",
   "UpdateKeys": [
-    "Nexus:29073",
-    "GitHub:Mushymato/TrinketTinker"
+    "Nexus:29073"
   ]
 }

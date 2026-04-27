@@ -5,7 +5,7 @@
   "Description": "An expansive fanmade mod for ConcernedApe's Stardew Valley.",
   "UniqueID": "FlashShifter.StardewValleyExpandedCP",
   "MinimumApiVersion": "4.1.7",
-  "UpdateKeys": [ "Nexus:???" ],
+  "UpdateKeys": [],
   "ContentPackFor": {
   "UniqueID": "Pathoschild.ContentPatcher",
    },
