@@ -1,8 +1,8 @@
 {
   "$schema": "https://smapi.io/schemas/i18n.json",
-  "FarmHouse": "Farmhouse",
-  "Greenhouse": "Greenhouse",
-  "FarmCave": "Farm Cave",
+  "FarmHouse": "Casa de campo",
+  "Greenhouse": "Invernadero",
+  "FarmCave": "Cueva de la granja",
   "Blacksmith": "Clint's Blacksmith",
   "HarveyRoom": "Harvey's Room",
   "BeachNightMarket": "Beach (Night Market)",
